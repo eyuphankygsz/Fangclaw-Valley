@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
         _controller = GetComponent<CharacterController>();
     }
 
-    public void TryMove()
+    public void ManageMove()
     {
         Vector3 direction = PlayerInputs.Instance.GetMovementInput();
         Vector3 forward = transform.forward * direction.z;

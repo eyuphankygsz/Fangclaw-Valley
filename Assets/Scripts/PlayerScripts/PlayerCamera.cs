@@ -7,7 +7,30 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private Camera _camera;
 
-    public void TryRotate()
+    private bool _cursorLock = true;
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            _cursorLock = !_cursorLock;
+            if (_cursorLock)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+        }
+    }
+    public void ManageRotate()
     {
         Vector2 cameraDirection = PlayerInputs.Instance.GetCameraDirection();
 

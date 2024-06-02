@@ -4,31 +4,28 @@ using UnityEngine;
 
 public class Hands : Weapons
 {
-
     public override void Move()
     {
         MoveNormal();
         MoveByCamera();
-        ClampTransform();
+        ClampMove();
     }
     private void MoveNormal()
     {
-
+        Y_Movement();
     }
     private void MoveByCamera()
     {
-
+        X_Movement();
     }
-    private void ClampTransform()
+    private void ClampMove()
     {
-        float x = Mathf.Clamp(_rectTransform.anchoredPosition.x, _xAxis.x, _xAxis.y);
-        float y = Mathf.Clamp(_rectTransform.anchoredPosition.y, _yAxis.x, _yAxis.y);
-        _rectTransform.anchoredPosition = new Vector2(x, y);
+        ClampTransform();
     }
 
     public override void OnAction()
     {
-        throw new System.NotImplementedException();
+
     }
 
     public override void OnSelected()
