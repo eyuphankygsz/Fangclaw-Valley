@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInputs : MonoBehaviour
@@ -13,10 +11,7 @@ public class PlayerInputs : MonoBehaviour
             Destroy(gameObject); // Ensure there's only one instance
         }
         else
-        {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: persist across scenes
-        }
     }
 
     public Vector3 GetMovementInput()

@@ -1339,6 +1339,8 @@ MonoBehaviour:
   _lightSource: {fileID: 1512170994}
   _deactiveColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   _activeColor: {r: 1, g: 1, b: 1, a: 1}
+  _yOffset: 0
+  _yDivide: 1
 --- !u!1001 &360545133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4007,7 +4009,7 @@ Transform:
   m_GameObject: {fileID: 1512170994}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35100007, y: -0.03399998, z: 0.41900012}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0.217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -7,9 +7,10 @@ public class Lantern : Weapons
 {
     [SerializeField] private GameObject _lightSource;
     [SerializeField] private Color _deactiveColor, _activeColor;
-    
+
     private Image _image;
     private bool _active;
+    [SerializeField] private float _yOffset, _yDivide = 1;
 
     private void Awake()
     {
@@ -21,19 +22,17 @@ public class Lantern : Weapons
         MoveByCamera();
         ClampMove();
     }
+    private float m = 0.005f;
+    private float c = 1.5f;
+
     private void MoveNormal()
     {
         Y_Movement();
 
-        Vector2 lightPos = _rectTransform.anchoredPosition - new Vector2(_startPos.x ,_startPos.y + 40);
+        Vector2 lightPos = _rectTransform.anchoredPosition - new Vector2(0, (_startPos.y + _yOffset) / _yDivide);
+        float B = m * lightPos.y + c;
 
-        Debug.Log("Light Pos: " + lightPos);
-
-        Vector3 movement = ((transform.up * lightPos.y / 100) + (transform.right * lightPos.x / 100)) * Time.deltaTime;
-
-        Debug.Log("Movement: " + movement);
-
-        _lightSource.transform.position += movement * 4;
+        _lightSource.transform.position = new Vector3(0, B, 0);
 
         Vector3 clampedPosition = new Vector3(
             Mathf.Clamp(_lightSource.transform.localPosition.x, -0.4f, 0.4f),
@@ -57,7 +56,7 @@ public class Lantern : Weapons
     public override void OnAction()
     {
         _active = !_active;
-        if(_active)
+        if (_active)
         {
             _lightSource.SetActive(true);
             _image.color = _activeColor;
@@ -71,7 +70,7 @@ public class Lantern : Weapons
 
     public override void OnSelected()
     {
-        if(_image == null)
+        if (_image == null)
             _image = GetComponent<Image>();
     }
 }
