@@ -62,6 +62,7 @@ public class PlayerWeaponController : MonoBehaviour
     }
     private void SelectWeapon(bool next)
     {
+        _currentWeapon.OnChanged();
         _currentWeapon.gameObject.SetActive(false);
 
         _weaponIndex += next ? 1 : (_weaponIndex - 1 < 0 ? _weapons.Count - 1 : _weaponIndex - 1);
@@ -77,6 +78,8 @@ public class PlayerWeaponController : MonoBehaviour
     {
 
         if (_oldWeaponIndex == index) return;
+
+        _currentWeapon.OnChanged();
         _weaponIndex = _oldWeaponIndex = index;
 
         _currentWeapon.gameObject.SetActive(false);

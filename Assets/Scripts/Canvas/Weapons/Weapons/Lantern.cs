@@ -23,7 +23,7 @@ public class Lantern : Weapons
         ClampMove();
     }
     private float m = 0.005f;
-    private float c = 1.5f;
+    private float c = 1f;
 
     private void MoveNormal()
     {
@@ -32,12 +32,12 @@ public class Lantern : Weapons
         Vector2 lightPos = _rectTransform.anchoredPosition - new Vector2(0, (_startPos.y + _yOffset) / _yDivide);
         float B = m * lightPos.y + c;
 
-        _lightSource.transform.position = new Vector3(0, B, 0);
+        _lightSource.transform.localPosition = new Vector3(0, B, 0);
 
         Vector3 clampedPosition = new Vector3(
-            Mathf.Clamp(_lightSource.transform.localPosition.x, -0.4f, 0.4f),
-            Mathf.Clamp(_lightSource.transform.localPosition.y, -0.6f, 0.6f),
-            0.7f
+            _lightSource.transform.localPosition.x,
+            Mathf.Clamp(_lightSource.transform.localPosition.y, -0.6f, 0.5f),
+            _lightSource.transform.localPosition.z
         );
 
         _lightSource.transform.localPosition = clampedPosition;
@@ -72,5 +72,13 @@ public class Lantern : Weapons
     {
         if (_image == null)
             _image = GetComponent<Image>();
+    }
+
+    public override void OnChanged()
+    {
+        Debug.Log("ONCHANGED1");
+        _active = false;
+        _lightSource.SetActive(false);
+        Debug.Log("ONCHANGED2");
     }
 }

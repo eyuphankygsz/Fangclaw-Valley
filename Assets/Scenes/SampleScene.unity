@@ -1339,7 +1339,7 @@ MonoBehaviour:
   _lightSource: {fileID: 1512170994}
   _deactiveColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   _activeColor: {r: 1, g: 1, b: 1, a: 1}
-  _yOffset: 0
+  _yOffset: 350
   _yDivide: 1
 --- !u!1001 &360545133
 PrefabInstance:
@@ -3999,7 +3999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1512170995
 Transform:
   m_ObjectHideFlags: 0

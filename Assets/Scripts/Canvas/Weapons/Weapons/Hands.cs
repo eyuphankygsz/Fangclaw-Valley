@@ -32,4 +32,8 @@ public class Hands : Weapons
     {
 
     }
+
+    public override void OnChanged()
+    {
+    }
 }

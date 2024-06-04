@@ -37,6 +37,7 @@ public abstract class Weapons : MonoBehaviour
     }
     public abstract void OnAction();
     public abstract void OnSelected();
+    public abstract void OnChanged();
     public abstract void Move();
     protected void Y_Movement()
     {
