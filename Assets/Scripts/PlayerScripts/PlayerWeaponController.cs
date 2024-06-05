@@ -17,7 +17,7 @@ public class PlayerWeaponController : MonoBehaviour
     {
         _weapons = new Dictionary<string, Weapons>();
         for (int i = 0; i < _weaponHolder.childCount; i++)
-            _weapons.Add(_weaponHolder.GetChild(i).name, _weaponHolder.GetChild(i).GetComponent<Weapons>());
+            _weapons.Add(_weaponHolder.GetChild(i).GetChild(0).name, _weaponHolder.GetChild(i).GetChild(0).GetComponent<Weapons>());
 
         _weaponNames = new string[_weapons.Count];
         int nameIndex = 0;
@@ -39,8 +39,7 @@ public class PlayerWeaponController : MonoBehaviour
     }
     private void TryToUse()
     {
-        if (Input.GetMouseButtonDown(0))
-            _currentWeapon.OnAction();
+        _currentWeapon.OnAction();
     }
     private void TryToChangeGun()
     {

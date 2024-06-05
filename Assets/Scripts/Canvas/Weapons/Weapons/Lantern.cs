@@ -6,47 +6,28 @@ using UnityEngine.UI;
 public class Lantern : Weapons
 {
     [SerializeField] private GameObject _lightSource;
-    [SerializeField] private Color _deactiveColor, _activeColor;
 
-    private Image _image;
     private bool _active;
-    [SerializeField] private float _yOffset, _yDivide = 1;
 
-    private void Awake()
-    {
-        _image = GetComponent<Image>();
-    }
+
     public override void Move()
     {
         MoveNormal();
         MoveByCamera();
         ClampMove();
     }
-    private float m = 0.005f;
-    private float c = 1f;
 
     private void MoveNormal()
     {
         Y_Movement();
 
-        Vector2 lightPos = _rectTransform.anchoredPosition - new Vector2(0, (_startPos.y + _yOffset) / _yDivide);
-        float B = m * lightPos.y + c;
-
-        _lightSource.transform.localPosition = new Vector3(0, B, 0);
-
-        Vector3 clampedPosition = new Vector3(
-            _lightSource.transform.localPosition.x,
-            Mathf.Clamp(_lightSource.transform.localPosition.y, -0.6f, 0.5f),
-            _lightSource.transform.localPosition.z
-        );
-
-        _lightSource.transform.localPosition = clampedPosition;
-
-        Debug.Log("Clamped Position: " + clampedPosition);
+        float y = Mathf.InverseLerp(_yLimit.x, _yLimit.y, _pivot.transform.localPosition.y);
+        _lightSource.transform.localPosition = (Vector3.up * y) + new Vector3(_lightSource.transform.localPosition.x, 3f, 0);
     }
     private void MoveByCamera()
     {
-        X_Movement();
+        X_Movement(); 
+        _lightSource.transform.localPosition = new Vector3((-_pivot.transform.localPosition.x - 1) * 1.5f, _lightSource.transform.localPosition.y, 0);
     }
     private void ClampMove()
     {
@@ -55,30 +36,20 @@ public class Lantern : Weapons
 
     public override void OnAction()
     {
-        _active = !_active;
-        if (_active)
+        if (Input.GetMouseButtonDown(0))
         {
-            _lightSource.SetActive(true);
-            _image.color = _activeColor;
-        }
-        else
-        {
-            _lightSource.SetActive(false);
-            _image.color = _deactiveColor;
+            _active = !_active;
+            _lightSource.SetActive(_active);
         }
     }
 
     public override void OnSelected()
     {
-        if (_image == null)
-            _image = GetComponent<Image>();
     }
 
     public override void OnChanged()
     {
-        Debug.Log("ONCHANGED1");
         _active = false;
         _lightSource.SetActive(false);
-        Debug.Log("ONCHANGED2");
     }
 }

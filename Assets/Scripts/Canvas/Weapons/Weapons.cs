@@ -7,15 +7,14 @@ public abstract class Weapons : MonoBehaviour
     [SerializeField] protected float _moveSpeed;
 
 
-    [SerializeField] protected Vector2 _xAxis;
-    [SerializeField] protected Vector2 _yAxis;
-    [SerializeField] protected float _xPolynomial;
+    protected  Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
+    protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
+    private float _xPolynomial = -1.376f;
     [SerializeField] protected float _ySpeed;
 
     protected Vector2 _startPos;
-    protected float _minY;
     protected float _xPolyStart;
-    protected RectTransform _rectTransform;
+    protected Transform _pivot;
 
     private float _xPos;
     private void Awake()
@@ -24,15 +23,14 @@ public abstract class Weapons : MonoBehaviour
     }
     private void OnEnable()
     {
-        if (_rectTransform != null) return;
+        if (_startPos != null) return;
         Setup();
     }
     private void Setup()
     {
-        _rectTransform = GetComponent<RectTransform>();
-        _startPos = _rectTransform.anchoredPosition;
+        _pivot = transform.parent;
+        _startPos = _pivot.transform.localPosition;
         _xPolyStart = _xPolynomial;
-        _minY = GetYPos();
         _xPos = _startPos.x;
     }
     public abstract void OnAction();
@@ -42,12 +40,13 @@ public abstract class Weapons : MonoBehaviour
     protected void Y_Movement()
     {
         float y = GetYPos();
-
-        _rectTransform.anchoredPosition = new Vector2(_xPos, _startPos.y) + (Vector2.up * y);
+        _pivot.transform.localPosition = new Vector3(_xPos, _startPos.y, 0) + (Vector3.up * y);
         _xPolynomial += _ySpeed * Time.deltaTime;
 
-        if (y < _minY)
+        if (y < _yLimit.x)
+        {
             _xPolynomial = _xPolyStart;
+        }
     }
     protected void X_Movement()
     {
@@ -55,23 +54,23 @@ public abstract class Weapons : MonoBehaviour
 
         if (x != 0)
         {
-            Vector2 moveDirection = new Vector2(-x, 0);
-            _rectTransform.anchoredPosition += moveDirection * 400 * Time.deltaTime;
+            Vector3 moveDirection = new Vector3(-x, 0, 0);
+            _pivot.transform.localPosition += moveDirection * _moveSpeed * Time.deltaTime;
         }
-        else if (_rectTransform.anchoredPosition.x != _startPos.x)
+        else if (_pivot.transform.localPosition.x != _startPos.x)
         {
-            _rectTransform.anchoredPosition = Vector3.Lerp(_rectTransform.anchoredPosition, new Vector2(_startPos.x, _rectTransform.anchoredPosition.y), 10 * Time.deltaTime);
+            _pivot.transform.localPosition = Vector3.Lerp(_pivot.transform.localPosition, new Vector2(_startPos.x, _pivot.transform.localPosition.y), 10 * Time.deltaTime);
         }
-        _xPos = _rectTransform.anchoredPosition.x;
+        _xPos = _pivot.transform.localPosition.x;
     }
     protected void ClampTransform()
     {
-        float x = Mathf.Clamp(_rectTransform.anchoredPosition.x, _xAxis.x, _xAxis.y);
-        float y = Mathf.Clamp(_rectTransform.anchoredPosition.y, _yAxis.x, _yAxis.y);
-        _rectTransform.anchoredPosition = new Vector2(x, y);
+        float x = Mathf.Clamp(_pivot.transform.localPosition.x, _xLimit.x, _xLimit.y);
+        float y = Mathf.Clamp(_pivot.transform.localPosition.y, _yLimit.x, _yLimit.y);
+        _pivot.transform.localPosition = new Vector3(x, y, 0);
     }
     private float GetYPos()
     {
-        return (-Mathf.Pow(_xPolynomial, 2) / 20) - (3 * _xPolynomial / 10) + 80;
+        return (-Mathf.Pow(_xPolynomial, 2) / 1.5f) - (_xPolynomial / 10) + 1.2f;
     }
 }

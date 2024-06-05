@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private CharacterController _controller;
+    public bool GravityOff { get; set; }
 
+    private CharacterController _controller;
+    private float _gravity = -9.8f;
+
+
+    [SerializeField] private float _gravityMultiplier = 1;
     [SerializeField] private float _speed;
     
     // Start is called before the first frame update
@@ -16,9 +21,18 @@ public class PlayerMovement : MonoBehaviour
 
     public void ManageMove()
     {
+        ApplyMovement();
+    }
+    private float CalculateGravity()
+    {
+        return GravityOff ? 0 :_gravity * _gravityMultiplier;
+    }
+    private void ApplyMovement()
+    {
         Vector3 direction = PlayerInputs.Instance.GetMovementInput();
-        Vector3 forward = transform.forward * direction.z;
-        Vector3 right = transform.right * direction.x;
-        _controller.Move((forward + right)  * _speed * Time.deltaTime);
+        Vector3 movement = (transform.forward * direction.z) + (transform.right * direction.x);
+        movement *= _speed;
+        movement.y = CalculateGravity();
+        _controller.Move(movement * Time.deltaTime);
     }
 }

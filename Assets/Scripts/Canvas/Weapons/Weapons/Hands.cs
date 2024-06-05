@@ -25,7 +25,10 @@ public class Hands : Weapons
 
     public override void OnAction()
     {
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            //Do Something
+        }
     }
 
     public override void OnSelected()
