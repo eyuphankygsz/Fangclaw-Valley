@@ -5,16 +5,18 @@ public abstract class Weapons : MonoBehaviour
 {
     [SerializeField] protected float Damage { get; set; }
     [SerializeField] protected float _moveSpeed;
-
+    [SerializeField] protected Enum_Weapons _weaponEnum; // Daha sonra weapon class ekle (Attackable)
+    [SerializeField] protected float _rayLength;
 
     protected  Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
     protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
     private float _xPolynomial = -1.376f;
     [SerializeField] protected float _ySpeed;
 
-    protected Vector2 _startPos;
-    protected float _xPolyStart;
+    private Vector2 _startPos;
+    private float _xPolyStart;
     protected Transform _pivot;
+
 
     private float _xPos;
     private void Awake()
@@ -69,8 +71,18 @@ public abstract class Weapons : MonoBehaviour
         float y = Mathf.Clamp(_pivot.transform.localPosition.y, _yLimit.x, _yLimit.y);
         _pivot.transform.localPosition = new Vector3(x, y, 0);
     }
+    public Enum_Weapons GetWeaponEnum()
+    {
+        return _weaponEnum;
+    }
     private float GetYPos()
     {
         return (-Mathf.Pow(_xPolynomial, 2) / 1.5f) - (_xPolynomial / 10) + 1.2f;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, transform.forward * _rayLength);
     }
 }
