@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Threading;
 using UnityEngine;
 
@@ -7,21 +8,26 @@ public abstract class Weapons : MonoBehaviour
     [SerializeField] protected float _moveSpeed;
     [SerializeField] protected Enum_Weapons _weaponEnum; // Daha sonra weapon class ekle (Attackable)
     [SerializeField] protected float _rayLength;
+    [SerializeField] protected float _rayRotation;
+    [SerializeField] protected float _ySpeed;
+    [SerializeField] protected LayerMask _interactableLayers;
 
     protected  Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
     protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
-    private float _xPolynomial = -1.376f;
-    [SerializeField] protected float _ySpeed;
+    protected Transform _pivot, _camera;
+    protected GameObject _hitObject;
+    protected Animator _animator;
+    protected WaitForSeconds _actionSleep;
+    protected bool _onAction;
 
+    private float _xPolynomial = -1.376f;
     private Vector2 _startPos;
     private float _xPolyStart;
-    protected Transform _pivot;
-
-
     private float _xPos;
     private void Awake()
     {
         Setup();
+        SetWeapon();
     }
     private void OnEnable()
     {
@@ -34,14 +40,22 @@ public abstract class Weapons : MonoBehaviour
         _startPos = _pivot.transform.localPosition;
         _xPolyStart = _xPolynomial;
         _xPos = _startPos.x;
+        _camera = Camera.main.transform;
+        _animator = GetComponent<Animator>();
     }
     public abstract void OnAction();
     public abstract void OnSelected();
     public abstract void OnChanged();
+    public abstract void SetWeapon();
     public abstract void Move();
+    public GameObject GetHitObject()
+    {
+        return _hitObject;
+    }
     protected void Y_Movement()
     {
         float y = GetYPos();
+
         _pivot.transform.localPosition = new Vector3(_xPos, _startPos.y, 0) + (Vector3.up * y);
         _xPolynomial += _ySpeed * Time.deltaTime;
 
@@ -75,6 +89,7 @@ public abstract class Weapons : MonoBehaviour
     {
         return _weaponEnum;
     }
+    protected IEnumerator EndAction() { yield return _actionSleep; _onAction = false; }
     private float GetYPos()
     {
         return (-Mathf.Pow(_xPolynomial, 2) / 1.5f) - (_xPolynomial / 10) + 1.2f;
@@ -82,7 +97,8 @@ public abstract class Weapons : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if (_camera == null) _camera = Camera.main.transform;
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, transform.forward * _rayLength);
+        Gizmos.DrawRay(_camera.position, _camera.forward * _rayLength);
     }
 }

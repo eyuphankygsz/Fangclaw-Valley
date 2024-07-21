@@ -14,8 +14,8 @@ TagManager:
   - Player
   - Light Sources
   - PlayerWeapon
-  - 
-  - 
+  - Enemy
+  - Breakable
   - 
   - 
   - 

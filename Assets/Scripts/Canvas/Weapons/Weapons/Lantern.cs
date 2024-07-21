@@ -10,6 +10,9 @@ public class Lantern : Weapons
     private bool _active;
 
 
+    private Dictionary<int, IWeaponModes> _modes = new Dictionary<int, IWeaponModes>();
+    private IWeaponModes _defaultMode;
+
     public override void Move()
     {
         MoveNormal();
@@ -51,5 +54,14 @@ public class Lantern : Weapons
     {
         _active = false;
         _lightSource.SetActive(false);
+    }
+    public override void SetWeapon()
+    {
+        _defaultMode = new DefaultMode();
+
+        _modes.Add(9, new EnemyHitMode()); //EnemyHits
+
+        foreach (var wMode in _modes)
+            wMode.Value.Setup(this);
     }
 }

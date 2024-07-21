@@ -14,11 +14,6 @@ public class Interactable_Crate : Interactable
 
     private void Shatter()
     {
-
-        for (int i = 0; i < _shatterObj.transform.childCount; i++)
-        {
-            Destroy(_shatterObj.transform.GetChild(i), 2);
-        }
         _originalObj.SetActive(false);
         _shatterObj.SetActive(true);
     }
