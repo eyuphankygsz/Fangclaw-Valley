@@ -50,7 +50,9 @@ public abstract class Weapons : MonoBehaviour
     public abstract void Move();
     public GameObject GetHitObject()
     {
-        return _hitObject;
+        GameObject tempObj = _hitObject;
+        _hitObject = null;
+        return tempObj;
     }
     protected void Y_Movement()
     {

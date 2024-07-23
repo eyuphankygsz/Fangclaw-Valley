@@ -40,7 +40,7 @@ public class Hands : Weapons
     }
     private void TryHit()
     {
-        if (Physics.Raycast(transform.position, _camera.forward, out RaycastHit hit, _rayLength, _interactableLayers))
+        if (Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit, _rayLength, _interactableLayers))
         {
             _hitObject = hit.collider.gameObject;
             if (_modes.TryGetValue(_hitObject.layer, out IWeaponModes wMode))

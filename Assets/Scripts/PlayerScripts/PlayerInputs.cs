@@ -26,6 +26,4 @@ public class PlayerInputs : MonoBehaviour
         float mouseY = Input.GetAxisRaw("Mouse Y");
         return new Vector2(mouseX, mouseY);
     }
-
-
 }

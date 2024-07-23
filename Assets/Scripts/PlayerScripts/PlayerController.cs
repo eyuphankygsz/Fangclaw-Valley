@@ -8,12 +8,14 @@ public class PlayerController : MonoBehaviour
     private PlayerMovement _playerMovement;
     private PlayerCamera _playerCamera;
     private PlayerWeaponController _playerWeapon;
+    private PlayerInteractions _playerInteractions;
 
     private void Awake()
     {
         _playerMovement = GetComponent<PlayerMovement>();
         _playerCamera = GetComponent<PlayerCamera>();
         _playerWeapon = GetComponent<PlayerWeaponController>();
+        _playerInteractions = GetComponent<PlayerInteractions>();
     }
 
     void Update()
@@ -23,6 +25,8 @@ public class PlayerController : MonoBehaviour
             _playerMovement.ManageMove();
             _playerCamera.ManageRotate();
             _playerWeapon.ManageGun();
-        }
+			_playerInteractions.CheckForInteractions();
+
+		}
     }
 }
