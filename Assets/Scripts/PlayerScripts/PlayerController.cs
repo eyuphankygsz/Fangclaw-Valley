@@ -18,7 +18,8 @@ public class PlayerController : MonoBehaviour
         _playerInteractions = GetComponent<PlayerInteractions>();
     }
 
-    void Update()
+
+	void Update()
     {
         if (!StopMove)
         {

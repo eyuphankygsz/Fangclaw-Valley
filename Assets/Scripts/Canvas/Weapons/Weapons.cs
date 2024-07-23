@@ -11,8 +11,9 @@ public abstract class Weapons : MonoBehaviour
     [SerializeField] protected float _rayRotation;
     [SerializeField] protected float _ySpeed;
     [SerializeField] protected LayerMask _interactableLayers;
+    [SerializeField] protected Sprite _weaponCross;
 
-    protected  Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
+	protected  Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
     protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
     protected Transform _pivot, _camera;
     protected GameObject _hitObject;
@@ -102,5 +103,9 @@ public abstract class Weapons : MonoBehaviour
         if (_camera == null) _camera = Camera.main.transform;
         Gizmos.color = Color.red;
         Gizmos.DrawRay(_camera.position, _camera.forward * _rayLength);
+    }
+    public Sprite GetCross()
+    {
+        return _weaponCross;
     }
 }
