@@ -23212,12 +23212,12 @@ GameObject:
   - component: {fileID: 1617550099}
   - component: {fileID: 1617550098}
   m_Layer: 0
-  m_Name: Directional Light (2)
+  m_Name: EDIT LIGHT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1617550098
 MonoBehaviour:
   m_ObjectHideFlags: 0
