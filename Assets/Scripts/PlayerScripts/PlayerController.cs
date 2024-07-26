@@ -1,33 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool StopMove { get; private set; }
-    private PlayerMovement _playerMovement;
-    private PlayerCamera _playerCamera;
-    private PlayerWeaponController _playerWeapon;
-    private PlayerInteractions _playerInteractions;
+	public static PlayerController Instance;
 
-    private void Awake()
-    {
-        _playerMovement = GetComponent<PlayerMovement>();
-        _playerCamera = GetComponent<PlayerCamera>();
-        _playerWeapon = GetComponent<PlayerWeaponController>();
-        _playerInteractions = GetComponent<PlayerInteractions>();
-    }
+	[SerializeField]
+	private bool _stopMove;
+	public bool StopMove
+	{
+		get => _stopMove;
+		set
+		{
+			_stopMove = value;
+			_playerInteractions.StopInteractions(value);
+		}
+	}
+
+	private PlayerMovement _playerMovement;
+	private PlayerCamera _playerCamera;
+	private PlayerWeaponController _playerWeapon;
+	private PlayerInteractions _playerInteractions;
+
+
+	private void Awake()
+	{
+		Instance = this;
+		GetPlayerScripts();
+	}
 
 
 	void Update()
-    {
-        if (!StopMove)
-        {
-            _playerMovement.ManageMove();
-            _playerCamera.ManageRotate();
-            _playerWeapon.ManageGun();
-			_playerInteractions.CheckForInteractions();
+	{
+		if (_stopMove) return;
+		_playerMovement.ManageMove();
+		_playerCamera.ManageRotate();
+		_playerWeapon.ManageGun();
+		_playerInteractions.CheckForInteractions();
+	}
 
-		}
-    }
+	private void GetPlayerScripts()
+	{
+		_playerMovement = GetComponent<PlayerMovement>();
+		_playerCamera = GetComponent<PlayerCamera>();
+		_playerWeapon = GetComponent<PlayerWeaponController>();
+		_playerInteractions = GetComponent<PlayerInteractions>();
+	}
 }

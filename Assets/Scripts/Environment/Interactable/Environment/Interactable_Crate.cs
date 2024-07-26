@@ -22,7 +22,7 @@ public class Interactable_Crate : Interactable
             foreach (var item in _randomItemDrop.Items)
                 if (luck <= item.Chance)
                 {
-                    ObjectPool.Instance.GetObject(transform.position, item.Item);
+                    ObjectPool.Instance.GetObject(_itemTransform.position, item.Item);
                     break;
                 }
         }
@@ -31,4 +31,3 @@ public class Interactable_Crate : Interactable
         _shatterObj.SetActive(true);
     }
 }
-//GameObject spawnedItem = ObjectPool.Instance.GetHealthPotion(_itemTransform.position);

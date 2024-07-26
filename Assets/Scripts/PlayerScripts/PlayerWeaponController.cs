@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class PlayerWeaponController : MonoBehaviour
+public class PlayerWeaponController : MonoBehaviour, IInputHandler
 {
 	[SerializeField] private Weapons _currentWeapon;
 	[SerializeField] private Transform _weaponHolder;
@@ -14,6 +14,7 @@ public class PlayerWeaponController : MonoBehaviour
 	private Dictionary<string, Weapons> _weapons;
 	private string[] _weaponNames;
 	private int _weaponIndex, _oldWeaponIndex = -1;
+
 
 	private void Awake()
 	{
@@ -77,7 +78,6 @@ public class PlayerWeaponController : MonoBehaviour
 	}
 	public void SelectWeapon(int index)
 	{
-		Debug.Log("OLD: " + _oldWeaponIndex + " INPUT: " + index);
 		if (_oldWeaponIndex == index) return;
 		_weaponIndex = index;
 		ChangeWeapon();
@@ -97,5 +97,13 @@ public class PlayerWeaponController : MonoBehaviour
 
 	}
 
+	public void OnInputEnable(ControlSchema schema)
+	{
 
+	}
+
+	public void OnInputDisable()
+	{
+
+	}
 }

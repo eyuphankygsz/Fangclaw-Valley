@@ -19,7 +19,7 @@ public class ObjectPool : MonoBehaviour
 			return;
 		}
 		Instance = this;
-
+		DontDestroyOnLoad(this);
 
 		foreach (var item in _poolItems)
 			_itemPools.Add(item.Item, CreateItems(item.Item, item.INITIAL_COUNT));

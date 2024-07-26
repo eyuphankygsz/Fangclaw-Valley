@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class PlayerInteractions : MonoBehaviour
+public class PlayerInteractions : MonoBehaviour, IInputHandler
 {
 	[SerializeField]
 	private float _rayLength;
@@ -21,36 +23,50 @@ public class PlayerInteractions : MonoBehaviour
 
 	private bool _canInteract;
 
+	private GameObject _interactableObject;
+	private ControlSchema _controls;
+
 	private void Awake()
 	{
 		_camera = Camera.main.transform;
 	}
-	public void CheckForInteractions()
+	
+	public void OnInputEnable(ControlSchema schema)
 	{
-		if (Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit, _rayLength, _interactableLayers))
-		{
-			SetInteractCross(true);
-			if (Input.GetKeyDown(KeyCode.E))
-			{
-				var _hitObject = hit.collider.gameObject.GetComponent<Interactable>();
-				_hitObject.OnInteract(Enum_Weapons.Hands);
-			}
-		}
-		else
-			SetInteractCross(false);
+		Debug.Log("Controls Setting...");
+		_controls = schema;
+		_controls.Player.Interaction.performed += TryInteract;
 	}
 
+	public void OnInputDisable()
+	{
+		_controls.Player.Interaction.performed -= TryInteract;
+	}
+
+
+	public void TryInteract(InputAction.CallbackContext ctx)
+	{
+		if (ctx.performed && _interactableObject != null)
+		{
+			var _hitObject = _interactableObject.GetComponent<Interactable>();
+			_hitObject.OnInteract(Enum_Weapons.Hands);
+		}
+	}
+
+
+	public void CheckForInteractions()
+	{
+		bool isFound = Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit, _rayLength, _interactableLayers);
+		_interactableObject = isFound ? hit.collider.gameObject : null;
+		SetInteractCross(isFound);
+	}
 	private void SetInteractCross(bool changeCross)
 	{
-
 		if (changeCross && !_canInteract)
-		{
 			_cross.sprite = _interactionSprite;
-		}
 		else if (!changeCross && _canInteract)
-		{
 			_cross.sprite = _weaponCross;
-		}
+
 		_canInteract = changeCross;
 	}
 	private void OnDrawGizmos()
@@ -63,4 +79,10 @@ public class PlayerInteractions : MonoBehaviour
 	{
 		_weaponCross = cross;
 	}
+	public void StopInteractions(bool stop)
+	{
+		_interactableObject = null;
+		_cross.gameObject.SetActive(!stop);
+	}
+
 }
