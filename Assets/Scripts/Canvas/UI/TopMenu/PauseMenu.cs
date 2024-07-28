@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -29,75 +30,74 @@ public class PauseMenu : MonoBehaviour
 
 	public void ChangeMenu(string menuName)
 	{
-		DropOldSection();
-		SelectSection(_sections[menuName]);
+		SelectSection(_sections[menuName], true);
 	}
 
-	private void SelectSection(TopSections section)
+	private void SelectSection(TopSections section, bool byButtons)
 	{
-		Setup(section);
-
 		foreach (var item in _sections)
+			UnSelectTitle(item.Value);
+
+		if (!byButtons && _content.activeSelf && section.SectionName == "Main Menu")
 		{
-			item.Value.Section.SetActive(false);
-			SetOldSection(item.Value, drop: true);
+			_content.SetActive(false);
+			_oldSection = null;
+			SetGameSettings(move: true);
+			SetMouse(visible: false);
+			return;
 		}
 
+		SelectTitle(section);
+		SetupSection(section);
+
+	}
+	private void SetupSection(TopSections section)
+	{
+		bool same = section == _oldSection;
+
+		if (_oldSection != null)
+			_oldSection.Section.SetActive(same);
+		_oldSection = section;
+
+		section.Section.SetActive(!same);
+
+		SetMouse(visible: !same);
+		_content.SetActive(!same);
+
+		if (same)
+			_oldSection = null;
+
+		SetGameSettings(same);
+	}
+	private void SetGameSettings(bool move)
+	{
+		PlayerController.Instance.StopMove = !move;
+		Time.timeScale = move == true ? 1 : 0;
+	}
+
+	private void UnSelectTitle(TopSections section)
+	{
+		section.Section.SetActive(false);
+		section.TitleObject.color = _unSelected;
+		section.TitleObject.fontStyle = FontStyles.Normal;
+	}
+	private void SelectTitle(TopSections section)
+	{
 		section.Section.SetActive(true);
-		SetOldSection(section, drop: false);
-	}
-	private void Setup(TopSections selectedSection)
-	{
-		if (selectedSection == _oldSection || _oldSection == null)
-		{
-			SetMouse();
-			_content.SetActive(!_content.activeSelf);
-			PlayerController.Instance.StopMove = _content.activeSelf;
-			Time.timeScale = Time.timeScale == 1 ? 0 : 1;
-		}
-
-	}
-	private void DropOldSection()
-	{
-		if (_oldSection == null) return;
-		SetOldSection(null, drop: true);
+		section.TitleObject.color = _selected;
+		section.TitleObject.fontStyle = FontStyles.Bold;
 	}
 
-	private void SetOldSection(TopSections section, bool drop)
+	private void SetMouse(bool visible)
 	{
-		if (section != null) _oldSection = section;
-
-
-		if (drop)
-		{
-			_oldSection.TitleObject.color = _unSelected;
-			_oldSection.TitleObject.fontStyle = FontStyles.Normal;
-		}
-		else
-		{
-			_oldSection.TitleObject.color = _selected;
-			_oldSection.TitleObject.fontStyle = FontStyles.Bold;
-		}
-	}
-
-	private void SetMouse()
-	{
-		if (Cursor.lockState == CursorLockMode.Locked)
-		{
-			Cursor.lockState = CursorLockMode.None;
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
-		}
+		Cursor.lockState = visible ? CursorLockMode.None : CursorLockMode.Locked;
+		Cursor.visible = visible;
 	}
 	private void SetControls(ControlSchema controls)
 	{
-		controls.UI.Inventory.performed += ctx => SelectSection(_sections["Inventory"]);
-		controls.UI.PauseMenu.performed += ctx => SelectSection(_sections["Main Menu"]);
-		controls.UI.Settings.performed += ctx => SelectSection(_sections["Settings"]);
+		controls.UI.Inventory.performed += ctx => SelectSection(_sections["Inventory"], false);
+		controls.UI.PauseMenu.performed += ctx => SelectSection(_sections["Main Menu"], false);
+		controls.UI.Settings.performed += ctx => SelectSection(_sections["Settings"], false);
 	}
 
 }

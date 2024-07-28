@@ -1930,6 +1930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b6a4604421c5749be1f35485f3e693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <ObjectName>k__BackingField: Crate
+  <InteractableName>k__BackingField: 
+  IsActive: 0
   _includedWeapons: 0000000002000000
   _originalObj: {fileID: 4246479512675414296}
   _shatterObj: {fileID: 1617930924785808043}

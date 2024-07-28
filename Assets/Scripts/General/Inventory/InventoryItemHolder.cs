@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryItemHolder : MonoBehaviour
 {
@@ -19,10 +20,13 @@ public class InventoryItemHolder : MonoBehaviour
 		Item = item;
 		MaxQuantity = item.StackQuantity;
 		Quantity = quantity;
+
+		GetComponent<Image>().sprite = item.ItemSprite;
+		GetComponent<Button>().onClick.AddListener(OnSelect);
 	}
 	public void OnSelect()
 	{
-
+		InventoryManager.Instance.SelectItem(this);
 	}
 	public void AddQuantity(int quantity)
 	{

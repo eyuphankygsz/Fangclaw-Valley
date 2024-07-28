@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -11,10 +13,19 @@ public class InventoryManager : MonoBehaviour
 	private GameObject _itemHolderPrefab;
 	[SerializeField]
 	private Transform _itemHolderTransform;
+
 	[SerializeField]
 	private List<InventoryItem> _allItems;
 
 	private List<InventoryItemHolder> _itemHoldersList = new List<InventoryItemHolder>();
+
+
+	[SerializeField]
+	private Image _itemPicture;
+	[SerializeField]
+	private TextMeshProUGUI _itemTitle;
+	[SerializeField]
+	private TextMeshProUGUI _itemDescription;
 
 	private void Awake()
 	{
@@ -23,9 +34,14 @@ public class InventoryManager : MonoBehaviour
 
 	public void Start()
 	{
-		LoadItems();
+		Load();
 	}
 
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.K))
+			SaveManager.Instance.SaveGame();
+	}
 
 	public void AddItemToInventory(InventoryItem item, int quantity)
 	{
@@ -41,47 +57,57 @@ public class InventoryManager : MonoBehaviour
 
 			int addedQuantity = Mathf.Clamp(leftOvers, 0, leftSpace);
 			holder.AddQuantity(addedQuantity);
+
 			leftOvers -= addedQuantity;
 
 			if (leftOvers > 0 && index == itemHolders.Count)
 				itemHolders.Add(CreateItemHolder(item));
 
+
 		}
 	}
-	public void SaveItems()
+	public void RemoveItemFromInventory(InventoryItem item)
 	{
-		InventoryData data = new InventoryData
-		{
-			Items = _itemHoldersList.Select(holder =>
-									 new InventoryDataItem
-									 {
-										 ItemName = holder.Item.ItemName,
-										 Quantity = holder.Quantity
-									 })
-								   .ToList()
-		};
-
-		string json = JsonUtility.ToJson(data, true);
-		File.WriteAllText(Application.persistentDataPath + "/inventory.json", json);
+		InventoryItemHolder holder = _itemHoldersList
+										 .Where(h => h.Item == item)
+										 .OrderBy(h => h.Quantity)
+										 .FirstOrDefault();
+		_itemHoldersList.Remove(holder);
+		Destroy(holder.gameObject);
 	}
-	public void LoadItems()
+	public InventoryItem GetItem(string itemName, int quantity)
 	{
-		string path = Application.persistentDataPath + "/inventory.json";
-		if (File.Exists(path))
-		{
-			string json = File.ReadAllText(path);
-			InventoryData data = JsonUtility.FromJson<InventoryData>(json);
+		return _itemHoldersList
+				   .Where(holder =>
+					   holder.Item.ItemName == itemName)
+				   .Select(holder => holder.Item)
+				   .FirstOrDefault();
+	}
+	public void SelectItem(InventoryItemHolder holder)
+	{
+		_itemTitle.text = holder.Item.ItemName;
+		_itemPicture.sprite = holder.Item.ItemSprite;
+		_itemPicture.enabled = true;
+		_itemDescription.text = holder.Item.ItemDescription;
+	}
+	public void Load()
+	{
+		InventoryData data = (InventoryData)SaveManager.Instance.GetData(null, SaveType.Inventory);
+		if (data == null) 
+			return;
 
-			foreach (var itemData in data.Items)
-			{
-				InventoryItem item = FindItemByName(itemData.ItemName);
-				if (item != null)
-					AddItemToInventory(item, itemData.Quantity);
-			}
+		foreach (var itemData in data.Items)
+		{
+			InventoryItem item = FindItemByName(itemData.ItemName);
+			if (item != null)
+				AddItemToInventory(item, itemData.Quantity);
 		}
 	}
 
-
+	public List<InventoryItemHolder> GetHolders()
+	{
+		return _itemHoldersList;
+	}
 	private List<InventoryItemHolder> GetInventoryHolders(InventoryItem item)
 	{
 		var itemHolder = _itemHoldersList

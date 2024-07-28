@@ -57,7 +57,6 @@ public class InputManager : MonoBehaviour
 	private void SaveBinding(InputAction action, int bindingIndex, string bindingPath)
 	{
 		string key = $"{action.actionMap.name}/{action.name}/{bindingIndex}";
-		Debug.Log("SAVED: " + key);
 		PlayerPrefs.SetString(key, bindingPath);
 		PlayerPrefs.Save();
 	}

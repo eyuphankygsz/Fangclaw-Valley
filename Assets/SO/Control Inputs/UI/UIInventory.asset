@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ActionName: UI/Inventory
   InputIndex: 0
-  DefaultValue: <Keyboard>/i
+  DefaultValue: <Keyboard>/tab

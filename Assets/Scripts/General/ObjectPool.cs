@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
@@ -25,14 +26,20 @@ public class ObjectPool : MonoBehaviour
 			_itemPools.Add(item.Item, CreateItems(item.Item, item.INITIAL_COUNT));
 	}
 
-
-	private List<GameObject> CreateItems(GameObject item, int itemCount)
+	private void Start()
 	{
-		List<GameObject> items = new List<GameObject>();
-		for (int i = 0; i < itemCount; i++)
-			items.Add(CreateItem(item));
-		return items;
+		SaveManager.Instance.LoadSecondary();
 	}
+
+	public GameObject SetupCrateItem(CrateItem crateItem)
+	{
+        foreach (var item in _itemPools)
+        {
+			if (item.Key.GetComponent<Interactable>().InteractableName == crateItem.ItemName)
+				return GetObject(crateItem.Position, item.Key);
+        }
+		return null;
+    }
 
 	public GameObject GetObject(Vector3 pos, GameObject wantedObject)
 	{
@@ -43,6 +50,13 @@ public class ObjectPool : MonoBehaviour
 		GameObject newItem = CreateItem(wantedObject);
 		_itemPools[wantedObject].Add(newItem);
 		return ActivateItem(newItem, pos);
+	}
+	private List<GameObject> CreateItems(GameObject item, int itemCount)
+	{
+		List<GameObject> items = new List<GameObject>();
+		for (int i = 0; i < itemCount; i++)
+			items.Add(CreateItem(item));
+		return items;
 	}
 
 	private GameObject CreateItem(GameObject original)

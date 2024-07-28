@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -18,19 +19,39 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	[SerializeField]
 	private Image _cross;
 	[SerializeField]
+	private TextMeshProUGUI _interactText;
+
+
+	[SerializeField]
 	private Sprite _interactionSprite;
 	private Sprite _weaponCross;
-
 	private bool _canInteract;
 
-	private GameObject _interactableObject;
+	private Interactable _interactableObject;
+	private Interactable _oldInteractable;
 	private ControlSchema _controls;
+
+
+	private bool _stop;
+
+	private bool Stop
+	{
+		get => _stop;
+		set
+		{
+			if(value != _stop || _oldInteractable != _interactableObject)
+			{
+				SetInteractCross(value);
+			}
+			_stop = value;
+		}
+	}
 
 	private void Awake()
 	{
 		_camera = Camera.main.transform;
 	}
-	
+
 	public void OnInputEnable(ControlSchema schema)
 	{
 		Debug.Log("Controls Setting...");
@@ -57,15 +78,23 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	public void CheckForInteractions()
 	{
 		bool isFound = Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit, _rayLength, _interactableLayers);
-		_interactableObject = isFound ? hit.collider.gameObject : null;
-		SetInteractCross(isFound);
+		_interactableObject = isFound ? hit.collider.gameObject.GetComponent<Interactable>() : null;
+		
+		Stop = isFound;
+		_oldInteractable = _interactableObject;
 	}
 	private void SetInteractCross(bool changeCross)
 	{
-		if (changeCross && !_canInteract)
+		if (changeCross)
+		{
 			_cross.sprite = _interactionSprite;
-		else if (!changeCross && _canInteract)
+			_interactText.text = _interactableObject.ObjectName;
+		}
+		else
+		{
 			_cross.sprite = _weaponCross;
+			_interactText.text = "";
+		}
 
 		_canInteract = changeCross;
 	}
@@ -82,7 +111,8 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	public void StopInteractions(bool stop)
 	{
 		_interactableObject = null;
-		_cross.gameObject.SetActive(!stop);
+		_cross.gameObject.SetActive(!stop); 
+		_interactText.text = "";
 	}
 
 }

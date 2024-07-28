@@ -225,6 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e2c2cd0cdf3a5b4ab0896650d5db79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <ObjectName>k__BackingField: Chest
+  <InteractableName>k__BackingField: 
+  IsActive: 0
   _includedWeapons: 
   _lockKey:
     _locked: 1

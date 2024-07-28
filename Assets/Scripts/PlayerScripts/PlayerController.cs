@@ -28,7 +28,18 @@ public class PlayerController : MonoBehaviour
 		Instance = this;
 		GetPlayerScripts();
 	}
+	private void Start()
+	{
+		Load();
+	}
+	private void Load() 
+	{
+		PlayerData data = (PlayerData)SaveManager.Instance.GetData(null,SaveType.Player);
+		if (data == null)
+			return;
 
+		transform.position = data.Position;
+	}
 
 	void Update()
 	{

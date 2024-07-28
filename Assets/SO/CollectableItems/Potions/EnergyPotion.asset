@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
+  m_Name: EnergyPotion
+  m_EditorClassIdentifier: 
+  ItemName: Energy Potion
+  ItemDescription: It smells weird. But even when I hold it with my bare hands, I
+    feel strange power...
+  ItemSprite: {fileID: 0}
+  StackQuantity: 3
+  OneTime: 1

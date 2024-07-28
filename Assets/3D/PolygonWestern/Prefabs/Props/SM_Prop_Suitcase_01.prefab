@@ -225,8 +225,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e2c2cd0cdf3a5b4ab0896650d5db79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <ObjectName>k__BackingField: Suitcase
+  <InteractableName>k__BackingField: 
+  IsActive: 0
   _includedWeapons: 
-  _locked: 0
+  _lockKey:
+    _locked: 0
+    _keyName: 
   _isOn: 0
 --- !u!95 &143348045598477300
 Animator:
