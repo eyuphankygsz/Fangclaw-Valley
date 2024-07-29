@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -34,6 +35,8 @@ public class SaveManager
 	private readonly string _crateItemsDataPath = Path.Combine(Application.persistentDataPath, "crateitems.json");
 
 
+	private Coroutine _saveRoutine;
+
 	private void Setup()
 	{
 		Debug.Log(_crateItemsDataPath);
@@ -49,18 +52,32 @@ public class SaveManager
 		_crateItems.Add(item);
 	}
 
-	public void SaveGame()
+	private void PauseGame(bool stop)
 	{
+		PauseMenu.Instance.LoadingScreen.SetActive(stop);
+		PlayerController.Instance.StopMove = stop;
+		Time.timeScale = stop ? 0 : 1;
+	}
+	public IEnumerator SaveGame(System.Action onComplete)
+	{
+		PauseGame(true);
 		SaveInteractables();
 		SavePlayer();
 		SaveInventory();
 		SaveCrateItems();
+		yield return new WaitForSecondsRealtime(1);
+		PauseGame(false);
+		onComplete?.Invoke();
 	}
 	private void SaveInteractables()
 	{
 		_savedInteractables.Clear();
 		foreach (Interactable item in _interactables)
-			_savedInteractables.Add(item.SaveData());
+		{
+			InteractableData data = item.SaveData();
+			if (data != null)
+				_savedInteractables.Add(item.SaveData());
+		}
 
 		List<string> jsonDataList = new List<string>();
 
@@ -210,13 +227,13 @@ public class SaveManager
 			string json = File.ReadAllText(_crateItemsDataPath);
 			_crateItemsData = JsonUtility.FromJson<CrateItemsData>(json);
 
-            foreach (var item in _crateItemsData.Items)
-            {
+			foreach (var item in _crateItemsData.Items)
+			{
 				if (item.Taken) continue;
 				GameObject crateItem = ObjectPool.Instance.SetupCrateItem(item);
 				_crateItems.Add(crateItem.GetComponent<Interactable>());
-            }
-        }
+			}
+		}
 	}
 	public object GetData(string itemName, SaveType type)
 	{

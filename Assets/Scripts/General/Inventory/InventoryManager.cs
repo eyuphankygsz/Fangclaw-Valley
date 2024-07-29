@@ -37,11 +37,6 @@ public class InventoryManager : MonoBehaviour
 		Load();
 	}
 
-	private void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.K))
-			SaveManager.Instance.SaveGame();
-	}
 
 	public void AddItemToInventory(InventoryItem item, int quantity)
 	{

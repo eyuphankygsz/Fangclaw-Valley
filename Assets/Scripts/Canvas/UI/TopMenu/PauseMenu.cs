@@ -2,23 +2,30 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class PauseMenu : MonoBehaviour
 {
+	public static PauseMenu Instance;
 	[SerializeField]
 	private Color _unSelected, _selected;
 
 	[SerializeField]
 	private SectionDict _sectionDict;
 
+	[field: SerializeField]
+	public GameObject LoadingScreen { get; private set; }
+
 	private Dictionary<string, TopSections> _sections;
 	private TopSections _oldSection;
 
 	private GameObject _content;
 
+	
+
 	private void Awake()
 	{
+		Instance = this;
+
 		_content = transform.GetChild(0).gameObject;
 		_content.SetActive(false);
 	}
