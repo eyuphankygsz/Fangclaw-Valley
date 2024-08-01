@@ -1,49 +1,54 @@
 using System;
 using UnityEngine;
+using Zenject;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, ISaveable
 {
-	public static PlayerController Instance;
-
-	[SerializeField]
-	private bool _stopMove;
-	public bool StopMove
-	{
-		get => _stopMove;
-		set
-		{
-			_stopMove = value;
-			_playerInteractions.StopInteractions(value);
-		}
-	}
 
 	private PlayerMovement _playerMovement;
 	private PlayerCamera _playerCamera;
 	private PlayerWeaponController _playerWeapon;
 	private PlayerInteractions _playerInteractions;
 
+	private PlayerData _data = new PlayerData();
 
-	private void Awake()
+	[Inject]
+	private GameManager _gameManager;
+	[Inject]
+	private SaveManager _saveManager;
+	[Inject]
+	private InputManager _inputManager;
+
+	private bool _freeze;
+
+
+	private void GameFreeze(bool freeze)
 	{
-		Instance = this;
-		GetPlayerScripts();
+		_freeze = freeze;
+		_playerInteractions.StopInteractions(freeze);
 	}
 	private void Start()
 	{
+		_gameManager.OnPauseGame += GameFreeze;
+		_saveManager.AddSaveableObject(gameObject, _data);
+		_inputManager.Setup(this);
+		GetPlayerScripts();
 		Load();
 	}
-	private void Load() 
+	private void Load()
 	{
-		PlayerData data = (PlayerData)SaveManager.Instance.GetData(null,SaveType.Player);
+		PlayerData data = _saveManager.GetData<PlayerData>("");
+
 		if (data == null)
 			return;
 
 		transform.position = data.Position;
+		transform.rotation = data.Rotation;
 	}
 
 	void Update()
 	{
-		if (_stopMove) return;
+		if (_freeze) return;
 		_playerMovement.ManageMove();
 		_playerCamera.ManageRotate();
 		_playerWeapon.ManageGun();
@@ -56,5 +61,22 @@ public class PlayerController : MonoBehaviour
 		_playerCamera = GetComponent<PlayerCamera>();
 		_playerWeapon = GetComponent<PlayerWeaponController>();
 		_playerInteractions = GetComponent<PlayerInteractions>();
+	}
+
+	public GameData GetSaveFile()
+	{
+		Vector3 pos = transform.position;
+		_data = new PlayerData()
+		{
+			Name = "",
+			Position = pos,
+			Rotation = transform.rotation
+		};
+		return _data;
+	}
+
+	public void SetLoadFile()
+	{
+		throw new NotImplementedException();
 	}
 }

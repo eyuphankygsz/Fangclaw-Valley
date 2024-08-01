@@ -1,8 +1,11 @@
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
+using Zenject;
 
 public class Interactable_HingedObjects : Interactable
 {
+	[Inject]
+	InventoryManager _inventoryManager;
+	
 	[SerializeField]
 	private LockKey _lockKey;
 
@@ -11,14 +14,18 @@ public class Interactable_HingedObjects : Interactable
 	private bool _animating;
 	private Animator _animator;
 
+	private HingedData _data = new HingedData();
+
 	private void Awake()
 	{
-		base.Awake();
 		_animator = GetComponent<Animator>();
+		base.Awake();
 
 	}
 	public override void OnInteract(Enum_Weapons weapon)
 	{
+		base.OnInteract(weapon);
+
 		if (IsLocked() || _animating) return;
 
 		SetDoorState(!_isOn);
@@ -32,11 +39,11 @@ public class Interactable_HingedObjects : Interactable
 	{
 		if (_lockKey.Locked)
 		{
-			var item = InventoryManager.Instance.GetItem(_lockKey.KeyName, 1);
+			var item = _inventoryManager.GetItem(_lockKey.KeyName, 1);
 			if (item != null)
 			{
 				_lockKey.Locked = false;
-				InventoryManager.Instance.RemoveItemFromInventory(item);
+				_inventoryManager.RemoveItemFromInventory(item);
 				return false;
 			}
 			return true;
@@ -44,25 +51,23 @@ public class Interactable_HingedObjects : Interactable
 
 		return false;
 	}
-	public override InteractableData SaveData()
+	public override GameData GetGameData()
 	{
-		return new HingedData
+		_data = new HingedData
 		{
-			InteractableName = InteractableName,
-			Position = transform.position,
-			IsActive = gameObject.activeSelf,
-			IsOn = _isOn,
-			IsLocked = _lockKey.Locked
+			Name = InteractableName,
+			IsLocked = _lockKey.Locked,
+			IsOn = _isOn
 		};
+		return _data;
 	}
 
 	public override void LoadData()
 	{
-		HingedData data = (HingedData)SaveManager.Instance.GetData(InteractableName, SaveType.Hinged);
+		HingedData data = _saveManager.GetData<HingedData>(InteractableName);
 		if (data == null) return;
+		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 
-		transform.position = data.Position;
-		gameObject.SetActive(data.IsActive);
 		_isOn = data.IsOn;
 		_lockKey.Locked = data.IsLocked;
 		// Assume you have a method to set the door state directly based on _isOn

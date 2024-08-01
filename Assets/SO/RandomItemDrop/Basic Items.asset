@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Basic Items
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 179546, guid: 64ddb092e43004748953d504e21df76e, type: 3}
+  - Item: {fileID: 11400000, guid: dc937fddc80751c4da635fad7ab79614, type: 2}
     Chance: 0.4
-  - Item: {fileID: 131654, guid: ace0bec95f69ee4408881b94beec4447, type: 3}
+  - Item: {fileID: 11400000, guid: 7dab9301150b25646825109465e4cb4b, type: 2}
     Chance: 0.8

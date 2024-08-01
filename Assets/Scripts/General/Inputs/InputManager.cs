@@ -2,33 +2,31 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Windows;
+using Zenject;
 
-public class InputManager : MonoBehaviour
+public class InputManager : IInitializable
 {
-	public static InputManager Instance { get; private set; }
 
 	public ControlSchema Controls { get; private set; }
 
-	[SerializeField]
-	private GameObject _player;
+	private PlayerController _player;
 
-	private void Awake()
+	public void Initialize()
 	{
-		Instance = this;
 		Controls = new ControlSchema();
 		LoadBindings();
 	}
 
-	private void OnEnable()
+	public void Setup(PlayerController playerObject)
 	{
+		_player = playerObject;
 		foreach (var item in _player.GetComponents<IInputHandler>())
 			item.OnInputEnable(Controls);
 
 		Controls.Enable();
 	}
 
-	private void OnDisable()
+	private void Desetup()
 	{
 		if (_player != null)
 			foreach (var item in _player.GetComponents<IInputHandler>())
@@ -107,5 +105,6 @@ public class InputManager : MonoBehaviour
 		=> action.bindings[index].effectivePath;
 	private string GetReadableBinding(string binding)
 		=> InputControlPath.ToHumanReadableString(binding, InputControlPath.HumanReadableStringOptions.OmitDevice);
+
 
 }

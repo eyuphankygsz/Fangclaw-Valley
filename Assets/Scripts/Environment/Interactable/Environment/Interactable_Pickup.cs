@@ -1,37 +1,64 @@
 using UnityEngine;
+using Zenject;
 
 public class Interactable_Pickup : Interactable
 {
+	[Inject]
+	private InventoryManager _inventoryManager;
+
+
+	public bool IsCrateItem;
+
 	[field: SerializeField]
-	public InventoryItem Item { get; private set; }
+	public InventoryItem Item { get; set; }
 	[SerializeField]
 	private int _quantity;
 
+	private PickupData _pickupData = new PickupData();
+	private CrateItem _crateItemData = new CrateItem();
+
 	public override void OnInteract(Enum_Weapons weapon)
 	{
-		InventoryManager.Instance.AddItemToInventory(Item, _quantity);
+		base.OnInteract(weapon);
+
+		_inventoryManager.AddItemToInventory(Item, _quantity);
 		gameObject.SetActive(false);
+
 	}
 
-	public override InteractableData SaveData()
+	public override GameData GetGameData()
 	{
-		return new PickupData
+		Vector3 pos = transform.position;
+		if (IsCrateItem)
 		{
-			InteractableName = InteractableName,
-			Position = transform.position,
-			IsActive = gameObject.activeSelf,
-			IsPickedUp = !gameObject.activeSelf
-		};
+			_crateItemData = new CrateItem
+			{
+				Name = InteractableName,
+				Position = pos,
+				Taken = !gameObject.activeSelf,
+			};
+			return _crateItemData;
+		}
+		else
+		{
+			_pickupData = new PickupData
+			{
+				Name = InteractableName,
+				IsPickedUp = !gameObject.activeSelf,
+			};
+			return _pickupData;
+		}
 	}
 
 	public override void LoadData()
 	{
-		PickupData data = (PickupData)SaveManager.Instance.GetData(InteractableName, SaveType.Pickup);
-		if (data == null) return;
+		if (!IsCrateItem)
+		{
+			PickupData data = _saveManager.GetData<PickupData>(InteractableName);
+			if (data == null) return;
 
-		transform.position = data.Position;
-		gameObject.SetActive(data.IsActive);
+			gameObject.SetActive(!data.IsPickedUp);
+		}
+		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 	}
-
-
 }

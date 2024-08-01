@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactable_Save : Interactable
@@ -12,6 +11,7 @@ public class Interactable_Save : Interactable
 
 	public override void OnInteract(Enum_Weapons weapon)
 	{
+		base.OnInteract(weapon);
 		if (_saveRoutine != null) return;
 
 		_saveRoutine = StartCoroutine(SaveGameRoutine());
@@ -19,13 +19,13 @@ public class Interactable_Save : Interactable
 
 	private IEnumerator SaveGameRoutine()
 	{
-		yield return SaveManager.Instance.SaveGame(OnSaveComplete);
+		yield return _saveManager.SaveGame(OnSaveComplete);
 	}
 	private void OnSaveComplete()
 	{
 		_saveRoutine = null;
 	}
-	public override InteractableData SaveData()
+	public override GameData GetGameData()
 	{
 		return null;
 	}

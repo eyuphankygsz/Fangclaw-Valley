@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
   m_Name: HealthPotion
   m_EditorClassIdentifier: 
-  ItemName: Energy Potion
+  ItemName: Health Potion
   ItemDescription: It smells weird. But even when I hold it with my bare hands, I
     feel strange power...
-  ItemSprite: {fileID: 0}
+  ItemSprite: {fileID: 21300000, guid: cac7a24970b232141bfcde9093f757f2, type: 3}
   StackQuantity: 3
   OneTime: 1

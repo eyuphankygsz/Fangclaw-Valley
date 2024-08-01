@@ -1,23 +1,34 @@
 using UnityEngine;
+using Zenject;
 
-public abstract class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour, ISaveable
 {
 	[field: SerializeField]
 	public string ObjectName { get; protected set; }
 
 	[field: SerializeField]
-    public string InteractableName { get; protected set; }
-    public bool IsActive;
-    
-    [SerializeField] protected Enum_Weapons[] _includedWeapons;
-    
-    public abstract void OnInteract(Enum_Weapons weapon);
-	public abstract InteractableData SaveData();
-	public abstract void LoadData();
+	public string InteractableName { get; protected set; }
+	public bool IsActive;
 
+
+	[SerializeField] protected Enum_Weapons[] _includedWeapons;
+
+	[Inject]
+	protected SaveManager _saveManager;
+	public virtual void OnInteract(Enum_Weapons weapon)
+	{
+		if (!_saveManager.HasItem(gameObject, GetSaveFile()))
+			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+	}
+	public abstract GameData GetGameData();
+	public abstract void LoadData();
 	protected void Awake()
 	{
-		SaveManager.Instance.AddInteractable(this);
+		var x = GetSaveFile();
+		if (x == null)
+			return;
+
+		x.Name = InteractableName;
 	}
 	protected void Start()
 	{
@@ -25,10 +36,20 @@ public abstract class Interactable : MonoBehaviour
 	}
 
 	protected bool IsWeaponInclude(Enum_Weapons e)
-    {
-        for (int i = 0; i < _includedWeapons.Length; i++)
-            if (_includedWeapons[i] == e)
-                return true;
-        return false;
-    }
+	{
+		for (int i = 0; i < _includedWeapons.Length; i++)
+			if (_includedWeapons[i] == e)
+				return true;
+		return false;
+	}
+
+	public GameData GetSaveFile()
+	{
+		return GetGameData();
+	}
+
+	public void SetLoadFile()
+	{
+		return;
+	}
 }

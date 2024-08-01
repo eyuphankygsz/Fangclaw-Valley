@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class PauseMenu : MonoBehaviour
 {
-	public static PauseMenu Instance;
 	[SerializeField]
 	private Color _unSelected, _selected;
 
@@ -20,19 +20,26 @@ public class PauseMenu : MonoBehaviour
 
 	private GameObject _content;
 
-	
+	[Inject]
+	private InputManager _inputManager;
+	[Inject]
+	private GameManager _gameManager;
 
 	private void Awake()
 	{
-		Instance = this;
-
 		_content = transform.GetChild(0).gameObject;
 		_content.SetActive(false);
 	}
 	private void Start()
 	{
-		SetControls(InputManager.Instance.Controls);
+		_gameManager.OnSaveGame += SaveGame;
+		SetControls(_inputManager.Controls);
 		_sections = _sectionDict.ToDict();
+	}
+
+	private void SaveGame(bool freeze)
+	{
+		LoadingScreen.SetActive(freeze);
 	}
 
 	public void ChangeMenu(string menuName)
@@ -49,7 +56,7 @@ public class PauseMenu : MonoBehaviour
 		{
 			_content.SetActive(false);
 			_oldSection = null;
-			SetGameSettings(move: true);
+			_gameManager.SetPauseGame(false);
 			SetMouse(visible: false);
 			return;
 		}
@@ -74,12 +81,7 @@ public class PauseMenu : MonoBehaviour
 		if (same)
 			_oldSection = null;
 
-		SetGameSettings(same);
-	}
-	private void SetGameSettings(bool move)
-	{
-		PlayerController.Instance.StopMove = !move;
-		Time.timeScale = move == true ? 1 : 0;
+		_gameManager.SetPauseGame(!same);
 	}
 
 	private void UnSelectTitle(TopSections section)

@@ -15,6 +15,6 @@ MonoBehaviour:
   ItemName: Energy Potion
   ItemDescription: It smells weird. But even when I hold it with my bare hands, I
     feel strange power...
-  ItemSprite: {fileID: 0}
+  ItemSprite: {fileID: 21300000, guid: a1b09f93d13f5164c95dd5471bf57592, type: 3}
   StackQuantity: 3
   OneTime: 1

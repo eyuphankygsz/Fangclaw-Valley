@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class InputButton : MonoBehaviour
 {
@@ -10,12 +11,15 @@ public class InputButton : MonoBehaviour
 
 	[field: SerializeField]
 	public TextMeshProUGUI TMP { get; private set; }
+	
+	[Inject]
+	private InputManager _inputManager;
 	public void Start()
 	{
-		InputManager.Instance.SetButtonText(Input, TMP);
+		_inputManager.SetButtonText(Input, TMP);
 	}
 	public void ChangeKey()
 	{
-		InputManager.Instance.ChangeBinding(Input, TMP);
+		_inputManager.ChangeBinding(Input, TMP);
 	}
 }

@@ -1,278 +1,204 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-
-public class SaveManager
+using Newtonsoft.Json;
+using Zenject;
+using Newtonsoft.Json.Linq;
+public class SaveManager : IInitializable
 {
-	private static SaveManager _instance;
-	public static SaveManager Instance
-	{
-		get
-		{
-			if (_instance == null)
-			{
-				_instance = new SaveManager();
-				_instance.Setup();
-			}
+	[Inject]
+	private GameManager _gameManager;
+	private Dictionary<Type, List<GameData>> _savedData = new Dictionary<Type, List<GameData>>();
+	private Dictionary<Type, List<GameObject>> _saveableObjects = new Dictionary<Type, List<GameObject>>();
 
-			return _instance;
-		}
-	}
-
-	private List<Interactable> _interactables = new List<Interactable>();
-	private List<Interactable> _crateItems = new List<Interactable>();
-
-	private List<InteractableData> _savedInteractables = new List<InteractableData>();
-	private PlayerData _playerData;
-	private InventoryData _inventoryData;
-	private CrateItemsData _crateItemsData;
-
-	private readonly string _interactablesDataPath = Path.Combine(Application.persistentDataPath, "interactables.json");
-	private readonly string _playerDataPath = Path.Combine(Application.persistentDataPath, "player.json");
-	private readonly string _inventoryDataPath = Path.Combine(Application.persistentDataPath, "inventory.json");
-	private readonly string _crateItemsDataPath = Path.Combine(Application.persistentDataPath, "crateitems.json");
+	private readonly string _savePath = Path.Combine(Application.persistentDataPath, "save.json");
 
 
 	private Coroutine _saveRoutine;
 
+	private JsonSerializerSettings _jsonSettings;
+	public void Initialize()
+	{
+		Setup();
+	}
 	private void Setup()
 	{
-		Debug.Log(_crateItemsDataPath);
+		_jsonSettings = new JsonSerializerSettings
+		{
+			ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+			TypeNameHandling = TypeNameHandling.All,
+			Formatting = Formatting.Indented
+		};
 		Load();
 	}
 
-	public void AddInteractable(Interactable item)
-	{
-		_interactables.Add(item);
-	}
-	public void AddCrateItem(Interactable item)
-	{
-		_crateItems.Add(item);
-	}
 
+	public void AddSaveableObject(GameObject obj, GameData dataClass)
+	{
+		if (dataClass == null) return;
+		var dataType = dataClass.GetType();
+
+		if (!_saveableObjects.ContainsKey(dataType))
+			_saveableObjects.Add(dataType, new List<GameObject>());
+
+		_saveableObjects[dataType].Add(obj);
+
+	}
+	public bool HasItem(GameObject obj, GameData dataClass)
+	{
+		if (dataClass == null)
+			return true;
+		var dataType = dataClass.GetType();
+
+		if (!_saveableObjects.ContainsKey(dataType))
+			_saveableObjects.Add(dataType, new List<GameObject>());
+
+		return _saveableObjects[dataType].Any(x => x == obj);
+	}
 	private void PauseGame(bool stop)
 	{
-		PauseMenu.Instance.LoadingScreen.SetActive(stop);
-		PlayerController.Instance.StopMove = stop;
+		_gameManager.SetSaveGame(stop);
 		Time.timeScale = stop ? 0 : 1;
 	}
-	public IEnumerator SaveGame(System.Action onComplete)
+	public IEnumerator SaveGame(Action onComplete)
 	{
 		PauseGame(true);
-		SaveInteractables();
-		SavePlayer();
-		SaveInventory();
-		SaveCrateItems();
+		SaveData();
 		yield return new WaitForSecondsRealtime(1);
 		PauseGame(false);
 		onComplete?.Invoke();
 	}
-	private void SaveInteractables()
+	private void SaveData()
 	{
-		_savedInteractables.Clear();
-		foreach (Interactable item in _interactables)
+		_savedData.Clear();
+		foreach (var item in _saveableObjects)
 		{
-			InteractableData data = item.SaveData();
-			if (data != null)
-				_savedInteractables.Add(item.SaveData());
-		}
-
-		List<string> jsonDataList = new List<string>();
-
-
-		foreach (var interactable in _savedInteractables)
-		{
-			string jsonData = "";
-			if (interactable is PickupData)
+			var dataType = item.Key;
+			foreach (var saveableObj in item.Value)
 			{
-				jsonData = JsonUtility.ToJson((PickupData)interactable, true);
-			}
-			else if (interactable is HingedData)
-			{
-				jsonData = JsonUtility.ToJson((HingedData)interactable, true);
-			}
-			else if (interactable is CrateData)
-			{
-				jsonData = JsonUtility.ToJson((CrateData)interactable, true);
-			}
-			else
-			{
-				jsonData = JsonUtility.ToJson(interactable, true);
-			}
-
-			jsonDataList.Add(jsonData);
-		}
-
-		InteractableDataWrapper dataWrapper = new InteractableDataWrapper(jsonDataList);
-		string json = JsonUtility.ToJson(dataWrapper, true);
-		File.WriteAllText(_interactablesDataPath, json);
-	}
-	private void SavePlayer()
-	{
-		_playerData = null;
-
-		var player = PlayerController.Instance;
-		PlayerData data = new PlayerData
-		{
-			Position = player.transform.position,
-		};
-
-		var json = JsonUtility.ToJson(data, true);
-		File.WriteAllText(_playerDataPath, json);
-	}
-
-	private void SaveInventory()
-	{
-		List<InventoryItemHolder> holders = InventoryManager.Instance.GetHolders();
-		InventoryData data = new InventoryData
-		{
-			Items = holders.Select(holder =>
-									 new InventoryDataItem
-									 {
-										 ItemName = holder.Item.ItemName,
-										 Quantity = holder.Quantity
-									 })
-								   .ToList()
-		};
-
-		string json = JsonUtility.ToJson(data, true);
-		File.WriteAllText(_inventoryDataPath, json);
-	}
-	private void SaveCrateItems()
-	{
-		CrateItemsData data = new CrateItemsData
-		{
-			Items = _crateItems.Select(interactable =>
-										  new CrateItem
-										  {
-											  ItemName = interactable.InteractableName,
-											  Position = interactable.transform.position,
-											  Taken = !interactable.gameObject.activeSelf
-										  })
-							   .ToList()
-		};
-
-		string json = JsonUtility.ToJson(data, true);
-		File.WriteAllText(_crateItemsDataPath, json);
-	}
-	public void Load()
-	{
-		LoadInteractables();
-		LoadPlayer();
-		LoadInventory();
-	}
-	public void LoadSecondary()
-	{
-		LoadCrateItems();
-	}
-	private void LoadInteractables()
-	{
-		if (File.Exists(_interactablesDataPath))
-		{
-			string json = File.ReadAllText(_interactablesDataPath);
-			InteractableDataWrapper dataWrapper = JsonUtility.FromJson<InteractableDataWrapper>(json);
-			List<InteractableData> interactableDataList = new List<InteractableData>();
-
-			foreach (string jsonData in dataWrapper.JsonDataList)
-			{
-				InteractableData baseData = JsonUtility.FromJson<InteractableData>(jsonData);
-				if (jsonData.Contains("\"IsPickedUp\""))
+				if (saveableObj == null) continue;
+				var saveable = saveableObj.GetComponent<ISaveable>();
+				if (saveable != null)
 				{
-					PickupData pickupData = JsonUtility.FromJson<PickupData>(jsonData);
-					interactableDataList.Add(pickupData);
-				}
-				else if (jsonData.Contains("\"IsOn\""))
-				{
-					HingedData hingedData = JsonUtility.FromJson<HingedData>(jsonData);
-					interactableDataList.Add(hingedData);
-				}
-				else if (jsonData.Contains("\"IsShattered\""))
-				{
-					CrateData crateData = JsonUtility.FromJson<CrateData>(jsonData);
-					interactableDataList.Add(crateData);
-				}
-				else
-				{
-					interactableDataList.Add(baseData);
+					var data = saveable.GetSaveFile();
+					if (!_savedData.ContainsKey(dataType))
+						_savedData.Add(dataType, new List<GameData>());
+
+					_savedData[dataType].Add(data);
 				}
 			}
-
-			_savedInteractables = interactableDataList;
-		}
-	}
-	private void LoadPlayer()
-	{
-		if (File.Exists(_playerDataPath))
-		{
-			string json = File.ReadAllText(_playerDataPath);
-			_playerData = JsonUtility.FromJson<PlayerData>(json);
-		}
-	}
-	private InventoryData LoadInventory()
-	{
-		if (File.Exists(_inventoryDataPath))
-		{
-			string json = File.ReadAllText(_inventoryDataPath);
-			_inventoryData = JsonUtility.FromJson<InventoryData>(json);
 		}
 
-		return _inventoryData;
+		DataWrapper dataWrapper = new DataWrapper(_savedData);
+		string json = JsonConvert.SerializeObject(dataWrapper, _jsonSettings);
+		File.WriteAllText(_savePath, json);
 	}
-	private void LoadCrateItems()
-	{
-		if (File.Exists(_crateItemsDataPath) && ObjectPool.Instance != null)
-		{
-			string json = File.ReadAllText(_crateItemsDataPath);
-			_crateItemsData = JsonUtility.FromJson<CrateItemsData>(json);
 
-			foreach (var item in _crateItemsData.Items)
+	private void Load()
+	{
+		LoadData();
+	}
+	public List<CrateItem> CrateItems()
+	{
+		var list = GetDataList<CrateItem>();
+		return list;
+	}
+	private void LoadData()
+	{
+		if (File.Exists(_savePath))
+		{
+			string json = File.ReadAllText(_savePath);
+			DataWrapper dataWrapper = JsonConvert.DeserializeObject<DataWrapper>(json, _jsonSettings);
+
+			if (dataWrapper?.Entries == null)
+				return;
+
+			_savedData.Clear();
+			foreach (var entry in dataWrapper.Entries)
 			{
-				if (item.Taken) continue;
-				GameObject crateItem = ObjectPool.Instance.SetupCrateItem(item);
-				_crateItems.Add(crateItem.GetComponent<Interactable>());
+				var type = Type.GetType(entry.TypeName);
+				if (type != null)
+				{
+					_savedData[type] = entry.Data;
+				}
 			}
 		}
 	}
-	public object GetData(string itemName, SaveType type)
+
+
+	public T GetData<T>(string itemName) where T : GameData
 	{
-		switch (type)
-		{
-			case SaveType.Pickup:
-				return (PickupData)_savedInteractables.FirstOrDefault(idl => idl.InteractableName == itemName);
-			case SaveType.Hinged:
-				return (HingedData)_savedInteractables.FirstOrDefault(idl => idl.InteractableName == itemName);
-			case SaveType.Crate:
-				return (CrateData)_savedInteractables.FirstOrDefault(idl => idl.InteractableName == itemName);
-			case SaveType.Player:
-				return _playerData;
-			case SaveType.Inventory:
-				return _inventoryData;
-			default:
-				return _savedInteractables.FirstOrDefault(idl => idl.InteractableName == itemName);
-		}
+		var type = typeof(T);
+		if (!_savedData.ContainsKey(type)) return null;
+		List<GameData> dataSection = _savedData[type];
+
+		return dataSection
+				   .Where(data => data.Name == itemName)
+				   .FirstOrDefault() as T;
+	}
+	public List<T> GetDataList<T>() where T : GameData
+	{
+		var type = typeof(T);
+		if (!_savedData.ContainsKey(type))
+			return null;
+
+		var data = _savedData[type].OfType<T>().ToList();
+		return data;
 	}
 }
 
 
 [System.Serializable]
-public class InteractableDataWrapper
+public class DataWrapper
 {
-	public List<string> JsonDataList;
+	public List<DataEntry> Entries;
 
-	public InteractableDataWrapper(List<string> jsonDataList)
+	public DataWrapper(Dictionary<Type, List<GameData>> dataList)
 	{
-		JsonDataList = jsonDataList;
+		if (dataList == null)
+		{
+			Entries = new List<DataEntry>();
+			return;
+		}
+
+		Entries = dataList
+			.Select(entry => new DataEntry
+			{
+				TypeName = entry.Key.AssemblyQualifiedName,
+				Data = entry.Value
+			}).ToList();
+	}
+
+	[System.Serializable]
+	public class DataEntry
+	{
+		public string TypeName;
+		public List<GameData> Data;
 	}
 }
 
-
-public enum SaveType
+public class Vector3Converter : JsonConverter<Vector3>
 {
-	Pickup,
-	Hinged,
-	Crate,
-	Player,
-	Inventory
+	public override void WriteJson(JsonWriter writer, Vector3 value, JsonSerializer serializer)
+	{
+		writer.WriteStartObject();
+		writer.WritePropertyName("x");
+		writer.WriteValue(value.x);
+		writer.WritePropertyName("y");
+		writer.WriteValue(value.y);
+		writer.WritePropertyName("z");
+		writer.WriteValue(value.z);
+		writer.WriteEndObject();
+	}
+	public override Vector3 ReadJson(JsonReader reader, Type objectType, Vector3 existingValue, bool hasExistingValue, JsonSerializer serializer)
+	{
+		var jObject = JObject.Load(reader);
+		var x = jObject["x"].Value<float>();
+		var y = jObject["y"].Value<float>();
+		var z = jObject["z"].Value<float>();
+		return new Vector3(x, y, z);
+	}
 }

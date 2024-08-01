@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class InventoryManager : MonoBehaviour
 {
-	public static InventoryManager Instance { get; private set; }
 	[SerializeField]
 	private GameObject _itemHolderPrefab;
 	[SerializeField]
@@ -27,10 +26,8 @@ public class InventoryManager : MonoBehaviour
 	[SerializeField]
 	private TextMeshProUGUI _itemDescription;
 
-	private void Awake()
-	{
-		Instance = this;
-	}
+	[Inject]
+	private SaveManager _saveManager;
 
 	public void Start()
 	{
@@ -56,8 +53,10 @@ public class InventoryManager : MonoBehaviour
 			leftOvers -= addedQuantity;
 
 			if (leftOvers > 0 && index == itemHolders.Count)
-				itemHolders.Add(CreateItemHolder(item));
+				itemHolders.Add(CreateItemHolder(item, quantity));
 
+			if (!_saveManager.HasItem(holder.gameObject, holder.GetSaveData()))
+				_saveManager.AddSaveableObject(holder.gameObject, holder.GetSaveData());
 
 		}
 	}
@@ -87,15 +86,19 @@ public class InventoryManager : MonoBehaviour
 	}
 	public void Load()
 	{
-		InventoryData data = (InventoryData)SaveManager.Instance.GetData(null, SaveType.Inventory);
-		if (data == null) 
+		List<InventoryDataItem> datas = _saveManager.GetDataList<InventoryDataItem>();
+
+
+		if (datas == null)
 			return;
 
-		foreach (var itemData in data.Items)
+		foreach (var itemData in datas)
 		{
-			InventoryItem item = FindItemByName(itemData.ItemName);
+			InventoryDataItem data = itemData;
+
+			InventoryItem item = FindItemByName(data.Name);
 			if (item != null)
-				AddItemToInventory(item, itemData.Quantity);
+				AddItemToInventory(item, data.Quantity);
 		}
 	}
 
@@ -110,14 +113,14 @@ public class InventoryManager : MonoBehaviour
 						 .ToList();
 
 		if (itemHolder.Count == 0)
-			itemHolder.Add(CreateItemHolder(item));
+			itemHolder.Add(CreateItemHolder(item, 0));
 		return itemHolder;
 	}
 
-	private InventoryItemHolder CreateItemHolder(InventoryItem item)
+	private InventoryItemHolder CreateItemHolder(InventoryItem item, int quantity)
 	{
 		var newItemHolder = Instantiate(_itemHolderPrefab, _itemHolderTransform).GetComponent<InventoryItemHolder>();
-		newItemHolder.Setup(item, 0);
+		newItemHolder.Setup(item, quantity);
 		_itemHoldersList.Add(newItemHolder);
 		return newItemHolder;
 	}
@@ -128,13 +131,7 @@ public class InventoryManager : MonoBehaviour
 
 }
 [Serializable]
-public class InventoryData
+public class InventoryDataItem : GameData
 {
-	public List<InventoryDataItem> Items;
-}
-[Serializable]
-public class InventoryDataItem
-{
-	public string ItemName;
 	public int Quantity;
 }
