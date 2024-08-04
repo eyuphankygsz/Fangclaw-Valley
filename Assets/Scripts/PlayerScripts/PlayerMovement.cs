@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Zenject;
 
 public class PlayerMovement : MonoBehaviour, IInputHandler
 {
@@ -14,22 +15,28 @@ public class PlayerMovement : MonoBehaviour, IInputHandler
 	[SerializeField] private float _gravityMultiplier = 1;
 
 	[SerializeField] private float _baseSpeed, _speedBoost;
-	[SerializeField] private float _speed;
+	private float _speed;
 
 	[SerializeField] private float _maxStamina;
-	[SerializeField] private float _stamina;
+	private float _stamina;
 	[SerializeField] private bool _running;
 	private Coroutine _runningCoroutine;
 
 	private ControlSchema _controls;
 	private Vector2 _movementInput;
 
-
+	[Inject]
+	private PlayerUI _playerUI;
 	void Awake()
 	{
 		_controller = GetComponent<CharacterController>();
 		_stamina = _maxStamina;
 		_speed = _baseSpeed;
+	}
+	private void Start()
+	{
+		_playerUI.SetMaxStamina(_maxStamina); 
+		_playerUI.ChangeStaminaBar(_stamina);
 	}
 	public void OnInputEnable(ControlSchema schema)
 	{
@@ -103,6 +110,7 @@ public class PlayerMovement : MonoBehaviour, IInputHandler
 		while (_stamina > 0)
 		{
 			_stamina -= Time.deltaTime;
+			HandleUI();
 			if (_stamina < 0)
 			{
 				_stamina = 0;
@@ -116,7 +124,8 @@ public class PlayerMovement : MonoBehaviour, IInputHandler
 	{
 		while (_stamina < _maxStamina)
 		{
-			_stamina += Time.deltaTime;
+			_stamina += Time.deltaTime * 0.2f;
+			HandleUI();
 			if (_stamina > _maxStamina)
 			{
 				_stamina = _maxStamina;
@@ -124,5 +133,10 @@ public class PlayerMovement : MonoBehaviour, IInputHandler
 			}
 			yield return null; // Wait until the next frame
 		}
+	}
+
+	private void HandleUI()
+	{
+		_playerUI.ChangeStaminaBar(_stamina);
 	}
 }

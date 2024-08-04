@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class PlayerHealth : MonoBehaviour, IInputHandler
 {
 	[SerializeField]
-	private float _health;
+	private float _health, _maxHealth;
 
-
+	[Inject]
+	private PlayerUI _playerUI;
 
 	public float Health
 	{
@@ -15,13 +17,12 @@ public class PlayerHealth : MonoBehaviour, IInputHandler
 		set
 		{
 			_health = value;
-			//Call PlayerUI
 		}
 	}
 
 	private void Awake()
 	{
-		
+		_playerUI.SetMaxHealth(_maxHealth);
 	}
 	public void AddHealth(float damage)
 	{
@@ -30,12 +31,12 @@ public class PlayerHealth : MonoBehaviour, IInputHandler
 
 	public void OnInputDisable()
 	{
-		
+
 	}
 
 	public void OnInputEnable(ControlSchema schema)
 	{
-		
+
 	}
 	public void Run()
 	{

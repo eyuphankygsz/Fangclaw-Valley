@@ -5,11 +5,13 @@ public class GameInstaller : MonoInstaller
 {
 	[SerializeField] private InventoryManager _inventoryManager;
 	[SerializeField] private ObjectPool _objectPool;
+	[SerializeField] private PlayerUI _playerUI;
 	public override void InstallBindings()
 	{
 		Container.Bind<GameManager>().AsSingle();
 		Container.BindInterfacesAndSelfTo<InputManager>().AsSingle();
 		Container.BindInterfacesAndSelfTo<SaveManager>().AsSingle();
+		Container.Bind<PlayerUI>().FromInstance(_playerUI).AsSingle();
 		Container.Bind<ObjectPool>().FromInstance(_objectPool).AsSingle();
 		Container.Bind<InventoryManager>().FromInstance(_inventoryManager).AsSingle();
 		Container.BindFactory<PoolItem, Interactable_Pickup, PickupFactory>().AsSingle();
