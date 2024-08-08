@@ -120,7 +120,7 @@ public class InventoryManager : MonoBehaviour
 	private InventoryItemHolder CreateItemHolder(InventoryItem item, int quantity)
 	{
 		var newItemHolder = Instantiate(_itemHolderPrefab, _itemHolderTransform).GetComponent<InventoryItemHolder>();
-		newItemHolder.Setup(item, quantity);
+		newItemHolder.Setup(this, item, quantity);
 		_itemHoldersList.Add(newItemHolder);
 		return newItemHolder;
 	}

@@ -15,8 +15,7 @@ public class PlayerCamera : MonoBehaviour
 	}
 	public void ManageRotate()
 	{
-
-		Vector2 cameraDirection = PlayerInputs.Instance.GetCameraDirection();
+		Vector2 cameraDirection = MouseDirection.Instance.GetCameraDirection();
 
 		float mouseX = cameraDirection.x * _rotateSpeed * Time.deltaTime;
 		float mouseY = cameraDirection.y * _rotateSpeed * Time.deltaTime;

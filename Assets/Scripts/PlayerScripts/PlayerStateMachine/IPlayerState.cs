@@ -1,10 +1,11 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.InputSystem;
 
 public interface IPlayerState
 {
-	public void EnterState();
-	public void UpdateState();
-	public void ExitState();
+	void EnterState();
+	void UpdateState();
+	void ExitState();
+	void OnInputEnable(ControlSchema schema);
+	StateTransitionList GetTransitions();
 }

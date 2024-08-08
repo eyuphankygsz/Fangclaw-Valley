@@ -53,6 +53,33 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Crouch"",
+                    ""type"": ""Button"",
+                    ""id"": ""dad7ed83-7f96-413c-8391-06d720fccdf8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GunKey"",
+                    ""type"": ""Button"",
+                    ""id"": ""fc8d0aa7-cc02-45e0-9c16-d87017554d0b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GunScroll"",
+                    ""type"": ""Value"",
+                    ""id"": ""23e91b0c-dec2-4164-9a7d-1b20b910f622"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -132,6 +159,105 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1434f2e5-b506-4dba-9e5e-558b7fbb02e5"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""82d3e73a-095e-43c6-b781-66d1531958f3"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b2d738e0-0678-4354-8c15-1c8e237fce38"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""04b8bedb-952c-4d54-9ed3-0d00504c9b53"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""71671195-9b98-4f20-8642-31d8e3adb2d0"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""916d9f6e-b7d4-49a7-9926-5958df83a8d1"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""7b3218be-3532-4c9e-8dd8-30b2d219a9af"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunScroll"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""e03bb33f-ef73-48d0-aebe-eb068ae6f73b"",
+                    ""path"": ""<Mouse>/scroll/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunScroll"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""a501f6d2-2afb-465d-862d-3d22d8f98c3e"",
+                    ""path"": ""<Mouse>/scroll/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GunScroll"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -182,7 +308,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""8c6eed4b-5020-423f-b23a-4270a02cf25d"",
-                    ""path"": ""<Keyboard>/i"",
+                    ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -211,6 +337,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Interaction = m_Player.FindAction("Interaction", throwIfNotFound: true);
         m_Player_Run = m_Player.FindAction("Run", throwIfNotFound: true);
+        m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
+        m_Player_GunKey = m_Player.FindAction("GunKey", throwIfNotFound: true);
+        m_Player_GunScroll = m_Player.FindAction("GunScroll", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_PauseMenu = m_UI.FindAction("Pause Menu", throwIfNotFound: true);
@@ -280,6 +409,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Interaction;
     private readonly InputAction m_Player_Run;
+    private readonly InputAction m_Player_Crouch;
+    private readonly InputAction m_Player_GunKey;
+    private readonly InputAction m_Player_GunScroll;
     public struct PlayerActions
     {
         private @ControlSchema m_Wrapper;
@@ -287,6 +419,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Interaction => m_Wrapper.m_Player_Interaction;
         public InputAction @Run => m_Wrapper.m_Player_Run;
+        public InputAction @Crouch => m_Wrapper.m_Player_Crouch;
+        public InputAction @GunKey => m_Wrapper.m_Player_GunKey;
+        public InputAction @GunScroll => m_Wrapper.m_Player_GunScroll;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -305,6 +440,15 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
             @Run.started += instance.OnRun;
             @Run.performed += instance.OnRun;
             @Run.canceled += instance.OnRun;
+            @Crouch.started += instance.OnCrouch;
+            @Crouch.performed += instance.OnCrouch;
+            @Crouch.canceled += instance.OnCrouch;
+            @GunKey.started += instance.OnGunKey;
+            @GunKey.performed += instance.OnGunKey;
+            @GunKey.canceled += instance.OnGunKey;
+            @GunScroll.started += instance.OnGunScroll;
+            @GunScroll.performed += instance.OnGunScroll;
+            @GunScroll.canceled += instance.OnGunScroll;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -318,6 +462,15 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
             @Run.started -= instance.OnRun;
             @Run.performed -= instance.OnRun;
             @Run.canceled -= instance.OnRun;
+            @Crouch.started -= instance.OnCrouch;
+            @Crouch.performed -= instance.OnCrouch;
+            @Crouch.canceled -= instance.OnCrouch;
+            @GunKey.started -= instance.OnGunKey;
+            @GunKey.performed -= instance.OnGunKey;
+            @GunKey.canceled -= instance.OnGunKey;
+            @GunScroll.started -= instance.OnGunScroll;
+            @GunScroll.performed -= instance.OnGunScroll;
+            @GunScroll.canceled -= instance.OnGunScroll;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -402,6 +555,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnInteraction(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
+        void OnCrouch(InputAction.CallbackContext context);
+        void OnGunKey(InputAction.CallbackContext context);
+        void OnGunScroll(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

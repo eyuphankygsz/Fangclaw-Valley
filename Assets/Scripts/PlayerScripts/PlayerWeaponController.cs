@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerWeaponController : MonoBehaviour, IInputHandler
 {
@@ -39,8 +40,18 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		{
 			TryMoveGun();
 			TryToUse();
-			TryToChangeGun();
 		}
+	}
+	public void StopWeapon(bool stun)
+	{
+		if (stun)
+		{
+			_currentWeapon.OnChanged();
+			_currentWeapon.gameObject.SetActive(false);
+			_currentWeapon = null;
+		}
+		else
+			SelectWeapon(_oldWeaponIndex);
 	}
 	private void TryMoveGun()
 	{
@@ -50,39 +61,37 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		_currentWeapon.OnAction();
 	}
-	private void TryToChangeGun()
+	private void ChangeGunByKey(InputAction.CallbackContext ctx)
 	{
-		if (Input.inputString != null)
-		{
-			bool isNumber = int.TryParse(Input.inputString, out int number);
-			if (isNumber && number > 0 && number < 4)
-			{
-				SelectWeapon(number - 1);
-			}
-			else
-			{
-				if (Input.GetAxis("Mouse ScrollWheel") > 0f)
-					SelectWeapon(true);
-				else if (Input.GetAxis("Mouse ScrollWheel") < 0f)
-					SelectWeapon(false);
-			}
-		}
+		if (_currentWeapon == null) return;
+		int bindingIndex = ctx.action.GetBindingIndexForControl(ctx.control);
+		SelectWeapon(bindingIndex);
 	}
+	private void ChangeGunByScroll(InputAction.CallbackContext ctx)
+	{
+		if (_currentWeapon == null) return;
+		SelectWeapon(ctx.ReadValue<float>() < 0);
+	}
+
 	private void SelectWeapon(bool next)
 	{
-		_weaponIndex += next ? 1 : (_weaponIndex - 1 < 0 ? _weapons.Count - 1 : _weaponIndex - 1);
+		int nextGunIndex = next ? 1 : -1;
+		_weaponIndex = (_weaponIndex + nextGunIndex) % _weapons.Count;
+		if (_weaponIndex == -1)
+			_weaponIndex = _weapons.Count - 1;
+
 		ChangeWeapon();
 	}
 	public void SelectWeapon(int index)
 	{
-		if (_oldWeaponIndex == index) return;
+		if ((_oldWeaponIndex == index && _currentWeapon != null) || index >= _weapons.Count) return;
 		_weaponIndex = index;
 		ChangeWeapon();
 	}
 	private void ChangeWeapon()
 	{
-		_currentWeapon.OnChanged();
-		_currentWeapon.gameObject.SetActive(false);
+		_currentWeapon?.OnChanged();
+		_currentWeapon?.gameObject.SetActive(false);
 
 		_weaponIndex %= _weapons.Count;
 		_oldWeaponIndex = _weaponIndex;
@@ -96,7 +105,8 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	public void OnInputEnable(ControlSchema schema)
 	{
-
+		schema.Player.GunKey.performed += ChangeGunByKey;
+		schema.Player.GunScroll.performed += ChangeGunByScroll;
 	}
 
 	public void OnInputDisable()

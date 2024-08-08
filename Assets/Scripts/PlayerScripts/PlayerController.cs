@@ -5,10 +5,10 @@ using Zenject;
 public class PlayerController : MonoBehaviour, ISaveable
 {
 
-	private PlayerMovement _playerMovement;
 	private PlayerCamera _playerCamera;
 	private PlayerWeaponController _playerWeapon;
 	private PlayerInteractions _playerInteractions;
+	private PlayerStateMachine _playerStateMachine;
 
 	private PlayerData _data = new PlayerData();
 
@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 
 	private bool _freeze;
 
+	private bool _hiding;
 
 	private void GameFreeze(bool freeze)
 	{
@@ -49,15 +50,22 @@ public class PlayerController : MonoBehaviour, ISaveable
 	void Update()
 	{
 		if (_freeze) return;
-		_playerMovement.ManageMove();
+		_playerStateMachine.ExecuteState();
 		_playerCamera.ManageRotate();
 		_playerWeapon.ManageGun();
 		_playerInteractions.CheckForInteractions();
 	}
+	public void Hide(bool hide)
+	{
+		Debug.Log(hide);
+		if (_hiding == hide) return;
+		_hiding = hide;
 
+		_playerWeapon.StopWeapon(_hiding);
+	}
 	private void GetPlayerScripts()
 	{
-		_playerMovement = GetComponent<PlayerMovement>();
+		_playerStateMachine = GetComponent<PlayerStateMachine>();
 		_playerCamera = GetComponent<PlayerCamera>();
 		_playerWeapon = GetComponent<PlayerWeaponController>();
 		_playerInteractions = GetComponent<PlayerInteractions>();

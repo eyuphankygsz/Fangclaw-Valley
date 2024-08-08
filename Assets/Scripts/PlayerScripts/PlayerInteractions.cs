@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class PlayerInteractions : MonoBehaviour, IInputHandler
 {
 	[SerializeField]
-	private float _rayLength;
+	private float _rayLength; 
+	[SerializeField]
+	private float _obstacleLength;
 	[SerializeField]
 	private LayerMask _interactableLayers;
 
@@ -28,7 +30,6 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	private Interactable _oldInteractable;
 	private ControlSchema _controls;
 
-
 	private bool _stop;
 
 	private bool Stop
@@ -36,7 +37,7 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 		get => _stop;
 		set
 		{
-			if(value != _stop || _oldInteractable != _interactableObject)
+			if (value != _stop || _oldInteractable != _interactableObject)
 			{
 				SetInteractCross(value);
 			}
@@ -75,9 +76,18 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	public void CheckForInteractions()
 	{
 		bool isFound = Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit, _rayLength, _interactableLayers);
-		_interactableObject = isFound ? hit.collider.gameObject.GetComponent<Interactable>() : null;
-		
-		Stop = isFound;
+		bool obstacleOnTheWay = false;
+		if (isFound)
+		{
+			_obstacleLength = Vector3.Distance(_camera.position, hit.point);
+			if (Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit2, _obstacleLength))
+				obstacleOnTheWay = hit.collider.gameObject == hit2.collider.gameObject ? false : true;
+		}
+
+
+		_interactableObject = (!obstacleOnTheWay && isFound) ? hit.collider.gameObject.GetComponent<Interactable>() : null;
+
+		Stop = !obstacleOnTheWay && isFound;
 		_oldInteractable = _interactableObject;
 	}
 	private void SetInteractCross(bool changeCross)
@@ -99,7 +109,7 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	{
 		if (_camera == null) _camera = Camera.main.transform;
 		Gizmos.color = Color.green;
-		Gizmos.DrawRay(_camera.position, _camera.forward * _rayLength);
+		Gizmos.DrawRay(_camera.position, _camera.forward * _obstacleLength);
 	}
 	public void ChangeCross(Sprite cross)
 	{
@@ -108,7 +118,7 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	public void StopInteractions(bool stop)
 	{
 		_interactableObject = null;
-		_cross.gameObject.SetActive(!stop); 
+		_cross.gameObject.SetActive(!stop);
 		_interactText.text = "";
 	}
 

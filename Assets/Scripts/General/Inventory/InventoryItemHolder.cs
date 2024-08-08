@@ -1,13 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
 
 public class InventoryItemHolder : MonoBehaviour, ISaveable
 {
-	[Inject]
 	InventoryManager _inventoryManager;
 
 	[field: SerializeField]
@@ -28,8 +24,9 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable
 	private InventoryDataItem _inventoryDataItem = new InventoryDataItem();
 
 
-	public void Setup(InventoryItem item, int quantity)
+	public void Setup(InventoryManager inventoryManager, InventoryItem item, int quantity)
 	{
+		_inventoryManager = inventoryManager;
 		Item = item;
 		MaxQuantity = item.StackQuantity;
 		Quantity = quantity;

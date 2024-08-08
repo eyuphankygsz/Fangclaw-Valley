@@ -69,7 +69,7 @@ public abstract class Weapons : MonoBehaviour
     }
     protected void X_Movement()
     {
-        float x = PlayerInputs.Instance.GetCameraDirection().x;
+        float x = MouseDirection.Instance.GetCameraDirection().x;
 
         if (x != 0)
         {
@@ -98,12 +98,12 @@ public abstract class Weapons : MonoBehaviour
         return (-Mathf.Pow(_xPolynomial, 2) / 1.5f) - (_xPolynomial / 10) + 1.2f;
     }
 
-    private void OnDrawGizmos()
-    {
-        if (_camera == null) _camera = Camera.main.transform;
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(_camera.position, _camera.forward * _rayLength);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    if (_camera == null) _camera = Camera.main.transform;
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawRay(_camera.position, _camera.forward * _rayLength);
+    //}
     public Sprite GetCross()
     {
         return _weaponCross;

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Zenject;
 
@@ -5,7 +6,7 @@ public class Interactable_Crate : Interactable
 {
 	[Inject]
 	private ObjectPool _objectPool;
-	[SerializeField] private GameObject _originalObj, _shatterObj;
+	[SerializeField] private GameObject _originalObj, _shatterObj, _explosionObj;
 	[SerializeField] private bool _allowRandomItem;
 	[SerializeField] private RandomItemDrop _randomItemDrop;
 	[SerializeField] private Transform _itemTransform;
@@ -36,6 +37,7 @@ public class Interactable_Crate : Interactable
 
 		}
 
+		StartCoroutine(Explosion());
 		_originalObj.SetActive(false);
 		_shatterObj.SetActive(true);
 	}
@@ -58,5 +60,14 @@ public class Interactable_Crate : Interactable
 
 		_originalObj.SetActive(!data.IsShattered);
 		_shatterObj.SetActive(data.IsShattered);
+		if(!data.IsShattered)
+			StartCoroutine(Explosion());
+
+	}
+	
+	private IEnumerator Explosion()
+	{
+		yield return new WaitForSecondsRealtime(0.5f);
+		_explosionObj.SetActive(false);
 	}
 }

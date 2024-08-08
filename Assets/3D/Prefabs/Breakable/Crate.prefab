@@ -1936,6 +1936,7 @@ MonoBehaviour:
   _includedWeapons: 0000000002000000
   _originalObj: {fileID: 4246479512675414296}
   _shatterObj: {fileID: 1617930924785808043}
+  _explosionObj: {fileID: 2168816565025231952}
   _allowRandomItem: 1
   _randomItemDrop: {fileID: 11400000, guid: 1843c956b0503544c99e7f885322e260, type: 2}
   _itemTransform: {fileID: 4371421582539378526}

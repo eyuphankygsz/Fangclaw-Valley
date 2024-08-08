@@ -1,4 +1,3 @@
-using UnityEngine;
 using Zenject;
 
 public class PickupFactory : PlaceholderFactory<PoolItem, Interactable_Pickup>
