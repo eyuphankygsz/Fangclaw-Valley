@@ -36,8 +36,7 @@ public class Interactable_Crate : Interactable
 				obj.GetComponent<Interactable_Pickup>().IsCrateItem = true;
 
 		}
-
-		StartCoroutine(Explosion());
+		Destroy(_explosionObj, .5f);
 		_originalObj.SetActive(false);
 		_shatterObj.SetActive(true);
 	}
@@ -60,14 +59,8 @@ public class Interactable_Crate : Interactable
 
 		_originalObj.SetActive(!data.IsShattered);
 		_shatterObj.SetActive(data.IsShattered);
-		if(!data.IsShattered)
-			StartCoroutine(Explosion());
+		if (!data.IsShattered)
+			Destroy(_explosionObj, .5f);
 
-	}
-	
-	private IEnumerator Explosion()
-	{
-		yield return new WaitForSecondsRealtime(0.5f);
-		_explosionObj.SetActive(false);
 	}
 }
