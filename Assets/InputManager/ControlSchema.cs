@@ -328,6 +328,94 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Lock"",
+            ""id"": ""fb53ec00-c1b3-4086-81a3-ae928a9f260c"",
+            ""actions"": [
+                {
+                    ""name"": ""Back"",
+                    ""type"": ""Button"",
+                    ""id"": ""46c8ecdc-bac1-476c-b72b-425e4e57df76"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextCombination"",
+                    ""type"": ""Button"",
+                    ""id"": ""3c43e02e-ed33-4ea5-bc1d-7b554f5caaa5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PreviousCombination"",
+                    ""type"": ""Button"",
+                    ""id"": ""0c460ab7-94a2-4fc5-91af-d7a95935e003"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Turn"",
+                    ""type"": ""Button"",
+                    ""id"": ""31bcff63-a642-480a-880c-3b450f9a8114"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""b7a71376-84a9-4a77-be2f-a73891984591"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Back"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""14d347ab-318d-4058-9bb9-83015480ed50"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextCombination"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""be91426a-c488-4f55-8022-ca363c1966c4"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PreviousCombination"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8cb517b3-dfcb-4e0d-be45-ffc4416ba8ff"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Turn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -345,6 +433,12 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         m_UI_PauseMenu = m_UI.FindAction("Pause Menu", throwIfNotFound: true);
         m_UI_Inventory = m_UI.FindAction("Inventory", throwIfNotFound: true);
         m_UI_Settings = m_UI.FindAction("Settings", throwIfNotFound: true);
+        // Lock
+        m_Lock = asset.FindActionMap("Lock", throwIfNotFound: true);
+        m_Lock_Back = m_Lock.FindAction("Back", throwIfNotFound: true);
+        m_Lock_NextCombination = m_Lock.FindAction("NextCombination", throwIfNotFound: true);
+        m_Lock_PreviousCombination = m_Lock.FindAction("PreviousCombination", throwIfNotFound: true);
+        m_Lock_Turn = m_Lock.FindAction("Turn", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -550,6 +644,76 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // Lock
+    private readonly InputActionMap m_Lock;
+    private List<ILockActions> m_LockActionsCallbackInterfaces = new List<ILockActions>();
+    private readonly InputAction m_Lock_Back;
+    private readonly InputAction m_Lock_NextCombination;
+    private readonly InputAction m_Lock_PreviousCombination;
+    private readonly InputAction m_Lock_Turn;
+    public struct LockActions
+    {
+        private @ControlSchema m_Wrapper;
+        public LockActions(@ControlSchema wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Back => m_Wrapper.m_Lock_Back;
+        public InputAction @NextCombination => m_Wrapper.m_Lock_NextCombination;
+        public InputAction @PreviousCombination => m_Wrapper.m_Lock_PreviousCombination;
+        public InputAction @Turn => m_Wrapper.m_Lock_Turn;
+        public InputActionMap Get() { return m_Wrapper.m_Lock; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(LockActions set) { return set.Get(); }
+        public void AddCallbacks(ILockActions instance)
+        {
+            if (instance == null || m_Wrapper.m_LockActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_LockActionsCallbackInterfaces.Add(instance);
+            @Back.started += instance.OnBack;
+            @Back.performed += instance.OnBack;
+            @Back.canceled += instance.OnBack;
+            @NextCombination.started += instance.OnNextCombination;
+            @NextCombination.performed += instance.OnNextCombination;
+            @NextCombination.canceled += instance.OnNextCombination;
+            @PreviousCombination.started += instance.OnPreviousCombination;
+            @PreviousCombination.performed += instance.OnPreviousCombination;
+            @PreviousCombination.canceled += instance.OnPreviousCombination;
+            @Turn.started += instance.OnTurn;
+            @Turn.performed += instance.OnTurn;
+            @Turn.canceled += instance.OnTurn;
+        }
+
+        private void UnregisterCallbacks(ILockActions instance)
+        {
+            @Back.started -= instance.OnBack;
+            @Back.performed -= instance.OnBack;
+            @Back.canceled -= instance.OnBack;
+            @NextCombination.started -= instance.OnNextCombination;
+            @NextCombination.performed -= instance.OnNextCombination;
+            @NextCombination.canceled -= instance.OnNextCombination;
+            @PreviousCombination.started -= instance.OnPreviousCombination;
+            @PreviousCombination.performed -= instance.OnPreviousCombination;
+            @PreviousCombination.canceled -= instance.OnPreviousCombination;
+            @Turn.started -= instance.OnTurn;
+            @Turn.performed -= instance.OnTurn;
+            @Turn.canceled -= instance.OnTurn;
+        }
+
+        public void RemoveCallbacks(ILockActions instance)
+        {
+            if (m_Wrapper.m_LockActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ILockActions instance)
+        {
+            foreach (var item in m_Wrapper.m_LockActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_LockActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public LockActions @Lock => new LockActions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -564,5 +728,12 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         void OnPauseMenu(InputAction.CallbackContext context);
         void OnInventory(InputAction.CallbackContext context);
         void OnSettings(InputAction.CallbackContext context);
+    }
+    public interface ILockActions
+    {
+        void OnBack(InputAction.CallbackContext context);
+        void OnNextCombination(InputAction.CallbackContext context);
+        void OnPreviousCombination(InputAction.CallbackContext context);
+        void OnTurn(InputAction.CallbackContext context);
     }
 }

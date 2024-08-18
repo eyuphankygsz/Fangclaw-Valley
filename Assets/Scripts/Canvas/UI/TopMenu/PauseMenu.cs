@@ -49,6 +49,7 @@ public class PauseMenu : MonoBehaviour
 
 	private void SelectSection(TopSections section, bool byButtons)
 	{
+		if (_gameManager.SaveGame) return;
 		foreach (var item in _sections)
 			UnSelectTitle(item.Value);
 

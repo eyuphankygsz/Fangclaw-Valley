@@ -306,6 +306,94 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Lock",
+            "id": "fb53ec00-c1b3-4086-81a3-ae928a9f260c",
+            "actions": [
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "46c8ecdc-bac1-476c-b72b-425e4e57df76",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NextCombination",
+                    "type": "Button",
+                    "id": "3c43e02e-ed33-4ea5-bc1d-7b554f5caaa5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PreviousCombination",
+                    "type": "Button",
+                    "id": "0c460ab7-94a2-4fc5-91af-d7a95935e003",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Turn",
+                    "type": "Button",
+                    "id": "31bcff63-a642-480a-880c-3b450f9a8114",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b7a71376-84a9-4a77-be2f-a73891984591",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "14d347ab-318d-4058-9bb9-83015480ed50",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextCombination",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "be91426a-c488-4f55-8022-ca363c1966c4",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PreviousCombination",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8cb517b3-dfcb-4e0d-be45-ffc4416ba8ff",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

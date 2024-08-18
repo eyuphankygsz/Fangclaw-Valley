@@ -59,7 +59,7 @@ public class Interactable_Crate : Interactable
 
 		_originalObj.SetActive(!data.IsShattered);
 		_shatterObj.SetActive(data.IsShattered);
-		if (!data.IsShattered)
+		if (data.IsShattered)
 			Destroy(_explosionObj, .5f);
 
 	}

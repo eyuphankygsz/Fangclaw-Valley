@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 public class GameManager
 {
@@ -12,10 +13,18 @@ public class GameManager
 		{
 			if (_pauseGame != value)
 			{
-				_pauseGame = value;
+				_pauseGame = _inspecting ? true : value;
+				Debug.WriteLine(_pauseGame);
 				OnPauseGame?.Invoke(_pauseGame);
 			}
 		}
+	}
+
+	private bool _inspecting;
+	public bool Inspecting
+	{
+		get => _inspecting;
+		set => _inspecting = value;
 	}
 
 
@@ -29,12 +38,14 @@ public class GameManager
 		{
 			if (_saveGame != value)
 			{
-				_saveGame = value; 
+				_saveGame = value;
 				PauseGame = value;
 				OnSaveGame?.Invoke(_saveGame);
 			}
 		}
 	}
+
+
 
 	public void SetPauseGame(bool pauseGame)
 	{
