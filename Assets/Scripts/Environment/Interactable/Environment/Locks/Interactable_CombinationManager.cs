@@ -10,7 +10,8 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	private bool _done;
 	private int[] _digits;
 
-
+	[SerializeField]
+	private Interactable_HingedObjects _lockedObject;
 	[SerializeField]
 	private CombinationPart[] _combinations;
 	[SerializeField]
@@ -122,6 +123,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		Inspect(false);
 		GetComponent<Rigidbody>().isKinematic = false;
 		gameObject.layer = 0;
+		_lockedObject.Unlock();
 	}
 
 	private void StopInspect(InputAction.CallbackContext ctx)

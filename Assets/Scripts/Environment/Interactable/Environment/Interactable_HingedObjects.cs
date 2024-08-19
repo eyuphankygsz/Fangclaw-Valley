@@ -35,6 +35,11 @@ public class Interactable_HingedObjects : Interactable
 	{
 		_animating = false;
 	}
+	public void Unlock()
+	{
+		_lockKey.Locked = false;
+		SetDoorState(true);
+	}
 	private bool IsLocked()
 	{
 		if (_lockKey.Locked)
