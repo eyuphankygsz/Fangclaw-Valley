@@ -12,9 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
   m_Name: EnergyPotion
   m_EditorClassIdentifier: 
-  ItemName: Energy Potion
-  ItemDescription: It smells weird. But even when I hold it with my bare hands, I
-    feel strange power...
+  Name: stamina_potion_0
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:c18a252601e00b34681f9f9e268cb11c
+    m_TableEntryReference:
+      m_KeyId: 386709376385024
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 1505269372862464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ItemSprite: {fileID: 21300000, guid: a1b09f93d13f5164c95dd5471bf57592, type: 3}
   StackQuantity: 3
   OneTime: 1
+  references:
+    version: 2
+    RefIds: []

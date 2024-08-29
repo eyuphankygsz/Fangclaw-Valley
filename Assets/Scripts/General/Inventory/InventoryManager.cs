@@ -53,11 +53,10 @@ public class InventoryManager : MonoBehaviour
 			leftOvers -= addedQuantity;
 
 			if (leftOvers > 0 && index == itemHolders.Count)
-				itemHolders.Add(CreateItemHolder(item, quantity));
+				itemHolders.Add(CreateItemHolder(item, 0));
 
 			if (!_saveManager.HasItem(holder.gameObject, holder.GetSaveData()))
 				_saveManager.AddSaveableObject(holder.gameObject, holder.GetSaveData());
-
 		}
 	}
 	public void RemoveItemFromInventory(InventoryItem item)
@@ -69,20 +68,35 @@ public class InventoryManager : MonoBehaviour
 		_itemHoldersList.Remove(holder);
 		Destroy(holder.gameObject);
 	}
+	public void RemoveItemQuantityFromInventory(InventoryItem item, int quantity)
+	{
+		InventoryItemHolder holder = _itemHoldersList
+										 .Where(h => h.Item == item)
+										 .OrderBy(h => h.Quantity)
+										 .FirstOrDefault();
+		holder.AddQuantity(-quantity);
+
+		if (holder.Quantity == 0)
+		{
+		_itemHoldersList.Remove(holder);
+			Destroy(holder.gameObject);
+
+		}
+	}
 	public InventoryItem GetItem(string itemName, int quantity)
 	{
-		return _itemHoldersList
+        return _itemHoldersList
 				   .Where(holder =>
-					   holder.Item.ItemName == itemName)
+					   holder.Item.ItemName.GetLocalizedString() == itemName)
 				   .Select(holder => holder.Item)
 				   .FirstOrDefault();
 	}
 	public void SelectItem(InventoryItemHolder holder)
 	{
-		_itemTitle.text = holder.Item.ItemName;
+		_itemTitle.text = holder.Item.ItemName.GetLocalizedString();
 		_itemPicture.sprite = holder.Item.ItemSprite;
 		_itemPicture.enabled = true;
-		_itemDescription.text = holder.Item.ItemDescription;
+		_itemDescription.text = holder.Item.ItemDescription.GetLocalizedString();
 	}
 	public void Load()
 	{
@@ -126,7 +140,7 @@ public class InventoryManager : MonoBehaviour
 	}
 
 	private InventoryItem FindItemByName(string itemName) =>
-		_allItems.Where(x => x.ItemName == itemName).FirstOrDefault();
+		_allItems.Where(x => x.Name == itemName).FirstOrDefault();
 
 
 }

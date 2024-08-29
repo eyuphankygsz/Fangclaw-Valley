@@ -1,7 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [Serializable]
 public class LockKey
@@ -9,8 +8,8 @@ public class LockKey
 	[SerializeField]
 	private bool _locked;
 	[SerializeField]
-	private string _keyName;
+	private LocalizedString _keyName;
 
 	public bool Locked { get { return _locked; } set { _locked = value; } }
-	public string KeyName { get { return _keyName; } }
+	public string KeyName { get { return _keyName.GetLocalizedString(); } }
 }

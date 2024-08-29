@@ -15,6 +15,9 @@ public class PauseMenu : MonoBehaviour
 	[field: SerializeField]
 	public GameObject LoadingScreen { get; private set; }
 
+	[SerializeField]
+	private MenuSelector[] _menuSelectors;
+
 	private Dictionary<string, TopSections> _sections;
 	private TopSections _oldSection;
 
@@ -45,6 +48,10 @@ public class PauseMenu : MonoBehaviour
 	public void ChangeMenu(string menuName)
 	{
 		SelectSection(_sections[menuName], true);
+    
+		for (int i = 0; i < _menuSelectors.Length; i++)
+			_menuSelectors[i].OpenFirst();
+    
 	}
 
 	private void SelectSection(TopSections section, bool byButtons)

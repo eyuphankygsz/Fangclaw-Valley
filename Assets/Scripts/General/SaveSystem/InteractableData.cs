@@ -10,6 +10,7 @@ public class PickupData : GameData
 [System.Serializable]
 public class HingedData : GameData
 {
+	public bool Used;
 	public bool IsOn;
 	public bool IsLocked;
 }
@@ -17,4 +18,15 @@ public class HingedData : GameData
 public class CrateData : GameData
 {
 	public bool IsShattered;
+}
+[System.Serializable]
+public class SwitchData : GameData
+{
+	public bool IsOn;
+}
+
+[System.Serializable]
+public class PlaceHolderData : GameData
+{
+	public bool IsActive;
 }

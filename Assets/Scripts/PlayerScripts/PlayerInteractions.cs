@@ -20,6 +20,8 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	[SerializeField]
 	private TextMeshProUGUI _interactText;
 
+	private string _lastInteractName;
+
 
 	[SerializeField]
 	private Sprite _interactionSprite;
@@ -96,11 +98,13 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 		{
 			_cross.sprite = _interactionSprite;
 			_interactText.text = _interactableObject.ObjectName;
+			_lastInteractName = _interactText.text;
 		}
 		else
 		{
 			_cross.sprite = _weaponCross;
 			_interactText.text = "";
+			_lastInteractName = "";
 		}
 
 		_canInteract = changeCross;
@@ -117,9 +121,9 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	}
 	public void StopInteractions(bool stop)
 	{
-		_interactableObject = null;
 		_cross.gameObject.SetActive(!stop);
-		_interactText.text = "";
+		_interactableObject = stop ? null : _interactableObject;
+		_interactText.text = stop ? "" : _lastInteractName;
 	}
 
 }

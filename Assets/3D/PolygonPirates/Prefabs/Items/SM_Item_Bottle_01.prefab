@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2339504}
   - component: {fileID: 3184797583831600159}
   - component: {fileID: 8177396028823335556}
+  - component: {fileID: -3595377442572375078}
   m_Layer: 11
   m_Name: SM_Item_Bottle_01
   m_TagString: Untagged
@@ -118,10 +119,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cbab4bb81468409afbca26f48aeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ObjectName>k__BackingField: Health Potion
+  <ObjectName>k__BackingField: health_potion_0
   <InteractableName>k__BackingField: HealthPotion
   IsActive: 0
   _includedWeapons: 
+  IsCrateItem: 0
   <Item>k__BackingField: {fileID: 11400000, guid: aa257628221c5d246a684ca4a6abe347,
     type: 2}
   _quantity: 1
+--- !u!114 &-3595377442572375078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 7670640027935178754
+  references:
+    version: 2
+    RefIds:
+    - rid: 7670640027935178754
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 8177396028823335556}
+        m_TrackedProperties:
+          items:
+          - rid: 7670640027935178755
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 7670640027935178755
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:c18a252601e00b34681f9f9e268cb11c
+          m_TableEntryReference:
+            m_KeyId: 386463179128832
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <ObjectName>k__BackingField

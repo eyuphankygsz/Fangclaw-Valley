@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 60377186304
+    m_Localized: "Entr\xE9e de la grotte\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105105244160
+    m_Localized: "Chers Chefs des Travailleurs de la Mine,\n\nComme vous le savez,
+      j'ai un faible pour les \xE9nigmes. Alors en voici une pour vous mettre au
+      d\xE9fi !\n\nPour d\xE9verrouiller les secrets derri\xE8re la porte, vous devez
+      vous inspirer de la sagesse de la nature.\n\nLe loup poursuit le mouton, tandis
+      que l'ours reste immobile.\n\nD\xE9m\xEAlez le sens de cette \xE9nigme pour
+      d\xE9couvrir quels leviers r\xE9v\xE9leront le chemin \xE0 suivre.\n\nBonne
+      chance,\n\n- Dr. Grimshaw"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136160244580352
+    m_Localized: "Menu du jour:\n\n\nPetit D\xE9jeuner: Bouillie d'avoine et une
+      tranche de pain dur avec du th\xE9.\n\nD\xE9jeuner: Rago\xFBt de pommes de
+      terre et de viande, avec des cornichons et du pain.\n\nD\xEEner: Haricots cuits
+      au four avec saucisse et un morceau de fromage."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

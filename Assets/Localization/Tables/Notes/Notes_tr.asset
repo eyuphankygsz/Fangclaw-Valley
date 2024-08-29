@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 60377186304
+    m_Localized: "Ma\u011Fara Giri\u015Fi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105105244160
+    m_Localized: "Sevgili Maden \u0130\u015F\xE7ileri Liderleri,\n\nBildi\u011Finiz
+      gibi, bilmecelere olan ilgim olduk\xE7a fazlad\u0131r. \u0130\u015Fte size
+      zekan\u0131z\u0131 s\u0131nayacak bir bilmece!\n\nKap\u0131n\u0131n ard\u0131ndaki
+      s\u0131rlar\u0131 a\xE7mak i\xE7in do\u011Fan\u0131n bilgeli\u011Finden ilham
+      almal\u0131s\u0131n\u0131z.\n\nKurt koyunlar\u0131 koval\u0131yor, oysa ay\u0131
+      hareketsiz duruyor.\n\nBu bilmeceyi \xE7\xF6zerek hangi \u015Falterlerin yolu
+      a\xE7aca\u011F\u0131n\u0131 ke\u015Ffedin.\n\nBol \u015Fanslar,\n\n- Dr. Grimshaw"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136160244580352
+    m_Localized: "G\xFCn\xFCn Men\xFCs\xFC:\n\n\nKahvalt\u0131: Yulaf lapas\u0131
+      ve bir dilim sert ekmek ile \xE7ay.\n\n\xD6\u011Fle Yeme\u011Fi: Patatesli
+      ve etli yahni, yan\u0131nda tur\u015Fu ve ekmek.\n\nAk\u015Fam Yeme\u011Fi:
+      Sosisli kuru fasulye ve bir par\xE7a peynir."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

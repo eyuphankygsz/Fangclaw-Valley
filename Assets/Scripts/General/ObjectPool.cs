@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
@@ -16,11 +17,14 @@ public class ObjectPool : MonoBehaviour
 	readonly SaveManager _saveManager;
 
 
+	private void Awake()
+	{
+		foreach (var item in _poolItems)
+			_itemPools.Add(item, CreateItems(item, item.INITIAL_COUNT));
+	}
 	private void Start()
 	{
 		Debug.Log("OBJECTPOOL");
-		foreach (var item in _poolItems)
-			_itemPools.Add(item, CreateItems(item, item.INITIAL_COUNT));
 
 		var crateItemList = _saveManager.CrateItems();
 		if (crateItemList == null) return;
@@ -59,8 +63,16 @@ public class ObjectPool : MonoBehaviour
 
 	private GameObject CreateItem(PoolItem item)
 	{
-		GameObject newItem = _pickupFactory.Create(item).gameObject;
-		newItem.GetComponent<Interactable_Pickup>().IsCrateItem = true;
+		GameObject newItem = null;
+		if (item.Item.TryGetComponent<Interactable>(out Interactable interactable))
+		{
+			newItem = _pickupFactory.Create(item).gameObject;
+			newItem.GetComponent<Interactable_Pickup>().IsCrateItem = true;
+		}
+		else
+			newItem = Instantiate(item.Item, new Vector3(-1000, -1000, -1000), Quaternion.identity);
+
+
 		newItem.transform.SetParent(transform);
 		newItem.SetActive(false);
 		return newItem;
@@ -68,7 +80,8 @@ public class ObjectPool : MonoBehaviour
 
 	private GameObject ActivateItem(GameObject item, Vector3 pos)
 	{
-		item.GetComponent<Interactable_Pickup>().IsCrateItem = true;
+		if (item.TryGetComponent<Interactable>(out Interactable interactable))
+			item.GetComponent<Interactable_Pickup>().IsCrateItem = true;
 		item.transform.position = pos;
 		item.SetActive(true);
 		return item;

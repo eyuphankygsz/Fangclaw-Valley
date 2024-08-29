@@ -62,7 +62,7 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable
 	{
 		_inventoryDataItem = new InventoryDataItem()
 		{
-			Name = Item.ItemName,
+			Name = Item.Name,
 			Quantity = Quantity,
 		};
 		return _inventoryDataItem;

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2005556969472
+    m_Localized: "Llave de la B\xF3veda No.1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "Creo que esta es una llave de b\xF3veda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: Huele muy mal. Estoy seguro de que es bueno para la salud...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "Mi abuela sol\xEDa preparar una bebida con este mismo aroma. En
+      aquellos tiempos, elaboraba este delicioso elixir para m\xED, present\xE1ndolo
+      con el mayor cuidado, como si fuera un ritual.\n\n\n\n\n\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

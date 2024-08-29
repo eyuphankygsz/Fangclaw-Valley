@@ -12,10 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
   m_Name: Note_02
   m_EditorClassIdentifier: 
-  ItemName: What Happened - Part II
-  ItemDescription: "Uzun uzun yaz\u0131lm\u0131\u015F bir not 2:\n\nBu da 2. not
-    ama i\u015Fte bohohoyt..."
+  Name: note_02
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:8323a23633c75be4bb1bd67fe2766960
+    m_TableEntryReference:
+      m_KeyId: 409683017728
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:8323a23633c75be4bb1bd67fe2766960
+    m_TableEntryReference:
+      m_KeyId: 437633859584
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ItemSprite: {fileID: 21300000, guid: 6cf13257f0c22e14f9414145db495713, type: 3}
   StackQuantity: 1
   OneTime: 1
-  IsTaken: 0
+  references:
+    version: 2
+    RefIds: []

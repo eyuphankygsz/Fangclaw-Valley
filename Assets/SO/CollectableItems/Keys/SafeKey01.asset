@@ -12,8 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
   m_Name: SafeKey01
   m_EditorClassIdentifier: 
-  ItemName: Safe Key No.1
-  ItemDescription: It looks like I can open a safe with that key.
+  Name: safe_key_01
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 2005556969472
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 6199181492224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ItemSprite: {fileID: 21300000, guid: 6d2430f9e945ab64096a881a9eba1c31, type: 3}
   StackQuantity: 1
   OneTime: 1
+  references:
+    version: 2
+    RefIds: []

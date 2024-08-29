@@ -20,6 +20,14 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 		if (!_saveManager.HasItem(gameObject, GetSaveFile()))
 			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 	}
+	public virtual void SetStatusManually(bool on) 
+	{
+
+	}
+	public void ChangeObjectName()
+	{
+
+	}
 	public abstract GameData GetGameData();
 	public abstract void LoadData();
 	protected void Awake()
@@ -43,10 +51,7 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 		return false;
 	}
 
-	public GameData GetSaveFile()
-	{
-		return GetGameData();
-	}
+	public GameData GetSaveFile() => GetGameData();
 
 	public void SetLoadFile()
 	{

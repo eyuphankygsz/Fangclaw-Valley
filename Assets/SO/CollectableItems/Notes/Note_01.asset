@@ -12,11 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
   m_Name: Note_01
   m_EditorClassIdentifier: 
-  ItemName: What Happened - Part I
-  ItemDescription: "To my dear Evelynn,\n\nI know you are still waiting for me, but
-    I have to work for our future. I know I\u2019ve told you this before, but please
-    wait for me just 3 more weeks, and I will come to you.\n\nYours forever,\nJacob"
+  Name: note_01
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:8323a23633c75be4bb1bd67fe2766960
+    m_TableEntryReference:
+      m_KeyId: 60377186304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:8323a23633c75be4bb1bd67fe2766960
+    m_TableEntryReference:
+      m_KeyId: 105105244160
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ItemSprite: {fileID: 21300000, guid: 6cf13257f0c22e14f9414145db495713, type: 3}
   StackQuantity: 1
   OneTime: 1
-  IsTaken: 0
+  references:
+    version: 2
+    RefIds: []

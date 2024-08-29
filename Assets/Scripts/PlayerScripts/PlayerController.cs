@@ -57,7 +57,6 @@ public class PlayerController : MonoBehaviour, ISaveable
 	}
 	public void Hide(bool hide)
 	{
-		Debug.Log(hide);
 		if (_hiding == hide) return;
 		_hiding = hide;
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2350816}
   - component: {fileID: 4028772287122434805}
   - component: {fileID: -7933175321466778504}
+  - component: {fileID: 406049725657787561}
   m_Layer: 11
   m_Name: SM_Item_Bottle_04
   m_TagString: Untagged
@@ -97,10 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69cbab4bb81468409afbca26f48aeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ObjectName>k__BackingField: Energy Potion
+  <ObjectName>k__BackingField: stamina_potion_0
   <InteractableName>k__BackingField: EnergyPotion
   IsActive: 0
   _includedWeapons: 
+  IsCrateItem: 0
   <Item>k__BackingField: {fileID: 11400000, guid: 265c5e15912c67c4592ca0e52ea13c31,
     type: 2}
   _quantity: 1
@@ -125,3 +127,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.16642463, y: 0.26099634, z: 0.16642368}
   m_Center: {x: 0, y: 0.13049817, z: 0.0000833869}
+--- !u!114 &406049725657787561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 7670640027935178757
+  references:
+    version: 2
+    RefIds:
+    - rid: 7670640027935178757
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 4028772287122434805}
+        m_TrackedProperties:
+          items:
+          - rid: 7670640027935178758
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 7670640027935178758
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:c18a252601e00b34681f9f9e268cb11c
+          m_TableEntryReference:
+            m_KeyId: 386709376385024
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <ObjectName>k__BackingField
