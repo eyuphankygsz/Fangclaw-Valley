@@ -40,10 +40,7 @@ public class Interactable_HingedObjects : Interactable
 
 		SetDoorState(!_isOn);
 	}
-	public override void SetStatusManually(bool on)
-	{
-		SetDoorState(on);
-	}
+	public override void SetStatusManually(bool on) => SetDoorState(on);
 	public void AnimationOver()
 	{
 		_animating = false;
@@ -99,6 +96,9 @@ public class Interactable_HingedObjects : Interactable
 
 	private void SetDoorState(bool isOn)
 	{
+		if (!_saveManager.HasItem(gameObject, GetSaveFile()))
+			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+
 		if (isOn)
 			OneTimeEvent();
 

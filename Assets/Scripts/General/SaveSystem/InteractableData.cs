@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 [System.Serializable]
 public class PickupData : GameData
@@ -24,9 +22,22 @@ public class SwitchData : GameData
 {
 	public bool IsOn;
 }
+[System.Serializable]
+public class RotateDiscData : GameData
+{
+	public int SelectedID;
+}
 
 [System.Serializable]
 public class PlaceHolderData : GameData
 {
-	public bool IsActive;
+	public bool IsItemOn;
+	public bool IsDisabled;
+}
+
+[System.Serializable]
+public class CombLockData : GameData
+{
+	public List<int> LastIDList;
+	public bool IsUnlocked;
 }

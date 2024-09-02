@@ -24,7 +24,6 @@ public class PlayerStamina : MonoBehaviour
 	}
 	public IEnumerator DecreaseStamina()
 	{
-		Debug.Log(_stamina);
 
 		while (_stamina > 0)
 		{

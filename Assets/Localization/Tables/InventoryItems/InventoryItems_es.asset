@@ -40,6 +40,15 @@ MonoBehaviour:
     m_Localized: no_key
     m_Metadata:
       m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "Llave Peque\xF1a de Almac\xE9n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Esta llave desgastada y oxidada, marcada por signos de desuso,
+      est\xE1 claramente destinada a un modesto espacio de almacenamiento."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -65,6 +65,28 @@ MonoBehaviour:
       Baked beans with sausage and a piece of cheese.'
     m_Metadata:
       m_Items: []
+  - m_Id: 1886579815792640
+    m_Localized: From Albeeto to the Workrs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1886584857346048
+    m_Localized: 'Deep down in Louisiana close to New Orleans
+
+      Way back up
+      in the woods among the evergreens
+
+      There stood a log cabin made of earth
+      and wood
+
+      Where lived a country boy named Johnny B. Goode
+
+      Who
+      never ever learned to read or write so well
+
+      But he could play a guitar
+      just like a-ringin'' a bell'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

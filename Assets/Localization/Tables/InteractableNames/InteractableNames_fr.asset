@@ -74,6 +74,19 @@ MonoBehaviour:
     m_Localized: deneme
     m_Metadata:
       m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: "\xC9chelle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "Pour ces moments o\xF9 je dois monter pour saisir ce qui est juste
+      hors de port\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: "Pi\xE9destal"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

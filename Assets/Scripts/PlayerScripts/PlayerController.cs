@@ -4,6 +4,7 @@ using Zenject;
 
 public class PlayerController : MonoBehaviour, ISaveable
 {
+	private static PlayerController _instance;
 
 	private PlayerCamera _playerCamera;
 	private PlayerWeaponController _playerWeapon;
@@ -12,12 +13,14 @@ public class PlayerController : MonoBehaviour, ISaveable
 
 	private PlayerData _data = new PlayerData();
 
+
 	[Inject]
 	private GameManager _gameManager;
 	[Inject]
 	private SaveManager _saveManager;
 	[Inject]
 	private InputManager _inputManager;
+
 
 	private bool _freeze;
 
@@ -28,23 +31,14 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_freeze = freeze;
 		_playerInteractions.StopInteractions(freeze);
 	}
+	private void Awake()
+	{
+		_instance = this;
+	}
 	private void Start()
 	{
+		SetLoadFile();
 		_gameManager.OnPauseGame += GameFreeze;
-		_saveManager.AddSaveableObject(gameObject, _data);
-		_inputManager.Setup(this);
-		GetPlayerScripts();
-		Load();
-	}
-	private void Load()
-	{
-		PlayerData data = _saveManager.GetData<PlayerData>("");
-
-		if (data == null)
-			return;
-
-		transform.position = data.Position;
-		transform.rotation = data.Rotation;
 	}
 
 	void Update()
@@ -54,6 +48,11 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_playerCamera.ManageRotate();
 		_playerWeapon.ManageGun();
 		_playerInteractions.CheckForInteractions();
+	}
+
+	public static void AddWeapon(Enum_Weapons weapon)
+	{
+		_instance._playerWeapon.AddWeapon(weapon);
 	}
 	public void Hide(bool hide)
 	{
@@ -75,15 +74,37 @@ public class PlayerController : MonoBehaviour, ISaveable
 		Vector3 pos = transform.position;
 		_data = new PlayerData()
 		{
-			Name = "",
+			Name = "Player",
 			Position = pos,
-			Rotation = transform.rotation
+			Rotation = transform.rotation,
+			SelectedWeapon = _playerWeapon.GetWeaponIndex()
 		};
 		return _data;
 	}
 
 	public void SetLoadFile()
 	{
-		throw new NotImplementedException();
+		_data = _saveManager.GetData<PlayerData>("Player");
+
+		if (_data == null)
+		{
+			Setup(0);
+			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+			return;
+		}
+
+		transform.position = _data.Position;
+		transform.rotation = _data.Rotation;
+		Setup(_data.SelectedWeapon);
+
+		if (_saveManager.HasItem(gameObject, GetSaveFile()))
+			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+	}
+	private void Setup(int selectedWeapon)
+	{
+		GetPlayerScripts();
+		_inputManager.Setup(this);
+		_saveManager.AddSaveableObject(gameObject, _data);
+		_playerWeapon.SelectWeapon(selectedWeapon);
 	}
 }

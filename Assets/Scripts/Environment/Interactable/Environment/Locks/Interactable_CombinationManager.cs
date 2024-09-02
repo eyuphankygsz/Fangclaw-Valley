@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
@@ -7,7 +9,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	private bool _isInspecting;
 	private bool _canTurn;
 	private bool _interacted;
-	private bool _done;
+	private bool _unlocked;
 	private int[] _digits;
 
 	[SerializeField]
@@ -35,6 +37,10 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 
 	private int _selectedCombination;
 
+	private CombLockData _data;
+
+	private bool _inputsEnabled;
+
 	private void Awake()
 	{
 		base.Awake();
@@ -42,8 +48,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	}
 	public override void OnInteract(Enum_Weapons weapon)
 	{
-		if (_done) return;
-
+		if (_unlocked) return;
 		base.OnInteract(weapon);
 		if (_playerCam == null)
 			_playerCam = Camera.main.gameObject;
@@ -75,15 +80,15 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	private void CheckCode()
 	{
 		string code = "";
-        foreach (var number in _digits)
+		foreach (var number in _digits)
 			code += number;
 
 		Debug.Log(code);
-		if(_code == code)
+		if (_code == code)
 		{
 			Unlock();
 		}
-    }
+	}
 	public void ChangeCode(int id, int number)
 	{
 		_digits[id] = number;
@@ -115,11 +120,11 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 			_canTurn = true;
 			return;
 		}
-		_combinations[_selectedCombination].StartTurnCombination();
+		_combinations[_selectedCombination].StartTurnCombination(times: 1, setManually: false);
 	}
 	private void Unlock()
 	{
-		_done = true;
+		_unlocked = true;
 		Inspect(false);
 		GetComponent<Rigidbody>().isKinematic = false;
 		gameObject.layer = 0;
@@ -145,24 +150,57 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		_controls.Lock.NextCombination.performed += ChangeCombinationRight;
 		_controls.Lock.PreviousCombination.performed += ChangeCombinationLeft;
 		_controls.Lock.Turn.performed += TurnCombination;
+		_inputsEnabled = true;
 	}
 
 
 	public void OnInputDisable()
 	{
+		if (!_inputsEnabled) return;
 		_controls.Lock.Back.performed -= StopInspect;
 		_controls.Lock.NextCombination.performed -= ChangeCombinationRight;
 		_controls.Lock.PreviousCombination.performed -= ChangeCombinationLeft;
 		_controls.Lock.Turn.performed -= TurnCombination;
+		_inputsEnabled = false;
 	}
 
 	public override GameData GetGameData()
 	{
-		return null;
+		if (_digits == null) _digits = new int[_code.Length];
+		_data = new CombLockData()
+		{
+			Name = InteractableName,
+			IsUnlocked = _unlocked,
+			LastIDList = _digits.ToList()
+		};
+		return _data;
 	}
 
 	public override void LoadData()
 	{
-	
+		CombLockData data = _saveManager.GetData<CombLockData>(InteractableName);
+		if (data == null) return;
+		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+
+		if (data.IsUnlocked)
+		{
+			Unlock();
+			Destroy(gameObject);
+			return;
+		}
+
+		_digits = data.LastIDList.ToArray();
+		for (int i = 0; i < _combinations.Length; i++)
+		{
+			int tempID = 0;
+			int turnCount = -1;
+			int max = _combinations[i].GetMaxNumber();
+			while (tempID != _digits[i])
+			{
+				tempID = (tempID + 1) % max;
+				turnCount++;
+			}
+			_combinations[i].StartTurnCombination(times: turnCount, setManually: true);
+		}
 	}
 }

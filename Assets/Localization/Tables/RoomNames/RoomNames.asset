@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: RoomNames
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 5baf1b8a06090f947a8768b6db496ab8, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 323649b967dd8a941b9e81701661b990, type: 2}
+  - {fileID: 11400000, guid: 97ebdc8754ab5234fa53c265e3c220b8, type: 2}
+  - {fileID: 11400000, guid: c5a274474ec197a4db47be0e6352389b, type: 2}
+  - {fileID: 11400000, guid: add6a0bb42d7b6e4c99c3cec04e7dd35, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

@@ -1,8 +1,8 @@
 using System.Collections;
-using System.Threading;
 using UnityEngine;
+using Zenject;
 
-public abstract class Weapons : MonoBehaviour
+public abstract class Weapons : MonoBehaviour, ISaveable
 {
     [SerializeField] protected float Damage { get; set; }
     [SerializeField] protected float _moveSpeed;
@@ -12,6 +12,8 @@ public abstract class Weapons : MonoBehaviour
     [SerializeField] protected float _ySpeed;
     [SerializeField] protected LayerMask _interactableLayers;
     [SerializeField] protected Sprite _weaponCross;
+    
+    public bool IsPicked;
 
 	protected  Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
     protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
@@ -25,12 +27,24 @@ public abstract class Weapons : MonoBehaviour
     private Vector2 _startPos;
     private float _xPolyStart;
     private float _xPos;
-    private void Awake()
+
+    [Inject]
+    protected WeaponHelpers _weaponHelpers;
+	[Inject]
+	protected SaveManager _saveManager;
+
+	private void Awake()
     {
-        Setup();
-        SetWeapon();
-    }
-    private void OnEnable()
+		Setup();
+        SetWeapon(); 
+        if (!_saveManager.HasItem(gameObject, GetSaveFile()))
+			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+	}
+	private void Start()
+	{
+		SetLoadFile();
+	}
+	private void OnEnable()
     {
         if (_startPos != null) return;
         Setup();
@@ -49,7 +63,10 @@ public abstract class Weapons : MonoBehaviour
     public abstract void OnChanged();
     public abstract void SetWeapon();
     public abstract void Move();
-    public GameObject GetHitObject()
+	public abstract GameData GetSave();
+	public abstract void LoadSave();
+
+	public GameObject GetHitObject()
     {
         GameObject tempObj = _hitObject;
         _hitObject = null;
@@ -107,5 +124,15 @@ public abstract class Weapons : MonoBehaviour
     public Sprite GetCross()
     {
         return _weaponCross;
+    }
+
+	public GameData GetSaveFile()
+	{
+       return GetSave();
+	}
+
+	public void SetLoadFile()
+	{
+        LoadSave();
     }
 }

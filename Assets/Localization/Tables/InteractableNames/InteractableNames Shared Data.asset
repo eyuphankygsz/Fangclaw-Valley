@@ -71,6 +71,18 @@ MonoBehaviour:
     m_Key: skull_desc_0
     m_Metadata:
       m_Items: []
+  - m_Id: 3620433568120832
+    m_Key: ladder_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Key: ladder_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Key: pedestal_0
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

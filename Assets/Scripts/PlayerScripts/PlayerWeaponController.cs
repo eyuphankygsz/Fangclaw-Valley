@@ -53,6 +53,17 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		else
 			SelectWeapon(_oldWeaponIndex);
 	}
+	public void AddWeapon(Enum_Weapons weapon)
+	{
+        foreach (var item in _weapons)
+        {
+			if (item.Value.GetWeaponEnum() == weapon)
+			{
+				item.Value.IsPicked = true;
+				break;
+			}
+        }
+    }
 	private void TryMoveGun()
 	{
 		_currentWeapon.Move();
@@ -76,25 +87,41 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private void SelectWeapon(bool next)
 	{
 		int nextGunIndex = next ? 1 : -1;
-		_weaponIndex = (_weaponIndex + nextGunIndex) % _weapons.Count;
-		if (_weaponIndex == -1)
-			_weaponIndex = _weapons.Count - 1;
+		int tempIndex = (_weaponIndex + nextGunIndex) % _weapons.Count;
+		_weaponIndex++;
+		if (tempIndex == -1)
+			tempIndex = _weapons.Count - 1;
 
-		ChangeWeapon();
+		ChangeWeapon(true, tempIndex);
 	}
 	public void SelectWeapon(int index)
 	{
 		if ((_oldWeaponIndex == index && _currentWeapon != null) || index >= _weapons.Count) return;
-		_weaponIndex = index;
-		ChangeWeapon();
+		int tempIndex = index;
+		ChangeWeapon(false, tempIndex);
 	}
-	private void ChangeWeapon()
+	public int GetWeaponIndex()
 	{
+		return _oldWeaponIndex;
+	}
+	private void ChangeWeapon(bool errorChange, int tempIndex)
+	{
+		if (!_weapons[_weaponNames[tempIndex]].IsPicked)
+		{
+			if (errorChange)
+			{
+				SelectWeapon(true);
+			}
+
+			return;
+		}
+		_weaponIndex = tempIndex;
+		_oldWeaponIndex = _weaponIndex;
+
+
 		_currentWeapon?.OnChanged();
 		_currentWeapon?.gameObject.SetActive(false);
 
-		_weaponIndex %= _weapons.Count;
-		_oldWeaponIndex = _weaponIndex;
 
 		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
 		_currentWeapon.gameObject.SetActive(true);

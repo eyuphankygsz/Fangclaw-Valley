@@ -33,7 +33,6 @@ public class PlayerStateMachine : MonoBehaviour
 	{
 		_currentState?.ExitState();
 		_currentState = state;
-		Debug.Log(_currentState);
 		_currentState.EnterState();
 		_currentState.OnInputEnable(_inputManager.Controls);
 

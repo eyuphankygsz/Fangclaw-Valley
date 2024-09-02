@@ -41,6 +41,16 @@ MonoBehaviour:
     m_Localized: no_key
     m_Metadata:
       m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "Petite Cl\xE9 d'Entrep\xF4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Cette cl\xE9 us\xE9e et rouill\xE9e, marqu\xE9e par des signes
+      de n\xE9gligence, est assur\xE9ment destin\xE9e \xE0 un espace de rangement
+      modeste."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

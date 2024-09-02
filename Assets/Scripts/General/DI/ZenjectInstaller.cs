@@ -10,6 +10,7 @@ public class GameInstaller : MonoInstaller
 	public override void InstallBindings()
 	{
 		Container.Bind<GameManager>().AsSingle();
+		Container.Bind<WeaponHelpers>().FromNewComponentOnNewGameObject().AsSingle();
 		Container.BindInterfacesAndSelfTo<InputManager>().AsSingle();
 		Container.BindInterfacesAndSelfTo<SaveManager>().AsSingle();
 		Container.Bind<GameTime>().FromInstance(_gameTime).AsSingle();

@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4378082661d3d540a73860c37ba27cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ObjectName>k__BackingField: Placeholder
+  <ObjectName>k__BackingField: pedestal_0
   <InteractableName>k__BackingField: Placeholder_0_01
   IsActive: 0
   _includedWeapons: 

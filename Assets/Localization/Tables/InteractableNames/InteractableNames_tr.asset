@@ -74,6 +74,19 @@ MonoBehaviour:
     m_Localized: deneme
     m_Metadata:
       m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Merdiven
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "Eri\u015Femedi\u011Fimde objelere ula\u015Fmak i\xE7in t\u0131rmanmam
+      gereken zamanlar i\xE7in."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Kaide
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -35,6 +35,14 @@ MonoBehaviour:
     m_Key: no_key
     m_Metadata:
       m_Items: []
+  - m_Id: 3257357132021760
+    m_Key: storage_key_01_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Key: storage_key_01_desc
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

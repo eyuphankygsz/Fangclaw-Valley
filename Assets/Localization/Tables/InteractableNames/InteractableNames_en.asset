@@ -74,6 +74,19 @@ MonoBehaviour:
     m_Localized: deneme
     m_Metadata:
       m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Ladder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: For those times when I must ascend to grasp what lies just out of
+      reach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Pedestal
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

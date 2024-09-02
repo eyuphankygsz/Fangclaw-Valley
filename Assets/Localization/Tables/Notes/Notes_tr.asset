@@ -39,6 +39,17 @@ MonoBehaviour:
       Sosisli kuru fasulye ve bir par\xE7a peynir."
     m_Metadata:
       m_Items: []
+  - m_Id: 1886579815792640
+    m_Localized: "Albeeto'dan \u0130\u015F\xE7ilerr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1886584857346048
+    m_Localized: "Dr. Grimshow deydi ki bii danesi a\u015F\u015Faya bak\u0131yoo.
+      Biri sa\u011F a\u015F\u015Faya bak\u0131yo, bii danesi de sol \xFCsse bak\u0131yo.
+      A\u015F\u015Faya bakan ortadaki taneydi amma di\u011Ferlerini unutum.\r\n\r\nYard\u0131m
+      etersenizz iyyi olur.\r\n\r\n-Alerto Dawnnshirr"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

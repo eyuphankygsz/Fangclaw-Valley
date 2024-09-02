@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
+  m_Name: Ladder
+  m_EditorClassIdentifier: 
+  Name: ladder_0
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:c18a252601e00b34681f9f9e268cb11c
+    m_TableEntryReference:
+      m_KeyId: 3620433568120832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:c18a252601e00b34681f9f9e268cb11c
+    m_TableEntryReference:
+      m_KeyId: 3620887492476928
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemSprite: {fileID: 21300000, guid: 003272a684c432f4dba1818b9f6eedb4, type: 3}
+  StackQuantity: 1
+  OneTime: 1
+  references:
+    version: 2
+    RefIds: []

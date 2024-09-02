@@ -10,10 +10,13 @@ public class Lantern : Weapons
 
 	private bool _active;
 
+	private float _leftFuel;
+	private bool _onFire;
 
 	private Dictionary<int, IWeaponModes> _modes = new Dictionary<int, IWeaponModes>();
 	private IWeaponModes _defaultMode;
 
+	private LanternData _data = new LanternData();
 	public override void Move()
 	{
 		MoveNormal();
@@ -85,5 +88,37 @@ public class Lantern : Weapons
 
 		foreach (var wMode in _modes)
 			wMode.Value.Setup(this);
+	}
+
+	public override GameData GetSave()
+	{
+		Debug.Log(gameObject.name);
+
+		return new LanternData()
+		{
+			Name = gameObject.name,
+			LeftFuel = _leftFuel,
+			OnFire = _onFire,
+			IsSelected = gameObject.activeSelf,
+
+			IsPicked = IsPicked
+		};
+	}
+
+	public override void LoadSave()
+	{
+		LanternData data = _saveManager.GetData<LanternData>(gameObject.name);
+		if (data == null)
+		{
+			Debug.Log(gameObject.name);
+			gameObject.SetActive(false);
+			return;
+		}
+
+		IsPicked = data.IsPicked;
+		_leftFuel = data.LeftFuel;
+		_data = data;
+		
+		gameObject.SetActive(data.IsSelected);
 	}
 }

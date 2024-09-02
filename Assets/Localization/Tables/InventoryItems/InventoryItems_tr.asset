@@ -40,6 +40,16 @@ MonoBehaviour:
     m_Localized: no_key
     m_Metadata:
       m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "K\xFC\xE7\xFCk Depo Anahtar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Bu eski ve paslanm\u0131\u015F anahtar, ihmalk\xE2rl\u0131\u011F\u0131n
+      izlerini ta\u015F\u0131yan haliyle, kesinlikle m\xFCtevaz\u0131 bir depo alan\u0131
+      i\xE7in tasarlanm\u0131\u015F olmal\u0131."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
