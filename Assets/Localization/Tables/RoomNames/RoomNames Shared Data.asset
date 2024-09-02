@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: storage_door
     m_Metadata:
       m_Items: []
+  - m_Id: 694618762375168
+    m_Key: little_storage_room
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
