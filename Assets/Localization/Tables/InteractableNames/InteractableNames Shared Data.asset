@@ -83,6 +83,10 @@ MonoBehaviour:
     m_Key: pedestal_0
     m_Metadata:
       m_Items: []
+  - m_Id: 5519764290191360
+    m_Key: iron_door
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

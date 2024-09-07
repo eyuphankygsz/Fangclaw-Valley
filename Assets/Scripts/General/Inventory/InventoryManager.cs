@@ -55,8 +55,7 @@ public class InventoryManager : MonoBehaviour
 			if (leftOvers > 0 && index == itemHolders.Count)
 				itemHolders.Add(CreateItemHolder(item, 0));
 
-			if (!_saveManager.HasItem(holder.gameObject, holder.GetSaveData()))
-				_saveManager.AddSaveableObject(holder.gameObject, holder.GetSaveData());
+			_saveManager.AddSaveableObject(holder.gameObject, holder.GetSaveData());
 		}
 	}
 	public void RemoveItemFromInventory(InventoryItem item)

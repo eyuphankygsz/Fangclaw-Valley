@@ -38,6 +38,7 @@ public class SaveManager : IInitializable
 
 	public void AddSaveableObject(GameObject obj, GameData dataClass)
 	{
+		if (HasItem(obj, dataClass)) return;
 		if (dataClass == null) return;
 		var dataType = dataClass.GetType();
 
@@ -47,7 +48,7 @@ public class SaveManager : IInitializable
 		_saveableObjects[dataType].Add(obj);
 
 	}
-	public bool HasItem(GameObject obj, GameData dataClass)
+	private bool HasItem(GameObject obj, GameData dataClass)
 	{
 		if (dataClass == null)
 			return true;

@@ -13,7 +13,7 @@ public class StatusMechanism : MonoBehaviour
 	private bool[] _objectStatus;
 	private bool _isActive;
 
-	private void Start()
+	private void Awake()
 	{
 		_objectStatus = new bool[_order.Length];
 	}

@@ -54,7 +54,6 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 
 	public void OnInputEnable(ControlSchema schema)
 	{
-		Debug.Log("Controls Setting...");
 		_controls = schema;
 		_controls.Player.Interaction.performed += TryInteract;
 	}

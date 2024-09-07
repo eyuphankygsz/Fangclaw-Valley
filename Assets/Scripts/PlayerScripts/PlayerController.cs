@@ -96,9 +96,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 		transform.position = _data.Position;
 		transform.rotation = _data.Rotation;
 		Setup(_data.SelectedWeapon);
-
-		if (_saveManager.HasItem(gameObject, GetSaveFile()))
-			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+		
+		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 	}
 	private void Setup(int selectedWeapon)
 	{

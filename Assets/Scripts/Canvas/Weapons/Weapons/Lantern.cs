@@ -48,6 +48,7 @@ public class Lantern : Weapons
 		if (Input.GetMouseButtonDown(0))
 		{
 			_active = !_active;
+			_onFire = _active;
 			_normalLightSource.SetActive(_active);
 			SetLightning(true);
 		}
@@ -92,8 +93,6 @@ public class Lantern : Weapons
 
 	public override GameData GetSave()
 	{
-		Debug.Log(gameObject.name);
-
 		return new LanternData()
 		{
 			Name = gameObject.name,

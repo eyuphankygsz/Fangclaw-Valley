@@ -41,3 +41,9 @@ public class CombLockData : GameData
 	public List<int> LastIDList;
 	public bool IsUnlocked;
 }
+[System.Serializable]
+public class MusicMechData : GameData
+{
+	public string CurrentOrder;
+	public bool IsDone;
+}

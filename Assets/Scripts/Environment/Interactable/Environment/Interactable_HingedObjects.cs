@@ -96,9 +96,7 @@ public class Interactable_HingedObjects : Interactable
 
 	private void SetDoorState(bool isOn)
 	{
-		if (!_saveManager.HasItem(gameObject, GetSaveFile()))
-			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
-
+		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 		if (isOn)
 			OneTimeEvent();
 
@@ -109,6 +107,7 @@ public class Interactable_HingedObjects : Interactable
 
 	private void OneTimeEvent()
 	{
+		Debug.Log(InteractableName + " " + _used);
 		if (!_used)
 		{
 			_used = true;

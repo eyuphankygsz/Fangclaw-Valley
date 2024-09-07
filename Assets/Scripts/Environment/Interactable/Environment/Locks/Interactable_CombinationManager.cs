@@ -27,7 +27,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	[SerializeField]
 	private GameObject _lockCam;
 	private GameObject _playerCam;
-
 	private ControlSchema _controls;
 
 	[Inject]
@@ -45,7 +44,9 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	{
 		base.Awake();
 		_digits = new int[_code.Length];
+
 	}
+
 	public override void OnInteract(Enum_Weapons weapon)
 	{
 		if (_unlocked) return;
@@ -83,7 +84,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		foreach (var number in _digits)
 			code += number;
 
-		Debug.Log(code);
 		if (_code == code)
 		{
 			Unlock();
@@ -201,6 +201,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 				turnCount++;
 			}
 			_combinations[i].StartTurnCombination(times: turnCount, setManually: true);
+			_combinations[i].Loaded = true;
 		}
 	}
 }

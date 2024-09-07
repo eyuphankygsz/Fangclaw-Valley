@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ObjectName>k__BackingField: typewriter_0
-  <InteractableName>k__BackingField: SaveGame1
+  <InteractableName>k__BackingField: typewriter_01
   IsActive: 0
   _includedWeapons: 
 --- !u!114 &4321258201063793688

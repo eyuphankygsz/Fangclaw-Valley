@@ -26,13 +26,14 @@ public class Interactable_PlaceHolder : Interactable
 	[SerializeField]
 	private int _id;
 
+	private bool _initialized;
+
 	private PlaceHolderData _data;
 
 	private void Start()
 	{
-		base.Start();
 		_mechanism = GetComponentInParent<StatusMechanism>();
-		
+		base.Start();
 	}
 	public override void OnInteract(Enum_Weapons weapon)
 	{
@@ -43,6 +44,11 @@ public class Interactable_PlaceHolder : Interactable
 
 		HandleHolding(item);
 
+	}
+	private void OnEnable()
+	{
+		if(_initialized && _data.IsDisabled)
+			gameObject.SetActive(false);
 	}
 
 	private void HandleHolding(InventoryItem item)
@@ -64,7 +70,7 @@ public class Interactable_PlaceHolder : Interactable
 	}
 	private void HandleHolderObject(bool placed)
 	{
-		if (!placed)
+		if (!placed && _holderObject != null)
 			_holderObject.SetActive(false);
 
 		_holderObject = null;
@@ -81,7 +87,7 @@ public class Interactable_PlaceHolder : Interactable
 		{
 			Name = InteractableName,
 			IsItemOn = _isFull,
-			IsDisabled = gameObject.activeSelf
+			IsDisabled = !gameObject.activeSelf
 		};
 
 		return _data;
@@ -89,6 +95,14 @@ public class Interactable_PlaceHolder : Interactable
 
 	public override void LoadData()
 	{
+		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+		if (_initialized)
+		{
+			Debug.Log(_holderObject);
+			return;
+		}
+		
+		_initialized = true;
 		var data = _saveManager.GetData<PlaceHolderData>(InteractableName);
 		if (data == null)
 		{
@@ -97,7 +111,6 @@ public class Interactable_PlaceHolder : Interactable
 		}
 		_data = data;
 		gameObject.SetActive((_startAsDisabled && _data.IsDisabled) ? false : !_data.IsDisabled);
-		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 		HandleHolderObject(placed: data.IsItemOn);
 		_isFull = data.IsItemOn;
 		_mechanism.SetLever(_id, _isFull);

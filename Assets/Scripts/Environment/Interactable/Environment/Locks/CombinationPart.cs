@@ -8,13 +8,19 @@ public class CombinationPart : MonoBehaviour
 	private Interactable_CombinationManager _combinationManager;
 
 	[SerializeField]
-	private int _id, _number;
+	private int _id, _number, _startNumber;
 	[SerializeField]
 	private int _maxNumber;
 
+	public bool Loaded;
 	private void Start()
 	{
 		_combinationManager = GetComponentInParent<Interactable_CombinationManager>();
+		if (!Loaded)
+		{
+			_number = _startNumber;
+			_combinationManager.ChangeCode(_id, _startNumber);
+		}
 	}
 	public void StartTurnCombination(int times, bool setManually)
 	{
@@ -23,7 +29,7 @@ public class CombinationPart : MonoBehaviour
 		_isTurning = true;
 
 		if (setManually) 
-			_number = (_number + times + 1) % _maxNumber;
+			_number = (_number + times) % _maxNumber;
 
 		transform.DOLocalRotate(new Vector3(0, 0, 45 * times), .5f, RotateMode.WorldAxisAdd).OnComplete(setManually ? RotateEndManually : RotateEnd);
 	}
@@ -34,7 +40,7 @@ public class CombinationPart : MonoBehaviour
 		_number++;
 
 		if (_number > _maxNumber)
-			_number = 0;
+			_number = _startNumber;
 		_isTurning = false;
 		_combinationManager.ChangeCode(_id, _number);
 	}
