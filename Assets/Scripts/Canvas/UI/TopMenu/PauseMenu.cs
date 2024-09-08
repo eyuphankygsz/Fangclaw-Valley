@@ -6,6 +6,8 @@ using Zenject;
 
 public class PauseMenu : MonoBehaviour
 {
+	public static PauseMenu Instance { get; private set; }
+
 	[SerializeField]
 	private Color _unSelected, _selected;
 
@@ -30,6 +32,7 @@ public class PauseMenu : MonoBehaviour
 
 	private void Awake()
 	{
+		Instance = this;
 		_content = transform.GetChild(0).gameObject;
 		_content.SetActive(false);
 	}
@@ -72,6 +75,11 @@ public class PauseMenu : MonoBehaviour
 		SelectTitle(section);
 		SetupSection(section);
 
+	}
+	public void OpenInventory()
+	{
+		_gameManager.PauseGame = true;
+		SelectSection(_sections["Inventory"], true);
 	}
 	private void SetupSection(TopSections section)
 	{
