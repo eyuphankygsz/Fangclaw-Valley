@@ -24,9 +24,10 @@ public class PlayerHealth : MonoBehaviour, IInputHandler
 	{
 		_playerUI.SetMaxHealth(_maxHealth);
 	}
-	public void AddHealth(float damage)
+	public void AddHealth(float addedHealth)
 	{
-		_health -= damage;
+		_health = Mathf.Clamp(_health + addedHealth, 0, _maxHealth);
+		_playerUI.ChangeHealthBar(_health);
 	}
 
 	public void OnInputDisable()

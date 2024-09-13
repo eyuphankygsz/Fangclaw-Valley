@@ -39,6 +39,27 @@ MonoBehaviour:
       au four avec saucisse et un morceau de fromage."
     m_Metadata:
       m_Items: []
+  - m_Id: 409683017728
+    m_Localized: Ce Qui Reste d'Alberto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: "Alberto avait progressivement perdu sa raison au cours des deux
+      derniers jours. Pourtant, personne n\u2019aurait jamais imagin\xE9 qu\u2019il
+      sombrerait dans une telle folie. Arm\xE9 d\u2019une \xE9p\xE9e prise dans la
+      Salle des Cartes, il a mis fin pr\xE9matur\xE9ment \xE0 la vie du pauvre Bush.
+      Suite \xE0 cet incident grave, j\u2019ai personnellement verrouill\xE9 les
+      portes de la Salle des Cartes. Nous n\u2019avons jamais revu Alberto.\n\nPour
+      \xEAtre s\xFBr de ne pas oublier le mot de passe long, Grimshaw et moi avons
+      con\xE7u une petite \xE9nigme :\n\nCinq oiseaux avaient fait un pari,\nIls
+      d\xE9battaient combien de pattes poss\xE8de une fourmi.\nLe premier a d\xE9clar\xE9
+      \xAB trois \xBB,\nLe troisi\xE8me a r\xE9pondu \xAB autant que les n\xF4tres
+      \xBB,\nLe quatri\xE8me a d\xE9clar\xE9 \xAB une de plus que le deuxi\xE8me
+      \xBB,\nEt le cinqui\xE8me a dit \xAB deux de moins que le quatri\xE8me \xBB.\nFinalement,
+      ils ont compt\xE9, et il s\u2019est av\xE9r\xE9 que le deuxi\xE8me oiseau avait
+      raison.\n\nAinsi, nous avons r\xE9ussi \xE0 dissimuler le mot de passe."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

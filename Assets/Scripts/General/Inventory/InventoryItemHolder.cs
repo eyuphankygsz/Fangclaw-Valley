@@ -9,6 +9,8 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 	InventoryManager _inventoryManager;
 
 	[SerializeField]
+	private bool _chestHolder;
+	[SerializeField]
 	private int _id;
 
 	[field: SerializeField]
@@ -25,10 +27,12 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 	[SerializeField]
 	private TextMeshProUGUI _quantityText;
 	[SerializeField]
-	private Image _itemImage; 
+	private Image _itemImage;
 	private Image _holderImage;
 
 	private InventoryDataItem _inventoryDataItem = new InventoryDataItem();
+
+	public bool TempDisable { get; set; }
 
 	[Inject]
 	private SaveManager _saveManager;
@@ -38,12 +42,14 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 		_holderImage = GetComponent<Image>();
 	}
 
-	public void SetInventoryManager(InventoryManager inventoryManager) 
+	public void SetInventoryManager(InventoryManager inventoryManager)
 		=> _inventoryManager = inventoryManager;
-	
+
 	public void Setup(InventoryManager inventoryManager, InventoryItem item, int quantity)
 	{
-		_saveManager.AddSaveableObject(gameObject, GetSaveData());
+		if (!_chestHolder)
+			_saveManager.AddSaveableObject(gameObject, GetSaveData());
+
 		_itemImage.sprite = item.ItemSprite;
 		_itemImage.enabled = true;
 		_inventoryManager = inventoryManager;
@@ -51,28 +57,56 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 		MaxQuantity = item.StackQuantity;
 		Quantity = quantity;
 
-		GetComponent<Button>().onClick.AddListener(OnSelect);
-		if (quantity == 1)
-			_quantityImage.SetActive(false);
-		else
-			_quantityText.text = Quantity.ToString();
+		_quantityText.text = Quantity.ToString();
+		_quantityImage.SetActive(quantity != 1);
 	}
-
-	
-	public void OnSelect()
+	private void OnDisable()
 	{
-		_inventoryManager.SelectItem(this);
+		if (_chestHolder)
+		{
+			_inventoryManager.Disable();
+			gameObject.SetActive(false);
+		}
+		if(_inventoryManager != null)
+		_holderImage.color = _inventoryManager._pointerExitColor;
+	}
+	public void ResetHolder()
+	{
+		_itemImage.sprite = null;
+		_itemImage.enabled = false;
+		Item = null;
+		MaxQuantity = 0;
+		Quantity = 0;
+		_quantityImage.SetActive(false);
+		TempDisable = false;
+	}
+	public void SetTemporaryStatus(bool isEnable)
+	{
+		TempDisable = !isEnable;
+		_itemImage.enabled = isEnable;
+		if (Quantity == 1)
+			_quantityImage.SetActive(false && isEnable);
+		else
+		{
+			_quantityText.text = Quantity.ToString();
+			_quantityImage.SetActive(true && isEnable);
+		}
 	}
 	public void AddQuantity(int quantity)
 	{
 		Quantity += quantity;
-		if(Quantity > 1)
+
+		if (Quantity == 0)
+			ResetHolder();
+
+		if (Quantity > 1)
 		{
 			_quantityImage.SetActive(true);
 			_quantityText.text = Quantity.ToString();
 		}
 		else
 			_quantityImage.SetActive(false);
+		_quantityText.text = Quantity.ToString();
 	}
 	public InventoryDataItem GetSaveData()
 	{
@@ -81,6 +115,7 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 
 	public GameData GetSaveFile()
 	{
+		if (_chestHolder) return null;
 		_inventoryDataItem = new InventoryDataItem()
 		{
 			Name = Item.Name,
@@ -107,12 +142,9 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 
 	private void ChangeColor(bool on)
 	{
-		Debug.Log(_holderImage);
-		Debug.Log(_inventoryManager);
-
-		if (_holderImage == null) _holderImage = GetComponent<Image>();
+		if (_holderImage == null)
+			_holderImage = GetComponent<Image>();
 		_holderImage.color = on ? _inventoryManager._pointerEnterColor : _inventoryManager._pointerExitColor;
-
 	}
 
 	public void OnPointerUp(PointerEventData eventData)
@@ -122,6 +154,9 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
-		_inventoryManager.HandleClick(this);
+		if (eventData.button == PointerEventData.InputButton.Left)
+			_inventoryManager.HandleLeftClick(this);
+		else if (eventData.button == PointerEventData.InputButton.Right)
+			_inventoryManager.HandleRightClick(this);
 	}
 }

@@ -27,7 +27,7 @@ public class PlayerStamina : MonoBehaviour
 
 		while (_stamina > 0)
 		{
-			_stamina -= Time.deltaTime;
+			_stamina -= Time.deltaTime * 20;
 			_playerUI.ChangeStaminaBar(_stamina);
 			
 			if(_stamina < 0)
@@ -41,7 +41,7 @@ public class PlayerStamina : MonoBehaviour
 	{
 		while (_stamina < _maxStamina)
 		{
-			_stamina += Time.deltaTime * 0.2f;
+			_stamina += Time.deltaTime * 12f;
 			_playerUI.ChangeStaminaBar(_stamina);
 
 			if (_stamina > _maxStamina)
@@ -49,5 +49,9 @@ public class PlayerStamina : MonoBehaviour
 			
 			yield return null;
 		}
+	}
+	public void AddStamina(int addedStamina)
+	{
+		_stamina = Mathf.Clamp(_stamina + addedStamina,0, _maxStamina);
 	}
 }

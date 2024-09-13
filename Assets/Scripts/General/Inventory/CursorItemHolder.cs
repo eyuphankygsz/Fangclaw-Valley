@@ -8,10 +8,12 @@ public class CursorItemHolder : MonoBehaviour
 {
     [SerializeField]
     private Image _itemImage;
+	[SerializeField]
+	private TextMeshProUGUI _quantityText; 
     [SerializeField]
-    private TextMeshProUGUI _quantityText;
-    
-    private RectTransform _rectTransform;
+	private GameObject _quantityImage;
+
+	private RectTransform _rectTransform;
 
 	private void Start()
 	{
@@ -19,10 +21,15 @@ public class CursorItemHolder : MonoBehaviour
         SetActive(false);
 	}
 	public void Setup(InventoryItemHolder holder)
-    {
-        _itemImage.sprite = holder.Item.ItemSprite;
+	{
+		Vector3 mousePos = Input.mousePosition;
+		_rectTransform.position = mousePos;
+		
+		_itemImage.sprite = holder.Item.ItemSprite;
         _quantityText.text = holder.Quantity.ToString();
-        SetActive(true);
+        _quantityImage.SetActive(holder.Quantity != 1);
+        
+		SetActive(true);
     }
 	private void OnDisable()
 	{

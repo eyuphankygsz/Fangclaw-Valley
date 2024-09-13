@@ -21,9 +21,9 @@ public class Interactable_Pickup : Interactable
 	{
 		base.OnInteract(weapon);
 
-		_inventoryManager.AddItemToInventory(Item, _quantity);
-		gameObject.SetActive(false);
-
+		_inventoryManager.AddItemToInventory(Item, _quantity, this);
+		if (!_used)
+			OneTimeEvent();
 	}
 
 	public override GameData GetGameData()
@@ -45,11 +45,16 @@ public class Interactable_Pickup : Interactable
 			{
 				Name = InteractableName,
 				IsPickedUp = !gameObject.activeSelf,
+				LeftQuantity = _quantity,
+				Position = pos,
 			};
 			return _pickupData;
 		}
 	}
-
+	public void AddQuantity(int quantity)
+	{
+		_quantity += quantity;
+	}
 	public override void LoadData()
 	{
 		if (!IsCrateItem)
@@ -57,8 +62,22 @@ public class Interactable_Pickup : Interactable
 			PickupData data = _saveManager.GetData<PickupData>(InteractableName);
 			if (data == null) return;
 
+			gameObject.transform.position = data.Position;
 			gameObject.SetActive(!data.IsPickedUp);
+			_quantity = data.LeftQuantity;
+			if (data.IsPickedUp)
+				OneTimeEvent();
 		}
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 	}
+	public void SetQuantity(int quantity)
+	{
+		_quantity = quantity;
+	}
+
+
 }
+
+
+
+

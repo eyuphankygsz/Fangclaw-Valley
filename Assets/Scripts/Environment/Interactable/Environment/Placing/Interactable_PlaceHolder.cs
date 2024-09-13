@@ -56,7 +56,7 @@ public class Interactable_PlaceHolder : Interactable
 		if (_isFull)
 		{
 			HandleHolderObject(placed: false);
-			_inventoryManager.AddItemToInventory(_theItem, 1);
+			_inventoryManager.AddItemToInventory(_theItem, 1, null);
 			_isFull = false;
 		}
 		else

@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 	{
 		SetLoadFile();
 		_gameManager.OnPauseGame += GameFreeze;
+		_gameManager.OnInspecting += GameFreeze;
 	}
 
 	void Update()

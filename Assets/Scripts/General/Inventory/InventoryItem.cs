@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -10,4 +11,5 @@ public class InventoryItem : ScriptableObject
 	public Sprite ItemSprite;
 	public int StackQuantity;
 	public bool OneTime;
+	public List<ItemFunctions> ItemFunctions;
 }

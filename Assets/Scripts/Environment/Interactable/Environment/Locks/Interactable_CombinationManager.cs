@@ -75,7 +75,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		_collider.enabled = !inspect;
 
 		_gameManager.Inspecting = inspect;
-		_gameManager.PauseGame = inspect;
 
 	}
 	private void CheckCode()

@@ -46,11 +46,23 @@ public class ObjectPool : MonoBehaviour
 	{
 		foreach (var item in _itemPools[wantedObject])
 			if (!item.activeSelf)
-				return ActivateItem(item, pos);
+				return ActivateItem(item, pos, wantedObject.INITIAL_QUANTITY);
 
 		GameObject newItem = CreateItem(wantedObject);
 		_itemPools[wantedObject].Add(newItem);
-		return ActivateItem(newItem, pos);
+		return ActivateItem(newItem, pos, wantedObject.INITIAL_QUANTITY);
+	}
+	public GameObject GetObject(Vector3 pos, string wantedObject)
+	{
+		PoolItem item = null;
+		foreach (var itempool in _itemPools)
+			if (itempool.Key.name == wantedObject)
+			{
+				item = itempool.Key;
+				break;
+			}
+
+		return GetObject(pos, item);
 	}
 
 	private List<GameObject> CreateItems(PoolItem prefab, int itemCount)
@@ -78,10 +90,13 @@ public class ObjectPool : MonoBehaviour
 		return newItem;
 	}
 
-	private GameObject ActivateItem(GameObject item, Vector3 pos)
+	private GameObject ActivateItem(GameObject item, Vector3 pos, int initialCount)
 	{
-		if (item.TryGetComponent<Interactable>(out Interactable interactable))
-			item.GetComponent<Interactable_Pickup>().IsCrateItem = true;
+		if (item.TryGetComponent<Interactable_Pickup>(out Interactable_Pickup interactable))
+		{
+			interactable.IsCrateItem = true;
+			interactable.SetQuantity(initialCount);
+		}
 		item.transform.position = pos;
 		item.SetActive(true);
 		return item;

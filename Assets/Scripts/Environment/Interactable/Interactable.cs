@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public abstract class Interactable : MonoBehaviour, ISaveable
 {
@@ -10,8 +12,17 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	public string InteractableName { get; protected set; }
 	public bool IsActive;
 
+	protected bool _used;
 
 	[SerializeField] protected Enum_Weapons[] _includedWeapons;
+
+
+	[SerializeField]
+	protected UnityEvent _oneTimeEvents;
+	[SerializeField]
+	protected UnityEvent _trueEvents;
+	[SerializeField]
+	protected UnityEvent _falseEvents;
 
 	[Inject]
 	protected SaveManager _saveManager;
@@ -49,6 +60,19 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 				return true;
 		return false;
 	}
+
+
+	protected void OneTimeEvent()
+	{
+		Debug.Log(InteractableName + " " + _used);
+		if (!_used)
+		{
+			_used = true;
+			_oneTimeEvents.Invoke();
+		}
+
+	}
+
 
 	public GameData GetSaveFile() => GetGameData();
 

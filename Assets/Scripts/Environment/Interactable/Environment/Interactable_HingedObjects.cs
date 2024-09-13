@@ -11,15 +11,7 @@ public class Interactable_HingedObjects : Interactable
 	private LockKey _lockKey;
 
 	[SerializeField]
-	private UnityEvent _oneTimeEvents;
-	[SerializeField]
-	private UnityEvent _trueEvents;
-	[SerializeField]
-	private UnityEvent _falseEvents;
-
-	[SerializeField]
 	private bool _isOn;
-	private bool _used;
 
 	private bool _animating;
 	private Animator _animator;
@@ -105,14 +97,5 @@ public class Interactable_HingedObjects : Interactable
 		_animating = _isOn;
 	}
 
-	private void OneTimeEvent()
-	{
-		Debug.Log(InteractableName + " " + _used);
-		if (!_used)
-		{
-			_used = true;
-			_oneTimeEvents.Invoke();
-		}
 
-	}
 }

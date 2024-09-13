@@ -87,6 +87,24 @@ MonoBehaviour:
       just like a-ringin'' a bell'
     m_Metadata:
       m_Items: []
+  - m_Id: 409683017728
+    m_Localized: What Remains of Alberto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: "Alberto had been progressively losing his sanity over the past
+      two days. Yet, no one could have ever imagined he would descend into such madness.
+      With a sword taken from the Map Room, he brought an untimely end to the life
+      of poor Bush. Following this grievous incident, I personally secured the doors
+      of the Map Room. We never saw Alberto again.\n\nTo ensure the lengthy password
+      was not forgotten, Grimshaw and I devised a small riddle:\n\nFive birds had
+      made a wager,\nThey debated how many legs an ant possesses.\nThe first declared
+      \u201Cthree,\u201D\nThe third responded \u201Cas many as ours,\u201D\nThe fourth
+      stated \u201Cone more than the second,\u201D\nAnd the fifth said \u201Ctwo
+      fewer than the fourth.\u201D\nEventually, they counted, and it turned out the
+      second bird was correct.\n\nThus, we succeeded in concealing the password."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

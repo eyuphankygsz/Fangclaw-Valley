@@ -1,9 +1,12 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 [System.Serializable]
 public class PickupData : GameData
 {
 	public bool IsPickedUp;
+	public int LeftQuantity;
+	public Vector3 Position;
 }
 [System.Serializable]
 public class HingedData : GameData

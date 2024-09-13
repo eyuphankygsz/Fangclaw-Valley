@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using UnityEngine;
 
 public class GameManager
 {
@@ -13,18 +14,23 @@ public class GameManager
 		{
 			if (_pauseGame != value)
 			{
-				_pauseGame = _inspecting ? true : value;
-				Debug.WriteLine(_pauseGame);
+				Time.timeScale = value ? 0 : 1;
+				_pauseGame = value;
 				OnPauseGame?.Invoke(_pauseGame);
 			}
 		}
 	}
 
+	public event Action<bool> OnInspecting;
 	private bool _inspecting;
 	public bool Inspecting
 	{
 		get => _inspecting;
-		set => _inspecting = value;
+		set 
+		{
+			_inspecting = value;
+			OnInspecting?.Invoke(_inspecting);
+		}
 	}
 
 

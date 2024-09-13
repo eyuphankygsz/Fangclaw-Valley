@@ -38,6 +38,25 @@ MonoBehaviour:
       pan.\n\nCena: Alubias al horno con salchicha y un trozo de queso."
     m_Metadata:
       m_Items: []
+  - m_Id: 409683017728
+    m_Localized: Lo Que Queda de Alberto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: "Alberto hab\xEDa ido perdiendo progresivamente la cordura durante
+      los \xFAltimos dos d\xEDas. Sin embargo, nadie podr\xEDa haber imaginado que
+      descendiera a tal locura. Con una espada tomada de la Sala de Mapas, puso fin
+      prematuramente a la vida del pobre Bush. Tras este grave incidente, asegur\xE9
+      personalmente las puertas de la Sala de Mapas. Nunca volvimos a ver a Alberto.\n\nPara
+      asegurarme de no olvidar la contrase\xF1a larga, Grimshaw y yo ideamos un peque\xF1o
+      acertijo:\n\nCinco p\xE1jaros hicieron una apuesta,\nDebatieron cu\xE1ntas
+      patas tiene una hormiga.\nEl primero dijo \u201Ctres,\u201D\nEl tercero respondi\xF3
+      \u201Ctantas como las nuestras,\u201D\nEl cuarto dijo \u201Cuna m\xE1s que
+      el segundo,\u201D\nY el quinto dijo \u201Cdos menos que el cuarto.\u201D\nFinalmente,
+      contaron, y result\xF3 que el segundo p\xE1jaro ten\xEDa raz\xF3n.\n\nAs\xED,
+      conseguimos ocultar la contrase\xF1a."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
