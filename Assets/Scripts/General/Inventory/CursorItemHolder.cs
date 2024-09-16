@@ -22,6 +22,11 @@ public class CursorItemHolder : MonoBehaviour
 	}
 	public void Setup(InventoryItemHolder holder)
 	{
+		if (holder.Item == null)
+		{
+			SetActive(false);
+			return;
+		}
 		Vector3 mousePos = Input.mousePosition;
 		_rectTransform.position = mousePos;
 		

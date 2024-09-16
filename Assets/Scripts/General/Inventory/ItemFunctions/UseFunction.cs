@@ -2,5 +2,5 @@ using UnityEngine;
 
 public abstract class UseFunction : MonoBehaviour
 {
-	public abstract void Use();
+	public abstract bool Use();
 }

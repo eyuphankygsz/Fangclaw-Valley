@@ -91,6 +91,39 @@ MonoBehaviour:
     m_Localized: Puerta de Hierro
     m_Metadata:
       m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dinamita
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: "Este explosivo se utiliza a menudo en las minas. Es un medio de
+      detonaci\xF3n costoso y potente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Cuerda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: Una cuerda resistente, esencial para diversas tareas en las minas,
+      desde asegurar cargas hasta ayudar en los descensos. Su fiabilidad solo es
+      igualada por su versatilidad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Dinamita Atada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Un paquete de cartuchos de dinamita, firmemente atados para una
+      explosi\xF3n m\xE1s potente. Utilizado a menudo en grandes operaciones mineras
+      para despejar \xE1reas extensas de roca."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Linterna
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -91,6 +91,39 @@ MonoBehaviour:
     m_Localized: Porte de Fer
     m_Metadata:
       m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: "Cet explosif est souvent utilis\xE9 dans les mines. C\u2019est
+      un moyen de d\xE9tonation co\xFBteux et puissant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Corde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Une corde robuste, indispensable pour diverses t\xE2ches dans les
+      mines, que ce soit pour s\xE9curiser des charges ou pour faciliter les descentes.
+      Sa fiabilit\xE9 est \xE0 la hauteur de sa polyvalence.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: "Dynamite Li\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Un paquet de b\xE2tons de dynamite, solidement attach\xE9s ensemble
+      pour une explosion plus puissante. Souvent utilis\xE9 dans les grandes op\xE9rations
+      mini\xE8res pour d\xE9gager de vastes zones rocheuses."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lanterne
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -91,6 +91,40 @@ MonoBehaviour:
     m_Localized: "Demir Kap\u0131"
     m_Metadata:
       m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dinamit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: "Bu patlay\u0131c\u0131, madenlerde s\u0131k\xE7a kullan\u0131l\u0131r.
+      Pahal\u0131 ve g\xFC\xE7l\xFC bir patlay\u0131c\u0131d\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Halat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Madende y\xFCkleri sabitlemekten ini\u015Flere yard\u0131mc\u0131
+      olmaya kadar bir\xE7ok i\u015F i\xE7in vazge\xE7ilmez sa\u011Flam bir halat.
+      Dayan\u0131kl\u0131l\u0131\u011F\u0131, \xE7ok y\xF6nl\xFCl\xFC\u011F\xFC ile
+      e\u015Fde\u011Ferdir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: "Ba\u011Flanm\u0131\u015F Dinamitler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Daha g\xFC\xE7l\xFC bir patlama i\xE7in s\u0131k\u0131ca ba\u011Flanm\u0131\u015F
+      dinamit \xE7ubuklar\u0131. Genellikle geni\u015F kaya alanlar\u0131n\u0131
+      temizlemek i\xE7in b\xFCy\xFCk madencilik operasyonlar\u0131nda kullan\u0131l\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Fener
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

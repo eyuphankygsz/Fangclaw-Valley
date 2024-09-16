@@ -4,8 +4,9 @@ public class StaminaPotion : UseFunction
 {
 	[SerializeField]
 	private PlayerStamina _stamina;
-	public override void Use()
+	public override bool Use()
 	{
 		_stamina.AddStamina(35);
+		return true;
 	}
 }

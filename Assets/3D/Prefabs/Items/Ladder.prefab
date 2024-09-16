@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ObjectName>k__BackingField: ladder_0
-  <InteractableName>k__BackingField: ladder_01
+  <InteractableName>k__BackingField: 
   IsActive: 0
   _includedWeapons: 
   _oneTimeEvents:

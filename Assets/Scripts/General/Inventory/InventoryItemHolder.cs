@@ -6,10 +6,9 @@ using Zenject;
 
 public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
 {
-	InventoryManager _inventoryManager;
+	private InventoryManager _inventoryManager;
+	public bool IsChestHolder;
 
-	[SerializeField]
-	private bool _chestHolder;
 	[SerializeField]
 	private int _id;
 
@@ -47,7 +46,7 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 
 	public void Setup(InventoryManager inventoryManager, InventoryItem item, int quantity)
 	{
-		if (!_chestHolder)
+		if (!IsChestHolder)
 			_saveManager.AddSaveableObject(gameObject, GetSaveData());
 
 		_itemImage.sprite = item.ItemSprite;
@@ -62,13 +61,13 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 	}
 	private void OnDisable()
 	{
-		if (_chestHolder)
+		if (IsChestHolder)
+			gameObject.SetActive(false);
+		if (_inventoryManager != null)
 		{
 			_inventoryManager.Disable();
-			gameObject.SetActive(false);
+			_holderImage.color = _inventoryManager._pointerExitColor;
 		}
-		if(_inventoryManager != null)
-		_holderImage.color = _inventoryManager._pointerExitColor;
 	}
 	public void ResetHolder()
 	{
@@ -115,7 +114,7 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 
 	public GameData GetSaveFile()
 	{
-		if (_chestHolder) return null;
+		if (IsChestHolder) return null;
 		_inventoryDataItem = new InventoryDataItem()
 		{
 			Name = Item.Name,

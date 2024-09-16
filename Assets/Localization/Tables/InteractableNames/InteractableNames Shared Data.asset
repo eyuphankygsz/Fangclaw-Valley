@@ -87,6 +87,34 @@ MonoBehaviour:
     m_Key: iron_door
     m_Metadata:
       m_Items: []
+  - m_Id: 8654831409610752
+    m_Key: dynamite_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Key: dynamite_desc_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Key: rope_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Key: rope_desc_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Key: bundle_dynamite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Key: bundle_dynamite_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Key: lantern_0
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

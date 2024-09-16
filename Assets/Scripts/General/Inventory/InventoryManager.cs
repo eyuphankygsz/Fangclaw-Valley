@@ -57,6 +57,8 @@ public class InventoryManager : MonoBehaviour
 	private Transform _useFunctionParent;
 	private Dictionary<string, UseFunction> _useFunctions = new Dictionary<string, UseFunction>();
 
+	private bool _combine;
+	private CombineManager _combineManager;
 	public void Start()
 	{
 		_itemHoldersList = _itemHolderTransform.GetComponentsInChildren<InventoryItemHolder>().ToList();
@@ -166,8 +168,13 @@ public class InventoryManager : MonoBehaviour
 
 	public void HandleLeftClick(InventoryItemHolder holder)
 	{
+		if (_combine)
+		{
+			TryCombine(holder);
+			return;
+		}
 		if (_onMenu)
-			DisableCursorMenu();
+			DisableCursorMenu(false);
 
 		if (holder.Item != null)
 		{
@@ -180,9 +187,7 @@ public class InventoryManager : MonoBehaviour
 		{
 			if (_lastSelectedHolder == null) return;
 			else
-			{
 				ChangeItem(holder);
-			}
 		}
 		if (_chestHolder.Item == null)
 		{
@@ -192,19 +197,24 @@ public class InventoryManager : MonoBehaviour
 	}
 	public void HandleRightClick(InventoryItemHolder holder)
 	{
-		if (_onMenu)
+		if (_onMenu || _combine)
+		{
+			DisableCursorMenu(false);
 			_lastSelectedHolder = null;
+		}
+		_combine = false;
+
 		if (_lastSelectedHolder == null && holder.Item != null)
 		{
 			_onMenu = true;
 			_lastSelectedHolder = holder;
-			_cursorMenu.SetMenu(holder.Item);
+			_cursorMenu.SetMenu(holder.Item, holder.IsChestHolder);
 		}
 		else
 		{
 			if (_lastSelectedHolder != null)
 				_lastSelectedHolder.SetTemporaryStatus(true);
-			DisableCursorMenu();
+			DisableCursorMenu(false);
 		}
 	}
 	private void TakeItem(InventoryItemHolder holder)
@@ -229,12 +239,10 @@ public class InventoryManager : MonoBehaviour
 	{
 		if (clicked == _chestHolder)
 		{
-			if (_lastSelectedHolder == clicked)
-				_lastSelectedHolder.SetTemporaryStatus(true);
-
-			DisableCursorFollower();
+			CancelChange(clicked);
 			return;
 		}
+
 		if (_lastSelectedHolder.Item == clicked.Item)
 		{
 			if (clicked.TempDisable)
@@ -249,11 +257,17 @@ public class InventoryManager : MonoBehaviour
 				int added = Mathf.Clamp(_lastSelectedHolder.Quantity, 0, canAdded);
 				clicked.AddQuantity(added);
 				_lastSelectedHolder.AddQuantity(-added);
+				_tempPickup?.AddQuantity(-added);
 				_cursorItem.Setup(_lastSelectedHolder);
 			}
 		}
 		else
 		{
+			if (clicked.IsChestHolder || _lastSelectedHolder.IsChestHolder)
+			{
+				CancelChange(clicked);
+				return;
+			}
 			InventoryItem tempItem = clicked.Item;
 			int tempQuantity = clicked.Quantity;
 
@@ -262,9 +276,19 @@ public class InventoryManager : MonoBehaviour
 			DisableCursorFollower();
 		}
 	}
+	private void CancelChange(InventoryItemHolder clicked)
+	{
+		if (_lastSelectedHolder == clicked)
+			_lastSelectedHolder.SetTemporaryStatus(true);
+
+		DisableCursorFollower();
+	}
 	private void DisableCursorFollower()
 	{
-		_cursorItem.SetActive(false);
+		Debug.Log("disable");
+		_cursorItem?.SetActive(false);
+		if (_lastSelectedHolder?.Item != null)
+			_lastSelectedHolder.SetTemporaryStatus(isEnable: true);
 		_lastSelectedHolder = null;
 	}
 	public void RemoveItemFromInventory(InventoryItem item)
@@ -335,37 +359,63 @@ public class InventoryManager : MonoBehaviour
 	public void Disable()
 	{
 		_tempPickup = null;
-		_lastSelectedHolder = null;
+		_combine = false;
+		_itemTitle.text = "";
+		_itemDescription.text = "";
+		_itemPicture.enabled = false;
+		DisableCursorMenu(false);
 	}
 
 	public void UseItem()
 	{
-		_useFunctions[_lastSelectedHolder.Item.name].Use();
+		if (!_useFunctions[_lastSelectedHolder.Item.name].Use())
+			return;
+
+		if(_lastSelectedHolder.IsChestHolder)
+			_tempPickup?.AddQuantity(-1);
+
 		_lastSelectedHolder.AddQuantity(-1);
-		DisableCursorMenu();
+		DisableCursorMenu(false);
 	}
 	public void InspectItem()
 	{
 		_itemPicture.sprite = _lastSelectedHolder.Item.ItemSprite;
+		_itemPicture.enabled = true;
 		_itemTitle.text = _lastSelectedHolder.Item.ItemName.GetLocalizedString();
 		_itemDescription.text = _lastSelectedHolder.Item.ItemDescription.GetLocalizedString();
-		DisableCursorMenu();
+		DisableCursorMenu(false);
 	}
 	public void CombineItem()
 	{
-
+		_combine = true;
+		_onMenu = false;
+		DisableCursorMenu(true);
+		TakeItem(_lastSelectedHolder);
+	}
+	private void TryCombine(InventoryItemHolder holder)
+	{
+		if (holder != _lastSelectedHolder)
+			_combineManager.CombineItems(holder, _lastSelectedHolder);
+		_combine = false;
+		DisableCursorMenu(false);
 	}
 	public void DropItem()
 	{
 		_objectPool.GetObject(_playerDropTransform.position, _lastSelectedHolder.Item.name);
 		_lastSelectedHolder.AddQuantity(-1);
-		DisableCursorMenu();
+		DisableCursorMenu(false);
 	}
-	public void DisableCursorMenu()
+	public void DisableCursorMenu(bool onlyMenu)
 	{
 		_cursorMenu.gameObject.SetActive(false);
-		DisableCursorFollower();
+		if (!onlyMenu)
+			DisableCursorFollower();
 		_onMenu = false;
+	}
+
+	public void SetCombineManager(CombineManager manager)
+	{
+		_combineManager = manager;
 	}
 }
 [Serializable]

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Zenject;
 
@@ -34,12 +35,8 @@ public class ObjectPool : MonoBehaviour
 
 	public GameObject SetupCrateItem(CrateItem crateItem)
 	{
-		foreach (var item in _itemPools)
-		{
-			if (item.Key.Item.GetComponent<Interactable>().InteractableName == crateItem.Name)
-				return GetObject(crateItem.Position, item.Key);
-		}
-		return null;
+		var selectedPoolItem = _itemPools.FirstOrDefault(item => item.Key.Item.GetComponent<Interactable>() != null && item.Key.Item.GetComponent<Interactable>().InteractableName == crateItem.Name);
+		return GetObject(crateItem.Position, selectedPoolItem.Key);
 	}
 
 	public GameObject GetObject(Vector3 pos, PoolItem wantedObject)

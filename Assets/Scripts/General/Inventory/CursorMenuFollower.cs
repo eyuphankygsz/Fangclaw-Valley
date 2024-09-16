@@ -16,7 +16,7 @@ public class CursorMenuFollower : MonoBehaviour
 		_transform = GetComponent<RectTransform>();
 		gameObject.SetActive(false);
 	}
-	public void SetMenu(InventoryItem item)
+	public void SetMenu(InventoryItem item, bool isChestHolder)
 	{
 		Vector3 pos = Input.mousePosition;
 		_transform.position = pos;
@@ -25,14 +25,18 @@ public class CursorMenuFollower : MonoBehaviour
 			_functionButtons[i].SetActive(false);
 
 		foreach (var function in item.ItemFunctions)
+		{
+			if (function == ItemFunctions.Drop && isChestHolder)
+				continue;
 			_functionButtons[(int)function].SetActive(true);
+		}
 
 		gameObject.SetActive(true);
 	}
 	private void OnDisable()
 	{
 		if (_inventoryManager != null)
-			_inventoryManager.DisableCursorMenu();
+			_inventoryManager.DisableCursorMenu(true);
 		else
 			gameObject.SetActive(false);
 	}

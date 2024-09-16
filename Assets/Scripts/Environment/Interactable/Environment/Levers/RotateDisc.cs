@@ -68,6 +68,6 @@ public class RotateDisc : Interactable
 	{
 		_animating = false;
 		_currentID = (_currentID + _times) % _maxSelectableID;
-		_holder.SetLever(_turnID, _currentID == _needID);
+		_holder.SetLever(_turnID, _currentID == _needID, false);
 	}
 }

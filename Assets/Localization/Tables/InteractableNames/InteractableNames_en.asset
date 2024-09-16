@@ -91,6 +91,39 @@ MonoBehaviour:
     m_Localized: Iron Door
     m_Metadata:
       m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: This explosive is often employed in the mines. It is a costly and
+      potent means of detonation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Rope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: A sturdy length of rope, essential for various tasks in the mines,
+      from securing loads to aiding in descents. Its reliability is only matched
+      by its versatility.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Bundled Dynamite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: A bundle of dynamite sticks, tightly secured together for a more
+      powerful explosion. Often used in larger mining operations to clear vast areas
+      of rock.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lantern
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -8,8 +8,9 @@ public class StatusMechanism : MonoBehaviour
 	[SerializeField]
 	private bool[] _order;
 	[SerializeField]
-	private UnityEvent _trueEvents, _falseEvents;
+	private UnityEvent _trueEvents, _falseEvents, _atStartEvents;
 
+	private bool _startInitialized;
 	private bool[] _objectStatus;
 	private bool _isActive;
 
@@ -17,8 +18,13 @@ public class StatusMechanism : MonoBehaviour
 	{
 		_objectStatus = new bool[_order.Length];
 	}
-	public void SetLever(int id, bool isOn)
+	public void SetLever(int id, bool isOn, bool atStart)
 	{
+		if (atStart && !_startInitialized)
+		{
+			_atStartEvents.Invoke();
+			_startInitialized = true;
+		}
 		_objectStatus[id] = isOn;
 		CheckLevers();
 	}

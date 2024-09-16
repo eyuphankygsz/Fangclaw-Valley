@@ -4,8 +4,9 @@ public class HealthPotion : UseFunction
 {
 	[SerializeField]
 	private PlayerHealth _health;
-	public override void Use()
+	public override bool Use()
 	{
 		_health.AddHealth(35);
+		return true;
 	}
 }

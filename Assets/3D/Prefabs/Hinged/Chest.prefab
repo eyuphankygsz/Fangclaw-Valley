@@ -226,13 +226,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ObjectName>k__BackingField: Chest
-  <InteractableName>k__BackingField: Chest 1
+  <InteractableName>k__BackingField: 
   IsActive: 0
   _includedWeapons: 
+  _oneTimeEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _trueEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _falseEvents:
+    m_PersistentCalls:
+      m_Calls: []
   _lockKey:
     _locked: 1
-    _keyName: Chest_Key_01
+    _keyName:
+      m_TableReference:
+        m_TableCollectionName: 
+      m_TableEntryReference:
+        m_KeyId: 0
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   _isOn: 0
+  references:
+    version: 2
+    RefIds: []
 --- !u!95 &279543902177873763
 Animator:
   serializedVersion: 5

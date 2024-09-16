@@ -55,30 +55,31 @@ public class Interactable_PlaceHolder : Interactable
 	{
 		if (_isFull)
 		{
-			HandleHolderObject(placed: false);
+			HandleHolderObject(placed: false, startAsDisabled: false);
 			_inventoryManager.AddItemToInventory(_theItem, 1, null);
 			_isFull = false;
 		}
 		else
 		{
-			HandleHolderObject(placed: true);
+			HandleHolderObject(placed: true, startAsDisabled: false);
 			_inventoryManager.RemoveItemQuantityFromInventory(_theItem, 1);
 			_isFull = true;
 		}
 
-		_mechanism.SetLever(_id, _isFull);
+		_mechanism.SetLever(_id, _isFull, false);
 	}
-	private void HandleHolderObject(bool placed)
+	private void HandleHolderObject(bool placed, bool startAsDisabled)
 	{
-		if (!placed && _holderObject != null)
+		if (!placed && startAsDisabled && _holderObject != null)
 			_holderObject.SetActive(false);
 
 		_holderObject = null;
 
-		if (placed)
+		if (placed && !startAsDisabled)
 		{
 			_holderObject = _objectPool.GetObject(_holderTransform.position, _poolItem);
 			_holderObject.transform.rotation = transform.rotation;
+			_holderObject.transform.SetParent(_holderTransform.parent);
 		}
 	}
 	public override GameData GetGameData()
@@ -111,9 +112,9 @@ public class Interactable_PlaceHolder : Interactable
 		}
 		_data = data;
 		gameObject.SetActive((_startAsDisabled && _data.IsDisabled) ? false : !_data.IsDisabled);
-		HandleHolderObject(placed: data.IsItemOn);
+		HandleHolderObject(placed: data.IsItemOn, data.IsDisabled);
 		_isFull = data.IsItemOn;
-		_mechanism.SetLever(_id, _isFull);
+		_mechanism.SetLever(_id, _isFull, true);
 	}
 
 }

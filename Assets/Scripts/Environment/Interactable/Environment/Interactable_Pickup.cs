@@ -54,6 +54,8 @@ public class Interactable_Pickup : Interactable
 	public void AddQuantity(int quantity)
 	{
 		_quantity += quantity;
+		if (_quantity <= 0)
+			gameObject.SetActive(false);
 	}
 	public override void LoadData()
 	{

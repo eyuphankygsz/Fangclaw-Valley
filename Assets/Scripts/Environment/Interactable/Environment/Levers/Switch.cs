@@ -53,6 +53,6 @@ public class Switch : Interactable
 	private void RotateEnd()
 	{
 		_animating = false;
-		_holder.SetLever(_id, _isOn);
+		_holder.SetLever(_id, _isOn, false);
 	}
 }
