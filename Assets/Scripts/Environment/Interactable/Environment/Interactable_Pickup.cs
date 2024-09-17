@@ -35,6 +35,7 @@ public class Interactable_Pickup : Interactable
 			{
 				Name = InteractableName,
 				Position = pos,
+				Quantity = _quantity,
 				Taken = !gameObject.activeSelf,
 			};
 			return _crateItemData;

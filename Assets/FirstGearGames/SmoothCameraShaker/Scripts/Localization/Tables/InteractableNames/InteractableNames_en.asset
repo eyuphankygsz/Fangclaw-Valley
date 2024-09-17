@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 23509254144
+    m_Localized: Suitcase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Type Writer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: Golden Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Vault
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Switch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: Wooden Door
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Health Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: Stamina Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: Lion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390507608064000
+    m_Localized: Monkey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antelope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: Skull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: deneme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Ladder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: For those times when I must ascend to grasp what lies just out of
+      reach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Pedestal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: Iron Door
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: This explosive is often employed in the mines. It is a costly and
+      potent means of detonation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Rope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: A sturdy length of rope, essential for various tasks in the mines,
+      from securing loads to aiding in descents. Its reliability is only matched
+      by its versatility.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Bundled Dynamite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: A bundle of dynamite sticks, tightly secured together for a more
+      powerful explosion. Often used in larger mining operations to clear vast areas
+      of rock.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lantern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: Combination Lock
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour, IInputHandler
 		_health = Mathf.Clamp(_health + addedHealth, 0, _maxHealth);
 		_playerUI.ChangeHealthBar(_health);
 	}
-
 	public void OnInputDisable()
 	{
 

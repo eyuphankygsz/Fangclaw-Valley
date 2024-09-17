@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 23509254144
+    m_Localized: Valise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: "Machine \xE0 \xE9crire"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: "Cl\xE9 d'Or"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: "Jusqu'\xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Disjoncteur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: Porte en bois
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: "Potion de sant\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: "Potion d'endurance\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: Lion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390507608064000
+    m_Localized: Singe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antilope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: "Cr\xE2ne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: deneme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: "\xC9chelle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "Pour ces moments o\xF9 je dois monter pour saisir ce qui est juste
+      hors de port\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: "Pi\xE9destal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: Porte de Fer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: "Cet explosif est souvent utilis\xE9 dans les mines. C\u2019est
+      un moyen de d\xE9tonation co\xFBteux et puissant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Corde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Une corde robuste, indispensable pour diverses t\xE2ches dans les
+      mines, que ce soit pour s\xE9curiser des charges ou pour faciliter les descentes.
+      Sa fiabilit\xE9 est \xE0 la hauteur de sa polyvalence.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: "Dynamite Li\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Un paquet de b\xE2tons de dynamite, solidement attach\xE9s ensemble
+      pour une explosion plus puissante. Souvent utilis\xE9 dans les grandes op\xE9rations
+      mini\xE8res pour d\xE9gager de vastes zones rocheuses."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lanterne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: "Serrure \xE0 Combinaison"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

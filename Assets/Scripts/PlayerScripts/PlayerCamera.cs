@@ -5,7 +5,7 @@ public class PlayerCamera : MonoBehaviour
 	private float _pitch = 0f;
 
 	[SerializeField] private float _rotateSpeed;
-	[SerializeField] private Camera _camera;
+	[SerializeField] private Transform _camera;
 
 
 	private void Awake()

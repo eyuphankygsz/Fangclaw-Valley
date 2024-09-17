@@ -33,10 +33,14 @@ public class ObjectPool : MonoBehaviour
 			SetupCrateItem(item);
 	}
 
-	public GameObject SetupCrateItem(CrateItem crateItem)
+	private void SetupCrateItem(CrateItem crateItem)
 	{
 		var selectedPoolItem = _itemPools.FirstOrDefault(item => item.Key.Item.GetComponent<Interactable>() != null && item.Key.Item.GetComponent<Interactable>().InteractableName == crateItem.Name);
-		return GetObject(crateItem.Position, selectedPoolItem.Key);
+		var item =GetObject(crateItem.Position, selectedPoolItem.Key);
+		if(item.TryGetComponent<Interactable_Pickup>(out Interactable_Pickup pickup))
+			pickup.SetQuantity(crateItem.Quantity);
+
+		return;
 	}
 
 	public GameObject GetObject(Vector3 pos, PoolItem wantedObject)
