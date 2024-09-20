@@ -72,7 +72,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7831
+    m_Bits: 24215
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -288,6 +288,15 @@ MonoBehaviour:
   <InteractableName>k__BackingField: comblock01
   IsActive: 0
   _includedWeapons: 
+  _oneTimeEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _trueEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _falseEvents:
+    m_PersistentCalls:
+      m_Calls: []
   _lockedObject: {fileID: 0}
   _combinations:
   - {fileID: 6627026553954011119}

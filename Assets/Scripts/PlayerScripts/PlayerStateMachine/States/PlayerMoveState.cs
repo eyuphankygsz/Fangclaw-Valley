@@ -14,6 +14,12 @@ public class PlayerMoveState : MonoBehaviour, IPlayerState, IInputHandler
 
 	[SerializeField]
 	private PlayerGravity _gravity;
+	[SerializeField]
+	private PlayerStep _step;
+	[SerializeField]
+	private float _volume;
+	[SerializeField]
+	private float _stepTime, _stepOffset;
 
 	[Inject]
 	private PlayerUI _playerUI;
@@ -23,7 +29,7 @@ public class PlayerMoveState : MonoBehaviour, IPlayerState, IInputHandler
 
 	public void EnterState()
 	{
-
+		_step.Setup(_stepTime, _stepOffset, _volume);
 	}
 
 	public void UpdateState()
@@ -66,6 +72,7 @@ public class PlayerMoveState : MonoBehaviour, IPlayerState, IInputHandler
 		var movement = (transform.forward * _movementInput.y + transform.right * _movementInput.x) * _speed;
 		movement.y = _gravity.CalculateGravity();
 		_controller.Move(movement * Time.deltaTime);
+		_step.Step();
 	}
 
 	public StateTransitionList GetTransitions()

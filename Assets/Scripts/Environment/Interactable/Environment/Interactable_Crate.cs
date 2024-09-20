@@ -11,6 +11,16 @@ public class Interactable_Crate : Interactable
 	[SerializeField] private RandomItemDrop _randomItemDrop;
 	[SerializeField] private Transform _itemTransform;
 
+	[SerializeField]
+	private AudioClip[] _clips;
+	private AudioSource _source;
+
+	private void Awake()
+	{
+		base.Awake();
+		_source = transform.parent.GetComponent<AudioSource>();
+	}
+
 	private CrateData _data = new CrateData();
 	public override void OnInteract(Enum_Weapons weapon)
 	{
@@ -21,6 +31,7 @@ public class Interactable_Crate : Interactable
 
 	private void Shatter()
 	{
+		_source.PlayOneShot(_clips[Random.Range(0, _clips.Length)]);
 		if (_allowRandomItem)
 		{
 			GameObject obj = null;

@@ -18,11 +18,24 @@ public class RotateDisc : Interactable
 	private bool _animating;
 
 	private int _times;
+
+	[SerializeField]
+	private AudioClip[] _clips;
+	private AudioSource _source;
+
+	private void Awake()
+	{
+		base.Awake();
+		_source = GetComponent<AudioSource>();
+	}
+
 	public override void OnInteract(Enum_Weapons weapon)
 	{
 		base.OnInteract(weapon);
 		if (_animating) return;
 		_animating = true;
+		_source.clip = _clips[Random.Range(0, _clips.Length)];
+		_source.Play();
 		TurnDisc(1);
 	}
 	public override GameData GetGameData()
@@ -69,5 +82,6 @@ public class RotateDisc : Interactable
 		_animating = false;
 		_currentID = (_currentID + _times) % _maxSelectableID;
 		_holder.SetLever(_turnID, _currentID == _needID, false);
+		_source.Stop();
 	}
 }

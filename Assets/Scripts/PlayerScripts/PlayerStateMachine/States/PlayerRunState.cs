@@ -11,13 +11,19 @@ public class PlayerRunState : MonoBehaviour, IPlayerState, IInputHandler
 	[SerializeField]
 	private float _speed;
 	[SerializeField]
-	PlayerStamina _playerStamina;
+	private PlayerStamina _playerStamina;
 	[SerializeField]
-	PlayerGravity _gravity;
+	private PlayerGravity _gravity;
 
 	[SerializeField]
 	private StateTransitionList _transitionList;
 
+	[SerializeField]
+	private PlayerStep _step;
+	[SerializeField]
+	private float _volume;
+	[SerializeField]
+	private float _stepTime, _stepOffset;
 
 
 	private Vector2 _movementInput;
@@ -28,10 +34,12 @@ public class PlayerRunState : MonoBehaviour, IPlayerState, IInputHandler
 	private bool _running;
 
 
-	public void EnterState() { }
+	public void EnterState() { _step.Setup(_stepTime, _stepOffset, _volume); }
 	public void UpdateState()
 	{
 		ApplyMovement();
+		_step.Step();
+
 	}
 	public void ExitState()
 	{

@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wood
+  - Sand
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Interactable
   - Hide
   - UI3D
-  - 
+  - Walkable
   - 
   - 
   - 

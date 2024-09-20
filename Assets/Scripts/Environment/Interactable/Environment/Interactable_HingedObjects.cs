@@ -18,9 +18,14 @@ public class Interactable_HingedObjects : Interactable
 
 	private HingedData _data = new HingedData();
 
+	[SerializeField]
+	private AudioClip[] _openClips, _closeClips, _lockedClips;
+	private AudioSource _source;
+
 	private void Awake()
 	{
 		_animator = GetComponent<Animator>();
+		_source = GetComponent<AudioSource>();
 		base.Awake();
 
 	}
@@ -54,10 +59,17 @@ public class Interactable_HingedObjects : Interactable
 				return false;
 			}
 			Debug.Log("LOCKED");
+			PlayClip(_lockedClips);
 			return true;
 		}
 
 		return false;
+	}
+
+	private void PlayClip(AudioClip[] clips)
+	{
+		_source.clip = clips[Random.Range(0, clips.Length)];
+		_source.Play();
 	}
 	public override GameData GetGameData()
 	{
@@ -93,6 +105,7 @@ public class Interactable_HingedObjects : Interactable
 			OneTimeEvent();
 
 		_isOn = isOn;
+		PlayClip(_isOn ? _openClips : _closeClips);
 		_animator.SetBool("On", _isOn);
 		_animating = _isOn;
 	}
