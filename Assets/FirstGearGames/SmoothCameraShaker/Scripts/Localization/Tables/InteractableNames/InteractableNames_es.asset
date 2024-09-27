@@ -71,7 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
-    m_Localized: deneme
+    m_Localized: "Estos cr\xE1neos no pueden ser restos de seres ordinarios. Cada
+      uno lleva rastros de algo m\xE1s all\xE1 de lo humano. Sus mand\xEDbulas, profundas
+      cuencas y formas apuntan a un misterio antiguo. A medida que su n\xFAmero aumenta,
+      tambi\xE9n crece el miedo dentro de m\xED\u2014\xBFqu\xE9 oscuro secreto podr\xEDa
+      estar enterrado en estas tierras?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832

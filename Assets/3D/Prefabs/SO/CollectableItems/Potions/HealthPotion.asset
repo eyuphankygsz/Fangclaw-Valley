@@ -31,10 +31,14 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ItemSprite: {fileID: 21300000, guid: cac7a24970b232141bfcde9093f757f2, type: 3}
+  ItemSprite: {fileID: 21300000, guid: bbb6a2a475dd63645aa9135a181c9c33, type: 3}
   StackQuantity: 3
   OneTime: 1
   ItemFunctions: 000000000100000003000000
+  Sound: {fileID: 8300000, guid: 78ccf6da9d5ad2241a1240bf6dc690bd, type: 3}
+  Item: {fileID: 179546, guid: 64ddb092e43004748953d504e21df76e, type: 3}
+  INITIAL_COUNT: 15
+  INITIAL_QUANTITY: 1
   references:
     version: 2
     RefIds: []

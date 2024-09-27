@@ -59,6 +59,16 @@ public class InventoryManager : MonoBehaviour
 
 	private bool _combine;
 	private CombineManager _combineManager;
+
+	[SerializeField]
+	private AudioSource _audioSource;
+	[SerializeField]
+	private AudioClip _bagClip;
+
+	private void Awake()
+	{
+		_objectPool.InitiateDictionary(_allItems);
+	}
 	public void Start()
 	{
 		_itemHoldersList = _itemHolderTransform.GetComponentsInChildren<InventoryItemHolder>().ToList();
@@ -97,6 +107,7 @@ public class InventoryManager : MonoBehaviour
 
 	private void AddToInventory(int quantity, List<InventoryItemHolder> itemHolders, InventoryItem item)
 	{
+		_audioSource.PlayOneShot(_bagClip);
 		int leftOvers = quantity;
 		int index = 0;
 
@@ -297,8 +308,7 @@ public class InventoryManager : MonoBehaviour
 										 .Where(h => h.Item == item)
 										 .OrderBy(h => h.Quantity)
 										 .FirstOrDefault();
-		_itemHoldersList.Remove(holder);
-		Destroy(holder.gameObject);
+		holder.ResetHolder();
 	}
 	public void RemoveItemQuantityFromInventory(InventoryItem item, int quantity)
 	{
@@ -371,7 +381,9 @@ public class InventoryManager : MonoBehaviour
 		if (!_useFunctions[_lastSelectedHolder.Item.name].Use())
 			return;
 
-		if(_lastSelectedHolder.IsChestHolder)
+		_audioSource.PlayOneShot(_lastSelectedHolder.Item.Sound);
+
+		if (_lastSelectedHolder.IsChestHolder)
 			_tempPickup?.AddQuantity(-1);
 
 		_lastSelectedHolder.AddQuantity(-1);
@@ -379,6 +391,7 @@ public class InventoryManager : MonoBehaviour
 	}
 	public void InspectItem()
 	{
+		_audioSource.PlayOneShot(_lastSelectedHolder.Item.Sound);
 		_itemPicture.sprite = _lastSelectedHolder.Item.ItemSprite;
 		_itemPicture.enabled = true;
 		_itemTitle.text = _lastSelectedHolder.Item.ItemName.GetLocalizedString();
@@ -401,6 +414,7 @@ public class InventoryManager : MonoBehaviour
 	}
 	public void DropItem()
 	{
+		_audioSource.PlayOneShot(_lastSelectedHolder.Item.Sound);
 		_objectPool.GetObject(_playerDropTransform.position, _lastSelectedHolder.Item.name);
 		_lastSelectedHolder.AddQuantity(-1);
 		DisableCursorMenu(false);

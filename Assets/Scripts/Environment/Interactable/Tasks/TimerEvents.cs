@@ -12,9 +12,14 @@ public class TimerEvents : MonoBehaviour
 	private Coroutine _routine;
 
 	private bool _atStartSetup;
-
-	public void Setup()
+	private bool _playing;
+	public void Setup(float time)
 	{
+		_time = time;
+		if (_playing) 
+			return;
+
+		_playing = true;
 		if (_atStartSetup)
 		{
 			InstantActivate();
@@ -27,9 +32,14 @@ public class TimerEvents : MonoBehaviour
 		Debug.Log("TimerStart");
 		_routine = StartCoroutine(Timer());
 	}
+	public void Restart() => _playing = false;
+
 	public void SetAtStartSetup() => _atStartSetup = true;
-	public void InstantActivate() =>
+	public void InstantActivate()
+	{
+		_playing = true;
 		_events.Invoke();
+	}
 	private IEnumerator Timer()
 	{
 		yield return new WaitForSeconds(_time);

@@ -35,6 +35,10 @@ MonoBehaviour:
   StackQuantity: 1
   OneTime: 1
   ItemFunctions: 0100000003000000
+  Sound: {fileID: 8300000, guid: 73212cd35c02cbe4091446b1ead417e6, type: 3}
+  Item: {fileID: 486557774513353128, guid: 836b782264552f94a91309b8c16a2929, type: 3}
+  INITIAL_COUNT: 1
+  INITIAL_QUANTITY: 1
   references:
     version: 2
     RefIds: []

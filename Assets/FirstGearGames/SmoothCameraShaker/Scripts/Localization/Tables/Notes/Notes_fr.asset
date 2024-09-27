@@ -60,6 +60,76 @@ MonoBehaviour:
       raison.\n\nAinsi, nous avons r\xE9ussi \xE0 dissimuler le mot de passe."
     m_Metadata:
       m_Items: []
+  - m_Id: 1886584857346048
+    m_Localized: "Le Drr Grumshow y\u2019a di que celui tout \xE0 gouche av\xE9 une
+      dent de f\xE8rre, un avec l\u2019int\xE9rriere ray\xE9 et un otre comme une
+      fl\xE8ch tir\xE9e d\u2019un yarc.\n\nY\u2019a des sembbules ki s\u2019efasent
+      et j\u2019oublie toujou. Si vou pouv\xE9 m\u2019aid\xE9, sa sr\xE9 bian.\n\n-
+      Albeeto Downnshirr\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1886579815792640
+    m_Localized: "De la part d\u2019Albeeto aux Travayeurs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: "Je suis arriv\xE9e \xE0 croire que les notes de l'instrument de
+      musique pourraient produire un r\xE9sultat myst\xE9rieux lorsqu'elles sont
+      jou\xE9es dans un ordre sp\xE9cifique. J'\xE9tais tr\xE8s proche de d\xE9couvrir
+      cette s\xE9quence ; malheureusement, le papier sur lequel j'avais \xE9crit
+      l'ordre a myst\xE9rieusement disparu le lendemain.\n\nNous devons travailler
+      ensemble pour clarifier cette situation et red\xE9couvrir la s\xE9quence. Chacune
+      de vos contributions est cruciale pour r\xE9soudre ce myst\xE8re.\n\nSinc\xE8rement,\n\n-
+      Dr. Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: "Le Myst\xE8re des Notes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: Une Partie des Notes Musicales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: "(D\xE9chir\xE9e des deux c\xF4t\xE9s.)\nI  III  V"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: "(D\xE9chir\xE9e du c\xF4t\xE9 droit.)\nIV  II  I "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: "(D\xE9chir\xE9e du c\xF4t\xE9 gauche.)\nII  III IV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: "Le Dernier T\xE9moin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Je suis terriblement conscient que l'\xE2me malheureuse qui tombera
+      sur cette note d\xE9couvrira \xE9galement mon corps sans vie. Mon temps s'\xE9coule
+      dangereusement vite ! Il semble que quelqu'un ait modifi\xE9 les serrures...
+      Ce que j'ai vu ici (cette partie sera inscrite dans un gribouillage compl\xE8tement
+      illisible).\n\n(A la fin de la note, il y a un mot qui a manifestement \xE9t\xE9
+      ajout\xE9 plus tard.)\n'Mains....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "Cher et estim\xE9 coll\xE8gue,\n\nLes structures que j'ai rencontr\xE9es
+      dans cette grotte sont bien trop complexes pour \xEAtre l'\u0153uvre d'un simple
+      peuple ancien. Qu'il s'agisse d'une civilisation oubli\xE9e ou de quelque chose
+      de bien plus avanc\xE9, leur objectif reste insaisissable. Il est \xE9vident
+      que les mineurs ont r\xE9utilis\xE9 ces chambres, mais leur fonction premi\xE8re
+      me reste incompr\xE9hensible.\n\nNous devons poursuivre nos recherches avec
+      la plus grande diligence.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Ancien ? Pas vraiment
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

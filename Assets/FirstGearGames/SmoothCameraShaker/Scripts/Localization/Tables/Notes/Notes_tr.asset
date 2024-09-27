@@ -46,8 +46,8 @@ MonoBehaviour:
   - m_Id: 1886584857346048
     m_Localized: "Drr Grumshow deydi ki en sol ba\u015Ftakininde cenavar di\u015Fi
       olar bi danesi i\xE7i \xE7izgili gutu, bi danesi de yaydan \xE7\u0131kan ok
-      gibimi\u015F.\r\n\r\nBaz\u0131 semb\xFCller silindinden s\xFCrekli unutuyom
-      yart\u0131m etersenizz iyyi olur.\r\n\r\n-Albeeto Downnshirr\r"
+      gibimi\u015F.\r\n\nBaz\u0131 semb\xFCller silindinden s\xFCrekli unutuyom yart\u0131m
+      etersenizz iyyi olur.\r\n\r\n- Albeeto Downnshirr\r"
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
@@ -70,6 +70,66 @@ MonoBehaviour:
       diye \xF6tm\xFC\u015F.\nSonunda saym\u0131\u015Flar ve ikinci ku\u015Fun hakl\u0131
       oldu\u011Fu ortaya \xE7\u0131km\u0131\u015F.\n\nB\xF6ylece \u015Fifreyi gizlemeyi
       ba\u015Fard\u0131k."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: "M\xFCzik aletinin notalar\u0131n\u0131n belirli bir s\u0131rayla
+      \xE7al\u0131nd\u0131\u011F\u0131nda gizemli bir sonu\xE7 do\u011Furabilece\u011Fi
+      konusunda bir kanaate varm\u0131\u015F durumday\u0131m. Bu nota s\u0131ras\u0131n\u0131
+      ke\u015Ffetmeye olduk\xE7a yakla\u015Fm\u0131\u015Ft\u0131m; ne yaz\u0131k
+      ki, buldu\u011Fum s\u0131ralaman\u0131n yer ald\u0131\u011F\u0131 ka\u011F\u0131d\u0131m,
+      ertesi g\xFCn esrarengiz bir \u015Fekilde kayboldu.\n\nBu durumu ayd\u0131nlatmak
+      ve s\u0131ralamay\u0131 yeniden bulmak i\xE7in birlikte \xE7al\u0131\u015Fmal\u0131y\u0131z.
+      Her birinizin deste\u011Fi, bu gizemi \xE7\xF6zmemiz i\xE7in hayati \xF6nem
+      ta\u015F\u0131yor.\n\nSayg\u0131lar\u0131mla,\n\n- Dr. Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: "Notlar\u0131n Gizemi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: "M\xFCzik Notalar\u0131n\u0131n Bir Par\xE7as\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: "(\u0130ki taraf\u0131 da y\u0131rt\u0131lm\u0131\u015F.)\nI  III 
+      V"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: "(Sa\u011F taraf\u0131 y\u0131rt\u0131lm\u0131\u015F.)\nIV  II 
+      I "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: "(Sol taraf\u0131 y\u0131rt\u0131lm\u0131\u015F.)\nII  III IV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: "Son Tan\u0131k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Biliyorum ki bu notu bulan talihsiz ki\u015Fi benim cesedimi de
+      bulmu\u015F olacak. Zaman\u0131m tehlikeli bir \u015Fekilde k\u0131sal\u0131yor!
+      Birileri kilitleri de\u011Fi\u015Ftirmi\u015F gibi g\xF6r\xFCn\xFCyor... Burada
+      g\xF6rd\xFCklerim (buras\u0131 tamamen okunmaz bir yaz\u0131yla yaz\u0131lm\u0131\u015F).\n\n(Notun
+      sonunda daha sonradan eklendi\u011Fi belli olan bir kelime var.)\n'Eller....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "K\u0131ymetli Meslekta\u015F\u0131m,\n\nBu ma\u011Farada kar\u015F\u0131la\u015Ft\u0131\u011F\u0131m
+      yap\u0131lar, s\u0131radan bir antik halk\u0131n eseri olamayacak kadar karma\u015F\u0131k.
+      Unutulmu\u015F bir medeniyet mi, yoksa \xE7ok daha geli\u015Fmi\u015F bir g\xFC\xE7
+      m\xFC bilmiyorum, ancak ama\xE7lar\u0131 h\xE2l\xE2 anla\u015F\u0131lmaz. Madencilerin
+      bu odalar\u0131 yeniden d\xFCzenledi\u011Fi a\u015Fik\xE2r, ancak as\u0131l
+      i\u015Flevleri h\xE2l\xE2 \xE7\xF6z\xFClememi\u015F durumda.\n\nAra\u015Ft\u0131rmalar\u0131m\u0131za
+      en titiz \u015Fekilde devam etmeliyiz.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: "Antik? Pek Say\u0131lmaz"
     m_Metadata:
       m_Items: []
   references:

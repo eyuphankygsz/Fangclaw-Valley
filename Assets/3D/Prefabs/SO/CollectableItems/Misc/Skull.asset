@@ -35,6 +35,9 @@ MonoBehaviour:
   StackQuantity: 6
   OneTime: 1
   ItemFunctions: 0100000003000000
+  Item: {fileID: 6935691210289624216, guid: 927a2ba489b05ef41b684727a1a1a3cb, type: 3}
+  INITIAL_COUNT: 6
+  INITIAL_QUANTITY: 1
   references:
     version: 2
     RefIds: []

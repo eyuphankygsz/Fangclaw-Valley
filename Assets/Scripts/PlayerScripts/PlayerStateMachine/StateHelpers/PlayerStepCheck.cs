@@ -22,7 +22,6 @@ public class PlayerStepCheck : MonoBehaviour
 		{
 			_hitting = true;
 			_hitDistance = hit.distance;
-			Debug.Log("Hit");
 			return GetEnum(hit.collider.tag);
 		}
 		_hitting = false;
@@ -38,7 +37,7 @@ public class PlayerStepCheck : MonoBehaviour
 			case "Stone":
 				return StepEnum.Stone;
 			case "Sand":
-				return StepEnum.Dirt;
+				return StepEnum.Sand;
 			case "Metal":
 				return StepEnum.Metal;
 			default:
@@ -51,7 +50,6 @@ public class PlayerStepCheck : MonoBehaviour
 		if (_footTransform == null) return;
 		if (_hitting)
 		{
-			Debug.Log("Hitting");
 			Gizmos.color = Color.red;
 			Gizmos.DrawRay(_footTransform.position, -transform.up * _hitDistance);
 			Gizmos.DrawWireCube(_footTransform.position + -transform.up * _hitDistance, _halfExtents * 2);

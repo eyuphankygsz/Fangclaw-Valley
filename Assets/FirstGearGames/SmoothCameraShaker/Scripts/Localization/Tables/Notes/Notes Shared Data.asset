@@ -43,6 +43,46 @@ MonoBehaviour:
     m_Key: note_03_desc
     m_Metadata:
       m_Items: []
+  - m_Id: 11415248968007680
+    m_Key: note_04_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Key: note_04_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Key: cypher_part_01_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Key: cypher_part_01_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Key: cypher_part_02_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Key: cypher_part_03_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Key: note_05_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Key: note_05_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Key: note_06_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Key: note_06_desc
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

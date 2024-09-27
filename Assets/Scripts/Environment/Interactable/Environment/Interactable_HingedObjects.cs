@@ -20,12 +20,12 @@ public class Interactable_HingedObjects : Interactable
 
 	[SerializeField]
 	private AudioClip[] _openClips, _closeClips, _lockedClips;
+	[SerializeField]
 	private AudioSource _source;
 
 	private void Awake()
 	{
 		_animator = GetComponent<Animator>();
-		_source = GetComponent<AudioSource>();
 		base.Awake();
 
 	}
@@ -68,8 +68,11 @@ public class Interactable_HingedObjects : Interactable
 
 	private void PlayClip(AudioClip[] clips)
 	{
-		_source.clip = clips[Random.Range(0, clips.Length)];
-		_source.Play();
+		if (clips.Length > 0)
+		{
+			_source.clip = clips[Random.Range(0, clips.Length)];
+			_source.Play();
+		}
 	}
 	public override GameData GetGameData()
 	{

@@ -57,6 +57,79 @@ MonoBehaviour:
       conseguimos ocultar la contrase\xF1a."
     m_Metadata:
       m_Items: []
+  - m_Id: 1886584857346048
+    m_Localized: "El Drr Grumshow dijjo ke el de m\xE1s a la isquierda tiene un dientte
+      de bestia, uno con rayas dndro y uno ke pares\xEDa una flecha de arko.\n\nAlgunnos
+      de los sembolos se borran i yo simpre me olvido. Si me puedn alludar, seria
+      bueno.\n\n- Albeeto Downnshirr\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1886579815792640
+    m_Localized: De Albeeto pa los Trabjadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: "He llegado a creer que las notas del instrumento musical pueden
+      producir un resultado misterioso cuando se tocan en un orden espec\xEDfico.
+      Estaba bastante cerca de descubrir esta secuencia; desafortunadamente, el papel
+      en el que hab\xEDa escrito el orden desapareci\xF3 misteriosamente al d\xEDa
+      siguiente.\n\nDebemos trabajar juntos para aclarar esta situaci\xF3n y redescubrir
+      la secuencia. Cada una de sus contribuciones es crucial para resolver este
+      misterio.\n\nAtentamente,\n\n- Dr. Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: El Misterio de las Notas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: Una Parte de las Notas Musicales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: '(Rasgada por ambos lados.)
+
+      I  III  V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: '(Rasgada por el lado derecho.)
+
+      IV  II  I '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(Rasgada por el lado izquierdo.)
+
+      II  III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: "El \xDAltimo Testigo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Soy terriblemente consciente de que el desafortunado que tropiece
+      con esta nota tambi\xE9n encontrar\xE1 mi cuerpo sin vida. \xA1Mi tiempo se
+      agota peligrosamente! Parece que alguien ha alterado las cerraduras... Lo que
+      presenci\xE9 aqu\xED (esta parte estar\xE1 inscrita en una escritura completamente
+      ilegible).\n\n(Al final de la nota, hay una palabra que evidentemente fue a\xF1adida
+      m\xE1s tarde.)\n'Manos....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "Estimado colega,\n\nLas estructuras que he encontrado en esta cueva
+      son demasiado intrincadas para ser obra de un pueblo antiguo simple. Ya sea
+      una civilizaci\xF3n olvidada o algo mucho m\xE1s avanzado, su prop\xF3sito
+      sigue siendo esquivo. Es evidente que los mineros reutilizaron estas c\xE1maras,
+      pero su funci\xF3n original escapa a mi comprensi\xF3n.\n\nDebemos continuar
+      nuestra investigaci\xF3n con la mayor diligencia.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: "\xBFAntiguo? No realmente"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

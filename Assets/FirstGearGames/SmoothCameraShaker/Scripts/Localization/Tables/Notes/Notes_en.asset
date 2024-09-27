@@ -66,25 +66,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1886579815792640
-    m_Localized: From Albeeto to the Workrs
+    m_Localized: Frum Albeeto to the Workrs
     m_Metadata:
       m_Items: []
   - m_Id: 1886584857346048
-    m_Localized: 'Deep down in Louisiana close to New Orleans
-
-      Way back up
-      in the woods among the evergreens
-
-      There stood a log cabin made of earth
-      and wood
-
-      Where lived a country boy named Johnny B. Goode
-
-      Who
-      never ever learned to read or write so well
-
-      But he could play a guitar
-      just like a-ringin'' a bell'
+    m_Localized: "Dr. Grumshow said tht the far left one got a beast\u2019s tooth,
+      one with stripey inside an one like a arrrow shot frum a bow.\n\nSome of the
+      symbuls get wored away, I keep forggeting 'em. If ya cud help, it wood be gud.\n\n-
+      Albeeto Downnshirr\r"
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
@@ -103,6 +92,88 @@ MonoBehaviour:
       stated \u201Cone more than the second,\u201D\nAnd the fifth said \u201Ctwo
       fewer than the fourth.\u201D\nEventually, they counted, and it turned out the
       second bird was correct.\n\nThus, we succeeded in concealing the password."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: 'I have come to believe that the notes of the musical instrument
+      may yield a mysterious result when played in a specific order. I was quite
+      close to discovering this sequence; unfortunately, the paper on which I had
+      written the order mysteriously disappeared the following day.
+
+
+      We must
+      work together to clarify this situation and rediscover the sequence. Each of
+      your contributions is crucial for us to solve this mystery.
+
+
+      Sincerely,
+
+
+      -
+      Dr. Elara Voss'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: Mystery of the Notes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: A Part of Musical Notes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: '(Both sides torn.)
+
+      I  III  V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: "(Right side torn.)\nIV  II  I \n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(Left side torn.)
+
+      II  III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: The Last Witness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: 'I am dreadfully aware that the unfortunate soul who stumbles upon
+      this note shall also discover my lifeless form. My time grows perilously short!
+      It seems that someone has altered the locks... What I witnessed here (this
+      portion shall be inscribed in a scrawl utterly illegible).
+
+
+      (At the
+      end of the note, there is a word that is evidently added later.)
+
+      ''Hands....'''
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: 'Esteemed Colleague,
+
+
+      The structures I have encountered within
+      this cave are far too intricate to be the work of any simple ancient people.
+      Whether it is some forgotten civilization or something far more advanced, their
+      purpose remains elusive. It is evident that the miners repurposed these chambers,
+      yet their original function evades my comprehension.
+
+
+      We must continue
+      our investigation with utmost diligence.
+
+
+      - Dr. Grimshow'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Ancient? Not Really
     m_Metadata:
       m_Items: []
   references:

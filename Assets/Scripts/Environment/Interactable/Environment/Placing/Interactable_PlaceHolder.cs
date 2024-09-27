@@ -8,7 +8,7 @@ public class Interactable_PlaceHolder : Interactable
 	[SerializeField]
 	private InventoryItem _theItem;
 	[SerializeField]
-	private PoolItem _poolItem;
+	private InventoryItem _poolItem;
 	[SerializeField]
 	private Transform _holderTransform;
 	[SerializeField]

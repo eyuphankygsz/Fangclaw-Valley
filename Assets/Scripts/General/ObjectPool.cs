@@ -7,10 +7,7 @@ using Zenject;
 public class ObjectPool : MonoBehaviour
 {
 
-	[SerializeField]
-	private PoolItem[] _poolItems;
-
-	private Dictionary<PoolItem, List<GameObject>> _itemPools = new Dictionary<PoolItem, List<GameObject>>();
+	private Dictionary<InventoryItem, List<GameObject>> _itemPools = new Dictionary<InventoryItem, List<GameObject>>();
 
 	[Inject]
 	readonly PickupFactory _pickupFactory;
@@ -18,19 +15,19 @@ public class ObjectPool : MonoBehaviour
 	readonly SaveManager _saveManager;
 
 
-	private void Awake()
-	{
-		foreach (var item in _poolItems)
-			_itemPools.Add(item, CreateItems(item, item.INITIAL_COUNT));
-	}
 	private void Start()
 	{
-		Debug.Log("OBJECTPOOL");
-
+		Debug.Log(_itemPools.Count);
 		var crateItemList = _saveManager.CrateItems();
 		if (crateItemList == null) return;
 		foreach (var item in crateItemList)
 			SetupCrateItem(item);
+	}
+
+	public void InitiateDictionary(List<InventoryItem> itemList)
+	{
+		foreach (var item in itemList)
+			_itemPools.Add(item, CreateItems(item, item.INITIAL_COUNT));
 	}
 
 	private void SetupCrateItem(CrateItem crateItem)
@@ -43,7 +40,7 @@ public class ObjectPool : MonoBehaviour
 		return;
 	}
 
-	public GameObject GetObject(Vector3 pos, PoolItem wantedObject)
+	public GameObject GetObject(Vector3 pos, InventoryItem wantedObject)
 	{
 		foreach (var item in _itemPools[wantedObject])
 			if (!item.activeSelf)
@@ -55,7 +52,7 @@ public class ObjectPool : MonoBehaviour
 	}
 	public GameObject GetObject(Vector3 pos, string wantedObject)
 	{
-		PoolItem item = null;
+		InventoryItem item = null;
 		foreach (var itempool in _itemPools)
 			if (itempool.Key.name == wantedObject)
 			{
@@ -66,7 +63,7 @@ public class ObjectPool : MonoBehaviour
 		return GetObject(pos, item);
 	}
 
-	private List<GameObject> CreateItems(PoolItem prefab, int itemCount)
+	private List<GameObject> CreateItems(InventoryItem prefab, int itemCount)
 	{
 		List<GameObject> items = new List<GameObject>();
 		for (int i = 0; i < itemCount; i++)
@@ -74,7 +71,7 @@ public class ObjectPool : MonoBehaviour
 		return items;
 	}
 
-	private GameObject CreateItem(PoolItem item)
+	private GameObject CreateItem(InventoryItem item)
 	{
 		GameObject newItem = null;
 		if (item.Item.TryGetComponent<Interactable>(out Interactable interactable))

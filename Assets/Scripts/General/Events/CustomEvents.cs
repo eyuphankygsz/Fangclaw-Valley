@@ -19,6 +19,11 @@ public class CustomEvents : MonoBehaviour, ISaveable
 	private SaveManager _saveManager;
 
 	private CEventData _data;
+
+	private void Start()
+	{
+		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+	}
 	public GameData GetSaveFile()
 	{
 		_data = new CEventData()

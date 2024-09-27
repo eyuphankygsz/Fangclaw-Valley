@@ -71,7 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
-    m_Localized: deneme
+    m_Localized: "Ces cr\xE2nes ne peuvent \xEAtre les restes d'\xEAtres ordinaires.
+      Chacun porte les traces d'une puissance au-del\xE0 de l'humain. Leurs m\xE2choires,
+      leurs orbites profondes et leurs formes indiquent un myst\xE8re ancien. Plus
+      leur nombre augmente, plus la peur grandit en moi\u2014quel sombre secret pourrait
+      \xEAtre enfoui dans ces terres?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832

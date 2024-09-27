@@ -4,6 +4,6 @@ using UnityEngine;
 [Serializable]
 public class ItemWithChance
 {
-	public PoolItem Item;
+	public InventoryItem Item;
 	public float Chance;
 }

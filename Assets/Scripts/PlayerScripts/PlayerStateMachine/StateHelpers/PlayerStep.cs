@@ -74,7 +74,7 @@ public enum StepEnum
 {
 	Wood,
 	Stone,
-	Dirt,
+	Sand,
 	Metal,
 	Empty
 }

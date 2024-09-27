@@ -12,4 +12,10 @@ public class InventoryItem : ScriptableObject
 	public int StackQuantity;
 	public bool OneTime;
 	public List<ItemFunctions> ItemFunctions;
+	public AudioClip Sound;
+
+	//For Pooling
+	public GameObject Item;
+	public int INITIAL_COUNT;
+	public int INITIAL_QUANTITY;
 }
