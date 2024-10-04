@@ -29,7 +29,6 @@ public class TimerEvents : MonoBehaviour
 		if (_routine != null)
 			StopCoroutine(_routine);
 
-		Debug.Log("TimerStart");
 		_routine = StartCoroutine(Timer());
 	}
 	public void Restart() => _playing = false;
@@ -43,7 +42,6 @@ public class TimerEvents : MonoBehaviour
 	private IEnumerator Timer()
 	{
 		yield return new WaitForSeconds(_time);
-		Debug.Log("TimerDone");
 		InstantActivate();
 	}
 }

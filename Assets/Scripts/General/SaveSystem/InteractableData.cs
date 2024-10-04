@@ -35,7 +35,7 @@ public class RotateDiscData : GameData
 public class PlaceHolderData : GameData
 {
 	public bool IsItemOn;
-	public bool IsDisabled;
+	public int StatusID;
 }
 
 [System.Serializable]

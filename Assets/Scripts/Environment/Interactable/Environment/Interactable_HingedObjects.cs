@@ -35,17 +35,18 @@ public class Interactable_HingedObjects : Interactable
 
 		if (IsLocked() || _animating) return;
 
-		SetDoorState(!_isOn);
+		SetDoorState(!_isOn, false);
 	}
-	public override void SetStatusManually(bool on) => SetDoorState(on);
+	public override void SetStatusManually(bool on) => SetDoorState(on, false);
+	public void SetStatusManuallySilent(bool on) => SetDoorState(on, true);
 	public void AnimationOver()
 	{
 		_animating = false;
 	}
-	public void Unlock()
+	public void Unlock(bool silent)
 	{
 		_lockKey.Locked = false;
-		SetDoorState(true);
+		SetDoorState(true, silent);
 	}
 	private bool IsLocked()
 	{
@@ -58,7 +59,6 @@ public class Interactable_HingedObjects : Interactable
 				_inventoryManager.RemoveItemFromInventory(item);
 				return false;
 			}
-			Debug.Log("LOCKED");
 			PlayClip(_lockedClips);
 			return true;
 		}
@@ -93,22 +93,23 @@ public class Interactable_HingedObjects : Interactable
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 
 		if (data.Used)
-			OneTimeEvent();
+			DoneEvent();
 
 		_isOn = data.IsOn;
 		_lockKey.Locked = data.IsLocked;
 		// Assume you have a method to set the door state directly based on _isOn
-		SetDoorState(_isOn);
+		SetDoorState(_isOn, true);
 	}
 
-	private void SetDoorState(bool isOn)
+	private void SetDoorState(bool isOn, bool silent)
 	{
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 		if (isOn)
 			OneTimeEvent();
 
 		_isOn = isOn;
-		PlayClip(_isOn ? _openClips : _closeClips);
+		if (!silent)
+			PlayClip(_isOn ? _openClips : _closeClips);
 		_animator.SetBool("On", _isOn);
 		_animating = _isOn;
 	}

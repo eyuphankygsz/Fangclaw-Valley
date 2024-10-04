@@ -40,15 +40,17 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 	{
 		_holderImage = GetComponent<Image>();
 	}
+	public void Start()
+	{
+		if (!IsChestHolder)
+			_saveManager.AddSaveableObject(gameObject, GetSaveData());
+	}
 
 	public void SetInventoryManager(InventoryManager inventoryManager)
 		=> _inventoryManager = inventoryManager;
 
 	public void Setup(InventoryManager inventoryManager, InventoryItem item, int quantity)
 	{
-		if (!IsChestHolder)
-			_saveManager.AddSaveableObject(gameObject, GetSaveData());
-
 		_itemImage.sprite = item.ItemSprite;
 		_itemImage.enabled = true;
 		_inventoryManager = inventoryManager;
@@ -117,7 +119,7 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 		if (IsChestHolder) return null;
 		_inventoryDataItem = new InventoryDataItem()
 		{
-			Name = Item.Name,
+			Name = Item == null ? "" : Item.Name,
 			Quantity = Quantity,
 			ID = _id
 		};

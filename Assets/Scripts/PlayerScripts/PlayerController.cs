@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 	private InputManager _inputManager;
 
 
-	private bool _freeze;
+	private bool _freeze, _force;
 
 	private bool _hiding;
 
@@ -30,6 +30,12 @@ public class PlayerController : MonoBehaviour, ISaveable
 	{
 		_freeze = freeze;
 		_playerInteractions.StopInteractions(freeze);
+	}
+	private void Force(bool force)
+	{
+		_force = force;
+		_freeze = force;
+		_playerInteractions.StopInteractions(_freeze);
 	}
 	private void Awake()
 	{
@@ -40,10 +46,14 @@ public class PlayerController : MonoBehaviour, ISaveable
 		SetLoadFile();
 		_gameManager.OnPauseGame += GameFreeze;
 		_gameManager.OnInspecting += GameFreeze;
+		_gameManager.OnForce += Force;
 	}
 
 	void Update()
 	{
+		if(_force)
+			_playerWeapon.ManageGun();
+
 		if (_freeze) return;
 		_playerStateMachine.ExecuteState();
 		_playerCamera.ManageRotate();

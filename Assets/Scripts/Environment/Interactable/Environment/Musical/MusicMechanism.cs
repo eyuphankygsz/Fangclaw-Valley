@@ -66,7 +66,6 @@ public class MusicMechanism : MonoBehaviour, ISaveable
 
 	private void CheckOrder()
 	{
-		Debug.Log(_currentOrder.ToString());
 		if (_currentOrder.Equals(_order))
 		{
 			_onTrue.Invoke();

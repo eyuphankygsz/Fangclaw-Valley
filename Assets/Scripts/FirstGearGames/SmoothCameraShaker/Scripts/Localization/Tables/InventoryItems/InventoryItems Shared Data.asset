@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: InventoryItems Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: InventoryItems
+  m_TableCollectionNameGuidString: bc19f994f6990e64cbbdefb18d45a648
+  m_Entries:
+  - m_Id: 2005556969472
+    m_Key: safe_key_01_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Key: safe_key_01_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Key: health_potion_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Key: stamina_potion_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Key: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Key: storage_key_01_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Key: storage_key_01_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Key: matches_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Key: matches_desc_0
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7670640027935178763
+  references:
+    version: 2
+    RefIds:
+    - rid: 7670640027935178763
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1724339993003

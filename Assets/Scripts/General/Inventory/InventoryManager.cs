@@ -74,7 +74,7 @@ public class InventoryManager : MonoBehaviour
 		_itemHoldersList = _itemHolderTransform.GetComponentsInChildren<InventoryItemHolder>().ToList();
 		_takeableObject.SetInventoryManager(this);
 		_takeableObject.gameObject.SetActive(false);
-		_itemHoldersList.ForEach(itemHolder => itemHolder.SetInventoryManager(this));
+		_itemHoldersList.ForEach(itemHolder => { itemHolder.SetInventoryManager(this); itemHolder.Start(); });
 		_cursorMenu.Setup(this);
 
 		for (int i = 0; i < _useFunctionParent.childCount; i++)
@@ -139,8 +139,7 @@ public class InventoryManager : MonoBehaviour
 	public void AddSavedItemToInventory(InventoryItem item, int quantity, int id)
 	{
 		var holder = _itemHoldersList[id];
-		int leftSpace = holder.MaxQuantity - holder.Quantity;
-		holder.AddQuantity(quantity);
+		holder.Setup(this, item, quantity);
 	}
 	private void AddToChest(InventoryItem item, int quantity)
 	{
@@ -296,7 +295,6 @@ public class InventoryManager : MonoBehaviour
 	}
 	private void DisableCursorFollower()
 	{
-		Debug.Log("disable");
 		_cursorItem?.SetActive(false);
 		if (_lastSelectedHolder?.Item != null)
 			_lastSelectedHolder.SetTemporaryStatus(isEnable: true);

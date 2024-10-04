@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2005556969472
+    m_Localized: "Cl\xE9 du Coffre No.1\n\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "Je pense que c'est une cl\xE9 de coffre-fort."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: "\xC7a sent tr\xE8s mauvais. Je suis s\xFBr que c'est bon pour la
+      sant\xE9..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "Ma grand-m\xE8re pr\xE9parait autrefois une boisson avec ce m\xEAme
+      parfum. \xC0 l'\xE9poque, elle confectionnait cet \xE9lixir d\xE9licieux pour
+      moi, le pr\xE9sentant avec le plus grand soin, comme s'il s'agissait d'un rituel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "Petite Cl\xE9 de Stockage"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Cette cl\xE9 us\xE9e et rouill\xE9e, marqu\xE9e par des signes
+      de n\xE9gligence, est assur\xE9ment destin\xE9e \xE0 un espace de rangement
+      modeste."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: Allumettes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Ces allumettes rev\xEAtent une petite mais vitale importance. De
+      simples b\xE2tonnets en bois, parfaits pour allumer ma lampe \xE0 gaz. Elles
+      me guideront \xE0 travers l'obscurit\xE9 de cette grotte. Une seule \xE9tincelle,
+      et elles illumineront les myst\xE8res cach\xE9s dans l'ombre. Bien qu'elles
+      semblent ordinaires, ces allumettes sont cruciales pour ma survie ici."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

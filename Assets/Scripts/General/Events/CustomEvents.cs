@@ -12,7 +12,7 @@ public class CustomEvents : MonoBehaviour, ISaveable
 	private bool _always;
 
 	[SerializeField]
-	private UnityEvent _onTriggerEvents;
+	private UnityEvent _onTriggerEvents, _doneEvents;
 	private bool _done;
 
 	[Inject]
@@ -23,6 +23,7 @@ public class CustomEvents : MonoBehaviour, ISaveable
 	private void Start()
 	{
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+		SetLoadFile();
 	}
 	public GameData GetSaveFile()
 	{
@@ -42,6 +43,8 @@ public class CustomEvents : MonoBehaviour, ISaveable
 			return;
 
 		_done = data.Done;
+		if (_done)
+			_doneEvents?.Invoke();
 	}
 
 	public void Setup()
@@ -50,6 +53,9 @@ public class CustomEvents : MonoBehaviour, ISaveable
 	}
 	private void OnTriggerEnter(Collider other)
 	{
+		if (other.tag != "Player")
+			return;
+
 		if (_done && !_always)
 			return;
 

@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class Lantern : Weapons
 {
 	[SerializeField] private GameObject _normalLightSource;
 	[SerializeField] private GameObject _directLightSource;
+	[SerializeField] private InventoryItem _match;
+	[SerializeField] private AudioClip _matchSound;
 
 	private bool _active;
 
@@ -17,8 +20,13 @@ public class Lantern : Weapons
 	private IWeaponModes _defaultMode;
 
 	private LanternData _data = new LanternData();
+
+	[Inject]
+	private InventoryManager _inventoryManager;
+	private bool _enlighting;
 	public override void Move()
 	{
+		if(_enlighting) return;
 		MoveNormal();
 		MoveByCamera();
 		ClampMove();
@@ -47,15 +55,47 @@ public class Lantern : Weapons
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			_active = !_active;
-			_onFire = _active;
-			_normalLightSource.SetActive(_active);
-			SetLightning(true);
+			HandleActivation();
 		}
 		if (Input.GetMouseButtonDown(1))
 			SetLightning(false);
 		else if (Input.GetMouseButtonUp(1))
 			SetLightning(true);
+	}
+
+	private void HandleActivation()
+	{
+		if (_enlighting) return;
+
+		if (!_active)
+		{
+			var item = _inventoryManager.GetItem(_match.ItemName.GetLocalizedString(), 1);
+			if (item == null) return;
+			_enlighting = true;
+			_source.clip = _matchSound;
+			_source.Play();
+			_animator.SetTrigger("Enlight");
+			_inventoryManager.RemoveItemQuantityFromInventory(item, 1);
+		}
+		else
+		{
+			_enlighting = true;
+			_animator.SetTrigger("Delight");
+		}
+	}
+	public void Enlight()
+	{
+		_active = true;
+		_onFire = true;
+		_enlighting = false;
+		SetLightning(true);
+	}
+	public void Delight()
+	{
+		_active = false;
+		_onFire = false;
+		_enlighting = false;
+		SetLightning(false);
 	}
 	private void SetLightning(bool isDefault)
 	{
@@ -64,7 +104,7 @@ public class Lantern : Weapons
 			_normalLightSource.SetActive(isDefault);
 			_directLightSource.SetActive(!isDefault);
 		}
-		else 
+		else
 		{
 			_normalLightSource.SetActive(false);
 			_directLightSource.SetActive(false);
@@ -73,11 +113,11 @@ public class Lantern : Weapons
 
 	public override void OnSelected()
 	{
+		_normalLightSource.SetActive(_onFire);
 	}
 
 	public override void OnChanged()
 	{
-		_active = false;
 		_normalLightSource.SetActive(false);
 		_directLightSource.SetActive(false);
 	}
@@ -109,7 +149,6 @@ public class Lantern : Weapons
 		LanternData data = _saveManager.GetData<LanternData>(gameObject.name);
 		if (data == null)
 		{
-			Debug.Log(gameObject.name);
 			gameObject.SetActive(false);
 			return;
 		}
@@ -117,7 +156,7 @@ public class Lantern : Weapons
 		IsPicked = data.IsPicked;
 		_leftFuel = data.LeftFuel;
 		_data = data;
-		
+
 		gameObject.SetActive(data.IsSelected);
 	}
 }

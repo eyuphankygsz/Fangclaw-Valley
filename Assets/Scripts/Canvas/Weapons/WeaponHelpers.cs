@@ -10,7 +10,6 @@ public class WeaponHelpers : MonoBehaviour
 	private IEnumerator StartCooldown(float time, Action action)
 	{
 		yield return new WaitForSeconds(time);
-		Debug.Log("ACTION");
 		action.Invoke();
 	}
 }

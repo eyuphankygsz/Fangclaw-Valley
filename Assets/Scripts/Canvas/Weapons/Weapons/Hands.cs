@@ -9,6 +9,10 @@ public class Hands : Weapons
 
 	private WeaponData _data = new WeaponData();
 
+	[SerializeField]
+	private AudioClip[] _punchClips;
+	private int _punchCounter;
+
 	public override void Move()
 	{
 		MoveNormal();
@@ -32,6 +36,10 @@ public class Hands : Weapons
 	{
 		if (Input.GetMouseButtonDown(0) && !_onAction)
 		{
+			//_source.clip = _punchClips[_punchCounter++];
+			//_source.Play();
+			//_punchCounter %= _punchClips.Length;
+
 			_onAction = true;
 			_weaponHelpers.CooldownGun(1, StopCooldown);
 			PunchAnimation();

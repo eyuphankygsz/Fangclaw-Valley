@@ -12,7 +12,7 @@ public class GameManager
 		get => _pauseGame;
 		set
 		{
-			if (_pauseGame != value)
+			if (_pauseGame != value && !_force)
 			{
 				Time.timeScale = value ? 0 : 1;
 				_pauseGame = value;
@@ -42,11 +42,29 @@ public class GameManager
 		get => _saveGame;
 		set
 		{
-			if (_saveGame != value)
+			if (_saveGame != value && !_force)
 			{
 				_saveGame = value;
 				PauseGame = value;
 				OnSaveGame?.Invoke(_saveGame);
+			}
+		}
+	}
+
+
+
+	public event Action<bool> OnForce;
+
+	private bool _force;
+	public bool Force
+	{
+		get => _force;
+		set
+		{
+			if (_force != value)
+			{
+				_force = value;
+				OnForce?.Invoke(_force);
 			}
 		}
 	}

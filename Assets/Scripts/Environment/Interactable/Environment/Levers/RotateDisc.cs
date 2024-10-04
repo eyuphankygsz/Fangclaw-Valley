@@ -15,7 +15,7 @@ public class RotateDisc : Interactable
 	private int _maxSelectableID;
 
 	private RotateDiscData _data;
-	private bool _animating;
+	private bool _animating, _atStart;
 
 	private int _times;
 
@@ -53,6 +53,7 @@ public class RotateDisc : Interactable
 		_data = _saveManager.GetData<RotateDiscData>(InteractableName);
 		if (_data == null) return;
 
+		_atStart = true;
 		int turnTimes = GetTurnTimes(_data.SelectedID);
 		TurnDisc(turnTimes);
 
@@ -81,7 +82,8 @@ public class RotateDisc : Interactable
 	{
 		_animating = false;
 		_currentID = (_currentID + _times) % _maxSelectableID;
-		_holder.SetLever(_turnID, _currentID == _needID, false);
+		_holder.SetLever(_turnID, _currentID == _needID, _atStart);
+		_atStart = false;
 		_source.Stop();
 	}
 }

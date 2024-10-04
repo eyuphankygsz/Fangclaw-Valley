@@ -69,7 +69,7 @@ public class Interactable_Pickup : Interactable
 			gameObject.SetActive(!data.IsPickedUp);
 			_quantity = data.LeftQuantity;
 			if (data.IsPickedUp)
-				OneTimeEvent();
+				DoneEvent();
 		}
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 	}

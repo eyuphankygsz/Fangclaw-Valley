@@ -6,22 +6,77 @@ public class OnLookEvents : MonoBehaviour
 	[SerializeField]
 	private UnityEvent _events;
 
-	private Coroutine _routine;
-	private bool _playing;
+	public UnityEvent ForceEvents;
 
-	private void OnBecameVisible()
+	private bool _hasTriggered;
+
+	[SerializeField]
+	private Camera _mainCamera;
+	[SerializeField]
+	private Transform _targetObject;
+
+	[SerializeField]
+	private float _maxAngle = 30f;
+	[SerializeField]
+	private float _maxDistance = 5f;
+	[SerializeField]
+	private LayerMask _layerMask;
+
+	private void Start()
 	{
-		Debug.Log("VISIBLE");
-		if (_playing)
-			return;
-		_playing = true;
-		_events.Invoke();
+		_mainCamera = Camera.main;
 	}
 
-	private void OnBecameInvisible()
+	public void Update()
 	{
-		Debug.Log("INVISIBLE");
+		if (_hasTriggered) return;
+
+		Vector3 directionToTarget = _targetObject.position - _mainCamera.transform.position;
+		float angleToTarget = Vector3.Angle(_mainCamera.transform.forward, directionToTarget);
+
+
+		if (angleToTarget <= _maxAngle && !IsObstructed(directionToTarget))
+		{
+			_events?.Invoke();
+			_hasTriggered = true;
+		}
 	}
 
-	public void Restart() => _playing = false;
+	bool IsObstructed(Vector3 directionToTarget)
+	{
+		float distanceToTarget = directionToTarget.magnitude;
+
+		if (distanceToTarget > _maxDistance)
+			return true;
+
+		Ray ray = new Ray(_mainCamera.transform.position, directionToTarget.normalized);
+		RaycastHit hit;
+
+		if (Physics.Raycast(ray, out hit, distanceToTarget,_layerMask))
+			if (hit.transform != _targetObject)
+				return true;
+
+		return false;
+	}
+
+	public void Restart() { }
+	private void OnDrawGizmos()
+	{
+		if (_targetObject != null || _mainCamera != null)
+		{
+			Gizmos.color = Color.red;
+			Vector3 directionToTarget = _targetObject.position - _mainCamera.transform.position;
+
+			Vector3 forwardDirection = _mainCamera.transform.forward;
+
+			Quaternion leftAngle = Quaternion.Euler(0, -_maxAngle, 0);
+			Quaternion rightAngle = Quaternion.Euler(0, _maxAngle, 0);
+			Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + forwardDirection * _maxDistance); // Ön
+			Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + leftAngle * forwardDirection * _maxDistance); // Sol
+			Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + rightAngle * forwardDirection * _maxDistance); // Sað
+
+			Gizmos.color = Color.green;
+			Gizmos.DrawSphere(_targetObject.position, 0.1f);
+		}
+	}
 }

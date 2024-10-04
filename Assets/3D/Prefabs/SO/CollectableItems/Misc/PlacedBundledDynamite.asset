@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
   m_Name: PlacedBundledDynamite
   m_EditorClassIdentifier: 
-  Name: 
+  Name: pbd
   ItemName:
     m_TableReference:
       m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
@@ -35,6 +35,7 @@ MonoBehaviour:
   StackQuantity: 1
   OneTime: 1
   ItemFunctions: 0100000003000000
+  Sound: {fileID: 0}
   Item: {fileID: 486557774513353128, guid: 19d33a70f0f82f942ba145e97f4c040d, type: 3}
   INITIAL_COUNT: 1
   INITIAL_QUANTITY: 1

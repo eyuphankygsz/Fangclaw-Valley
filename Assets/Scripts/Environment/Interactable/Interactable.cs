@@ -20,15 +20,20 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	[SerializeField]
 	protected UnityEvent _oneTimeEvents;
 	[SerializeField]
+	protected UnityEvent _doneEvents;
+	[SerializeField]
 	protected UnityEvent _trueEvents;
 	[SerializeField]
 	protected UnityEvent _falseEvents;
+	[SerializeField]
+	protected UnityEvent _interactEvents;
 
 	[Inject]
 	protected SaveManager _saveManager;
 	public virtual void OnInteract(Enum_Weapons weapon)
 	{
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+
 	}
 	public virtual void SetStatusManually(bool on)
 	{
@@ -64,13 +69,16 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 
 	protected void OneTimeEvent()
 	{
-		Debug.Log(InteractableName + " " + _used);
 		if (!_used)
 		{
 			_used = true;
 			_oneTimeEvents.Invoke();
 		}
 
+	}
+	protected void DoneEvent()
+	{
+		_doneEvents.Invoke();
 	}
 
 

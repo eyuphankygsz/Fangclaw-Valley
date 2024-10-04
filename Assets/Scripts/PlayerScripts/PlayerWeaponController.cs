@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Zenject;
 
 public class PlayerWeaponController : MonoBehaviour, IInputHandler
 {
@@ -125,6 +126,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
 		_currentWeapon.gameObject.SetActive(true);
+		_currentWeapon.OnSelected();
 
 		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
 

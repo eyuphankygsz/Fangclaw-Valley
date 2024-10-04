@@ -54,6 +54,8 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		if (_playerCam == null)
 			_playerCam = Camera.main.gameObject;
 
+		_interactEvents?.Invoke();
+
 		_interacted = true;
 		OnInputEnable(_inputManager.Controls);
 		Inspect(true);
@@ -85,7 +87,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 
 		if (_code == code)
 		{
-			Unlock();
+			Unlock(false);
 		}
 	}
 	public void ChangeCode(int id, int number)
@@ -121,13 +123,13 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		}
 		_combinations[_selectedCombination].StartTurnCombination(times: 1, setManually: false);
 	}
-	private void Unlock()
+	private void Unlock(bool silent)
 	{
 		_unlocked = true;
 		Inspect(false);
 		GetComponent<Rigidbody>().isKinematic = false;
 		gameObject.layer = 0;
-		_lockedObject.Unlock();
+		_lockedObject.Unlock(silent);
 	}
 
 	private void StopInspect(InputAction.CallbackContext ctx)
@@ -178,13 +180,14 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	public override void LoadData()
 	{
 		CombLockData data = _saveManager.GetData<CombLockData>(InteractableName);
-		if (data == null) return;
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+		if (data == null) return;
 
 		if (data.IsUnlocked)
 		{
-			Unlock();
-			Destroy(gameObject);
+			_unlocked = true;
+			Unlock(true);
+			gameObject.SetActive(false);
 			return;
 		}
 

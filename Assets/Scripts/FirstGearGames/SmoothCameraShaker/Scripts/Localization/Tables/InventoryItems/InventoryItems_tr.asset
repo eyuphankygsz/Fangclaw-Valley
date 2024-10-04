@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2005556969472
+    m_Localized: "Kasa Anahtar\u0131 No.1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "San\u0131r\u0131m bu bir kasa anahtar\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: "\xC7ok k\xF6t\xFC kokuyor. Eminim ki sa\u011Fl\u0131\u011Fa faydal\u0131d\u0131r..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "B\xFCy\xFCkannemin vaktiyle haz\u0131rlad\u0131\u011F\u0131 i\xE7ecek,
+      tam da bu kokuya sahip olurdu. O zamanlar, bu lezzetli iksiri benim i\xE7in
+      \xF6zenle yapar, adeta bir rit\xFCel gibi sunard\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "K\xFC\xE7\xFCk Depo Anahtar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Bu eski ve paslanm\u0131\u015F anahtar, ihmalk\xE2rl\u0131\u011F\u0131n
+      izlerini ta\u015F\u0131yan haliyle, kesinlikle m\xFCtevaz\u0131 bir depo alan\u0131
+      i\xE7in tasarlanm\u0131\u015F olmal\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: Kibritler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Bu kibritler, k\xFC\xE7\xFCk ama hayati bir \xF6neme sahip. Ah\u015Fap
+      par\xE7alar, gaz lambam\u0131 yakmak i\xE7in m\xFCkemmel birer ara\xE7. Karanl\u0131k
+      bu ma\u011Farada yolumu bulmam\u0131 sa\u011Flayacaklar. Sadece bir k\u0131v\u0131lc\u0131m,
+      ve karanl\u0131\u011F\u0131n i\xE7indeki gizemleri ayd\u0131nlatacak. Ne kadar
+      s\u0131radan g\xF6r\xFCnseler de, bu kibritler burada hayatta kalmam i\xE7in
+      \xE7ok \xF6nemli."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

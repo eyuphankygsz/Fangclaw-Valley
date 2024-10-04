@@ -12,6 +12,7 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	[SerializeField] protected float _ySpeed;
 	[SerializeField] protected LayerMask _interactableLayers;
 	[SerializeField] protected Sprite _weaponCross;
+	[SerializeField] protected AudioSource _source;
 
 	public bool IsPicked;
 
@@ -56,6 +57,7 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 		_xPos = _startPos.x;
 		_camera = Camera.main.transform;
 		_animator = GetComponent<Animator>();
+		_source = GetComponent<AudioSource>();
 	}
 	public abstract void OnAction();
 	public abstract void OnSelected();

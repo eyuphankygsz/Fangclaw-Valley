@@ -17,7 +17,6 @@ public class ObjectPool : MonoBehaviour
 
 	private void Start()
 	{
-		Debug.Log(_itemPools.Count);
 		var crateItemList = _saveManager.CrateItems();
 		if (crateItemList == null) return;
 		foreach (var item in crateItemList)
@@ -32,12 +31,12 @@ public class ObjectPool : MonoBehaviour
 
 	private void SetupCrateItem(CrateItem crateItem)
 	{
+		if (crateItem.Taken) return;
+
 		var selectedPoolItem = _itemPools.FirstOrDefault(item => item.Key.Item.GetComponent<Interactable>() != null && item.Key.Item.GetComponent<Interactable>().InteractableName == crateItem.Name);
-		var item =GetObject(crateItem.Position, selectedPoolItem.Key);
+		var item = GetObject(crateItem.Position, selectedPoolItem.Key);
 		if(item.TryGetComponent<Interactable_Pickup>(out Interactable_Pickup pickup))
 			pickup.SetQuantity(crateItem.Quantity);
-
-		return;
 	}
 
 	public GameObject GetObject(Vector3 pos, InventoryItem wantedObject)
