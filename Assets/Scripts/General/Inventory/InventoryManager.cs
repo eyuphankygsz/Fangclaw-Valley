@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -20,13 +21,26 @@ public class InventoryManager : MonoBehaviour
 
 	private List<InventoryItemHolder> _itemHoldersList = new List<InventoryItemHolder>();
 
+	public Image ItemPicture;
+	public TextMeshProUGUI ItemTitle;
+	public TextMeshProUGUI ItemDescription;
+	public AudioSource TheAudioSource;
+	public Color _pointerEnterColor, _pointerExitColor;
+	public Dictionary<string, UseFunction> UseFunctions = new Dictionary<string, UseFunction>();
+	public bool Combine;
+	public bool OnMenu;
+	public Transform PlayerDropTransform;
+
 
 	[SerializeField]
-	private Image _itemPicture;
+	private List<InspectFunctionHolder> _inspectFunctions;
 	[SerializeField]
-	private TextMeshProUGUI _itemTitle;
+	private List<UseFunctionHolder> _useFunctions;
 	[SerializeField]
-	private TextMeshProUGUI _itemDescription;
+	private List<CombineFunctionHolder> _combineFunctions;
+	[SerializeField]
+	private List<DropFunctionHolder> _dropFunctions;
+
 	[SerializeField]
 	private InventoryItemHolder _takeableObject;
 
@@ -34,9 +48,8 @@ public class InventoryManager : MonoBehaviour
 	[Inject]
 	private SaveManager _saveManager;
 	[Inject]
-	private ObjectPool _objectPool;
+	public ObjectPool ObjectPool;
 
-	public Color _pointerEnterColor, _pointerExitColor;
 
 
 	private InventoryItemHolder _lastSelectedHolder;
@@ -46,28 +59,22 @@ public class InventoryManager : MonoBehaviour
 	private CursorItemHolder _cursorItem;
 	[SerializeField]
 	private CursorMenuFollower _cursorMenu;
-	[SerializeField]
-	private Transform _playerDropTransform;
 
 
-	private Interactable_Pickup _tempPickup;
-	private bool _onMenu;
+
+	private Interactable_Pickup TempPickup;
 
 	[SerializeField]
 	private Transform _useFunctionParent;
-	private Dictionary<string, UseFunction> _useFunctions = new Dictionary<string, UseFunction>();
 
-	private bool _combine;
 	private CombineManager _combineManager;
 
-	[SerializeField]
-	private AudioSource _audioSource;
 	[SerializeField]
 	private AudioClip _bagClip;
 
 	private void Awake()
 	{
-		_objectPool.InitiateDictionary(_allItems);
+		ObjectPool.InitiateDictionary(_allItems);
 	}
 	public void Start()
 	{
@@ -78,7 +85,7 @@ public class InventoryManager : MonoBehaviour
 		_cursorMenu.Setup(this);
 
 		for (int i = 0; i < _useFunctionParent.childCount; i++)
-			_useFunctions.Add(_useFunctionParent.GetChild(i).name, _useFunctionParent.GetChild(i).GetComponent<UseFunction>());
+			UseFunctions.Add(_useFunctionParent.GetChild(i).name, _useFunctionParent.GetChild(i).GetComponent<UseFunction>());
 
 
 		Load();
@@ -88,7 +95,7 @@ public class InventoryManager : MonoBehaviour
 	public void AddItemToInventory(InventoryItem item, int quantity, Interactable_Pickup pickupObj)
 	{
 		var itemHolders = GetNonEmptyInventoryHolders(item);
-		_tempPickup = pickupObj;
+		TempPickup = pickupObj;
 
 		if (itemHolders == null)
 		{
@@ -107,7 +114,7 @@ public class InventoryManager : MonoBehaviour
 
 	private void AddToInventory(int quantity, List<InventoryItemHolder> itemHolders, InventoryItem item)
 	{
-		_audioSource.PlayOneShot(_bagClip);
+		TheAudioSource.PlayOneShot(_bagClip);
 		int leftOvers = quantity;
 		int index = 0;
 
@@ -123,7 +130,7 @@ public class InventoryManager : MonoBehaviour
 			else
 				holder.AddQuantity(addedQuantity);
 
-			_tempPickup?.AddQuantity(-addedQuantity);
+			TempPickup?.AddQuantity(-addedQuantity);
 			leftOvers -= addedQuantity;
 
 			if (leftOvers > 0 && index == itemHolders.Count)
@@ -132,7 +139,7 @@ public class InventoryManager : MonoBehaviour
 				return;
 			}
 
-			_tempPickup?.gameObject.SetActive(false);
+			TempPickup?.gameObject.SetActive(false);
 		}
 	}
 
@@ -178,12 +185,12 @@ public class InventoryManager : MonoBehaviour
 
 	public void HandleLeftClick(InventoryItemHolder holder)
 	{
-		if (_combine)
+		if (Combine)
 		{
 			TryCombine(holder);
 			return;
 		}
-		if (_onMenu)
+		if (OnMenu)
 			DisableCursorMenu(false);
 
 		if (holder.Item != null)
@@ -201,22 +208,22 @@ public class InventoryManager : MonoBehaviour
 		}
 		if (_chestHolder.Item == null)
 		{
-			_tempPickup?.gameObject.SetActive(false);
+			TempPickup?.gameObject.SetActive(false);
 			_chestHolder.gameObject.SetActive(false);
 		}
 	}
 	public void HandleRightClick(InventoryItemHolder holder)
 	{
-		if (_onMenu || _combine)
+		if (OnMenu || Combine)
 		{
 			DisableCursorMenu(false);
 			_lastSelectedHolder = null;
 		}
-		_combine = false;
+		Combine = false;
 
 		if (_lastSelectedHolder == null && holder.Item != null)
 		{
-			_onMenu = true;
+			OnMenu = true;
 			_lastSelectedHolder = holder;
 			_cursorMenu.SetMenu(holder.Item, holder.IsChestHolder);
 		}
@@ -227,7 +234,7 @@ public class InventoryManager : MonoBehaviour
 			DisableCursorMenu(false);
 		}
 	}
-	private void TakeItem(InventoryItemHolder holder)
+	public void TakeItem(InventoryItemHolder holder)
 	{
 		_lastSelectedHolder = holder;
 		holder.SetTemporaryStatus(isEnable: false);
@@ -267,7 +274,7 @@ public class InventoryManager : MonoBehaviour
 				int added = Mathf.Clamp(_lastSelectedHolder.Quantity, 0, canAdded);
 				clicked.AddQuantity(added);
 				_lastSelectedHolder.AddQuantity(-added);
-				_tempPickup?.AddQuantity(-added);
+				TempPickup?.AddQuantity(-added);
 				_cursorItem.Setup(_lastSelectedHolder);
 			}
 		}
@@ -317,11 +324,14 @@ public class InventoryManager : MonoBehaviour
 		holder.AddQuantity(-quantity);
 
 		if (holder.Quantity == 0)
-		{
-			_itemHoldersList.Remove(holder);
-			Destroy(holder.gameObject);
-
-		}
+			holder.ResetHolder();
+	}
+	public void RemoveItemQuantityFromInventory(InventoryItemHolder holder, int quantity)
+	{
+		holder.AddQuantity(-quantity);
+		
+		if (holder.Quantity == 0)
+			holder.ResetHolder();
 	}
 	public InventoryItem GetItem(string itemName, int quantity)
 	{
@@ -333,10 +343,10 @@ public class InventoryManager : MonoBehaviour
 	}
 	public void SelectItem(InventoryItemHolder holder)
 	{
-		_itemTitle.text = holder.Item.ItemName.GetLocalizedString();
-		_itemPicture.sprite = holder.Item.ItemSprite;
-		_itemPicture.enabled = true;
-		_itemDescription.text = holder.Item.ItemDescription.GetLocalizedString();
+		ItemTitle.text = holder.Item.ItemName.GetLocalizedString();
+		ItemPicture.sprite = holder.Item.ItemSprite;
+		ItemPicture.enabled = true;
+		ItemDescription.text = holder.Item.ItemDescription.GetLocalizedString();
 	}
 	public void Load()
 	{
@@ -366,63 +376,83 @@ public class InventoryManager : MonoBehaviour
 
 	public void Disable()
 	{
-		_tempPickup = null;
-		_combine = false;
-		_itemTitle.text = "";
-		_itemDescription.text = "";
-		_itemPicture.enabled = false;
+		TempPickup = null;
+		Combine = false;
+		ItemTitle.text = "";
+		ItemDescription.text = "";
+		ItemPicture.enabled = false;
 		DisableCursorMenu(false);
 	}
 
 	public void UseItem()
 	{
-		if (!_useFunctions[_lastSelectedHolder.Item.name].Use())
-			return;
-
-		_audioSource.PlayOneShot(_lastSelectedHolder.Item.Sound);
-
-		if (_lastSelectedHolder.IsChestHolder)
-			_tempPickup?.AddQuantity(-1);
-
-		_lastSelectedHolder.AddQuantity(-1);
-		DisableCursorMenu(false);
+		UseFunctions fHolder = GetUseFunctionHolder(_lastSelectedHolder);
+		fHolder.Use(_lastSelectedHolder);
 	}
 	public void InspectItem()
 	{
-		_audioSource.PlayOneShot(_lastSelectedHolder.Item.Sound);
-		_itemPicture.sprite = _lastSelectedHolder.Item.ItemSprite;
-		_itemPicture.enabled = true;
-		_itemTitle.text = _lastSelectedHolder.Item.ItemName.GetLocalizedString();
-		_itemDescription.text = _lastSelectedHolder.Item.ItemDescription.GetLocalizedString();
-		DisableCursorMenu(false);
-	}
+		InspectFunctions fHolder = GetInspectFunctionHolder(_lastSelectedHolder);
+		fHolder.Inspect(_lastSelectedHolder);
+    }
 	public void CombineItem()
 	{
-		_combine = true;
-		_onMenu = false;
-		DisableCursorMenu(true);
-		TakeItem(_lastSelectedHolder);
+		CombineFunctions fHolder = GetCombineFunctionHolder(_lastSelectedHolder);
+		fHolder.Combine(_lastSelectedHolder);
 	}
 	private void TryCombine(InventoryItemHolder holder)
 	{
 		if (holder != _lastSelectedHolder)
 			_combineManager.CombineItems(holder, _lastSelectedHolder);
-		_combine = false;
+		Combine = false;
 		DisableCursorMenu(false);
 	}
 	public void DropItem()
 	{
-		_audioSource.PlayOneShot(_lastSelectedHolder.Item.Sound);
-		_objectPool.GetObject(_playerDropTransform.position, _lastSelectedHolder.Item.name);
-		_lastSelectedHolder.AddQuantity(-1);
-		DisableCursorMenu(false);
+		DropFunctions fHolder = GetDropFunctionHolder(_lastSelectedHolder);
+		fHolder.Drop(_lastSelectedHolder);
+	}
+	private InspectFunctions GetInspectFunctionHolder(InventoryItemHolder holder)
+	{
+		string function = _lastSelectedHolder.Item.InspectName;
+		for (int i = 0; i < _inspectFunctions.Count; i++)
+			if (_inspectFunctions[i].Name == function)
+				return _inspectFunctions[i].Inspect;
+
+		return null;
+	}
+	private UseFunctions GetUseFunctionHolder(InventoryItemHolder holder)
+	{
+		string function = _lastSelectedHolder.Item.UseName;
+		for (int i = 0; i < _useFunctions.Count; i++)
+			if (_useFunctions[i].Name == function)
+				return _useFunctions[i].Use;
+
+		return null;
+	}
+	private CombineFunctions GetCombineFunctionHolder(InventoryItemHolder holder)
+	{
+		string function = _lastSelectedHolder.Item.CombineName;
+		for (int i = 0; i < _combineFunctions.Count; i++)
+			if (_combineFunctions[i].Name == function)
+				return _combineFunctions[i].Combine;
+
+		return null;
+	}
+	private DropFunctions GetDropFunctionHolder(InventoryItemHolder holder)
+	{
+		string function = _lastSelectedHolder.Item.DropName;
+		for (int i = 0; i < _dropFunctions.Count; i++)
+			if (_dropFunctions[i].Name == function)
+				return _dropFunctions[i].Drop;
+
+		return null;
 	}
 	public void DisableCursorMenu(bool onlyMenu)
 	{
 		_cursorMenu.gameObject.SetActive(false);
 		if (!onlyMenu)
 			DisableCursorFollower();
-		_onMenu = false;
+		OnMenu = false;
 	}
 
 	public void SetCombineManager(CombineManager manager)
@@ -435,4 +465,29 @@ public class InventoryDataItem : GameData
 {
 	public int Quantity;
 	public int ID;
+}
+
+[Serializable]
+public class InspectFunctionHolder
+{
+	public string Name;
+	public InspectFunctions Inspect;
+}
+[Serializable]
+public class UseFunctionHolder
+{
+	public string Name;
+	public UseFunctions Use;
+}
+[Serializable]
+public class CombineFunctionHolder
+{
+	public string Name;
+	public CombineFunctions Combine;
+}
+[Serializable]
+public class DropFunctionHolder
+{
+	public string Name;
+	public DropFunctions Drop;
 }

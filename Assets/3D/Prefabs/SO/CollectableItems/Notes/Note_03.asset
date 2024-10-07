@@ -36,6 +36,10 @@ MonoBehaviour:
   OneTime: 1
   ItemFunctions: 0100000003000000
   Sound: {fileID: 8300000, guid: 14b6d5ac447de0d419fe396666dadaa9, type: 3}
+  InspectName: OnHand
+  UseName: 
+  CombineName: 
+  DropName: 
   Item: {fileID: 8732620640838913632, guid: d4a71cb925c17fe479592aad4f6d6572, type: 3}
   INITIAL_COUNT: 1
   INITIAL_QUANTITY: 1

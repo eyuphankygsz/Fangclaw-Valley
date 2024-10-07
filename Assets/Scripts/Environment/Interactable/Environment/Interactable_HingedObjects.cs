@@ -35,10 +35,10 @@ public class Interactable_HingedObjects : Interactable
 
 		if (IsLocked() || _animating) return;
 
-		SetDoorState(!_isOn, false);
+		SetDoorState(!_isOn, false, atStart: false);
 	}
-	public override void SetStatusManually(bool on) => SetDoorState(on, false);
-	public void SetStatusManuallySilent(bool on) => SetDoorState(on, true);
+	public override void SetStatusManually(bool on) => SetDoorState(on, false, atStart: false);
+	public void SetStatusManuallySilent(bool on) => SetDoorState(on, true, atStart: false);
 	public void AnimationOver()
 	{
 		_animating = false;
@@ -46,7 +46,7 @@ public class Interactable_HingedObjects : Interactable
 	public void Unlock(bool silent)
 	{
 		_lockKey.Locked = false;
-		SetDoorState(true, silent);
+		SetDoorState(true, silent, atStart: false);
 	}
 	private bool IsLocked()
 	{
@@ -98,14 +98,17 @@ public class Interactable_HingedObjects : Interactable
 		_isOn = data.IsOn;
 		_lockKey.Locked = data.IsLocked;
 		// Assume you have a method to set the door state directly based on _isOn
-		SetDoorState(_isOn, true);
+		SetDoorState(_isOn, true, true);
 	}
 
-	private void SetDoorState(bool isOn, bool silent)
+	private void SetDoorState(bool isOn, bool silent, bool atStart)
 	{
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
-		if (isOn)
+
+		if (isOn && !atStart)
 			OneTimeEvent();
+		else if (isOn && atStart)
+			DoneEvent();
 
 		_isOn = isOn;
 		if (!silent)

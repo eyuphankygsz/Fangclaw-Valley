@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Items:
   - Item: {fileID: 11400000, guid: aa257628221c5d246a684ca4a6abe347, type: 2}
-    Chance: 0.4
+    Chance: 0.3
   - Item: {fileID: 11400000, guid: 265c5e15912c67c4592ca0e52ea13c31, type: 2}
-    Chance: 0.8
+    Chance: 0.6
+  - Item: {fileID: 11400000, guid: 817d79ee5c93d804b9f0bdde3ca5f5a6, type: 2}
+    Chance: 0.9

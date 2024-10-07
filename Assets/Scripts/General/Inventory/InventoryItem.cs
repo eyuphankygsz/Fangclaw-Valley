@@ -13,7 +13,7 @@ public class InventoryItem : ScriptableObject
 	public bool OneTime;
 	public List<ItemFunctions> ItemFunctions;
 	public AudioClip Sound;
-
+	public string InspectName, UseName, CombineName, DropName;
 	//For Pooling
 	public GameObject Item;
 	public int INITIAL_COUNT;

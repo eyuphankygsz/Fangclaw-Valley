@@ -142,4 +142,17 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 
 	}
+
+	public void EquipExternalWeapon(string name)
+	{
+		_currentWeapon?.OnChanged();
+		_currentWeapon?.gameObject.SetActive(false);
+
+		_currentWeapon = _weapons[name];
+
+		_currentWeapon.gameObject.SetActive(true);
+		_currentWeapon.OnSelected();
+
+		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
+	}
 }

@@ -7,16 +7,19 @@ public class PlayerForce : MonoBehaviour
 
 	[SerializeField]
 	private Transform _cameraHolder;
-
+	
+	private PlayerInteractions _interaction;
 	private Transform _target;
 	private float _time = 6;
 	private OnLookEvents _onLookEvent;
 
 	[Inject]
 	private GameManager _gameManager;
+	
 
 	private void Awake()
 	{
+		_interaction = GetComponent<PlayerInteractions>();
 		_cameraHolder = Camera.main.transform.parent;
 	}
 	public void SetEvents(OnLookEvents onLookEvent)
@@ -25,6 +28,7 @@ public class PlayerForce : MonoBehaviour
 	}
 	public void StartForce(Transform tf)
 	{
+		_interaction.StopInteractions(true);
 		_target = tf;
 		_gameManager.Force = true;
 		StartCoroutine(Force());
@@ -57,6 +61,7 @@ public class PlayerForce : MonoBehaviour
 
 	public void StopForce()
 	{
+		_interaction.StopInteractions(false);
 		_gameManager.Force = false;
 	}
 }

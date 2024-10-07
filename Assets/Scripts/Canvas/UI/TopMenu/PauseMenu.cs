@@ -59,16 +59,15 @@ public class PauseMenu : MonoBehaviour
 
 	private void SelectSection(TopSections section, bool byButtons)
 	{
-		if (_gameManager.SaveGame) return;
+		if (_gameManager.SaveGame) 
+			return;
+
 		foreach (var item in _sections)
 			UnSelectTitle(item.Value);
 
 		if (!byButtons && _content.activeSelf && section.SectionName == "Main Menu")
 		{
-			_content.SetActive(false);
-			_oldSection = null;
-			_gameManager.SetPauseGame(false);
-			SetMouse(visible: false);
+			Close();
 			return;
 		}
 
@@ -80,6 +79,13 @@ public class PauseMenu : MonoBehaviour
 	{
 		_gameManager.PauseGame = true;
 		SelectSection(_sections["Inventory"], true);
+	}
+	public void Close()
+	{
+		_content.SetActive(false);
+		_oldSection = null;
+		_gameManager.SetPauseGame(false);
+		SetMouse(visible: false);
 	}
 	private void SetupSection(TopSections section)
 	{
