@@ -26,7 +26,7 @@ public class ChangeLanguage : MonoBehaviour
 	private int _localeID;
 	string _localeString = "selected_locale";
 
-	public void Initialize()
+	public void Awake()
 	{
 		if (!PlayerPrefs.HasKey(_localeString)) return;
 
@@ -34,10 +34,10 @@ public class ChangeLanguage : MonoBehaviour
 
 		foreach (var item in _languageDict)
 		{
-			if (item.Key.Equals(_localeString))
+			if (item.Key.Equals(_selectedLocale))
 				break;
-
 			_localeID++;
+
 		}
 	}
 	public void NextLanguage()

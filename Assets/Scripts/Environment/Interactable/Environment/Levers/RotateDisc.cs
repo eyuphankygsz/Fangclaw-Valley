@@ -14,6 +14,8 @@ public class RotateDisc : Interactable
 	[SerializeField]
 	private int _maxSelectableID;
 
+	private float _rotationAngle;
+
 	private RotateDiscData _data;
 	private bool _animating, _atStart;
 
@@ -25,6 +27,7 @@ public class RotateDisc : Interactable
 
 	private void Awake()
 	{
+		_rotationAngle = 360 / _maxSelectableID;
 		base.Awake();
 		_source = GetComponent<AudioSource>();
 	}
@@ -62,7 +65,7 @@ public class RotateDisc : Interactable
 	private void TurnDisc(int times)
 	{
 		_times = times;
-		transform.DOLocalRotate(new Vector3(-45 * times, 0, 0), .5f, RotateMode.WorldAxisAdd).OnComplete(RotateEnd);
+		transform.DOLocalRotate(new Vector3(-_rotationAngle * times, 0, 0), .5f, RotateMode.WorldAxisAdd).OnComplete(RotateEnd);
 	}
 	private int GetTurnTimes(int selectedID)
 	{

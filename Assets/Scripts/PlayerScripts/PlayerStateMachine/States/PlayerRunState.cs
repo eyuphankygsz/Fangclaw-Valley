@@ -30,7 +30,6 @@ public class PlayerRunState : MonoBehaviour, IPlayerState, IInputHandler
 
 	private ControlSchema _controls;
 
-	private Coroutine _runningCoroutine;
 	private bool _running;
 
 
@@ -43,9 +42,7 @@ public class PlayerRunState : MonoBehaviour, IPlayerState, IInputHandler
 	}
 	public void ExitState()
 	{
-		if (_runningCoroutine != null)
-			StopCoroutine(_runningCoroutine);
-		_runningCoroutine = StartCoroutine(_playerStamina.IncreaseStamina());
+		_playerStamina.ChangeStamina(increase: true);
 		_running = false;
 
 		OnInputDisable();
@@ -104,10 +101,6 @@ public class PlayerRunState : MonoBehaviour, IPlayerState, IInputHandler
 	private void StartRunRoutine(bool run)
 	{
 		_running = run;
-		if (_runningCoroutine != null)
-			StopCoroutine(_runningCoroutine);
-
-		_runningCoroutine = StartCoroutine(run ? _playerStamina.DecreaseStamina()
-									 : _playerStamina.IncreaseStamina());
+		_playerStamina.ChangeStamina(!run);
 	}
 }

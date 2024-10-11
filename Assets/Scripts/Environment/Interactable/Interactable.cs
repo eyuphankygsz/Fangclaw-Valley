@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using Zenject;
@@ -27,6 +28,10 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	protected UnityEvent _falseEvents;
 	[SerializeField]
 	protected UnityEvent _interactEvents;
+
+
+	[SerializeField]
+	protected GameObject _scanObject;
 
 	[Inject]
 	protected SaveManager _saveManager;
@@ -79,6 +84,30 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	protected void DoneEvent()
 	{
 		_doneEvents.Invoke();
+	}
+
+	private WaitForSeconds _scanTime = new WaitForSeconds(4);
+	private Coroutine _scanRoutine;
+	public void ShowScanObject()
+	{
+		if (_scanRoutine != null)
+			StopCoroutine(_scanRoutine);
+
+		_scanRoutine = StartCoroutine(ScanRoutine());
+	}
+	private void OnDisable()
+	{
+		_scanObject?.SetActive(false);
+	}
+
+	private IEnumerator ScanRoutine()
+	{
+		Debug.Log("Deneme1");
+		_scanObject.SetActive(true);
+		yield return _scanTime;
+		Debug.Log("Deneme2");
+		_scanObject.SetActive(false);
+
 	}
 
 
