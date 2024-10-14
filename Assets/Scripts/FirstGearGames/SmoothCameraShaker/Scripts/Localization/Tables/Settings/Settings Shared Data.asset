@@ -19,6 +19,14 @@ MonoBehaviour:
     m_Key: _language
     m_Metadata:
       m_Items: []
+  - m_Id: 18199022432038912
+    m_Key: _forward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18199323838918656
+    m_Key: _backward
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

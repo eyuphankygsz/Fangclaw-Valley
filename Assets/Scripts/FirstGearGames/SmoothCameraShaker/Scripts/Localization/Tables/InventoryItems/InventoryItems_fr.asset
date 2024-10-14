@@ -63,6 +63,17 @@ MonoBehaviour:
       semblent ordinaires, ces allumettes sont cruciales pour ma survie ici."
     m_Metadata:
       m_Items: []
+  - m_Id: 19140650193793024
+    m_Localized: "L'huile de lampe est indispensable pour allumer ma lanterne. J'ai
+      un besoin pressant de lumi\xE8re pour avancer dans l'obscurit\xE9 de cette
+      grotte, et cette huile est essentielle pour la maintenir allum\xE9e. Mais h\xE9las,
+      il m'en reste peu, alors je dois l'utiliser avec la plus grande pr\xE9caution."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Huile de Lampe
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

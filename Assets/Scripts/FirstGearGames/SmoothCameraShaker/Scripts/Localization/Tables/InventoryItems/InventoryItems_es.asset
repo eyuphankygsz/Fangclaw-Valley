@@ -61,6 +61,17 @@ MonoBehaviour:
       son cruciales para mi supervivencia aqu\xED."
     m_Metadata:
       m_Items: []
+  - m_Id: 19140650193793024
+    m_Localized: "El aceite de l\xE1mpara es imprescindible para encender mi l\xE1mpara.
+      La luz es crucial para avanzar por las tinieblas de esta cueva, y este aceite
+      es esencial para mantenerla encendida. Sin embargo, me queda poco, as\xED que
+      debo usarlo con sumo cuidado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: "Aceite de L\xE1mpara"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

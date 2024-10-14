@@ -97,6 +97,7 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	}
 	private void OnDisable()
 	{
+		Debug.Log(gameObject);
 		_scanObject?.SetActive(false);
 	}
 

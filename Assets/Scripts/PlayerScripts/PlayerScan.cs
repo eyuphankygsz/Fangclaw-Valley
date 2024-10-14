@@ -133,7 +133,10 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 
 				Collider[] colliders = Physics.OverlapSphere(transform.position, _currentRadius, _layerMask);
 				for (int i = 0; i < colliders.Length; i++)
+				{
+					Debug.Log(colliders[i].gameObject);
 					colliders[i].GetComponent<Interactable>().ShowScanObject();
+				}
 			}
 			
 			if (_colorAdjustments != null)

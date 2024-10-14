@@ -88,7 +88,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 			Name = "Player",
 			Position = pos,
 			Rotation = transform.rotation,
-			SelectedWeapon = _playerWeapon.GetWeaponIndex()
+			SelectedWeapon = _playerWeapon.GetWeaponIndex(),
+			MouseSensitivity = _playerCamera.MouseSensitivity
 		};
 		return _data;
 	}
@@ -100,12 +101,15 @@ public class PlayerController : MonoBehaviour, ISaveable
 		if (_data == null)
 		{
 			Setup(0);
+			_playerCamera.SetSensitivity(2);
 			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 			return;
 		}
 
 		transform.position = _data.Position;
 		transform.rotation = _data.Rotation;
+
+		_playerCamera.SetSensitivity(_data.MouseSensitivity);
 		Setup(_data.SelectedWeapon);
 		
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());

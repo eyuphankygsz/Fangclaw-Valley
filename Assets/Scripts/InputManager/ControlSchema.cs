@@ -89,6 +89,15 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""137a2d48-2775-4744-bd01-3633bdb9809b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -271,11 +280,22 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""647b5107-3eba-43e1-8897-d8af571e8582"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Scan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fcd941c4-5567-4882-b965-8e683addbf24"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -449,6 +469,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         m_Player_GunKey = m_Player.FindAction("GunKey", throwIfNotFound: true);
         m_Player_GunScroll = m_Player.FindAction("GunScroll", throwIfNotFound: true);
         m_Player_Scan = m_Player.FindAction("Scan", throwIfNotFound: true);
+        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_PauseMenu = m_UI.FindAction("Pause Menu", throwIfNotFound: true);
@@ -528,6 +549,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_GunKey;
     private readonly InputAction m_Player_GunScroll;
     private readonly InputAction m_Player_Scan;
+    private readonly InputAction m_Player_Jump;
     public struct PlayerActions
     {
         private @ControlSchema m_Wrapper;
@@ -539,6 +561,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         public InputAction @GunKey => m_Wrapper.m_Player_GunKey;
         public InputAction @GunScroll => m_Wrapper.m_Player_GunScroll;
         public InputAction @Scan => m_Wrapper.m_Player_Scan;
+        public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -569,6 +592,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
             @Scan.started += instance.OnScan;
             @Scan.performed += instance.OnScan;
             @Scan.canceled += instance.OnScan;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -594,6 +620,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
             @Scan.started -= instance.OnScan;
             @Scan.performed -= instance.OnScan;
             @Scan.canceled -= instance.OnScan;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -752,6 +781,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         void OnGunKey(InputAction.CallbackContext context);
         void OnGunScroll(InputAction.CallbackContext context);
         void OnScan(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

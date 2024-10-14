@@ -63,6 +63,17 @@ MonoBehaviour:
       \xE7ok \xF6nemli."
     m_Metadata:
       m_Items: []
+  - m_Id: 19140650193793024
+    m_Localized: "Gaz ya\u011F\u0131, lambam\u0131 yakmak i\xE7in elzemdir. Bu karanl\u0131k
+      ma\u011Farada ilerleyebilmek i\xE7in \u0131\u015F\u0131\u011Fa muhtac\u0131m,
+      ve bu ya\u011F lambam\u0131 ayakta tutmak i\xE7in vazge\xE7ilmezdir. Ancak
+      elimde pek az var, bu y\xFCzden son derece ihtiyatl\u0131 kullanmal\u0131y\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: "Gaz Ya\u011F\u0131"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

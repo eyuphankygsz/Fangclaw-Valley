@@ -61,6 +61,17 @@ MonoBehaviour:
       for my survival here.
     m_Metadata:
       m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Gas Oil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140650193793024
+    m_Localized: Gas oil is vital to ignite my lamp. I am in desperate need of light
+      to traverse the darkness of this cave, and this oil is essential to keep the
+      lamp burning. Alas, I have but little left, and must use it with the utmost
+      caution.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

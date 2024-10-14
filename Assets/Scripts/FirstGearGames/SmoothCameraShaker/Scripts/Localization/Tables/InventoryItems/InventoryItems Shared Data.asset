@@ -51,6 +51,14 @@ MonoBehaviour:
     m_Key: matches_desc_0
     m_Metadata:
       m_Items: []
+  - m_Id: 19140619768311808
+    m_Key: oil_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140650193793024
+    m_Key: oil_desc_0
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

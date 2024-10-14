@@ -3,10 +3,12 @@ using Zenject;
 
 public class PlayerCamera : MonoBehaviour
 {
+	public float MouseSensitivity { get => _mouseSensitivity; set => _mouseSensitivity = value; }
 	private float _pitch = 0f;
 	private float _yaw = 0f;
 
-	[SerializeField] private float _rotateSpeed = 5f;
+	[SerializeField] private float _mouseSensitivity = 5f;
+	[SerializeField] private float _rotationSpeed;
 	[SerializeField] private Transform _camera;
 	[Inject]
 	private GameManager _gameManager;
@@ -39,8 +41,8 @@ public class PlayerCamera : MonoBehaviour
 
 		Vector2 cameraDirection = MouseDirection.Instance.GetCameraDirection();
 
-		float mouseX = cameraDirection.x * _rotateSpeed * Time.deltaTime;
-		float mouseY = cameraDirection.y * _rotateSpeed * Time.deltaTime;
+		float mouseX = cameraDirection.x * _rotationSpeed * Time.deltaTime;
+		float mouseY = cameraDirection.y * _rotationSpeed * Time.deltaTime;
 
 		_yaw += mouseX;
 		_pitch -= mouseY;
@@ -57,5 +59,12 @@ public class PlayerCamera : MonoBehaviour
 		_pitch = newEulerAngles.x;
 		if (_pitch > 180f) _pitch -= 360f;
 		_yaw = newEulerAngles.y;
+	}
+
+	public void SetSensitivity(float value)
+	{
+		Debug.Log(_mouseSensitivity);
+		_mouseSensitivity = value;
+		_rotationSpeed = _mouseSensitivity * 100f;
 	}
 }
