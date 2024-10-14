@@ -1,0 +1,77 @@
+🚨🚀 DEVLOG#2! 🚀🚨
+
+Tabii ki her oyuncunun zor zamanları olur; bazen gözümüzün önündeki en bariz şeyleri bile kaçırabiliyoruz. İşte tam da bu anlarda işinize yarayacak bir özellik eklediğimizi duyurmaktan mutluluk duyuyoruz! 🔍
+
+
+
+⚡Artık oyunumuzda, etrafınızdaki etkileşime geçilebilir objeleri bir miktar enerjinizi feda ederek işaretleyebileceksiniz. 
+
+Böylece gözden kaçan detayları daha kolay fark edebileceksiniz. ✨
+
+
+
+🎮 Two Bites olarak oyunlarımızda oyuncu deneyimini artırmak için yeni sistemler geliştiriyoruz. Bu sadece başlangıç! 🚀 Bu özellik dışında da birçok ayar ve iyileştirme oyuna eklendi. Geri bildirimlerinizi dikkate alarak, oyunu sürekli daha iyi hale getirmek için çalışıyoruz.
+
+
+
+Eklenen Özellikler:
+
+- Gelişmiş Envanter (İncele, Kullan, Bırak, Birleştir),
+
+- Birleştirilebilir Objeler,
+
+- Ele Alınabilir Yan Eşyalar(Kağıt, Not vb.),
+
+- Gaz Lambası Yağı ve Kibritler,
+
+- Event Sistemi,
+
+- Yeni Diller
+
+NOT: El feneri, gaz lambası ile değiştirilecektir.
+
+
+
+Daha fazla detay ve yenilik için bizi takipte kalın! 💡
+
+
+
+
+
+Of course, every player has their tough moments; sometimes we can even miss the most obvious things right in front of us. We are excited to announce that we've added a feature that will help you in these moments! 🔍
+
+
+
+⚡ Now, in our game, you will be able to highlight interactable objects around you by sacrificing a bit of your energy.
+
+This way, you can more easily notice the details that might have slipped your mind. ✨
+
+
+
+🎮 At Two Bites, we are developing new systems to enhance player experience in our games. This is just the beginning! 🚀 In addition to this feature, many settings and improvements have also been added to the game. We are constantly working to make the game better by taking your feedback into account. 🛠️
+
+
+
+Added Features:
+
+- Advanced Inventory (Examine, Use, Drop, Combine),
+
+- Combineable Objects,
+
+- Side Items To Hold on Hand (Paper, Notes, etc.),
+
+- Oil for the Gas Lamp and Matches,
+
+- Event System,
+
+- New Languages
+
+NOTE: The flashlight will be replaced with the gas lamp.
+
+
+
+Stay tuned for more details and updates! 💡
+
+
+
+#Devlog #IndieDev #TwoBites #OyunGeliştirme
