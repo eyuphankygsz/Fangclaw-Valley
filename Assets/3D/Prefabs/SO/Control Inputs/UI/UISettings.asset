@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ActionName: UI/Settings
   InputIndex: 0
-  DefaultValue: <Keyboard>/o
+  DefaultValue: <Keyboard>/p

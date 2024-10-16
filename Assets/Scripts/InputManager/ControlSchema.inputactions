@@ -76,6 +76,78 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Pause Menu",
+                    "type": "Button",
+                    "id": "796145eb-fea8-4070-80c5-390392289d47",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Button",
+                    "id": "6d7dbc82-786f-488e-a1fa-ca422b72b87e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Settings",
+                    "type": "Button",
+                    "id": "88be111e-35f5-47bd-92a5-36856318f5cd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "3a9d93ab-fb98-40db-a031-43342ca135dc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NextCombination",
+                    "type": "Button",
+                    "id": "9991f1e5-59e2-4166-aff1-59d9283b0171",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PreviousCombination",
+                    "type": "Button",
+                    "id": "dc60f8ec-f50b-4e22-a72b-05938503266c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Turn",
+                    "type": "Button",
+                    "id": "f1a8d8c9-d17d-4903-9896-6c28a3c92bce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Camera",
+                    "type": "Value",
+                    "id": "ead0ddb2-a501-490b-8e11-5f6237b2fa1a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -133,6 +205,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "112eba4d-f6f1-428b-83c7-2c078a432b8e",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -276,45 +359,10 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "UI",
-            "id": "1c49b0e6-1a0c-4848-9611-13feb4899b01",
-            "actions": [
-                {
-                    "name": "Pause Menu",
-                    "type": "Button",
-                    "id": "bf6aa79d-001d-4ae6-b901-55f836f43633",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 },
-                {
-                    "name": "Inventory",
-                    "type": "Button",
-                    "id": "4986eaa9-3965-4317-9431-09fc23468f95",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Settings",
-                    "type": "Button",
-                    "id": "4250449b-d08b-4462-ab15-e64907968802",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
                 {
                     "name": "",
-                    "id": "2131b64c-82d9-41b2-a127-39d5604b7672",
+                    "id": "8d2776aa-ada6-4d82-82b4-d60238e4c65f",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
@@ -325,7 +373,7 @@
                 },
                 {
                     "name": "",
-                    "id": "8c6eed4b-5020-423f-b23a-4270a02cf25d",
+                    "id": "d4f4c5b1-82c4-445c-a965-56a9bffaae2b",
                     "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
@@ -336,7 +384,7 @@
                 },
                 {
                     "name": "",
-                    "id": "a6e1d87a-2a7f-4415-8241-fe7a9f3d5cc2",
+                    "id": "f0fa488d-c866-45a8-a521-53b4870a2c52",
                     "path": "<Keyboard>/minus",
                     "interactions": "",
                     "processors": "",
@@ -344,54 +392,10 @@
                     "action": "Settings",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Lock",
-            "id": "fb53ec00-c1b3-4086-81a3-ae928a9f260c",
-            "actions": [
-                {
-                    "name": "Back",
-                    "type": "Button",
-                    "id": "46c8ecdc-bac1-476c-b72b-425e4e57df76",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 },
-                {
-                    "name": "NextCombination",
-                    "type": "Button",
-                    "id": "3c43e02e-ed33-4ea5-bc1d-7b554f5caaa5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PreviousCombination",
-                    "type": "Button",
-                    "id": "0c460ab7-94a2-4fc5-91af-d7a95935e003",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Turn",
-                    "type": "Button",
-                    "id": "31bcff63-a642-480a-880c-3b450f9a8114",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
                 {
                     "name": "",
-                    "id": "b7a71376-84a9-4a77-be2f-a73891984591",
+                    "id": "26b40fae-9b72-4c65-a6ea-f4205ca339fe",
                     "path": "<Keyboard>/b",
                     "interactions": "",
                     "processors": "",
@@ -402,7 +406,7 @@
                 },
                 {
                     "name": "",
-                    "id": "14d347ab-318d-4058-9bb9-83015480ed50",
+                    "id": "1b4be5e5-15b3-4b75-b5f4-b40ca4e31ed6",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -413,7 +417,7 @@
                 },
                 {
                     "name": "",
-                    "id": "be91426a-c488-4f55-8022-ca363c1966c4",
+                    "id": "b842e517-179d-4f26-9201-63a662328df7",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -424,12 +428,34 @@
                 },
                 {
                     "name": "",
-                    "id": "8cb517b3-dfcb-4e0d-be45-ffc4416ba8ff",
+                    "id": "4d4f3247-c14d-4f07-978d-cb321d429a78",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9de941b-3606-4c6a-abd7-61b46ae94930",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3c1f0548-4fc5-42f2-bec6-220df9c89e9f",
+                    "path": "<XInputController>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

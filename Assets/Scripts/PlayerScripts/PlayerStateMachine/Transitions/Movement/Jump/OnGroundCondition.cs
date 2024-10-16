@@ -3,15 +3,11 @@ using Zenject;
 
 public class OnGroundCondition : AbstractCondition
 {
-    [SerializeField]
-    private PlayerStamina _playerStamina;
-    [SerializeField]
-    private float _stamina;
+	[SerializeField]
+	private PlayerGroundCheck _groundCheck;
 
-    public override bool CheckCondition()
-    {
-        if (_playerStamina.Stamina > _stamina)
-            return true;
-        return false;
-    }
+	public override bool CheckCondition()
+	{
+		return _groundCheck.IsOnGround();
+	}
 }

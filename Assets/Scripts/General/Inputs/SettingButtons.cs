@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using Zenject;
 
-public class ResetButton : MonoBehaviour
+public class SettingButtons : MonoBehaviour
 {
 
 	[SerializeField]
@@ -15,11 +15,24 @@ public class ResetButton : MonoBehaviour
 	[Inject]
 	private InputManager _inputManager;
 
-	public void SetToDefault()
+	[SerializeField]
+	private List<Setting> _settingButtons;
+
+	public void SetBindingsToDefault()
 	{
-		if (_inputButtons == null) 
+		if (_inputButtons == null)
 			_inputButtons = _content.GetComponentsInChildren<InputButton>().ToList();
 		_inputManager.BackToDeafult(_inputButtons);
+	}
+	public void SetSettingsToDefault()
+	{
+		foreach (var button in _settingButtons)
+			button.Restore();
+	}
+	public void SaveSettings()
+	{
+		foreach (var button in _settingButtons)
+			button.Save();
 	}
 	public void ResetPlayerPrefs()
 	{

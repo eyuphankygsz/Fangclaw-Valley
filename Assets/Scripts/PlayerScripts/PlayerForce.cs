@@ -35,7 +35,6 @@ public class PlayerForce : MonoBehaviour
 	}
 	private IEnumerator Force()
 	{
-		Debug.Log(_gameManager.Force);
 
 		while ((Vector3.Distance(transform.position, _target.position) > 0.1f ||
 				Quaternion.Angle(transform.rotation, _target.rotation) > 0.1f ||

@@ -27,6 +27,130 @@ MonoBehaviour:
     m_Key: _backward
     m_Metadata:
       m_Items: []
+  - m_Id: 18854395152351232
+    m_Key: _inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854412311248896
+    m_Key: _mainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854436076175360
+    m_Key: _settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856095644827648
+    m_Key: _sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856112807919616
+    m_Key: _video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856132042997760
+    m_Key: _mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856177375035392
+    m_Key: _bindings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857117213704192
+    m_Key: _movement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857310894080000
+    m_Key: _left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857331605553152
+    m_Key: _right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857345119600640
+    m_Key: _run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857586011062272
+    m_Key: _crouch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857740076236800
+    m_Key: _general
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857950995202048
+    m_Key: _interaction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857952635174912
+    m_Key: _scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857953633419264
+    m_Key: _switchWeaponNext
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18858880167755776
+    m_Key: _switchWeaponPrev
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859044668358656
+    m_Key: _switchWeapon1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859122887933952
+    m_Key: _switchWeapon2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859225895845888
+    m_Key: _switchWeapon3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859239615414272
+    m_Key: _switchWeapon4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859240903065600
+    m_Key: _switchWeapon5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859708706373632
+    m_Key: _other
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859824959897600
+    m_Key: _pauseMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863369293578240
+    m_Key: _reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863706494648320
+    m_Key: _back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870332450586624
+    m_Key: _on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870477401538560
+    m_Key: _off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870981531713536
+    m_Key: _subtitles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871229670932480
+    m_Key: _music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871568574889984
+    m_Key: _save
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -97,16 +97,13 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	}
 	private void OnDisable()
 	{
-		Debug.Log(gameObject);
 		_scanObject?.SetActive(false);
 	}
 
 	private IEnumerator ScanRoutine()
 	{
-		Debug.Log("Deneme1");
 		_scanObject.SetActive(true);
 		yield return _scanTime;
-		Debug.Log("Deneme2");
 		_scanObject.SetActive(false);
 
 	}

@@ -41,9 +41,9 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 	private float _initialChromaticAberration = 0f;
 	private float _targetChromaticAberration = 1f;
 
-	private Color _initialColor = new Color(200f / 255f, 56f/255f, 56f / 255f);
+	private Color _initialColor = new Color(185f / 255f, 85f / 255f, 62f / 255f);
 	private Color _targetColor = new Color(210f / 255f, 0f, 0f);
-
+	private float _intensity = 1.1f, _saturation = -65f;
 
 	void Awake()
 	{
@@ -64,8 +64,8 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 		if (_chromaticAberration != null) _chromaticAberration.intensity.value = _initialChromaticAberration;
 		if (_colorAdjustments != null)
 		{
-			_colorAdjustments.colorFilter.value = _initialColor;
-			_colorAdjustments.saturation.value = -100f; // Start with -100 saturation
+			_colorAdjustments.colorFilter.value = _initialColor * _intensity;
+			_colorAdjustments.saturation.value = _saturation;
 		}
 	}
 
@@ -110,8 +110,8 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 
 		if (_colorAdjustments != null)
 		{
-			_colorAdjustments.colorFilter.value = goingToTarget ? _initialColor : _targetColor; // Start with initial color
-			_colorAdjustments.saturation.value = goingToTarget ? -100f : 0f; // Start with -100 saturation
+			_colorAdjustments.colorFilter.value = (goingToTarget ? _initialColor: _targetColor) * _intensity;
+			_colorAdjustments.saturation.value = goingToTarget ? _saturation : 0f;
 		}
 
 		while (timeElapsed < _transitionDuration)
@@ -143,9 +143,9 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 			{
 				Color lerpedColor = Color.Lerp(goingToTarget ? _initialColor : _targetColor,
 											   goingToTarget ? _targetColor : _initialColor, t);
-				_colorAdjustments.colorFilter.value = lerpedColor;
-				_colorAdjustments.saturation.value = Mathf.Lerp(goingToTarget ? -100f : 0f,
-															   goingToTarget ? 0f : -100f, t);
+				_colorAdjustments.colorFilter.value = lerpedColor * _intensity;
+				_colorAdjustments.saturation.value = Mathf.Lerp(goingToTarget ? _saturation : 0f,
+															   goingToTarget ? 0f : _saturation, t);
 			}
 
 			timeElapsed += Time.deltaTime;
@@ -163,8 +163,8 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 
 		if (_colorAdjustments != null)
 		{
-			_colorAdjustments.colorFilter.value = goingToTarget ? _targetColor : _initialColor;
-			_colorAdjustments.saturation.value = goingToTarget ? 0f : -100f; // Set saturation back to initial
+			_colorAdjustments.colorFilter.value = (goingToTarget ? _targetColor : _initialColor) * _intensity;
+			_colorAdjustments.saturation.value = goingToTarget ? 0f : _saturation; // Set saturation back to initial
 		}
 
 		if (!goingToTarget)

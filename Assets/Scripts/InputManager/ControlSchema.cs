@@ -98,6 +98,78 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""796145eb-fea8-4070-80c5-390392289d47"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Inventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""6d7dbc82-786f-488e-a1fa-ca422b72b87e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Settings"",
+                    ""type"": ""Button"",
+                    ""id"": ""88be111e-35f5-47bd-92a5-36856318f5cd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Back"",
+                    ""type"": ""Button"",
+                    ""id"": ""3a9d93ab-fb98-40db-a031-43342ca135dc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextCombination"",
+                    ""type"": ""Button"",
+                    ""id"": ""9991f1e5-59e2-4166-aff1-59d9283b0171"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PreviousCombination"",
+                    ""type"": ""Button"",
+                    ""id"": ""dc60f8ec-f50b-4e22-a72b-05938503266c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Turn"",
+                    ""type"": ""Button"",
+                    ""id"": ""f1a8d8c9-d17d-4903-9896-6c28a3c92bce"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Camera"",
+                    ""type"": ""Value"",
+                    ""id"": ""ead0ddb2-a501-490b-8e11-5f6237b2fa1a"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -155,6 +227,17 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""112eba4d-f6f1-428b-83c7-2c078a432b8e"",
+                    ""path"": ""<XInputController>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
@@ -298,45 +381,10 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""UI"",
-            ""id"": ""1c49b0e6-1a0c-4848-9611-13feb4899b01"",
-            ""actions"": [
-                {
-                    ""name"": ""Pause Menu"",
-                    ""type"": ""Button"",
-                    ""id"": ""bf6aa79d-001d-4ae6-b901-55f836f43633"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 },
-                {
-                    ""name"": ""Inventory"",
-                    ""type"": ""Button"",
-                    ""id"": ""4986eaa9-3965-4317-9431-09fc23468f95"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Settings"",
-                    ""type"": ""Button"",
-                    ""id"": ""4250449b-d08b-4462-ab15-e64907968802"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""2131b64c-82d9-41b2-a127-39d5604b7672"",
+                    ""id"": ""8d2776aa-ada6-4d82-82b4-d60238e4c65f"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -347,7 +395,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8c6eed4b-5020-423f-b23a-4270a02cf25d"",
+                    ""id"": ""d4f4c5b1-82c4-445c-a965-56a9bffaae2b"",
                     ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -358,7 +406,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a6e1d87a-2a7f-4415-8241-fe7a9f3d5cc2"",
+                    ""id"": ""f0fa488d-c866-45a8-a521-53b4870a2c52"",
                     ""path"": ""<Keyboard>/minus"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -366,54 +414,10 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""action"": ""Settings"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Lock"",
-            ""id"": ""fb53ec00-c1b3-4086-81a3-ae928a9f260c"",
-            ""actions"": [
-                {
-                    ""name"": ""Back"",
-                    ""type"": ""Button"",
-                    ""id"": ""46c8ecdc-bac1-476c-b72b-425e4e57df76"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 },
-                {
-                    ""name"": ""NextCombination"",
-                    ""type"": ""Button"",
-                    ""id"": ""3c43e02e-ed33-4ea5-bc1d-7b554f5caaa5"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""PreviousCombination"",
-                    ""type"": ""Button"",
-                    ""id"": ""0c460ab7-94a2-4fc5-91af-d7a95935e003"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Turn"",
-                    ""type"": ""Button"",
-                    ""id"": ""31bcff63-a642-480a-880c-3b450f9a8114"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""b7a71376-84a9-4a77-be2f-a73891984591"",
+                    ""id"": ""26b40fae-9b72-4c65-a6ea-f4205ca339fe"",
                     ""path"": ""<Keyboard>/b"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -424,7 +428,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""14d347ab-318d-4058-9bb9-83015480ed50"",
+                    ""id"": ""1b4be5e5-15b3-4b75-b5f4-b40ca4e31ed6"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -435,7 +439,7 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""be91426a-c488-4f55-8022-ca363c1966c4"",
+                    ""id"": ""b842e517-179d-4f26-9201-63a662328df7"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -446,12 +450,34 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8cb517b3-dfcb-4e0d-be45-ffc4416ba8ff"",
+                    ""id"": ""4d4f3247-c14d-4f07-978d-cb321d429a78"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Turn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d9de941b-3606-4c6a-abd7-61b46ae94930"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3c1f0548-4fc5-42f2-bec6-220df9c89e9f"",
+                    ""path"": ""<XInputController>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -470,17 +496,14 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         m_Player_GunScroll = m_Player.FindAction("GunScroll", throwIfNotFound: true);
         m_Player_Scan = m_Player.FindAction("Scan", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
-        // UI
-        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_PauseMenu = m_UI.FindAction("Pause Menu", throwIfNotFound: true);
-        m_UI_Inventory = m_UI.FindAction("Inventory", throwIfNotFound: true);
-        m_UI_Settings = m_UI.FindAction("Settings", throwIfNotFound: true);
-        // Lock
-        m_Lock = asset.FindActionMap("Lock", throwIfNotFound: true);
-        m_Lock_Back = m_Lock.FindAction("Back", throwIfNotFound: true);
-        m_Lock_NextCombination = m_Lock.FindAction("NextCombination", throwIfNotFound: true);
-        m_Lock_PreviousCombination = m_Lock.FindAction("PreviousCombination", throwIfNotFound: true);
-        m_Lock_Turn = m_Lock.FindAction("Turn", throwIfNotFound: true);
+        m_Player_PauseMenu = m_Player.FindAction("Pause Menu", throwIfNotFound: true);
+        m_Player_Inventory = m_Player.FindAction("Inventory", throwIfNotFound: true);
+        m_Player_Settings = m_Player.FindAction("Settings", throwIfNotFound: true);
+        m_Player_Back = m_Player.FindAction("Back", throwIfNotFound: true);
+        m_Player_NextCombination = m_Player.FindAction("NextCombination", throwIfNotFound: true);
+        m_Player_PreviousCombination = m_Player.FindAction("PreviousCombination", throwIfNotFound: true);
+        m_Player_Turn = m_Player.FindAction("Turn", throwIfNotFound: true);
+        m_Player_Camera = m_Player.FindAction("Camera", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -550,6 +573,14 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_GunScroll;
     private readonly InputAction m_Player_Scan;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_PauseMenu;
+    private readonly InputAction m_Player_Inventory;
+    private readonly InputAction m_Player_Settings;
+    private readonly InputAction m_Player_Back;
+    private readonly InputAction m_Player_NextCombination;
+    private readonly InputAction m_Player_PreviousCombination;
+    private readonly InputAction m_Player_Turn;
+    private readonly InputAction m_Player_Camera;
     public struct PlayerActions
     {
         private @ControlSchema m_Wrapper;
@@ -562,6 +593,14 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         public InputAction @GunScroll => m_Wrapper.m_Player_GunScroll;
         public InputAction @Scan => m_Wrapper.m_Player_Scan;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @PauseMenu => m_Wrapper.m_Player_PauseMenu;
+        public InputAction @Inventory => m_Wrapper.m_Player_Inventory;
+        public InputAction @Settings => m_Wrapper.m_Player_Settings;
+        public InputAction @Back => m_Wrapper.m_Player_Back;
+        public InputAction @NextCombination => m_Wrapper.m_Player_NextCombination;
+        public InputAction @PreviousCombination => m_Wrapper.m_Player_PreviousCombination;
+        public InputAction @Turn => m_Wrapper.m_Player_Turn;
+        public InputAction @Camera => m_Wrapper.m_Player_Camera;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -595,6 +634,30 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @PauseMenu.started += instance.OnPauseMenu;
+            @PauseMenu.performed += instance.OnPauseMenu;
+            @PauseMenu.canceled += instance.OnPauseMenu;
+            @Inventory.started += instance.OnInventory;
+            @Inventory.performed += instance.OnInventory;
+            @Inventory.canceled += instance.OnInventory;
+            @Settings.started += instance.OnSettings;
+            @Settings.performed += instance.OnSettings;
+            @Settings.canceled += instance.OnSettings;
+            @Back.started += instance.OnBack;
+            @Back.performed += instance.OnBack;
+            @Back.canceled += instance.OnBack;
+            @NextCombination.started += instance.OnNextCombination;
+            @NextCombination.performed += instance.OnNextCombination;
+            @NextCombination.canceled += instance.OnNextCombination;
+            @PreviousCombination.started += instance.OnPreviousCombination;
+            @PreviousCombination.performed += instance.OnPreviousCombination;
+            @PreviousCombination.canceled += instance.OnPreviousCombination;
+            @Turn.started += instance.OnTurn;
+            @Turn.performed += instance.OnTurn;
+            @Turn.canceled += instance.OnTurn;
+            @Camera.started += instance.OnCamera;
+            @Camera.performed += instance.OnCamera;
+            @Camera.canceled += instance.OnCamera;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -623,6 +686,30 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @PauseMenu.started -= instance.OnPauseMenu;
+            @PauseMenu.performed -= instance.OnPauseMenu;
+            @PauseMenu.canceled -= instance.OnPauseMenu;
+            @Inventory.started -= instance.OnInventory;
+            @Inventory.performed -= instance.OnInventory;
+            @Inventory.canceled -= instance.OnInventory;
+            @Settings.started -= instance.OnSettings;
+            @Settings.performed -= instance.OnSettings;
+            @Settings.canceled -= instance.OnSettings;
+            @Back.started -= instance.OnBack;
+            @Back.performed -= instance.OnBack;
+            @Back.canceled -= instance.OnBack;
+            @NextCombination.started -= instance.OnNextCombination;
+            @NextCombination.performed -= instance.OnNextCombination;
+            @NextCombination.canceled -= instance.OnNextCombination;
+            @PreviousCombination.started -= instance.OnPreviousCombination;
+            @PreviousCombination.performed -= instance.OnPreviousCombination;
+            @PreviousCombination.canceled -= instance.OnPreviousCombination;
+            @Turn.started -= instance.OnTurn;
+            @Turn.performed -= instance.OnTurn;
+            @Turn.canceled -= instance.OnTurn;
+            @Camera.started -= instance.OnCamera;
+            @Camera.performed -= instance.OnCamera;
+            @Camera.canceled -= instance.OnCamera;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -640,138 +727,6 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
-
-    // UI
-    private readonly InputActionMap m_UI;
-    private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
-    private readonly InputAction m_UI_PauseMenu;
-    private readonly InputAction m_UI_Inventory;
-    private readonly InputAction m_UI_Settings;
-    public struct UIActions
-    {
-        private @ControlSchema m_Wrapper;
-        public UIActions(@ControlSchema wrapper) { m_Wrapper = wrapper; }
-        public InputAction @PauseMenu => m_Wrapper.m_UI_PauseMenu;
-        public InputAction @Inventory => m_Wrapper.m_UI_Inventory;
-        public InputAction @Settings => m_Wrapper.m_UI_Settings;
-        public InputActionMap Get() { return m_Wrapper.m_UI; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
-        public void AddCallbacks(IUIActions instance)
-        {
-            if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
-            @PauseMenu.started += instance.OnPauseMenu;
-            @PauseMenu.performed += instance.OnPauseMenu;
-            @PauseMenu.canceled += instance.OnPauseMenu;
-            @Inventory.started += instance.OnInventory;
-            @Inventory.performed += instance.OnInventory;
-            @Inventory.canceled += instance.OnInventory;
-            @Settings.started += instance.OnSettings;
-            @Settings.performed += instance.OnSettings;
-            @Settings.canceled += instance.OnSettings;
-        }
-
-        private void UnregisterCallbacks(IUIActions instance)
-        {
-            @PauseMenu.started -= instance.OnPauseMenu;
-            @PauseMenu.performed -= instance.OnPauseMenu;
-            @PauseMenu.canceled -= instance.OnPauseMenu;
-            @Inventory.started -= instance.OnInventory;
-            @Inventory.performed -= instance.OnInventory;
-            @Inventory.canceled -= instance.OnInventory;
-            @Settings.started -= instance.OnSettings;
-            @Settings.performed -= instance.OnSettings;
-            @Settings.canceled -= instance.OnSettings;
-        }
-
-        public void RemoveCallbacks(IUIActions instance)
-        {
-            if (m_Wrapper.m_UIActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IUIActions instance)
-        {
-            foreach (var item in m_Wrapper.m_UIActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_UIActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public UIActions @UI => new UIActions(this);
-
-    // Lock
-    private readonly InputActionMap m_Lock;
-    private List<ILockActions> m_LockActionsCallbackInterfaces = new List<ILockActions>();
-    private readonly InputAction m_Lock_Back;
-    private readonly InputAction m_Lock_NextCombination;
-    private readonly InputAction m_Lock_PreviousCombination;
-    private readonly InputAction m_Lock_Turn;
-    public struct LockActions
-    {
-        private @ControlSchema m_Wrapper;
-        public LockActions(@ControlSchema wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Back => m_Wrapper.m_Lock_Back;
-        public InputAction @NextCombination => m_Wrapper.m_Lock_NextCombination;
-        public InputAction @PreviousCombination => m_Wrapper.m_Lock_PreviousCombination;
-        public InputAction @Turn => m_Wrapper.m_Lock_Turn;
-        public InputActionMap Get() { return m_Wrapper.m_Lock; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(LockActions set) { return set.Get(); }
-        public void AddCallbacks(ILockActions instance)
-        {
-            if (instance == null || m_Wrapper.m_LockActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_LockActionsCallbackInterfaces.Add(instance);
-            @Back.started += instance.OnBack;
-            @Back.performed += instance.OnBack;
-            @Back.canceled += instance.OnBack;
-            @NextCombination.started += instance.OnNextCombination;
-            @NextCombination.performed += instance.OnNextCombination;
-            @NextCombination.canceled += instance.OnNextCombination;
-            @PreviousCombination.started += instance.OnPreviousCombination;
-            @PreviousCombination.performed += instance.OnPreviousCombination;
-            @PreviousCombination.canceled += instance.OnPreviousCombination;
-            @Turn.started += instance.OnTurn;
-            @Turn.performed += instance.OnTurn;
-            @Turn.canceled += instance.OnTurn;
-        }
-
-        private void UnregisterCallbacks(ILockActions instance)
-        {
-            @Back.started -= instance.OnBack;
-            @Back.performed -= instance.OnBack;
-            @Back.canceled -= instance.OnBack;
-            @NextCombination.started -= instance.OnNextCombination;
-            @NextCombination.performed -= instance.OnNextCombination;
-            @NextCombination.canceled -= instance.OnNextCombination;
-            @PreviousCombination.started -= instance.OnPreviousCombination;
-            @PreviousCombination.performed -= instance.OnPreviousCombination;
-            @PreviousCombination.canceled -= instance.OnPreviousCombination;
-            @Turn.started -= instance.OnTurn;
-            @Turn.performed -= instance.OnTurn;
-            @Turn.canceled -= instance.OnTurn;
-        }
-
-        public void RemoveCallbacks(ILockActions instance)
-        {
-            if (m_Wrapper.m_LockActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(ILockActions instance)
-        {
-            foreach (var item in m_Wrapper.m_LockActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_LockActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public LockActions @Lock => new LockActions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -782,18 +737,13 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         void OnGunScroll(InputAction.CallbackContext context);
         void OnScan(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-    }
-    public interface IUIActions
-    {
         void OnPauseMenu(InputAction.CallbackContext context);
         void OnInventory(InputAction.CallbackContext context);
         void OnSettings(InputAction.CallbackContext context);
-    }
-    public interface ILockActions
-    {
         void OnBack(InputAction.CallbackContext context);
         void OnNextCombination(InputAction.CallbackContext context);
         void OnPreviousCombination(InputAction.CallbackContext context);
         void OnTurn(InputAction.CallbackContext context);
+        void OnCamera(InputAction.CallbackContext context);
     }
 }

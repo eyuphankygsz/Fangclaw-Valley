@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 public class WeaponHelpers : MonoBehaviour
 {
+	public bool StopChange;
 	public void CooldownGun(float time, Action action)
 	{
 		StartCoroutine(StartCooldown(time, action));

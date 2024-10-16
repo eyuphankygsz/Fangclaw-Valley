@@ -41,12 +41,14 @@ public class Hands : Weapons
 			//_punchCounter %= _punchClips.Length;
 
 			_onAction = true;
-			_weaponHelpers.CooldownGun(1, StopCooldown);
+			_weaponHelpers.StopChange = true;
+			_weaponHelpers.CooldownGun(.8f, StopCooldown);
 			PunchAnimation();
 		}
 	}
 	private void StopCooldown()
 	{
+		_weaponHelpers.StopChange = false;
 		_onAction = false;
 	}
 

@@ -12,7 +12,6 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _ALPHAMODULATE_ON
   - _ALPHATEST_ON
   - _RECEIVE_SHADOWS_OFF
   - _SPECULAR_SETUP
@@ -91,17 +90,17 @@ Material:
     m_Floats:
     - _AlphaClip: 1
     - _AlphaToMask: 0
-    - _Blend: 3
+    - _Blend: 1
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
-    - _Cutoff: 0.5
+    - _Cutoff: 0.01
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _DstBlendAlpha: 1
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -114,8 +113,8 @@ Material:
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 2
-    - _SrcBlendAlpha: 0
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Surface: 1
     - _WorkflowMode: 0
     - _ZWrite: 0

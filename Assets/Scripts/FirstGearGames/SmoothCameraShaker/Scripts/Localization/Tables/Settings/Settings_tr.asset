@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 9919709184
-    m_Localized: "T\xFCrk\xE7e"
+    m_Localized: Dil
     m_Metadata:
       m_Items: []
   - m_Id: 18199022432038912
@@ -28,6 +28,130 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18199323838918656
     m_Localized: Geri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854395152351232
+    m_Localized: Envanter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854412311248896
+    m_Localized: "Ana Men\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854436076175360
+    m_Localized: Ayarlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856095644827648
+    m_Localized: Ses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856112807919616
+    m_Localized: "G\xF6r\xFCnt\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856132042997760
+    m_Localized: Fare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856177375035392
+    m_Localized: Atamalar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857117213704192
+    m_Localized: Hareket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857310894080000
+    m_Localized: Sol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857331605553152
+    m_Localized: "Sa\u011F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857345119600640
+    m_Localized: "Ko\u015F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857586011062272
+    m_Localized: "\xC7\xF6melmek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857740076236800
+    m_Localized: Genel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857950995202048
+    m_Localized: "Etkile\u015Fim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857952635174912
+    m_Localized: Tarama
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857953633419264
+    m_Localized: "Silah De\u011Fi\u015Ftir (Sonraki)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18858880167755776
+    m_Localized: "Silah De\u011Fi\u015Ftir (\xD6nceki)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859044668358656
+    m_Localized: "Silah De\u011Fi\u015Ftir #1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859122887933952
+    m_Localized: "Silah De\u011Fi\u015Ftir #2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859225895845888
+    m_Localized: "Silah De\u011Fi\u015Ftir #3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859239615414272
+    m_Localized: "Silah De\u011Fi\u015Ftir #4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859240903065600
+    m_Localized: "Silah De\u011Fi\u015Ftir #5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859708706373632
+    m_Localized: "Di\u011Fer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859824959897600
+    m_Localized: "Duraklatma Men\xFCs\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863369293578240
+    m_Localized: "S\u0131f\u0131rla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863706494648320
+    m_Localized: Geri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870332450586624
+    m_Localized: "A\xE7\u0131k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870477401538560
+    m_Localized: "Kapal\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870981531713536
+    m_Localized: "Altyaz\u0131lar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871229670932480
+    m_Localized: "M\xFCzik"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871568574889984
+    m_Localized: Kaydet
     m_Metadata:
       m_Items: []
   references:

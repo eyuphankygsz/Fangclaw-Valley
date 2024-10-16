@@ -126,9 +126,9 @@ public class PauseMenu : MonoBehaviour
 	}
 	private void SetControls(ControlSchema controls)
 	{
-		controls.UI.Inventory.performed += ctx => SelectSection(_sections["Inventory"], false);
-		controls.UI.PauseMenu.performed += ctx => SelectSection(_sections["Main Menu"], false);
-		controls.UI.Settings.performed += ctx => SelectSection(_sections["Settings"], false);
+		controls.Player.Inventory.performed += ctx => SelectSection(_sections["Inventory"], false);
+		controls.Player.PauseMenu.performed += ctx => SelectSection(_sections["Main Menu"], false);
+		controls.Player.Settings.performed += ctx => SelectSection(_sections["Settings"], false);
 	}
 
 }

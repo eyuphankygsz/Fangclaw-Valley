@@ -3,13 +3,16 @@ using UnityEngine;
 public class GasForLamp : UseFunction
 {
 	[SerializeField]
+	private LanternHelpers _lanternHelpers;
+	[SerializeField]
 	private Lantern _lantern;
 	public override bool Use()
 	{
-		if (_lantern.LeftFuel == _lantern.MaxFuel || !_lantern.IsPicked) 
+		Debug.Log(_lanternHelpers.LeftFuel + "  " + _lanternHelpers.MaxFuel);
+		if (_lanternHelpers.LeftFuel == _lanternHelpers.MaxFuel || !_lantern.IsPicked) 
 			return false;
 
-		_lantern.AddFuel(360);
+		_lanternHelpers.AddFuel(240f);
 		return true;
 	}
 }

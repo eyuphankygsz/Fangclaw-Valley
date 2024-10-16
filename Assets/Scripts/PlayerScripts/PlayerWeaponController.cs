@@ -14,6 +14,8 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private string[] _weaponNames;
 	private int _weaponIndex, _oldWeaponIndex = -1;
 
+	[Inject]
+	private WeaponHelpers _weaponHelpers;
 
 	private void Awake()
 	{
@@ -87,6 +89,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	private void SelectWeapon(bool next)
 	{
+		if (_weaponHelpers.StopChange) return;
 		int nextGunIndex = next ? 1 : -1;
 		int tempIndex = (_weaponIndex + nextGunIndex) % _weapons.Count;
 		_weaponIndex++;
@@ -97,6 +100,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	public void SelectWeapon(int index)
 	{
+		if (_weaponHelpers.StopChange) return;
 		if ((_oldWeaponIndex == index && _currentWeapon != null) || index >= _weapons.Count) return;
 		int tempIndex = index;
 		ChangeWeapon(false, tempIndex);

@@ -11,8 +11,9 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState, IInputHandler
 	[SerializeField]
 	private float _speed;
 	[SerializeField]
-    private PlayerGravity _gravity;
-	
+	private PlayerGravity _gravity;
+	[SerializeField]
+	private PlayerGroundCheck _groundCheck;
 
 	[SerializeField]
 	private StateTransitionList _transitionList;
@@ -21,12 +22,14 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState, IInputHandler
 
 	private ControlSchema _controls;
 
-
+	private float _jumpSpeed = 3f;
+	private float _jumpVelocity;
 
 	#region StateHandle
 	public void EnterState()
-	{ 
-
+	{
+		_groundCheck.CantCheckGround = true;
+		_jumpVelocity = Mathf.Sqrt(_jumpSpeed * -1 * _gravity.CalculateGravity());
 	}
 	public void UpdateState()
 	{
@@ -34,14 +37,19 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState, IInputHandler
 	}
 	public void ExitState()
 	{
+		_groundCheck.CantCheckGround = false;
 		OnInputDisable();
 	}
 	#endregion
 	private void ApplyMovement()
 	{
+		_jumpVelocity += _gravity.CalculateGravity() * Time.deltaTime;
+		Debug.Log(_jumpVelocity);
 		var movement = (transform.forward * _movementInput.y + transform.right * _movementInput.x) * _speed;
-		movement.y = _gravity.CalculateGravity();
+		movement.y = _jumpVelocity;
+
 		_controller.Move(movement * Time.deltaTime);
+		_groundCheck.CantCheckGround = false;
 	}
 
 
@@ -55,7 +63,7 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState, IInputHandler
 	{
 		_controls = schema;
 		_movementInput = schema.Player.Movement.ReadValue<Vector2>();
-        OnJumpPerformed(new InputAction.CallbackContext());
+		OnJumpPerformed(new InputAction.CallbackContext());
 		_controls.Player.Movement.performed += OnMovePerformed;
 		_controls.Player.Movement.canceled += OnMoveCanceled;
 

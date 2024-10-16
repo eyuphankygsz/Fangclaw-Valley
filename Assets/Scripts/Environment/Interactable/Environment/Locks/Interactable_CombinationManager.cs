@@ -147,10 +147,10 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	public void OnInputEnable(ControlSchema schema)
 	{
 		_controls = schema;
-		_controls.Lock.Back.performed += StopInspect;
-		_controls.Lock.NextCombination.performed += ChangeCombinationRight;
-		_controls.Lock.PreviousCombination.performed += ChangeCombinationLeft;
-		_controls.Lock.Turn.performed += TurnCombination;
+		_controls.Player.Back.performed += StopInspect;
+		_controls.Player.NextCombination.performed += ChangeCombinationRight;
+		_controls.Player.PreviousCombination.performed += ChangeCombinationLeft;
+		_controls.Player.Turn.performed += TurnCombination;
 		_inputsEnabled = true;
 	}
 
@@ -158,10 +158,10 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	public void OnInputDisable()
 	{
 		if (!_inputsEnabled) return;
-		_controls.Lock.Back.performed -= StopInspect;
-		_controls.Lock.NextCombination.performed -= ChangeCombinationRight;
-		_controls.Lock.PreviousCombination.performed -= ChangeCombinationLeft;
-		_controls.Lock.Turn.performed -= TurnCombination;
+		_controls.Player.Back.performed -= StopInspect;
+		_controls.Player.NextCombination.performed -= ChangeCombinationRight;
+		_controls.Player.PreviousCombination.performed -= ChangeCombinationLeft;
+		_controls.Player.Turn.performed -= TurnCombination;
 		_inputsEnabled = false;
 	}
 
