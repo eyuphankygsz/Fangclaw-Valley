@@ -88,12 +88,12 @@ public class InputManager : IInitializable
 	{
 		foreach (var input in inputs)
 		{
-			if (GetInputAction(input.Input.ActionName, out InputAction action) == null)
+			if (GetInputAction(input.GetInput().ActionName, out InputAction action) == null)
 				return;
 
-			action.ApplyBindingOverride(input.Input.InputIndex, input.Input.DefaultValue);
-			SetButtonText(input.Input, input.TMP);
-			SaveBinding(action, input.Input.InputIndex, input.Input.DefaultValue);
+			action.ApplyBindingOverride(input.GetInput().InputIndex, input.GetInput().DefaultValue);
+			SetButtonText(input.GetInput(), input.GetTMP());
+			SaveBinding(action, input.GetInput().InputIndex, input.GetInput().DefaultValue);
 		}
 	}
 	private InputAction GetInputAction(string actionName, out InputAction action)

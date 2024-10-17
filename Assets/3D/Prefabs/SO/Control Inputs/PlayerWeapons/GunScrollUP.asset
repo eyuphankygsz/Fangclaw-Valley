@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GunScrollUP
   m_EditorClassIdentifier: 
   ActionName: Player/GunScroll
-  InputIndex: 1
-  DefaultValue: <Mouse>/scroll/up
+  InputIndex: 4
+  DefaultValue: <XInputController>/leftShoulder

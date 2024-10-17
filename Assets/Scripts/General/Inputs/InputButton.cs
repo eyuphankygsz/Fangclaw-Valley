@@ -6,20 +6,43 @@ using Zenject;
 
 public class InputButton : MonoBehaviour
 {
-	[field: SerializeField]
-	public TheInput Input { get; private set; }
+	[SerializeField]
+	private List<TheInput> _inputs;
 
-	[field: SerializeField]
-	public TextMeshProUGUI TMP { get; private set; }
+	[SerializeField]
+	private TextMeshProUGUI _tmp;
 	
 	[Inject]
 	private InputManager _inputManager;
-	public void Start()
+
+	private int _currentIndex;
+    private void Awake()
+    {
+        _tmp = GetComponentInChildren<TextMeshProUGUI>();
+    }
+    public void Start()
 	{
-		_inputManager.SetButtonText(Input, TMP);
+		_inputManager.SetButtonText(_inputs[0], _tmp);
 	}
 	public void ChangeKey()
 	{
-		_inputManager.ChangeBinding(Input, TMP);
+		_inputManager.ChangeBinding(_inputs[_currentIndex], _tmp);
+	}
+
+    public TheInput GetInput()
+    {
+        return _inputs[_currentIndex];
+    }
+    public TextMeshProUGUI GetTMP()
+    {
+        return _tmp;
+    }
+    public void ChangeIndex(int newIndex)
+	{
+		transform.parent.gameObject.SetActive(!(_inputs.Count <= newIndex));
+		if(!transform.parent.gameObject.activeSelf) return;
+
+		_currentIndex = newIndex;
+		_inputManager.SetButtonText(_inputs[_currentIndex], _tmp);
 	}
 }

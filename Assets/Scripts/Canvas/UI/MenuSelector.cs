@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MenuSelector : MonoBehaviour
 {
     [SerializeField]
+    private EventSystem _eventSystem;
+    [SerializeField]
     private GameObject[] _menuList;
-    
+    [SerializeField]
+    private GameObject[] _firstSelected;
+
+
     
     public void OpenFirst()
     {
@@ -15,6 +21,7 @@ public class MenuSelector : MonoBehaviour
 
     public void OpenMenu(int id)
     {
+        _eventSystem.SetSelectedGameObject(_firstSelected[id]);
         for (int i = 0; i < _menuList.Length; i++)
             _menuList[i].SetActive(false);
 

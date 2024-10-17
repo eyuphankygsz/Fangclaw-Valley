@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 public class PauseMenu : MonoBehaviour
@@ -19,6 +20,8 @@ public class PauseMenu : MonoBehaviour
 
 	[SerializeField]
 	private MenuSelector[] _menuSelectors;
+	[SerializeField]
+	private EventSystem _eventSystem;
 
 	private Dictionary<string, TopSections> _sections;
 	private TopSections _oldSection;
@@ -29,6 +32,7 @@ public class PauseMenu : MonoBehaviour
 	private InputManager _inputManager;
 	[Inject]
 	private GameManager _gameManager;
+
 
 	private void Awake()
 	{
@@ -104,6 +108,7 @@ public class PauseMenu : MonoBehaviour
 			_oldSection = null;
 
 		_gameManager.SetPauseGame(!same);
+		_eventSystem.SetSelectedGameObject(section.FirstToSelect);
 	}
 
 	private void UnSelectTitle(TopSections section)
@@ -139,6 +144,7 @@ public class TopSections
 	public string SectionName;
 	public TextMeshProUGUI TitleObject;
 	public GameObject Section;
+	public GameObject FirstToSelect;
 }
 [Serializable]
 public class SectionDict

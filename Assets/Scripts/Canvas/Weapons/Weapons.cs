@@ -4,6 +4,7 @@ using Zenject;
 
 public abstract class Weapons : MonoBehaviour, ISaveable
 {
+
 	[SerializeField] protected float Damage { get; set; }
 	[SerializeField] protected float _moveSpeed;
 	[SerializeField] protected Enum_Weapons _weaponEnum; // Daha sonra weapon class ekle (Attackable)
@@ -16,6 +17,7 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 
 	public bool IsPicked;
 
+
 	protected Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
 	protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
 	protected Transform _pivot, _camera;
@@ -23,7 +25,9 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	protected Animator _animator;
 	protected WaitForSeconds _actionSleep;
 	protected bool _onAction;
-
+	protected bool _isFreeze;
+	protected ControlSchema _controls;
+	
 	private float _xPolynomial = -1.376f;
 	private Vector2 _startPos;
 	private float _xPolyStart;
@@ -59,13 +63,16 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 		_animator = GetComponent<Animator>();
 		_source = GetComponent<AudioSource>();
 	}
-	public abstract void OnAction();
-	public abstract void OnSelected();
+	public abstract void OnSelected(ControlSchema schema);
 	public abstract void OnChanged();
 	public abstract void SetWeapon();
 	public abstract void Move();
 	public abstract GameData GetSave();
 	public abstract void LoadSave();
+	public void SetFreeze(bool freeze)
+	{
+		_isFreeze = freeze;
+	}
 
 	public GameObject GetHitObject()
 	{

@@ -154,6 +154,14 @@ MonoBehaviour:
     m_Localized: Save
     m_Metadata:
       m_Items: []
+  - m_Id: 19166236932976640
+    m_Localized: Gamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19166218478039040
+    m_Localized: Keyboard
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

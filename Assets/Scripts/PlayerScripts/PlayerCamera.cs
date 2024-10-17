@@ -64,6 +64,6 @@ public class PlayerCamera : MonoBehaviour
 	public void SetSensitivity(float value)
 	{
 		_mouseSensitivity = value;
-		_rotationSpeed = _mouseSensitivity * 100f;
+		_rotationSpeed = _mouseSensitivity * 20f;
 	}
 }

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 	private PlayerWeaponController _playerWeapon;
 	private PlayerInteractions _playerInteractions;
 	private PlayerStateMachine _playerStateMachine;
+	private PlayerScan _playerScan;
 
 	private PlayerData _data = new PlayerData();
 
@@ -30,6 +31,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 	{
 		_freeze = freeze;
 		_playerInteractions.StopInteractions(freeze);
+		_playerScan.SetFreeze(freeze);
+		_playerWeapon.SetFreeze(freeze);
 	}
 	private void Force(bool force)
 	{
@@ -51,10 +54,11 @@ public class PlayerController : MonoBehaviour, ISaveable
 
 	void Update()
 	{
+		if (_freeze) return;
+
 		if(_force)
 			_playerWeapon.ManageGun();
 
-		if (_freeze) return;
 		_playerStateMachine.ExecuteState();
 		_playerCamera.ManageRotate();
 		_playerWeapon.ManageGun();
@@ -78,6 +82,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_playerCamera = GetComponent<PlayerCamera>();
 		_playerWeapon = GetComponent<PlayerWeaponController>();
 		_playerInteractions = GetComponent<PlayerInteractions>();
+		_playerScan = GetComponent<PlayerScan>();
 	}
 
 	public GameData GetSaveFile()

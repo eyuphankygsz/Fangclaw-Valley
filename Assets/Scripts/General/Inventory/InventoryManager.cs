@@ -225,7 +225,7 @@ public class InventoryManager : MonoBehaviour
 		{
 			OnMenu = true;
 			_lastSelectedHolder = holder;
-			_cursorMenu.SetMenu(holder.Item, holder.IsChestHolder);
+			_cursorMenu.SetMenu(holder, holder.IsChestHolder);
 		}
 		else
 		{

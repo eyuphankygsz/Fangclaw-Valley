@@ -27,7 +27,11 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 	private TextMeshProUGUI _quantityText;
 	[SerializeField]
 	private Image _itemImage;
+
+
 	private Image _holderImage;
+
+
 
 	private InventoryDataItem _inventoryDataItem = new InventoryDataItem();
 
@@ -159,5 +163,7 @@ public class InventoryItemHolder : MonoBehaviour, ISaveable, IPointerEnterHandle
 			_inventoryManager.HandleLeftClick(this);
 		else if (eventData.button == PointerEventData.InputButton.Right)
 			_inventoryManager.HandleRightClick(this);
+
+		
 	}
 }

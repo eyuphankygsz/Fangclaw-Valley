@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using System.Collections;
 using UnityEngine.Rendering.Universal;
-using UnityEditor.ShaderGraph;
 using UnityEngine.InputSystem;
 
 public class PlayerScan : MonoBehaviour, IInputHandler
@@ -45,6 +44,9 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 	private Color _targetColor = new Color(210f / 255f, 0f, 0f);
 	private float _intensity = 1.1f, _saturation = -65f;
 
+
+	private bool _freeze;
+	public void SetFreeze(bool freeze) => _freeze = freeze;
 	void Awake()
 	{
 
@@ -71,7 +73,7 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 
 	public void Scan(InputAction.CallbackContext ctx)
 	{
-		if (ctx.performed && !_scanning)
+		if (ctx.performed && !_scanning && !_freeze)
 		{
 			if (_playerStamina.Stamina < 60)
 				return;

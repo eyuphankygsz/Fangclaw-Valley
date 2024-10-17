@@ -16,8 +16,9 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	[Inject]
 	private WeaponHelpers _weaponHelpers;
-
-	private void Awake()
+	[Inject]
+	private InputManager _inputManager;
+    private void Awake()
 	{
 		_playerInteractions = GetComponent<PlayerInteractions>();
 
@@ -42,7 +43,6 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		if (_currentWeapon != null)
 		{
 			TryMoveGun();
-			TryToUse();
 		}
 	}
 	public void StopWeapon(bool stun)
@@ -70,10 +70,6 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private void TryMoveGun()
 	{
 		_currentWeapon.Move();
-	}
-	private void TryToUse()
-	{
-		_currentWeapon.OnAction();
 	}
 	private void ChangeGunByKey(InputAction.CallbackContext ctx)
 	{
@@ -109,6 +105,10 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		return _oldWeaponIndex;
 	}
+	public void SetFreeze(bool freeze)
+	{
+		_currentWeapon.SetFreeze(freeze);
+	}
 	private void ChangeWeapon(bool errorChange, int tempIndex)
 	{
 		if (!_weapons[_weaponNames[tempIndex]].IsPicked)
@@ -130,7 +130,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
 		_currentWeapon.gameObject.SetActive(true);
-		_currentWeapon.OnSelected();
+		_currentWeapon.OnSelected(_inputManager.Controls);
 
 		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
 
@@ -155,7 +155,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		_currentWeapon = _weapons[name];
 
 		_currentWeapon.gameObject.SetActive(true);
-		_currentWeapon.OnSelected();
+		_currentWeapon.OnSelected(_inputManager.Controls);
 
 		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
 	}

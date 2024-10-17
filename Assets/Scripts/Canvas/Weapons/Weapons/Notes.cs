@@ -28,12 +28,8 @@ public class Notes : Weapons
 		ClampTransform();
 	}
 
-	public override void OnAction()
-	{
-		return;
-	}
 
-	public override void OnSelected() { }
+	public override void OnSelected(ControlSchema schema){}
 
 	public override void OnChanged() { }
 
