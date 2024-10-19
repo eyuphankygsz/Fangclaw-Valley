@@ -17,21 +17,7 @@ public class GammaSetting : Setting
     private float _currentValue;
 	private float _tempValue;
 
-	private void Awake()
-	{
-		if (!PlayerPrefs.HasKey("Gamma"))
-			PlayerPrefs.SetFloat("Gamma", 0);
 
-		_currentValue = PlayerPrefs.GetFloat("Gamma");
-		_tempValue = _currentValue;
-		_slider.value = _currentValue;
-
-
-        if (_postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
-            _liftGammaGain.gamma.value = new Vector4(0, 0, 0, _currentValue);
-
-
-    }
     private void Start() =>
 		SetGammaParam();
 	public void SetGammaTemp(Slider slider)
@@ -65,5 +51,19 @@ public class GammaSetting : Setting
 		_currentValue = _tempValue;
 		SetGammaParam();
 
+	}
+
+	public override void Load()
+	{
+		if (!PlayerPrefs.HasKey("Gamma"))
+			PlayerPrefs.SetFloat("Gamma", 0);
+
+		_currentValue = PlayerPrefs.GetFloat("Gamma");
+		_tempValue = _currentValue;
+		_slider.value = _currentValue;
+
+
+		if (_postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
+			_liftGammaGain.gamma.value = new Vector4(0, 0, 0, _currentValue);
 	}
 }

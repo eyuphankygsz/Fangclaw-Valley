@@ -12,7 +12,13 @@ public class LanternHelpers : MonoBehaviour
 
 
 	public float MaxFuel { get => _maxFuel; }
-	public float LeftFuel;
+	public float LeftFuel { get => _leftFuel; 
+		set
+		{
+			_leftFuel = value;
+			ApplyUI();
+		}
+	}
 	public float LitMultiplier = 1;
 
 	private float _leftFuel, _maxFuel = 240f;

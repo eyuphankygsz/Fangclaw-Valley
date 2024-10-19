@@ -183,8 +183,10 @@ public class InventoryManager : MonoBehaviour
 		return itemHolder;
 	}
 
+	private bool _waitClick;
 	public void HandleLeftClick(InventoryItemHolder holder)
 	{
+		_waitClick = true;
 		if (Combine)
 		{
 			TryCombine(holder);
@@ -214,7 +216,41 @@ public class InventoryManager : MonoBehaviour
 	}
 	public void HandleRightClick(InventoryItemHolder holder)
 	{
+		_waitClick = true;
 		if (OnMenu || Combine)
+		{
+			DisableCursorMenu(false);
+			_lastSelectedHolder = null;
+		}
+		Combine = false;
+
+		if (_lastSelectedHolder == null && holder.Item != null)
+		{
+			OnMenu = true;
+			_lastSelectedHolder = holder;
+			_cursorMenu.SetMenu(holder, holder.IsChestHolder);
+		}
+		else
+		{
+			if (_lastSelectedHolder != null)
+				_lastSelectedHolder.SetTemporaryStatus(true);
+			DisableCursorMenu(false);
+		}
+	}
+
+	public void HandleController(InventoryItemHolder holder)
+	{
+		if (_waitClick)
+		{
+			_waitClick = false;
+			return;
+		}
+		if (Combine)
+		{
+			TryCombine(holder);
+			return;
+		}
+		if (OnMenu)
 		{
 			DisableCursorMenu(false);
 			_lastSelectedHolder = null;
@@ -329,7 +365,7 @@ public class InventoryManager : MonoBehaviour
 	public void RemoveItemQuantityFromInventory(InventoryItemHolder holder, int quantity)
 	{
 		holder.AddQuantity(-quantity);
-		
+
 		if (holder.Quantity == 0)
 			holder.ResetHolder();
 	}
@@ -393,7 +429,7 @@ public class InventoryManager : MonoBehaviour
 	{
 		InspectFunctions fHolder = GetInspectFunctionHolder(_lastSelectedHolder);
 		fHolder.Inspect(_lastSelectedHolder);
-    }
+	}
 	public void CombineItem()
 	{
 		CombineFunctions fHolder = GetCombineFunctionHolder(_lastSelectedHolder);

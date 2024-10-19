@@ -22,7 +22,7 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState, IInputHandler
 
 	private ControlSchema _controls;
 
-	private float _jumpSpeed = 3f;
+	private float _jumpSpeed = 1.2f;
 	private float _jumpVelocity;
 
 	#region StateHandle

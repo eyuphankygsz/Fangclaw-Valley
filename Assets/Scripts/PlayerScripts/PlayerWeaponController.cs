@@ -18,7 +18,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private WeaponHelpers _weaponHelpers;
 	[Inject]
 	private InputManager _inputManager;
-    private void Awake()
+	private void Awake()
 	{
 		_playerInteractions = GetComponent<PlayerInteractions>();
 
@@ -32,18 +32,11 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 			_weaponNames[nameIndex++] = weaponName.Key;
 	}
 
-	private void Start()
-	{
-		SelectWeapon(0);
-	}
-
 
 	public void ManageGun()
 	{
 		if (_currentWeapon != null)
-		{
 			TryMoveGun();
-		}
 	}
 	public void StopWeapon(bool stun)
 	{
@@ -58,15 +51,15 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	public void AddWeapon(Enum_Weapons weapon)
 	{
-        foreach (var item in _weapons)
-        {
+		foreach (var item in _weapons)
+		{
 			if (item.Value.GetWeaponEnum() == weapon)
 			{
 				item.Value.IsPicked = true;
 				break;
 			}
-        }
-    }
+		}
+	}
 	private void TryMoveGun()
 	{
 		_currentWeapon.Move();
@@ -101,22 +94,31 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		int tempIndex = index;
 		ChangeWeapon(false, tempIndex);
 	}
+	public void SelectInstantWeapon(int index)
+	{
+		_weaponIndex = index;
+		_oldWeaponIndex = _weaponIndex;
+
+		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
+		_currentWeapon.OnSelected(_inputManager.Controls);
+
+		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
+	}
 	public int GetWeaponIndex()
 	{
 		return _oldWeaponIndex;
 	}
 	public void SetFreeze(bool freeze)
 	{
-		_currentWeapon.SetFreeze(freeze);
+		foreach (var item in _weapons)
+			item.Value.SetFreeze(freeze);
 	}
 	private void ChangeWeapon(bool errorChange, int tempIndex)
 	{
 		if (!_weapons[_weaponNames[tempIndex]].IsPicked)
 		{
 			if (errorChange)
-			{
 				SelectWeapon(true);
-			}
 
 			return;
 		}

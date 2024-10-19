@@ -12,15 +12,7 @@ public class AudioSetting : Setting
 	private float _currentValue;
 	private float _tempValue;
 
-	private void Awake()
-	{
-		if (!PlayerPrefs.HasKey("SFX"))
-			PlayerPrefs.SetFloat("SFX", 1);
 
-		_currentValue = PlayerPrefs.GetFloat("SFX");
-		_tempValue = _currentValue;
-		_slider.value = _currentValue;
-	}
 	private void Start() =>
 		SetSFXParam();
 	public void SetSFX(Slider slider) =>
@@ -41,5 +33,15 @@ public class AudioSetting : Setting
 		PlayerPrefs.SetFloat("SFX", _currentValue); 
 		SetSFXParam();
 
+	}
+
+	public override void Load()
+	{
+		if (!PlayerPrefs.HasKey("SFX"))
+			PlayerPrefs.SetFloat("SFX", 1);
+
+		_currentValue = PlayerPrefs.GetFloat("SFX");
+		_tempValue = _currentValue;
+		_slider.value = _currentValue;
 	}
 }

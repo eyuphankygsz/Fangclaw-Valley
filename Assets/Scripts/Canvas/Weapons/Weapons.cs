@@ -95,7 +95,8 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	protected void X_Movement()
 	{
 		float x = MouseDirection.Instance.GetCameraDirection().x;
-
+		x = Mathf.Clamp(x,-1,1);
+		Debug.Log("X: " + x);
 		if (x != 0)
 		{
 			Vector3 moveDirection = new Vector3(-x, 0, 0);

@@ -14,20 +14,6 @@ public class MouseSensitivitySetting : Setting
     private float _currentValue;
 	private float _tempValue;
 
-	private void Awake()
-	{
-		if (!PlayerPrefs.HasKey("Sensitivity"))
-			PlayerPrefs.SetFloat("Sensitivity", .4f);
-
-		_currentValue = PlayerPrefs.GetFloat("Sensitivity");
-		_tempValue = _currentValue;
-		_slider.value = _currentValue;
-
-        _camera.SetSensitivity(_currentValue);
-
-
-
-    }
     private void Start() =>
 		SetSensitivityParam();
 	public void SetSensitivityTemp(Slider slider) =>
@@ -49,5 +35,17 @@ public class MouseSensitivitySetting : Setting
 		PlayerPrefs.SetFloat("Sensitivity", _currentValue);
 		SetSensitivityParam();
 
+	}
+
+	public override void Load()
+	{
+		if (!PlayerPrefs.HasKey("Sensitivity"))
+			PlayerPrefs.SetFloat("Sensitivity", .4f);
+
+		_currentValue = PlayerPrefs.GetFloat("Sensitivity");
+		_tempValue = _currentValue;
+		_slider.value = _currentValue;
+
+		SetSensitivityParam();
 	}
 }

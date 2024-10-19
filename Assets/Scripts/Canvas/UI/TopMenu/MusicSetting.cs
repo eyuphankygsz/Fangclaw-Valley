@@ -12,18 +12,6 @@ public class MusicSetting : Setting
 	private float _currentValue;
 	private float _tempValue;
 
-	private void Awake()
-	{
-		if (!PlayerPrefs.HasKey("Music"))
-			PlayerPrefs.SetFloat("Music", 1);
-
-		_currentValue = PlayerPrefs.GetFloat("Music");
-		_tempValue = _currentValue;
-		SetMusicParam();
-
-		_slider.value = _currentValue;
-	}
-
 	private void Start() =>
 		SetMusicParam();
 	public void SetMusic(Slider slider) =>
@@ -42,5 +30,17 @@ public class MusicSetting : Setting
 		_currentValue = _tempValue;
 		PlayerPrefs.SetFloat("Music", _currentValue);
 		SetMusicParam();
+	}
+
+	public override void Load()
+	{
+		if (!PlayerPrefs.HasKey("Music"))
+			PlayerPrefs.SetFloat("Music", 1);
+
+		_currentValue = PlayerPrefs.GetFloat("Music");
+		_tempValue = _currentValue;
+		SetMusicParam();
+
+		_slider.value = _currentValue;
 	}
 }

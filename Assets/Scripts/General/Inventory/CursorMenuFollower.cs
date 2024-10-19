@@ -10,9 +10,9 @@ public class CursorMenuFollower : MonoBehaviour
 	private GameObject[] _functionButtons;
 	[SerializeField]
 	private EventSystem _eventSystem;
-	[SerializeField]
-	private GameObject _selectedObj;
 	private RectTransform _transform;
+
+	private GameObject _lastHolderObj;
 
 	public void Setup(InventoryManager manager)
 	{
@@ -25,6 +25,8 @@ public class CursorMenuFollower : MonoBehaviour
 		Vector3 pos = item.transform.position;
 		_transform.position = pos;
 
+		_lastHolderObj = item.gameObject;
+
 		for (int i = 0; i < _functionButtons.Length; i++)
 			_functionButtons[i].SetActive(false);
 
@@ -36,10 +38,20 @@ public class CursorMenuFollower : MonoBehaviour
 		}
 
 		gameObject.SetActive(true);
-		_eventSystem.SetSelectedGameObject(_selectedObj);
+		_eventSystem.SetSelectedGameObject(GetSelectableFunction());
 	}
+	private GameObject GetSelectableFunction()
+	{
+        for (int i = 0; i < _functionButtons.Length; i++)
+			if (_functionButtons[i].activeSelf)
+				return _functionButtons[i].gameObject;
+
+		return null;
+    }
 	private void OnDisable()
 	{
+		_eventSystem.SetSelectedGameObject(_lastHolderObj);
+		
 		if (_inventoryManager != null)
 			_inventoryManager.DisableCursorMenu(true);
 		else

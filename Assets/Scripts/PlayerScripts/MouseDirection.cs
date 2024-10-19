@@ -7,6 +7,7 @@ public class MouseDirection : MonoBehaviour, IInputHandler
 
     private ControlSchema _controls;
     private Vector2 _rotation;
+
     private void Awake()
     {
             Instance = this;

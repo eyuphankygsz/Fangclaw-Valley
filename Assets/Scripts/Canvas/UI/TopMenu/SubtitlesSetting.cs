@@ -12,7 +12,13 @@ public class SubtitlesSetting : Setting
 	[SerializeField]
 	private LocalizedString _on, _off;
 
-	private void Awake()
+	public void Change()
+	{
+		_tempIsOn = !_tempIsOn;
+		_text.text = _isOn ? _on.GetLocalizedString() : _off.GetLocalizedString();
+	}
+
+	public override void Load()
 	{
 		if (!PlayerPrefs.HasKey("Subtitles"))
 			PlayerPrefs.SetInt("Subtitles", 1);
@@ -21,11 +27,7 @@ public class SubtitlesSetting : Setting
 		_tempIsOn = _isOn;
 		_text.text = _isOn ? _on.GetLocalizedString() : _off.GetLocalizedString();
 	}
-	public void Change()
-	{
-		_tempIsOn = !_tempIsOn;
-		_text.text = _isOn ? _on.GetLocalizedString() : _off.GetLocalizedString();
-	}
+
 	public override void Restore()
 	{
 		_tempIsOn = _isOn;

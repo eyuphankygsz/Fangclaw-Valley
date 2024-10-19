@@ -29,7 +29,8 @@ public class ChangeLanguage : Setting
 
 
 
-	public void Awake()
+
+	public override void Load()
 	{
 		if (!PlayerPrefs.HasKey(_localeString))
 		{
@@ -40,7 +41,7 @@ public class ChangeLanguage : Setting
 				_localeID++;
 			}
 
-			if(_localeID >= _languageDict.Count) 
+			if (_localeID >= _languageDict.Count)
 				_localeID = 0;
 
 			_tempLocaleID = _localeID;
@@ -61,6 +62,7 @@ public class ChangeLanguage : Setting
 		_tempLocaleID = _localeID;
 		_language.text = _languageDict[_shorts[_tempLocaleID]];
 	}
+
 	public void NextLanguage()
 	{
 		_tempLocaleID = (_tempLocaleID + 1) % _shorts.Length;

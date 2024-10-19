@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -55,15 +56,14 @@ public class PauseMenu : MonoBehaviour
 	public void ChangeMenu(string menuName)
 	{
 		SelectSection(_sections[menuName], true);
-    
-		for (int i = 0; i < _menuSelectors.Length; i++)
-			_menuSelectors[i].OpenFirst();
-    
+		if (_sections[menuName].MenuSelector != null)
+			_sections[menuName].MenuSelector.OpenFirst();
+
 	}
 
 	private void SelectSection(TopSections section, bool byButtons)
 	{
-		if (_gameManager.SaveGame) 
+		if (_gameManager.SaveGame)
 			return;
 
 		foreach (var item in _sections)
@@ -145,6 +145,7 @@ public class TopSections
 	public TextMeshProUGUI TitleObject;
 	public GameObject Section;
 	public GameObject FirstToSelect;
+	public MenuSelector MenuSelector;
 }
 [Serializable]
 public class SectionDict
