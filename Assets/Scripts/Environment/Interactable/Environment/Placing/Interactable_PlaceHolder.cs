@@ -35,6 +35,9 @@ public class Interactable_PlaceHolder : Interactable
 	{
 		_mechanism = GetComponentInParent<StatusMechanism>();
 		base.Start();
+
+		if (gameObject.activeSelf && _statusID == 0)
+			_statusID = 2;
 	}
 	public override void OnInteract(Enum_Weapons weapon)
 	{
