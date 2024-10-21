@@ -45,7 +45,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4
+  m_Intensity: 6.6
   m_Range: 6.88
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 3726740952248020482}
   - component: {fileID: 3352547880784798242}
   - component: {fileID: 412192523376610465}
+  - component: {fileID: 1571556528701661219}
   m_Layer: 7
   m_Name: Light_08
   m_TagString: Untagged
@@ -204,6 +205,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1571556528701661219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583780524957933453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4e31effed19b749a89cca63f3f026e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
+  _min: 1
+  _max: 4
 --- !u!1001 &8219997786715375543
 PrefabInstance:
   m_ObjectHideFlags: 0

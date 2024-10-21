@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 2094104031965545717}
   - component: {fileID: 3193599292048163700}
   - component: {fileID: 6814148232050782781}
+  - component: {fileID: 2710428270552204341}
   - component: {fileID: 8160827334570384262}
   m_Layer: 11
   m_Name: Door_Iron_Right
@@ -419,6 +420,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!208 &2710428270552204341
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3995533555671712276}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.669, y: 1.0610001, z: 0.335}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.66700006, y: 1.1110001, z: 0.079}
+  m_TimeToStationary: 0.5
 --- !u!114 &8160827334570384262
 MonoBehaviour:
   m_ObjectHideFlags: 0
