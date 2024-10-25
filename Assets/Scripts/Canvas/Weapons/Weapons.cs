@@ -27,7 +27,7 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	protected bool _onAction;
 	protected bool _isFreeze;
 	protected ControlSchema _controls;
-	
+
 	private float _xPolynomial = -1.376f;
 	private Vector2 _startPos;
 	private float _xPolyStart;
@@ -82,6 +82,14 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	}
 	protected void Y_Movement()
 	{
+		if (_forceSaved)
+		{
+			float distance = _lastPos.y;
+			_pivot.transform.localPosition += new Vector3(0, 45 * Time.deltaTime, 0);
+			if (distance - _pivot.transform.localPosition.y <= 0)
+				_forceSaved = false;
+			return;
+		}
 		float y = GetYPos();
 
 		_pivot.transform.localPosition = new Vector3(_xPos, _startPos.y, 0) + (Vector3.up * y);
@@ -95,7 +103,7 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	protected void X_Movement()
 	{
 		float x = MouseDirection.Instance.GetCameraDirection().x;
-		x = Mathf.Clamp(x,-1,1);
+		x = Mathf.Clamp(x, -1, 1);
 		if (x != 0)
 		{
 			Vector3 moveDirection = new Vector3(-x, 0, 0);
@@ -106,6 +114,20 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 			_pivot.transform.localPosition = Vector3.Lerp(_pivot.transform.localPosition, new Vector2(_startPos.x, _pivot.transform.localPosition.y), 10 * Time.deltaTime);
 		}
 		_xPos = _pivot.transform.localPosition.x;
+	}
+
+	private bool _forceSaved;
+	private Vector3 _lastPos;
+	public void OnForce()
+	{
+		if (!_forceSaved)
+		{
+			_forceSaved = true;
+			_lastPos = _pivot.transform.localPosition;
+		}
+
+		if(_pivot.transform.localPosition.y > -10)
+		_pivot.transform.localPosition -= new Vector3(_xPos, 45 * Time.deltaTime, 0);
 	}
 	protected void ClampTransform()
 	{

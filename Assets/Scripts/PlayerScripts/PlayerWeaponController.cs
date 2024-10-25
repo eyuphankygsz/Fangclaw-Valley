@@ -18,6 +18,9 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private WeaponHelpers _weaponHelpers;
 	[Inject]
 	private InputManager _inputManager;
+
+
+	private bool _onForce;
 	private void Awake()
 	{
 		_playerInteractions = GetComponent<PlayerInteractions>();
@@ -37,6 +40,11 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		if (_currentWeapon != null)
 			TryMoveGun();
+	}
+
+	public void OnForce(bool force)
+	{
+		_onForce = force;
 	}
 	public void StopWeapon(bool stun)
 	{
@@ -62,7 +70,10 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	private void TryMoveGun()
 	{
-		_currentWeapon.Move();
+		if (!_onForce)
+			_currentWeapon.Move();
+		else
+			_currentWeapon.OnForce();
 	}
 	private void ChangeGunByKey(InputAction.CallbackContext ctx)
 	{

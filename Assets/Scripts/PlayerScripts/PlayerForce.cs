@@ -10,7 +10,7 @@ public class PlayerForce : MonoBehaviour
 	
 	private PlayerInteractions _interaction;
 	private Transform _target;
-	private float _time = 6;
+	private float _time = 10;
 	private OnLookEvents _onLookEvent;
 
 	[Inject]

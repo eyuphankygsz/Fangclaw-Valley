@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_force = force;
 		_freeze = force;
 		_playerInteractions.StopInteractions(_freeze);
+		_playerWeapon.OnForce(force);
 	}
 	private void Awake()
 	{
@@ -54,10 +55,11 @@ public class PlayerController : MonoBehaviour, ISaveable
 
 	void Update()
 	{
+		if(_freeze && _force)
+			_playerWeapon.ManageGun();
+
 		if (_freeze) return;
 
-		if(_force)
-			_playerWeapon.ManageGun();
 
 		_playerStateMachine.ExecuteState();
 		_playerCamera.ManageRotate();
