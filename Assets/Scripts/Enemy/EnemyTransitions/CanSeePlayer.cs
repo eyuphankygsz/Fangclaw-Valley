@@ -1,0 +1,70 @@
+
+using UnityEngine;
+
+public class CanSeePlayer : AbstractCondition
+{
+	[SerializeField]
+	private Transform _viewPoint;
+	[SerializeField]
+	private float _viewDistance = 15f; // 15 metre ileriye kadar gör
+	[SerializeField]
+	private float _fovAngle = 45f; // 45 derece FOV
+	[SerializeField]
+	private int _rayCount = 20;
+	[SerializeField]
+	private LayerMask _layer;
+
+	public override bool CheckCondition()
+	{
+		Vector3 forward = _viewPoint.forward;
+
+		float startAngle = -_fovAngle / 2;
+
+		for (int i = 0; i <= _rayCount; i++)
+		{
+			float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
+			Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
+
+			Ray ray = new Ray(_viewPoint.position, direction);
+			RaycastHit hit;
+
+			if (Physics.Raycast(ray, out hit, _viewDistance, _layer))
+			{
+				Debug.DrawLine(_viewPoint.position, hit.point, Color.red);
+				return true;
+			}
+			else
+			{
+				Debug.DrawLine(_viewPoint.position, _viewPoint.position + direction * _viewDistance, Color.green);
+			}
+		}
+		return false;
+	}
+
+	private void OnDrawGizmos()
+	{
+		Vector3 forward = _viewPoint.forward;
+
+		float startAngle = -_fovAngle / 2;
+		for (int i = 0; i <= _rayCount; i++)
+		{
+			float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
+			Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
+
+			Ray ray = new Ray(_viewPoint.position, direction);
+			RaycastHit hit;
+
+			if (Physics.Raycast(ray, out hit, _viewDistance, _layer))
+			{
+				Gizmos.color = Color.red;
+				Gizmos.DrawLine(_viewPoint.position, _viewPoint.position + (direction * _viewDistance));
+			}
+			else
+			{
+				Gizmos.color = Color.green;
+				Gizmos.DrawLine(_viewPoint.position, _viewPoint.position + (direction * _viewDistance));
+
+			}
+		}
+	}
+}

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -7,15 +8,25 @@ public class EnemyStateMachine : MonoBehaviour
 	[SerializeField]
 	private MonoBehaviour _startState;
 
-	private TransitionManager _transitionManager;
-
 	[Inject]
 	private InputManager _inputManager;
 
-	private void Start()
+
+
+    [SerializeField]
+    private StateTransitionList _transitionList;
+
+    [SerializeField]
+    private EnemyStateDict _enemyStateDict;
+
+    private Dictionary<string, IEnemyState> _states;
+
+
+    private void Start()
 	{
-		_transitionManager = GetComponent<TransitionManager>();
-		SetCurrentState(_startState.GetComponent<IEnemyState>());
+        _states = _enemyStateDict.ToDict();
+
+        SetCurrentState(_startState.GetComponent<IEnemyState>());
 	}
 
 	public void SetCurrentState(IEnemyState state)
@@ -23,18 +34,68 @@ public class EnemyStateMachine : MonoBehaviour
 		EnterState(state);
 	}
 
-	public void ExecuteState()
+	public void Update()
 	{
 		_currentState.UpdateState();
-		_transitionManager.CheckTransitions(_inputManager.Controls);
+		CheckTransitions();
 	}
 
 	private void EnterState(IEnemyState state)
 	{
 		_currentState?.ExitState();
-		_currentState = state;
+        _currentState = state;
+        _transitionList = _currentState.GetTransitions();
+
+
 		_currentState.EnterState();
 
-		_transitionManager.SetTransitionList(_currentState.GetTransitions());
 	}
+
+
+
+	private void CheckTransitions()
+	{
+        foreach (var transition in _transitionList.Transitions)
+        {
+            bool canChange = true;
+
+            foreach (var item in transition.Conditions)
+                if (!item.CheckCondition())
+                {
+                    canChange = false;
+                    break;
+                }
+
+            if (canChange)
+                SetCurrentState(GetState(transition.TransitionName));
+        }
+    }
+    private IEnemyState GetState(string name)
+    {
+        return _states[name];
+    }
+}
+
+
+[System.Serializable]
+public class EnemyStateDict
+{
+    [SerializeField]
+    List<PlayerState> _states;
+
+    public Dictionary<string, IEnemyState> ToDict()
+    {
+        Dictionary<string, IEnemyState> states = new Dictionary<string, IEnemyState>();
+        foreach (var item in _states)
+            states.Add(item.Name, item.TheState.GetComponent<IEnemyState>());
+
+        return states;
+    }
+}
+
+[System.Serializable]
+public class EnemyState
+{
+    public string Name;
+    public MonoBehaviour TheState;
 }

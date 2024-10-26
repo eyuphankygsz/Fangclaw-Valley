@@ -12,8 +12,10 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private Transform _target;
 
+    [SerializeField]
+    StateTransitionList _transitions;
 
-	public void EnterState()
+    public void EnterState()
 	{
 		_agent.speed = _speed;
 	}
@@ -25,7 +27,7 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 
 	public StateTransitionList GetTransitions()
 	{
-		throw new System.NotImplementedException();
+		return _transitions;
 	}
 
 	public void UpdateState()
