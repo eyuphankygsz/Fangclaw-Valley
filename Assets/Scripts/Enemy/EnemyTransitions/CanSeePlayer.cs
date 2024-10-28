@@ -14,9 +14,20 @@ public class CanSeePlayer : AbstractCondition
     [SerializeField]
     private LayerMask _layer;
 
-    public override bool CheckCondition()
+	[SerializeField]
+	private Transform[] _viewPoints;
+	private Vector3 _currentPos;
+
+	private Vector3 _velocity;
+
+	private int _viewIndex;
+
+
+	public override bool CheckCondition()
     {
-        Vector3 forward = _viewPoint.forward;
+		CheckNextPoint();
+
+		Vector3 forward = _viewPoint.forward;
 
         float startAngle = -_fovAngle / 2;
 
@@ -25,26 +36,49 @@ public class CanSeePlayer : AbstractCondition
             float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
             Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
 
-            Ray ray = new Ray(_viewPoint.position, direction);
+            Ray ray = new Ray(_currentPos, direction);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, _viewDistance))
             {
                 if (hit.collider.gameObject.layer == 6)
                 {
-                    Debug.DrawLine(_viewPoint.position, hit.point, Color.red);
+                    Debug.DrawLine(_currentPos, hit.point, Color.red);
                     return true;
                 }
             }
             else
             {
-                Debug.DrawLine(_viewPoint.position, _viewPoint.position + direction * _viewDistance, Color.green);
+                Debug.DrawLine(_currentPos, _currentPos + direction * _viewDistance, Color.green);
             }
         }
         return false;
     }
 
-    private void OnDrawGizmos()
+	private void CheckNextPoint()
+	{
+		int nextIndex = (_viewIndex + 1) % _viewPoints.Length;
+		Debug.Log("NEXT: " + nextIndex + " CURRENTPOS:" + _currentPos);
+		_currentPos = Vector3.SmoothDamp(_currentPos, _viewPoints[nextIndex].position, ref _velocity, 0.2f);
+
+		if (_viewIndex < nextIndex && _currentPos.y > _viewPoints[nextIndex].position.y)
+		{
+			SetNextPoint();
+		}
+	}
+	private void SetNextPoint()
+	{
+		int nextIndex = (_viewIndex + 1) % _viewPoints.Length;
+		if (nextIndex == 0)
+		{
+			_viewIndex = 0;
+			_currentPos = _viewPoints[0].position;
+		}
+		else
+			_viewIndex = nextIndex;
+	}
+
+	private void OnDrawGizmos()
     {
         Vector3 forward = _viewPoint.forward;
 
@@ -54,7 +88,7 @@ public class CanSeePlayer : AbstractCondition
             float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
             Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
 
-            Ray ray = new Ray(_viewPoint.position, direction);
+            Ray ray = new Ray(_currentPos, direction);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, _viewDistance))
@@ -63,12 +97,12 @@ public class CanSeePlayer : AbstractCondition
                     Gizmos.color = Color.red;
                 else
                     Gizmos.color = Color.green;
-                Gizmos.DrawLine(_viewPoint.position, _viewPoint.position + (direction * _viewDistance));
+                Gizmos.DrawLine(_currentPos, _currentPos + (direction * _viewDistance));
             }
             else
             {
                 Gizmos.color = Color.red;
-                Gizmos.DrawLine(_viewPoint.position, _viewPoint.position + (direction * _viewDistance));
+                Gizmos.DrawLine(_currentPos, _currentPos + (direction * _viewDistance));
 
             }
         }
