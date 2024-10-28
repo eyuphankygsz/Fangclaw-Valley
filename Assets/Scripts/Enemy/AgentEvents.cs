@@ -10,9 +10,34 @@ public class AgentEvents : MonoBehaviour
     private NavMeshAgent _agent;
     [SerializeField]
     private Transform _target;
-
     [SerializeField]
     private UnityEvent _events;
+
+    EnemyStateMachine _stateMachine;
+
+    private void Awake()
+    {
+        _stateMachine = GetComponent<EnemyStateMachine>();
+    }
+    private void SetState(string stateName)
+    {
+        _stateMachine.SetCurrentState(stateName);
+    }
+
+
+    public void SetEvents(CustomEvents cEvents)
+    {
+        _events = cEvents.GetEvents();
+    }
+    public void SetStopDistance(float distance)
+    {
+        _agent.stoppingDistance = distance;
+    }
+    public void SetPosition(Transform tf)
+    {
+        transform.position = tf.position;
+        transform.rotation = tf.rotation;
+    }
     public void SetDestination()
     {
         _agent.SetDestination(_target.position);

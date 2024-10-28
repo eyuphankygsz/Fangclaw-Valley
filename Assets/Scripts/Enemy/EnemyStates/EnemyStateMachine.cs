@@ -29,12 +29,16 @@ public class EnemyStateMachine : MonoBehaviour
         SetCurrentState(_startState.GetComponent<IEnemyState>());
 	}
 
-	public void SetCurrentState(IEnemyState state)
-	{
-		EnterState(state);
-	}
+    public void SetCurrentState(IEnemyState state)
+    {
+        EnterState(state);
+    }
+    public void SetCurrentState(string stateName)
+    {
+        EnterState(GetState(stateName));
+    }
 
-	public void Update()
+    public void Update()
 	{
 		_currentState.UpdateState();
 		CheckTransitions();

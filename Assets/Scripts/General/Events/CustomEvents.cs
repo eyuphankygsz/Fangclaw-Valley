@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Pipeline;
 using UnityEngine;
 using UnityEngine.Events;
 using Zenject;
@@ -63,6 +64,7 @@ public class CustomEvents : MonoBehaviour, ISaveable
 		_onTriggerEvents.Invoke();
 		gameObject.SetActive(false);
 	}
+	public UnityEvent GetEvents() => _onTriggerEvents;
 }
 
 public class CEventData : GameData
