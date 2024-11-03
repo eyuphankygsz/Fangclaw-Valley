@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 	private bool _freeze, _force;
 
 	private bool _hiding;
+	public bool Hiding { get { return _hiding; } }
 
 	private void GameFreeze(bool freeze)
 	{

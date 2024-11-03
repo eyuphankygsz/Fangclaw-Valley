@@ -14,7 +14,7 @@ public class EnemyStateMachine : MonoBehaviour
 
 
     [SerializeField]
-    private StateTransitionList _transitionList;
+    private EnemyStateTransitionList _transitionList;
 
     [SerializeField]
     private EnemyStateDict _enemyStateDict;
@@ -64,7 +64,7 @@ public class EnemyStateMachine : MonoBehaviour
             bool canChange = true;
 
             foreach (var item in transition.Conditions)
-                if (!item.CheckCondition())
+                if (item.Condition.CheckCondition() != item.IsTrue)
                 {
                     canChange = false;
                     break;

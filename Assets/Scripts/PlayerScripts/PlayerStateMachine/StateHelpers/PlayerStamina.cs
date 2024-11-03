@@ -33,7 +33,7 @@ public class PlayerStamina : MonoBehaviour
 
 		while (_stamina > 0)
 		{
-			_stamina -= Time.deltaTime * 20;
+			_stamina -= Time.deltaTime * 10;
 			ChangeUI();
 
 			if (_stamina < 0)
@@ -47,7 +47,7 @@ public class PlayerStamina : MonoBehaviour
 	{
 		while (_stamina < _maxStamina)
 		{
-			_stamina += Time.deltaTime * 12f;
+			_stamina += Time.deltaTime * 8f;
 			ChangeUI();
 
 			if (_stamina > _maxStamina)

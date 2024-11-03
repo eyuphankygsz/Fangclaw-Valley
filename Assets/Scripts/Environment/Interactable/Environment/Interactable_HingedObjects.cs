@@ -33,12 +33,13 @@ public class Interactable_HingedObjects : Interactable
 	{
 		base.OnInteract(weapon);
 
-		if (IsLocked() || _animating || _isOn) return;
+		if (IsLocked() || _animating) return;
 
 		SetDoorState(!_isOn, false, atStart: false);
 	}
 	public override void SetStatusManually(bool on) => SetDoorState(on, false, atStart: false);
 	public void SetStatusManuallySilent(bool on) => SetDoorState(on, true, atStart: false);
+	public bool GetStatus() => _isOn;
 	public void AnimationOver()
 	{
 		_animating = false;

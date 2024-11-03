@@ -8,30 +8,50 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private NavMeshAgent _agent;
 	[SerializeField]
-	private float _speed; 
+	private float _speed;
 	[SerializeField]
 	private Transform _target;
+	[SerializeField] 
+	private Transform _enemy;
 
-    [SerializeField]
-    StateTransitionList _transitions;
-
-    public void EnterState()
+	[SerializeField]
+	private EnemyStateTransitionList _transitions;
+	[SerializeField]
+	private TimeForExitFollow _timeForExitFollow;
+	[SerializeField]
+	private EnemyOpenDoor _openDoor;
+	public void EnterState()
 	{
+		_timeForExitFollow.ResetTime();
 		_agent.speed = _speed;
 	}
 
 	public void ExitState()
 	{
-		throw new System.NotImplementedException();
+
 	}
 
-	public StateTransitionList GetTransitions()
+	public EnemyStateTransitionList GetTransitions()
 	{
 		return _transitions;
 	}
 
 	public void UpdateState()
 	{
+		if (_agent.velocity.magnitude < 0.1f)
+			_openDoor.CheckDoors();
+
+		if (_agent.remainingDistance <= _agent.stoppingDistance)
+			TurnEnemy();
+
 		_agent.SetDestination(_target.position);
+	}
+
+	private void TurnEnemy()
+	{
+		Vector3 lookAt = _target.position;
+		lookAt.y = _enemy.position.y;
+
+		_enemy.LookAt(lookAt);
 	}
 }

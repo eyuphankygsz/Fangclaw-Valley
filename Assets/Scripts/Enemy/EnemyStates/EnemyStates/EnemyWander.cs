@@ -10,6 +10,8 @@ public class EnemyWander : MonoBehaviour, IEnemyState
     [SerializeField]
     private float _wanderRange;
     [SerializeField]
+    private float _speed;
+    [SerializeField]
     private const float minDistance = 2f;
     private Vector3 _wanderCenter;
 
@@ -20,11 +22,12 @@ public class EnemyWander : MonoBehaviour, IEnemyState
     [SerializeField]
     private TimeForSearch _timeForSearch;
     [SerializeField]
-    StateTransitionList _transitions;
+	EnemyStateTransitionList _transitions;
 
     public void EnterState()
     {
         _timeBeforeWander.ResetTime();
+        _agent.speed = _speed;
         FindNewWanderPoint();
     }
 
@@ -33,7 +36,7 @@ public class EnemyWander : MonoBehaviour, IEnemyState
         throw new System.NotImplementedException();
     }
 
-    public StateTransitionList GetTransitions()
+    public EnemyStateTransitionList GetTransitions()
     {
         return _transitions;
     }

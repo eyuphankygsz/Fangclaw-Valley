@@ -38,9 +38,9 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 	private float _targetFocusDistance = 0f;
 
 	private float _initialChromaticAberration = 0f;
-	private float _targetChromaticAberration = 1f;
+	private float _targetChromaticAberration = 1.1f;
 
-	private Color _initialColor = new Color(219f / 255f, 36f / 255f, 36f / 255f);
+	private Color _initialColor = new Color(255f / 255f, 95f / 255f, 95f / 255f);
 	private Color _targetColor = new Color(210f / 255f, 0f, 0f);
 	private float _intensity = 1.1f, _saturation = -65f;
 
