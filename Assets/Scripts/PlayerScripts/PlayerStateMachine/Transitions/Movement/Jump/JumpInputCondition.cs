@@ -11,4 +11,9 @@ public class JumpInputCondition : AbstractCondition
 			return true;
 		return false;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

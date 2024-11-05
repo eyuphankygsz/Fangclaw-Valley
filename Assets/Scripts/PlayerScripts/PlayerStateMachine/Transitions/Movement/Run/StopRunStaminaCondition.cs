@@ -27,4 +27,9 @@ public class StopRunStaminaCondition : AbstractCondition
 		_playing = false;
 		return false;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

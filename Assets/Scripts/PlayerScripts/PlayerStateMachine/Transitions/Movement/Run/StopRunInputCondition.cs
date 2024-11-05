@@ -11,4 +11,9 @@ public class StopRunInputCondition : AbstractCondition
 
 		return false;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

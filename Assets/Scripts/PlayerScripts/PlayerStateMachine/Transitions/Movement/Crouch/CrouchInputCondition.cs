@@ -12,4 +12,9 @@ public class CrouchInputCondition : AbstractCondition
 
 		return false;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

@@ -14,4 +14,8 @@ public class JumpStaminaCondition : AbstractCondition
             return true;
         return false;
     }
+
+    public override void ResetFrameFreeze()
+    {
+    }
 }

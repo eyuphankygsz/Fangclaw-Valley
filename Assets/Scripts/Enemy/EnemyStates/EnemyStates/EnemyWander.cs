@@ -12,7 +12,7 @@ public class EnemyWander : MonoBehaviour, IEnemyState
     [SerializeField]
     private float _speed;
     [SerializeField]
-    private const float minDistance = 2f;
+    private const float minDistance = 4f;
     private Vector3 _wanderCenter;
 
     private bool _isWandering, _isSearchingNewTarget, _isSearching;
@@ -22,12 +22,14 @@ public class EnemyWander : MonoBehaviour, IEnemyState
     [SerializeField]
     private TimeForSearch _timeForSearch;
     [SerializeField]
-	EnemyStateTransitionList _transitions;
-
+    EnemyStateTransitionList _transitions;
+    [SerializeField]
+    private Animator _animator;
     public void EnterState()
     {
         _timeBeforeWander.ResetTime();
         _agent.speed = _speed;
+        _animator.SetBool("Follow", true);
         FindNewWanderPoint();
     }
 
@@ -45,7 +47,12 @@ public class EnemyWander : MonoBehaviour, IEnemyState
     {
         if (_isSearching)
             if (_timeForSearch.CheckCondition())
+            {
+                Debug.Log("Checking Condition...");
                 FindNewWanderPoint();
+                _timeForSearch.ResetFrameFreeze();
+            }
+
 
         if (_isSearchingNewTarget) return;
         CheckTarget();
@@ -56,6 +63,7 @@ public class EnemyWander : MonoBehaviour, IEnemyState
         if (!_agent.pathPending && _agent.remainingDistance <= _agent.stoppingDistance)
             if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f)
             {
+                _animator.SetBool("Follow", false);
                 _isWandering = false;
                 _isSearching = true;
                 _isSearchingNewTarget = true;
@@ -88,6 +96,8 @@ public class EnemyWander : MonoBehaviour, IEnemyState
                 _isWandering = true;
                 _wanderCenter = hit.position;
                 _agent.SetDestination(hit.position);
+                _animator.SetBool("Follow", true);
+                Debug.Log("Found");
             }
 
         }

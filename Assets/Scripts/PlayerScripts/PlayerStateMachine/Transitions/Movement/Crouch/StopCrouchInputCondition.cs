@@ -11,4 +11,9 @@ public class StopCrouchInputCondition : AbstractCondition
 
 		return false;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

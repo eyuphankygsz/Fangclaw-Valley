@@ -8,17 +8,15 @@ public class EnemySearch : MonoBehaviour, IEnemyState
     [SerializeField]
     private NavMeshAgent _agent;
     [SerializeField]
-    private float _wanderRange;
+    private float _searchRange;
     [SerializeField]
     private float _speed;
     [SerializeField]
-    private const float minDistance = 2f;
-    private Vector3 _wanderCenter;
+    private const float _minDistance = 2f;
+    private Vector3 _searchCenter;
 
     private bool _isWandering, _isSearchingNewTarget, _isSearching;
 
-    [SerializeField]
-    private TimeForExitWander _timeBeforeWander;
     [SerializeField]
     private TimeForSearch _timeForSearch;
     [SerializeField]
@@ -26,7 +24,8 @@ public class EnemySearch : MonoBehaviour, IEnemyState
 
     public void EnterState()
     {
-        _timeBeforeWander.ResetTime();
+        _searchCenter = _agent.destination;
+        _timeForSearch.ResetTime();
         _agent.speed = _speed;
         FindNewWanderPoint();
     }
@@ -66,7 +65,7 @@ public class EnemySearch : MonoBehaviour, IEnemyState
     {
         _isSearching = false;
         _isSearchingNewTarget = true;
-        _wanderCenter = transform.position;
+        _searchCenter = transform.position;
         int i = 0;
         while (!_isWandering)
         {
@@ -74,19 +73,19 @@ public class EnemySearch : MonoBehaviour, IEnemyState
             do
             {
                 i++;
-                Vector2 randomCircle = Random.insideUnitCircle.normalized * Random.Range(minDistance, _wanderRange);
-                randomPoint = _wanderCenter + new Vector3(randomCircle.x, 0, randomCircle.y);
+                Vector2 randomCircle = Random.insideUnitCircle.normalized * Random.Range(_minDistance, _searchRange);
+                randomPoint = _searchCenter + new Vector3(randomCircle.x, 0, randomCircle.y);
                 if (i == 10)
                     break;
             }
-            while (Vector3.Distance(_wanderCenter, randomPoint) < minDistance);
+            while (Vector3.Distance(_searchCenter, randomPoint) < _minDistance);
 
             NavMeshHit hit;
-            if (NavMesh.SamplePosition(randomPoint, out hit, _wanderRange, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(randomPoint, out hit, _searchRange, NavMesh.AllAreas))
             {
                 _isSearchingNewTarget = false;
                 _isWandering = true;
-                _wanderCenter = hit.position;
+                _searchCenter = hit.position;
                 _agent.SetDestination(hit.position);
             }
 

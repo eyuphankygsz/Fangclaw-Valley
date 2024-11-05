@@ -10,4 +10,9 @@ public class OnGroundCondition : AbstractCondition
 	{
 		return _groundCheck.IsOnGround();
 	}
+
+    public override void ResetFrameFreeze()
+    {
+		
+    }
 }

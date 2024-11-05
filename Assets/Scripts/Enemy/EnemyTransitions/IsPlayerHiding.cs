@@ -6,4 +6,9 @@ public class IsPlayerHiding : AbstractCondition
 	{
         return _controller.Hiding;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

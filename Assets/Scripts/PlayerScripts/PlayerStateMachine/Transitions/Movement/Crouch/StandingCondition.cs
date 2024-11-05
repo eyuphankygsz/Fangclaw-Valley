@@ -8,5 +8,10 @@ public class StandingCondition : AbstractCondition
 			return true;
 
 		return false;
-	}
+    }
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

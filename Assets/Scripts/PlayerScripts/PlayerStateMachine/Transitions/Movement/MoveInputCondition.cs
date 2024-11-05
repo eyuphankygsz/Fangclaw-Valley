@@ -11,4 +11,8 @@ public class MoveInputCondition : AbstractCondition
 
 		return false;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+    }
 }

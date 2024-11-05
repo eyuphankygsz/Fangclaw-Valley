@@ -12,4 +12,9 @@ public class DownVelocityCheck : AbstractCondition
             return true;
         return false;
     }
+
+    public override void ResetFrameFreeze()
+    {
+
+    }
 }

@@ -28,48 +28,66 @@ public class CanSeePlayer : AbstractCondition
 
     private bool _canSee;
 
-	private void Awake()
-	{
-		_currentPos = _viewPoints[0].position;
-	}
-	public override bool CheckCondition()
-	{
-		return _canSee;
-	}
-
-	public void SendRays()
+    private void Awake()
     {
-		CheckNextPoint();
+        _currentPos = _viewPoints[0].position;
+    }
+    public override bool CheckCondition()
+    {
+        return _canSee;
+    }
 
-		Vector3 forward = _viewPoints[_viewIndex].forward;
+    public void SendRays()
+    {
+        CheckNextPoint();
 
-		float startAngle = -_fovAngle / 2;
+        Vector3 forward = _viewPoints[_viewIndex].forward;
 
-		for (int i = 0; i <= _rayCount; i++)
-		{
-			float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
-			Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
+        float startAngle = -_fovAngle / 2;
 
-			Ray ray = new Ray(_currentPos, direction);
-			RaycastHit hit;
+        for (int i = 0; i <= _rayCount; i++)
+        {
+            float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
+            Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
 
-			if (Physics.Raycast(ray, out hit, _viewDistance))
-			{
-				if (hit.collider.gameObject.layer == 6)
-				{
-					Debug.DrawLine(_currentPos, hit.point, Color.red);
-					_exitFollow.ResetTime();
-					_timeForLostPlayer.ResetTime();
-					_canSee = true;
-				}
-			}
-			else
-			{
-				Debug.DrawLine(_currentPos, _currentPos + direction * _viewDistance, Color.green);
-			}
-		}
-		_canSee = false;
-	}
+            Ray ray = new Ray(_currentPos, direction);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, _viewDistance, _layer))
+            {
+                RaycastHit hitOthers;
+                if (Physics.Raycast(ray, out hitOthers, _viewDistance))
+                {
+                    int layer = hitOthers.collider.gameObject.layer;
+                    if (layer != 6)
+                    {
+                        if (layer == 11)
+                        {
+                            Debug.DrawLine(_currentPos, hit.point, Color.red);
+                            _exitFollow.ResetTime();
+                            _timeForLostPlayer.ResetTime();
+                            _canSee = true;
+                        }
+                        else
+                            _canSee = false;
+
+                    }
+                    else
+                    {
+                        Debug.DrawLine(_currentPos, hit.point, Color.red);
+                        _exitFollow.ResetTime();
+                        _timeForLostPlayer.ResetTime();
+                        _canSee = true;
+                    }
+                }
+            }
+            else
+            {
+                Debug.DrawLine(_currentPos, _currentPos + direction * _viewDistance, Color.green);
+            }
+        }
+        _canSee = false;
+    }
 
     private void CheckNextPoint()
     {
@@ -78,9 +96,9 @@ public class CanSeePlayer : AbstractCondition
         _currentPos = new Vector3(target.x, _currentPos.y, target.z);
         _currentPos = Vector3.SmoothDamp(_currentPos, _viewPoints[nextIndex].position, ref _velocity, .5f);
 
-		if ((_viewIndex < nextIndex && _currentPos.y >= _viewPoints[nextIndex].position.y - .1f) || (_viewIndex > nextIndex && _currentPos.y <= _viewPoints[nextIndex].position.y + .1f))
+        if ((_viewIndex < nextIndex && _currentPos.y >= _viewPoints[nextIndex].position.y - .1f) || (_viewIndex > nextIndex && _currentPos.y <= _viewPoints[nextIndex].position.y + .1f))
             SetNextPoint();
-	}
+    }
     private void SetNextPoint()
     {
         int nextIndex = (_viewIndex + 1) % _viewPoints.Length;
@@ -91,9 +109,9 @@ public class CanSeePlayer : AbstractCondition
         }
         else
             _viewIndex = nextIndex;
-	}
+    }
 
-	private void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         Vector3 forward = _viewPoints[_viewIndex].forward;
 
@@ -122,5 +140,10 @@ public class CanSeePlayer : AbstractCondition
 
             }
         }
+    }
+
+    public override void ResetFrameFreeze()
+    {
+
     }
 }

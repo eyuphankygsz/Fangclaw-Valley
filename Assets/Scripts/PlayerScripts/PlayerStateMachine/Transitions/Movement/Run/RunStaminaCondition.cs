@@ -31,4 +31,9 @@ public class RunStaminaCondition : AbstractCondition
 
 		return false;
 	}
+
+    public override void ResetFrameFreeze()
+    {
+ 
+	}
 }

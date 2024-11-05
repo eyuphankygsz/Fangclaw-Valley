@@ -21,6 +21,8 @@ public class EnemyStateMachine : MonoBehaviour
 
     private Dictionary<string, IEnemyState> _states;
 
+    [SerializeField]
+    private List<AbstractCondition> _allConditions;
 
     private void Start()
 	{
@@ -46,6 +48,7 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void EnterState(IEnemyState state)
 	{
+        Debug.Log("Deneme");
 		_currentState?.ExitState();
         _currentState = state;
         _transitionList = _currentState.GetTransitions();
@@ -73,6 +76,12 @@ public class EnemyStateMachine : MonoBehaviour
             if (canChange)
                 SetCurrentState(GetState(transition.TransitionName));
         }
+
+        foreach (var item in _allConditions)
+        {
+            item.ResetFrameFreeze();
+        }
+
     }
     private IEnemyState GetState(string name)
     {
