@@ -26,43 +26,50 @@ public class CanSeePlayer : AbstractCondition
     [SerializeField]
     private TimeForLostPlayer _timeForLostPlayer;
 
+    private bool _canSee;
+
 	private void Awake()
 	{
 		_currentPos = _viewPoints[0].position;
 	}
 	public override bool CheckCondition()
+	{
+		return _canSee;
+	}
+
+	public void SendRays()
     {
-        CheckNextPoint();
+		CheckNextPoint();
 
 		Vector3 forward = _viewPoints[_viewIndex].forward;
 
-        float startAngle = -_fovAngle / 2;
+		float startAngle = -_fovAngle / 2;
 
-        for (int i = 0; i <= _rayCount; i++)
-        {
-            float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
-            Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
+		for (int i = 0; i <= _rayCount; i++)
+		{
+			float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
+			Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
 
-            Ray ray = new Ray(_currentPos, direction);
-            RaycastHit hit;
+			Ray ray = new Ray(_currentPos, direction);
+			RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, _viewDistance))
-            {
-                if (hit.collider.gameObject.layer == 6)
-                {
-                    Debug.DrawLine(_currentPos, hit.point, Color.red);
-                    _exitFollow.ResetTime();
-                    _timeForLostPlayer.ResetTime();
-                    return true;
-                }
-            }
-            else
-            {
-                Debug.DrawLine(_currentPos, _currentPos + direction * _viewDistance, Color.green);
-            }
-        }
-        return false;
-    }
+			if (Physics.Raycast(ray, out hit, _viewDistance))
+			{
+				if (hit.collider.gameObject.layer == 6)
+				{
+					Debug.DrawLine(_currentPos, hit.point, Color.red);
+					_exitFollow.ResetTime();
+					_timeForLostPlayer.ResetTime();
+					_canSee = true;
+				}
+			}
+			else
+			{
+				Debug.DrawLine(_currentPos, _currentPos + direction * _viewDistance, Color.green);
+			}
+		}
+		_canSee = false;
+	}
 
     private void CheckNextPoint()
     {

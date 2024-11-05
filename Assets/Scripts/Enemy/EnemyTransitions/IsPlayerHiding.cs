@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class IsPlayerHiding : MonoBehaviour
+public class IsPlayerHiding : AbstractCondition
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private PlayerController _controller;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public override bool CheckCondition()
+	{
+        return _controller.Hiding;
+	}
 }

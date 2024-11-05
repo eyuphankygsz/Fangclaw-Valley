@@ -6,12 +6,15 @@ using UnityEngine.AI;
 public class WhispererController : MonoBehaviour
 {
 	[SerializeField]
-	private Transform _player; 
-
+	private Transform _player;
+	[SerializeField]
+	private CanSeePlayer _canSee;
+	[SerializeField]
+	private NavMeshAgent _agent;
 
 	private WhispererStates _state;
-	private NavMeshAgent _agent;
 	public bool Stop;
+
 
 	void Start()
 	{
@@ -21,7 +24,7 @@ public class WhispererController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
+		_canSee.SendRays();
 	}
 
 	public void SetPosition(Transform tf)
