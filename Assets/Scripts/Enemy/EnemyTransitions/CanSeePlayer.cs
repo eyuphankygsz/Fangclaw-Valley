@@ -11,8 +11,10 @@ public class CanSeePlayer : AbstractCondition
     private int _rayCount = 20;
     [SerializeField]
     private LayerMask _layer;
-
     [SerializeField]
+    private LayerMask _canSeeLayer;
+
+	[SerializeField]
     private Transform[] _viewPoints;
     private Vector3 _currentPos;
 
@@ -58,10 +60,10 @@ public class CanSeePlayer : AbstractCondition
                 RaycastHit hitOthers;
                 if (Physics.Raycast(ray, out hitOthers, _viewDistance))
                 {
-                    int layer = hitOthers.collider.gameObject.layer;
+					int layer = hitOthers.collider.gameObject.layer;
                     if (layer != 6)
                     {
-                        if (layer == 11)
+                        if ((_canSeeLayer.value & (1 << layer)) != 0)
                         {
                             Debug.DrawLine(_currentPos, hit.point, Color.red);
                             _exitFollow.ResetTime();
@@ -69,24 +71,25 @@ public class CanSeePlayer : AbstractCondition
                             _canSee = true;
                         }
                         else
+                        {
                             _canSee = false;
+						}
 
-                    }
+					}
                     else
                     {
                         Debug.DrawLine(_currentPos, hit.point, Color.red);
                         _exitFollow.ResetTime();
                         _timeForLostPlayer.ResetTime();
                         _canSee = true;
-                    }
-                }
+					}
+				}
             }
             else
             {
                 Debug.DrawLine(_currentPos, _currentPos + direction * _viewDistance, Color.green);
             }
         }
-        _canSee = false;
     }
 
     private void CheckNextPoint()
@@ -111,37 +114,7 @@ public class CanSeePlayer : AbstractCondition
             _viewIndex = nextIndex;
     }
 
-    private void OnDrawGizmos()
-    {
-        Vector3 forward = _viewPoints[_viewIndex].forward;
-
-        float startAngle = -_fovAngle / 2;
-        for (int i = 0; i <= _rayCount; i++)
-        {
-            float angle = startAngle + (_fovAngle * (i / (float)_rayCount));
-            Vector3 direction = Quaternion.Euler(0, angle, 0) * forward;
-
-            Ray ray = new Ray(_currentPos, direction);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, _viewDistance))
-            {
-                if (hit.collider.gameObject.layer == 6)
-                    Gizmos.color = Color.red;
-                else
-                    Gizmos.color = Color.green;
-
-                Gizmos.DrawLine(_currentPos, _currentPos + (direction * _viewDistance));
-            }
-            else
-            {
-                Gizmos.color = Color.green;
-                Gizmos.DrawLine(_currentPos, _currentPos + (direction * _viewDistance));
-
-            }
-        }
-    }
-
+   
     public override void ResetFrameFreeze()
     {
 

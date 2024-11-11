@@ -35,7 +35,6 @@ public class EnemyWander : MonoBehaviour, IEnemyState
 
     public void ExitState()
     {
-        throw new System.NotImplementedException();
     }
 
     public EnemyStateTransitionList GetTransitions()

@@ -11,6 +11,8 @@ public class WhispererController : MonoBehaviour
 	private CanSeePlayer _canSee;
 	[SerializeField]
 	private NavMeshAgent _agent;
+	[SerializeField]
+	private IsAnimationOver _animOver;
 
 	private WhispererStates _state;
 	public bool Stop;
@@ -37,6 +39,10 @@ public class WhispererController : MonoBehaviour
 	{
 		_agent.SetDestination(_player.position);
 
+	}
+	public void EndAnimation()
+	{
+		_animOver.SetOver(true);
 	}
 	public void SearchPlayer()
 	{

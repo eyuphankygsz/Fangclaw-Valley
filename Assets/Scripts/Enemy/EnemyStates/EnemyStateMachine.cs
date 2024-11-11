@@ -48,7 +48,7 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void EnterState(IEnemyState state)
 	{
-        Debug.Log("Deneme");
+        Debug.Log(state);
 		_currentState?.ExitState();
         _currentState = state;
         _transitionList = _currentState.GetTransitions();

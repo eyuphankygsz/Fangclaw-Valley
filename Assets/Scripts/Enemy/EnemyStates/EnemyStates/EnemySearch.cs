@@ -22,8 +22,12 @@ public class EnemySearch : MonoBehaviour, IEnemyState
     [SerializeField]
 	EnemyStateTransitionList _transitions;
 
+    [SerializeField]
+    private Animator _animator;
+
     public void EnterState()
     {
+        _animator.SetBool("Search", true);
         _searchCenter = _agent.destination;
         _timeForSearch.ResetTime();
         _agent.speed = _speed;
@@ -31,11 +35,11 @@ public class EnemySearch : MonoBehaviour, IEnemyState
     }
 
     public void ExitState()
-    {
-        throw new System.NotImplementedException();
-    }
+	{
+		_animator.SetBool("Search", false);
+	}
 
-    public EnemyStateTransitionList GetTransitions()
+	public EnemyStateTransitionList GetTransitions()
     {
         return _transitions;
     }

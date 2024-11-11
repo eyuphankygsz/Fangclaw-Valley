@@ -1,94 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class EnemyAttack : MonoBehaviour, IEnemyState
 {
-    [SerializeField]
-    private NavMeshAgent _agent;
-    [SerializeField]
-    private float _searchRange;
-    [SerializeField]
-    private float _speed;
-    [SerializeField]
-    private const float _minDistance = 2f;
-    private Vector3 _searchCenter;
+	[SerializeField]
+	private Animator _animator;
 
-    private bool _isWandering, _isSearchingNewTarget, _isSearching;
+	[SerializeField]
+	private const float _minDistance = 2f;
 
-    [SerializeField]
-    private TimeForSearch _timeForSearch;
-    [SerializeField]
+	private bool _startChecking;
+
+	[SerializeField]
+	private IsAnimationOver _isAnimOver;
+	[SerializeField]
 	EnemyStateTransitionList _transitions;
+	[SerializeField]
+	private TimeForAttack _timeForAttack;
+	[SerializeField]
+	private IsTurnedToTarget _turned;
 
-    public void EnterState()
-    {
-        _searchCenter = _agent.destination;
-        _timeForSearch.ResetTime();
-        _agent.speed = _speed;
-        FindNewWanderPoint();
-    }
+	public void EnterState()
+	{
+		_timeForAttack.ResetTime();
+		_isAnimOver.SetOver(false);
+		_animator.SetTrigger("AttackNormal");
+	}
 
-    public void ExitState()
-    {
-        throw new System.NotImplementedException();
-    }
+	public void ExitState()
+	{
+		_startChecking = false;
+		_turned.CanTurn = false;
+		_animator.ResetTrigger("Attack");
+	}
 
-    public EnemyStateTransitionList GetTransitions()
-    {
-        return _transitions;
-    }
+	public EnemyStateTransitionList GetTransitions()
+	{
+		return _transitions;
+	}
 
-    public void UpdateState()
-    {
-        if (_isSearching)
-            if (_timeForSearch.CheckCondition())
-                FindNewWanderPoint();
+	public void UpdateState()
+	{
+		if (_startChecking && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+			_turned.CanTurn = true;
 
-        if (_isSearchingNewTarget) return;
-        CheckTarget();
-    }
-
-    private void CheckTarget()
-    {
-        if (!_agent.pathPending && _agent.remainingDistance <= _agent.stoppingDistance)
-            if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f)
-            {
-                _isWandering = false;
-                _isSearching = true;
-                _isSearchingNewTarget = true;
-                _timeForSearch.ResetTime();
-            }
-    }
-    private void FindNewWanderPoint()
-    {
-        _isSearching = false;
-        _isSearchingNewTarget = true;
-        _searchCenter = transform.position;
-        int i = 0;
-        while (!_isWandering)
-        {
-            Vector3 randomPoint;
-            do
-            {
-                i++;
-                Vector2 randomCircle = Random.insideUnitCircle.normalized * Random.Range(_minDistance, _searchRange);
-                randomPoint = _searchCenter + new Vector3(randomCircle.x, 0, randomCircle.y);
-                if (i == 10)
-                    break;
-            }
-            while (Vector3.Distance(_searchCenter, randomPoint) < _minDistance);
-
-            NavMeshHit hit;
-            if (NavMesh.SamplePosition(randomPoint, out hit, _searchRange, NavMesh.AllAreas))
-            {
-                _isSearchingNewTarget = false;
-                _isWandering = true;
-                _searchCenter = hit.position;
-                _agent.SetDestination(hit.position);
-            }
-
-        }
-    }
+		if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("AttackNormal"))
+			_startChecking = true;
+	}
 }

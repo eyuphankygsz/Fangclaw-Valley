@@ -33,7 +33,7 @@ public class Interactable_HingedObjects : Interactable
 	{
 		base.OnInteract(weapon);
 
-		if (IsLocked() || _animating) return;
+		if (CheckLock() || _animating) return;
 
 		SetDoorState(!_isOn, false, atStart: false);
 	}
@@ -49,7 +49,9 @@ public class Interactable_HingedObjects : Interactable
 		_lockKey.Locked = false;
 		SetDoorState(true, silent, atStart: false);
 	}
-	private bool IsLocked()
+
+	public bool IsLocked() => _lockKey.Locked;
+	private bool CheckLock()
 	{
 		if (_lockKey.Locked)
 		{
