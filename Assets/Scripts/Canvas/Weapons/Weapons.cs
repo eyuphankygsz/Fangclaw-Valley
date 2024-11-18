@@ -27,9 +27,9 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	protected bool _onAction;
 	protected bool _isFreeze;
 	protected ControlSchema _controls;
+	protected Vector2 _startPos;
 
 	private float _xPolynomial = -1.376f;
-	private Vector2 _startPos;
 	private float _xPolyStart;
 	private float _xPos;
 

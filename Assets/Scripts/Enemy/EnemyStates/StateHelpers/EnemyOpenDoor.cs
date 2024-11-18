@@ -22,7 +22,7 @@ public class EnemyOpenDoor : MonoBehaviour
 		{
 			Interactable_HingedObjects hinged;
 			if (hit.collider.TryGetComponent<Interactable_HingedObjects>(out hinged))
-				if (hinged.GetStatus() == false && hinged.IsLocked())
+				if (hinged.GetStatus() == false && !hinged.IsLocked())
 					hinged.SetStatusManually(true);
 		}
 	}

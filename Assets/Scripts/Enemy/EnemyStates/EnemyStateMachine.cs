@@ -5,42 +5,38 @@ using Zenject;
 public class EnemyStateMachine : MonoBehaviour
 {
 	private IEnemyState _currentState;
-	[SerializeField]
-	private MonoBehaviour _startState;
 
 	[Inject]
 	private InputManager _inputManager;
 
 
 
-    [SerializeField]
-    private EnemyStateTransitionList _transitionList;
+	[SerializeField]
+	private EnemyStateTransitionList _transitionList;
 
-    [SerializeField]
-    private EnemyStateDict _enemyStateDict;
+	[SerializeField]
+	private EnemyStateDict _enemyStateDict;
 
-    private Dictionary<string, IEnemyState> _states;
+	private Dictionary<string, IEnemyState> _states;
 
-    [SerializeField]
-    private List<AbstractCondition> _allConditions;
+	[SerializeField]
+	private List<AbstractCondition> _allConditions;
 
-    private void Start()
+	private void Start()
 	{
-        _states = _enemyStateDict.ToDict();
-
-        SetCurrentState(_startState.GetComponent<IEnemyState>());
+		_states = _enemyStateDict.ToDict();
 	}
 
-    public void SetCurrentState(IEnemyState state)
-    {
-        EnterState(state);
-    }
-    public void SetCurrentState(string stateName)
-    {
-        EnterState(GetState(stateName));
-    }
+	public void SetCurrentState(IEnemyState state)
+	{
+		EnterState(state);
+	}
+	public void SetCurrentState(string stateName)
+	{
+		EnterState(GetState(stateName));
+	}
 
-    public void Update()
+	public void Update()
 	{
 		_currentState.UpdateState();
 		CheckTransitions();
@@ -48,10 +44,10 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void EnterState(IEnemyState state)
 	{
-        Debug.Log(state);
+		Debug.Log(state);
 		_currentState?.ExitState();
-        _currentState = state;
-        _transitionList = _currentState.GetTransitions();
+		_currentState = state;
+		_transitionList = _currentState.GetTransitions();
 
 
 		_currentState.EnterState();
@@ -62,53 +58,55 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void CheckTransitions()
 	{
-        foreach (var transition in _transitionList.Transitions)
-        {
-            bool canChange = true;
+		foreach (var transition in _transitionList.Transitions)
+		{
+			bool canChange = true;
 
-            foreach (var item in transition.Conditions)
-                if (item.Condition.CheckCondition() != item.IsTrue)
-                {
-                    canChange = false;
-                    break;
-                }
+			foreach (var item in transition.Conditions)
+			{
+				if (item.Condition.CheckCondition() != item.IsTrue)
+				{
+					canChange = false;
+					break;
+				}
+			}
 
-            if (canChange)
-                SetCurrentState(GetState(transition.TransitionName));
-        }
+			if (canChange)
+				SetCurrentState(GetState(transition.TransitionName));
+		}
 
-        foreach (var item in _allConditions)
-        {
-            item.ResetFrameFreeze();
-        }
+		foreach (var item in _allConditions)
+		{
+			item.ResetFrameFreeze();
+		}
 
-    }
-    private IEnemyState GetState(string name)
-    {
-        return _states[name];
-    }
+	}
+	private IEnemyState GetState(string name)
+	{
+		return _states[name];
+	}
 }
 
 
 [System.Serializable]
 public class EnemyStateDict
 {
-    [SerializeField]
-    List<PlayerState> _states;
+	[SerializeField]
+	List<PlayerState> _states;
 
-    public Dictionary<string, IEnemyState> ToDict()
-    {
-        Dictionary<string, IEnemyState> states = new Dictionary<string, IEnemyState>();
-        foreach (var item in _states)
-            states.Add(item.Name, item.TheState.GetComponent<IEnemyState>());
+	public Dictionary<string, IEnemyState> ToDict()
+	{
+		Dictionary<string, IEnemyState> states = new Dictionary<string, IEnemyState>();
+		foreach (var item in _states)
+			states.Add(item.Name, item.TheState.GetComponent<IEnemyState>());
 
-        return states;
-    }
+		return states;
+	}
 }
 
 [System.Serializable]
 public class EnemyState
 {
-    public string Name;
-    public MonoBehaviour TheState;
+	public string Name;
+	public MonoBehaviour TheState;
 }

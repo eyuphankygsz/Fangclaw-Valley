@@ -38,12 +38,6 @@ public class EventManager : MonoBehaviour
 			item.Setup();
 	}
 
-	private void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.M))
-			IncreaseTracker();
-	}
-
 }
 
 [System.Serializable]

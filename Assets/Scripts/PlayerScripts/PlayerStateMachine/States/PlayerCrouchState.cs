@@ -18,11 +18,13 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 	private float _speed, _crouchSpeed = 1;
 
 	[SerializeField]
-	PlayerGravity _gravity;
+	private PlayerGravity _gravity;
 	[SerializeField]
-	PlayerCrouch _crouchHelper; 
+	private PlayerCrouch _crouchHelper;
 	[SerializeField]
-	PlayerHide _hideHelper;
+	private PlayerHide _hideHelper;
+	[SerializeField]
+	private NoStateLock _stateLock;
 
 	[SerializeField]
 	private StateTransitionList _transitionList;
@@ -86,6 +88,9 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 	{
 		while (_controller.height > _crouchHeight)
 		{
+			if (_stateLock.Lock)
+				yield return null;
+
 			_controller.height -= Time.deltaTime * _crouchSpeed;
 			_controller.center += Vector3.up * Time.deltaTime * 1;
 
@@ -105,6 +110,9 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 	{
 		while (_controller.height < _normalHeight)
 		{
+			if (_stateLock.Lock)
+				yield return null;
+
 			if (_crouchHelper.CanGetUp())
 			{
 				_controller.height += Time.deltaTime * _crouchSpeed;

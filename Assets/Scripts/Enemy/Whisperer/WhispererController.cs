@@ -13,14 +13,22 @@ public class WhispererController : MonoBehaviour
 	private NavMeshAgent _agent;
 	[SerializeField]
 	private IsAnimationOver _animOver;
+	[SerializeField]
+	private EnemyStateMachine _machine;
+	[SerializeField]
+	private MonoBehaviour _startState, _stunState;
+	[SerializeField]
+	private TimeForExitStun _stunTime;
 
-	private WhispererStates _state;
+
+
 	public bool Stop;
+	public bool Stunned;
 
 
 	void Start()
 	{
-
+		_machine.SetCurrentState(_startState as IEnemyState);
 	}
 
 	// Update is called once per frame
@@ -48,7 +56,13 @@ public class WhispererController : MonoBehaviour
 	{
 
 	}
-
+	public void Shined()
+	{
+		_stunTime.ResetTime();
+		if (Stunned) return;
+		_machine.SetCurrentState(_stunState as IEnemyState);
+		Stunned = true;
+	}
 
 	public void Wander()
 	{
@@ -60,11 +74,4 @@ public class WhispererController : MonoBehaviour
 			return true;
 		return false;
 	}
-}
-
-public enum WhispererStates
-{
-	Wander,
-	Follow,
-	Search
 }

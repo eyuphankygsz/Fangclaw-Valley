@@ -9,8 +9,11 @@ public class TransitionManager : MonoBehaviour
 
 	[SerializeField]
 	private PlayerStateDict _playerStateDict;
+	[SerializeField]
+	private NoStateLock _stateLock;
 
 	private Dictionary<string, IPlayerState> _states;
+
 
 	private void Awake()
 	{
@@ -24,6 +27,7 @@ public class TransitionManager : MonoBehaviour
 
 	public void CheckTransitions(ControlSchema controls)
 	{
+
 		foreach (var transition in _transitionList.Transitions)
 		{
 			bool canChange = true;
@@ -36,7 +40,8 @@ public class TransitionManager : MonoBehaviour
 				}
 
 			if (canChange)
-				_playerStateMachine.SetCurrentState(GetState(transition.TransitionName));
+				if (!_stateLock.Lock)
+					_playerStateMachine.SetCurrentState(GetState(transition.TransitionName));
 		}
 	}
 	private IPlayerState GetState(string name)

@@ -97,7 +97,7 @@ public class CanSeePlayer : AbstractCondition
         int nextIndex = (_viewIndex + 1) % _viewPoints.Length;
         Vector3 target = _viewPoints[_viewIndex].position;
         _currentPos = new Vector3(target.x, _currentPos.y, target.z);
-        _currentPos = Vector3.SmoothDamp(_currentPos, _viewPoints[nextIndex].position, ref _velocity, .5f);
+        _currentPos = Vector3.SmoothDamp(_currentPos, _viewPoints[nextIndex].position, ref _velocity, .1f);
 
         if ((_viewIndex < nextIndex && _currentPos.y >= _viewPoints[nextIndex].position.y - .1f) || (_viewIndex > nextIndex && _currentPos.y <= _viewPoints[nextIndex].position.y + .1f))
             SetNextPoint();

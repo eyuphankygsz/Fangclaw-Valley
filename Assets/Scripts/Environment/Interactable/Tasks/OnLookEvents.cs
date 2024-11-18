@@ -60,23 +60,23 @@ public class OnLookEvents : MonoBehaviour
 	}
 
 	public void Restart() { }
-	private void OnDrawGizmos()
-	{
-		if (_targetObject != null || _mainCamera != null)
-		{
-			Gizmos.color = Color.red;
-			Vector3 directionToTarget = _targetObject.position - _mainCamera.transform.position;
+	//private void OnDrawGizmos()
+	//{
+	//	if (_targetObject != null || _mainCamera != null)
+	//	{
+	//		Gizmos.color = Color.red;
+	//		Vector3 directionToTarget = _targetObject.position - _mainCamera.transform.position;
 
-			Vector3 forwardDirection = _mainCamera.transform.forward;
+	//		Vector3 forwardDirection = _mainCamera.transform.forward;
 
-			Quaternion leftAngle = Quaternion.Euler(0, -_maxAngle, 0);
-			Quaternion rightAngle = Quaternion.Euler(0, _maxAngle, 0);
-			Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + forwardDirection * _maxDistance); // Ön
-			Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + leftAngle * forwardDirection * _maxDistance); // Sol
-			Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + rightAngle * forwardDirection * _maxDistance); // Sað
+	//		Quaternion leftAngle = Quaternion.Euler(0, -_maxAngle, 0);
+	//		Quaternion rightAngle = Quaternion.Euler(0, _maxAngle, 0);
+	//		Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + forwardDirection * _maxDistance); // Ön
+	//		Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + leftAngle * forwardDirection * _maxDistance); // Sol
+	//		Gizmos.DrawLine(_mainCamera.transform.position, _mainCamera.transform.position + rightAngle * forwardDirection * _maxDistance); // Sað
 
-			Gizmos.color = Color.green;
-			Gizmos.DrawSphere(_targetObject.position, 0.1f);
-		}
-	}
+	//		Gizmos.color = Color.green;
+	//		Gizmos.DrawSphere(_targetObject.position, 0.1f);
+	//	}
+	//}
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 using Zenject;
 
@@ -23,9 +24,11 @@ public class Interactable_HingedObjects : Interactable
 	[SerializeField]
 	private AudioSource _source;
 
+	private NavMeshObstacle _navObstacle;
 	private void Awake()
 	{
 		_animator = GetComponent<Animator>();
+		_navObstacle = GetComponent<NavMeshObstacle>();
 		base.Awake();
 
 	}
@@ -118,6 +121,7 @@ public class Interactable_HingedObjects : Interactable
 			PlayClip(_isOn ? _openClips : _closeClips);
 		_animator.SetBool("On", _isOn);
 		_animating = _isOn;
+		_navObstacle.carving = !_isOn;
 	}
 
 

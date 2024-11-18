@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_playerInteractions.StopInteractions(_freeze);
 		_playerWeapon.OnForce(force);
 	}
+	public void SetPos(Transform transform)
+	{
+		transform.position = transform.position;
+		transform.rotation = transform.rotation;
+	}
 	private void Awake()
 	{
 		_instance = this;

@@ -13,8 +13,10 @@ public class Lantern : Weapons
 	[SerializeField] private InventoryItem _match;
 	[SerializeField] private AudioClip _matchSound;
 	[SerializeField] private LanternHelpers _lanternHelpers;
+	[SerializeField] private ShineMode _shine;
 
 	private bool _onFire;
+	private bool _isShining;
 
 
 	private Dictionary<int, IWeaponModes> _modes = new Dictionary<int, IWeaponModes>();
@@ -25,21 +27,34 @@ public class Lantern : Weapons
 	[Inject]
 	private InventoryManager _inventoryManager;
 	private bool _enlighting;
+
+	private Vector3 _latestPos;
 	public override void Move()
 	{
 		if (_enlighting) return;
+		SaveLastPos();
 		CheckFuel();
 		MoveNormal();
 		MoveByCamera();
 		ClampMove();
+		HandleShine();
 	}
 
+	private void SaveLastPos()
+	{
+		if (_weaponHelpers.StopChange) return;
+		_latestPos = transform.localPosition;
+	}
 	private void CheckFuel()
 	{
 		if (_lanternHelpers.IsGasEmpty())
 			Delight();
 	}
-
+	private void HandleShine()
+	{
+		if (_isShining)
+			_shine.ExecuteModeUpdate();
+	}
 
 	private void MoveNormal()
 	{
@@ -71,7 +86,8 @@ public class Lantern : Weapons
 		if (ctx.performed && !_isFreeze)
 		{
 			SetLightning(false);
-			_lanternHelpers.LitMultiplier = 4;
+			_isShining = true;
+			_lanternHelpers.LitMultiplier = 10;
 		}
 	}
 	private void OnRightTriggerCanceled(InputAction.CallbackContext ctx)
@@ -79,12 +95,35 @@ public class Lantern : Weapons
 		if (ctx.canceled && !_isFreeze)
 		{
 			SetLightning(true);
+			_isShining = false;
 			_lanternHelpers.LitMultiplier = 1;
 		}
 	}
 	private void OnEnable()
 	{
 		_animator?.SetBool("OnFire", _onFire);
+	}
+	private void OnDisable()
+	{
+		if (_weaponHelpers.StopChange)
+		{
+			_enlighting = false;
+			_weaponHelpers.StopChange = false;
+			_animator.ResetTrigger("Enlight");
+			_animator.ResetTrigger("Delight");
+			_source.Stop();
+			if (!_onFire)
+			{
+				_animator.Play("NotOnFire");
+				_lanternHelpers.StopUsingGas();
+			}
+			else
+			{
+				_animator.Play("OnFire");
+				_lanternHelpers.StartUsingGas();
+			}
+			transform.localPosition = _latestPos;
+		}
 	}
 	private void HandleActivation()
 	{

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33723646176332728}
   - component: {fileID: 23060372794859888}
   - component: {fileID: 6411302890417799510}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_Prop_Rubbish_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
