@@ -25,8 +25,17 @@ public class EnemyWander : MonoBehaviour, IEnemyState
     EnemyStateTransitionList _transitions;
     [SerializeField]
     private Animator _animator;
-    public void EnterState()
+
+
+	[SerializeField]
+	private AudioClip _sawYou;
+	[SerializeField]
+	CanPlayAudio _canPlayAudio;
+
+	public void EnterState()
     {
+        _canPlayAudio.EnablePlay(_sawYou);
+
         _timeBeforeWander.ResetTime();
         _agent.speed = _speed;
         _animator.SetBool("Follow", true);

@@ -26,7 +26,20 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private Animator _animator;
 
+	[SerializeField]
+	private AudioSource _audioSource;
+	[SerializeField]
+	private AudioClip _sawYou;
+	[SerializeField]
+	CanPlayAudio _canPlayAudio;
+
+
 	private Vector3 _targetLastPos;
+
+	private void Awake()
+	{
+		_canPlayAudio.AddAudio(_sawYou);
+	}
 	public void EnterState()
 	{
 		_timeForExitFollow.ResetTime();
@@ -34,6 +47,11 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 		_animator.SetBool("Follow", true);
 		_timeForExitStuck.ResetTime();
 		_isStuck.SetLastPoint(transform.position);
+		if (_canPlayAudio.CanPlay(_sawYou))
+		{
+			_audioSource.clip = _sawYou;
+			_audioSource.Play();
+		}
 	}
 
 	public void ExitState()
@@ -48,7 +66,7 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-		if (_agent.velocity.magnitude < 0.1f)
+		if (_isStuck.GetStuck())
 			_openDoor.CheckDoors();
 
 		if (_agent.remainingDistance <= _agent.stoppingDistance)

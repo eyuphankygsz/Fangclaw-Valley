@@ -23,6 +23,7 @@ public class EnemyEscape : MonoBehaviour, IEnemyState
 	private Transform _selectedEscape;
 	private float _stoppingDistance;
 
+	[SerializeField]
 	private Collider _collider;
 	private bool _arrived, _escapeAnimationStarted;
 	

@@ -25,10 +25,18 @@ public class EnemySearch : MonoBehaviour, IEnemyState
     [SerializeField]
     private Animator _animator;
 
-    public void EnterState()
+
+	[SerializeField]
+	private AudioClip _sawYou;
+	[SerializeField]
+	CanPlayAudio _canPlayAudio;
+
+	public void EnterState()
     {
+        _canPlayAudio.EnablePlay(_sawYou);
+
         _animator.SetBool("Search", true);
-        _searchCenter = _agent.destination;
+		_searchCenter = _agent.destination;
         _timeForSearch.ResetTime();
         _agent.speed = _speed;
         FindNewWanderPoint();
@@ -59,8 +67,10 @@ public class EnemySearch : MonoBehaviour, IEnemyState
         if (!_agent.pathPending && _agent.remainingDistance <= _agent.stoppingDistance)
             if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f)
             {
-                _isWandering = false;
-                _isSearching = true;
+                _isWandering = false; 
+                _animator.SetBool("Follow", false);
+				_animator.SetBool("Search", true);
+				_isSearching = true;
                 _isSearchingNewTarget = true;
                 _timeForSearch.ResetTime();
             }
@@ -87,8 +97,10 @@ public class EnemySearch : MonoBehaviour, IEnemyState
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPoint, out hit, _searchRange, NavMesh.AllAreas))
             {
-                _isSearchingNewTarget = false;
-                _isWandering = true;
+                _isSearchingNewTarget = false; 
+                _animator.SetBool("Follow", true);
+				_animator.SetBool("Search", false);
+				_isWandering = true;
                 _searchCenter = hit.position;
                 _agent.SetDestination(hit.position);
             }

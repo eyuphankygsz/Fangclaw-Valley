@@ -31,7 +31,6 @@ public class PlayerStateMachine : MonoBehaviour
 
 	private void EnterState(IPlayerState state)
 	{
-		Debug.Log(state);
 		_currentState?.ExitState();
 		_currentState = state;
 		_currentState.EnterState();

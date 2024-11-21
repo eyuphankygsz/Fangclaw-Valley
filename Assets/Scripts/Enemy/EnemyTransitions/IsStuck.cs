@@ -13,6 +13,7 @@ public class IsStuck : AbstractCondition
 	[SerializeField]
 	private TimeForExitStuck _stuckTimer;
 
+	private bool _stuck;
 	private bool _freeze;
 	private bool _isTimerChecked;
 
@@ -32,10 +33,12 @@ public class IsStuck : AbstractCondition
 			if (Vector3.Distance(_lastPos, transform.position) <= .01f)
 			{
 				_stuckTimer.CheckCondition();
+				_stuck = true;
 				_isTimerChecked = true;
 			}
 			else
 			{
+				_stuck = false;
 				_stuckTimer.ResetTime();
 			}
 			
@@ -51,9 +54,12 @@ public class IsStuck : AbstractCondition
 		}
 		_freeze = true;
 
-
 		return false;
 	}
 
+	public bool GetStuck()
+	{
+		return _stuck;
+	}
 	public override void ResetFrameFreeze() { _freeze = false; }
 }

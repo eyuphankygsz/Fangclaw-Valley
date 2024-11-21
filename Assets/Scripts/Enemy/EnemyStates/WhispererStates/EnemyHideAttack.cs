@@ -28,6 +28,8 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private Transform _enemy, _player;
 
+	[SerializeField]
+	private IsAnimationOver _isAnimOver;
 
 	private bool _reached, _started;
 	private Transform _destination;
@@ -35,6 +37,8 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 	private PlayableDirector _director;
 	public void EnterState()
 	{
+		_isAnimOver.SetOver(false);
+
 		_agent.stoppingDistance = 0;
 		RaycastHit hit;
 		Ray ray = new Ray(transform.position, _player.transform.position - transform.position);
@@ -55,7 +59,7 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	public void ExitState()
 	{
-		throw new System.NotImplementedException();
+
 	}
 
 	public EnemyStateTransitionList GetTransitions()
