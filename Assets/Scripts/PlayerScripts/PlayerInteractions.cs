@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class PlayerInteractions : MonoBehaviour, IInputHandler
 {
 	[SerializeField]
-	private float _rayLength; 
+	private float _rayLength;
 	[SerializeField]
 	private float _obstacleLength;
 	[SerializeField]
 	private LayerMask _interactableLayers;
+	[SerializeField]
+	private LayerMask _excludeLayers;
 
 	[SerializeField]
 	private Transform _camera;
@@ -76,15 +78,29 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 
 	public void CheckForInteractions()
 	{
+		// Kamera yönünde ilk raycast
 		bool isFound = Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit, _rayLength, _interactableLayers);
 		bool obstacleOnTheWay = false;
+
 		if (isFound)
 		{
 			_obstacleLength = Vector3.Distance(_camera.position, hit.point);
-			if (Physics.Raycast(_camera.position, _camera.forward, out RaycastHit hit2, _obstacleLength))
-				obstacleOnTheWay = hit.collider.gameObject == hit2.collider.gameObject ? false : true;
-		}
 
+			RaycastHit[] hittedObjects = Physics.RaycastAll(_camera.position, _camera.forward, _obstacleLength);
+
+			foreach (var item in hittedObjects)
+			{
+				int itemLayer = item.transform.gameObject.layer;
+
+				if ((_excludeLayers.value & (1 << itemLayer)) != 0 || item.collider.gameObject == hit.collider.gameObject)
+					obstacleOnTheWay = false;
+				else
+				{
+					obstacleOnTheWay = true;
+					break;
+				}
+			}
+		}
 
 		_interactableObject = (!obstacleOnTheWay && isFound) ? hit.collider.gameObject.GetComponent<Interactable>() : null;
 
