@@ -56,6 +56,11 @@ public class GameTime : MonoBehaviour, ISaveable
 		}
 	}
 
+	public TimeSpan GetTime()
+	{
+		return _inGameTime;
+	}
+
 	public GameData GetSaveFile()
 	{
 		return new GameTimeData()

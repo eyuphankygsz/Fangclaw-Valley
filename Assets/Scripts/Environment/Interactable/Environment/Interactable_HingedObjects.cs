@@ -28,7 +28,8 @@ public class Interactable_HingedObjects : Interactable
 	private void Awake()
 	{
 		_animator = GetComponent<Animator>();
-		_navObstacle = GetComponent<NavMeshObstacle>();
+		TryGetComponent<NavMeshObstacle>(out _navObstacle);
+
 		base.Awake();
 
 	}
@@ -121,7 +122,9 @@ public class Interactable_HingedObjects : Interactable
 			PlayClip(_isOn ? _openClips : _closeClips);
 		_animator.SetBool("On", _isOn);
 		_animating = _isOn;
-		_navObstacle.carving = !_isOn;
+
+		//if (_navObstacle != null)
+		//	_navObstacle.carving = !_isOn;
 	}
 
 

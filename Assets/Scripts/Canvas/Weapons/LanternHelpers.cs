@@ -7,12 +7,16 @@ public class LanternHelpers : MonoBehaviour
 {
 	[SerializeField]
 	private Image _uiFill;
+	[SerializeField]
+	private Lantern _lantern;
 
 	private Coroutine _gasRoutine;
 
 
 	public float MaxFuel { get => _maxFuel; }
-	public float LeftFuel { get => _leftFuel; 
+	public float LeftFuel
+	{
+		get => _leftFuel;
 		set
 		{
 			_leftFuel = value;
@@ -59,6 +63,13 @@ public class LanternHelpers : MonoBehaviour
 		{
 			_leftFuel -= Time.deltaTime * LitMultiplier;
 			ApplyUI();
+
+			if (_leftFuel <= 0)
+			{
+				_lantern.OnGasOut();
+				break;
+			}
+
 			yield return null;
 		}
 	}

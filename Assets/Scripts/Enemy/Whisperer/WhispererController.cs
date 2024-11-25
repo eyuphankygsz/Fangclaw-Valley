@@ -16,11 +16,11 @@ public class WhispererController : MonoBehaviour
 	[SerializeField]
 	private EnemyStateMachine _machine;
 	[SerializeField]
-	private MonoBehaviour _startState, _stunState;
+	private MonoBehaviour _startState, _stunState, _escapeState, _followState, _attackState, _attackHState;
 	[SerializeField]
 	private TimeForExitStun _stunTime;
-
-
+	[SerializeField]
+	private IsTimeArrived _isTimeArrived;
 
 	public bool Stop;
 	public bool Stunned;
@@ -35,6 +35,7 @@ public class WhispererController : MonoBehaviour
 	void Update()
 	{
 		_canSee.SendRays();
+		CheckTime();
 	}
 
 	public void SetPosition(Transform tf)
@@ -42,7 +43,24 @@ public class WhispererController : MonoBehaviour
 		transform.position = tf.position;
 		transform.rotation = tf.rotation;
 	}
+	public void CheckTime()
+	{
+		if (!_isTimeArrived.CheckCondition())
+			if(CanEscapeStates())
+			_machine.SetCurrentState("Escape");
+	}
+	private bool CanEscapeStates()
+	{
+		IEnemyState state = _machine.GetCurrentState();
+		if(state != _followState as IEnemyState 
+			&& state != _stunState as IEnemyState
+			&& state != _attackState as IEnemyState
+			&& state != _escapeState as IEnemyState
+			&& state != _attackHState as IEnemyState)
+			return true;
 
+		return false;
+	}
 	public void FollowPlayer()
 	{
 		_agent.SetDestination(_player.position);

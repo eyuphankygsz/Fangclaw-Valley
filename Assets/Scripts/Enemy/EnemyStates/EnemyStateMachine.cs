@@ -31,6 +31,7 @@ public class EnemyStateMachine : MonoBehaviour
 	{
 		EnterState(state);
 	}
+	public IEnemyState GetCurrentState() => _currentState;
 	public void SetCurrentState(string stateName)
 	{
 		EnterState(GetState(stateName));

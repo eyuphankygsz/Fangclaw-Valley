@@ -18,18 +18,23 @@ public class EnemyOpenDoor : MonoBehaviour
 	public void CheckDoors()
 	{
 		Vector3 forward = _checkPoint.forward;
-
 		Ray ray = new Ray(_checkPoint.position, forward);
 		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit, _distance, _layerMask))
+
+		Collider[] colliders = Physics.OverlapSphere(transform.position, 2, _layerMask);
+		if (colliders.Length > 0)
 		{
 			Interactable_HingedObjects hinged;
-			if (hit.collider.TryGetComponent<Interactable_HingedObjects>(out hinged))
+			if (colliders[0].GetComponent<Collider>().TryGetComponent<Interactable_HingedObjects>(out hinged))
 				if (hinged.GetStatus() == false && !hinged.IsLocked())
 				{
 					hinged.SetStatusManually(true);
 					_stuckTimer.ResetTime();
 				}
 		}
+		//if (Physics.Raycast(ray, out hit, _distance, _layerMask))
+		//{
+
+		//}
 	}
 }

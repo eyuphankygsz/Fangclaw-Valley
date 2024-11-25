@@ -83,16 +83,16 @@ public class Lantern : Weapons
 	}
 	private void OnRightTriggerPerformed(InputAction.CallbackContext ctx)
 	{
-		if (ctx.performed && !_isFreeze)
+		if (ctx.performed && !_isFreeze && _onFire)
 		{
 			SetLightning(false);
-			_isShining = true;
+			_isShining = _onFire;
 			_lanternHelpers.LitMultiplier = 10;
 		}
 	}
 	private void OnRightTriggerCanceled(InputAction.CallbackContext ctx)
 	{
-		if (ctx.canceled && !_isFreeze)
+		if (ctx.canceled && !_isFreeze && _onFire)
 		{
 			SetLightning(true);
 			_isShining = false;
@@ -106,24 +106,30 @@ public class Lantern : Weapons
 	private void OnDisable()
 	{
 		if (_weaponHelpers.StopChange)
+			Disable();
+	}
+	public void Disable()
+	{
+		_enlighting = false;
+		_weaponHelpers.StopChange = false;
+		_animator.ResetTrigger("Enlight");
+		_animator.ResetTrigger("Delight");
+		_source.Stop();
+		if (!_onFire)
 		{
-			_enlighting = false;
-			_weaponHelpers.StopChange = false;
-			_animator.ResetTrigger("Enlight");
-			_animator.ResetTrigger("Delight");
-			_source.Stop();
-			if (!_onFire)
-			{
-				_animator.Play("NotOnFire");
-				_lanternHelpers.StopUsingGas();
-			}
-			else
-			{
-				_animator.Play("OnFire");
-				_lanternHelpers.StartUsingGas();
-			}
-			transform.localPosition = _latestPos;
+			_animator.Play("NotOnFire");
+			_lanternHelpers.StopUsingGas();
 		}
+		else
+		{
+			_animator.Play("OnFire");
+			_lanternHelpers.StartUsingGas();
+		}
+		transform.localPosition = _latestPos;
+	}
+	public void OnGasOut()
+	{
+		Delight();
 	}
 	private void HandleActivation()
 	{
@@ -181,6 +187,7 @@ public class Lantern : Weapons
 		{
 			_normalLightSource.SetActive(false);
 			_directLightSource.SetActive(false);
+			_behindLightSource.SetActive(false);
 		}
 	}
 
@@ -205,6 +212,7 @@ public class Lantern : Weapons
 			_controls.Player.SecondaryShoot.canceled -= OnRightTriggerCanceled;
 		}
 
+		_lanternHelpers.LitMultiplier = 1;
 		_directLightSource.SetActive(false);
 		_normalLightSource.SetActive(false);
 		_behindLightSource.SetActive(_onFire);

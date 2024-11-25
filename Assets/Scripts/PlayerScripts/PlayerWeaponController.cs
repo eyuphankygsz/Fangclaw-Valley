@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,6 +12,8 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private PlayerInteractions _playerInteractions;
 
 	private Dictionary<string, Weapons> _weapons;
+
+	private int _takenWeaponCount;
 	private string[] _weaponNames;
 	private int _weaponIndex, _oldWeaponIndex = -1;
 
@@ -18,11 +21,17 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private WeaponHelpers _weaponHelpers;
 	[Inject]
 	private InputManager _inputManager;
+	[Inject]
+	private GameManager _gameManager;
 
+	private bool _onForce, _gamePaused, _externalWeapon;
+	private bool _weaponCountInit;
 
-	private bool _onForce;
 	private void Awake()
 	{
+
+		_gameManager.OnPauseGame += OnPause;
+
 		_playerInteractions = GetComponent<PlayerInteractions>();
 
 		_weapons = new Dictionary<string, Weapons>();
@@ -35,7 +44,10 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 			_weaponNames[nameIndex++] = weaponName.Key;
 	}
 
-
+	public void IncreaseWeaponCount()
+	{
+		_takenWeaponCount++;
+	}
 	public void ManageGun()
 	{
 		if (_currentWeapon != null)
@@ -45,6 +57,10 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	public void OnForce(bool force)
 	{
 		_onForce = force;
+	}
+	private void OnPause(bool pause)
+	{
+		_gamePaused = pause;
 	}
 	public void StopWeapon(bool stun)
 	{
@@ -77,31 +93,31 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	private void ChangeGunByKey(InputAction.CallbackContext ctx)
 	{
-		if (_currentWeapon == null) return;
+		if (_currentWeapon == null || _gamePaused) return;
 		int bindingIndex = ctx.action.GetBindingIndexForControl(ctx.control);
 		SelectWeapon(bindingIndex);
 	}
 	private void ChangeGunByScroll(InputAction.CallbackContext ctx)
 	{
-		if (_currentWeapon == null) return;
+		if (_currentWeapon == null || _gamePaused) return;
 		SelectWeapon(ctx.ReadValue<float>() < 0);
 	}
 
 	private void SelectWeapon(bool next)
 	{
 		if (_weaponHelpers.StopChange) return;
-		int nextGunIndex = next ? 1 : -1;
-		int tempIndex = (_weaponIndex + nextGunIndex) % _weapons.Count;
-		_weaponIndex++;
-		if (tempIndex == -1)
-			tempIndex = _weapons.Count - 1;
 
-		ChangeWeapon(true, tempIndex);
+		int count = GetCurrentWeaponCount();
+		_externalWeapon = false;
+		int nextGun = (_weaponIndex + (next ? 1 : -1) + count) % count;
+
+		ChangeWeapon(true, nextGun);
 	}
 	public void SelectWeapon(int index)
 	{
 		if (_weaponHelpers.StopChange) return;
-		if ((_oldWeaponIndex == index && _currentWeapon != null) || index >= _weapons.Count) return;
+		if ((_oldWeaponIndex == index && _currentWeapon != null && !_externalWeapon) || index >= _weapons.Count) return;
+		_externalWeapon = false;
 		int tempIndex = index;
 		ChangeWeapon(false, tempIndex);
 	}
@@ -149,6 +165,15 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	}
 
+	private int GetCurrentWeaponCount()
+	{
+		int count = 0;
+		foreach (var item in _weapons)
+			if (item.Value.IsPicked)
+				count++;
+
+		return count;
+	}
 	public void OnInputEnable(ControlSchema schema)
 	{
 		schema.Player.GunKey.performed += ChangeGunByKey;
@@ -162,6 +187,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	public void EquipExternalWeapon(string name)
 	{
+		_externalWeapon = true;
 		_currentWeapon?.OnChanged();
 		_currentWeapon?.gameObject.SetActive(false);
 

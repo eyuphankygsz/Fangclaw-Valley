@@ -26,6 +26,9 @@ public class EnemyEscape : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private Collider _collider;
 	private bool _arrived, _escapeAnimationStarted;
+
+	[SerializeField]
+	private AudioSource _audioSource;
 	
 	public void EnterState()
 	{
@@ -90,7 +93,7 @@ public class EnemyEscape : MonoBehaviour, IEnemyState
 		_agent.transform.rotation = _selectedEscape.rotation;
 		_animator.SetBool("Escape", true);
 		_animator.SetBool("Follow", false);
-
+		_audioSource.Stop();
 	}
 }
 

@@ -35,17 +35,21 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 	private Transform _destination;
 	private Transform _forceTransform;
 	private PlayableDirector _director;
+
+
+	private Vector3 _pos;
 	public void EnterState()
 	{
 		_isAnimOver.SetOver(false);
 
 		_agent.stoppingDistance = 0;
-		RaycastHit hit;
-		Ray ray = new Ray(transform.position, _player.transform.position - transform.position);
+		_pos = transform.position + ((_player.transform.position - transform.position).normalized * 1.4f);
 
-		if (Physics.Raycast(ray, out hit, Mathf.Infinity, _layer))
+
+		Collider[] colls = Physics.OverlapSphere(_pos, 1, _layer);
+		if (colls.Length > 0)
 		{
-			TakeHideTable table = hit.transform.GetComponent<TakeHideTable>();
+			TakeHideTable table = colls[0].transform.GetComponent<TakeHideTable>();
 			_destination = table.GetEnemyTransform();
 			_forceTransform = table.GetPlayerTransform();
 			_director = table.GetPlayable();
@@ -59,7 +63,8 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	public void ExitState()
 	{
-
+		_reached = false;
+		_started = false;
 	}
 
 	public EnemyStateTransitionList GetTransitions()
@@ -88,4 +93,12 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 		_playerStateLock.Lock = false;
 	}
 
+	private void OnDrawGizmos()
+	{
+		if (_pos == null)
+			return;
+
+		Gizmos.DrawLine(transform.position, _pos);
+		Gizmos.DrawWireSphere(_pos, 1);
+	}
 }
