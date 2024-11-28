@@ -24,6 +24,7 @@ public class Interactable_HingedObjects : Interactable
 	[SerializeField]
 	private AudioSource _source;
 
+
 	private NavMeshObstacle _navObstacle;
 	private void Awake()
 	{
@@ -32,6 +33,11 @@ public class Interactable_HingedObjects : Interactable
 
 		base.Awake();
 
+	}
+
+	private void Start()
+	{
+		base.Start();
 	}
 	public override void OnInteract(Enum_Weapons weapon)
 	{

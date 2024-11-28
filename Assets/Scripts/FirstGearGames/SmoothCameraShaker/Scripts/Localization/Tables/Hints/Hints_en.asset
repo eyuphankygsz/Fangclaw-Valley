@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: fd1f55fdc8808fb48823713abf784371, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 52114407424
+    m_Localized: "yu ken distroy k\u0131reyts vith yur ekuupm\u0131nts or hends"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57227675353088
+    m_Localized: "tu layt a lent\u0131rn, yu niid sam ges end met\xE7\u0131s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: sikip
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

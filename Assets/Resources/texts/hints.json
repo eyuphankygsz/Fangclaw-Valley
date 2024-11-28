@@ -1,0 +1,14 @@
+{
+    "Hints": [
+      {
+        "HintName": "destroy_crates",
+        "HintText": "hint_destroy_crates",
+        "HintPhoto": "images/hints/hint1"
+      },
+      {
+        "HintName": "light_up_lantern",
+        "HintText": "hint_how_to_ligt",
+        "HintPhoto": "images/hints/hint2"
+      }
+    ]
+  }

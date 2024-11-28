@@ -44,7 +44,6 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState, IInputHandler
 	private void ApplyMovement()
 	{
 		_jumpVelocity += _gravity.CalculateGravity() * Time.deltaTime;
-		Debug.Log(_jumpVelocity);
 		var movement = (transform.forward * _movementInput.y + transform.right * _movementInput.x) * _speed;
 		movement.y = _jumpVelocity;
 

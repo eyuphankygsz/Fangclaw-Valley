@@ -34,6 +34,9 @@ public class PauseMenu : MonoBehaviour
 	[Inject]
 	private GameManager _gameManager;
 
+	[SerializeField]
+	private HintManager _hintManager;
+
 
 	private void Awake()
 	{
@@ -63,7 +66,7 @@ public class PauseMenu : MonoBehaviour
 
 	private void SelectSection(TopSections section, bool byButtons)
 	{
-		if (_gameManager.SaveGame)
+		if (_gameManager.SaveGame || _hintManager.HintShow)
 			return;
 
 		foreach (var item in _sections)

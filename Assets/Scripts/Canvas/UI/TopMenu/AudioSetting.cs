@@ -1,6 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Playables;
 using UnityEngine.UI;
+using Zenject;
 
 public class AudioSetting : Setting
 {
@@ -12,9 +15,29 @@ public class AudioSetting : Setting
 	private float _currentValue;
 	private float _tempValue;
 
+	[SerializeField]
+	private List<AudioSource> _sources;
+	private List<AudioSource> _stoppedSrc = new List<AudioSource>();
 
-	private void Start() =>
+	[SerializeField]
+	private List<PlayableDirector> _directors;
+	private List<PlayableDirector> _stoppedDrct = new List<PlayableDirector>();
+
+	[Inject]
+	private GameManager _pauseMenu;
+
+	private void Start()
+	{
+		_pauseMenu.OnPauseGame += OnPause;
 		SetSFXParam();
+	}
+	public void OnPause(bool pause)
+	{
+		if (pause)
+			PauseAudio();
+		else
+			UnPauseAudio();
+	}
 	public void SetSFX(Slider slider) =>
 		_tempValue = slider.value;
 
@@ -30,7 +53,7 @@ public class AudioSetting : Setting
 	public override void Save()
 	{
 		_currentValue = _tempValue;
-		PlayerPrefs.SetFloat("SFX", _currentValue); 
+		PlayerPrefs.SetFloat("SFX", _currentValue);
 		SetSFXParam();
 
 	}
@@ -43,5 +66,41 @@ public class AudioSetting : Setting
 		_currentValue = PlayerPrefs.GetFloat("SFX");
 		_tempValue = _currentValue;
 		_slider.value = _currentValue;
+		Start();
+	}
+	public void PauseAudio()
+	{
+		_stoppedSrc.Clear();
+		_stoppedDrct.Clear();
+
+		foreach (AudioSource src in _sources)
+			if (src.isPlaying)
+			{
+				_stoppedSrc.Add(src);
+				src.Pause();
+			}
+
+		foreach (PlayableDirector drct in _directors)
+			if (drct.state == PlayState.Playing)
+			{
+				_stoppedDrct.Add(drct);
+				drct.Pause();
+			}
+
+
+	}
+
+	public void UnPauseAudio()
+	{
+		foreach (AudioSource src in _stoppedSrc)
+			if (src != null) // Güvenlik kontrolü.
+				src.UnPause();
+
+		foreach (PlayableDirector drct in _directors)
+			if (drct != null)
+				drct.Resume();
+
+		_stoppedDrct.Clear();
+		_stoppedSrc.Clear();
 	}
 }

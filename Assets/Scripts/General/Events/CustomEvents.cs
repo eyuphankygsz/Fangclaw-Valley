@@ -64,6 +64,11 @@ public class CustomEvents : MonoBehaviour, ISaveable
 		_onTriggerEvents.Invoke();
 		gameObject.SetActive(false);
 	}
+	public void SetDoneManually(bool done)
+	{
+		_done = true;
+		gameObject.SetActive(false);
+	}
 	public UnityEvent GetEvents() => _onTriggerEvents;
 }
 

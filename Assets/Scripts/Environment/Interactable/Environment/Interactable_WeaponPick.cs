@@ -12,6 +12,7 @@ public class Interactable_WeaponPick : Interactable
 	public override void OnInteract(Enum_Weapons weapon)
 	{
 		base.OnInteract(weapon);
+		_oneTimeEvents?.Invoke();
 		PlayerController.AddWeapon(_weapon);
 		gameObject.SetActive(false);
 

@@ -47,6 +47,7 @@ public class Interactable_Crate : Interactable
 				obj.GetComponent<Interactable_Pickup>().IsCrateItem = true;
 
 		}
+		_oneTimeEvents?.Invoke();
 		Destroy(_explosionObj, .5f);
 		_originalObj.SetActive(false);
 		_shatterObj.SetActive(true);
