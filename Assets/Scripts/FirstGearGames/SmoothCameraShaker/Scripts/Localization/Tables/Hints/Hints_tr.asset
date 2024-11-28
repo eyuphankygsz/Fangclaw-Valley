@@ -19,15 +19,23 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "kutu k\u0131r"
+    m_Localized: "Kutular\u0131 par\xE7alamak i\xE7in \xE2letlerini yahut ellerini
+      kullanabilirsin."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: lamba yak
+    m_Localized: "Gaz l\xE2mbas\u0131n\u0131 ate\u015Fleyebilmek i\xE7in gazya\u011F\u0131na
+      ve kibritlere ihtiyac\u0131n olacakt\u0131r."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: "ge\xE7"
+    m_Localized: "Derhal devam etmek i\xE7in herhangi bir tu\u015Fa bas\u0131n\u0131z..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Envanterindeyken e\u015Fyalar\u0131 kullanabilir, inceleyebilir,
+      b\u0131rakabilir yahut ba\u015Fka bir e\u015Fya ile birle\u015Ftirebilirsin!
+      Gaz lambana ya\u011F doldurmak i\xE7in gazya\u011F\u0131n\u0131 kullanmal\u0131s\u0131n."
     m_Metadata:
       m_Items: []
   references:

@@ -19,15 +19,20 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "yu ken distroy k\u0131reyts vith yur ekuupm\u0131nts or hends"
+    m_Localized: You may employ thy tools or thine hands to shatter the boxes.
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "tu layt a lent\u0131rn, yu niid sam ges end met\xE7\u0131s"
+    m_Localized: Thou shalt require lamp oil and matches to ignite the gas lamp.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: sikip
+    m_Localized: Press any key to proceed forthwith...Press any key to proceed forthwith...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: Whilst in thy inventory, thou mayest use, examine, discard, or combine
+      items with another! Thou must replenish thy gas lamp with oil using lamp oil.
     m_Metadata:
       m_Items: []
   references:

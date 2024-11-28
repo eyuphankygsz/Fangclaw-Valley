@@ -19,17 +19,25 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: el spano hendo crato desterro by handi ore equibmanto
+    m_Localized: "Podr\xEDais emplear vuestras herramientas o vuestras manos para
+      romper las cajas."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: 'el spano ligit as kendlesso
-
-      nedor el giosso en muchos'
+    m_Localized: "Necesitar\xE1s aceite para l\xE1mpara y cerillas para encender
+      la l\xE1mpara de gas."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: sikippe
+    m_Localized: Pulsad cualquier tecla para proceder de inmediato...Pulsad cualquier
+      tecla para proceder de inmediato...Pulsad cualquier tecla para proceder de
+      inmediato...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Mientras est\xE9s en tu inventario, podr\xE1s usar, examinar, dejar
+      o combinar objetos con otro. Deber\xE1s rellenar tu l\xE1mpara de gas con aceite
+      para l\xE1mpara."
     m_Metadata:
       m_Items: []
   references:

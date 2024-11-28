@@ -91,6 +91,7 @@ public class HintManager : MonoBehaviour
 		yield return _hSkipTime;
 		_hSkipText.text = _skipLocal.GetLocalizedString();
 		_hSkipText.enabled = true;
+
 		while (true)
 		{
 			if (Input.anyKeyDown)
@@ -100,12 +101,13 @@ public class HintManager : MonoBehaviour
 
 				if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("CloseAlpha"))
 				{
-					_gameManager.PauseGame = false;
 					_hintHolder.SetActive(false);
 					HintShow = false;
 					_hSkipText.enabled = false;
+					_gameManager.PauseGame = false;
+					break;
 				}
-				break;
+
 			}
 			yield return null;
 		}

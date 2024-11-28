@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: skip
     m_Metadata:
       m_Items: []
+  - m_Id: 148327882735616
+    m_Key: hint_inventory_items
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

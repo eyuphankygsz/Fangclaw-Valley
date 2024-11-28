@@ -19,15 +19,22 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "sime buble\u011F"
+    m_Localized: Vous pourriez utiliser vos outils ou vos mains pour briser les caisses.
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "sime buble\u011F"
+    m_Localized: "Il te faudra de l'huile pour lampe et des allumettes pour allumer
+      la lampe \xE0 gaz."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: "skibuble\u011F"
+    m_Localized: "Appuyez sur n'importe quelle touche pour avancer sans d\xE9lai..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Lorsque tu es dans ton inventaire, tu peux utiliser, examiner,
+      laisser ou combiner des objets avec un autre\u2009! Tu dois remplir ta lampe
+      \xE0 gaz avec de l'huile pour lampe."
     m_Metadata:
       m_Items: []
   references:

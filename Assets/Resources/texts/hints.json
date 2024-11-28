@@ -9,6 +9,11 @@
         "HintName": "light_up_lantern",
         "HintText": "hint_how_to_ligt",
         "HintPhoto": "images/hints/hint2"
+      },
+      {
+        "HintName": "inventory_items",
+        "HintText": "hint_inventory_items",
+        "HintPhoto": "images/hints/hint3"
       }
     ]
   }
