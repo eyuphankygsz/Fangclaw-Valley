@@ -19,7 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: Vous pourriez utiliser vos outils ou vos mains pour briser les caisses.
+    m_Localized: "Vous pouvez utiliser vos outils ou vos mains avec <color=#FF0000>\"$primary_key\"</color>
+      pour briser les bo\xEEtes."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
@@ -32,9 +33,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Lorsque tu es dans ton inventaire, tu peux utiliser, examiner,
-      laisser ou combiner des objets avec un autre\u2009! Tu dois remplir ta lampe
-      \xE0 gaz avec de l'huile pour lampe."
+    m_Localized: "Vous pouvez ouvrir votre inventaire en appuyant sur <color=#FF0000>\"$inv_key\"</color>.
+      Dans votre inventaire, vous pouvez utiliser, examiner, jeter ou combiner des
+      objets ! N'oubliez pas de remplir votre lampe \xE0 gaz avec de l'huile pour
+      lampe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: ou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "En appuyant sur la touche <color=#FF0000>\"$inter_key\"</color>,
+      vous pourrez acqu\xE9rir ou faire usage de vos objets."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "En concentrant votre attention, vous pouvez discerner les objets
+      avec lesquels il est possible d\u2019interagir autour de vous. Pour ce faire,
+      utilisez la touche <color=#FF0000>\u201C$scan_env\u201D</color>. Cependant,
+      n\u2019oubliez pas que cette aptitude \xE9puisera grandement vos forces."
     m_Metadata:
       m_Items: []
   references:

@@ -7,7 +7,6 @@ public class Interactable_Crate : Interactable
 	[Inject]
 	private ObjectPool _objectPool;
 	[SerializeField] private GameObject _originalObj, _shatterObj, _explosionObj;
-	[SerializeField] private bool _allowRandomItem;
 	[SerializeField] private RandomItemDrop _randomItemDrop;
 	[SerializeField] private Transform _itemTransform;
 
@@ -32,7 +31,7 @@ public class Interactable_Crate : Interactable
 	private void Shatter()
 	{
 		_source.PlayOneShot(_clips[Random.Range(0, _clips.Length)]);
-		if (_allowRandomItem)
+		if (_randomItemDrop != null)
 		{
 			GameObject obj = null;
 			float luck = Random.Range(0f, 1f);

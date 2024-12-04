@@ -19,8 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "Podr\xEDais emplear vuestras herramientas o vuestras manos para
-      romper las cajas."
+    m_Localized: Puedes usar tus herramientas o tus manos con <color=#FF0000>"$primary_key"</color>
+      para romper las cajas.
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
@@ -29,15 +29,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: Pulsad cualquier tecla para proceder de inmediato...Pulsad cualquier
-      tecla para proceder de inmediato...Pulsad cualquier tecla para proceder de
-      inmediato...
+    m_Localized: Pulsad cualquier tecla para proceder de inmediato...
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Mientras est\xE9s en tu inventario, podr\xE1s usar, examinar, dejar
-      o combinar objetos con otro. Deber\xE1s rellenar tu l\xE1mpara de gas con aceite
-      para l\xE1mpara."
+    m_Localized: "Puedes abrir tu inventario presionando <color=#FF0000>\"$inv_key\"</color>.
+      Mientras est\xE9s en tu inventario, puedes usar, examinar, descartar o combinar
+      objetos. Recuerda rellenar tu l\xE1mpara de gas con aceite para l\xE1mparas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: o
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "Al presionar la tecla <color=#FF0000>\"$inter_key\"</color>, podr\xE1s
+      adquirir o hacer uso de tus objetos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "Al concentrar tu atenci\xF3n, podr\xE1s discernir objetos que permitan
+      interacci\xF3n a tu alrededor. Para ello, utiliza la tecla <color=#FF0000>\u201C$scan_env\u201D</color>.
+      Sin embargo, recuerda que esta habilidad drenar\xE1 considerablemente tu fuerza."
     m_Metadata:
       m_Items: []
   references:

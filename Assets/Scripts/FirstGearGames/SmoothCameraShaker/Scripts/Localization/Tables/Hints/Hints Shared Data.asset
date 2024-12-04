@@ -31,6 +31,18 @@ MonoBehaviour:
     m_Key: hint_inventory_items
     m_Metadata:
       m_Items: []
+  - m_Id: 1828277039841280
+    m_Key: or
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Key: hint_pick_up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Key: hint_scan_env
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

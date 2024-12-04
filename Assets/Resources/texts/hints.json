@@ -14,6 +14,16 @@
         "HintName": "inventory_items",
         "HintText": "hint_inventory_items",
         "HintPhoto": "images/hints/hint3"
+      },
+      {
+        "HintName": "pick_up",
+        "HintText": "hint_pick_up",
+        "HintPhoto": "images/hints/hint4"
+      },
+      {
+        "HintName": "scan_env",
+        "HintText": "hint_scan_env",
+        "HintPhoto": "images/hints/hint5"
       }
     ]
   }

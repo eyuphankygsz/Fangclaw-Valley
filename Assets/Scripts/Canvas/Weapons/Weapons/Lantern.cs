@@ -142,7 +142,6 @@ public class Lantern : Weapons
 			if (item == null || _lanternHelpers.IsGasEmpty())
 				return;
 
-			_lanternHelpers.StartUsingGas();
 			_enlighting = true;
 			_weaponHelpers.StopChange = true;
 			_source.clip = _matchSound;

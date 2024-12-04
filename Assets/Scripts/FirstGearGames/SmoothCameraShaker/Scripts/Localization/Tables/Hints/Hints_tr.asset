@@ -19,8 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "Kutular\u0131 par\xE7alamak i\xE7in \xE2letlerini yahut ellerini
-      kullanabilirsin."
+    m_Localized: "Kutular\u0131 k\u0131rmak i\xE7in <color=#FF0000>\"$primary_key\"</color>
+      tu\u015Fuyla aletlerinizi veya ellerinizi kullanabilirsiniz."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
@@ -33,9 +33,25 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Envanterindeyken e\u015Fyalar\u0131 kullanabilir, inceleyebilir,
-      b\u0131rakabilir yahut ba\u015Fka bir e\u015Fya ile birle\u015Ftirebilirsin!
-      Gaz lambana ya\u011F doldurmak i\xE7in gazya\u011F\u0131n\u0131 kullanmal\u0131s\u0131n."
+    m_Localized: "<color=#FF0000>\"$inv_key\"</color> tu\u015Funa basarak envanterinizi
+      a\xE7abilirsiniz. Envanterinizdeyken e\u015Fyalar\u0131 kullanabilir, inceleyebilir,
+      atabilir veya birbiriyle birle\u015Ftirebilirsiniz! Gaz lamban\u0131z\u0131
+      doldurmak i\xE7in lamba ya\u011F\u0131 kullanmay\u0131 unutmay\u0131n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: veya
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "<color=#FF0000>\"$inter_key\"</color> tu\u015Funa basarak e\u015Fyalar\u0131
+      edinebilir  veya kullanabilirsin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "Odaklanarak etkile\u015Fime ge\xE7ebilece\u011Fin objeleri g\xF6rebilirsin.
+      Odaklanmak i\xE7in <color=#FF0000>\"$scan_env\"</color> tu\u015Funu kullan.\nAncak
+      unutma, bu \xF6zellik seni yoracakt\u0131r."
     m_Metadata:
       m_Items: []
   references:
