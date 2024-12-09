@@ -15,9 +15,24 @@ public class PlayerHide : MonoBehaviour
 	[SerializeField]
 	private float _castDistance;
 
+	public bool StopHide;
+	private Coroutine _stopRoutine;
+	public void StopHideStart()
+	{
+		StopHide = true;
+		_controller.Hide(false);
+		if (_stopRoutine != null)
+			StopCoroutine(_stopRoutine);
+		_stopRoutine = StartCoroutine(WaitHide());
+	}
+	private IEnumerator WaitHide()
+	{
+		yield return new WaitForSeconds(0.5f);
+		StopHide = false;
+	}
 	public void CheckHide()
 	{
-		_controller.Hide(Physics.BoxCast(_hideBoxTransform.position, _hideBoxExtends, Vector3.up, Quaternion.identity, _castDistance, _hideLayer));
+		_controller.Hide(StopHide ? false : Physics.BoxCast(_hideBoxTransform.position, _hideBoxExtends, Vector3.up, Quaternion.identity, _castDistance, _hideLayer));
 	}
 
 	private void OnDrawGizmos()

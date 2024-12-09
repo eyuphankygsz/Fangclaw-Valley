@@ -7,7 +7,9 @@ public class TimeForExitSearch : AbstractCondition
     private float _currentTime;
 
     private bool _freeze;
-    public void ResetTime()
+
+
+	public void ResetTime()
     {
         _currentTime = _normalTime;
     }

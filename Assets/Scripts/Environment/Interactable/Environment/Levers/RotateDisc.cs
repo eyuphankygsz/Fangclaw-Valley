@@ -25,7 +25,9 @@ public class RotateDisc : Interactable
 	private AudioClip[] _clips;
 	private AudioSource _source;
 
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 	{
 		_rotationAngle = 360 / _maxSelectableID;
 		base.Awake();

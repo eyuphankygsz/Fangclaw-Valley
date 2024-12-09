@@ -17,9 +17,11 @@ public class EnemySearch : MonoBehaviour, IEnemyState
 
     private bool _isWandering, _isSearchingNewTarget, _isSearching;
 
+	[SerializeField]
+	private TimeForSearch _timeForSearch; 
     [SerializeField]
-    private TimeForSearch _timeForSearch;
-    [SerializeField]
+	private TimeForExitSearch _timeForExitSearch;
+	[SerializeField]
 	EnemyStateTransitionList _transitions;
 
     [SerializeField]
@@ -31,19 +33,23 @@ public class EnemySearch : MonoBehaviour, IEnemyState
 	[SerializeField]
 	CanPlayAudio _canPlayAudio;
 
+    private bool _started;
+
 	public void EnterState()
     {
         _canPlayAudio.EnablePlay(_sawYou);
 
-        _animator.SetBool("Search", true);
+		_animator.SetBool("Search", true);
 		_searchCenter = _agent.destination;
         _timeForSearch.ResetTime();
+        _timeForExitSearch.ResetTime();
         _agent.speed = _speed;
         FindNewWanderPoint();
     }
 
     public void ExitState()
 	{
+        Debug.Log("WHY");
 		_animator.SetBool("Search", false);
 	}
 

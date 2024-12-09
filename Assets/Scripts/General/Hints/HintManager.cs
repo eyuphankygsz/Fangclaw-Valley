@@ -86,9 +86,6 @@ public class HintManager : MonoBehaviour
 		string hintName = _hintsInLine[0];
 		_hintsInLine.RemoveAt(0);
 
-		_animator.ResetTrigger("Close");
-		_animator.Play("OpenAlpha");
-
 		HintShow = true;
 		_src.Play();
 		Hint hint = HintList.Where(x => x.HintName == hintName).FirstOrDefault();
@@ -135,6 +132,10 @@ public class HintManager : MonoBehaviour
 
 
 		_hintHolder.SetActive(true);
+
+		_animator.ResetTrigger("Close");
+		_animator.Play("OpenAlpha");
+
 		StartCoroutine(AllowSkip());
 		_gameManager.PauseGame = true;
 	}

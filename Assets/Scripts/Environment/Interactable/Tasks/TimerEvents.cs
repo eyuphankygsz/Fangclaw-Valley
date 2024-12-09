@@ -12,14 +12,14 @@ public class TimerEvents : MonoBehaviour
 	private Coroutine _routine;
 
 	private bool _atStartSetup;
-	private bool _playing;
+	//private bool _playing;
 	public void Setup(float time)
 	{
 		_time = time;
-		if (_playing) 
-			return;
+		//if (_playing) 
+		//	return;
 
-		_playing = true;
+		//_playing = true;
 		if (_atStartSetup)
 		{
 			InstantActivate();
@@ -31,13 +31,13 @@ public class TimerEvents : MonoBehaviour
 
 		_routine = StartCoroutine(Timer());
 	}
-	public void Restart() => _playing = false;
+	//public void Restart() => _playing = false;
 
 	public void SetAtStartSetup() => _atStartSetup = true;
 	public void InstantActivate()
 	{
 		Debug.Log(gameObject.name);
-		_playing = true;
+		//_playing = true;
 		_events.Invoke();
 	}
 	private IEnumerator Timer()

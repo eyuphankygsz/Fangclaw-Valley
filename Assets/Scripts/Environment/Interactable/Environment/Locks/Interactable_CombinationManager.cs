@@ -40,8 +40,10 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 
     private bool _inputsEnabled;
 
-    private void Awake()
-    {
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
+	private void Awake()
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
+	{
         base.Awake();
         _digits = new int[_code.Length];
 
@@ -200,7 +202,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
         if (data.IsUnlocked)
         {
             _unlocked = true;
-            Unlock(true);
             gameObject.SetActive(false);
             return;
         }

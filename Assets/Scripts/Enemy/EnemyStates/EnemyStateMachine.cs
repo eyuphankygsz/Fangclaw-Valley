@@ -22,6 +22,11 @@ public class EnemyStateMachine : MonoBehaviour
 	[SerializeField]
 	private List<AbstractCondition> _allConditions;
 
+	[SerializeField]
+	private WhispererController _controller;
+
+	private bool _init;
+
 	private void Start()
 	{
 		_states = _enemyStateDict.ToDict();
@@ -34,6 +39,12 @@ public class EnemyStateMachine : MonoBehaviour
 	public IEnemyState GetCurrentState() => _currentState;
 	public void SetCurrentState(string stateName)
 	{
+		if (!_init)
+		{
+			_init = true;
+			Start();
+		}
+		_controller.DiscardTime = true;
 		EnterState(GetState(stateName));
 	}
 
@@ -48,11 +59,9 @@ public class EnemyStateMachine : MonoBehaviour
 		Debug.Log(state);
 		_currentState?.ExitState();
 		_currentState = state;
-		_transitionList = _currentState.GetTransitions();
-
-
 		_currentState.EnterState();
 
+		_transitionList = _currentState.GetTransitions();
 	}
 
 
@@ -68,7 +77,6 @@ public class EnemyStateMachine : MonoBehaviour
 				if (item.Condition.CheckCondition() != item.IsTrue)
 				{
 					canChange = false;
-					break;
 				}
 			}
 

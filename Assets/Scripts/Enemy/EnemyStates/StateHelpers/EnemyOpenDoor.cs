@@ -19,7 +19,6 @@ public class EnemyOpenDoor : MonoBehaviour
 	{
 		Vector3 forward = _checkPoint.forward;
 		Ray ray = new Ray(_checkPoint.position, forward);
-		RaycastHit hit;
 
 		Collider[] colliders = Physics.OverlapSphere(transform.position, 2, _layerMask);
 		if (colliders.Length > 0)

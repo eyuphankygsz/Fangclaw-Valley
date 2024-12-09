@@ -24,7 +24,7 @@ public class WhispererController : MonoBehaviour
 
 	public bool Stop;
 	public bool Stunned;
-
+	public bool DiscardTime;
 
 	void Start()
 	{
@@ -45,7 +45,7 @@ public class WhispererController : MonoBehaviour
 	}
 	public void CheckTime()
 	{
-		if (!_isTimeArrived.CheckCondition())
+		if (!_isTimeArrived.CheckCondition() && !DiscardTime)
 			if(CanEscapeStates())
 			_machine.SetCurrentState("Escape");
 	}

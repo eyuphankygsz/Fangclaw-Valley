@@ -32,7 +32,7 @@ public class EnemyAttack : MonoBehaviour, IEnemyState
 	{
 		_startChecking = false;
 		_turned.CanTurn = false;
-		_animator.ResetTrigger("Attack");
+		_animator.ResetTrigger("AttackNormal");
 	}
 
 	public EnemyStateTransitionList GetTransitions()

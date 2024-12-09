@@ -31,7 +31,9 @@ public class Interactable_PlaceHolder : Interactable
 	private int _statusID;
 	private PlaceHolderData _data;
 
+#pragma warning disable CS0108
 	private void Start()
+#pragma warning restore CS0108
 	{
 		_mechanism = GetComponentInParent<StatusMechanism>();
 		base.Start();

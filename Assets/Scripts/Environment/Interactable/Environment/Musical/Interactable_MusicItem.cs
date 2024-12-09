@@ -8,7 +8,9 @@ public class Interactable_MusicItem : Interactable
 	[SerializeField]
 	private char _character;
 
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 	{
 		_mechanism = GetComponentInParent<MusicMechanism>();
 	}

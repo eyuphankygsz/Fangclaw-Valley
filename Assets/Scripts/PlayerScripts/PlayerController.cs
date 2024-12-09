@@ -21,11 +21,12 @@ public class PlayerController : MonoBehaviour, ISaveable
 	private SaveManager _saveManager;
 	[Inject]
 	private InputManager _inputManager;
-
+	[Inject]
+	protected WeaponHelpers _weaponHelpers;
 
 	private bool _freeze, _force;
 
-	private bool _hiding;
+	private bool _hiding, _inspecting;
 	public bool Hiding { get { return _hiding; } }
 
 	private void GameFreeze(bool freeze)
@@ -34,6 +35,16 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_playerInteractions.StopInteractions(freeze);
 		_playerScan.SetFreeze(freeze);
 		_playerWeapon.SetFreeze(freeze);
+	}
+	private void Inspecting(bool inspecting)
+	{
+		_inspecting = inspecting;
+		GameFreeze(inspecting);
+	}
+	private void Pausing(bool pause)
+	{
+		if(!_inspecting)
+			GameFreeze(pause);
 	}
 	private void Force(bool force)
 	{
@@ -54,8 +65,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 	private void Start()
 	{
 		SetLoadFile();
-		_gameManager.OnPauseGame += GameFreeze;
-		_gameManager.OnInspecting += GameFreeze;
+		_gameManager.OnPauseGame += Pausing;
+		_gameManager.OnInspecting += Inspecting;
 		_gameManager.OnForce += Force;
 	}
 
@@ -81,7 +92,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 	{
 		if (_hiding == hide) return;
 		_hiding = hide;
-
+		_weaponHelpers.StopChange = hide;
 		_playerWeapon.StopWeapon(_hiding);
 	}
 	private void GetPlayerScripts()

@@ -30,6 +30,8 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	[SerializeField]
 	private IsAnimationOver _isAnimOver;
+	[SerializeField]
+	private HideOut _exitForHide;
 
 	private bool _reached, _started;
 	private Transform _destination;
@@ -38,12 +40,13 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 
 	private Vector3 _pos;
+
 	public void EnterState()
 	{
+		_exitForHide.SetHideAttack();
 		_isAnimOver.SetOver(false);
-
 		_agent.stoppingDistance = 0;
-		_pos = transform.position + ((_player.transform.position - transform.position).normalized * 1.4f);
+		_pos = _player.transform.position;
 
 
 		Collider[] colls = Physics.OverlapSphere(_pos, 1, _layer);
@@ -55,18 +58,23 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 			_director = table.GetPlayable();
 
 			_agent.SetDestination(table.GetEnemyTransform().position);
-			_force.SetEvents(new OnLookEvents() { ForceEvents = _events });
 
+
+			OnLookEvents onLook = new GameObject().AddComponent<OnLookEvents>();
+			onLook.gameObject.SetActive(false);
+			onLook.ForceEvents = _events;
+
+			_force.SetEvents(onLook);
 		}
 
 	}
 
 	public void ExitState()
 	{
+		_isAnimOver.SetOver(true);
 		_reached = false;
 		_started = false;
 	}
-
 	public EnemyStateTransitionList GetTransitions()
 	{
 		return _transitions;
@@ -74,6 +82,7 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
+
 		if (_agent.remainingDistance <= _agent.stoppingDistance)
 			_reached = true;
 
@@ -91,6 +100,7 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 	public void UnFreezePlayer()
 	{
 		_playerStateLock.Lock = false;
+		Debug.Log("UFP");
 	}
 
 	private void OnDrawGizmos()

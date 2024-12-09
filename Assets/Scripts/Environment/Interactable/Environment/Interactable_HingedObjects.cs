@@ -26,7 +26,9 @@ public class Interactable_HingedObjects : Interactable
 
 
 	private NavMeshObstacle _navObstacle;
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 	{
 		_animator = GetComponent<Animator>();
 		TryGetComponent<NavMeshObstacle>(out _navObstacle);
@@ -35,7 +37,9 @@ public class Interactable_HingedObjects : Interactable
 
 	}
 
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Start()
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 	{
 		base.Start();
 	}
@@ -108,6 +112,7 @@ public class Interactable_HingedObjects : Interactable
 		if (data.Used)
 			DoneEvent();
 
+		_used = data.Used;
 		_isOn = data.IsOn;
 		_lockKey.Locked = data.IsLocked;
 		// Assume you have a method to set the door state directly based on _isOn
@@ -116,6 +121,7 @@ public class Interactable_HingedObjects : Interactable
 
 	private void SetDoorState(bool isOn, bool silent, bool atStart)
 	{
+		Debug.Log(InteractableName);
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 
 		if (isOn && !atStart)

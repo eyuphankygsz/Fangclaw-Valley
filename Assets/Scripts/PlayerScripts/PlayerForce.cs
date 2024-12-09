@@ -25,6 +25,7 @@ public class PlayerForce : MonoBehaviour
 	public void SetEvents(OnLookEvents onLookEvent)
 	{
 		_onLookEvent = onLookEvent;
+		Debug.Log("SETEVENTS");
 	}
 	public void StartForce(Transform tf)
 	{
@@ -32,6 +33,7 @@ public class PlayerForce : MonoBehaviour
 		_target = tf;
 		_gameManager.Force = true;
 		StartCoroutine(Force());
+		Debug.Log("FORCED");
 	}
 	private IEnumerator Force()
 	{
@@ -62,5 +64,6 @@ public class PlayerForce : MonoBehaviour
 	{
 		_interaction.StopInteractions(false);
 		_gameManager.Force = false;
+		Debug.Log("STOPFORCED");
 	}
 }
