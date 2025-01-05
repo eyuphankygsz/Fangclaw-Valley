@@ -7,6 +7,8 @@ public class PlayerForce : MonoBehaviour
 
 	[SerializeField]
 	private Transform _cameraHolder;
+	[SerializeField]
+	private PlayerStamina _pStamina;
 	
 	private PlayerInteractions _interaction;
 	private Transform _target;
@@ -15,7 +17,6 @@ public class PlayerForce : MonoBehaviour
 
 	[Inject]
 	private GameManager _gameManager;
-	
 
 	private void Awake()
 	{
@@ -25,15 +26,15 @@ public class PlayerForce : MonoBehaviour
 	public void SetEvents(OnLookEvents onLookEvent)
 	{
 		_onLookEvent = onLookEvent;
-		Debug.Log("SETEVENTS");
 	}
 	public void StartForce(Transform tf)
 	{
+		_pStamina.Force = true;
+
 		_interaction.StopInteractions(true);
 		_target = tf;
 		_gameManager.Force = true;
 		StartCoroutine(Force());
-		Debug.Log("FORCED");
 	}
 	private IEnumerator Force()
 	{
@@ -62,8 +63,8 @@ public class PlayerForce : MonoBehaviour
 
 	public void StopForce()
 	{
+		_pStamina.Force = false;
 		_interaction.StopInteractions(false);
 		_gameManager.Force = false;
-		Debug.Log("STOPFORCED");
 	}
 }

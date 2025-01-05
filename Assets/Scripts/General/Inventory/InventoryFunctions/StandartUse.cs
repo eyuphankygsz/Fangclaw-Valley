@@ -14,6 +14,7 @@ public class StandartUse : UseFunctions
 			return;
 		}
 
+		_inventoryManager.TheAudioSource.PlayOneShot(lastSelectedHolder.Item.UseSFX);
 		_inventoryManager.RemoveItemQuantityFromInventory(lastSelectedHolder, 1);
 		_inventoryManager.DisableCursorMenu(false);
 	}

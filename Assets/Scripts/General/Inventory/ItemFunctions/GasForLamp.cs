@@ -8,9 +8,11 @@ public class GasForLamp : UseFunction
 	private Lantern _lantern;
 	public override bool Use()
 	{
-		Debug.Log(_lanternHelpers.LeftFuel + "  " + _lanternHelpers.MaxFuel);
-		if (_lanternHelpers.LeftFuel == _lanternHelpers.MaxFuel || !_lantern.IsPicked) 
+		if (_lanternHelpers.LeftFuel == _lanternHelpers.MaxFuel || !_lantern.IsPicked)
+		{
+			DialogueManager.Instance.PlayOne(_cantUse);
 			return false;
+		}
 
 		_lanternHelpers.AddFuel(240f);
 		return true;

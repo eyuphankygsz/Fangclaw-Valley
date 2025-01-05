@@ -50,3 +50,9 @@ public class MusicMechData : GameData
 	public string CurrentOrder;
 	public bool IsDone;
 }
+[System.Serializable]
+public class StatusMechanismData : GameData
+{
+	public string MachineName;
+	public bool OneTime;
+}

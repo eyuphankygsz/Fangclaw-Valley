@@ -41,8 +41,16 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	private Vector3 _pos;
 
+	[SerializeField]
+	private SteamAchievements _achievements;
+	[SerializeField]
+	private AchievementCheck _noSafePlace;
+
 	public void EnterState()
 	{
+		_achievements.TryEnableAchievement(_noSafePlace);
+
+
 		_exitForHide.SetHideAttack();
 		_isAnimOver.SetOver(false);
 		_agent.stoppingDistance = 0;
@@ -100,7 +108,6 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 	public void UnFreezePlayer()
 	{
 		_playerStateLock.Lock = false;
-		Debug.Log("UFP");
 	}
 
 	private void OnDrawGizmos()

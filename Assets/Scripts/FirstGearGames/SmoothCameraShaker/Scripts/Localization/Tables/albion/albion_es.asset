@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: "Lo siento, Baxter, pero ten\xEDa que hacerlo..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "\xA1Las barricadas que construimos solo pueden contener a los monstruos
+      por muy poco tiempo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "\xA1Por eso te necesitamos! \xA1Por toda la humanidad!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "\xA1Este sacrificio que has hecho salvar\xE1 al mundo entero!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "Adem\xE1s, la vida de tu querida esposa Evelynn depende de ello."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Lo \xFAnico que te pedimos es que recojas MUESTRAS."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Estar\xE9 aqu\xED todas las ma\xF1anas entre las 6 y las 8."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: "\xA1Nos vemos ma\xF1ana!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

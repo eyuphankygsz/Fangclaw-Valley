@@ -277,6 +277,11 @@ MonoBehaviour:
   _maxSelectableID: 4
   _clips:
   - {fileID: 8300000, guid: 11c3569673662804aa08eceb3fa27861, type: 3}
+  - {fileID: 8300000, guid: 2c66f35cea3ef11499c1a379870ea4a5, type: 3}
+  - {fileID: 8300000, guid: 549af62e632222a45a7153843d56f375, type: 3}
+  - {fileID: 8300000, guid: 6c390c337d9ff7540bac1561bf5be82d, type: 3}
+  - {fileID: 8300000, guid: 06775ed275b8f214e80b995eb6541aaf, type: 3}
+  - {fileID: 8300000, guid: f136d86d16c0a824b82cbaf6b3254871, type: 3}
 --- !u!114 &3507527888766827185
 MonoBehaviour:
   m_ObjectHideFlags: 0

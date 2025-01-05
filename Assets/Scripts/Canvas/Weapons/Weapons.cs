@@ -61,7 +61,8 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 		_xPos = _startPos.x;
 		_camera = Camera.main.transform;
 		_animator = GetComponent<Animator>();
-		_source = GetComponent<AudioSource>();
+		if (_source == null)
+			_source = GetComponent<AudioSource>();
 	}
 	public abstract void OnSelected(ControlSchema schema);
 	public abstract void OnChanged();
@@ -126,8 +127,8 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 			_lastPos = _pivot.transform.localPosition;
 		}
 
-		if(_pivot.transform.localPosition.y > -10)
-		_pivot.transform.localPosition -= new Vector3(_xPos, 45 * Time.deltaTime, 0);
+		if (_pivot.transform.localPosition.y > -10)
+			_pivot.transform.localPosition -= new Vector3(_xPos, 45 * Time.deltaTime, 0);
 	}
 	protected void ClampTransform()
 	{

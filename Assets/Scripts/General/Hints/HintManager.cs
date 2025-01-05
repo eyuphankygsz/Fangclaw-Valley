@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using UnityEditor.Searcher;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Localization;
@@ -66,10 +65,7 @@ public class HintManager : MonoBehaviour
 
 		HintList.Clear();
 		foreach (var entry in dataWrapper.Hints)
-		{
 			HintList.Add(new Hint() { HintName = entry.HintName, HintPhoto = entry.HintPhoto, HintText = entry.HintText });
-			Debug.Log(entry.HintName);
-		}
 	}
 	public void ShowHint(string hintName)
 	{
@@ -89,11 +85,12 @@ public class HintManager : MonoBehaviour
 		HintShow = true;
 		_src.Play();
 		Hint hint = HintList.Where(x => x.HintName == hintName).FirstOrDefault();
-		if (hint == null) { Debug.Log("Can't Find The Hint"); return; }
+		if (hint == null)
+			return;
 
 		_hPhoto.sprite = Resources.Load<Sprite>(hint.HintPhoto);
-		if (_hPhoto.sprite == null) { Debug.Log("Nub"); }
-
+		if (_hPhoto.sprite == null)
+			Debug.LogWarning("NoPHOTO");
 		_localizedText = new LocalizedString() { TableReference = "Hints", TableEntryReference = hint.HintText };
 		_hText.text = _localizedText.GetLocalizedString();
 
@@ -162,24 +159,26 @@ public class HintManager : MonoBehaviour
 			if (Input.anyKeyDown)
 			{
 				_animator.SetTrigger("Close");
-
-				yield return new WaitForSecondsRealtime(0.1f);
-
-				if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("CloseAlpha"))
+				_hSkipText.gameObject.SetActive(false);
+				while (true)
 				{
-					_hintHolder.SetActive(false);
-					HintShow = false;
-					_hSkipText.gameObject.SetActive(false);
-					if (_hintsInLine.Count > 0)
+					if (_animator.GetCurrentAnimatorStateInfo(0).IsName("StayClosed"))
 					{
-						_animator.ResetTrigger("Close");
-						DisplayHint();
+						_hintHolder.SetActive(false);
+						HintShow = false;
+						if (_hintsInLine.Count > 0)
+						{
+							_animator.ResetTrigger("Close");
+							DisplayHint();
+							break;
+						}
+						_hintFree = false;
+						_gameManager.PauseGame = false;
 						break;
 					}
-					_hintFree = false;
-					_gameManager.PauseGame = false;
-					break;
+					yield return null;
 				}
+				break;
 
 			}
 			yield return null;

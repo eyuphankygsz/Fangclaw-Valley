@@ -30,12 +30,15 @@ public class GameTime : MonoBehaviour, ISaveable
 	{
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 		_gameManager.OnPauseGame += ManageTime;
-		ManageTime(false);
+		ManageTime(false, false);
 		SetLoadFile();
 	}
 
-	private void ManageTime(bool stop)
+	private void ManageTime(bool stop, bool force)
 	{
+		if (force)
+			return;
+
 		if (_timeRoutine != null)
 			StopCoroutine(_timeRoutine);
 		if (!stop)
@@ -45,12 +48,28 @@ public class GameTime : MonoBehaviour, ISaveable
 
 
 	}
+
+	[SerializeField]
+	private AchievementCheck _survivor;
+	[SerializeField]
+	private SteamAchievements _achievements;
 	private IEnumerator UpdateGameTime()
 	{
 		while (true)
 		{
 			yield return _waitseconds;
+			int days = _inGameTime.Days;
 			_inGameTime = _inGameTime.Add(TimeSpan.FromMinutes(1));
+
+
+			if (days != _inGameTime.Days)
+			{
+				if (days == 1)
+					_achievements.TryEnableAchievement(_survivor);
+
+				PlayerPrefs.SetInt("days_gone", PlayerPrefs.GetInt("days_gone") + 1);
+			}
+			
 
 			_timeText.text = _inGameTime.ToString(@"hh\:mm");
 		}

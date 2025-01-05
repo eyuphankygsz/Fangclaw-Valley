@@ -49,7 +49,6 @@ public class EnemySearch : MonoBehaviour, IEnemyState
 
     public void ExitState()
 	{
-        Debug.Log("WHY");
 		_animator.SetBool("Search", false);
 	}
 

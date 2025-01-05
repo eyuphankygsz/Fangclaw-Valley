@@ -49,7 +49,7 @@ MonoBehaviour:
     m_Value: -1
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.25943398, b: 0.25943398, a: 1}
+    m_Value: {r: 1, g: 0.24056602, b: 0.24056602, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: -180
@@ -192,7 +192,7 @@ MonoBehaviour:
     m_Value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0.1953866}
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
   gain:
     m_OverrideState: 0
     m_Value: {x: 1, y: 1, z: 1, w: -1}

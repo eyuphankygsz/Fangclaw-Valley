@@ -31,12 +31,9 @@ public class AudioSetting : Setting
 		_pauseMenu.OnPauseGame += OnPause;
 		SetSFXParam();
 	}
-	public void OnPause(bool pause)
+	public void OnPause(bool pause, bool force)
 	{
-		if (pause)
-			PauseAudio();
-		else
-			UnPauseAudio();
+		AudioListener.pause = pause;
 	}
 	public void SetSFX(Slider slider) =>
 		_tempValue = slider.value;
@@ -67,40 +64,5 @@ public class AudioSetting : Setting
 		_tempValue = _currentValue;
 		_slider.value = _currentValue;
 		Start();
-	}
-	public void PauseAudio()
-	{
-		_stoppedSrc.Clear();
-		_stoppedDrct.Clear();
-
-		foreach (AudioSource src in _sources)
-			if (src.isPlaying)
-			{
-				_stoppedSrc.Add(src);
-				src.Pause();
-			}
-
-		foreach (PlayableDirector drct in _directors)
-			if (drct.state == PlayState.Playing)
-			{
-				_stoppedDrct.Add(drct);
-				drct.Pause();
-			}
-
-
-	}
-
-	public void UnPauseAudio()
-	{
-		foreach (AudioSource src in _stoppedSrc)
-			if (src != null) // Güvenlik kontrolü.
-				src.UnPause();
-
-		foreach (PlayableDirector drct in _directors)
-			if (drct != null)
-				drct.Resume();
-
-		_stoppedDrct.Clear();
-		_stoppedSrc.Clear();
 	}
 }

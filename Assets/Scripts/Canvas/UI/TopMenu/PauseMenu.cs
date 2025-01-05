@@ -43,6 +43,7 @@ public class PauseMenu : MonoBehaviour
 		Instance = this;
 		_content = transform.GetChild(0).gameObject;
 		_content.SetActive(false);
+
 	}
 	private void Start()
 	{

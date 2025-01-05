@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: AudioObjects
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 19bff3603138fd54a969b4ff3edb3df2, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 2060977b32f95f14e8ed0ab482aed5f3, type: 2}
+  - {fileID: 11400000, guid: 906222da8623f0946aee03302bfe7fd6, type: 2}
+  - {fileID: 11400000, guid: 4f253a8a39d96da4b877b7f8f907d3bd, type: 2}
+  - {fileID: 11400000, guid: e31263575b1107144832a682f9f38a19, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

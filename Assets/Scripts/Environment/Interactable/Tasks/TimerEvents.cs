@@ -36,7 +36,6 @@ public class TimerEvents : MonoBehaviour
 	public void SetAtStartSetup() => _atStartSetup = true;
 	public void InstantActivate()
 	{
-		Debug.Log(gameObject.name);
 		//_playing = true;
 		_events.Invoke();
 	}

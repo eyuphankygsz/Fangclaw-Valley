@@ -12,7 +12,9 @@ public class InventoryItem : ScriptableObject
 	public int StackQuantity;
 	public bool OneTime;
 	public List<ItemFunctions> ItemFunctions;
-	public AudioClip Sound;
+	public AudioClip InspectSFX;
+	public AudioClip UseSFX;
+	public AudioClip DropSFX;
 	public string InspectName, UseName, CombineName, DropName;
 	//For Pooling
 	public GameObject Item;

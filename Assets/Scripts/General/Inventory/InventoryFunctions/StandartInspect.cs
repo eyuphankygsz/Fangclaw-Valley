@@ -7,7 +7,7 @@ public class StandartInspect : InspectFunctions
 	InventoryManager _inventoryManager;
 	public override void Inspect(InventoryItemHolder lastSelectedHolder)
 	{
-		_inventoryManager.TheAudioSource.PlayOneShot(lastSelectedHolder.Item.Sound);
+		_inventoryManager.TheAudioSource.PlayOneShot(lastSelectedHolder.Item.InspectSFX);
 		_inventoryManager.ItemPicture.sprite = lastSelectedHolder.Item.ItemSprite;
 		_inventoryManager.ItemPicture.enabled = true;
 		_inventoryManager.ItemTitle.text = lastSelectedHolder.Item.ItemName.GetLocalizedString();

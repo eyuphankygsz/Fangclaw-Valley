@@ -39,7 +39,7 @@ public class RotateDisc : Interactable
 		base.OnInteract(weapon);
 		if (_animating) return;
 		_animating = true;
-		_source.clip = _clips[Random.Range(0, _clips.Length)];
+		_source.clip = _clips[0];
 		_source.Play();
 		TurnDisc(1);
 	}
@@ -89,6 +89,8 @@ public class RotateDisc : Interactable
 		_currentID = (_currentID + _times) % _maxSelectableID;
 		_holder.SetLever(_turnID, _currentID == _needID, _atStart);
 		_atStart = false;
-		_source.Stop();
+
+		_source.clip = _clips[Random.Range(1, _clips.Length)];
+		_source.Play();
 	}
 }

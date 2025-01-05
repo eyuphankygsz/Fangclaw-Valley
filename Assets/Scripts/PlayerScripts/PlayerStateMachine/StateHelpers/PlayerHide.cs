@@ -14,9 +14,15 @@ public class PlayerHide : MonoBehaviour
 	private Transform _hideBoxTransform;
 	[SerializeField]
 	private float _castDistance;
+	[SerializeField]
+	private PlayerParanoia _playerParanoia;
 
 	public bool StopHide;
 	private Coroutine _stopRoutine;
+
+
+	private bool _hiding;
+
 	public void StopHideStart()
 	{
 		StopHide = true;
@@ -32,7 +38,17 @@ public class PlayerHide : MonoBehaviour
 	}
 	public void CheckHide()
 	{
-		_controller.Hide(StopHide ? false : Physics.BoxCast(_hideBoxTransform.position, _hideBoxExtends, Vector3.up, Quaternion.identity, _castDistance, _hideLayer));
+		bool hide = StopHide ? false : Physics.BoxCast(_hideBoxTransform.position, _hideBoxExtends, Vector3.up, Quaternion.identity, _castDistance, _hideLayer);
+		if (hide == _hiding) return;
+		
+		_hiding = hide;
+
+		if (hide)
+			_playerParanoia.StartParanoiaTimer();
+		else
+			_playerParanoia.StopParanoiaTimer();
+
+		_controller.Hide(hide);
 	}
 
 	private void OnDrawGizmos()

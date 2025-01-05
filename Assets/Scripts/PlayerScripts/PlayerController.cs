@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour, ISaveable
 	private PlayerStateMachine _playerStateMachine;
 	private PlayerScan _playerScan;
 
+	[SerializeField]
+	private PlayerHealth _pHealth;
+	[SerializeField]
+	private PlayerStamina _pStamina;
+
 	private PlayerData _data = new PlayerData();
 
 
@@ -41,8 +46,11 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_inspecting = inspecting;
 		GameFreeze(inspecting);
 	}
-	private void Pausing(bool pause)
+	private void Pausing(bool pause,  bool force)
 	{
+		if (force)
+			return;
+
 		if(!_inspecting)
 			GameFreeze(pause);
 	}
@@ -72,6 +80,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 
 	void Update()
 	{
+		if (Input.GetKeyDown(KeyCode.KeypadEnter))
+			PlayerPrefs.DeleteAll();
 		if(_freeze && _force)
 			_playerWeapon.ManageGun();
 
@@ -90,7 +100,6 @@ public class PlayerController : MonoBehaviour, ISaveable
 	}
 	public void Hide(bool hide)
 	{
-		if (_hiding == hide) return;
 		_hiding = hide;
 		_weaponHelpers.StopChange = hide;
 		_playerWeapon.StopWeapon(_hiding);
@@ -112,7 +121,9 @@ public class PlayerController : MonoBehaviour, ISaveable
 			Name = "Player",
 			Position = pos,
 			Rotation = transform.rotation,
-			SelectedWeapon = _playerWeapon.GetWeaponIndex()
+			SelectedWeapon = _playerWeapon.GetWeaponIndex(),
+			Health = _pHealth.Health,
+			Stamina = _pStamina.Stamina
 		};
 		return _data;
 	}
@@ -124,13 +135,16 @@ public class PlayerController : MonoBehaviour, ISaveable
 		if (_data == null)
 		{
 			Setup(0);
+			_pHealth.ResetHealth();
+			_pStamina.ResetStamina();
 			_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 			return;
 		}
 
 		transform.position = _data.Position;
 		transform.rotation = _data.Rotation;
-
+		_pHealth.SetHealth(_data.Health);
+		_pStamina.SetStamina(_data.Stamina);
 		Setup(_data.SelectedWeapon);
 		
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());

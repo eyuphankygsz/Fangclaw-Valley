@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: albion
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: b154d4d061f3cbc4cb2e41f24cbb1340, type: 2}
+  - {fileID: 11400000, guid: 3696b7caef71883499fccc3163e9dc3b, type: 2}
+  - {fileID: 11400000, guid: afed84d98c9faae4b9ccfa4dab9ae23b, type: 2}
+  - {fileID: 11400000, guid: 58ea27ffe478b3346afb53cc55f9db5b, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

@@ -58,8 +58,11 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		_onForce = force;
 	}
-	private void OnPause(bool pause)
+	private void OnPause(bool pause, bool force)
 	{
+		if (force)
+			return;
+
 		_gamePaused = pause;
 	}
 	public void StopWeapon(bool stun)

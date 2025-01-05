@@ -45,7 +45,10 @@ public class PlayerUI : MonoBehaviour
 	public void StartShake(float time)
 	{
 		if (_shakeRoutine != null)
+		{
+			_shakeInstance.FadeOut(0);
 			StopCoroutine(_shakeRoutine);
+		}
 
 		_shakeRoutine = StartCoroutine(Shake(time));
 	}
@@ -58,8 +61,6 @@ public class PlayerUI : MonoBehaviour
 		_shakeInstance.Data.SetShakeCanvases(true);
 
 		yield return new WaitForSeconds(time);
-		_shakeInstance.FadeOut();
-		_shakeInstance = null;
-
+		_shakeInstance.FadeOut(1);
 	}
 }

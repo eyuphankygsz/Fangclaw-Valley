@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: "Je suis d\xE9sol\xE9, Baxter, mais je devais faire cela..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "Les barricades que nous avons construites ne peuvent retenir les
+      monstres que pendant un tr\xE8s court moment !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "C'est pourquoi nous avons besoin de toi ! Pour toute l'humanit\xE9
+      !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: Ce sacrifice que tu as fait sauvera le monde entier !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "De plus, la vie de ta ch\xE8re \xE9pouse Evelynn en d\xE9pend."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Tout ce que nous te demandons, c'est de collecter des \xC9CHANTILLONS."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: Je serai ici chaque matin entre 6h et 8h.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: "\xC0 demain !"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

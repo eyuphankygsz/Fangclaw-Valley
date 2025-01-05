@@ -48,7 +48,6 @@ public class AgentEvents : MonoBehaviour
     {
         while (_agent.pathPending || _agent.remainingDistance > _agent.stoppingDistance || _agent.velocity.sqrMagnitude > 0.1f)
         {
-            Debug.Log("Test");
             yield return null;
         }
 

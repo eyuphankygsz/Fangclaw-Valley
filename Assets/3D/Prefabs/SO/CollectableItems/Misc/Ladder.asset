@@ -35,6 +35,13 @@ MonoBehaviour:
   StackQuantity: 1
   OneTime: 1
   ItemFunctions: 0100000003000000
+  InspectSFX: {fileID: 8300000, guid: 4194bb11e1261d545bc4922fec3fd5f7, type: 3}
+  UseSFX: {fileID: 8300000, guid: 7018e2d2324c31a4ab4e27a61e43ed69, type: 3}
+  DropSFX: {fileID: 0}
+  InspectName: 
+  UseName: 
+  CombineName: 
+  DropName: 
   Item: {fileID: 1210439804110286, guid: 77c71902fab40354db75b533794d3b4b, type: 3}
   INITIAL_COUNT: 2
   INITIAL_QUANTITY: 1

@@ -11,7 +11,7 @@ public class Lantern : Weapons
 	[SerializeField] private GameObject _directLightSource;
 	[SerializeField] private GameObject _behindLightSource;
 	[SerializeField] private InventoryItem _match;
-	[SerializeField] private AudioClip _matchSound;
+	[SerializeField] private AudioClip _matchSound, _gasSound;
 	[SerializeField] private LanternHelpers _lanternHelpers;
 	[SerializeField] private ShineMode _shine;
 
@@ -105,6 +105,8 @@ public class Lantern : Weapons
 	}
 	private void OnDisable()
 	{
+		_isShining = false;
+	
 		if (_weaponHelpers.StopChange)
 			Disable();
 	}
@@ -124,6 +126,8 @@ public class Lantern : Weapons
 		{
 			_animator.Play("OnFire");
 			_lanternHelpers.StartUsingGas();
+			_source.clip = _gasSound;
+			_source.Play();
 		}
 		transform.localPosition = _latestPos;
 	}
@@ -144,22 +148,23 @@ public class Lantern : Weapons
 
 			_enlighting = true;
 			_weaponHelpers.StopChange = true;
-			_source.clip = _matchSound;
-			_source.Play();
+			_source.PlayOneShot(_matchSound);
 			_animator.SetTrigger("Enlight");
 			_inventoryManager.RemoveItemQuantityFromInventory(item, 1);
 		}
 		else
 		{
 			_lanternHelpers.StopUsingGas();
-
 			_enlighting = true;
+			_weaponHelpers.StopChange = true;
 			_animator.SetTrigger("Delight");
 		}
 	}
 	public void Enlight()
 	{
 		_onFire = true;
+		_source.clip = _gasSound;
+		_source.Play();
 		_animator.SetBool("OnFire", _onFire);
 		_lanternHelpers.StartUsingGas();
 		_enlighting = false;
@@ -169,7 +174,9 @@ public class Lantern : Weapons
 	public void Delight()
 	{
 		_onFire = false;
+		_source.Stop();
 		_animator.SetBool("OnFire", _onFire);
+		_weaponHelpers.StopChange = false;
 		_enlighting = false;
 		SetLightning(false);
 	}
@@ -215,6 +222,11 @@ public class Lantern : Weapons
 		_directLightSource.SetActive(false);
 		_normalLightSource.SetActive(false);
 		_behindLightSource.SetActive(_onFire);
+		if (_onFire && !_source.isPlaying)
+		{
+			_source.clip = _gasSound;
+			_source.Play();
+		}
 	}
 	public override void SetWeapon()
 	{

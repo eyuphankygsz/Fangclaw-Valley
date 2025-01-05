@@ -121,7 +121,6 @@ public class Interactable_HingedObjects : Interactable
 
 	private void SetDoorState(bool isOn, bool silent, bool atStart)
 	{
-		Debug.Log(InteractableName);
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 
 		if (isOn && !atStart)

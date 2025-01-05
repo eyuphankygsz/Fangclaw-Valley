@@ -59,6 +59,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-tr
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e31263575b1107144832a682f9f38a19
+    m_Address: AudioObjects_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58ea27ffe478b3346afb53cc55f9db5b
+    m_Address: albion_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
   m_SchemaSet:

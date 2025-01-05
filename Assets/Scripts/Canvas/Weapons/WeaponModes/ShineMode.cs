@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class ShineMode : MonoBehaviour
 {
@@ -17,6 +14,12 @@ public class ShineMode : MonoBehaviour
 
 	private bool _hitBool;
 	RaycastHit _hit;
+
+	[SerializeField]
+	private AchievementCheck _eyesWideShut;
+	[SerializeField]
+	private SteamAchievements _achievements;
+
 	public void ExecuteModeUpdate()
 	{
 		RaycastHit hit;
@@ -31,6 +34,8 @@ public class ShineMode : MonoBehaviour
 					if (hit.transform.TryGetComponent<WhispererController>(out WhispererController controller))
 					{
 						_hit = hit;
+						if (!_hitBool)
+							_achievements.TryEnableAchievement(_eyesWideShut);
 						controller.Shined();
 						_hitBool = true;
 					}

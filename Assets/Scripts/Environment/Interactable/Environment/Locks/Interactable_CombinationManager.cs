@@ -40,6 +40,12 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 
     private bool _inputsEnabled;
 
+
+    [SerializeField]
+    private AchievementCheck _theKeyHolder;
+    [SerializeField]
+    private SteamAchievements _achievements;
+
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
 #pragma warning restore CS0108 // Member hides inherited member; missing new keyword
@@ -130,6 +136,11 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
     }
     private void Unlock(bool silent)
     {
+        if (!silent)
+            _achievements.TryEnableAchievement(_theKeyHolder);
+
+        PlayerPrefs.SetInt("locks_unlocked", PlayerPrefs.GetInt("locks_unlocked") + 1);
+
         _unlocked = true;
         Inspect(false);
         GetComponent<Rigidbody>().isKinematic = false;

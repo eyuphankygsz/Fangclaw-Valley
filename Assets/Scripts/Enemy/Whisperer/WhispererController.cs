@@ -22,10 +22,17 @@ public class WhispererController : MonoBehaviour
 	[SerializeField]
 	private IsTimeArrived _isTimeArrived;
 
+
+	private EnemyAttackController _enemyAttackController;
+
 	public bool Stop;
 	public bool Stunned;
 	public bool DiscardTime;
 
+	private void Awake()
+	{
+		_enemyAttackController = GetComponent<EnemyAttackController>();
+	}
 	void Start()
 	{
 		_machine.SetCurrentState(_startState as IEnemyState);
@@ -35,6 +42,7 @@ public class WhispererController : MonoBehaviour
 	void Update()
 	{
 		_canSee.SendRays();
+		_enemyAttackController.TryAttack();
 		CheckTime();
 	}
 

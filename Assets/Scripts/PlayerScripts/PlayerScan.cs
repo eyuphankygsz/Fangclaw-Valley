@@ -3,13 +3,13 @@ using UnityEngine.Rendering;
 using System.Collections;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.InputSystem;
+using System;
+using Zenject;
 
 public class PlayerScan : MonoBehaviour, IInputHandler
 {
 	[SerializeField]
 	private float _maxScanRadius;
-	[SerializeField]
-	private Volume _postProcessingVolume;
 	[SerializeField]
 	private AudioSource _source;
 	[SerializeField]
@@ -22,55 +22,28 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 
 	private bool _scanning;
 	private ControlSchema _controls;
-	private float _currentRadius;
-
-	private LensDistortion _lensDistortion;
-	private DepthOfField _depthOfField;
-	private ChromaticAberration _chromaticAberration;
-	private ColorAdjustments _colorAdjustments;
 
 	private float _transitionDuration = 1f;
 
-	private float _initialLensDistortion = 0f;
 	private float _targetLensDistortion = -0.5f;
-
-	private float _initialFocusDistance = 1f;
 	private float _targetFocusDistance = 0f;
-
-	private float _initialChromaticAberration = 0f;
 	private float _targetChromaticAberration = 1.1f;
-
-	private Color _initialColor = new Color(255f / 255f, 95f / 255f, 95f / 255f);
-	private Color _targetColor = new Color(210f / 255f, 0f, 0f);
-	private float _intensity = 1.1f, _saturation = -65f;
+	private Color _targetColor = new Color(207f / 255f, 255f / 255f, 0f);
 
 
 	private bool _freeze;
 	public void SetFreeze(bool freeze) => _freeze = freeze;
+
+	[SerializeField]
+	private PostProcessingChanger _ppc;
+
 	void Awake()
 	{
-
-		if (_postProcessingVolume == null)
-		{
-			Debug.LogError("Post Processing Volume is not assigned.");
-			return;
-		}
-
-		_postProcessingVolume.profile.TryGet<LensDistortion>(out _lensDistortion);
-		_postProcessingVolume.profile.TryGet<DepthOfField>(out _depthOfField);
-		_postProcessingVolume.profile.TryGet<ChromaticAberration>(out _chromaticAberration);
-		_postProcessingVolume.profile.TryGet<ColorAdjustments>(out _colorAdjustments);
-
-		if (_lensDistortion != null) _lensDistortion.intensity.value = _initialLensDistortion;
-		if (_depthOfField != null) _depthOfField.focusDistance.value = _initialFocusDistance;
-		if (_chromaticAberration != null) _chromaticAberration.intensity.value = _initialChromaticAberration;
-		if (_colorAdjustments != null)
-		{
-			_colorAdjustments.colorFilter.value = _initialColor * _intensity;
-			_colorAdjustments.saturation.value = _saturation;
-		}
+		_midAction += CheckObjects;
+		_endAction += EndScan;
 	}
 
+	private Action _midAction, _endAction;
 	public void Scan(InputAction.CallbackContext ctx)
 	{
 		if (ctx.performed && !_scanning && !_freeze)
@@ -78,100 +51,25 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 			if (_playerStamina.Stamina < 60)
 				return;
 
-			_currentRadius = 0;
+			for (int i = 0; i < _clips.Length; i++)
+				_source.PlayOneShot(_clips[i]);
 
 			_playerStamina.AddStamina(-60);
 			_scanning = true;
-			StartCoroutine(SmoothTransition());
+			_ppc.StartProcessChange(_targetLensDistortion, _targetFocusDistance, _targetChromaticAberration, _targetColor, _midAction, _endAction);
 		}
 	}
 
-	IEnumerator SmoothTransition()
+	void CheckObjects()
 	{
-		for (int i = 0; i < _clips.Length; i++)
-			_source.PlayOneShot(_clips[i]);
-
-		yield return StartCoroutine(TransitionToTarget(true));
-
-		yield return StartCoroutine(TransitionToTarget(false));
+		Collider[] colliders = Physics.OverlapSphere(transform.position, _maxScanRadius, _layerMask);
+		for (int i = 0; i < colliders.Length; i++)
+			colliders[i].GetComponent<Interactable>().ShowScanObject();
 	}
 
-	IEnumerator TransitionToTarget(bool goingToTarget)
+	void EndScan()
 	{
-		float timeElapsed = 0f;
-		_transitionDuration = goingToTarget ? 0.5f : 1f;
-
-		float startLensDistortion = goingToTarget ? _initialLensDistortion : _targetLensDistortion;
-		float endLensDistortion = goingToTarget ? _targetLensDistortion : _initialLensDistortion;
-
-		float startFocusDistance = goingToTarget ? _initialFocusDistance : _targetFocusDistance;
-		float endFocusDistance = goingToTarget ? _targetFocusDistance : _initialFocusDistance;
-
-		float startChromaticAberration = goingToTarget ? _initialChromaticAberration : _targetChromaticAberration;
-		float endChromaticAberration = goingToTarget ? _targetChromaticAberration : _initialChromaticAberration;
-
-		if (_colorAdjustments != null)
-		{
-			_colorAdjustments.colorFilter.value = (goingToTarget ? _initialColor: _targetColor) * _intensity;
-			_colorAdjustments.saturation.value = goingToTarget ? _saturation : 0f;
-		}
-
-		while (timeElapsed < _transitionDuration)
-		{
-			float t = timeElapsed / _transitionDuration;
-
-			if (_lensDistortion != null)
-				_lensDistortion.intensity.value = Mathf.Lerp(startLensDistortion, endLensDistortion, t);
-
-			if (_depthOfField != null)
-				_depthOfField.focusDistance.value = Mathf.Lerp(startFocusDistance, endFocusDistance, t);
-
-			if (_chromaticAberration != null)
-				_chromaticAberration.intensity.value = Mathf.Lerp(startChromaticAberration, endChromaticAberration, t);
-
-			if (goingToTarget)
-			{
-				_currentRadius = Mathf.Lerp(0, _maxScanRadius, t);
-
-				Collider[] colliders = Physics.OverlapSphere(transform.position, _currentRadius, _layerMask);
-				for (int i = 0; i < colliders.Length; i++)
-				{
-					Debug.Log(colliders[i].gameObject);
-					colliders[i].GetComponent<Interactable>().ShowScanObject();
-				}
-			}
-			
-			if (_colorAdjustments != null)
-			{
-				Color lerpedColor = Color.Lerp(goingToTarget ? _initialColor : _targetColor,
-											   goingToTarget ? _targetColor : _initialColor, t);
-				_colorAdjustments.colorFilter.value = lerpedColor * _intensity;
-				_colorAdjustments.saturation.value = Mathf.Lerp(goingToTarget ? _saturation : 0f,
-															   goingToTarget ? 0f : _saturation, t);
-			}
-
-			timeElapsed += Time.deltaTime;
-			yield return null;
-		}
-
-		if (_lensDistortion != null)
-			_lensDistortion.intensity.value = endLensDistortion;
-
-		if (_depthOfField != null)
-			_depthOfField.focusDistance.value = endFocusDistance;
-
-		if (_chromaticAberration != null)
-			_chromaticAberration.intensity.value = endChromaticAberration;
-
-		if (_colorAdjustments != null)
-		{
-			_colorAdjustments.colorFilter.value = (goingToTarget ? _targetColor : _initialColor) * _intensity;
-			_colorAdjustments.saturation.value = goingToTarget ? 0f : _saturation; // Set saturation back to initial
-		}
-
-		if (!goingToTarget)
-			_scanning = false;
-		_currentRadius = 0;
+		_scanning = false;
 	}
 
 	public void OnInputEnable(ControlSchema schema)
@@ -183,11 +81,5 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 	public void OnInputDisable()
 	{
 		_controls.Player.Scan.performed -= Scan;
-	}
-
-	private void OnDrawGizmos()
-	{
-		Gizmos.color = Color.blue;
-		Gizmos.DrawWireSphere(transform.position, _currentRadius);
 	}
 }

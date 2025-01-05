@@ -13,6 +13,15 @@ public class CombinationPart : MonoBehaviour
 	private int _maxNumber;
 
 	public bool Loaded;
+
+	[SerializeField]
+	private AudioClip[] _clips;
+	private AudioSource _source;
+
+	private void Awake()
+	{
+		_source = GetComponent<AudioSource>();
+	}
 	private void Start()
 	{
 		_combinationManager = GetComponentInParent<Interactable_CombinationManager>();
@@ -26,6 +35,9 @@ public class CombinationPart : MonoBehaviour
 	{
 		if (_isTurning) return;
 
+		_source.clip = _clips[0];
+		_source.Play();
+
 		_isTurning = true;
 
 		if (setManually) 
@@ -37,8 +49,9 @@ public class CombinationPart : MonoBehaviour
 
 	private void RotateEnd()
 	{
-		_number++;
-
+		_number++; 
+		_source.clip = _clips[Random.Range(1,_clips.Length)];
+		_source.Play();
 		if (_number > _maxNumber)
 			_number = _startNumber;
 		_isTurning = false;

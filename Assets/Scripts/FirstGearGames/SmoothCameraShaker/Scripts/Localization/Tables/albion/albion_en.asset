@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: I'm sorry, Baxter, but I had to do this...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: The barricades we built can only hold the monsters for a very short
+      time!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: This is why we need you! For all of humanity!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "This sacrifice you\u2019ve made will save the entire world!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "Also, your beloved wife Evelynn\u2019s life depends on it."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: I will be here every morning between 6 and 8.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: All we ask of you is to collect SAMPLES.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: See you tomorrow!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

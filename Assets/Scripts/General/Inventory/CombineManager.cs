@@ -13,6 +13,11 @@ public class CombineManager : MonoBehaviour
 	[Inject]
 	private InventoryManager _inventoryManager;
 
+	[SerializeField]
+	private SteamAchievements _achievements;
+	[SerializeField]
+	private AchievementCheck _expectedResults;
+
 	private void Start()
 	{
 		_inventoryManager.SetCombineManager(this);
@@ -27,6 +32,8 @@ public class CombineManager : MonoBehaviour
 
 		first.AddQuantity(combineable.FirstItem == first ? -combineable.FirstCount : -combineable.SecondCount);
 		second.AddQuantity(combineable.FirstItem == first ? -combineable.SecondCount : -combineable.FirstCount);
+
+		PlayerPrefs.SetInt("combined_items", PlayerPrefs.GetInt("combined_items") + 1);
 
 		_inventoryManager.AddItemToInventory(combineable.ResultItem, combineable.ResultCount, null);
 

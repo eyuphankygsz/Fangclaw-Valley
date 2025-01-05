@@ -15,10 +15,9 @@ public class PlayerStamina : MonoBehaviour
 	private PlayerUI _playerUI;
 
 	private Coroutine _currentRoutine;
-	private void Awake()
-	{
-		_stamina = _maxStamina;
-	}
+
+	public bool Force;
+
 	private void Start()
 	{
 		_playerUI.SetMaxStamina(_maxStamina);
@@ -26,13 +25,24 @@ public class PlayerStamina : MonoBehaviour
 	public void ChangeStamina(bool increase)
 	{
 		StopRoutine();
+		if (Force)
+			return;
+
 		_currentRoutine = increase ? StartCoroutine(IncreaseStaminaRoutine()) : StartCoroutine(DecreaseStaminaRoutine());
+	}
+	public void SetStamina(float stamina)
+	{
+		_stamina = stamina;
+		ChangeUI();
 	}
 	public IEnumerator DecreaseStaminaRoutine()
 	{
 
 		while (_stamina > 0)
 		{
+			if (Force)
+				yield break;
+
 			_stamina -= Time.deltaTime * 10;
 			ChangeUI();
 
@@ -47,6 +57,9 @@ public class PlayerStamina : MonoBehaviour
 	{
 		while (_stamina < _maxStamina)
 		{
+			if (Force)
+				yield break;
+
 			_stamina += Time.deltaTime * 8f;
 			ChangeUI();
 
@@ -60,6 +73,7 @@ public class PlayerStamina : MonoBehaviour
 	public void AddStamina(int addedStamina)
 	{
 		_stamina = Mathf.Clamp(_stamina + addedStamina, 0, _maxStamina);
+
 		CheckStamina();
 		ChangeUI();
 	}
@@ -75,5 +89,10 @@ public class PlayerStamina : MonoBehaviour
 		if (_currentRoutine == null)
 			if (_stamina < _maxStamina)
 				_currentRoutine = StartCoroutine(IncreaseStaminaRoutine());
+	}
+	public void ResetStamina()
+	{
+		_stamina = _maxStamina;
+		ChangeUI();
 	}
 }

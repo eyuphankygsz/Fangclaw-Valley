@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager
 {
-	public event Action<bool> OnPauseGame;
+	public event Action<bool,bool> OnPauseGame;
 
 	private bool _pauseGame;
 	public bool PauseGame
@@ -12,11 +12,11 @@ public class GameManager
 		get => _pauseGame;
 		set
 		{
-			if (_pauseGame != value && !_force)
+			if (_pauseGame != value)
 			{
 				Time.timeScale = value ? 0 : 1;
 				_pauseGame = value;
-				OnPauseGame?.Invoke(_pauseGame);
+				OnPauseGame?.Invoke(_pauseGame, _force);
 			}
 		}
 	}

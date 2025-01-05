@@ -42,6 +42,14 @@ MonoBehaviour:
     m_Localized: "Peque\xF1o trastero\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 42839186742624256
+    m_Localized: "Armer\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42839616772030464
+    m_Localized: Sala de Mapas
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

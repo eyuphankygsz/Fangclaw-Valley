@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a944bec3dead8347a115bc6b191f826, type: 3}
+  m_Name: ThatTheWay
+  m_EditorClassIdentifier: 
+  AchievementName: THATS_THE_WAY
+  IsInt: 0
+  IsFloat: 0
+  IsString: 0
+  TargetInt: 0
+  TargetFloat: 0
+  TargetString: 
+  CurrentInt: 
+  CurrentFloat: 0
+  CurrentString: 
+  LessThanEqual: 0
+  GreaterThanEqual: 0
+  LessThan: 0
+  GreaterThan: 0

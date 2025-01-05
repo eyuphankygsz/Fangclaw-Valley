@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: "\xDCzg\xFCn\xFCm Baxter ama bunu yapmak zorundayd\u0131m..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "Yapt\u0131\u011F\u0131m\u0131z barikatlar canavarlar\u0131 \xE7ok
+      k\u0131sa bir s\xFCre tutabilir!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "\u0130\u015Fte bu y\xFCzden sana ihtiyac\u0131m\u0131z var! T\xFCm
+      insanl\u0131k olarak..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "Bu yapt\u0131\u011F\u0131n fedakarl\u0131k t\xFCm D\xFCnya'y\u0131
+      kurtaracak!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "Ayr\u0131ca sevgili e\u015Fin Evelynn'in hayat\u0131 da buna ba\u011Fl\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Senden istedi\u011Fimiz tek \u015Fey \xD6RNEK toplaman."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Herg\xFCn sabah 6 ile 8 aras\u0131nda burada olaca\u011F\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: "Yar\u0131n g\xF6r\xFC\u015Fmek \xFCzere!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

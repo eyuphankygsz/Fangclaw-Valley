@@ -126,7 +126,7 @@ public class Interactable_PlaceHolder : Interactable
 		gameObject.SetActive((_startAsDisabled && _statusID != 2) ? false : _statusID == 2 ? true : false);
 		HandleHolderObject(placed: data.IsItemOn);
 		_isFull = data.IsItemOn;
-		_mechanism.SetLever(_id, _isFull, true);
+		_mechanism.SetLever(_id, _isFull, _statusID == 2 ? false : true);
 	}
 
 }

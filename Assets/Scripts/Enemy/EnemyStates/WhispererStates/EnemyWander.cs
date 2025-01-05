@@ -56,7 +56,6 @@ public class EnemyWander : MonoBehaviour, IEnemyState
         if (_isSearching)
             if (_timeForSearch.CheckCondition())
             {
-                Debug.Log("Checking Condition...");
                 FindNewWanderPoint();
                 _timeForSearch.ResetFrameFreeze();
             }
@@ -107,7 +106,6 @@ public class EnemyWander : MonoBehaviour, IEnemyState
                 _agent.SetDestination(hit.position);
                 _animator.SetBool("Follow", true);
                 _animator.SetBool("Search", false);
-				Debug.Log("Found");
             }
 
         }

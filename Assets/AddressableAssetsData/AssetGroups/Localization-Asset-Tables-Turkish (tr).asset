@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-Turkish (tr)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-Turkish (tr)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cb7ba542601eb9b48a88ad3ba07b7fb0
+  m_SerializeEntries:
+  - m_GUID: 1405ad0b4c28cbc4a82a496f29ef69a8
+    m_Address: albionSounds_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 912e4cbe525fdf64fa4268ed9913d9d8, type: 2}
+    - {fileID: 11400000, guid: 2c79410ca89b43147ac64c17404b45a9, type: 2}

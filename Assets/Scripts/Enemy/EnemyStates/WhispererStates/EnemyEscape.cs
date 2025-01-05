@@ -89,7 +89,6 @@ public class EnemyEscape : MonoBehaviour, IEnemyState
 	{
 		_arrived = true;
 		_collider.enabled = false;
-		Debug.Log("Arrived");
 		_agent.transform.rotation = _selectedEscape.rotation;
 		_animator.SetBool("Escape", true);
 		_animator.SetBool("Follow", false);

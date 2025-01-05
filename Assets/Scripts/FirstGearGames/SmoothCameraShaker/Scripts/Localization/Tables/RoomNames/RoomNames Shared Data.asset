@@ -39,6 +39,14 @@ MonoBehaviour:
     m_Key: little_storage_room
     m_Metadata:
       m_Items: []
+  - m_Id: 42839186742624256
+    m_Key: armory_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42839616772030464
+    m_Key: map_room
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

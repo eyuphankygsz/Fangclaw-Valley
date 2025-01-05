@@ -35,7 +35,9 @@ MonoBehaviour:
   StackQuantity: 2
   OneTime: 1
   ItemFunctions: 000000000100000003000000
-  Sound: {fileID: 8300000, guid: e396a686d3030764492842c78ee19f9a, type: 3}
+  InspectSFX: {fileID: 8300000, guid: 4d9396764c792b34cb2d6397df843e18, type: 3}
+  UseSFX: {fileID: 8300000, guid: c39176912c408da4faf3e6e039a2979f, type: 3}
+  DropSFX: {fileID: 0}
   InspectName: 
   UseName: 
   CombineName: 

@@ -24,6 +24,11 @@
         "HintName": "scan_env",
         "HintText": "hint_scan_env",
         "HintPhoto": "images/hints/hint5"
+      },
+      {
+        "HintName": "drop_item",
+        "HintText": "hint_drop_item",
+        "HintPhoto": "images/hints/hint6"
       }
     ]
   }
