@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: fd1f55fdc8808fb48823713abf784371, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 52114407424
+    m_Localized: "Du kan bruge dine v\xE6rkt\xF8jer eller dine h\xE6nder med <color=#FF0000>\"$primary_key\"</color>
+      til at bryde kasserne."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57227675353088
+    m_Localized: "Du vil kr\xE6ve lampeolie og t\xE6ndstikker for at t\xE6nde gaslampen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: "Tryk p\xE5 en vilk\xE5rlig tast for straks at forts\xE6tte..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Du kan \xE5bne dit inventar ved at trykke p\xE5 <color=#FF0000>\"$inv_key\"</color>.
+      Mens du er i dit inventar, kan du bruge, unders\xF8ge, kassere eller kombinere
+      genstande! Husk at fylde din gaslampe op med lampeolie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: eller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "Ved at trykke p\xE5 <color=#FF0000>\"$inter_key\"</color>-tasten
+      kan du erhverve eller bruge dine genstande."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "Ved at fokusere din opm\xE6rksomhed, kan du skelne objekter, der
+      kan interageres med omkring dig. Brug <color=#FF0000>\"$scan_env\"</color>-tasten
+      for at g\xF8re dette. Husk dog, at denne evne vil udmatte din styrke betydeligt."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

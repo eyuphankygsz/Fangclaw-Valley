@@ -43,8 +43,8 @@ MonoBehaviour:
   CombineName: 
   DropName: 
   Item: {fileID: 1210439804110286, guid: c23b594e2b7844940b09231e58449cce, type: 3}
-  INITIAL_COUNT: 0
-  INITIAL_QUANTITY: 0
+  INITIAL_COUNT: 1
+  INITIAL_QUANTITY: 20
   references:
     version: 2
     RefIds: []

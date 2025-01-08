@@ -32,7 +32,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   ItemSprite: {fileID: 21300000, guid: 1be6d631189937148b4f019f8d849390, type: 3}
-  StackQuantity: 3
+  StackQuantity: 2
   OneTime: 1
   ItemFunctions: 000000000100000003000000
   InspectSFX: {fileID: 8300000, guid: 40b4c090c37206c4e96cc2c12935fcd7, type: 3}

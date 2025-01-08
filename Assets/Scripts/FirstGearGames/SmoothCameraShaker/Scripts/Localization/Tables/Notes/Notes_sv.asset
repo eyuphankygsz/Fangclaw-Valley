@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_sv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sv
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11580552528445440
+    m_Localized: "(B\xE5da sidorna \xE4r trasiga.)\nI III V"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: "(H\xF6ger sida \xE4r trasig.)\nIV II I"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: "(V\xE4nster sida \xE4r trasig.)\nII III IV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: Den sista vittnet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Jag \xE4r fruktansv\xE4rt medveten om att den olyckliga sj\xE4len
+      som snubblar \xF6ver denna lapp ocks\xE5 kommer att uppt\xE4cka min livl\xF6sa
+      kropp. Min tid \xE4r farligt kort! Det verkar som att n\xE5gon har \xE4ndrat
+      l\xE5sen... Vad jag bevittnade h\xE4r (denna del kommer att skrivas med en
+      helt ol\xE4slig handstil).\n(I slutet av lappen finns ett ord som uppenbarligen
+      lades till senare.) 'H\xE4nder....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Antikt? Inte riktigt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "B\xE4sta kollega,\n\nDe strukturer jag har st\xF6tt p\xE5 inom
+      denna grotta \xE4r f\xF6r komplicerade f\xF6r att vara skapelsen av n\xE5gon
+      enkel gammal civilisation. Oavsett om det \xE4r en gl\xF6md civilisation eller
+      n\xE5got mycket mer avancerat, f\xF6rblir deras syfte g\xE5tfullt. Det \xE4r
+      uppenbart att gruvarbetarna har \xE5teranv\xE4nt dessa rum, men deras ursprungliga
+      funktion undg\xE5r min f\xF6rst\xE5else.\n\nVi m\xE5ste forts\xE4tta v\xE5r
+      unders\xF6kning med st\xF6rsta noggrannhet.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

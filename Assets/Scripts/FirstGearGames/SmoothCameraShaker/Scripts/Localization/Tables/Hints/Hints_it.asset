@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: fd1f55fdc8808fb48823713abf784371, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 52114407424
+    m_Localized: Puoi usare i tuoi strumenti o le tue mani con <color=#FF0000>"$primary_key"</color>
+      per rompere le scatole.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57227675353088
+    m_Localized: Avrai bisogno di olio per lampada e fiammiferi per accendere la
+      lampada a gas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: Premi un tasto qualsiasi per procedere immediatamente...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: Puoi aprire il tuo inventario premendo <color=#FF0000>"$inv_key"</color>.
+      Mentre sei nel tuo inventario, puoi usare, esaminare, scartare o combinare
+      oggetti! Ricorda di rifornire la tua lampada a gas con olio per lampada.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: o
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: Premendo il tasto <color=#FF0000>"$inter_key"</color>, puoi acquisire
+      o usare i tuoi oggetti.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "Concentrando la tua attenzione, puoi distinguere gli oggetti con
+      cui puoi interagire intorno a te. Per farlo, usa il tasto <color=#FF0000>\"$scan_env\"</color>.
+      Tuttavia, ricorda che questa abilit\xE0 consumer\xE0 notevolmente la tua forza."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19140650193793024
+    m_Localized: "Gasolie er vitalt for at t\xE6nde min lampe. Jeg er desperat afh\xE6ngig
+      af lys for at kunne bev\xE6ge mig gennem m\xF8rket i denne hule, og dette olie
+      er n\xF8dvendigt for at holde lampen br\xE6ndende. Ak, jeg har kun lidt tilbage
+      og m\xE5 bruge det med den st\xF8rste forsigtighed."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: "\xD8stlig s\xF8dbusk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "\xD8stlig s\xF8dbusk... Farven minder mig om Evelyns gamle r\xF8de
+      kjole. Den, der engang fangede alle med sin elegance... Men denne blomst er
+      mere end bare et minde. N\xE5r den blandes med vand, har den kraften til at
+      genoprette livet. Ligesom Evelyns n\xE6rv\xE6r engang genoplivede min sj\xE6l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: "Echinacea... En blomst af subtil modstandskraft. P\xE5 egen h\xE5nd
+      giver den en beskeden energiudladning, som en kort pause midt i udmattelsen.
+      Men n\xE5r den blandes med tonicvand, blomstrer dens potentiale og giver et
+      udbrud af styrke, der varer ved, et vidnesbyrd om dens skjulte kraft."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: Tonic Vand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: "En drik b\xE5de for forfriskning og helbredelse. Infunderet med
+      den bitre essens af kinin, var tonicvand engang en n\xF8dvendig allieret i
+      kampen mod feber. Dens brus, b\xE5de opfriskende og skarp, er siden blevet
+      et symbol p\xE5 vitalitet. Blandt med de rette elementer har det kraften til
+      at l\xE5se op for skjulte styrker, der genopliver ikke kun kroppen, men ogs\xE5
+      \xE5nden."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

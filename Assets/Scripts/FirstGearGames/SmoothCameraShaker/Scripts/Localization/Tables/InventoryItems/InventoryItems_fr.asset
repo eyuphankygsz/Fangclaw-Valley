@@ -74,6 +74,43 @@ MonoBehaviour:
     m_Localized: Huile de Lampe
     m_Metadata:
       m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: Calycanthe Floride
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "Calycanthe Floride... Sa couleur me rappelle la vieille robe rouge
+      d\u2019Evelynn. Celle qui fascinait tout le monde par son \xE9l\xE9gance...
+      Mais cette fleur n'est pas simplement un souvenir. Lorsqu'elle est m\xE9lang\xE9e
+      \xE0 l'eau, elle a le pouvoir de redonner la vie. Tout comme la pr\xE9sence
+      d\u2019Evelynn a un jour raviv\xE9 mon \xE2me."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: "\xC9chinac\xE9e... Une fleur de r\xE9silience subtile. Seule, elle
+      offre un modeste regain d'\xE9nergie, comme une br\xE8ve pause au milieu de
+      l'\xE9puisement. Mais lorsqu'elle est m\xE9lang\xE9e avec de l'eau tonique,
+      son potentiel se d\xE9veloppe, produisant une explosion de force qui perdure,
+      un t\xE9moignage de sa puissance cach\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: "\xC9chinac\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: Eau Tonique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: "Une boisson \xE0 la fois rafra\xEEchissante et th\xE9rapeutique.
+      Infus\xE9e avec l'essence am\xE8re de la quinine, l'eau tonique \xE9tait autrefois
+      un alli\xE9 n\xE9cessaire dans la lutte contre la fi\xE8vre. Son effervescence,
+      \xE0 la fois vivifiante et piquante, est depuis devenue un symbole de vitalit\xE9.
+      M\xE9lang\xE9e avec les bons \xE9l\xE9ments, elle a le pouvoir de lib\xE9rer
+      des forces cach\xE9es, revitalisant non seulement le corps, mais aussi l'esprit."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

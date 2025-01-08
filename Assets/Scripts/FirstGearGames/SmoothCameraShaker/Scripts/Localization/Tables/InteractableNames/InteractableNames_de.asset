@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 390507608064000
+    m_Localized: Affe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antilope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: "Sch\xE4del"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: "Diese Sch\xE4del k\xF6nnen keine \xDCberreste gew\xF6hnlicher Wesen
+      sein. Jeder tr\xE4gt Spuren von etwas \xDCbermenschlichem. Ihre Kieferstrukturen,
+      tiefen Augenh\xF6hlen und Formen deuten auf ein altes Geheimnis hin. Mit der
+      Zunahme ihrer Zahl w\xE4chst auch die Angst in mir \u2013 welches dunkle Geheimnis
+      k\xF6nnte tief in diesem Land vergraben sein?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Leiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "F\xFCr die Zeiten, in denen ich hinaufsteigen muss, um das zu ergreifen,
+      was gerade au\xDFerhalb meiner Reichweite liegt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Podest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: "Eisent\xFCr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: "Dieses Explosivmittel wird h\xE4ufig in den Minen eingesetzt. Es
+      ist ein teures und wirkungsvolles Mittel zur Detonation."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

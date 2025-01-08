@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
+  m_Name: Echinacea
+  m_EditorClassIdentifier: 
+  Name: echinacea
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 49906897968611328
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 49906938020020224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemSprite: {fileID: 21300004, guid: 1be801af75d973a4b9e1fdc6fda7ac8c, type: 3}
+  StackQuantity: 3
+  OneTime: 0
+  ItemFunctions: 00000000010000000200000003000000
+  InspectSFX: {fileID: 0}
+  UseSFX: {fileID: 0}
+  DropSFX: {fileID: 0}
+  InspectName: 
+  UseName: 
+  CombineName: 
+  DropName: 
+  Item: {fileID: 4041590670100178332, guid: 65ce752529d73be48ba98af8b235b631, type: 3}
+  INITIAL_COUNT: 15
+  INITIAL_QUANTITY: 1
+  references:
+    version: 2
+    RefIds: []

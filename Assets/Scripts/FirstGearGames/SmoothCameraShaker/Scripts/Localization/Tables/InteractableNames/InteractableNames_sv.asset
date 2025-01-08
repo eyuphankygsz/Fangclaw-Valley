@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_sv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sv
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 390507608064000
+    m_Localized: Apa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antilop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: Skalle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: "Dessa skall kan inte vara rester av vanliga varelser. Var och en
+      b\xE4r sp\xE5r av n\xE5got bortom m\xE4nniskan. Deras k\xE4kstrukturer, djupa
+      \xF6gonh\xE5lor och former pekar p\xE5 ett gammalt mysterium. N\xE4r deras
+      antal v\xE4xer, v\xE4xer ocks\xE5 r\xE4dslan inom mig \u2013 vilken m\xF6rk
+      hemlighet kan vara begravd djupt i dessa l\xE4nder?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Stege
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "F\xF6r de g\xE5nger jag m\xE5ste stiga f\xF6r att gripa det som
+      ligger precis utom r\xE4ckh\xE5ll."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Piedestal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: "J\xE4rnd\xF6rr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: "Detta explosiv anv\xE4nds ofta i gruvorna. Det \xE4r ett dyrt och
+      kraftfullt medel f\xF6r detonation."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

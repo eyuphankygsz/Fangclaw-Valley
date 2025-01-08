@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-Dutch (nl)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-Dutch (nl)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e54da33cd89727649ab251dc86ccea8e
+  m_SerializeEntries:
+  - m_GUID: 98e73dd69b60e834eb11d3a4f650f7d4
+    m_Address: albionSounds_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fe40d639bc98cdc4a9f39d9787cea915, type: 2}
+    - {fileID: 11400000, guid: 0469cab1a48bca744a865ed71f8f4a06, type: 2}

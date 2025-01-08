@@ -70,47 +70,127 @@ MonoBehaviour:
           - fr
           - es
           - tr
+          - bg
+          - da
+          - nl
+          - de
+          - el
+          - it
+          - ja
+          - ru
+          - sv
+          - uk
         - m_KeyId: 196780146688
           m_TableCodes:
           - en
           - fr
           - es
           - tr
+          - uk
+          - sv
+          - ru
+          - ja
+          - it
+          - el
+          - de
+          - nl
+          - da
+          - bg
         - m_KeyId: 204329893888
           m_TableCodes:
           - en
           - fr
           - es
           - tr
+          - bg
+          - da
+          - nl
+          - de
+          - el
+          - it
+          - ja
+          - ru
+          - sv
+          - uk
         - m_KeyId: 208255762432
           m_TableCodes:
           - en
           - fr
           - es
           - tr
+          - uk
+          - sv
+          - ru
+          - ja
+          - it
+          - el
+          - de
+          - nl
+          - da
+          - bg
         - m_KeyId: 217923633152
           m_TableCodes:
           - en
           - fr
           - es
           - tr
+          - uk
+          - sv
+          - ru
+          - ja
+          - it
+          - el
+          - de
+          - nl
+          - da
+          - bg
         - m_KeyId: 787001989316608
           m_TableCodes:
           - en
           - fr
           - es
           - tr
+          - uk
+          - sv
+          - ru
+          - ja
+          - it
+          - el
+          - de
+          - nl
+          - da
+          - bg
         - m_KeyId: 787010000437248
           m_TableCodes:
           - en
           - fr
           - es
           - tr
+          - uk
+          - sv
+          - ru
+          - ja
+          - it
+          - el
+          - de
+          - nl
+          - da
+          - bg
         - m_KeyId: 787011950788608
           m_TableCodes:
           - en
           - fr
           - es
           - tr
+          - uk
+          - sv
+          - ru
+          - ja
+          - it
+          - el
+          - de
+          - nl
+          - da
+          - bg
         m_TypeString: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

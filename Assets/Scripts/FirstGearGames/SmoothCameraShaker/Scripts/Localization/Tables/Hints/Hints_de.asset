@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: fd1f55fdc8808fb48823713abf784371, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 52114407424
+    m_Localized: "Du kannst deine Werkzeuge oder deine H\xE4nde mit <color=#FF0000>\"$primary_key\"</color>
+      verwenden, um die Kisten zu brechen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57227675353088
+    m_Localized: "Du wirst Lampen\xF6l und Streichh\xF6lzer ben\xF6tigen, um die
+      Gaslampe zu entz\xFCnden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: "Dr\xFCcke eine beliebige Taste, um sofort fortzufahren..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Du kannst dein Inventar \xF6ffnen, indem du <color=#FF0000>\"$inv_key\"</color>
+      dr\xFCckst. W\xE4hrend du in deinem Inventar bist, kannst du Gegenst\xE4nde
+      verwenden, untersuchen, wegwerfen oder kombinieren! Denk daran, deine Gaslampe
+      mit Lampen\xF6l aufzuf\xFCllen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: oder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "Durch Dr\xFCcken der <color=#FF0000>\"$inter_key\"</color>-Taste
+      kannst du deine Gegenst\xE4nde erhalten oder verwenden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "Indem du deine Aufmerksamkeit fokussierst, kannst du Objekte erkennen,
+      die um dich herum zur Interaktion bereit sind. Dr\xFCcke die <color=#FF0000>\"$scan_env\"</color>-Taste,
+      um dies zu tun. Denk jedoch daran, dass diese F\xE4higkeit deine Kr\xE4fte
+      stark ersch\xF6pfen wird."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

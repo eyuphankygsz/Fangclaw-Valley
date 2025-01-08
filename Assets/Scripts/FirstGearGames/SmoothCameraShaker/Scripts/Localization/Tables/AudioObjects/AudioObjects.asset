@@ -18,6 +18,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 906222da8623f0946aee03302bfe7fd6, type: 2}
   - {fileID: 11400000, guid: 4f253a8a39d96da4b877b7f8f907d3bd, type: 2}
   - {fileID: 11400000, guid: e31263575b1107144832a682f9f38a19, type: 2}
+  - {fileID: 11400000, guid: 0fd5f027c59967c4bbc6b888e0d5f8c4, type: 2}
+  - {fileID: 11400000, guid: 04b46e177c37a1342a3a78ee4df969be, type: 2}
+  - {fileID: 11400000, guid: 48b7a43ffef150d4ab54d5296054456d, type: 2}
+  - {fileID: 11400000, guid: 71560aef71213c84880daa012f044e9e, type: 2}
+  - {fileID: 11400000, guid: 7a8f1bca75b7d12469001f8352d1682c, type: 2}
+  - {fileID: 11400000, guid: 20a17b0e3ffd2034db2e09fb0740bb54, type: 2}
+  - {fileID: 11400000, guid: a213a4650f55db3468a8b90d3c5773b2, type: 2}
+  - {fileID: 11400000, guid: 3a959da235ad3684a8f7a11348ce466f, type: 2}
+  - {fileID: 11400000, guid: 10653f8e2ad28bb458a07361b4f21d6b, type: 2}
+  - {fileID: 11400000, guid: bbbb5964cdab2d847b7d1b587fbe47ab, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:

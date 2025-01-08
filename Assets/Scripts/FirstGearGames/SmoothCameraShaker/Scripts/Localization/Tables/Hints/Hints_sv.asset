@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_sv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sv
+  m_SharedData: {fileID: 11400000, guid: fd1f55fdc8808fb48823713abf784371, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 52114407424
+    m_Localized: "Du kan anv\xE4nda dina verktyg eller dina h\xE4nder med <color=#FF0000>\"$primary_key\"</color>
+      f\xF6r att bryta l\xE5dorna."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57227675353088
+    m_Localized: "Du kommer att beh\xF6va lampolja och t\xE4ndstickor f\xF6r att
+      t\xE4nda gaslampan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: "Tryck p\xE5 en knapp f\xF6r att forts\xE4tta omedelbart..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Du kan \xF6ppna ditt inventarie genom att trycka p\xE5 <color=#FF0000>\"$inv_key\"</color>.
+      N\xE4r du \xE4r i ditt inventarie kan du anv\xE4nda, unders\xF6ka, kasta eller
+      kombinera f\xF6rem\xE5l! Kom ih\xE5g att fylla p\xE5 din gaslampa med lampolja."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: eller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "Genom att trycka p\xE5 <color=#FF0000>\"$inter_key\"</color>-tangenten
+      kan du skaffa eller anv\xE4nda dina f\xF6rem\xE5l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "Genom att fokusera din uppm\xE4rksamhet kan du urskilja objekt
+      som kan interageras med omkring dig. F\xF6r att g\xF6ra detta, anv\xE4nd <color=#FF0000>\"$scan_env\"</color>-tangenten.
+      Kom dock ih\xE5g att denna f\xF6rm\xE5ga kommer att t\xF6mma din styrka avsev\xE4rt."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

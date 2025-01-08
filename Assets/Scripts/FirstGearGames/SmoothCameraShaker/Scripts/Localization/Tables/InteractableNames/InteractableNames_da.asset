@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 390507608064000
+    m_Localized: Abe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antilope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: Kranie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: "Disse kranier kan ikke v\xE6re rester af almindelige v\xE6sener.
+      Hver b\xE6rer spor af noget ud over mennesket. Deres k\xE6bestrukturer, dybe
+      \xF8jenhuler og former peger mod et gammel mysterium. Efterh\xE5nden som deres
+      antal vokser, vokser frygten i mig \u2013 hvilken m\xF8rk hemmelighed kunne
+      v\xE6re begravet dybt i disse lande?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Stige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "For de tider, hvor jeg m\xE5 stige op for at gribe det, der ligger
+      lige uden for r\xE6kkevidde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Pedestal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: Jernport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: Denne eksplosiv bruges ofte i minerne. Det er et dyrt og potent
+      middel til detonation.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

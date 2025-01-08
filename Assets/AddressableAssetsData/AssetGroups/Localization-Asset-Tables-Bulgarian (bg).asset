@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-Bulgarian (bg)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-Bulgarian (bg)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d7b0b9caa37376b4dbfe8b8c90975722
+  m_SerializeEntries:
+  - m_GUID: 40d5e879a3bb5e04ea9beda3a366f335
+    m_Address: albionSounds_bg
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 320b5b5db84f49347b21c16d8a7aff4b, type: 2}
+    - {fileID: 11400000, guid: 60b2766237e83c94abe56d5792858bc8, type: 2}

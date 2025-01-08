@@ -802,6 +802,22 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Inventory",
+            "id": "b1a8d46a-2b4a-402d-adb3-a7ea9cde5c13",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "10a901dc-8ef5-4381-b976-1da950728819",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": []
         }
     ],
     "controlSchemes": []

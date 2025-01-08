@@ -14,10 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Items:
   - Item: {fileID: 11400000, guid: aa257628221c5d246a684ca4a6abe347, type: 2}
-    Chance: 0.3
+    Chance: 0.1
   - Item: {fileID: 11400000, guid: 265c5e15912c67c4592ca0e52ea13c31, type: 2}
-    Chance: 0.5
+    Chance: 0.1
   - Item: {fileID: 11400000, guid: 817d79ee5c93d804b9f0bdde3ca5f5a6, type: 2}
-    Chance: 0.7
+    Chance: 0.14
   - Item: {fileID: 11400000, guid: fec1a84f2c20c9f41ac9cc4e1f0e87d3, type: 2}
-    Chance: 0.9
+    Chance: 0.13
+  - Item: {fileID: 11400000, guid: 16deb4ff720178744847ac26648837d5, type: 2}
+    Chance: 0.16
+  - Item: {fileID: 11400000, guid: 63b723d05cafe4f469dec8b63534e599, type: 2}
+    Chance: 0.16
+  - Item: {fileID: 11400000, guid: 02dfc781c0206e640916af55ba6aeb43, type: 2}
+    Chance: 0.16
+  - Item: {fileID: 0}
+    Chance: 0.05

@@ -72,6 +72,40 @@ MonoBehaviour:
       caution.
     m_Metadata:
       m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: Eastern Sweetshrub
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "Eastern Sweetshrub... The color reminds me of Evelynn\u2019s old
+      red dress. The one that once captivated everyone with its elegance... But this
+      flower is more than just a memory. When mixed with water, it has the power
+      to restore life. Much like Evelynn\u2019s presence once revived my soul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: Echinacea... A flower of subtle resilience. On its own, it grants
+      a modest surge of energy, like a brief reprieve in the midst of exhaustion.
+      But when blended with tonic water, its potential flourishes, yielding a burst
+      of strength that lingers, a testament to its hidden power.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: Tonic Water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: A drink of both refreshment and remedy. Infused with the bitter
+      essence of quinine, tonic water was once a necessary ally in the fight against
+      fever. Its effervescence, both invigorating and sharp, has since become a symbol
+      of vitality. Mixed with the right elements, it has the power to unlock hidden
+      strengths, reviving not just the body, but the spirit as well.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

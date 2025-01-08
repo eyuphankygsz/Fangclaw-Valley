@@ -824,6 +824,22 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Inventory"",
+            ""id"": ""b1a8d46a-2b4a-402d-adb3-a7ea9cde5c13"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""10a901dc-8ef5-4381-b976-1da950728819"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": []
         }
     ],
     ""controlSchemes"": []
@@ -851,6 +867,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         m_Player_InventoryMove = m_Player.FindAction("InventoryMove", throwIfNotFound: true);
         m_Player_InventoryScroll = m_Player.FindAction("InventoryScroll", throwIfNotFound: true);
         m_Player_InventoryChoose = m_Player.FindAction("InventoryChoose", throwIfNotFound: true);
+        // Inventory
+        m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
+        m_Inventory_Newaction = m_Inventory.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1114,6 +1133,52 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Inventory
+    private readonly InputActionMap m_Inventory;
+    private List<IInventoryActions> m_InventoryActionsCallbackInterfaces = new List<IInventoryActions>();
+    private readonly InputAction m_Inventory_Newaction;
+    public struct InventoryActions
+    {
+        private @ControlSchema m_Wrapper;
+        public InventoryActions(@ControlSchema wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_Inventory_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
+        public void AddCallbacks(IInventoryActions instance)
+        {
+            if (instance == null || m_Wrapper.m_InventoryActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Add(instance);
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+        }
+
+        private void UnregisterCallbacks(IInventoryActions instance)
+        {
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+        }
+
+        public void RemoveCallbacks(IInventoryActions instance)
+        {
+            if (m_Wrapper.m_InventoryActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IInventoryActions instance)
+        {
+            foreach (var item in m_Wrapper.m_InventoryActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public InventoryActions @Inventory => new InventoryActions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -1137,5 +1202,9 @@ public partial class @ControlSchema: IInputActionCollection2, IDisposable
         void OnInventoryMove(InputAction.CallbackContext context);
         void OnInventoryScroll(InputAction.CallbackContext context);
         void OnInventoryChoose(InputAction.CallbackContext context);
+    }
+    public interface IInventoryActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
     }
 }

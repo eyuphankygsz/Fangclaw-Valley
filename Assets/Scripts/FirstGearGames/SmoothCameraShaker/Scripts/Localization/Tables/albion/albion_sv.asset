@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_sv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sv
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: "F\xF6rl\xE5t, Baxter, men jag var tvungen att g\xF6ra detta..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "Barrikaderna vi byggde kan bara h\xE5lla monstren tillbaka under
+      en mycket kort tid!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "Det \xE4r d\xE4rf\xF6r vi beh\xF6ver dig! F\xF6r hela m\xE4nskligheten!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "Detta offer som du har gjort kommer att r\xE4dda hela v\xE4rlden!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "\xC4ven din \xE4lskade hustru Evelynns liv h\xE4nger p\xE5 detta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Allt vi ber dig om \xE4r att samla in PROVER."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Jag kommer att vara h\xE4r varje morgon mellan 6 och 8."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: Vi ses imorgon!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

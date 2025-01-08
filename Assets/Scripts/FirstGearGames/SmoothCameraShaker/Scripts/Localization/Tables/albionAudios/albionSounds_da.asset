@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: albionSounds_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: 98980b2069f9aa541bdf90b7b382f5d6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 30169808896
+    m_Localized: 088ad9f4e65a55d4690ca1b11b3168c9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 196780146688
+    m_Localized: 1d8be8453092b00408516cffb50c9b1f
+    m_Metadata:
+      m_Items: []
+  - m_Id: 204329893888
+    m_Localized: 247dfb193162b174bb59f459229ab434
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208255762432
+    m_Localized: 73a5b2df58df0c344b09238c73590c7c
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217923633152
+    m_Localized: aca5f2ec55680fc49bb3f6b2983ed1aa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787001989316608
+    m_Localized: 8f85dd94d58fdf149a5d02aaa67b1940
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787010000437248
+    m_Localized: 03ed09028753a4440973635877236612
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787011950788608
+    m_Localized: 437df655ff7d65f42920b62ec06d3dd8
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

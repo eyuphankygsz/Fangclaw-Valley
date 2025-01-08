@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class PlayerParanoia : MonoBehaviour
 {
 	[SerializeField]
-	private float _normalTime = 6, _currentTime, _currentResetTime, _normalResetTime = 10;
+	private float _normalTime = 10, _currentTime, _currentResetTime, _normalResetTime = 16;
 	private WaitForSeconds _attackTime = new WaitForSeconds(1);
 	private Coroutine _ariseRoutine, _beatRoutine;
 
@@ -67,8 +67,6 @@ public class PlayerParanoia : MonoBehaviour
 	{
 		if (_ariseRoutine != null)
 			StopCoroutine(_ariseRoutine);
-
-		Debug.Log("STOP PARANOIA");
 		_ariseRoutine = StartCoroutine(ParanoiaFade());
 	}
 
@@ -77,7 +75,6 @@ public class PlayerParanoia : MonoBehaviour
 		_currentResetTime = _normalResetTime;
 		while (true)
 		{
-			Debug.Log("BEATING: " + _beating);
 			_beating = true;
 			if (!_beatStarted)
 				StartCoroutine(HeartBeat());
@@ -99,13 +96,14 @@ public class PlayerParanoia : MonoBehaviour
 	}
 	private IEnumerator ParanoiaFade()
 	{
+		_currentResetTime = Mathf.Lerp(0, _normalResetTime, 1 - (_currentTime / _normalTime));
 		while (_currentResetTime > 0)
 		{
 			FadeProcessing();
 			_currentResetTime -= Time.deltaTime;
 
 			float progress = 1 - (_currentResetTime / _normalResetTime);
-			_currentTime = Mathf.Lerp(0, 6f, progress);
+			_currentTime = Mathf.Lerp(0, _normalTime, progress);
 
 			yield return null;
 		}
@@ -164,6 +162,7 @@ public class PlayerParanoia : MonoBehaviour
 	private void FadeProcessing()
 	{
 		float progress = 1 - (_currentTime / _normalTime);
+
 		_whisperSfx.volume = Mathf.Lerp(0, 1, progress);
 		_heartBeatSFX.volume = Mathf.Lerp(0.5f, 1, progress);
 
@@ -181,7 +180,7 @@ public class PlayerParanoia : MonoBehaviour
 		while (_beating)
 		{
 			float progress = 1 - (_currentTime / _normalTime);
-			float time = 1.4f - progress;
+			float time = 1.6f - progress;
 			Debug.Log(time);
 			yield return new WaitForSeconds(time);
 			_heartBeatSFX.Play();

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Danish (da)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Danish (da)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9cde0e2c95f19f444b24164443507256
+  m_SerializeEntries:
+  - m_GUID: 63916c8d9154ad0499863f2e2ffb423d
+    m_Address: albion_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 10653f8e2ad28bb458a07361b4f21d6b
+    m_Address: AudioObjects_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9663a29fdc66c044b923160e092f9589
+    m_Address: Hints_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01405248af41950459435be058d7e4ec
+    m_Address: InteractableNames_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9960cee5a5650e54baa51695fad35bb8
+    m_Address: InventoryItems_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e091015a818e83b4da9c75292c570bda
+    m_Address: ItemFunctions_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b7165f247b1bcc47833c8d0f894286c
+    m_Address: Notes_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7119a5be9a8e38142a35f98ce1672782
+    m_Address: RoomNames_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 749f80ab428f7e7478e31e7ec2902fff
+    m_Address: Settings_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: aefc40d6bfe8535468ddcc5aad3b4323, type: 2}
+    - {fileID: 11400000, guid: a765e63d29b029e448a3af8ddc02aab0, type: 2}

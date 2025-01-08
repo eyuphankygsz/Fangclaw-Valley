@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11580552528445440
+    m_Localized: '(Begge sider er revet.)
+
+      I III V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: "(H\xF8jre side er revet.)\nIV II I"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(Venstre side er revet.)
+
+      II III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: Den sidste vidne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Jeg er frygteligt klar over, at den uheldige sj\xE6l, der st\xF8der
+      p\xE5 denne note, ogs\xE5 vil opdage min livl\xF8se krop. Min tid er faretruende
+      kort! Det ser ud til, at nogen har \xE6ndret l\xE5sene... Hvad jeg vidnede
+      her (denne del vil blive indskrevet i en ul\xE6selig krusedulle).\n(I slutningen
+      af noten er der et ord, der \xE5benbart er tilf\xF8jet senere.) 'H\xE6nder....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Antikt? Ikke rigtig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "\xC6rede kollega,\n\nDe strukturer, jeg har m\xF8dt i denne hule,
+      er alt for indviklede til at v\xE6re v\xE6rket af nogen simpel, gammel civilisation.
+      Om det er en glemt civilisation eller noget langt mere avanceret, forbliver
+      deres form\xE5l g\xE5defuldt. Det er tydeligt, at minerne har ombygget disse
+      kamre, men deres oprindelige funktion undg\xE5r min forst\xE5else.\n\nVi m\xE5
+      forts\xE6tte vores unders\xF8gelse med st\xF8rste omhu.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

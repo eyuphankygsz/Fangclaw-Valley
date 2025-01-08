@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_sv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sv
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19140650193793024
+    m_Localized: "Gasol \xE4r avg\xF6rande f\xF6r att t\xE4nda min lampa. Jag \xE4r
+      i desperat behov av ljus f\xF6r att ta mig genom m\xF6rkret i denna grotta,
+      och denna olja \xE4r n\xF6dv\xE4ndig f\xF6r att h\xE5lla lampan brinnande.
+      Ack, jag har bara lite kvar och m\xE5ste anv\xE4nda det med st\xF6rsta f\xF6rsiktighet.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: "\xD6stlig s\xF6tbuske"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "\xD6stlig s\xF6tbuske... F\xE4rgen p\xE5minner mig om Evelynns
+      gamla r\xF6da kl\xE4nning. Den som en g\xE5ng f\xE5ngade allas uppm\xE4rksamhet
+      med sin elegans... Men denna blomma \xE4r mer \xE4n bara ett minne. N\xE4r
+      den blandas med vatten har den kraften att \xE5terst\xE4lla livet. Precis som
+      Evelynns n\xE4rvaro en g\xE5ng \xE5terupplivade min sj\xE4l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: "Echinacea... En blomma av subtil motst\xE5ndskraft. P\xE5 egen
+      hand ger den ett blygsamt energitillskott, som en kort paus mitt i utmattningen.
+      Men n\xE4r den blandas med tonicvatten blomstrar dess potential, vilket ger
+      en styrkeburst som best\xE5r, ett bevis p\xE5 dess dolda kraft."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: Tonic Water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: "En dryck b\xE5de f\xF6r uppfriskning och botemedel. Infuserad med
+      den bittra essensen av kinin var tonicvatten en g\xE5ng en n\xF6dv\xE4ndig
+      allierad i kampen mot feber. Dess brus, b\xE5de uppfriskande och skarpt, har
+      sedan dess blivit en symbol f\xF6r vitalitet. Blandad med r\xE4tt ingredienser
+      har den kraften att l\xE5sa upp dolda styrkor, och v\xE4cka liv i b\xE5de kroppen
+      och anden."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

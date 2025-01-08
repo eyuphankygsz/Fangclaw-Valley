@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11580552528445440
+    m_Localized: '(Entrambi i lati sono strappati.)
+
+      I III V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: "(Il lato destro \xE8 strappato.)\nIV II I"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: "(Il lato sinistro \xE8 strappato.)\nII III IV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: L'ultimo testimone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Sono terribilmente consapevole che l'anima sfortunata che inciampa
+      su questa nota scoprir\xE0 anche il mio corpo senza vita. Il mio tempo sta
+      per scadere! Sembra che qualcuno abbia alterato le serrature... Quello che
+      ho visto qui (questa parte sar\xE0 scritta con una scrittura illeggibile).\n(Alla
+      fine della nota c'\xE8 una parola che \xE8 evidentemente stata aggiunta successivamente.)
+      'Mani....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Antico? Non proprio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "Egregio Collega,\n\nLe strutture che ho incontrato all'interno
+      di questa caverna sono troppo complesse per essere il lavoro di una semplice
+      civilt\xE0 antica. Che si tratti di una civilt\xE0 dimenticata o qualcosa di
+      molto pi\xF9 avanzato, il loro scopo rimane elusivo. \xC8 evidente che i minatori
+      hanno riutilizzato queste camere, ma la loro funzione originale mi sfugge.\n\nDobbiamo
+      continuare la nostra indagine con la massima diligenza.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

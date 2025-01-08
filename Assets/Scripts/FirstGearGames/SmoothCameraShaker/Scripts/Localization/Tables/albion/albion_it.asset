@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: Mi dispiace, Baxter, ma dovevo farlo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: Le barricate che abbiamo costruito possono trattenere i mostri solo
+      per pochissimo tempo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "Ecco perch\xE9 abbiamo bisogno di te! Per tutta l'umanit\xE0!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "Questo sacrificio che hai fatto salver\xE0 il mondo intero!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: Inoltre, la vita della tua amata moglie Evelynn dipende da questo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Tutto ci\xF2 che ti chiediamo \xE8 di raccogliere CAMPIONI."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Sar\xF2 qui ogni mattina tra le 6 e le 8."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: A domani!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

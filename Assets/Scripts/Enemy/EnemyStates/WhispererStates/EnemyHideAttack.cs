@@ -90,7 +90,7 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-
+		Debug.Log("REACHED: " + _reached);
 		if (_agent.remainingDistance <= _agent.stoppingDistance)
 			_reached = true;
 

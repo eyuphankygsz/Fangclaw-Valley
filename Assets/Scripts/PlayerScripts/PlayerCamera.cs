@@ -14,6 +14,7 @@ public class PlayerCamera : MonoBehaviour
 	private GameManager _gameManager;
 
 	private bool _force;
+
 	private void Awake()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
@@ -41,8 +42,9 @@ public class PlayerCamera : MonoBehaviour
 
 		Vector2 cameraDirection = MouseDirection.Instance.GetCameraDirection();
 
-		float mouseX = cameraDirection.x * _rotationSpeed * Time.deltaTime;
-		float mouseY = cameraDirection.y * _rotationSpeed * Time.deltaTime;
+		float gamepadMultiplier = InputDeviceManager.Instance.CurrentDevice == InputDeviceManager.InputDeviceType.Gamepad ? 12 : 1;
+		float mouseX = cameraDirection.x * _rotationSpeed * Time.deltaTime * gamepadMultiplier;
+		float mouseY = cameraDirection.y * _rotationSpeed * Time.deltaTime * gamepadMultiplier;
 
 		_yaw += mouseX;
 		_pitch -= mouseY;

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11580552528445440
+    m_Localized: '(Beide Seiten sind zerrissen.)
+
+      I III V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: '(Rechte Seite ist zerrissen.)
+
+      IV II I'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(Linke Seite ist zerrissen.)
+
+      II III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: Der letzte Zeuge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Ich bin schrecklich bewusst, dass die ungl\xFCckliche Seele, die
+      auf diese Notiz st\xF6\xDFt, auch meine leblosen K\xF6rper entdecken wird.
+      Meine Zeit wird gef\xE4hrlich knapp! Es scheint, als h\xE4tte jemand die Schl\xF6sser
+      ver\xE4ndert... Was ich hier gesehen habe (dieser Abschnitt wird in einer v\xF6llig
+      unleserlichen Kritzelei niedergeschrieben).\n(Am Ende der Notiz gibt es ein
+      Wort, das offensichtlich sp\xE4ter hinzugef\xFCgt wurde.) 'H\xE4nde....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Alt? Nicht wirklich
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "Verehrter Kollege,\n\nDie Strukturen, die ich in dieser H\xF6hle
+      entdeckt habe, sind viel zu kompliziert, um das Werk einer einfachen alten
+      Zivilisation zu sein. Ob es sich um eine vergessene Zivilisation handelt oder
+      um etwas weit Fortgeschritteneres, bleibt ihr Zweck unklar. Es ist offensichtlich,
+      dass die Bergleute diese Kammern umfunktioniert haben, aber ihre urspr\xFCngliche
+      Funktion entzieht sich meinem Verst\xE4ndnis.\n\nWir m\xFCssen unsere Untersuchung
+      mit \xE4u\xDFerster Sorgfalt fortsetzen.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

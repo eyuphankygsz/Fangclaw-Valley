@@ -72,6 +72,42 @@ MonoBehaviour:
     m_Localized: "Aceite de L\xE1mpara"
     m_Metadata:
       m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: Calycanthus floridus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "Calycanthus floridus... Su color me recuerda al viejo vestido rojo
+      de Evelynn. Aqu\xE9l que alguna vez cautiv\xF3 a todos con su elegancia...
+      Pero esta flor es m\xE1s que un simple recuerdo. Cuando se mezcla con agua,
+      tiene el poder de devolver la vida. Al igual que la presencia de Evelynn, que
+      una vez revivi\xF3 mi alma."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: "Echinacea... Una flor de sutil resistencia. Por s\xED sola, otorga
+      un modesto aumento de energ\xEDa, como un breve respiro en medio del agotamiento.
+      Pero cuando se mezcla con agua t\xF3nica, su potencial florece, produciendo
+      una explosi\xF3n de fuerza que perdura, un testimonio de su poder oculto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: "Agua T\xF3nica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: "Una bebida tanto refrescante como curativa. Infundida con la esencia
+      amarga de la quinina, el agua t\xF3nica fue una vez un aliado necesario en
+      la lucha contra la fiebre. Su efervescencia, tanto vigorizante como punzante,
+      desde entonces se ha convertido en un s\xEDmbolo de vitalidad. Mezclada con
+      los ingredientes adecuados, tiene el poder de desbloquear fuerzas ocultas,
+      reviviendo no solo el cuerpo, sino tambi\xE9n el esp\xEDritu."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

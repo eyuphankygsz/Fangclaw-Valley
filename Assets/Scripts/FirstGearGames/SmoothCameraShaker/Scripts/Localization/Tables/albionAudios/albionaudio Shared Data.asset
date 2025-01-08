@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: albionaudio Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: albionaudio
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
+  m_TableCollectionNameGuidString: a642b64a8aec4744f89bf72767b6ec8c
   m_Entries: []
   m_Metadata:
     m_Items: []

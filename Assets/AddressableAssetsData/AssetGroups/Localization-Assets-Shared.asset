@@ -79,6 +79,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-bg
+    - Locale-da
+    - Locale-nl
+    - Locale-de
+    - Locale-el
+    - Locale-it
+    - Locale-ja
+    - Locale-ru
+    - Locale-sv
+    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1d8be8453092b00408516cffb50c9b1f
     m_Address: c2
@@ -88,6 +98,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-uk
+    - Locale-sv
+    - Locale-ru
+    - Locale-ja
+    - Locale-it
+    - Locale-el
+    - Locale-de
+    - Locale-nl
+    - Locale-da
+    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 247dfb193162b174bb59f459229ab434
     m_Address: c3
@@ -97,6 +117,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-bg
+    - Locale-da
+    - Locale-nl
+    - Locale-de
+    - Locale-el
+    - Locale-it
+    - Locale-ja
+    - Locale-ru
+    - Locale-sv
+    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 73a5b2df58df0c344b09238c73590c7c
     m_Address: c4
@@ -106,6 +136,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-uk
+    - Locale-sv
+    - Locale-ru
+    - Locale-ja
+    - Locale-it
+    - Locale-el
+    - Locale-de
+    - Locale-nl
+    - Locale-da
+    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aca5f2ec55680fc49bb3f6b2983ed1aa
     m_Address: c5
@@ -115,6 +155,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-uk
+    - Locale-sv
+    - Locale-ru
+    - Locale-ja
+    - Locale-it
+    - Locale-el
+    - Locale-de
+    - Locale-nl
+    - Locale-da
+    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8f85dd94d58fdf149a5d02aaa67b1940
     m_Address: c6
@@ -124,6 +174,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-uk
+    - Locale-sv
+    - Locale-ru
+    - Locale-ja
+    - Locale-it
+    - Locale-el
+    - Locale-de
+    - Locale-nl
+    - Locale-da
+    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 03ed09028753a4440973635877236612
     m_Address: c7
@@ -133,6 +193,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-uk
+    - Locale-sv
+    - Locale-ru
+    - Locale-ja
+    - Locale-it
+    - Locale-el
+    - Locale-de
+    - Locale-nl
+    - Locale-da
+    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 437df655ff7d65f42920b62ec06d3dd8
     m_Address: c8
@@ -142,6 +212,16 @@ MonoBehaviour:
     - Locale-fr
     - Locale-es
     - Locale-tr
+    - Locale-uk
+    - Locale-sv
+    - Locale-ru
+    - Locale-ja
+    - Locale-it
+    - Locale-el
+    - Locale-de
+    - Locale-nl
+    - Locale-da
+    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}

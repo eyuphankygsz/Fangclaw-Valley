@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_nl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: nl
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 390507608064000
+    m_Localized: Aap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antelope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: Schedel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: Deze schedels kunnen geen overblijfselen zijn van gewone wezens.
+      Elk draagt sporen van iets bovenmenselijks. Hun kaakstructuren, diepe oogkassen
+      en vormen wijzen op een oud mysterie. Naarmate hun aantal groeit, groeit ook
+      de angst in mij - welk donker geheim zou diep in deze landen begraven kunnen
+      liggen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Ladder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: Voor die momenten wanneer ik moet stijgen om te grijpen wat net
+      buiten bereik ligt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Pedestaal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: IJzeren deur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamiet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: Dit explosief wordt vaak gebruikt in de mijnen. Het is een kostbaar
+      en krachtig middel voor detonatie.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

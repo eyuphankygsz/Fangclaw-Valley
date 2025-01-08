@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-Swedish (sv)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-Swedish (sv)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bc901fffdd0febc438a267fd716d5475
+  m_SerializeEntries:
+  - m_GUID: 7f03d7f6dc0f883458e530d8fba461f6
+    m_Address: albionSounds_sv
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-sv
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: aa43b1a3fa7ab184fab41ba16afe3d74, type: 2}
+    - {fileID: 11400000, guid: 586ed1aae4bffb9428f788fd071d850e, type: 2}

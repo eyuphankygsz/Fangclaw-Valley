@@ -459,6 +459,7 @@ public class InventoryManager : MonoBehaviour
 	private UseFunctions GetUseFunctionHolder(InventoryItemHolder holder)
 	{
 		string function = _lastSelectedHolder.Item.UseName;
+
 		for (int i = 0; i < _useFunctions.Count; i++)
 			if (_useFunctions[i].Name == function)
 				return _useFunctions[i].Use;

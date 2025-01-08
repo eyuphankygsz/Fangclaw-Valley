@@ -26,14 +26,36 @@ public class AudioSetting : Setting
 	[Inject]
 	private GameManager _pauseMenu;
 
+	private float _oldValue;
+
+	[SerializeField]
+	private AudioMixerGroup _sfxGroup;
+	private AudioSource[] _allSfxSources;
+	[SerializeField]
+	private List<AudioSource> _sfxSources = new List<AudioSource>();
+
 	private void Start()
 	{
+		_allSfxSources = FindObjectsOfType<AudioSource>();
+
+		foreach (AudioSource source in _allSfxSources)
+			if (source.outputAudioMixerGroup == _sfxGroup)
+				_sfxSources.Add(source);
+
 		_pauseMenu.OnPauseGame += OnPause;
 		SetSFXParam();
 	}
+
+
 	public void OnPause(bool pause, bool force)
 	{
-		AudioListener.pause = pause;
+			_sfxSources.ForEach(x =>
+			{
+				if (pause)
+					x.Pause();
+				else
+					x.UnPause();
+			});
 	}
 	public void SetSFX(Slider slider) =>
 		_tempValue = slider.value;

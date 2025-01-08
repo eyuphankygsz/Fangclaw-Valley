@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: Es tut mir leid, Baxter, aber ich musste das tun...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "Die Barrikaden, die wir gebaut haben, k\xF6nnen die Monster nur
+      f\xFCr sehr kurze Zeit aufhalten!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "Deshalb brauchen wir dich! F\xFCr die ganze Menschheit!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: Dieses Opfer, das du gebracht hast, wird die ganze Welt retten!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "Auch das Leben deiner geliebten Frau Evelynn h\xE4ngt davon ab."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: Alles, was wir von dir verlangen, ist, PROBEN zu sammeln.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: Ich werde jeden Morgen zwischen 6 und 8 hier sein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: Bis morgen!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

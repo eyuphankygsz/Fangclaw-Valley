@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: albion_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: eb6ffcee703f53d4692dd364e5ea7bda, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10150395904
+    m_Localized: "Jeg er ked af det, Baxter, men jeg var n\xF8dt til at g\xF8re dette..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: Barrikaderne, vi byggede, kan kun holde monstrene tilbage i meget
+      kort tid!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: Det er derfor, vi har brug for dig! For hele menneskeheden!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: Dette offer, du har givet, vil redde hele verden!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "Ogs\xE5 din elskede hustru Evelynns liv afh\xE6nger af det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Alt, hvad vi beder dig om, er at indsamle PR\xD8VER."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Jeg vil v\xE6re her hver morgen mellem 6 og 8."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005327965405184
+    m_Localized: Vi ses i morgen!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

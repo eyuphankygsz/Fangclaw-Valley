@@ -35,17 +35,9 @@ public class Interactable_Crate : Interactable
 		_source.PlayOneShot(_clips[Random.Range(0, _clips.Length)]);
 		if (_randomItemDrop != null)
 		{
-			GameObject obj = null;
-			float luck = Random.Range(0f, 1f);
-			foreach (var item in _randomItemDrop.Items)
-				if (luck <= item.Chance)
-				{
-					obj = _objectPool.GetObject(_itemTransform.position, item.Item);
-					break;
-				}
-
-			if (obj != null)
-				obj.GetComponent<Interactable_Pickup>().IsCrateItem = true;
+			InventoryItem item = GetRandomItem();
+			if (item != null)
+				_objectPool.GetObject(_itemTransform.position, item).GetComponent<Interactable_Pickup>().IsCrateItem = true;
 
 		}
 		_oneTimeEvents?.Invoke();
@@ -76,4 +68,27 @@ public class Interactable_Crate : Interactable
 			Destroy(_explosionObj, .5f);
 
 	}
+
+
+	private InventoryItem GetRandomItem()
+	{
+		float totalWeight = 0;
+		_randomItemDrop.Items.ForEach(x => { totalWeight += x.Chance; });
+
+
+		float randomValue = Random.Range(0f, totalWeight);
+		Debug.Log("RandomValue: " + randomValue);
+		float cumulativeWeight = 0f;
+
+		for (int i = 0; i < _randomItemDrop.Items.Count; i++)
+		{
+			cumulativeWeight += _randomItemDrop.Items[i].Chance;
+
+			if (randomValue <= cumulativeWeight)
+				return _randomItemDrop.Items[i].Item;
+		}
+
+		return null; 
+	}
+
 }
