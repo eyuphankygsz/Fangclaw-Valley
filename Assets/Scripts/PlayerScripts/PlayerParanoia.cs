@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using Zenject;
 
 public class PlayerParanoia : MonoBehaviour
 {
 	[SerializeField]
 	private float _normalTime = 10, _currentTime, _currentResetTime, _normalResetTime = 16;
+
+
+	[Inject]
+	private GameManager _gameManager;
+
+
 	private WaitForSeconds _attackTime = new WaitForSeconds(1);
 	private Coroutine _ariseRoutine, _beatRoutine;
 
@@ -23,7 +30,7 @@ public class PlayerParanoia : MonoBehaviour
 	private float _initialVignette = 0;
 
 	private float _targetLensDistortion = 0.4f;
-	private float _targetBloom = 1.4f;
+	private float _targetBloom = 0.5f;
 	private float _targetVignette = 1;
 
 	private bool _isPeak, _beatStarted;
@@ -75,6 +82,9 @@ public class PlayerParanoia : MonoBehaviour
 		_currentResetTime = _normalResetTime;
 		while (true)
 		{
+			if (_gameManager.Force)
+				yield return null;
+
 			_beating = true;
 			if (!_beatStarted)
 				StartCoroutine(HeartBeat());
@@ -99,6 +109,9 @@ public class PlayerParanoia : MonoBehaviour
 		_currentResetTime = Mathf.Lerp(0, _normalResetTime, 1 - (_currentTime / _normalTime));
 		while (_currentResetTime > 0)
 		{
+			if (_gameManager.Force)
+				yield return null;
+
 			FadeProcessing();
 			_currentResetTime -= Time.deltaTime;
 

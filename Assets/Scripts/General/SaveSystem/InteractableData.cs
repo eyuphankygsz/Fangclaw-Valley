@@ -56,3 +56,16 @@ public class StatusMechanismData : GameData
 	public string MachineName;
 	public bool OneTime;
 }
+[System.Serializable]
+public class ButtonData : GameData
+{
+	public bool IsPressed;
+	public bool IsLocked;
+}
+[System.Serializable]
+public class ButtonOrderMechanismData: GameData
+{
+	public string MachineName;
+	public bool IsDone;
+	public int[] PressedArray;
+}

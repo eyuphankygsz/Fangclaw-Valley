@@ -201,4 +201,15 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
 	}
+	public void TryDropExternalWeapon(string name)
+	{
+		if (_externalWeapon)
+			if (_currentWeapon == _weapons.TryGetValue(name, out Weapons wp))
+			{
+				_currentWeapon?.gameObject.SetActive(false);
+				_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
+				SelectWeapon(true);
+			}
+
+	}
 }

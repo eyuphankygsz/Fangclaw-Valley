@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
+using Zenject;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -21,12 +22,23 @@ public class DialogueManager : MonoBehaviour
 
 	private AudioSource _tempSource;
 
+	[Inject]
+	private GameManager _gameManager;
 
+	bool _gamePause;
 	private void Awake()
 	{
 		Instance = this;
 	}
-
+	private void Start()
+	{
+		_gameManager.OnPauseGame += OnPause;
+	}
+	private void OnPause(bool pause, bool force)
+	{
+		if (!force)
+			_gamePause = pause;
+	}
 	public void PlayList(List<AudioObject> aObjects)
 	{
 		_index = 0;
@@ -75,10 +87,14 @@ public class DialogueManager : MonoBehaviour
 		var loadOperation = _audio.LoadAssetAsync();
 
 		yield return loadOperation;
-
 		if (loadOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
 		{
 			_tempSource.clip = loadOperation.Result;
+
+			while (_gamePause)
+				yield return null;
+
+
 			_tempSource.Play();
 		}
 		else

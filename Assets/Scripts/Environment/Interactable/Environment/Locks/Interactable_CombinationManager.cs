@@ -26,7 +26,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
     private Collider _collider;
     [SerializeField]
     private GameObject _lockCam;
-    private GameObject _playerCam;
+    private Camera _playerCam, _uiCam;
     private ControlSchema _controls;
 
     [Inject]
@@ -60,7 +60,10 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
         if (_unlocked) return;
         base.OnInteract(weapon);
         if (_playerCam == null)
-            _playerCam = Camera.main.gameObject;
+        {
+            _playerCam = Camera.main;
+            _uiCam = _playerCam.transform.GetChild(0).GetComponent<Camera>();
+        }
 
         _interactEvents?.Invoke();
 
@@ -77,8 +80,9 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
         if (!_interacted)
             return;
 
-        _playerCam.SetActive(!inspect);
-        _lightSource.SetActive(inspect);
+        _playerCam.enabled = _uiCam.enabled = !inspect;
+
+		_lightSource.SetActive(inspect);
         _lockCam.SetActive(inspect);
 
         _isInspecting = inspect;
@@ -89,6 +93,11 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
     }
     private void CheckCode()
     {
+
+        foreach (var item in _combinations)
+            if (item.IsTurning)
+                return;
+
         string code = "";
         foreach (var number in _digits)
             code += number;

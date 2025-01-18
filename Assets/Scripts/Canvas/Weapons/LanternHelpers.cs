@@ -49,7 +49,12 @@ public class LanternHelpers : MonoBehaviour
 		}
 		return false;
 	}
-	public void StartUsingGas() => _gasRoutine = StartCoroutine(UseGas());
+	public void StartUsingGas()
+	{
+		if(_gasRoutine != null)
+			StopCoroutine(_gasRoutine);
+		_gasRoutine = StartCoroutine(UseGas());
+	}
 	public void StopUsingGas()
 	{
 		_isOn = false;
@@ -62,6 +67,7 @@ public class LanternHelpers : MonoBehaviour
 		while (true)
 		{
 			_leftFuel -= Time.deltaTime * LitMultiplier;
+			Debug.Log(LitMultiplier);
 			ApplyUI();
 
 			if (_leftFuel <= 0)

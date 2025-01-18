@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -86,6 +87,8 @@ public class WhispererController : MonoBehaviour
 	{
 		_stunTime.ResetTime();
 		if (Stunned) return;
+		_agent.ResetPath();
+		_agent.destination = transform.position;
 		_machine.SetCurrentState(_stunState as IEnemyState);
 		Stunned = true;
 	}

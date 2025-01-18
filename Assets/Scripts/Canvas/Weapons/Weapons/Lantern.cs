@@ -10,6 +10,7 @@ public class Lantern : Weapons
 	[SerializeField] private GameObject _normalLightSource;
 	[SerializeField] private GameObject _directLightSource;
 	[SerializeField] private GameObject _behindLightSource;
+	[SerializeField] private GameObject _playerLight;
 	[SerializeField] private InventoryItem _match;
 	[SerializeField] private AudioClip _matchSound, _gasSound;
 	[SerializeField] private LanternHelpers _lanternHelpers;
@@ -174,6 +175,7 @@ public class Lantern : Weapons
 	public void Delight()
 	{
 		_onFire = false;
+		_isShining = false;
 		_source.Stop();
 		_animator.SetBool("OnFire", _onFire);
 		_weaponHelpers.StopChange = false;
@@ -188,12 +190,14 @@ public class Lantern : Weapons
 		{
 			_normalLightSource.SetActive(isDefault);
 			_directLightSource.SetActive(!isDefault);
+			_playerLight.SetActive(false);
 		}
 		else
 		{
 			_normalLightSource.SetActive(false);
 			_directLightSource.SetActive(false);
 			_behindLightSource.SetActive(false);
+			_playerLight.SetActive(true);
 		}
 	}
 

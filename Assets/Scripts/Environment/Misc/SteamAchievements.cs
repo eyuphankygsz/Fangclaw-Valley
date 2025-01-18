@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class SteamAchievements : MonoBehaviour
 {
+
+	[SerializeField]
+	private bool _stop;
 	public void TryEnableAchievement(AchievementCheck ach)
 	{
-
+		if(_stop) return;
 		if (ach.IsInt)
 		{
 			int current = PlayerPrefs.GetInt(ach.CurrentInt);
@@ -73,16 +76,16 @@ public class SteamAchievements : MonoBehaviour
 
 		Debug.Log("Acquired");
 
-		if (SteamManager.Initialized)
-		{
-			SteamUserStats.GetAchievement(ach.AchievementName, out bool gotAchievement);
-			if (!gotAchievement)
-			{
-				SteamUserStats.SetAchievement(ach.AchievementName);
-				SteamUserStats.StoreStats();
+		//if (SteamManager.Initialized)
+		//{
+		//	SteamUserStats.GetAchievement(ach.AchievementName, out bool gotAchievement);
+		//	if (!gotAchievement)
+		//	{
+		//		SteamUserStats.SetAchievement(ach.AchievementName);
+		//		SteamUserStats.StoreStats();
 
-			}
-		}
+		//	}
+		//}
 	}
 
 	[SerializeField]

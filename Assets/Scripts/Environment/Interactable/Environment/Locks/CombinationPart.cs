@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CombinationPart : MonoBehaviour
 {
-	private bool _isTurning;
+	public bool IsTurning;
 	private Interactable_CombinationManager _combinationManager;
 
 	[SerializeField]
@@ -33,17 +33,17 @@ public class CombinationPart : MonoBehaviour
 	}
 	public void StartTurnCombination(int times, bool setManually)
 	{
-		if (_isTurning) return;
+		if (IsTurning) return;
 
 		_source.clip = _clips[0];
 		_source.Play();
 
-		_isTurning = true;
+		IsTurning = true;
 
 		if (setManually) 
 			_number = (_number + times) % _maxNumber;
 
-		transform.DOLocalRotate(new Vector3(0, 0, 45 * times), .5f, RotateMode.WorldAxisAdd).OnComplete(setManually ? RotateEndManually : RotateEnd);
+		transform.DOLocalRotate(new Vector3(0, 0, 45 * times), .2f, RotateMode.WorldAxisAdd).SetEase(Ease.Linear).OnComplete(setManually ? RotateEndManually : RotateEnd);
 	}
 	public int GetMaxNumber() => _maxNumber;
 
@@ -54,13 +54,13 @@ public class CombinationPart : MonoBehaviour
 		_source.Play();
 		if (_number > _maxNumber)
 			_number = _startNumber;
-		_isTurning = false;
+		IsTurning = false;
 		_combinationManager.ChangeCode(_id, _number);
 	}
 
 	private void RotateEndManually()
 	{
-		_isTurning = false;
+		IsTurning = false;
 	}
 
 }

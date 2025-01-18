@@ -24,6 +24,11 @@ public class PlayerHealth : MonoBehaviour
 		}
 	}
 
+	[SerializeField]
+	private AudioSource _source;
+	[SerializeField]
+	private AudioClip[] _hurtClips;
+
 	private void Start()
 	{
 		_playerUI.SetMaxHealth(_maxHealth);
@@ -31,7 +36,18 @@ public class PlayerHealth : MonoBehaviour
 	public void AddHealth(float addedHealth)
 	{
 		if (addedHealth < 0)
+		{
 			LoseEffects();
+
+			if (_hurtClips.Length != 0)
+			{
+				int rand = Random.Range(0, _hurtClips.Length);
+				_source.PlayOneShot(_hurtClips[rand]);
+			}
+
+
+			//Later might be added damage strength
+		}
 		_health = Mathf.Clamp(_health + addedHealth, 0, _maxHealth);
 		_playerUI.ChangeHealthBar(_health);
 	}

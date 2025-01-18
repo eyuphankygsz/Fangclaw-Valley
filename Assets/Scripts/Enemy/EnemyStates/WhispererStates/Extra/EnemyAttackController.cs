@@ -28,7 +28,10 @@ public class EnemyAttackController : MonoBehaviour
 	private PostProcessingChanger _ppc;
 
 
-
+	[SerializeField]
+	private AudioClip[] _punchClips;
+	[SerializeField]
+	private AudioSource _source;
 
 	public void SetAttackTrue() =>
 		_attacking = true;
@@ -47,6 +50,12 @@ public class EnemyAttackController : MonoBehaviour
 		_ppc.StartProcessChange(_targetLensDistortion, _targetFocusDistance, _targetChromaticAberration, _targetColor, null, null, 0.6f);
 		_attackWait = true;
 		_pHealth.AddHealth(-10);
+
+		if (_punchClips.Length != 0)
+		{
+			int rand = Random.Range(0, _punchClips.Length);
+			_source.PlayOneShot(_punchClips[rand]);
+		}
 
 	}
 

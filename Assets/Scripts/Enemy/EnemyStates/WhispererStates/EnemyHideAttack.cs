@@ -90,14 +90,18 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-		Debug.Log("REACHED: " + _reached);
-		if (_agent.remainingDistance <= _agent.stoppingDistance)
-			_reached = true;
 
+		if ( !_reached && _agent.remainingDistance <= _agent.stoppingDistance + 0.1f)
+		{
+			_reached = true;
+			Debug.Log("REACHED: " + _reached);
+		}
 		if (_reached && !_started)
 		{
+			Debug.Log("REACHED: " + _reached);
 			_started = true;
 			_enemy.transform.rotation = _destination.rotation;
+			_enemy.transform.position = _destination.position;
 			_force.StartForce(_forceTransform);
 		}
 	}

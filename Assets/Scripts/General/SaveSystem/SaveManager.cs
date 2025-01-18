@@ -7,6 +7,7 @@ using UnityEngine;
 using Newtonsoft.Json;
 using Zenject;
 using Newtonsoft.Json.Linq;
+using TMPro;
 public class SaveManager : IInitializable
 {
 	[Inject]
@@ -14,7 +15,7 @@ public class SaveManager : IInitializable
 	private Dictionary<Type, List<GameData>> _savedData = new Dictionary<Type, List<GameData>>();
 	private Dictionary<Type, List<GameObject>> _saveableObjects = new Dictionary<Type, List<GameObject>>();
 
-	private readonly string _savePath = Path.Combine(Application.persistentDataPath, "save.json");
+	private readonly string _savePath = Path.Combine(Application.dataPath, "save.json");
 
 
 	private Coroutine _saveRoutine;
@@ -26,6 +27,11 @@ public class SaveManager : IInitializable
 	}
 	private void Setup()
 	{
+		string drName = Path.GetDirectoryName(_savePath);
+		_savePath.Substring(_savePath.Length - drName.Length);
+
+		GameObject.FindWithTag("dataPath").GetComponent<TextMeshProUGUI>().text = _savePath;
+
 		_jsonSettings = new JsonSerializerSettings
 		{
 			ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
