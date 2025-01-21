@@ -64,6 +64,78 @@ MonoBehaviour:
       ist ein teures und wirkungsvolles Mittel zur Detonation."
     m_Metadata:
       m_Items: []
+  - m_Id: 23509254144
+    m_Localized: Koffer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Schreibmaschine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: "Goldener Schl\xFCssel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Tresor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Schalter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: "Holzt\xFCr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Notiz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Gesundheitstrank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: Ausdauertrank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: "L\xF6we"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Seil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Ein robustes Seil, das f\xFCr verschiedene Aufgaben in den Minen
+      unerl\xE4sslich ist, von der Befestigung von Lasten bis hin zur Unterst\xFCtzung
+      beim Abstieg. Seine Zuverl\xE4ssigkeit ist nur mit seiner Vielseitigkeit vergleichbar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: "Geb\xFCndeltes Dynamit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Ein B\xFCndel Dynamitstangen, fest zusammengebunden f\xFCr eine
+      kraftvollere Explosion. H\xE4ufig in gr\xF6\xDFeren Bergbauoperationen verwendet,
+      um gro\xDFe Fl\xE4chen Gestein zu r\xE4umen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Laterne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: Kombinationsschloss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Scheibe
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

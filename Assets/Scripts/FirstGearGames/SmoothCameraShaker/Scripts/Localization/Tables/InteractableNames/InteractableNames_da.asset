@@ -64,6 +64,78 @@ MonoBehaviour:
       middel til detonation.
     m_Metadata:
       m_Items: []
+  - m_Id: 23509254144
+    m_Localized: Kuffert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Skrivemaskine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: "Guldn\xF8gle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Pengeskab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Kontakt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: "Tr\xE6d\xF8r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Notat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Sundhedsdrik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: Udholdenhedsdrik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: "L\xF8ve"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Reb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Et st\xE6rkt reb, der er essentielt til forskellige opgaver i minerne,
+      fra at sikre byrder til at hj\xE6lpe med nedstigninger. Dets p\xE5lidelighed
+      er kun matchet af dets alsidighed."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Bundtet dynamit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Et bundt dynamitst\xE6nger, t\xE6t bundet sammen for en kraftigere
+      eksplosion. Ofte brugt i st\xF8rre mineoperationer til at rydde store omr\xE5der
+      af sten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lantern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: "Kombinationsl\xE5s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Disk
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

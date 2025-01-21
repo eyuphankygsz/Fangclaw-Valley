@@ -18,7 +18,7 @@ public class Lantern : Weapons
 
 	private bool _onFire;
 	private bool _isShining;
-
+	private bool _isOnHand;
 
 	private Dictionary<int, IWeaponModes> _modes = new Dictionary<int, IWeaponModes>();
 	private IWeaponModes _defaultMode;
@@ -56,7 +56,9 @@ public class Lantern : Weapons
 		if (_isShining)
 			_shine.ExecuteModeUpdate();
 	}
-
+	public bool IsNormalLightOn() => _normalLightSource.activeSelf;
+	public bool IsOnFire() => _onFire;
+	public bool IsOnHand() => _isOnHand;
 	private void MoveNormal()
 	{
 		Y_Movement();
@@ -107,7 +109,7 @@ public class Lantern : Weapons
 	private void OnDisable()
 	{
 		_isShining = false;
-	
+
 		if (_weaponHelpers.StopChange)
 			Disable();
 	}
@@ -183,8 +185,7 @@ public class Lantern : Weapons
 		SetLightning(false);
 	}
 
-
-	private void SetLightning(bool isDefault)
+	public void SetLightning(bool isDefault)
 	{
 		if (_onFire)
 		{
@@ -200,9 +201,19 @@ public class Lantern : Weapons
 			_playerLight.SetActive(true);
 		}
 	}
-
+	public void SetBehindLightning(bool enable)
+	{
+		_behindLightSource.SetActive(enable);
+	}
+	public void SetLightningTurnOn(bool on)
+	{
+		_normalLightSource.SetActive(on);
+		_directLightSource.SetActive(false);
+		_playerLight.SetActive(false);
+	}
 	public override void OnSelected(ControlSchema schema)
 	{
+		_isOnHand = true;
 		_controls = schema;
 		_controls.Player.PrimaryShoot.performed += OnLeftTrigger;
 		_controls.Player.SecondaryShoot.performed += OnRightTriggerPerformed;
@@ -215,6 +226,7 @@ public class Lantern : Weapons
 
 	public override void OnChanged()
 	{
+		_isOnHand = false;
 		if (_controls != null)
 		{
 			_controls.Player.PrimaryShoot.performed -= OnLeftTrigger;

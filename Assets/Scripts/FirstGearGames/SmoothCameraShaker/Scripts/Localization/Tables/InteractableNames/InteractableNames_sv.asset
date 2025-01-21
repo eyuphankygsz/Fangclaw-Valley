@@ -64,6 +64,78 @@ MonoBehaviour:
       kraftfullt medel f\xF6r detonation."
     m_Metadata:
       m_Items: []
+  - m_Id: 23509254144
+    m_Localized: "Resv\xE4ska"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Skrivmaskin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: Guldnyckel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Valv
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: "Str\xF6mbrytare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: "Tr\xE4d\xF6rr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Anteckning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: "H\xE4lsodryck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: "Uth\xE5llighetsdryck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: Lejon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Rep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Ett starkt rep, avg\xF6rande f\xF6r olika uppgifter i minerna,
+      fr\xE5n att s\xE4kra last till att hj\xE4lpa vid nedstigning. Dess p\xE5litlighet
+      \xE4r endast \xF6vertr\xE4ffad av dess m\xE5ngsidighet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Bundlad dynamit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Ett paket dynamitst\xE4nger, t\xE4tt bundna f\xF6r en kraftigare
+      explosion. Anv\xE4nds ofta i st\xF6rre gruvdriftsoperationer f\xF6r att rensa
+      stora omr\xE5den av sten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lykta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: "Kombinationsl\xE5s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Disk
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

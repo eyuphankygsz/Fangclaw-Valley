@@ -82,7 +82,11 @@ public class EnemyEscape : MonoBehaviour, IEnemyState
 	{
 		_openDoor.CheckDoors();
 		if (_agent.remainingDistance <= _agent.stoppingDistance && !_arrived)
+		{
+			Debug.Log("REMAINING DISTANCE: " + _agent.remainingDistance);
+			Debug.Log("STOPPING DISTANCE: " + _agent.stoppingDistance);
 			OnArrived();
+		}
 	}
 
 	private void OnArrived()

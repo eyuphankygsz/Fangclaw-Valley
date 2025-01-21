@@ -76,16 +76,16 @@ public class SteamAchievements : MonoBehaviour
 
 		Debug.Log("Acquired");
 
-		//if (SteamManager.Initialized)
-		//{
-		//	SteamUserStats.GetAchievement(ach.AchievementName, out bool gotAchievement);
-		//	if (!gotAchievement)
-		//	{
-		//		SteamUserStats.SetAchievement(ach.AchievementName);
-		//		SteamUserStats.StoreStats();
+		if (SteamManager.Initialized)
+		{
+			SteamUserStats.GetAchievement(ach.AchievementName, out bool gotAchievement);
+			if (!gotAchievement)
+			{
+				SteamUserStats.SetAchievement(ach.AchievementName);
+				SteamUserStats.StoreStats();
 
-		//	}
-		//}
+			}
+		}
 	}
 
 	[SerializeField]

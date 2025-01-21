@@ -15,7 +15,7 @@ public class SaveManager : IInitializable
 	private Dictionary<Type, List<GameData>> _savedData = new Dictionary<Type, List<GameData>>();
 	private Dictionary<Type, List<GameObject>> _saveableObjects = new Dictionary<Type, List<GameObject>>();
 
-	private readonly string _savePath = Path.Combine(Application.dataPath, "save.json");
+	private string _savePath = Path.Combine(Application.dataPath, "save.json");
 
 
 	private Coroutine _saveRoutine;
@@ -28,9 +28,18 @@ public class SaveManager : IInitializable
 	private void Setup()
 	{
 		string drName = Path.GetDirectoryName(_savePath);
-		_savePath.Substring(_savePath.Length - drName.Length);
 
-		GameObject.FindWithTag("dataPath").GetComponent<TextMeshProUGUI>().text = _savePath;
+		int length = drName.Length;
+		while (length != 0) 
+		{
+			if (drName[length - 1] == '\\')
+				break;
+
+			length--;
+		}
+		_savePath = _savePath.Substring(0, length)+ "\\SavesDir\\save.json";
+
+		//GameObject.FindWithTag("dataPath").GetComponent<TextMeshProUGUI>().text = _savePath;
 
 		_jsonSettings = new JsonSerializerSettings
 		{

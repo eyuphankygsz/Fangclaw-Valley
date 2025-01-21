@@ -10,9 +10,9 @@ public class LanternHelpers : MonoBehaviour
 	[SerializeField]
 	private Lantern _lantern;
 
-	private Coroutine _gasRoutine;
-
-
+	private Coroutine _gasRoutine, _waveRoutine;
+	private bool _waveOn;
+	private bool _baseNormalLight;
 	public float MaxFuel { get => _maxFuel; }
 	public float LeftFuel
 	{
@@ -38,6 +38,7 @@ public class LanternHelpers : MonoBehaviour
 		}
 	}
 
+	#region Gas
 	public bool IsGasEmpty()
 	{
 		if (_leftFuel <= 0)
@@ -51,7 +52,7 @@ public class LanternHelpers : MonoBehaviour
 	}
 	public void StartUsingGas()
 	{
-		if(_gasRoutine != null)
+		if (_gasRoutine != null)
 			StopCoroutine(_gasRoutine);
 		_gasRoutine = StartCoroutine(UseGas());
 	}
@@ -67,7 +68,6 @@ public class LanternHelpers : MonoBehaviour
 		while (true)
 		{
 			_leftFuel -= Time.deltaTime * LitMultiplier;
-			Debug.Log(LitMultiplier);
 			ApplyUI();
 
 			if (_leftFuel <= 0)
@@ -86,6 +86,54 @@ public class LanternHelpers : MonoBehaviour
 		ApplyUI();
 
 	}
+	#endregion
+	#region LightWave
+	public void StartLightWave()
+	{
+		if (_waveRoutine != null)
+			StopCoroutine(_waveRoutine);
+
+		_baseNormalLight = _lantern.IsNormalLightOn();
+		_waveRoutine = StartCoroutine(LightWave());
+	}
+	public void StopLightWave()
+	{
+		StopCoroutine(_waveRoutine);
+
+	}
+
+	public IEnumerator LightWave()
+	{
+		while (true)
+		{
+			bool onFire = _lantern.IsOnFire();
+			if (!onFire)
+			{
+				_lantern.SetLightning(false);
+				yield return null;
+			}
+			else
+			{
+				bool onHand = _lantern.IsOnHand();
+				if (onHand)
+				{
+					_lantern.SetLightningTurnOn(!_lantern.IsNormalLightOn());
+					yield return new WaitForSeconds(Random.Range(0.1f, 0.4f));
+				}
+				else
+				{
+					_lantern.SetBehindLightning(true);
+					yield return new WaitForSeconds(Random.Range(0.1f, 0.29f));
+					_lantern.SetBehindLightning(false);
+					yield return new WaitForSeconds(Random.Range(0.1f, 0.29f));
+				}
+
+			}
+			yield return null;
+		}
+	}
+	#endregion
+
 	private void ApplyUI()
 	{
 		_uiFill.fillAmount = Mathf.InverseLerp(0, _maxFuel, _leftFuel);

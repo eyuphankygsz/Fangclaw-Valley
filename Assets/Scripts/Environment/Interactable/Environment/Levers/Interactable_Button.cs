@@ -10,7 +10,7 @@ public class Interactable_Button : Interactable
 	private bool _isPressed, _samePress;
 	private ControlSchema _controls;
 
-	private UnityEvent _workEvents, _stopEvents, _doneEvents;
+	private UnityEvent _workEvents, _stopEvents;
 
 	[SerializeField]
 	private Collider _collider;

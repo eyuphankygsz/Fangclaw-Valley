@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 131315449856
-    m_Localized: Cortacircuitos
+    m_Localized: Interruptor
     m_Metadata:
       m_Items: []
   - m_Id: 134763167744
@@ -115,7 +115,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: Dinamita Atada
+    m_Localized: Dinamita empaquetada
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
@@ -125,11 +125,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9048642019311616
-    m_Localized: Linterna
+    m_Localized: LinternaLinterna
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
-    m_Localized: "Candado de Combinaci\xF3n"
+    m_Localized: "Candado de combinaci\xF3n"
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328

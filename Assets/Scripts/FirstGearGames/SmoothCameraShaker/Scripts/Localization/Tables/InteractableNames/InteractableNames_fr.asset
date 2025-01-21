@@ -31,11 +31,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 98855731200
-    m_Localized: "Jusqu'\xE0"
+    m_Localized: Coffre-fort
     m_Metadata:
       m_Items: []
   - m_Id: 131315449856
-    m_Localized: Disjoncteur
+    m_Localized: Interrupteur
     m_Metadata:
       m_Items: []
   - m_Id: 134763167744
@@ -109,13 +109,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: "Une corde robuste, indispensable pour diverses t\xE2ches dans les
-      mines, que ce soit pour s\xE9curiser des charges ou pour faciliter les descentes.
-      Sa fiabilit\xE9 est \xE0 la hauteur de sa polyvalence.\n"
+    m_Localized: "Une corde robuste, essentielle pour diverses t\xE2ches dans les
+      mines, de la s\xE9curisation des charges \xE0 l'aide pour les descentes. Sa
+      fiabilit\xE9 n'a d'\xE9gale que sa polyvalence."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: "Dynamite Li\xE9e"
+    m_Localized: Dynamite en paquet
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
@@ -129,7 +129,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
-    m_Localized: "Serrure \xE0 Combinaison"
+    m_Localized: "Cadenas \xE0 combinaison"
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328

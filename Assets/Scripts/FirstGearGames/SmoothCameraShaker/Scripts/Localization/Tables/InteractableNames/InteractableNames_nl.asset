@@ -64,6 +64,78 @@ MonoBehaviour:
       en krachtig middel voor detonatie.
     m_Metadata:
       m_Items: []
+  - m_Id: 23509254144
+    m_Localized: Koffer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Typemachine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: Gouden sleutel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Kluis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Schakelaar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: Houten deur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: NotitieNotitie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Gezondheidstoverdrank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: Uithoudingsdrank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: Leeuw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Touw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: Een stevig stuk touw, essentieel voor verschillende taken in de
+      mijnen, van het beveiligen van ladingen tot het helpen bij afdaling. De betrouwbaarheid
+      is alleen evenaart door de veelzijdigheid.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Gebundelde dynamiet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: Een bundel dynamietstokken, stevig samengebonden voor een krachtigere
+      explosie. Vaak gebruikt in grotere mijnoperaties om grote gebieden van steen
+      vrij te maken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lantaarn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: Combinatieslot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Schijf
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

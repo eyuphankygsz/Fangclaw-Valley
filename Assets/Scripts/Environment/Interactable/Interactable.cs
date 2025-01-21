@@ -97,14 +97,18 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	}
 	private void OnDisable()
 	{
-		_scanObject?.SetActive(false);
+		if (_scanObject != null)
+			_scanObject.SetActive(false);
 	}
 
 	private IEnumerator ScanRoutine()
 	{
-		_scanObject.SetActive(true);
+		if (_scanObject == null)
+			yield break;
+
+		_scanObject?.SetActive(true);
 		yield return _scanTime;
-		_scanObject.SetActive(false);
+		_scanObject?.SetActive(false);
 
 	}
 

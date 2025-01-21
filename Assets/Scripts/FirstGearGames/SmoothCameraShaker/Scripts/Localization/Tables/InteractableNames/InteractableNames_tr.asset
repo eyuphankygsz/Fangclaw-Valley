@@ -35,11 +35,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 131315449856
-    m_Localized: "\u015Ealter"
+    m_Localized: Anahtar
     m_Metadata:
       m_Items: []
   - m_Id: 134763167744
-    m_Localized: "Tahta Kap\u0131"
+    m_Localized: "Ah\u015Fap Kap\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 313811672416256
@@ -118,7 +118,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: "Ba\u011Flanm\u0131\u015F Dinamitler"
+    m_Localized: "Paketlenmi\u015F Dinamit"
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
@@ -132,7 +132,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
-    m_Localized: "\u015Eifreli Kilit"
+    m_Localized: Kombinasyonlu Kilit
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328

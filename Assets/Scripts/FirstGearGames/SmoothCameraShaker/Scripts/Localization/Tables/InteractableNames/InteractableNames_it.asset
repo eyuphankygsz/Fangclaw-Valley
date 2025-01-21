@@ -64,6 +64,78 @@ MonoBehaviour:
       mezzo costoso e potente per la detonazione."
     m_Metadata:
       m_Items: []
+  - m_Id: 23509254144
+    m_Localized: Valigia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Macchina da scrivere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: Chiave d'oro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Caveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Interruttore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: Porta di legno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Nota
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Pozione di salute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: Pozione di resistenza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: Leone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8691674247249920
+    m_Localized: Corda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Una robusta corda, essenziale per vari compiti nelle miniere, dalla
+      sicurezza dei carichi all'aiuto nelle discese. La sua affidabilit\xE0 \xE8
+      eguagliata solo dalla sua versatilit\xE0."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Dinamite legata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Un fascio di bastoncini di dinamite, strettamente legati per un'esplosione
+      pi\xF9 potente. Spesso usato in operazioni minerarie pi\xF9 grandi per liberare
+      vaste aree di roccia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lanterna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: Chiusura a combinazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Disco
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

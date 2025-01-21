@@ -77,7 +77,6 @@ public class Interactable_Crate : Interactable
 
 
 		float randomValue = Random.Range(0f, totalWeight);
-		Debug.Log("RandomValue: " + randomValue);
 		float cumulativeWeight = 0f;
 
 		for (int i = 0; i < _randomItemDrop.Items.Count; i++)
