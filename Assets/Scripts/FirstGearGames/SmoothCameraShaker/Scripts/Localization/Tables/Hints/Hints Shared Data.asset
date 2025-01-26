@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: hint_scan_env
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Key: hint_drop_item
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

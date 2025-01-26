@@ -55,6 +55,11 @@ MonoBehaviour:
       stark ersch\xF6pfen wird."
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: "Du kannst <color=#FF0000>deine Gegenst\xE4nde ablegen</color> aus
+      deinem <color=#512ed1>Inventar</color>."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

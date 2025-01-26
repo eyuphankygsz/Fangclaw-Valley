@@ -53,6 +53,10 @@ MonoBehaviour:
       sterk zal verminderen.
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: Je kunt <color=#FF0000>je items laten vallen</color> uit je <color=#512ed1>inventaris</color>.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

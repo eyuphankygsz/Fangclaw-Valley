@@ -69,7 +69,17 @@ public class GameManager
 		}
 	}
 
-
+	public event Action<bool> OnWeaponChanging;
+	private bool _wChanging;
+	public bool WeaponChanging
+	{
+		get => _wChanging;
+		set
+		{
+			_wChanging = value;
+			OnInspecting?.Invoke(_wChanging);
+		}
+	}
 
 	public void SetPauseGame(bool pauseGame)
 	{

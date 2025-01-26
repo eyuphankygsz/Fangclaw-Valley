@@ -29,9 +29,17 @@ public class Notes : Weapons
 	}
 
 
-	public override void OnSelected(ControlSchema schema){}
+	public override void OnSelected(ControlSchema schema)
+	{
+		CanChange = false;
+		_weaponHelpers.CheckSelected(_animator, this, "Selected");
+	}
 
-	public override void OnChanged() { }
+	public override void OnChanged() 
+	{
+		CanChange = false;
+		_weaponHelpers.CheckOnChange(_animator, _controls, this, "OnChanged");	
+	}
 
 	public override void SetWeapon() { }
 
@@ -43,5 +51,18 @@ public class Notes : Weapons
 	public override void LoadSave()
 	{
 		return;
+	}
+
+	public override void SetWeaponControls(bool setEnable)
+	{
+		if (setEnable)
+		{
+			_weaponHelpers.SetWeaponChange(false);
+
+		}
+		else
+		{
+
+		}
 	}
 }

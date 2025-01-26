@@ -16,7 +16,7 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	[SerializeField] protected AudioSource _source;
 
 	public bool IsPicked;
-
+	public bool CanChange = true;
 
 	protected Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
 	protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
@@ -145,6 +145,9 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	{
 		return (-Mathf.Pow(_xPolynomial, 2) / 1.5f) - (_xPolynomial / 10) + 1.2f;
 	}
+	
+
+	public abstract void SetWeaponControls(bool setEnable);
 
 	//private void OnDrawGizmos()
 	//{

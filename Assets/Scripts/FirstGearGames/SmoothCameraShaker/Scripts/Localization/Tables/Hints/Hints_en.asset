@@ -52,6 +52,10 @@ MonoBehaviour:
       key. However, remember that this ability will greatly drain your strength."
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: You can <color=#FF0000>drop your items</color> from your <color=#512ed1>Inventory</color>.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

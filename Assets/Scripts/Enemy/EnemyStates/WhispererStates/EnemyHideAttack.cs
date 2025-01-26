@@ -32,6 +32,8 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 	private IsAnimationOver _isAnimOver;
 	[SerializeField]
 	private HideOut _exitForHide;
+	[SerializeField]
+	private Animator _anim;
 
 	private bool _reached, _started;
 	private Transform _destination;
@@ -45,6 +47,7 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 	private SteamAchievements _achievements;
 	[SerializeField]
 	private AchievementCheck _noSafePlace;
+
 
 	public void EnterState()
 	{
@@ -79,6 +82,7 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 
 	public void ExitState()
 	{
+		_anim.SetBool("Search", false);
 		_isAnimOver.SetOver(true);
 		_reached = false;
 		_started = false;
@@ -99,6 +103,7 @@ public class EnemyHideAttack : MonoBehaviour, IEnemyState
 		if (_reached && !_started)
 		{
 			Debug.Log("REACHED: " + _reached);
+			_anim.SetBool("Search", true);
 			_started = true;
 			_enemy.transform.rotation = _destination.rotation;
 			_enemy.transform.position = _destination.position;

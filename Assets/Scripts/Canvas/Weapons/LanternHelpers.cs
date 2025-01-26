@@ -99,7 +99,7 @@ public class LanternHelpers : MonoBehaviour
 	public void StopLightWave()
 	{
 		StopCoroutine(_waveRoutine);
-
+		_lantern.SetLightning(_lantern.IsShining);
 	}
 
 	public IEnumerator LightWave()

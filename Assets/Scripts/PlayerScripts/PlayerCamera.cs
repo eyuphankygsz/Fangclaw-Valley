@@ -17,7 +17,7 @@ public class PlayerCamera : MonoBehaviour
 
 	private bool _force;
 
-	private bool _randomMoveBool;
+	private bool _randomMoveBool, _lockRandom;
 	private void Awake()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
@@ -43,10 +43,10 @@ public class PlayerCamera : MonoBehaviour
 	{
 		if (_force) return;
 
-		if (!_randomMoveBool)
+		if (!_randomMoveBool && !_lockRandom)
 		{
-			float randomX = Random.Range(-2f, 2f); // Daha küçük ve kontrollü yatay sallantý
-			float randomY = Random.Range(-2f, 2f); // Daha küçük ve kontrollü dikey sallantý
+			float randomX = Random.Range(-1f, 1f); // Daha küçük ve kontrollü yatay sallantý
+			float randomY = Random.Range(-1f, 1f); // Daha küçük ve kontrollü dikey sallantý
 			// Kamerayý rastgele bir açýya döndür
 			_cameraHolderBase
 				.DOLocalRotateQuaternion(
@@ -57,8 +57,8 @@ public class PlayerCamera : MonoBehaviour
 				.OnComplete(() =>
 				{
 					// Kamerayý baþlangýç pozisyonuna döndür
-					randomX = Random.Range(-2f, 2f);
-					randomY = Random.Range(-2f, 2f);;
+					randomX = Random.Range(-1f, 1f);
+					randomY = Random.Range(-1f, 1f);;
 					
 					_cameraHolderBase
 						.DOLocalRotateQuaternion(Quaternion.Euler(randomX, randomY, 0), Random.Range(1.2f,1.5f))
@@ -81,6 +81,10 @@ public class PlayerCamera : MonoBehaviour
 
 		_camera.localRotation = Quaternion.Euler(_pitch, 0f, 0f);
 		transform.rotation = Quaternion.Euler(0f, _yaw, 0f);
+	}
+	public void RandomLock(bool locked)
+	{
+		_lockRandom = locked;
 	}
 	private void RandomComplete()
 	{

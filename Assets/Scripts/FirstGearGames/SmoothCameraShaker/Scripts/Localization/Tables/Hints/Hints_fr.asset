@@ -55,6 +55,11 @@ MonoBehaviour:
       n\u2019oubliez pas que cette aptitude \xE9puisera grandement vos forces."
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: Vous pouvez <color=#FF0000>jeter vos objets</color> depuis votre
+      <color=#512ed1>inventaire</color>.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

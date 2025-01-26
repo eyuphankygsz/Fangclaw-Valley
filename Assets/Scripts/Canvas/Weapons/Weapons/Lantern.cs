@@ -18,6 +18,7 @@ public class Lantern : Weapons
 
 	private bool _onFire;
 	private bool _isShining;
+	public bool IsShining { get { return _isShining; } }
 	private bool _isOnHand;
 
 	private Dictionary<int, IWeaponModes> _modes = new Dictionary<int, IWeaponModes>();
@@ -213,36 +214,18 @@ public class Lantern : Weapons
 	}
 	public override void OnSelected(ControlSchema schema)
 	{
+		CanChange = false;
 		_isOnHand = true;
 		_controls = schema;
-		_controls.Player.PrimaryShoot.performed += OnLeftTrigger;
-		_controls.Player.SecondaryShoot.performed += OnRightTriggerPerformed;
-		_controls.Player.SecondaryShoot.canceled += OnRightTriggerCanceled;
+		_animator.Play("Selected", 0);
 
-		_animator.SetBool("OnFire", _onFire);
-		_normalLightSource.SetActive(_onFire);
-		_behindLightSource.SetActive(false);
+		_weaponHelpers.CheckSelected(_animator, this, _onFire ? "SelectedON" : "SelectedOFF");
 	}
 
 	public override void OnChanged()
 	{
-		_isOnHand = false;
-		if (_controls != null)
-		{
-			_controls.Player.PrimaryShoot.performed -= OnLeftTrigger;
-			_controls.Player.SecondaryShoot.performed -= OnRightTriggerPerformed;
-			_controls.Player.SecondaryShoot.canceled -= OnRightTriggerCanceled;
-		}
-
-		_lanternHelpers.LitMultiplier = 1;
-		_directLightSource.SetActive(false);
-		_normalLightSource.SetActive(false);
-		_behindLightSource.SetActive(_onFire);
-		if (_onFire && !_source.isPlaying)
-		{
-			_source.clip = _gasSound;
-			_source.Play();
-		}
+		CanChange = false;
+		_weaponHelpers.CheckOnChange(_animator, _controls, this, _onFire ? "ChangeON" : "ChangeOFF");
 	}
 	public override void SetWeapon()
 	{
@@ -284,5 +267,41 @@ public class Lantern : Weapons
 			Enlight();
 
 		gameObject.SetActive(data.IsSelected);
+	}
+
+	public override void SetWeaponControls(bool setEnable)
+	{
+		if (setEnable)
+		{
+			_controls.Player.PrimaryShoot.performed += OnLeftTrigger;
+			_controls.Player.SecondaryShoot.performed += OnRightTriggerPerformed;
+			_controls.Player.SecondaryShoot.canceled += OnRightTriggerCanceled;
+
+			_weaponHelpers.SetWeaponChange(false);
+
+			_animator.SetBool("OnFire", _onFire);
+			_normalLightSource.SetActive(_onFire);
+			_behindLightSource.SetActive(false);
+		}
+		else
+		{
+			_isOnHand = false;
+			if (_controls != null)
+			{
+				_controls.Player.PrimaryShoot.performed -= OnLeftTrigger;
+				_controls.Player.SecondaryShoot.performed -= OnRightTriggerPerformed;
+				_controls.Player.SecondaryShoot.canceled -= OnRightTriggerCanceled;
+			}
+
+			_lanternHelpers.LitMultiplier = 1;
+			_directLightSource.SetActive(false);
+			_normalLightSource.SetActive(false);
+			_behindLightSource.SetActive(_onFire);
+			if (_onFire && !_source.isPlaying)
+			{
+				_source.clip = _gasSound;
+				_source.Play();
+			}
+		}
 	}
 }

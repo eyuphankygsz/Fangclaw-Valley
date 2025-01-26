@@ -181,9 +181,9 @@ public class PlayerParanoia : MonoBehaviour
 
 		_isPeak = false;
 
-		_lensDistortion.intensity.value = Mathf.Lerp(0, _targetLensDistortion, progress);
-		_bloom.intensity.value = Mathf.Lerp(0, _targetBloom, progress);
-		_vignette.intensity.value = Mathf.Lerp(0, _targetVignette, progress);
+		_lensDistortion.intensity.value = Mathf.Lerp(_initialLensDistortion, _targetLensDistortion, progress);
+		_bloom.intensity.value = Mathf.Lerp(_initialBloom, _targetBloom, progress);
+		_vignette.intensity.value = Mathf.Lerp(_initialVignette, _targetVignette, progress);
 	}
 
 	private bool _beating;
@@ -194,7 +194,6 @@ public class PlayerParanoia : MonoBehaviour
 		{
 			float progress = 1 - (_currentTime / _normalTime);
 			float time = 1.6f - progress;
-			Debug.Log(time);
 			yield return new WaitForSeconds(time);
 			_heartBeatSFX.Play();
 			yield return null;

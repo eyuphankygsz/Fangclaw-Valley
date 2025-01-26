@@ -54,6 +54,11 @@ MonoBehaviour:
       unutma, bu \xF6zellik seni yoracakt\u0131r."
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: "E\u015Fyalar\u0131n\u0131z\u0131 <color=#FF0000>envanterinizden
+      atabilirsiniz</color>."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

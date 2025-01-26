@@ -53,6 +53,11 @@ MonoBehaviour:
       Tuttavia, ricorda che questa abilit\xE0 consumer\xE0 notevolmente la tua forza."
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: Puoi <color=#FF0000>lasciare cadere i tuoi oggetti</color> dal tuo
+      <color=#512ed1>inventario</color>.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

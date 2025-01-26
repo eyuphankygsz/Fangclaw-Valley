@@ -15,6 +15,7 @@ public class FirstSettings : MonoBehaviour
 
     private void Awake()
     {
+        PlayerPrefs.DeleteKey("FirstSettings");
         if (PlayerPrefs.GetString("FirstSettings") == "Done")
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else

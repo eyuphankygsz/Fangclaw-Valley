@@ -52,6 +52,10 @@ MonoBehaviour:
       for at g\xF8re dette. Husk dog, at denne evne vil udmatte din styrke betydeligt."
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: Du kan <color=#FF0000>smide dine genstande</color> fra din <color=#512ed1>beholdning</color>.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

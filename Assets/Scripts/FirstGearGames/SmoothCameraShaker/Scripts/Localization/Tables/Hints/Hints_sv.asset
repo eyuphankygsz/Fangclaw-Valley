@@ -53,6 +53,11 @@ MonoBehaviour:
       Kom dock ih\xE5g att denna f\xF6rm\xE5ga kommer att t\xF6mma din styrka avsev\xE4rt."
     m_Metadata:
       m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: "Du kan <color=#FF0000>sl\xE4ppa dina f\xF6rem\xE5l</color> fr\xE5n
+      din <color=#512ed1>inventarie</color>."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
