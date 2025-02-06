@@ -19,12 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "Du kan bruge dine v\xE6rkt\xF8jer eller dine h\xE6nder med <color=#FF0000>\"$primary_key\"</color>
-      til at bryde kasserne."
+    m_Localized: "Du kan <color=#93FF7A>BRUGE</color> dine <color=#FFB45B>H\xC6NDER</color>
+      med <color=#75a8ff>\"$primary_key\"</color> til at \xF8del\xE6gge <color=#FF4545>KASSERNE</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du vil kr\xE6ve lampeolie og t\xE6ndstikker for at t\xE6nde gaslampen."
+    m_Localized: "Du skal <color=#93FF7A>BRUGE</color> <color=#E688FF>gasolie</color>
+      og <color=#E688FF>t\xE6ndstikker</color> for at t\xE6nde <color=#FFB45B>GASLAMPEN</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
@@ -32,9 +33,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Du kan \xE5bne dit inventar ved at trykke p\xE5 <color=#FF0000>\"$inv_key\"</color>.
-      Mens du er i dit inventar, kan du bruge, unders\xF8ge, kassere eller kombinere
-      genstande! Husk at fylde din gaslampe op med lampeolie."
+    m_Localized: "Du kan <color=#93FF7A>\xC5BNE</color> din <color=#FFB45B>Inventar</color>
+      ved at trykke p\xE5 <color=#75A8FF>\"$inv_key\"</color>. N\xE5r du er i <color=#FFB45B>Inventaren</color>,
+      kan du <color=#93FF7A>Bruge</color>, <color=#93FF7A>Unders\xF8ge</color>, <color=#93FF7A>Kassere</color>
+      eller <color=#93FF7A>Kombinere</color> genstande! Husk at genopfylde din <color=#FFB45B>Gaslampe</color>
+      med <color=#E688FF>Gasolie</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -42,18 +45,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "Ved at trykke p\xE5 <color=#FF0000>\"$inter_key\"</color>-tasten
-      kan du erhverve eller bruge dine genstande."
+    m_Localized: "Ved at trykke p\xE5 <color=#75A8FF>\"$inter_key\"</color> kan du
+      <color=#93FF7A>OPN\xC5</color> <color=#E688FF>Genstande</color> eller <color=#93FF7A>INTERAGERE</color>
+      med <color=#FF4545>Omgivelserne</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Ved at fokusere din opm\xE6rksomhed, kan du skelne objekter, der
-      kan interageres med omkring dig. Brug <color=#FF0000>\"$scan_env\"</color>-tasten
-      for at g\xF8re dette. Husk dog, at denne evne vil udmatte din styrke betydeligt."
+    m_Localized: "Ved at <color=#99FFF1>Fokusere Din Opm\xE6rksomhed</color> kan
+      du <color=#F7FFA3>Skelne Objekter</color>, der er \xE5bne for <color=#93FF7A>Interaktion</color>
+      omkring dig. For at g\xF8re det, <color=#93FF7A>BRUG</color> tasten <color=#75A8FF>\u201C$scan_env\u201D</color>.
+      Husk dog, at denne evne vil kraftigt <color=#93FF7A>DR\xC6NE</color> din <color=#7A85FF>Udholdenhed</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: Du kan <color=#FF0000>smide dine genstande</color> fra din <color=#512ed1>beholdning</color>.
+    m_Localized: Du kan <color=#93FF7A>SMIDE</color> dine <color=#E688FF>Genstande</color>
+      fra din <color=#FFB45B>Beholdning</color>.
     m_Metadata:
       m_Items: []
   references:

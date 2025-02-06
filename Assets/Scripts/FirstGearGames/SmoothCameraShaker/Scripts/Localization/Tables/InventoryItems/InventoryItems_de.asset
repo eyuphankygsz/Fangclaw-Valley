@@ -63,6 +63,55 @@ MonoBehaviour:
       K\xF6rper, sondern auch den Geist zu beleben."
     m_Metadata:
       m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: "Tresor Schl\xFCssel Nr. 1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "Ich denke, das ist ein Tresorschl\xFCssel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: "Es riecht sehr schlecht. Ich bin mir sicher, dass es gut f\xFCr
+      die Gesundheit ist..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "Meine Gro\xDFmutter hat einmal ein Getr\xE4nk mit diesem Geruch
+      zubereitet. In diesen Tagen stellte sie mir dieses wunderbare Elixier mit gr\xF6\xDFter
+      Sorgfalt vor, als ob es ein Ritual w\xE4re."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "Kleiner Aufbewahrungsschl\xFCssel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Dieser abgenutzte und rostige Schl\xFCssel, der Anzeichen von Vernachl\xE4ssigung
+      zeigt, ist sicherlich f\xFCr einen bescheidenen Stauraum gedacht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: "Streichh\xF6lzer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Diese Streichh\xF6lzer haben eine kleine, aber lebenswichtige Bedeutung.
+      Einfache Holzst\xE4bchen, perfekt, um meine Gaslampe zu entz\xFCnden. Sie werden
+      mich durch die Dunkelheit dieser H\xF6hle f\xFChren. Nur ein Funken, und sie
+      werden die Geheimnisse erleuchten, die im Schatten verborgen sind. Auch wenn
+      sie gew\xF6hnlich erscheinen, sind diese Streichh\xF6lzer entscheidend f\xFCr
+      mein \xDCberleben hier."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: "Gas\xF6l"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

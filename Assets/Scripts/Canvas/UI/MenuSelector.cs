@@ -5,26 +5,30 @@ using UnityEngine.EventSystems;
 
 public class MenuSelector : MonoBehaviour
 {
-    [SerializeField]
-    private EventSystem _eventSystem;
-    [SerializeField]
-    private GameObject[] _menuList;
-    [SerializeField]
-    private GameObject[] _firstSelected;
+	[SerializeField]
+	private EventSystem _eventSystem;
+	[SerializeField]
+	private GameObject[] _menuList;
+	[SerializeField]
+	private GameObject[] _firstSelected;
 
 
-    
-    public void OpenFirst()
-    {
-        OpenMenu(0);
-    }
 
-    public void OpenMenu(int id)
-    {
-        _eventSystem.SetSelectedGameObject(_firstSelected[id]);
-        for (int i = 0; i < _menuList.Length; i++)
-            _menuList[i].SetActive(false);
+	public void OpenFirst()
+	{
+		OpenMenu(0);
+	}
 
-        _menuList[id].SetActive(true);
-    }
+	public void OpenMenu(int id)
+	{
+		if (InputDeviceManager.Instance.CurrentDevice == InputDeviceManager.InputDeviceType.Gamepad)
+			_eventSystem.SetSelectedGameObject(_firstSelected[id]);
+		else
+			_eventSystem.SetSelectedGameObject(null);
+
+		for (int i = 0; i < _menuList.Length; i++)
+			_menuList[i].SetActive(false);
+
+		_menuList[id].SetActive(true);
+	}
 }

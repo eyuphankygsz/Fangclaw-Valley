@@ -67,7 +67,7 @@ public class PauseMenu : MonoBehaviour
 
 	private void SelectSection(TopSections section, bool byButtons)
 	{
-		if (_gameManager.SaveGame || _hintManager.HintShow)
+		if (_gameManager.SaveGame || (_hintManager != null && _hintManager.HintShow))
 			return;
 
 		foreach (var item in _sections)
@@ -118,12 +118,16 @@ public class PauseMenu : MonoBehaviour
 	private void UnSelectTitle(TopSections section)
 	{
 		section.Section.SetActive(false);
+		if (section.TitleObject == null) return;
+		
 		section.TitleObject.color = _unSelected;
 		section.TitleObject.fontStyle = FontStyles.Normal;
 	}
 	private void SelectTitle(TopSections section)
 	{
 		section.Section.SetActive(true);
+		if (section.TitleObject == null) return;
+
 		section.TitleObject.color = _selected;
 		section.TitleObject.fontStyle = FontStyles.Bold;
 	}

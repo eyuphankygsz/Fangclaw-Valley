@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856112807919616
-    m_Localized: "G\xF6r\xFCnt\xFC"
+    m_Localized: Video
     m_Metadata:
       m_Items: []
   - m_Id: 18856132042997760
@@ -99,7 +99,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859044668358656
-    m_Localized: "Silah De\u011Fi\u015Ftir #1"
+    m_Localized: "Silah de\u011Fi\u015Ftir #1"
     m_Metadata:
       m_Items: []
   - m_Id: 18859122887933952
@@ -127,7 +127,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18863369293578240
-    m_Localized: "S\u0131f\u0131rla"
+    m_Localized: "S\u0131f\u0131rlama"
     m_Metadata:
       m_Items: []
   - m_Id: 18863706494648320
@@ -160,6 +160,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 19166236932976640
     m_Localized: "Oyun Kumandas\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59145662851366912
+    m_Localized: "Mevcut kayd\u0131n\u0131z \xFCzerine yaz\u0131lacakt\u0131r. Yeni
+      bir yolculu\u011Fa \xE7\u0131kmak istiyor musunuz?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Localized: Devam Et
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Localized: Yeni Oyun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Localized: "\xC7\u0131k\u0131\u015F"
     m_Metadata:
       m_Items: []
   references:

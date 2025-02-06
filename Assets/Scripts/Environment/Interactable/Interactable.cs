@@ -86,7 +86,7 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 		_doneEvents.Invoke();
 	}
 
-	private WaitForSeconds _scanTime = new WaitForSeconds(4);
+	private WaitForSeconds _scanTime = new WaitForSeconds(10);
 	private Coroutine _scanRoutine;
 	public void ShowScanObject()
 	{

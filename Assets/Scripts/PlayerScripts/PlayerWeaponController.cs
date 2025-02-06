@@ -81,7 +81,6 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		if (stun)
 		{
 			_currentWeapon.OnChanged();
-			_currentWeapon.gameObject.SetActive(false);
 			_currentWeapon = null;
 		}
 		else
@@ -108,9 +107,9 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private void ChangeGunByKey(InputAction.CallbackContext ctx)
 	{
 		if (_currentWeapon == null || _gamePaused || OnWeaponChanging) return;
-		OnWeaponChanging = true;
 		int bindingIndex = ctx.action.GetBindingIndexForControl(ctx.control);
-		SelectWeapon(bindingIndex);
+		OnWeaponChanging = true;
+		SelectWeapon(bindingIndex); 
 	}
 	private void ChangeGunByScroll(InputAction.CallbackContext ctx)
 	{
@@ -121,20 +120,21 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	private void SelectWeapon(bool next)
 	{
-		if (_weaponHelpers.StopChange)
+		int count = GetCurrentWeaponCount();
+		int nextGun = (_weaponIndex + (next ? 1 : -1) + count) % count;
+
+		if (_weaponHelpers.StopChange || _weaponIndex == nextGun)
 		{
 			OnWeaponChanging = false;
 			return;
 		}
-		int count = GetCurrentWeaponCount();
 		_externalWeapon = false;
-		int nextGun = (_weaponIndex + (next ? 1 : -1) + count) % count;
 
 		ChangeWeapon(true, nextGun);
 	}
 	public void SelectWeapon(int index)
 	{
-		if (((_oldWeaponIndex == index && _currentWeapon != null && !_externalWeapon) || index >= _weapons.Count) || _weaponHelpers.StopChange)
+		if (((_oldWeaponIndex == index && _currentWeapon != null && !_externalWeapon) || index >= _weapons.Count) || _weaponHelpers.StopChange || _weaponIndex == index)
 		{
 			OnWeaponChanging = false;
 			return;
@@ -146,15 +146,13 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	public void SelectInstantWeapon(int index)
 	{
+		_currentWeapon?.OnChanged();
+
 		_weaponIndex = index;
 		_oldWeaponIndex = _weaponIndex;
 
 		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
-		_currentWeapon.gameObject.SetActive(true);
-		_currentWeapon.OnSelected(_inputManager.Controls);
-		
-
-		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
+		StartCoroutine(WaitForWeaponAnimation(false));
 	}
 	public int GetWeaponIndex()
 	{
@@ -169,6 +167,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		if (!_weapons[_weaponNames[tempIndex]].IsPicked)
 		{
+			OnWeaponChanging = false;
 			if (errorChange)
 				SelectWeapon(true);
 
@@ -191,8 +190,6 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		{
 			if (_currentWeapon != null && _currentWeapon.CanChange)
 			{
-				Debug.Log("WHILE 1");
-				_currentWeapon?.gameObject.SetActive(false);
 				StartCoroutine(CheckWeaponChange(sameGun));
 				yield break;
 			}
@@ -206,10 +203,8 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		while(_currentWeapon == null)
 		{
-				Debug.Log("WHILE 2");
 			yield return null;
 		}
-				Debug.Log("WHILE 3");
 
 		//_currentWeapon.CanChange = true;
 		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
@@ -244,15 +239,32 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	public void EquipExternalWeapon(string name)
 	{
 		_externalWeapon = true;
+
+		int i = 0;
+        for (; i < _weaponNames.Length; i++)
+        {
+			if (_weaponNames[i] == name)
+				break;
+        }
+
+		bool sameGun = i == _oldWeaponIndex;
+
+		_weaponIndex = i;
+		_oldWeaponIndex = _weaponIndex;
+
 		_currentWeapon?.OnChanged();
-		_currentWeapon?.gameObject.SetActive(false);
+		StartCoroutine(WaitForWeaponAnimation(sameGun));
 
-		_currentWeapon = _weapons[name];
 
-		_currentWeapon.gameObject.SetActive(true);
-		_currentWeapon.OnSelected(_inputManager.Controls);
 
-		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
+		//_currentWeapon?.gameObject.SetActive(false);
+
+		//_currentWeapon = _weapons[name];
+
+		//_currentWeapon.gameObject.SetActive(true);
+		//_currentWeapon.OnSelected(_inputManager.Controls);
+
+		//_playerInteractions.ChangeCross(_currentWeapon.GetCross());
 	}
 	public void TryDropExternalWeapon(string name)
 	{

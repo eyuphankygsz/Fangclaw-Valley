@@ -94,38 +94,32 @@ public class HintManager : MonoBehaviour
 		_localizedText = new LocalizedString() { TableReference = "Hints", TableEntryReference = hint.HintText };
 		_hText.text = _localizedText.GetLocalizedString();
 
-		List<string> controls = new List<string>();
 		foreach (var key in _keyNames)
 		{
 
 			if (!_hText.text.Contains(key.KeyName))
 				continue;
 
-			controls.Clear();
 			InputAction act = key.Action.action;
 
 			for (int i = 0; i < act.bindings.Count; i++)
 			{
-				int leng = 0;
 				string displayStr = act.bindings[i].effectivePath;
-				for (int j = 0; j < displayStr.Length; j++)
-				{
-					if (displayStr[j] == '/' || displayStr[j] == '>')
-					{
-						leng--;
-						break;
-					}
-					leng++;
-				}
 
-				displayStr = "(" + displayStr.Substring(1, leng) + ")";
-				controls.Add(displayStr);
+				if (InputDeviceManager.Instance.CurrentDevice == InputDeviceManager.InputDeviceType.Gamepad && !displayStr.Contains("XInput"))
+					continue;
+				else if (InputDeviceManager.Instance.CurrentDevice == InputDeviceManager.InputDeviceType.KeyboardMouse && displayStr.Contains("XInput"))
+					continue;
+
+				displayStr = InputSystem.FindControl(displayStr).displayName;
+				
+				//TODO: add more
+				_hText.text = _hText.text.Replace( "\""+ key.KeyName + "\"", displayStr);
+				break;
 			}
-			_hText.text = _hText.text.Replace(key.KeyName, key.Action.action.GetBindingDisplayString() + " |");
 		}
 
-		for (int i = 0; i < controls.Count; i++)
-			_hText.text = ReplaceFirst(_hText.text, "|", controls[i] + ((i == controls.Count - 1) ? "" : "/"));
+
 
 
 		_hintHolder.SetActive(true);

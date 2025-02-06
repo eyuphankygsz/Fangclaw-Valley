@@ -17,7 +17,7 @@ public class FirstSettings : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("FirstSettings");
         if (PlayerPrefs.GetString("FirstSettings") == "Done")
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            ChangeScene();
         else
             OpenSetting(true);
     }
@@ -40,6 +40,7 @@ public class FirstSettings : MonoBehaviour
     private void ChangeScene()
     {
         PlayerPrefs.SetString("FirstSettings", "Done");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		PlayerPrefs.SetString("SceneToLoad", "MainMenu");
+        SceneManager.LoadScene("LoadingScreen");
     }
 }

@@ -15,7 +15,8 @@ public class Lantern : Weapons
 	[SerializeField] private AudioClip _matchSound, _gasSound;
 	[SerializeField] private LanternHelpers _lanternHelpers;
 	[SerializeField] private ShineMode _shine;
-
+	[SerializeField] private AudioClip _switchIn, _switchOut;
+	[SerializeField] private AudioSource _gasLeakLoop;
 	private bool _onFire;
 	private bool _isShining;
 	public bool IsShining { get { return _isShining; } }
@@ -120,7 +121,7 @@ public class Lantern : Weapons
 		_weaponHelpers.StopChange = false;
 		_animator.ResetTrigger("Enlight");
 		_animator.ResetTrigger("Delight");
-		_source.Stop();
+		_gasLeakLoop.Stop();
 		if (!_onFire)
 		{
 			_animator.Play("NotOnFire");
@@ -130,8 +131,8 @@ public class Lantern : Weapons
 		{
 			_animator.Play("OnFire");
 			_lanternHelpers.StartUsingGas();
-			_source.clip = _gasSound;
-			_source.Play();
+			_gasLeakLoop.clip = _gasSound;
+			_gasLeakLoop.Play();
 		}
 		transform.localPosition = _latestPos;
 	}
@@ -167,8 +168,8 @@ public class Lantern : Weapons
 	public void Enlight()
 	{
 		_onFire = true;
-		_source.clip = _gasSound;
-		_source.Play();
+		_gasLeakLoop.clip = _gasSound;
+		_gasLeakLoop.Play();
 		_animator.SetBool("OnFire", _onFire);
 		_lanternHelpers.StartUsingGas();
 		_enlighting = false;
@@ -179,7 +180,7 @@ public class Lantern : Weapons
 	{
 		_onFire = false;
 		_isShining = false;
-		_source.Stop();
+		_gasLeakLoop.Stop();
 		_animator.SetBool("OnFire", _onFire);
 		_weaponHelpers.StopChange = false;
 		_enlighting = false;
@@ -214,16 +215,17 @@ public class Lantern : Weapons
 	}
 	public override void OnSelected(ControlSchema schema)
 	{
+		_source.PlayOneShot(_switchIn);
 		CanChange = false;
 		_isOnHand = true;
 		_controls = schema;
-		_animator.Play("Selected", 0);
 
 		_weaponHelpers.CheckSelected(_animator, this, _onFire ? "SelectedON" : "SelectedOFF");
 	}
 
 	public override void OnChanged()
 	{
+		_source.PlayOneShot(_switchOut);
 		CanChange = false;
 		_weaponHelpers.CheckOnChange(_animator, _controls, this, _onFire ? "ChangeON" : "ChangeOFF");
 	}
@@ -297,11 +299,12 @@ public class Lantern : Weapons
 			_directLightSource.SetActive(false);
 			_normalLightSource.SetActive(false);
 			_behindLightSource.SetActive(_onFire);
-			if (_onFire && !_source.isPlaying)
+			if (_onFire && !_gasLeakLoop.isPlaying)
 			{
-				_source.clip = _gasSound;
-				_source.Play();
+				_gasLeakLoop.clip = _gasSound;
+				_gasLeakLoop.Play();
 			}
+
 		}
 	}
 }

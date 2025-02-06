@@ -23,7 +23,7 @@ public class AudioSetting : Setting
 	private List<PlayableDirector> _directors;
 	private List<PlayableDirector> _stoppedDrct = new List<PlayableDirector>();
 
-	[Inject]
+	[InjectOptional]
 	private GameManager _pauseMenu;
 
 	private float _oldValue;
@@ -42,20 +42,21 @@ public class AudioSetting : Setting
 			if (source.outputAudioMixerGroup == _sfxGroup)
 				_sfxSources.Add(source);
 
-		_pauseMenu.OnPauseGame += OnPause;
+		if (_pauseMenu != null)
+			_pauseMenu.OnPauseGame += OnPause;
 		SetSFXParam();
 	}
 
 
 	public void OnPause(bool pause, bool force)
 	{
-			_sfxSources.ForEach(x =>
-			{
-				if (pause)
-					x.Pause();
-				else
-					x.UnPause();
-			});
+		_sfxSources.ForEach(x =>
+		{
+			if (pause)
+				x.Pause();
+			else
+				x.UnPause();
+		});
 	}
 	public void SetSFX(Slider slider) =>
 		_tempValue = slider.value;

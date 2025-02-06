@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 2005556969472
-    m_Localized: "Llave de la B\xF3veda No.1"
+    m_Localized: "Llave Del B\xF3veda N\xB01"
     m_Metadata:
       m_Items: []
   - m_Id: 6199181492224
-    m_Localized: "Creo que esta es una llave de b\xF3veda."
+    m_Localized: "Creo que esto es una llave de b\xF3veda."
     m_Metadata:
       m_Items: []
   - m_Id: 11154890080256
@@ -31,9 +31,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1505269372862464
-    m_Localized: "Mi abuela sol\xEDa preparar una bebida con este mismo aroma. En
-      aquellos tiempos, elaboraba este delicioso elixir para m\xED, present\xE1ndolo
-      con el mayor cuidado, como si fuera un ritual.\n\n\n\n\n\n"
+    m_Localized: "Mi abuela una vez prepar\xF3 una bebida con este mismo olor. En
+      esos d\xEDas, ella creaba este delicioso elixir para m\xED, present\xE1ndolo
+      con el m\xE1ximo cuidado, como si fuera un ritual."
     m_Metadata:
       m_Items: []
   - m_Id: 2278382406647808
@@ -45,20 +45,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3260616429191168
-    m_Localized: "Esta llave desgastada y oxidada, marcada por signos de desuso,
-      est\xE1 claramente destinada a un modesto espacio de almacenamiento."
+    m_Localized: "Esta llave desgastada y oxidada, que muestra signos de descuido,
+      seguramente est\xE1 destinada a un modesto espacio de almacenamiento."
     m_Metadata:
       m_Items: []
   - m_Id: 14077189502976000
-    m_Localized: "F\xF3sforos"
+    m_Localized: Cerillas
     m_Metadata:
       m_Items: []
   - m_Id: 14077305479675904
-    m_Localized: "Estos f\xF3sforos tienen una peque\xF1a pero vital importancia.
-      Simples palitos de madera, perfectos para encender mi l\xE1mpara de gas. Me
-      guiar\xE1n a trav\xE9s de la oscuridad de esta cueva. Solo una chispa, y iluminar\xE1n
-      los misterios ocultos en las sombras. Aunque parezcan ordinarios, estos f\xF3sforos
-      son cruciales para mi supervivencia aqu\xED."
+    m_Localized: "Estos cerillos tienen una peque\xF1a pero vital importancia. Simples
+      palitos de madera, perfectos para encender mi l\xE1mpara de gas. Me guiar\xE1n
+      a trav\xE9s de la oscuridad de esta cueva. Con solo una chispa, iluminar\xE1n
+      los misterios ocultos en las sombras. Aunque puedan parecer ordinarios, estos
+      cerillos son cruciales para mi supervivencia aqu\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 19140650193793024
@@ -69,7 +69,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19140619768311808
-    m_Localized: "Aceite de L\xE1mpara"
+    m_Localized: Aceite de gas
     m_Metadata:
       m_Items: []
   - m_Id: 49572708568186880

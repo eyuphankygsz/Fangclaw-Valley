@@ -61,6 +61,53 @@ MonoBehaviour:
       corpo, ma anche lo spirito."
     m_Metadata:
       m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: "Chiave Della Cassa N\xB01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: Penso che questa sia una chiave del deposito.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: Puzza molto. Sono sicuro che sia buono per la salute...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "Mia nonna una volta prepar\xF2 una bevanda con questo stesso odore.
+      In quei giorni, preparava questo delizioso elisir per me, presentandolo con
+      la massima cura, come se fosse un rituale."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: Piccola Chiave di Archiviazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Questa chiave logora e arrugginita, che porta segni di trascuratezza,
+      \xE8 sicuramente destinata a uno spazio di stoccaggio modesto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: Fiammiferi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Questi fiammiferi hanno una piccola ma vitale importanza. Semplici
+      bastoncini di legno, perfetti per accendere la mia lampada a gas. Mi guideranno
+      attraverso l'oscurit\xE0 di questa caverna. Basta una sola scintilla e illumineranno
+      i misteri nascosti nell'ombra. Sebbene possano sembrare ordinari, questi fiammiferi
+      sono cruciali per la mia sopravvivenza qui."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Olio per gas
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -25,7 +25,7 @@ public class LanternHelpers : MonoBehaviour
 	}
 	public float LitMultiplier = 1;
 
-	private float _leftFuel, _maxFuel = 240f;
+	private float _leftFuel, _maxFuel = 480f;
 	private bool _isOn;
 
 	private void OnEnable()

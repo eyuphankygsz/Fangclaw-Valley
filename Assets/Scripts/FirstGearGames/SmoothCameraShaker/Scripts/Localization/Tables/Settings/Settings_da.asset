@@ -58,6 +58,127 @@ MonoBehaviour:
     m_Localized: "Skift v\xE5ben (Forrige)"
     m_Metadata:
       m_Items: []
+  - m_Id: 18859044668358656
+    m_Localized: "Skift v\xE5ben #1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859122887933952
+    m_Localized: "Skift v\xE5ben #2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859225895845888
+    m_Localized: "Skift v\xE5ben #3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859239615414272
+    m_Localized: "Skift v\xE5ben #4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859240903065600
+    m_Localized: "Skift v\xE5ben #5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859708706373632
+    m_Localized: Andet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859824959897600
+    m_Localized: Pausemenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9919709184
+    m_Localized: Sprog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18199022432038912
+    m_Localized: Fremad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18199323838918656
+    m_Localized: Tilbage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854395152351232
+    m_Localized: Inventar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854412311248896
+    m_Localized: Hovedmenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870477401538560
+    m_Localized: Slukket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870981531713536
+    m_Localized: Undertekster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871229670932480
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871568574889984
+    m_Localized: Gem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19166218478039040
+    m_Localized: Tastatur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19166236932976640
+    m_Localized: Gamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863369293578240
+    m_Localized: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863706494648320
+    m_Localized: Tilbage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870332450586624
+    m_Localized: "T\xE6ndt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854436076175360
+    m_Localized: Indstillinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856095644827648
+    m_Localized: Lyd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856112807919616
+    m_Localized: Video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856132042997760
+    m_Localized: Mus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856177375035392
+    m_Localized: Bindinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59145662851366912
+    m_Localized: "Din nuv\xE6rende gemning vil blive overskrevet. \xD8nsker du at
+      starte en ny rejse?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Localized: "Forts\xE6t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Localized: Nyt Spil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Localized: Afslut
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

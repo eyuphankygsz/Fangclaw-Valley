@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33632337990996494}
   - component: {fileID: 23543351371286216}
   - component: {fileID: 280578228901991921}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PlaceLadder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

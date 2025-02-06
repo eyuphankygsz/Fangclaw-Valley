@@ -24,7 +24,7 @@ public class GammaSetting : Setting
 	{
 		_tempValue = slider.value;
 
-        if (_postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
+        if (_postProcessing != null && _postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
 		{
             _liftGammaGain.gamma.value = new Vector4(0, 0, 0, _tempValue);
             _liftGammaGain.gamma.overrideState = true;
@@ -33,7 +33,7 @@ public class GammaSetting : Setting
 
 	private void SetGammaParam()
 	{
-        if (_postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
+        if (_postProcessing != null && _postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
             _liftGammaGain.gamma.value = new Vector4(0, 0, 0, _currentValue);
 
 		PlayerPrefs.SetFloat("Gamma", _currentValue);
@@ -63,7 +63,7 @@ public class GammaSetting : Setting
 		_slider.value = _currentValue;
 
 
-		if (_postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
+		if (_postProcessing != null && _postProcessing.profile.TryGet<LiftGammaGain>(out _liftGammaGain))
 			_liftGammaGain.gamma.value = new Vector4(0, 0, 0, _currentValue);
 	}
 }

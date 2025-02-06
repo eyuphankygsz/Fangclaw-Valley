@@ -61,6 +61,54 @@ MonoBehaviour:
       och anden."
     m_Metadata:
       m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: Valvnyckel Nr. 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "Jag tror att detta \xE4r en valvnyckel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: "Det luktar v\xE4ldigt illa. Jag \xE4r s\xE4ker p\xE5 att det \xE4r
+      bra f\xF6r h\xE4lsan..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "Min mormor f\xF6rberedde en g\xE5ng en dryck med denna doft. P\xE5
+      den tiden gjorde hon denna h\xE4rliga elixir f\xF6r mig och presenterade den
+      med st\xF6rsta omsorg, som om det vore ett ritual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: Liten Lagringsnyckel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Denna slitna och rostiga nyckel, som b\xE4r tecken p\xE5 f\xF6rsummelse,
+      \xE4r f\xF6rmodligen avsedd f\xF6r ett blygsamt f\xF6rvaringsutrymme."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: "T\xE4ndstickor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Dessa t\xE4ndstickor har en liten men vital betydelse. Enkla tr\xE4pinnar,
+      perfekta f\xF6r att t\xE4nda min gaslamp. De kommer att guida mig genom m\xF6rkret
+      i denna grotta. Bara en gnista, och de kommer att belysa de mysterier som d\xF6ljer
+      sig i skuggorna. \xC4ven om de kan verka vanliga, \xE4r dessa t\xE4ndstickor
+      avg\xF6rande f\xF6r min \xF6verlevnad h\xE4r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Gasolja
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

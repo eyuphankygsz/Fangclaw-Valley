@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856112807919616
-    m_Localized: Pantalla
+    m_Localized: "V\xEDdeo"
     m_Metadata:
       m_Items: []
   - m_Id: 18856132042997760
@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Asignaciones
+    m_Localized: Vinculaciones
     m_Metadata:
       m_Items: []
   - m_Id: 18857117213704192
@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859044668358656
-    m_Localized: Changer d'arme #1
+    m_Localized: Cambiar arma #1
     m_Metadata:
       m_Items: []
   - m_Id: 18859122887933952
-    m_Localized: Changer d'arme #2
+    m_Localized: Cambiar arma #2
     m_Metadata:
       m_Items: []
   - m_Id: 18859225895845888
@@ -127,7 +127,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18863369293578240
-    m_Localized: Reiniciar
+    m_Localized: Restablecer
     m_Metadata:
       m_Items: []
   - m_Id: 18863706494648320
@@ -159,7 +159,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19166236932976640
-    m_Localized: Mando
+    m_Localized: Gamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59145662851366912
+    m_Localized: "Tu partida actual ser\xE1 sobrescrita. \xBFQuieres embarcarte en
+      una nueva aventura?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Localized: Nuevo Juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Localized: Salir
     m_Metadata:
       m_Items: []
   references:

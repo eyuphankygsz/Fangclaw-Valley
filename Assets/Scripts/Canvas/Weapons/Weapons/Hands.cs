@@ -15,6 +15,8 @@ public class Hands : Weapons
 	private AudioClip[] _punchClips;
 	private int _punchCounter;
 
+	[SerializeField]
+	private AudioClip _switchIn,_switchOut;
 
 	public override void Move()
 	{
@@ -71,12 +73,13 @@ public class Hands : Weapons
 	{
 		CanChange = false;
 		_controls = schema;
-
+		_source.PlayOneShot(_switchIn);
 		_weaponHelpers.CheckSelected(_animator, this, "Selected");
 	}
 
 	public override void OnChanged()
 	{
+		_source.PlayOneShot(_switchOut);
 		CanChange = false;
 		_weaponHelpers.CheckOnChange(_animator, _controls, this, "OnChange");
 	}

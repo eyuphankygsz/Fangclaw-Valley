@@ -19,13 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "Du kan anv\xE4nda dina verktyg eller dina h\xE4nder med <color=#FF0000>\"$primary_key\"</color>
-      f\xF6r att bryta l\xE5dorna."
+    m_Localized: "Du kan <color=#93FF7A>ANV\xC4NDA</color> dina <color=#FFB45B>H\xC4NDER</color>
+      med <color=#75a8ff>\"$primary_key\"</color> f\xF6r att krossa <color=#FF4545>L\xC5DORNA</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du kommer att beh\xF6va lampolja och t\xE4ndstickor f\xF6r att
-      t\xE4nda gaslampan."
+    m_Localized: "Du skall <color=#93FF7A>KR\xC4VA</color> <color=#E688FF>gasolja</color>
+      och <color=#E688FF>t\xE4ndstickor</color> f\xF6r att t\xE4nda <color=#FFB45B>GASLAMPAN</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
@@ -33,9 +33,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Du kan \xF6ppna ditt inventarie genom att trycka p\xE5 <color=#FF0000>\"$inv_key\"</color>.
-      N\xE4r du \xE4r i ditt inventarie kan du anv\xE4nda, unders\xF6ka, kasta eller
-      kombinera f\xF6rem\xE5l! Kom ih\xE5g att fylla p\xE5 din gaslampa med lampolja."
+    m_Localized: "Du kan <color=#93FF7A>\xD6PPNA</color> din <color=#FFB45B>Inventar</color>
+      genom att trycka p\xE5 <color=#75A8FF>\"$inv_key\"</color>. N\xE4r du \xE4r
+      i ditt <color=#FFB45B>Inventar</color> kan du <color=#93FF7A>Anv\xE4nda</color>,
+      <color=#93FF7A>Unders\xF6ka</color>, <color=#93FF7A>Kasta</color> eller <color=#93FF7A>Kombinera</color>
+      f\xF6rem\xE5l! Gl\xF6m inte att fylla p\xE5 din <color=#FFB45B>Gaslampa</color>
+      med <color=#E688FF>Gasolja</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -43,19 +46,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "Genom att trycka p\xE5 <color=#FF0000>\"$inter_key\"</color>-tangenten
-      kan du skaffa eller anv\xE4nda dina f\xF6rem\xE5l."
+    m_Localized: "Genom att trycka p\xE5 <color=#75A8FF>\"$inter_key\"</color> kan
+      du <color=#93FF7A>F\xC5</color> <color=#E688FF>F\xF6rem\xE5l</color> eller
+      <color=#93FF7A>INTERAGERA</color> med <color=#FF4545>Omgivningen</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Genom att fokusera din uppm\xE4rksamhet kan du urskilja objekt
-      som kan interageras med omkring dig. F\xF6r att g\xF6ra detta, anv\xE4nd <color=#FF0000>\"$scan_env\"</color>-tangenten.
-      Kom dock ih\xE5g att denna f\xF6rm\xE5ga kommer att t\xF6mma din styrka avsev\xE4rt."
+    m_Localized: "Genom att <color=#99FFF1>Fokusera Din Uppm\xE4rksamhet</color>
+      kan du <color=#F7FFA3>Uppfatta F\xF6rem\xE5l</color> som \xE4r \xF6ppna f\xF6r
+      <color=#93FF7A>Interaktion</color> runt omkring dig. F\xF6r att g\xF6ra detta,
+      <color=#93FF7A>ANV\xC4ND</color> tangenten <color=#75A8FF>\u201C$scan_env\u201D</color>.
+      Kom dock ih\xE5g att denna f\xF6rm\xE5ga kraftigt kommer att <color=#93FF7A>T\xD6MMA</color>
+      din <color=#7A85FF>Uth\xE5llighet</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: "Du kan <color=#FF0000>sl\xE4ppa dina f\xF6rem\xE5l</color> fr\xE5n
-      din <color=#512ed1>inventarie</color>."
+    m_Localized: "Du kan <color=#93FF7A>SL\xC4PPA</color> dina <color=#E688FF>F\xF6rem\xE5l</color>
+      fr\xE5n din <color=#FFB45B>Inventering</color>."
     m_Metadata:
       m_Items: []
   references:

@@ -19,13 +19,14 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "Du kannst deine Werkzeuge oder deine H\xE4nde mit <color=#FF0000>\"$primary_key\"</color>
-      verwenden, um die Kisten zu brechen."
+    m_Localized: "Du kannst <color=#93FF7A>DEINE H\xC4NDE BENUTZEN</color> mit <color=#75a8ff>\"$primary_key\"</color>,
+      um die <color=#FF4545>KISTEN</color> zu zerst\xF6ren."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du wirst Lampen\xF6l und Streichh\xF6lzer ben\xF6tigen, um die
-      Gaslampe zu entz\xFCnden."
+    m_Localized: "Du sollst <color=#93FF7A>BEN\xD6TIGEN</color> <color=#E688FF>Gas\xF6l</color>
+      und <color=#E688FF>Streichh\xF6lzer</color>, um die <color=#FFB45B>GASLAMPE</color>
+      zu entz\xFCnden."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
@@ -33,10 +34,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Du kannst dein Inventar \xF6ffnen, indem du <color=#FF0000>\"$inv_key\"</color>
-      dr\xFCckst. W\xE4hrend du in deinem Inventar bist, kannst du Gegenst\xE4nde
-      verwenden, untersuchen, wegwerfen oder kombinieren! Denk daran, deine Gaslampe
-      mit Lampen\xF6l aufzuf\xFCllen."
+    m_Localized: "Du kannst dein <color=#FFB45B>Inventar</color> <color=#93FF7A>\xD6FFNEN</color>,
+      indem du <color=#75A8FF>\"$inv_key\"</color> dr\xFCckst. W\xE4hrend du dich
+      im <color=#FFB45B>Inventar</color> befindest, kannst du Gegenst\xE4nde <color=#93FF7A>Benutzen</color>,
+      <color=#93FF7A>Untersuchen</color>, <color=#93FF7A>Verwerfen</color> oder <color=#93FF7A>Kombinieren</color>!
+      Vergiss nicht, deine <color=#FFB45B>Gaslampe</color> mit <color=#E688FF>Gas\xF6l</color>
+      aufzuf\xFCllen."
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -44,20 +47,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "Durch Dr\xFCcken der <color=#FF0000>\"$inter_key\"</color>-Taste
-      kannst du deine Gegenst\xE4nde erhalten oder verwenden."
+    m_Localized: "Durch Dr\xFCcken der Taste <color=#75A8FF>\"$inter_key\"</color>
+      kannst du <color=#93FF7A>ERHALTEN</color> <color=#E688FF>Gegenst\xE4nde</color>
+      oder mit der <color=#93FF7A>INTERAGIEREN</color> <color=#FF4545>Umgebung</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Indem du deine Aufmerksamkeit fokussierst, kannst du Objekte erkennen,
-      die um dich herum zur Interaktion bereit sind. Dr\xFCcke die <color=#FF0000>\"$scan_env\"</color>-Taste,
-      um dies zu tun. Denk jedoch daran, dass diese F\xE4higkeit deine Kr\xE4fte
-      stark ersch\xF6pfen wird."
+    m_Localized: "Durch das <color=#99FFF1>Fokussieren Deiner Aufmerksamkeit</color>
+      kannst du <color=#F7FFA3>Objekte Erkennen</color>, die f\xFCr <color=#93FF7A>Interaktion</color>
+      offen sind. Dr\xFCcke dazu die Taste <color=#75A8FF>\u201C$scan_env\u201D</color>.
+      Denke jedoch daran, dass diese F\xE4higkeit deine <color=#7A85FF>Ausdauer</color>
+      stark <color=#93FF7A>AUFZEHREN</color> wird."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: "Du kannst <color=#FF0000>deine Gegenst\xE4nde ablegen</color> aus
-      deinem <color=#512ed1>Inventar</color>."
+    m_Localized: "Du kannst deine <color=#E688FF>Gegenst\xE4nde</color> aus deinem
+      <color=#FFB45B>Inventar</color> <color=#93FF7A>FALLEN LASSEN</color>."
     m_Metadata:
       m_Items: []
   references:

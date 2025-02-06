@@ -19,13 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "Kutular\u0131 k\u0131rmak i\xE7in <color=#FF0000>\"$primary_key\"</color>
-      tu\u015Fuyla aletlerinizi veya ellerinizi kullanabilirsiniz."
+    m_Localized: "<color=#93FF7A>\"$primary_key\"</color> ile <color=#FFB45B>ELLER\u0130N\u0130</color>
+      kullanarak <color=#FF4545>KUTULARI</color> k\u0131rabilirsin."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Gaz l\xE2mbas\u0131n\u0131 ate\u015Fleyebilmek i\xE7in gazya\u011F\u0131na
-      ve kibritlere ihtiyac\u0131n olacakt\u0131r."
+    m_Localized: "<color=#93FF7A>GAZ LAMBASINI</color> yakmak i\xE7in <color=#E688FF>gaz
+      ya\u011F\u0131</color> ve <color=#E688FF>kibrit</color> gerekir."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
@@ -33,10 +33,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "<color=#FF0000>\"$inv_key\"</color> tu\u015Funa basarak envanterinizi
-      a\xE7abilirsiniz. Envanterinizdeyken e\u015Fyalar\u0131 kullanabilir, inceleyebilir,
-      atabilir veya birbiriyle birle\u015Ftirebilirsiniz! Gaz lamban\u0131z\u0131
-      doldurmak i\xE7in lamba ya\u011F\u0131 kullanmay\u0131 unutmay\u0131n."
+    m_Localized: "<color=#75A8FF>\"$inv_key\"</color> tu\u015Funa basarak <color=#93FF7A>A\xC7AB\u0130L\u0130RS\u0130N</color>
+      <color=#FFB45B>Envanterini</color>. <color=#FFB45B>Envanterinde</color>, e\u015Fyalar\u0131
+      <color=#93FF7A>Kullanabilir</color>, <color=#93FF7A>\u0130nceleyebilir</color>,
+      <color=#93FF7A>Atabilir</color> veya <color=#93FF7A>Birle\u015Ftirebilirsin</color>!
+      <color=#FFB45B>Gaz Lamban\u0131</color> <color=#E688FF>Gaz Ya\u011F\u0131</color>
+      ile doldurmay\u0131 unutma."
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -44,19 +46,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "<color=#FF0000>\"$inter_key\"</color> tu\u015Funa basarak e\u015Fyalar\u0131
-      edinebilir  veya kullanabilirsin."
+    m_Localized: "<color=#75A8FF>\"$inter_key\"</color> tu\u015Funa basarak <color=#93FF7A>ED\u0130NEB\u0130L\u0130RS\u0130N</color>
+      <color=#E688FF>E\u015Fyalar\u0131</color> veya <color=#93FF7A>ETK\u0130LE\u015E\u0130ME
+      G\u0130REB\u0130L\u0130RS\u0130N</color> <color=#FF4545>\xC7evreyle</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Odaklanarak etkile\u015Fime ge\xE7ebilece\u011Fin objeleri g\xF6rebilirsin.
-      Odaklanmak i\xE7in <color=#FF0000>\"$scan_env\"</color> tu\u015Funu kullan.\nAncak
-      unutma, bu \xF6zellik seni yoracakt\u0131r."
+    m_Localized: "<color=#99FFF1>Dikkatini Odaklayarak</color>, \xE7evrendeki <color=#F7FFA3>Etkile\u015Fime
+      A\xE7\u0131k Objeleri</color> <color=#93FF7A>Ay\u0131rt Edebilirsin</color>.
+      Bunu yapmak i\xE7in, <color=#93FF7A>KULLAN</color> <color=#75A8FF>\"$scan_env\"</color>
+      tu\u015Funu. Ancak unutma, bu yetenek <color=#7A85FF>Dayan\u0131kl\u0131l\u0131\u011F\u0131n\u0131</color>
+      b\xFCy\xFCk \xF6l\xE7\xFCde <color=#93FF7A>T\xDCKETECEKT\u0130R</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: "E\u015Fyalar\u0131n\u0131z\u0131 <color=#FF0000>envanterinizden
-      atabilirsiniz</color>."
+    m_Localized: "<color=#E688FF>E\u015Fyalar\u0131n\u0131</color>, <color=#FFB45B>Envanterinden</color>
+      <color=#93FF7A>D\xDC\u015E\xDCREB\u0130L\u0130RS\u0130N</color>."
     m_Metadata:
       m_Items: []
   references:

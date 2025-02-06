@@ -19,12 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: You may use your tools or your hands with <color=#FF0000>"$primary_key"</color>
-      to break the boxes.
+    m_Localized: You may <color=#93FF7A>USE</color> your <color=#FFB45B>HANDS</color>
+      with <color=#75a8ff>"$primary_key"</color> to break the <color=#FF4545>BOXES</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: Thou shalt require lamp oil and matches to ignite the gas lamp.
+    m_Localized: Thou shalt <color=#93FF7A>REQUIRE</color> <color=#E688FF>Gas Oil</color>
+      and <color=#E688FF>Matches</color> to ignite the <color=#FFB45B>GAS LAMP</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
@@ -32,9 +33,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: You can open your inventory by pressing <color=#FF0000>"$inv_key"</color>.
-      While in your inventory, you can use, examine, discard, or combine items! Remember
-      to replenish your gas lamp with lamp oil.
+    m_Localized: You can <color=#93FF7A>OPEN</color> your <color=#FFB45B>Inventory</color>
+      by pressing <color=#75A8FF>"$inv_key"</color>. While in your <color=#FFB45B>Inventory</color>,
+      you can <color=#93FF7A>Use</color>, <color=#93FF7A>Examine</color>, <color=#93FF7A>Discard</color>,
+      or <color=#93FF7A>Combine</color> items! Remember to replenish your <color=#FFB45B>Gas
+      Lamp</color> with <color=#E688FF>Gas Oil</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -42,18 +45,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: By pressing the <color=#FF0000>"$inter_key"</color> key, thou mayst
-      acquire or make use of thy items.
+    m_Localized: By pressing the <color=#75A8FF>"$inter_key"</color> key, thou mayst
+      <color=#93FF7A>ACQUIRE</color> <color=#E688FF>Items</color> or <color=#93FF7A>INTERACT</color>
+      with the <color=#FF4545>Environment</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "By focusing your attention, you can discern objects open to interaction
-      around you. To do so, use the <color=#FF0000>\u201C$scan_env\u201D</color>
-      key. However, remember that this ability will greatly drain your strength."
+    m_Localized: "By <color=#99FFF1>Focusing Your Attention</color>, you can <color=#F7FFA3>Discern
+      Objects</color> open to <color=#93FF7A>Interaction</color> around you. To do
+      so, <color=#93FF7A>USE</color> the <color=#75A8FF>\u201C$scan_env\u201D</color>
+      key. However, remember that this ability will greatly <color=#93FF7A>DRAIN</color>
+      your <color=#7A85FF>Stamina</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: You can <color=#FF0000>drop your items</color> from your <color=#512ed1>Inventory</color>.
+    m_Localized: You can <color=#93FF7A>DROP</color> your <color=#E688FF>Items</color>
+      from your <color=#FFB45B>Inventory</color>.
     m_Metadata:
       m_Items: []
   references:

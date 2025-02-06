@@ -58,6 +58,80 @@ MonoBehaviour:
       continuare la nostra indagine con la massima diligenza.\n\n- Dr. Grimshow"
     m_Metadata:
       m_Items: []
+  - m_Id: 60377186304
+    m_Localized: Entrata della Caverna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105105244160
+    m_Localized: 'Cari leader dei minatori,
+
+
+      Come sapete, ho una passione
+      per gli enigmi. Ecco quindi uno per mettere alla prova la vostra intelligenza!
+
+
+      Per
+      sbloccare i segreti dietro la porta, dovrete trarre ispirazione dalla saggezza
+      della natura.
+
+
+      Il lupo insegue la pecora, mentre l''orso resta immobile.
+
+
+      Svelate
+      il significato di questo enigma per scoprire quali leve riveleranno il cammino
+      da percorrere.
+
+
+      Buona fortuna,
+
+
+      - Dr. Grimshaw'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409683017728
+    m_Localized: "Ci\xF2 che resta di Alberto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: "Alberto stava perdendo progressivamente la sua sanit\xE0 mentale
+      negli ultimi due giorni. Tuttavia, nessuno avrebbe mai potuto immaginare che
+      sarebbe scivolato in una tale follia. Con una spada presa dalla Stanza delle
+      Mappe, pose fine prematuramente alla vita del povero Bush. Dopo questo tragico
+      incidente, ho personalmente chiuso a chiave le porte della Stanza delle Mappe.
+      Non vedemmo mai pi\xF9 Alberto.\n\nPer assicurarci che la lunga password non
+      venisse dimenticata, Grimshaw ed io abbiamo ideato un piccolo enigma:\n\nCinque
+      uccelli avevano fatto una scommessa,\nDiscutendo su quanti piedi avesse una
+      formica.\nIl primo dichiar\xF2 \"tre\",\nIl terzo rispose \"tanti quanti i
+      nostri\",\nIl quarto disse \"uno in pi\xF9 del secondo\",\nE il quinto disse
+      \"due in meno del quarto\".\nAlla fine contarono, e si scopr\xEC che il secondo
+      uccello aveva ragione.\n\nCos\xEC riuscimmo a nascondere la password."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136160244580352
+    m_Localized: "Menu del giorno:\n\nColazione: Porridge e una fetta di pane duro
+      con t\xE8.\nPranzo: Stufato di patate e carne, con sottaceti e pane.\nCena:
+      Fagioli al forno con salsiccia e un pezzo di formaggio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: Il Mistero delle Note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: "Sono arrivata a credere che le note dello strumento musicale possano
+      dare un risultato misterioso se suonate in un ordine specifico. Ero abbastanza
+      vicina a scoprire questa sequenza; sfortunatamente, il foglio su cui avevo
+      scritto l'ordine \xE8 misteriosamente scomparso il giorno dopo.\n\nDobbiamo
+      lavorare insieme per chiarire questa situazione e riscoprire la sequenza. Ogni
+      vostro contributo \xE8 cruciale per risolvere questo mistero.\n\nCordiali saluti,\n\n-
+      Dr. Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: Una Parte Delle Note Musicali
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

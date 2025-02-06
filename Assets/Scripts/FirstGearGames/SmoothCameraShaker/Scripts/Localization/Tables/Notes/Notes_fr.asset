@@ -23,12 +23,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 105105244160
-    m_Localized: "Chers Chefs des Travailleurs de la Mine,\n\nComme vous le savez,
-      j'ai un faible pour les \xE9nigmes. Alors en voici une pour vous mettre au
-      d\xE9fi !\n\nPour d\xE9verrouiller les secrets derri\xE8re la porte, vous devez
-      vous inspirer de la sagesse de la nature.\n\nLe loup poursuit le mouton, tandis
-      que l'ours reste immobile.\n\nD\xE9m\xEAlez le sens de cette \xE9nigme pour
-      d\xE9couvrir quels leviers r\xE9v\xE9leront le chemin \xE0 suivre.\n\nBonne
+    m_Localized: "Chers dirigeants des mineurs,\n\nComme vous le savez, j'ai un faible
+      pour les \xE9nigmes. Alors en voici une qui mettra votre esprit \xE0 l'\xE9preuve
+      !\n\nPour d\xE9verrouiller les secrets derri\xE8re la porte, vous devez vous
+      inspirer de la sagesse de la nature.\n\nLe loup poursuit le mouton, tandis
+      que l'ours reste immobile.\n\nD\xE9m\xEAlez la signification de cette \xE9nigme
+      pour d\xE9couvrir quels leviers r\xE9v\xE9leront le chemin \xE0 suivre.\n\nBonne
       chance,\n\n- Dr. Grimshaw"
     m_Metadata:
       m_Items: []
@@ -44,43 +44,29 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 437633859584
-    m_Localized: "Alberto avait progressivement perdu sa raison au cours des deux
-      derniers jours. Pourtant, personne n\u2019aurait jamais imagin\xE9 qu\u2019il
-      sombrerait dans une telle folie. Arm\xE9 d\u2019une \xE9p\xE9e prise dans la
-      Salle des Cartes, il a mis fin pr\xE9matur\xE9ment \xE0 la vie du pauvre Bush.
-      Suite \xE0 cet incident grave, j\u2019ai personnellement verrouill\xE9 les
-      portes de la Salle des Cartes. Nous n\u2019avons jamais revu Alberto.\n\nPour
-      \xEAtre s\xFBr de ne pas oublier le mot de passe long, Grimshaw et moi avons
-      con\xE7u une petite \xE9nigme :\n\nCinq oiseaux avaient fait un pari,\nIls
-      d\xE9battaient combien de pattes poss\xE8de une fourmi.\nLe premier a d\xE9clar\xE9
-      \xAB trois \xBB,\nLe troisi\xE8me a r\xE9pondu \xAB autant que les n\xF4tres
-      \xBB,\nLe quatri\xE8me a d\xE9clar\xE9 \xAB une de plus que le deuxi\xE8me
-      \xBB,\nEt le cinqui\xE8me a dit \xAB deux de moins que le quatri\xE8me \xBB.\nFinalement,
-      ils ont compt\xE9, et il s\u2019est av\xE9r\xE9 que le deuxi\xE8me oiseau avait
-      raison.\n\nAinsi, nous avons r\xE9ussi \xE0 dissimuler le mot de passe."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1886584857346048
-    m_Localized: "Le Drr Grumshow y\u2019a di que celui tout \xE0 gouche av\xE9 une
-      dent de f\xE8rre, un avec l\u2019int\xE9rriere ray\xE9 et un otre comme une
-      fl\xE8ch tir\xE9e d\u2019un yarc.\n\nY\u2019a des sembbules ki s\u2019efasent
-      et j\u2019oublie toujou. Si vou pouv\xE9 m\u2019aid\xE9, sa sr\xE9 bian.\n\n-
-      Albeeto Downnshirr\r"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1886579815792640
-    m_Localized: "De la part d\u2019Albeeto aux Travayeurs"
+    m_Localized: "Alberto perdait progressivement sa raison au cours des deux derniers
+      jours. Pourtant, personne n'aurait pu imaginer qu'il sombrerait dans une telle
+      folie. Avec une \xE9p\xE9e prise dans la Salle des Cartes, il mit pr\xE9matur\xE9ment
+      fin \xE0 la vie du pauvre Bush. Apr\xE8s cet incident tragique, j'ai personnellement
+      s\xE9curis\xE9 les portes de la Salle des Cartes. Nous n'avons plus jamais
+      vu Alberto.\n\nPour garantir que le long mot de passe ne soit pas oubli\xE9,
+      Grimshaw et moi avons con\xE7u une petite \xE9nigme :\n\nCinq oiseaux avaient
+      fait un pari,\nIls d\xE9battaient du nombre de pattes d'une fourmi.\nLe premier
+      d\xE9clara \"trois\",\nLe troisi\xE8me r\xE9pondit \"autant que les n\xF4tres\",\nLe
+      quatri\xE8me dit \"un de plus que le deuxi\xE8me\",\nEt le cinqui\xE8me dit
+      \"deux de moins que le quatri\xE8me\".\nFinalement, ils ont compt\xE9, et il
+      s'est av\xE9r\xE9 que le deuxi\xE8me oiseau avait raison.\n\nAinsi, nous avons
+      r\xE9ussi \xE0 dissimuler le mot de passe."
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
-    m_Localized: "Je suis arriv\xE9e \xE0 croire que les notes de l'instrument de
-      musique pourraient produire un r\xE9sultat myst\xE9rieux lorsqu'elles sont
-      jou\xE9es dans un ordre sp\xE9cifique. J'\xE9tais tr\xE8s proche de d\xE9couvrir
-      cette s\xE9quence ; malheureusement, le papier sur lequel j'avais \xE9crit
-      l'ordre a myst\xE9rieusement disparu le lendemain.\n\nNous devons travailler
-      ensemble pour clarifier cette situation et red\xE9couvrir la s\xE9quence. Chacune
-      de vos contributions est cruciale pour r\xE9soudre ce myst\xE8re.\n\nSinc\xE8rement,\n\n-
-      Dr. Elara Voss"
+    m_Localized: "Je suis venue \xE0 croire que les notes de l'instrument de musique
+      peuvent produire un r\xE9sultat myst\xE9rieux lorsqu'elles sont jou\xE9es dans
+      un ordre sp\xE9cifique. J'\xE9tais assez proche de d\xE9couvrir cette s\xE9quence;
+      malheureusement, le papier sur lequel j'avais \xE9crit l'ordre a myst\xE9rieusement
+      disparu le lendemain.\n\nNous devons travailler ensemble pour clarifier cette
+      situation et red\xE9couvrir la s\xE9quence. Chacune de vos contributions est
+      cruciale pour r\xE9soudre ce myst\xE8re.\n\nCordialement,\n\n- Dr. Elara Voss"
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680
@@ -88,7 +74,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: Une Partie des Notes Musicales
+    m_Localized: Une Partie Des Notes Musicales
     m_Metadata:
       m_Items: []
   - m_Id: 11580552528445440

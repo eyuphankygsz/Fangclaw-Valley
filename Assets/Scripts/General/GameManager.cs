@@ -21,6 +21,7 @@ public class GameManager
 		}
 	}
 
+
 	public event Action<bool> OnInspecting;
 	private bool _inspecting;
 	public bool Inspecting

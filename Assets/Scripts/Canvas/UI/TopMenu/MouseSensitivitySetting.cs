@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
@@ -9,20 +10,23 @@ public class MouseSensitivitySetting : Setting
 	[SerializeField]
 	private PlayerCamera _camera;
 
-    private LiftGammaGain _liftGammaGain;
+	private LiftGammaGain _liftGammaGain;
 
-    private float _currentValue;
+	private float _currentValue;
 	private float _tempValue;
 
-    private void Start() =>
+	private void Start() =>
 		SetSensitivityParam();
 	public void SetSensitivityTemp(Slider slider) =>
 		_tempValue = slider.value;
 
-	private void SetSensitivityParam() =>
-                _camera.SetSensitivity(_currentValue);
+	private void SetSensitivityParam()
+	{
+		if (_camera != null)
+			_camera.SetSensitivity(_currentValue);
+	}
 
-    public override void Restore()
+	public override void Restore()
 	{
 		_tempValue = _currentValue;
 		_slider.value = _currentValue;

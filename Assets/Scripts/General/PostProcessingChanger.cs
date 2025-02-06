@@ -141,8 +141,10 @@ public class PostProcessingChanger : MonoBehaviour
 			_colorAdjustments.colorFilter.value = (goingToTarget ? color : _initialColor) * _intensity;
 			_colorAdjustments.saturation.value = goingToTarget ? 0f : _saturation; // Set saturation back to initial
 		}
-
 		if (!goingToTarget)
+		{
+			yield return new WaitForSeconds(3f);
 			_end?.Invoke();
+		}
 	}
 }

@@ -33,21 +33,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "G\xFCn\xFCn Men\xFCs\xFC:\n\n\nKahvalt\u0131: Yulaf lapas\u0131
-      ve bir dilim sert ekmek ile \xE7ay.\n\n\xD6\u011Fle Yeme\u011Fi: Patatesli
-      ve etli yahni, yan\u0131nda tur\u015Fu ve ekmek.\n\nAk\u015Fam Yeme\u011Fi:
-      Sosisli kuru fasulye ve bir par\xE7a peynir."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1886579815792640
-    m_Localized: "Albeeto'dan \u0130\u015F\xE7ilerr"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1886584857346048
-    m_Localized: "Drr Grumshow deydi ki en sol ba\u015Ftakininde cenavar di\u015Fi
-      olar bi danesi i\xE7i \xE7izgili gutu, bi danesi de yaydan \xE7\u0131kan ok
-      gibimi\u015F.\r\n\nBaz\u0131 semb\xFCller silindinden s\xFCrekli unutuyom yart\u0131m
-      etersenizz iyyi olur.\r\n\r\n- Albeeto Downnshirr\r"
+    m_Localized: "Bug\xFCn\xFCn Men\xFCs\xFC:\n\nKahvalt\u0131: Yulaf lapas\u0131
+      ve bir dilim sert ekmek ile \xE7ay.\n\xD6\u011Fle: Patates ve et yahnisi, tur\u015Fu
+      ve ekmek.\nAk\u015Fam: F\u0131r\u0131nlanm\u0131\u015F fasulye, sosis ve bir
+      dilim peynir."
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
@@ -55,33 +44,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 437633859584
-    m_Localized: "Alberto, son iki g\xFCnd\xFCr her ge\xE7en vakit akl\u0131n\u0131
-      daha da yitirmeye y\xFCz tutmu\u015Ftu. Ancak b\xF6ylesi bir \xE7\u0131lg\u0131nl\u0131\u011Fa
-      giri\u015Febilece\u011Fini hi\xE7 kimse tahayy\xFCl dahi edemezdi. Harita Odas\u0131'ndan
-      ald\u0131\u011F\u0131 bir k\u0131l\u0131\xE7 ile zavall\u0131 Bush\u2019un
-      hayat\u0131na son verdi. Bu elim hadiseden sonra, Harita Odas\u0131\u2019n\u0131n
-      kap\u0131lar\u0131n\u0131 bizzat kilitledim. Alberto'yu ise bir daha asla g\xF6rmedik.\n\nUzun
-      olan \u015Fifreyi unutmamak i\xE7in, Grimshaw ile k\xFC\xE7\xFCk bir bilmece
-      uydurduk:\n\nBe\u015F ku\u015F bir bahis tutmu\u015Flar,\nKar\u0131ncan\u0131n
-      ka\xE7 aya\u011F\u0131 vard\u0131r diye \xF6t\xFC\u015Fm\xFC\u015Fler.\nBirincisi
-      \"\xDC\xE7,\" diye dile getirmi\u015F,\n\xDC\xE7\xFCnc\xFCs\xFC \"Bizimkiler
-      kadar,\" diye cevap vermi\u015F,\nD\xF6rd\xFCnc\xFCs\xFC, ikincisinden bir
-      fazla demi\u015F,\nBe\u015Fincisi ise d\xF6rd\xFCnc\xFCs\xFCnden iki eksik,
-      diye \xF6tm\xFC\u015F.\nSonunda saym\u0131\u015Flar ve ikinci ku\u015Fun hakl\u0131
-      oldu\u011Fu ortaya \xE7\u0131km\u0131\u015F.\n\nB\xF6ylece \u015Fifreyi gizlemeyi
-      ba\u015Fard\u0131k."
+    m_Localized: "Alberto, son iki g\xFCnd\xFCr akl\u0131n\u0131 yava\u015F\xE7a
+      kaybediyordu. Yine de, kimse onun b\xF6yle bir delili\u011Fe d\xFC\u015Fece\u011Fini
+      hayal edemezdi. Harita Odas\u0131'ndan ald\u0131\u011F\u0131 bir k\u0131l\u0131\xE7la,
+      zavall\u0131 Bush'un hayat\u0131na zaman\u0131ndan \xF6nce son verdi. Bu \xFCz\xFCc\xFC
+      olay\u0131n ard\u0131ndan, Harita Odas\u0131'n\u0131n kap\u0131lar\u0131n\u0131
+      ki\u015Fisel olarak kilitledim. Bir daha Alberto'yu g\xF6rmedik.\n\nUzun parolan\u0131n
+      unutulmamas\u0131 i\xE7in Grimshaw ve ben k\xFC\xE7\xFCk bir bulmaca tasarlad\u0131k:\n\nBe\u015F
+      ku\u015F bir bahis yapm\u0131\u015Ft\u0131,\nBir kar\u0131ncan\u0131n ka\xE7
+      baca\u011F\u0131 oldu\u011Funu tart\u0131\u015F\u0131yorlard\u0131.\n\u0130lki
+      \"\xFC\xE7\" dedi, \xDC\xE7\xFCnc\xFCs\xFC \"bizim kadar\" diye yan\u0131tlad\u0131,\nD\xF6rd\xFCnc\xFCs\xFC
+      \"ikinciye bir fazla\" dedi,\nVe be\u015Fincisi \"d\xF6rd\xFCnc\xFCs\xFCnden
+      iki eksik\" dedi.\nSonunda sayd\u0131lar ve ikinci ku\u015Fun do\u011Fru oldu\u011Fu
+      ortaya \xE7\u0131kt\u0131.\n\nB\xF6ylece parolay\u0131 gizlemeyi ba\u015Fard\u0131k."
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
     m_Localized: "M\xFCzik aletinin notalar\u0131n\u0131n belirli bir s\u0131rayla
-      \xE7al\u0131nd\u0131\u011F\u0131nda gizemli bir sonu\xE7 do\u011Furabilece\u011Fi
-      konusunda bir kanaate varm\u0131\u015F durumday\u0131m. Bu nota s\u0131ras\u0131n\u0131
-      ke\u015Ffetmeye olduk\xE7a yakla\u015Fm\u0131\u015Ft\u0131m; ne yaz\u0131k
-      ki, buldu\u011Fum s\u0131ralaman\u0131n yer ald\u0131\u011F\u0131 ka\u011F\u0131d\u0131m,
-      ertesi g\xFCn esrarengiz bir \u015Fekilde kayboldu.\n\nBu durumu ayd\u0131nlatmak
-      ve s\u0131ralamay\u0131 yeniden bulmak i\xE7in birlikte \xE7al\u0131\u015Fmal\u0131y\u0131z.
-      Her birinizin deste\u011Fi, bu gizemi \xE7\xF6zmemiz i\xE7in hayati \xF6nem
-      ta\u015F\u0131yor.\n\nSayg\u0131lar\u0131mla,\n\n- Dr. Elara Voss"
+      \xE7al\u0131nd\u0131\u011F\u0131nda gizemli bir sonu\xE7 verebilece\u011Fine
+      inan\u0131yorum. Bu s\u0131ray\u0131 ke\u015Ffetmeye olduk\xE7a yak\u0131nd\u0131m;
+      ancak, yazd\u0131\u011F\u0131m s\u0131ralaman\u0131n bulundu\u011Fu ka\u011F\u0131t
+      ertesi g\xFCn gizemli bir \u015Fekilde kayboldu.\n\nBu durumu netle\u015Ftirmek
+      ve s\u0131ralamay\u0131 yeniden ke\u015Ffetmek i\xE7in birlikte \xE7al\u0131\u015Fmal\u0131y\u0131z.
+      Her birinizin katk\u0131s\u0131, bu gizemi \xE7\xF6zmek i\xE7in \xE7ok \xF6nemlidir.\n\nSayg\u0131lar\u0131mla,\n\n-
+      Dr. Elara Voss"
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680

@@ -62,6 +62,54 @@ MonoBehaviour:
       maar ook de geest te herstellen.
     m_Metadata:
       m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: Kluis Sleutel Nr. 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: Ik denk dat dit een kluissleutel is.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: Het ruikt erg slecht. Ik ben er zeker van dat het goed is voor de
+      gezondheid...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: Mijn grootmoeder maakte ooit een drankje met deze geur. In die dagen
+      maakte ze dit heerlijke elixir voor mij, en presenteerde het met de grootste
+      zorg, alsof het een ritueel was.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: Kleine Opslag Sleutel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: Deze versleten en roestige sleutel, die tekenen van verwaarlozing
+      vertoont, is zeker bedoeld voor een bescheiden opslagruimte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: Lucifers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Deze lucifers hebben een kleine maar vitale betekenis. Eenvoudige
+      houten stokjes, perfect om mijn gaslamp aan te steken. Ze zullen me door de
+      duisternis van deze grot leiden. Slechts \xE9\xE9n vonk, en ze zullen de mysteries
+      verlichten die zich in de schaduwen verbergen. Hoewel ze misschien eenvoudig
+      lijken, zijn deze lucifers van cruciaal belang voor mijn overleving hier."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Gasolie
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

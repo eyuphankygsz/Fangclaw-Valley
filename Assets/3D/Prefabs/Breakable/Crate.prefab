@@ -1953,7 +1953,6 @@ MonoBehaviour:
   _originalObj: {fileID: 4246479512675414296}
   _shatterObj: {fileID: 1617930924785808043}
   _explosionObj: {fileID: 2168816565025231952}
-  _allowRandomItem: 1
   _randomItemDrop: {fileID: 11400000, guid: 1843c956b0503544c99e7f885322e260, type: 2}
   _itemTransform: {fileID: 4371421582539378526}
   _clips:
@@ -3717,7 +3716,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 59f94e4c83c99b64f89d20255c95936e, type: 2}
+  - {fileID: 2100000, guid: 00240b4451cc3da48b4aab571d6eabe5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

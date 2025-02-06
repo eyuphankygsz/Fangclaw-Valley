@@ -19,13 +19,14 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: Puedes usar tus herramientas o tus manos con <color=#FF0000>"$primary_key"</color>
-      para romper las cajas.
+    m_Localized: Puedes <color=#93FF7A>USAR</color> tus <color=#FFB45B>MANOS</color>
+      con <color=#75a8ff>"$primary_key"</color> para romper las <color=#FF4545>CAJAS</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Necesitar\xE1s aceite para l\xE1mpara y cerillas para encender
-      la l\xE1mpara de gas."
+    m_Localized: "T\xFA deber\xE1s <color=#93FF7A>REQUIRIR</color> <color=#E688FF>aceite
+      de gas</color> y <color=#E688FF>cerillas</color> para encender la <color=#FFB45B>L\xC1MPARA
+      DE GAS</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
@@ -33,9 +34,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Puedes abrir tu inventario presionando <color=#FF0000>\"$inv_key\"</color>.
-      Mientras est\xE9s en tu inventario, puedes usar, examinar, descartar o combinar
-      objetos. Recuerda rellenar tu l\xE1mpara de gas con aceite para l\xE1mparas."
+    m_Localized: "Puedes <color=#93FF7A>ABRIR</color> tu <color=#FFB45B>Inventario</color>
+      presionando <color=#75A8FF>\"$inv_key\"</color>. Mientras est\xE9s en tu <color=#FFB45B>Inventario</color>,
+      puedes <color=#93FF7A>Usar</color>, <color=#93FF7A>Examinar</color>, <color=#93FF7A>Descartar</color>
+      o <color=#93FF7A>Combinar</color> objetos. \xA1Recuerda recargar tu <color=#FFB45B>L\xE1mpara
+      de gas</color> con <color=#E688FF>Aceite de gas</color>!"
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -43,18 +46,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "Al presionar la tecla <color=#FF0000>\"$inter_key\"</color>, podr\xE1s
-      adquirir o hacer uso de tus objetos."
+    m_Localized: Al presionar la tecla <color=#75A8FF>"$inter_key"</color>, puedes
+      <color=#93FF7A>ADQUIRIR</color> <color=#E688FF>Objetos</color> o <color=#93FF7A>INTERACTUAR</color>
+      con el <color=#FF4545>Entorno</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Al concentrar tu atenci\xF3n, podr\xE1s discernir objetos que permitan
-      interacci\xF3n a tu alrededor. Para ello, utiliza la tecla <color=#FF0000>\u201C$scan_env\u201D</color>.
-      Sin embargo, recuerda que esta habilidad drenar\xE1 considerablemente tu fuerza."
+    m_Localized: "Al <color=#99FFF1>Concentrar Tu Atenci\xF3n</color>, puedes <color=#F7FFA3>Discernir
+      Objetos</color> abiertos a la <color=#93FF7A>Interacci\xF3n</color> a tu alrededor.
+      Para hacerlo, <color=#93FF7A>USA</color> la tecla <color=#75A8FF>\u201C$scan_env\u201D</color>.
+      Sin embargo, recuerda que esta habilidad <color=#93FF7A>AGOTAR\xC1</color>
+      en gran medida tu <color=#7A85FF>Resistencia</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: Puedes <color=#FF0000>soltar tus objetos</color> desde tu <color=#512ed1>inventario</color>.
+    m_Localized: Puedes <color=#93FF7A>DEJAR CAER</color> tus <color=#E688FF>Objetos</color>
+      desde tu <color=#FFB45B>Inventario</color>.
     m_Metadata:
       m_Items: []
   references:

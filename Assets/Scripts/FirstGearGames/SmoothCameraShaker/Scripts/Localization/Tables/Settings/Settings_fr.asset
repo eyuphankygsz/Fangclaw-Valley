@@ -23,11 +23,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18199022432038912
-    m_Localized: En avant
+    m_Localized: Avancer
     m_Metadata:
       m_Items: []
   - m_Id: 18199323838918656
-    m_Localized: "En arri\xE8re"
+    m_Localized: Reculer
     m_Metadata:
       m_Items: []
   - m_Id: 18854395152351232
@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856112807919616
-    m_Localized: Affichage
+    m_Localized: Video
     m_Metadata:
       m_Items: []
   - m_Id: 18856132042997760
@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Assignations
+    m_Localized: Liaisons
     m_Metadata:
       m_Items: []
   - m_Id: 18857117213704192
@@ -115,7 +115,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859240903065600
-    m_Localized: Switch Weapon #5
+    m_Localized: Changer d'arme #5
     m_Metadata:
       m_Items: []
   - m_Id: 18859708706373632
@@ -135,11 +135,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18870332450586624
-    m_Localized: Actif
+    m_Localized: "Activ\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 18870477401538560
-    m_Localized: "D\xE9sactiv\xE9"
+    m_Localized: "\xC9teint"
     m_Metadata:
       m_Items: []
   - m_Id: 18870981531713536
@@ -151,7 +151,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18871568574889984
-    m_Localized: Enregistrer
+    m_Localized: Sauvegarder
     m_Metadata:
       m_Items: []
   - m_Id: 19166218478039040
@@ -159,7 +159,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19166236932976640
-    m_Localized: Manette
+    m_Localized: Manette de jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59145662851366912
+    m_Localized: "Votre sauvegarde actuelle sera \xE9cras\xE9e. Voulez-vous vous
+      lancer dans un nouveau voyage ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Localized: Continuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Localized: Nouvelle Partie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Localized: Quitter
     m_Metadata:
       m_Items: []
   references:

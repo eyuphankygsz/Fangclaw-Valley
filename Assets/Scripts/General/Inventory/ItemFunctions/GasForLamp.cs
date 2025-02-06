@@ -14,7 +14,7 @@ public class GasForLamp : UseFunction
 			return false;
 		}
 
-		_lanternHelpers.AddFuel(240f);
+		_lanternHelpers.AddFuel(480f);
 		return true;
 	}
 }

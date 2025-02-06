@@ -326,6 +326,8 @@ MonoBehaviour:
   _code: 534
   _collider: {fileID: 233591084321981386}
   _lockCam: {fileID: 529629892660454548}
+  _theKeyHolder: {fileID: 0}
+  _achievements: {fileID: 0}
 --- !u!54 &9003926778272168793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -576,7 +578,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 59f94e4c83c99b64f89d20255c95936e, type: 2}
+  - {fileID: 2100000, guid: 40dfe4f29afe7dc4aa67d806dd271f25, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

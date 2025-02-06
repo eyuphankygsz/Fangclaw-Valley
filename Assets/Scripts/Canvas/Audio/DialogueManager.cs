@@ -26,6 +26,7 @@ public class DialogueManager : MonoBehaviour
 	private GameManager _gameManager;
 
 	bool _gamePause;
+	bool _onForce;
 	private void Awake()
 	{
 		Instance = this;
@@ -36,17 +37,23 @@ public class DialogueManager : MonoBehaviour
 	}
 	private void OnPause(bool pause, bool force)
 	{
+		_onForce = force;
 		if (!force)
 			_gamePause = pause;
 	}
 	public void PlayList(List<AudioObject> aObjects)
 	{
+		if (_gamePause && _onForce)
+			return;
+
 		_index = 0;
 		_audioObjects = aObjects;
 		PlayAudio();
 	}
 	public void PlayOne(AudioObject aObjects)
 	{
+		if (_gamePause && _onForce)
+			return;
 		_index = 0;
 		_audioObjects.Clear();
 		_audioObjects.Add(aObjects);

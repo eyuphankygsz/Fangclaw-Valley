@@ -159,6 +159,22 @@ MonoBehaviour:
     m_Key: _gamePad
     m_Metadata:
       m_Items: []
+  - m_Id: 59145662851366912
+    m_Key: _delete_save_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Key: _continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Key: _new_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Key: _exit
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

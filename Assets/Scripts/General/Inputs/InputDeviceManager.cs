@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -57,4 +58,27 @@ public class InputDeviceManager : MonoBehaviour
 			}
 		}
 	}
+
+	[SerializeField]
+	private List<KeyDisplay> _keyNames;
+	public string GetDisplayName(string inputName)
+	{
+
+		return _keyNames.FirstOrDefault(x => x.InputName == inputName)?.DisplayName ?? "UNKNOWN";
+
+		//string displayName = "UNKNOWN";
+
+		//var found = _keyNames.FirstOrDefault(x => x.InputName == inputName);
+		//if(found != null)
+		//	displayName = found.DisplayName;
+
+		//return displayName;
+	}
+}
+
+[System.Serializable]
+public class KeyDisplay
+{
+	public string InputName;
+	public string DisplayName;
 }

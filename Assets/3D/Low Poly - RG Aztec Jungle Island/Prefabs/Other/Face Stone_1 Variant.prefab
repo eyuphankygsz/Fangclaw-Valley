@@ -93,7 +93,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 59f94e4c83c99b64f89d20255c95936e, type: 2}
+  - {fileID: 2100000, guid: 40dfe4f29afe7dc4aa67d806dd271f25, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -435,7 +435,6 @@ MonoBehaviour:
   _src: {fileID: 201730065970768182}
   _turnOnSfx: {fileID: 8300000, guid: 4194bb11e1261d545bc4922fec3fd5f7, type: 3}
   _turnOffSfx: {fileID: 8300000, guid: 7018e2d2324c31a4ab4e27a61e43ed69, type: 3}
-  _moveSfx: {fileID: 8300000, guid: 11c3569673662804aa08eceb3fa27861, type: 3}
 --- !u!82 &201730065970768182
 AudioSource:
   m_ObjectHideFlags: 0

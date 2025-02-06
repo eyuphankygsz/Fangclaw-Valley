@@ -17,6 +17,8 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private TimeForExitFollow _timeForExitFollow;
 	[SerializeField]
+	private TimeForExitStunFollow _timeForExitStunFollow;
+	[SerializeField]
 	private TimeForExitStuck _timeForExitStuck;
 	[SerializeField]
 	private IsStuck _isStuck;
@@ -42,10 +44,13 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 	}
 	public void EnterState()
 	{
+		Debug.Log(gameObject.name);
 		_timeForExitFollow.ResetTime();
+		_timeForExitStunFollow.ResetTime();
+		_timeForExitStuck.ResetTime();
+
 		_agent.speed = _speed;
 		_animator.SetBool("Follow", true);
-		_timeForExitStuck.ResetTime();
 		_isStuck.SetLastPoint(transform.position);
 		if (_canPlayAudio.CanPlay(_sawYou))
 		{

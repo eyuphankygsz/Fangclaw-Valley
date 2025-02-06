@@ -67,7 +67,6 @@ public class PlayerParanoia : MonoBehaviour
 		if (_ariseRoutine != null)
 			StopCoroutine(_ariseRoutine);
 
-		Debug.Log("START PARANOIA");
 		_ariseRoutine = StartCoroutine(ParanoiaArise());
 	}
 	public void StopParanoiaTimer()

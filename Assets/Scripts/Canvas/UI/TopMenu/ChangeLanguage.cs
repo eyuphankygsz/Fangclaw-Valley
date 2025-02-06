@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
@@ -9,18 +9,38 @@ public class ChangeLanguage : Setting
 	private TextMeshProUGUI _language;
 	private Dictionary<string, string> _languageDict = new Dictionary<string, string>
 	{
+		{ "bg", "Български" },
+		{ "da", "Dansk" },
+		{ "nl", "Nederlands" },
 		{ "en", "English" },
-		{ "fr", "Fran�ais" },
-		{ "es", "Espanol" },
-		{ "tr", "T�rk�e" },
+		{ "fr", "Français" },
+		{ "de", "Deutsch" },
+		{ "el", "Ελληνικά" },
+		{ "it", "Italiano" },
+		{ "ja", "日本語" },
+		{ "ru", "Русский" },
+		{ "es", "Español" },
+		{ "sv", "Svenska" },
+		{ "tr", "Türkçe" },
+		{ "uk", "Українська" },
 	};
 
 	private string[] _shorts = new string[]
 	{
+		"bg",
+		"da",
+		"nl",
 		"en",
 		"fr",
+		"de",
+		"el",
+		"it",
+		"ja",
+		"ru",
 		"es",
-		"tr"
+		"sv",
+		"tr",
+		"uk"
 	};
 	private string _selectedLocale;
 	private int _localeID;
@@ -34,6 +54,8 @@ public class ChangeLanguage : Setting
 	{
 		if (!PlayerPrefs.HasKey(_localeString))
 		{
+			_selectedLocale = PlayerPrefs.GetString(_localeString);
+
 			foreach (var item in _languageDict)
 			{
 				if (Application.systemLanguage.Equals(item.Key))

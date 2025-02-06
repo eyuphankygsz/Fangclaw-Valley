@@ -35,14 +35,6 @@ MonoBehaviour:
     m_Key: todays_menu
     m_Metadata:
       m_Items: []
-  - m_Id: 1886579815792640
-    m_Key: note_03_name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1886584857346048
-    m_Key: note_03_desc
-    m_Metadata:
-      m_Items: []
   - m_Id: 11415248968007680
     m_Key: note_04_name
     m_Metadata:

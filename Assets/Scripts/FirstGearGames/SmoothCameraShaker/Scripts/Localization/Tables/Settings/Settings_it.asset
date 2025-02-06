@@ -58,6 +58,127 @@ MonoBehaviour:
     m_Localized: Cambia arma (Precedente)
     m_Metadata:
       m_Items: []
+  - m_Id: 18859044668358656
+    m_Localized: Cambia arma #1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859122887933952
+    m_Localized: Cambia arma #2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859225895845888
+    m_Localized: Cambia arma #3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859239615414272
+    m_Localized: Cambia arma #4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859240903065600
+    m_Localized: Cambia arma #5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859708706373632
+    m_Localized: Altro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859824959897600
+    m_Localized: Menu di Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9919709184
+    m_Localized: Lingua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18199022432038912
+    m_Localized: Avanti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18199323838918656
+    m_Localized: Indietro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854395152351232
+    m_Localized: Inventario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854412311248896
+    m_Localized: Menu principale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870477401538560
+    m_Localized: Spento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870981531713536
+    m_Localized: Sottotitoli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871229670932480
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871568574889984
+    m_Localized: Salva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19166218478039040
+    m_Localized: Tastiera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19166236932976640
+    m_Localized: Gamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863369293578240
+    m_Localized: Ripristina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863706494648320
+    m_Localized: Indietro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870332450586624
+    m_Localized: Acceso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854436076175360
+    m_Localized: Impostazioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856095644827648
+    m_Localized: Suono
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856112807919616
+    m_Localized: Video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856132042997760
+    m_Localized: Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856177375035392
+    m_Localized: Legami
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59145662851366912
+    m_Localized: "Il tuo salvataggio attuale verr\xE0 sovrascritto. Vuoi intraprendere
+      un nuovo viaggio?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Localized: Continua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Localized: Nuova Partita
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Localized: Esci
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

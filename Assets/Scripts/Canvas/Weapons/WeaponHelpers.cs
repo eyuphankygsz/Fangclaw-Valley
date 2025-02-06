@@ -33,6 +33,7 @@ public class WeaponHelpers : MonoBehaviour
 	}
 	private IEnumerator CheckSelectedAnim(Animator animator, Weapons weapon, string animation)
 	{
+		weapon.gameObject.SetActive(true);
 		animator.Play(animation, 0);
 		yield return new WaitForEndOfFrame();
 		while (true)
@@ -57,6 +58,7 @@ public class WeaponHelpers : MonoBehaviour
 				if (controls != null)
 					weapon.SetWeaponControls(false);
 				weapon.CanChange = true;
+				weapon.gameObject.SetActive(false);
 				yield break;
 			}
 			yield return null;

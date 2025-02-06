@@ -162,6 +162,23 @@ MonoBehaviour:
     m_Localized: Keyboard
     m_Metadata:
       m_Items: []
+  - m_Id: 59145662851366912
+    m_Localized: Your current save will be overwritten. Do you want to embark on
+      a new journey?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

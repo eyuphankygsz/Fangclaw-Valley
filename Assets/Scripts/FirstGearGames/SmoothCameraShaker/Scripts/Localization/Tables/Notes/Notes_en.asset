@@ -65,17 +65,6 @@ MonoBehaviour:
       Baked beans with sausage and a piece of cheese.'
     m_Metadata:
       m_Items: []
-  - m_Id: 1886579815792640
-    m_Localized: Frum Albeeto to the Workrs
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1886584857346048
-    m_Localized: "Dr. Grumshow said tht the far left one got a beast\u2019s tooth,
-      one with stripey inside an one like a arrrow shot frum a bow.\n\nSome of the
-      symbuls get wored away, I keep forggeting 'em. If ya cud help, it wood be gud.\n\n-
-      Albeeto Downnshirr\r"
-    m_Metadata:
-      m_Items: []
   - m_Id: 409683017728
     m_Localized: What Remains of Alberto
     m_Metadata:
@@ -118,7 +107,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: A Part of Musical Notes
+    m_Localized: A Part Of Musical Notes
     m_Metadata:
       m_Items: []
   - m_Id: 11580552528445440
