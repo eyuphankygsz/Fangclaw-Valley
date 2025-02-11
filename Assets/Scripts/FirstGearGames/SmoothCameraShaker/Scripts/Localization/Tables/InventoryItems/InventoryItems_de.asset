@@ -20,30 +20,28 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 19140650193793024
     m_Localized: "Gas\xF6l ist entscheidend, um meine Lampe zu entz\xFCnden. Ich
-      bin verzweifelt auf Licht angewiesen, um durch die Dunkelheit dieser H\xF6hle
-      zu navigieren, und dieses \xD6l ist unerl\xE4sslich, um die Lampe am Brennen
-      zu halten. Ach, ich habe nur noch wenig \xFCbrig und muss es mit \xE4u\xDFerster
-      Vorsicht verwenden."
+      brauche dringend Licht, um die Dunkelheit dieser H\xF6hle zu durchqueren, und
+      dieses \xD6l ist notwendig, um die Lampe brennen zu lassen. Leider habe ich
+      nur noch wenig \xFCbrig und muss es mit gr\xF6\xDFter Vorsicht verwenden."
     m_Metadata:
       m_Items: []
   - m_Id: 49572708568186880
-    m_Localized: "\xD6stlicher S\xFC\xDFstrauch"
+    m_Localized: "Blume des \xF6stlichen S\xFC\xDFstrauchs"
     m_Metadata:
       m_Items: []
   - m_Id: 49573477128257536
-    m_Localized: "\xD6stlicher S\xFC\xDFstrauch... Die Farbe erinnert mich an Evelynns
-      altes rotes Kleid. Das Kleid, das einst alle mit seiner Eleganz verzauberte...
-      Aber diese Blume ist mehr als nur eine Erinnerung. Wenn sie mit Wasser gemischt
-      wird, hat sie die Kraft, Leben wiederherzustellen. Genauso wie Evelynns Anwesenheit
-      einst meine Seele wiederbelebte."
+    m_Localized: "Die Farbe erinnert mich an Evelynns altes rotes Kleid. Das, das
+      einst alle mit seiner Eleganz fesselte... Aber diese Blume ist mehr als nur
+      eine Erinnerung. Wenn sie mit Wasser gemischt wird, hat sie die Kraft, das
+      Leben wiederherzustellen. Genau wie Evelynns Pr\xE4senz einst meine Seele wiederbelebte."
     m_Metadata:
       m_Items: []
   - m_Id: 49906938020020224
-    m_Localized: "Echinacea... Eine Blume subtiler Widerstandskraft. Allein gew\xE4hrt
-      sie einen bescheidenen Energieschub, wie eine kurze Erholung mitten in der
-      Ersch\xF6pfung. Doch wenn sie mit Tonicwasser gemischt wird, entfaltet sich
-      ihr Potenzial und es entsteht ein Ausbruch von St\xE4rke, der anh\xE4lt \u2013
-      ein Zeugnis ihrer verborgenen Kraft."
+    m_Localized: "Eine Blume subtiler Widerstandsf\xE4higkeit. Allein gibt sie einen
+      bescheidenen Energieschub, wie eine kurze Erholung inmitten der Ersch\xF6pfung.
+      Doch wenn sie mit Tonicwasser gemischt wird, entfaltet sich ihr Potenzial und
+      liefert einen Ausbruch von St\xE4rke, der anh\xE4lt \u2013 ein Zeugnis ihrer
+      verborgenen Macht."
     m_Metadata:
       m_Items: []
   - m_Id: 49906897968611328
@@ -56,15 +54,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 49973552979558400
     m_Localized: "Ein Getr\xE4nk sowohl zur Erfrischung als auch zur Heilung. Durchzogen
-      mit der bitteren Essenz von Chinin war Tonic Water einst ein notwendiger Verb\xFCndeter
-      im Kampf gegen Fieber. Seine Spritzigkeit, sowohl belebend als auch scharf,
-      ist seitdem ein Symbol f\xFCr Vitalit\xE4t geworden. Gemischt mit den richtigen
-      Zutaten hat es die Kraft, verborgene Kr\xE4fte freizusetzen und nicht nur den
-      K\xF6rper, sondern auch den Geist zu beleben."
+      von der bitteren Essenz von Chinin war Tonic-Wasser einst ein notwendiger Verb\xFCndeter
+      im Kampf gegen Fieber. Seine Sprudeln, sowohl belebend als auch scharf, sind
+      inzwischen zu einem Symbol der Vitalit\xE4t geworden. In Kombination mit den
+      richtigen Zutaten hat es die Kraft, verborgene Kr\xE4fte freizusetzen, die
+      nicht nur den K\xF6rper, sondern auch den Geist wiederbeleben."
     m_Metadata:
       m_Items: []
   - m_Id: 2005556969472
-    m_Localized: "Tresor Schl\xFCssel Nr. 1"
+    m_Localized: "Tresorschl\xFCssel Nr. 1"
     m_Metadata:
       m_Items: []
   - m_Id: 6199181492224
@@ -72,14 +70,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11154890080256
-    m_Localized: "Es riecht sehr schlecht. Ich bin mir sicher, dass es gut f\xFCr
-      die Gesundheit ist..."
+    m_Localized: "Es riecht sehr schlecht. Ich bin sicher, dass es gut f\xFCr die
+      Gesundheit ist..."
     m_Metadata:
       m_Items: []
   - m_Id: 1505269372862464
-    m_Localized: "Meine Gro\xDFmutter hat einmal ein Getr\xE4nk mit diesem Geruch
-      zubereitet. In diesen Tagen stellte sie mir dieses wunderbare Elixier mit gr\xF6\xDFter
-      Sorgfalt vor, als ob es ein Ritual w\xE4re."
+    m_Localized: "Meine Gro\xDFmutter bereitete einmal ein Getr\xE4nk mit diesem
+      Duft zu. Damals stellte sie mir diesen k\xF6stlichen Elixier mit gr\xF6\xDFter
+      Sorgfalt her, als w\xE4re es ein Ritual."
     m_Metadata:
       m_Items: []
   - m_Id: 2278382406647808
@@ -91,8 +89,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3260616429191168
-    m_Localized: "Dieser abgenutzte und rostige Schl\xFCssel, der Anzeichen von Vernachl\xE4ssigung
-      zeigt, ist sicherlich f\xFCr einen bescheidenen Stauraum gedacht."
+    m_Localized: "Dieser abgenutzte und rostende Schl\xFCssel, der Anzeichen von
+      Vernachl\xE4ssigung zeigt, ist sicher f\xFCr einen bescheidenen Aufbewahrungsraum
+      gedacht."
     m_Metadata:
       m_Items: []
   - m_Id: 14077189502976000
@@ -100,12 +99,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14077305479675904
-    m_Localized: "Diese Streichh\xF6lzer haben eine kleine, aber lebenswichtige Bedeutung.
+    m_Localized: "Diese Streichh\xF6lzer haben eine kleine, aber wesentliche Bedeutung.
       Einfache Holzst\xE4bchen, perfekt, um meine Gaslampe zu entz\xFCnden. Sie werden
-      mich durch die Dunkelheit dieser H\xF6hle f\xFChren. Nur ein Funken, und sie
-      werden die Geheimnisse erleuchten, die im Schatten verborgen sind. Auch wenn
-      sie gew\xF6hnlich erscheinen, sind diese Streichh\xF6lzer entscheidend f\xFCr
-      mein \xDCberleben hier."
+      mir durch die Dunkelheit dieser H\xF6hle helfen. Nur ein Funken, und sie werden
+      die Geheimnisse erleuchten, die im Schatten verborgen sind. Obwohl sie gew\xF6hnlich
+      erscheinen, sind diese Streichh\xF6lzer entscheidend f\xFCr mein \xDCberleben
+      hier."
     m_Metadata:
       m_Items: []
   - m_Id: 19140619768311808

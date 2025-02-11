@@ -93,7 +93,7 @@ public class GameTime : MonoBehaviour, ISaveable
 	public void SetLoadFile()
 	{
 		GameTimeData data = _saveManager.GetData<GameTimeData>("GameTime");
-		_inGameTime = data == null ? new TimeSpan(6, 0, 0) : data.GameTime;
+		_inGameTime = data == null ? new TimeSpan(16, 0, 0) : data.GameTime;
 		_dayCount = data == null ? 0 : data.DayCount;
 
 	}

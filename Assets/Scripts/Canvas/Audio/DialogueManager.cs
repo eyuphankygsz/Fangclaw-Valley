@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
 	public static DialogueManager Instance;
 
 	[SerializeField]
-	private TextMeshProUGUI _text;
+	private TextMeshProUGUI _subtitles;
 	[SerializeField]
 	private AudioSource _source;
 
@@ -107,8 +107,15 @@ public class DialogueManager : MonoBehaviour
 		else
 			Debug.LogError("Audio clip could not be loaded.");
 
-		LocalizedString _skipLocal = new LocalizedString() { TableReference = tableRef, TableEntryReference = talkObject.TalkText };
-		_text.text = _skipLocal.GetLocalizedString();
+		if (PlayerPrefs.GetInt("Subtitles") == 1)
+		{
+			LocalizedString _skipLocal = new LocalizedString() { TableReference = tableRef, TableEntryReference = talkObject.TalkText };
+			_subtitles.text = _skipLocal.GetLocalizedString();
+		}
+		else
+		{
+			_subtitles.text = "";
+		}
 
 		_tempRoutine = StartCoroutine(CheckEndTemp(talkObject));
 	}
@@ -130,7 +137,7 @@ public class DialogueManager : MonoBehaviour
 			_tempSource.Play();
 		}
 
-		_text.text = _audioObjects[_index].Text.GetLocalizedString();
+		_subtitles.text = _audioObjects[_index].Text.GetLocalizedString();
 		_routine = StartCoroutine(CheckEnd());
 
 	}
@@ -143,7 +150,7 @@ public class DialogueManager : MonoBehaviour
 
 			if (!_source.isPlaying)
 			{
-				_text.text = "";
+				_subtitles.text = "";
 				NextAudio();
 				break;
 			}
@@ -158,7 +165,7 @@ public class DialogueManager : MonoBehaviour
 		{
 			if (!_tempSource.isPlaying)
 			{
-				_text.text = "";
+				_subtitles.text = "";
 				break;
 			}
 			yield return null;

@@ -28,6 +28,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 92b740c0fbb77474bbcc0b3cad0d0950, type: 2}
   - {fileID: 11400000, guid: e091015a818e83b4da9c75292c570bda, type: 2}
   - {fileID: 11400000, guid: 3639dd8dcd73fd940ae383a711e11781, type: 2}
+  - {fileID: 11400000, guid: d9f87ae6e2b7f6740b9b995e1f85fd93, type: 2}
+  - {fileID: 11400000, guid: b32c721b73412e947a532e447312a344, type: 2}
+  - {fileID: 11400000, guid: 0714d5703f55831489bce8a21e440d31, type: 2}
+  - {fileID: 11400000, guid: e264f93acf02a794e812665e9c6e70c8, type: 2}
+  - {fileID: 11400000, guid: 392bba00d5ebd714c90802f7c6ca4426, type: 2}
+  - {fileID: 11400000, guid: 248bb0376162db341999d920a192529f, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:

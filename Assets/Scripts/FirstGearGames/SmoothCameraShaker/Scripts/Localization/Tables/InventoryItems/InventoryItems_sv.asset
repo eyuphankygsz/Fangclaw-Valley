@@ -19,29 +19,30 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 19140650193793024
-    m_Localized: "Gasol \xE4r avg\xF6rande f\xF6r att t\xE4nda min lampa. Jag \xE4r
-      i desperat behov av ljus f\xF6r att ta mig genom m\xF6rkret i denna grotta,
+    m_Localized: "Gasoljan \xE4r avg\xF6rande f\xF6r att t\xE4nda min lampa. Jag
+      \xE4r desperat i behov av ljus f\xF6r att ta mig genom denna grottas m\xF6rker,
       och denna olja \xE4r n\xF6dv\xE4ndig f\xF6r att h\xE5lla lampan brinnande.
-      Ack, jag har bara lite kvar och m\xE5ste anv\xE4nda det med st\xF6rsta f\xF6rsiktighet.\n"
+      Tyv\xE4rr har jag bara lite kvar och m\xE5ste anv\xE4nda det med st\xF6rsta
+      f\xF6rsiktighet."
     m_Metadata:
       m_Items: []
   - m_Id: 49572708568186880
-    m_Localized: "\xD6stlig s\xF6tbuske"
+    m_Localized: "Blomma fr\xE5n \xF6stlig s\xF6tbuske"
     m_Metadata:
       m_Items: []
   - m_Id: 49573477128257536
-    m_Localized: "\xD6stlig s\xF6tbuske... F\xE4rgen p\xE5minner mig om Evelynns
-      gamla r\xF6da kl\xE4nning. Den som en g\xE5ng f\xE5ngade allas uppm\xE4rksamhet
-      med sin elegans... Men denna blomma \xE4r mer \xE4n bara ett minne. N\xE4r
-      den blandas med vatten har den kraften att \xE5terst\xE4lla livet. Precis som
-      Evelynns n\xE4rvaro en g\xE5ng \xE5terupplivade min sj\xE4l."
+    m_Localized: "F\xE4rgen p\xE5minner mig om Evelynns gamla r\xF6da kl\xE4nning.
+      Den som en g\xE5ng f\xE5ngade allas uppm\xE4rksamhet med sin elegans... Men
+      denna blomma \xE4r mer \xE4n bara ett minne. N\xE4r den blandas med vatten
+      har den kraften att \xE5terst\xE4lla liv. Precis som Evelynns n\xE4rvaro en
+      g\xE5ng v\xE4ckte min sj\xE4l till liv."
     m_Metadata:
       m_Items: []
   - m_Id: 49906938020020224
-    m_Localized: "Echinacea... En blomma av subtil motst\xE5ndskraft. P\xE5 egen
-      hand ger den ett blygsamt energitillskott, som en kort paus mitt i utmattningen.
-      Men n\xE4r den blandas med tonicvatten blomstrar dess potential, vilket ger
-      en styrkeburst som best\xE5r, ett bevis p\xE5 dess dolda kraft."
+    m_Localized: "En blomma med subtil motst\xE5ndskraft. P\xE5 egen hand ger den
+      en blygsam energi\xF6kning, som en kort paus i mitten av utmattning. Men n\xE4r
+      den blandas med tonicvatten blomstrar dess potential och ger ett utbrott av
+      styrka som varar, ett bevis p\xE5 dess dolda kraft."
     m_Metadata:
       m_Items: []
   - m_Id: 49906897968611328
@@ -49,24 +50,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 49971526598049792
-    m_Localized: Tonic Water
+    m_Localized: Tonicvatten
     m_Metadata:
       m_Items: []
   - m_Id: 49973552979558400
-    m_Localized: "En dryck b\xE5de f\xF6r uppfriskning och botemedel. Infuserad med
-      den bittra essensen av kinin var tonicvatten en g\xE5ng en n\xF6dv\xE4ndig
-      allierad i kampen mot feber. Dess brus, b\xE5de uppfriskande och skarpt, har
-      sedan dess blivit en symbol f\xF6r vitalitet. Blandad med r\xE4tt ingredienser
-      har den kraften att l\xE5sa upp dolda styrkor, och v\xE4cka liv i b\xE5de kroppen
-      och anden."
+    m_Localized: "En dryck av b\xE5de f\xF6rfriskning och botemedel. Infuserad med
+      den bittra essensen av kinin, var tonicvatten en g\xE5ng en n\xF6dv\xE4ndig
+      allierad i kampen mot feber. Dess bubblor, b\xE5de uppfriskande och skarpa,
+      har sedan dess blivit en symbol f\xF6r livskraft. Blandat med de r\xE4tta elementen
+      har det kraften att l\xE5sa upp dolda styrkor, som inte bara \xE5terupplivar
+      kroppen, utan \xE4ven anden."
     m_Metadata:
       m_Items: []
   - m_Id: 2005556969472
-    m_Localized: Valvnyckel Nr. 1
+    m_Localized: Kassanyckel nr. 1
     m_Metadata:
       m_Items: []
   - m_Id: 6199181492224
-    m_Localized: "Jag tror att detta \xE4r en valvnyckel."
+    m_Localized: "Jag tror att detta \xE4r en kassanyckel."
     m_Metadata:
       m_Items: []
   - m_Id: 11154890080256
@@ -75,9 +76,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1505269372862464
-    m_Localized: "Min mormor f\xF6rberedde en g\xE5ng en dryck med denna doft. P\xE5
-      den tiden gjorde hon denna h\xE4rliga elixir f\xF6r mig och presenterade den
-      med st\xF6rsta omsorg, som om det vore ett ritual."
+    m_Localized: "Min mormor gjorde en g\xE5ng en dryck med denna doft. P\xE5 den
+      tiden skulle hon skapa detta h\xE4rliga elixir f\xF6r mig och presentera det
+      med st\xF6rsta omsorg, som om det vore ett rituellt."
     m_Metadata:
       m_Items: []
   - m_Id: 2278382406647808
@@ -85,12 +86,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3257357132021760
-    m_Localized: Liten Lagringsnyckel
+    m_Localized: Liten lagringsnyckel
     m_Metadata:
       m_Items: []
   - m_Id: 3260616429191168
-    m_Localized: "Denna slitna och rostiga nyckel, som b\xE4r tecken p\xE5 f\xF6rsummelse,
-      \xE4r f\xF6rmodligen avsedd f\xF6r ett blygsamt f\xF6rvaringsutrymme."
+    m_Localized: "Denna v\xE4derbitna och rostiga nyckel, som b\xE4r tecken p\xE5
+      f\xF6rsummelse, \xE4r s\xE4kert avsedd f\xF6r ett blygsamt f\xF6rvaringsutrymme."
     m_Metadata:
       m_Items: []
   - m_Id: 14077189502976000
@@ -98,8 +99,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14077305479675904
-    m_Localized: "Dessa t\xE4ndstickor har en liten men vital betydelse. Enkla tr\xE4pinnar,
-      perfekta f\xF6r att t\xE4nda min gaslamp. De kommer att guida mig genom m\xF6rkret
+    m_Localized: "Dessa t\xE4ndstickor har en liten men viktig betydelse. Enkla tr\xE4pinnar,
+      perfekta f\xF6r att t\xE4nda min gaslykta. De kommer att guida mig genom m\xF6rkret
       i denna grotta. Bara en gnista, och de kommer att belysa de mysterier som d\xF6ljer
       sig i skuggorna. \xC4ven om de kan verka vanliga, \xE4r dessa t\xE4ndstickor
       avg\xF6rande f\xF6r min \xF6verlevnad h\xE4r."

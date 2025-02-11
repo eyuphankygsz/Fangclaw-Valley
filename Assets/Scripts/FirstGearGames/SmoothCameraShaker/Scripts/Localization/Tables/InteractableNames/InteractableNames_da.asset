@@ -27,15 +27,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1038599109918720
-    m_Localized: Kranie
+    m_Localized: Kranium
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
     m_Localized: "Disse kranier kan ikke v\xE6re rester af almindelige v\xE6sener.
-      Hver b\xE6rer spor af noget ud over mennesket. Deres k\xE6bestrukturer, dybe
-      \xF8jenhuler og former peger mod et gammel mysterium. Efterh\xE5nden som deres
-      antal vokser, vokser frygten i mig \u2013 hvilken m\xF8rk hemmelighed kunne
-      v\xE6re begravet dybt i disse lande?"
+      Hvert eneste b\xE6rer spor af noget, der overstiger det menneskelige. Deres
+      k\xE6bestrukturer, dybe \xF8jenhuler og former peger p\xE5 en \xE6ldgammel
+      g\xE5de. Jo flere jeg finder, desto mere vokser frygten i mig \u2013 hvilken
+      m\xF8rk hemmelighed ligger begravet dybt i dette land?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832
@@ -43,16 +43,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: "For de tider, hvor jeg m\xE5 stige op for at gribe det, der ligger
+    m_Localized: "Til de tider, hvor jeg m\xE5 stige op for at n\xE5 det, der ligger
       lige uden for r\xE6kkevidde."
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
-    m_Localized: Pedestal
+    m_Localized: Piedestal
     m_Metadata:
       m_Items: []
   - m_Id: 5519764290191360
-    m_Localized: Jernport
+    m_Localized: "Jernd\xF8r"
     m_Metadata:
       m_Items: []
   - m_Id: 8654831409610752
@@ -60,8 +60,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: Denne eksplosiv bruges ofte i minerne. Det er et dyrt og potent
-      middel til detonation.
+    m_Localized: Denne eksplosiv bruges ofte i minerne. Det er en dyr og kraftfuld
+      metode til detonation.
     m_Metadata:
       m_Items: []
   - m_Id: 23509254144
@@ -73,11 +73,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 94690787328
-    m_Localized: "Guldn\xF8gle"
+    m_Localized: "Gylden n\xF8gle"
     m_Metadata:
       m_Items: []
   - m_Id: 98855731200
-    m_Localized: Pengeskab
+    m_Localized: "Hv\xE6lving"
     m_Metadata:
       m_Items: []
   - m_Id: 131315449856
@@ -93,7 +93,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 386463179128832
-    m_Localized: Sundhedsdrik
+    m_Localized: Helbredelsesdrik
     m_Metadata:
       m_Items: []
   - m_Id: 386709376385024
@@ -109,23 +109,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: "Et st\xE6rkt reb, der er essentielt til forskellige opgaver i minerne,
-      fra at sikre byrder til at hj\xE6lpe med nedstigninger. Dets p\xE5lidelighed
-      er kun matchet af dets alsidighed."
+    m_Localized: "En solid l\xE6ngde reb, essentielt til forskellige opgaver i minerne,
+      fra at sikre laster til at hj\xE6lpe med nedstigninger. Dets p\xE5lidelighed
+      matches kun af dets alsidighed."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: Bundtet dynamit
+    m_Localized: Bundtet Dynamit
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
-    m_Localized: "Et bundt dynamitst\xE6nger, t\xE6t bundet sammen for en kraftigere
-      eksplosion. Ofte brugt i st\xF8rre mineoperationer til at rydde store omr\xE5der
-      af sten."
+    m_Localized: "En bundt dynamitst\xE6nger, t\xE6t sikret sammen for en mere kraftfuld
+      eksplosion. Ofte brugt i st\xF8rre mineoperationer til at rydde store klippeomr\xE5der."
     m_Metadata:
       m_Items: []
   - m_Id: 9048642019311616
-    m_Localized: Lantern
+    m_Localized: Lanterne
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
@@ -134,6 +133,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 14476268854755328
     m_Localized: Disk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Knap
     m_Metadata:
       m_Items: []
   references:

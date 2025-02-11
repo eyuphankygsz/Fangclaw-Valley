@@ -29,9 +29,9 @@ public class PlayerParanoia : MonoBehaviour
 	private float _initialBloom = 0;
 	private float _initialVignette = 0;
 
-	private float _targetLensDistortion = 0.4f;
-	private float _targetBloom = 0.5f;
-	private float _targetVignette = 1;
+	private float _targetLensDistortion = 0.5f;
+	private float _targetBloom = 0.22f;
+	private float _targetVignette = 0.6f;
 
 	private bool _isPeak, _beatStarted;
 

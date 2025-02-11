@@ -123,6 +123,10 @@ MonoBehaviour:
     m_Key: disc_0
     m_Metadata:
       m_Items: []
+  - m_Id: 61940686952325120
+    m_Key: button
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

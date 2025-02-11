@@ -53,16 +53,21 @@ MonoBehaviour:
     m_Localized: 'Today''s Menu:
 
 
-
       Breakfast: Porridge and a slice of hard
       bread with tea.
 
+      Lunch: No lunch, you fat pigs!
 
-      Lunch: Potato and meat stew, with pickles and bread.
+      Dinner: Baked
+      beans with sausage and a piece of cheese.
 
 
-      Dinner:
-      Baked beans with sausage and a piece of cheese.'
+      Also, who the fuck dropped
+      the little storage''s key to the fucking X!? Now we have to figure out how
+      to open X. I think there is some connection with those old useless statues
+      around.
+
+      If you find anything useful, mark it on the map near the kitchen.'
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
@@ -76,11 +81,11 @@ MonoBehaviour:
       of poor Bush. Following this grievous incident, I personally secured the doors
       of the Map Room. We never saw Alberto again.\n\nTo ensure the lengthy password
       was not forgotten, Grimshaw and I devised a small riddle:\n\nFive birds had
-      made a wager,\nThey debated how many legs an ant possesses.\nThe first declared
-      \u201Cthree,\u201D\nThe third responded \u201Cas many as ours,\u201D\nThe fourth
-      stated \u201Cone more than the second,\u201D\nAnd the fifth said \u201Ctwo
-      fewer than the fourth.\u201D\nEventually, they counted, and it turned out the
-      second bird was correct.\n\nThus, we succeeded in concealing the password."
+      made a wager, They debated how many legs an ant possesses. The first declared
+      \u201Cthree,\u201D The third responded \u201Cas many as ours,\u201D The fourth
+      stated \u201Cone more than the second,\u201D And the fifth said \u201Ctwo fewer
+      than the fourth.\u201D Eventually, they counted, and it turned out the second
+      bird was correct.\n\nThus, we succeeded in concealing the password."
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
@@ -107,17 +112,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: A Part Of Musical Notes
+    m_Localized: A Part of Musical Notes
     m_Metadata:
       m_Items: []
   - m_Id: 11580552528445440
-    m_Localized: '(Both sides torn.)
-
-      I  III  V'
+    m_Localized: "(Both sides torn.) \nI III V"
     m_Metadata:
       m_Items: []
   - m_Id: 11591077547130880
-    m_Localized: "(Right side torn.)\nIV  II  I \n"
+    m_Localized: "(Right side torn.) \nIV II I"
     m_Metadata:
       m_Items: []
   - m_Id: 11592266523262976

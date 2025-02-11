@@ -51,7 +51,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18857953633419264
-    m_Localized: Cambia arma (Prossimo)
+    m_Localized: Cambia arma (Successivo)
     m_Metadata:
       m_Items: []
   - m_Id: 18858880167755776
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859824959897600
-    m_Localized: Menu di Pausa
+    m_Localized: Menu pausa
     m_Metadata:
       m_Items: []
   - m_Id: 9919709184
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18863369293578240
-    m_Localized: Ripristina
+    m_Localized: Reimposta
     m_Metadata:
       m_Items: []
   - m_Id: 18863706494648320
@@ -159,7 +159,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Legami
+    m_Localized: Combinazioni di tasti
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912
@@ -172,7 +172,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 59149851304312832
-    m_Localized: Nuova Partita
+    m_Localized: Nuovo gioco
     m_Metadata:
       m_Items: []
   - m_Id: 59150189902086144

@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "Lo siento, Baxter, pero ten\xEDa que hacerlo..."
+    m_Localized: Lo siento, Baxter, pero tuve que hacer esto...
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608

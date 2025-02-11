@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Settings_id
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: id
+  m_SharedData: {fileID: 11400000, guid: 16ec7a079d58b784eb35511ffce42cc1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 18857117213704192
+    m_Localized: Gerakan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857310894080000
+    m_Localized: Kiri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857331605553152
+    m_Localized: Kanan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857345119600640
+    m_Localized: Lari
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857586011062272
+    m_Localized: Merunduk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857740076236800
+    m_Localized: Jenderal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857950995202048
+    m_Localized: Interaksi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857952635174912
+    m_Localized: Pindai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18857953633419264
+    m_Localized: Ganti Senjata (Selanjutnya)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18858880167755776
+    m_Localized: Ganti Senjata (Sebelumnya)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859044668358656
+    m_Localized: Ganti Senjata #1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859122887933952
+    m_Localized: Ganti Senjata #2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859225895845888
+    m_Localized: Ganti Senjata #3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859239615414272
+    m_Localized: Ganti Senjata #4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859240903065600
+    m_Localized: Ganti Senjata #5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859708706373632
+    m_Localized: Lainnya
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18859824959897600
+    m_Localized: Menu Jeda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863369293578240
+    m_Localized: Atur Ulang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18863706494648320
+    m_Localized: Kembali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870332450586624
+    m_Localized: Hidup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870477401538560
+    m_Localized: Mati
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18870981531713536
+    m_Localized: Teks Terjemahan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871229670932480
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18871568574889984
+    m_Localized: Simpan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19166218478039040
+    m_Localized: Papan Ketik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19166236932976640
+    m_Localized: Gamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149453965312000
+    m_Localized: Lanjutkan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59149851304312832
+    m_Localized: Permainan Baru
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59150189902086144
+    m_Localized: Keluar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59145662851366912
+    m_Localized: Simpanannya akan ditimpa. Apakah Anda ingin memulai petualangan
+      baru?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9919709184
+    m_Localized: Bahasa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18199022432038912
+    m_Localized: Maju
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18199323838918656
+    m_Localized: Mundur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854395152351232
+    m_Localized: Inventaris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854412311248896
+    m_Localized: Menu Utama
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18854436076175360
+    m_Localized: Pengaturan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856095644827648
+    m_Localized: Suara
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856112807919616
+    m_Localized: Video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856132042997760
+    m_Localized: Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18856177375035392
+    m_Localized: Ikatan Tombol
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_hu
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: hu
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19140650193793024
+    m_Localized: "A g\xE1zolaj elengedhetetlen a l\xE1mp\xE1m meggy\xFAjt\xE1s\xE1hoz.
+      K\xE9ts\xE9gbeesetten sz\xFCks\xE9gem van f\xE9nyre, hogy \xE1tv\xE1gjak a
+      barlang s\xF6t\xE9tj\xE9ben, \xE9s ez az olaj elengedhetetlen a l\xE1mpa \xE9g\xE9s\xE9nek
+      fenntart\xE1s\xE1hoz. Sajnos alig maradt bel\u0151le, \xE9s a legnagyobb \xF3vatoss\xE1ggal
+      kell haszn\xE1lnom."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: "Keleti \xE9des bokor vir\xE1ga"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "A sz\xEDn Evelynn r\xE9gi v\xF6r\xF6s ruh\xE1j\xE1t juttatja eszembe.
+      Azt, amely egykor mindenkit elb\u0171v\xF6lt eleganci\xE1j\xE1val... De ez
+      a vir\xE1g t\xF6bb, mint egy egyszer\u0171 eml\xE9k. Ha v\xEDzzel keverik,
+      k\xE9pes vissza\xE1ll\xEDtani az \xE9letet. Ahogy Evelynn jelenl\xE9te egyszer
+      \xFAjj\xE1\xE9lesztette a lelkemet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: "Egy vir\xE1g, amely finom ellen\xE1ll\xF3 k\xE9pess\xE9ggel b\xEDr.
+      Egyed\xFCl egy szer\xE9ny energiakit\xF6r\xE9st ad, mint egy r\xF6vid pihen\u0151
+      a kimer\xFClts\xE9g k\xF6zepette. De amikor tonikv\xEDzzel keveredik, kibontakozik
+      a potenci\xE1lja, \xE9s olyan er\u0151kit\xF6r\xE9st eredm\xE9nyez, amely megmarad,
+      bizony\xEDtva rejtett erej\xE9t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: "Tonik v\xEDz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: "Egy ital, amely egyszerre friss\xEDt\u0151 \xE9s gy\xF3gy\xEDt\xF3.
+      A kininsz\xE1rmaz\xE9k keser\u0171 esszenci\xE1j\xE1val infuz\xE1lt tonikv\xEDz
+      egykor elengedhetetlen sz\xF6vets\xE9ges volt a l\xE1z elleni harcban. Pezsg\xE9se,
+      amely egyszerre friss\xEDt\u0151 \xE9s \xE9les, az\xF3ta is a vitalit\xE1s
+      szimb\xF3luma. A megfelel\u0151 elemekkel keverve k\xE9pes felszabad\xEDtani
+      rejtett er\u0151ket, nemcsak a testet, hanem a szellemet is \xFAjj\xE1\xE9lesztve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: "P\xE1nc\xE9lszekr\xE9ny kulcs 1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "Azt hiszem, ez egy p\xE1nc\xE9lszekr\xE9ny kulcs."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: "Nagyon rosszul szaglik. Biztos vagyok benne, hogy j\xF3 az eg\xE9szs\xE9gre..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "A nagymam\xE1m egyszer egy italt k\xE9sz\xEDtett ezzel az illattal.
+      Azokban az id\u0151kben ezt a csod\xE1latos elix\xEDrt k\xE9sz\xEDtette sz\xE1momra,
+      \xE9s a legnagyobb gondoss\xE1ggal adta \xE1t, mintha ritu\xE1l\xE9 lett volna."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "Kis t\xE1rol\xF3 kulcs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Ez a kopott \xE9s rozsd\xE1s kulcs, amely elhanyagol\xE1s jeleit
+      viseli, biztosan egy szer\xE9ny t\xE1rol\xF3helyhez tartozik."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: "Gyuf\xE1k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Ezek a gyuf\xE1k apr\xF3, de l\xE9tfontoss\xE1g\xFA jelent\u0151s\xE9ggel
+      b\xEDrnak. Egyszer\u0171 fadarabok, t\xF6k\xE9letesek a g\xE1zl\xE1mp\xE1m
+      meggy\xFAjt\xE1s\xE1hoz. \xC1tvezetnek a barlangom s\xF6t\xE9ts\xE9g\xE9n.
+      Csak egy szikra, \xE9s megvil\xE1g\xEDtj\xE1k az \xE1rny\xE9kokban rejt\u0151z\u0151
+      titkokat. B\xE1r h\xE9tk\xF6znapinak t\u0171nnek, ezek a gyuf\xE1k kulcsfontoss\xE1g\xFAak
+      a t\xFAl\xE9l\xE9semhez itt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: "G\xE1zolaj"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Atamalar
+    m_Localized: "Tu\u015F Ba\u011Flant\u0131lar\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 18857117213704192
@@ -127,7 +127,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18863369293578240
-    m_Localized: "S\u0131f\u0131rlama"
+    m_Localized: "S\u0131f\u0131rla"
     m_Metadata:
       m_Items: []
   - m_Id: 18863706494648320
@@ -159,12 +159,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19166236932976640
-    m_Localized: "Oyun Kumandas\u0131"
+    m_Localized: Gamepad
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912
-    m_Localized: "Mevcut kayd\u0131n\u0131z \xFCzerine yaz\u0131lacakt\u0131r. Yeni
-      bir yolculu\u011Fa \xE7\u0131kmak istiyor musunuz?"
+    m_Localized: "Mevcut kayd\u0131n\u0131z \xFCzerine yaz\u0131lacak. Yeni bir yolculu\u011Fa
+      \xE7\u0131kmak ister misiniz?"
     m_Metadata:
       m_Items: []
   - m_Id: 59149453965312000

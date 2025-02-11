@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18857952635174912
-    m_Localized: Scan
+    m_Localized: Scanning
     m_Metadata:
       m_Items: []
   - m_Id: 18857953633419264
@@ -79,7 +79,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859708706373632
-    m_Localized: Andet
+    m_Localized: Anden
     m_Metadata:
       m_Items: []
   - m_Id: 18859824959897600
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18863369293578240
-    m_Localized: Reset
+    m_Localized: Nulstil
     m_Metadata:
       m_Items: []
   - m_Id: 18863706494648320
@@ -159,12 +159,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Bindinger
+    m_Localized: Tasterbindninger
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912
-    m_Localized: "Din nuv\xE6rende gemning vil blive overskrevet. \xD8nsker du at
-      starte en ny rejse?"
+    m_Localized: "Din nuv\xE6rende gemte fil vil blive overskrevet. \xD8nsker du
+      at p\xE5begynde en ny rejse?"
     m_Metadata:
       m_Items: []
   - m_Id: 59149453965312000

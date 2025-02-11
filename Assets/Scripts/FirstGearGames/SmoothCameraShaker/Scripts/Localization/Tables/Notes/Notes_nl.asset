@@ -19,19 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 11580552528445440
-    m_Localized: '(Beide zijden gescheurd.)
-
-      I III V'
+    m_Localized: "(Aan beide zijden gescheurd.) \nI III V"
     m_Metadata:
       m_Items: []
   - m_Id: 11591077547130880
-    m_Localized: '(Rechterkant is gescheurd.)
-
-      IV II I'
+    m_Localized: "(Rechterkant gescheurd.) \nIV II I"
     m_Metadata:
       m_Items: []
   - m_Id: 11592266523262976
-    m_Localized: '(Linkerkant is gescheurd.)
+    m_Localized: '(Linkerkant gescheurd.)
 
       II III IV'
     m_Metadata:
@@ -42,98 +38,131 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11619318483828736
     m_Localized: 'Ik ben me vreselijk bewust dat de ongelukkige ziel die deze brief
-      ontdekt, ook mijn levenloze lichaam zal vinden. Mijn tijd is gevaarlijk kort!
+      vindt, ook mijn levenloze lichaam zal ontdekken. Mijn tijd is gevaarlijk kort!
       Het lijkt erop dat iemand de sloten heeft veranderd... Wat ik hier heb gezien
-      (dit gedeelte zal in een volstrekt onleesbaar gekrabbeld handschrift worden
-      geschreven).
+      (dit deel zal in een volstrekt onleesbaar handschrift worden ingeschreven).
 
-      (Aan het einde van de brief is er een woord dat blijkbaar
-      later is toegevoegd.) ''Handen....'''
+
+      (Aan
+      het einde van de brief is er een woord dat kennelijk later is toegevoegd.)
+
+      ''Handen....''
+
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 11659020779831296
-    m_Localized: Ouderwets? Niet echt
+    m_Localized: Oud? Niet echt
     m_Metadata:
       m_Items: []
   - m_Id: 11659034495205376
     m_Localized: 'Geachte collega,
 
 
-      De structuren die ik ben tegengekomen
-      in deze grot zijn veel te complex om het werk te zijn van een eenvoudige oude
-      beschaving. Of het nu een vergeten beschaving is of iets veel geavanceerders,
-      hun doel blijft onduidelijk. Het is duidelijk dat de mijnwerkers deze kamers
-      opnieuw hebben gebruikt, maar hun oorspronkelijke functie ontgaat mij.
+      De structuren die ik in deze grot ben
+      tegengekomen zijn veel te ingewikkeld om het werk van eenvoudige oude mensen
+      te zijn. Of het nu een vergeten beschaving is of iets veel geavanceerder, het
+      doel ervan blijft onduidelijk. Het is duidelijk dat de mijnwerkers deze kamers
+      hebben hergebruikt, maar de oorspronkelijke functie ontgaat me.
 
 
       We
-      moeten ons onderzoek voortzetten met de grootste zorgvuldigheid.
+      moeten ons onderzoek met de grootst mogelijke zorg voortzetten.
 
 
-      -
-      Dr. Grimshow'
+      - Dr.
+      Grimshow'
     m_Metadata:
       m_Items: []
   - m_Id: 60377186304
-    m_Localized: Ingang naar de Grot
+    m_Localized: Ingang naar de grot
     m_Metadata:
       m_Items: []
   - m_Id: 105105244160
-    m_Localized: "Beste leiders van mijnwerkers,\n\nZoals jullie weten, heb ik een
-      voorliefde voor raadsels. Dus hier is er \xE9\xE9n om jullie verstand uit te
-      dagen!\n\nOm de geheimen achter de deur te ontsluiten, moeten jullie inspiratie
-      halen uit de wijsheid van de natuur.\n\nDe wolf jaagt op het schaap, terwijl
-      de beer stil blijft.\n\nOntcijfer de betekenis achter dit raadsel om te ontdekken
-      welke hendels de weg vooruit zullen onthullen.\n\nVeel succes,\n\n- Dr. Grimshaw"
+    m_Localized: 'Beste leiders van de mijnwerkers,
+
+
+      Zoals jullie weten, heb
+      ik een voorliefde voor raadsels. Dus hier is er een om jullie verstand uit
+      te dagen!
+
+
+      Om de geheimen achter de deur te ontsluiten, moeten jullie
+      inspiratie halen uit de wijsheid van de natuur.
+
+
+      De wolf jaagt op het
+      schaap, terwijl de beer stil blijft.
+
+
+      Ontcijfer de betekenis van dit
+      raadsel om de hendels te ontdekken die de weg vooruit onthullen.
+
+
+      Veel
+      succes,
+
+
+      - Dr. Grimshaw'
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
-    m_Localized: Wat er over is van Alberto
+    m_Localized: Wat er overblijft van Alberto
     m_Metadata:
       m_Items: []
   - m_Id: 437633859584
-    m_Localized: "Alberto was de laatste twee dagen langzaam zijn verstand aan het
-      verliezen. Toch had niemand kunnen vermoeden dat hij in zo'n waanzin zou vervallen.
-      Met een zwaard, genomen uit de Kaartkamer, bracht hij een te vroege einde aan
-      het leven van arme Bush. Na dit verdrietige incident sloot ik persoonlijk de
-      deuren van de Kaartkamer af. We hebben Alberto nooit meer gezien.\n\nOm ervoor
-      te zorgen dat het lange wachtwoord niet vergeten werd, ontwierp Grimshaw en
-      ik een kleine raadsel:\n\nVijf vogels hadden een weddenschap gesloten,\nZe
-      discussieerden over het aantal benen dat een mier heeft.\nDe eerste zei \"drie\",\nDe
-      derde antwoordde \"net zoveel als wij\",\nDe vierde zei \"\xE9\xE9n meer dan
-      de tweede\",\nEn de vijfde zei \"twee minder dan de vierde\".\nUiteindelijk
-      telden ze, en bleek dat de tweede vogel gelijk had.\n\nZo slaagden we erin
+    m_Localized: "Alberto was de afgelopen twee dagen geleidelijk zijn verstand aan
+      het verliezen. Toch had niemand zich kunnen voorstellen dat hij tot zo'n waanzin
+      zou afglijden. Met een zwaard, genomen uit de Kaartkamer, maakte hij een voortijdig
+      einde aan het leven van de arme Bush. Na dit tragische incident sloot ik persoonlijk
+      de deuren van de Kaartkamer af. We hebben Alberto nooit meer gezien.\n\nOm
+      ervoor te zorgen dat het lange wachtwoord niet werd vergeten, bedachten Grimshaw
+      en ik een kleine raadsel:\n\nVijf vogels hadden een weddenschap afgesloten,
+      Ze discussieerden over hoeveel benen een mier had. De eerste verklaarde \"drie\",
+      De derde antwoordde \"net zoveel als wij\", De vierde zei \"\xE9\xE9n meer
+      dan de tweede\", En de vijfde zei \"twee minder dan de vierde\". Uiteindelijk
+      telden ze, en het bleek dat de tweede vogel gelijk had.\n\nZo slaagden we erin
       het wachtwoord te verbergen."
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: 'Menu van vandaag:
+    m_Localized: 'Het menu van vandaag:
 
 
-      Ontbijt: Havermout en een stuk hard brood
+      Ontbijt: Pap en een stuk hard brood
       met thee.
 
-      Lunch: Aardappel- en vleesstoofpot met augurken en brood.
+      Lunch: Geen lunch, dikke varkens!
 
-      Diner:
-      Gebakken bonen met worst en een stuk kaas.'
+      Diner: Gekookte bonen
+      met worst en een stuk kaas.
+
+
+      En wie in godsnaam liet de sleutel van
+      het kleine opslagruim vallen in de f*king X!? Nu moeten we uitzoeken hoe we
+      X kunnen openen. Ik denk dat er een verband is met die oude nutteloze beelden
+      rondom.
+
+      Als je iets nuttigs vindt, markeer het dan op de kaart bij de
+      keuken.'
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680
-    m_Localized: Het Mysterie van de Noten
+    m_Localized: Mysterie van de noten
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
-    m_Localized: 'Ik ben tot de conclusie gekomen dat de noten van het muziekinstrument
-      mogelijk een mysterieus resultaat opleveren wanneer ze in een specifieke volgorde
-      worden gespeeld. Ik was vrij dicht bij het ontdekken van deze volgorde; helaas
-      verdween het papier waarop ik de volgorde had geschreven de volgende dag mysterieuze
+    m_Localized: 'Ik ben gaan geloven dat de noten van het muziekinstrument een mysterieus
+      resultaat kunnen opleveren wanneer ze in een specifieke volgorde worden gespeeld.
+      Ik was heel dicht bij het ontdekken van deze volgorde; helaas verdween het
+      papier waarop ik de volgorde had geschreven de volgende dag op mysterieuze
       wijze.
 
 
       We moeten samenwerken om deze situatie op te helderen en de
-      volgorde opnieuw te ontdekken. Jullie bijdragen zijn van cruciaal belang om
-      dit mysterie op te lossen.
+      volgorde opnieuw te ontdekken. Jullie bijdragen zijn cruciaal voor ons om dit
+      mysterie op te lossen.
 
 
       Met vriendelijke groet,
@@ -144,7 +173,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: Een Deel Van De Muzikale Noten
+    m_Localized: Een deel van de muzikale noten
     m_Metadata:
       m_Items: []
   references:

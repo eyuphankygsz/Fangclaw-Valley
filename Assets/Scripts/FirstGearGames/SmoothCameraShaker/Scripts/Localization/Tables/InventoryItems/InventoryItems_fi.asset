@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19140650193793024
+    m_Localized: "Kaasulamppu\xF6ljy on elint\xE4rke\xE4\xE4 lamppuni sytytt\xE4miseksi.
+      Tarvitsen ep\xE4toivoisesti valoa kulkeakseni t\xE4m\xE4n luolan pimeydess\xE4,
+      ja t\xE4m\xE4 \xF6ljy on v\xE4ltt\xE4m\xE4t\xF6nt\xE4 pit\xE4m\xE4\xE4n lampun
+      palamassa. Voi, minulla on vain v\xE4h\xE4n j\xE4ljell\xE4, ja minun on k\xE4ytett\xE4v\xE4
+      sit\xE4 \xE4\xE4rimm\xE4isen varovasti."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: "It\xE4inen makea pensaskukka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "V\xE4ri muistuttaa minua Evelynnin vanhasta punaisesta mekosta.
+      Siit\xE4, joka kerran valloitti kaikki eleganssillaan... Mutta t\xE4m\xE4 kukka
+      on enemm\xE4n kuin pelkk\xE4 muisto. Kun se sekoitetaan veteen, sill\xE4 on
+      voima palauttaa el\xE4m\xE4n. Aivan kuten Evelynnin l\xE4sn\xE4olo kerran her\xE4tti
+      sieluni henkiin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: "Kukka hienovaraisella kest\xE4vyydell\xE4. Yksin\xE4\xE4n se antaa
+      kohtuullisen energiapurskeen, kuin lyhyt heng\xE4hdys v\xE4symyksen keskell\xE4.
+      Mutta sekoitettuna tonic-veteen sen potentiaali kukoistaa, tuottaen voimanpuuskan,
+      joka j\xE4\xE4 pysyv\xE4ksi muistutukseksi sen piilotetusta voimasta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: Tonic-vesi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: "Juoma, joka tarjoaa sek\xE4 virkistyst\xE4 ett\xE4 l\xE4\xE4kityst\xE4.
+      Kinina-aineen katkeralla essenssill\xE4 infusoitu tonic-vesi oli aikoinaan
+      v\xE4ltt\xE4m\xE4t\xF6n liittolainen taistelussa kuumetta vastaan. Sen kuohkeus,
+      sek\xE4 virkist\xE4v\xE4 ett\xE4 ter\xE4v\xE4, on sittemmin muuttunut elinvoimaisuuden
+      symboliksi. Seos oikeiden elementtien kanssa voi avata piilevi\xE4 voimia,
+      elvytt\xE4en ei vain kehoa, vaan my\xF6s sielua."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: "Holvikey \u21161"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "Luulen, ett\xE4 t\xE4m\xE4 on holvikey."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: "Se haisee todella pahalle. Olen varma, ett\xE4 se on hyv\xE4\xE4
+      terveydelle..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "Iso\xE4itini valmisti kerran juoman, jossa oli t\xE4m\xE4 tuoksu.
+      Noina p\xE4ivin\xE4 h\xE4n valmisti t\xE4m\xE4n ihastuttavan eliksiirin minulle
+      ja esitti sen \xE4\xE4rimm\xE4isell\xE4 huolellisuudella, aivan kuin se olisi
+      ollut rituaali."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: Pieni varaston avain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "T\xE4m\xE4 kulunut ja ruostunut avain, joka kantaa laiminly\xF6nnin
+      merkkej\xE4, on varmasti tarkoitettu vaatimattomaan varastotilaan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: Tulitikut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "N\xE4m\xE4 tulitikut ovat pieni mutta elint\xE4rke\xE4 asia. Yksinkertaiset
+      puutikut, t\xE4ydellisi\xE4 kaasulyhtyni sytytt\xE4miseen. Ne auttavat minua
+      kulkemaan t\xE4m\xE4n luolan pimeydess\xE4. Vain yksi kipin\xE4, ja ne valaisevat
+      varjoihin piiloutuneet salaisuudet. Vaikka ne saattavat tuntua tavallisilta,
+      n\xE4m\xE4 tulitikut ovat elint\xE4rkeit\xE4 selviytymiselleni t\xE4\xE4ll\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Kaasupetroli
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

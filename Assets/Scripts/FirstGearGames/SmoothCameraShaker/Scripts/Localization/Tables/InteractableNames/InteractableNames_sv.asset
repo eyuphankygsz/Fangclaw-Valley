@@ -31,10 +31,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
-    m_Localized: "Dessa skall kan inte vara rester av vanliga varelser. Var och en
-      b\xE4r sp\xE5r av n\xE5got bortom m\xE4nniskan. Deras k\xE4kstrukturer, djupa
-      \xF6gonh\xE5lor och former pekar p\xE5 ett gammalt mysterium. N\xE4r deras
-      antal v\xE4xer, v\xE4xer ocks\xE5 r\xE4dslan inom mig \u2013 vilken m\xF6rk
+    m_Localized: "Dessa skallar kan inte vara rester av vanliga varelser. Var och
+      en b\xE4r sp\xE5r av n\xE5got som g\xE5r bortom det m\xE4nskliga. Deras k\xE4kstrukturer,
+      djupa \xF6gonh\xE5lor och former pekar p\xE5 ett ur\xE5ldrigt mysterium. Ju
+      fler jag hittar, desto mer v\xE4xer r\xE4dslan inom mig\u2014vilken m\xF6rk
       hemlighet kan vara begravd djupt i dessa l\xE4nder?"
     m_Metadata:
       m_Items: []
@@ -43,8 +43,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: "F\xF6r de g\xE5nger jag m\xE5ste stiga f\xF6r att gripa det som
-      ligger precis utom r\xE4ckh\xE5ll."
+    m_Localized: "F\xF6r de g\xE5nger d\xE5 jag m\xE5ste kl\xE4ttra f\xF6r att n\xE5
+      det som ligger precis utom r\xE4ckh\xE5ll."
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
@@ -60,8 +60,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: "Detta explosiv anv\xE4nds ofta i gruvorna. Det \xE4r ett dyrt och
-      kraftfullt medel f\xF6r detonation."
+    m_Localized: "Detta explosiv anv\xE4nds ofta i gruvorna. Det \xE4r ett kostsamt
+      och kraftfullt s\xE4tt att detonera."
     m_Metadata:
       m_Items: []
   - m_Id: 23509254144
@@ -73,7 +73,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 94690787328
-    m_Localized: Guldnyckel
+    m_Localized: Gyllene nyckel
     m_Metadata:
       m_Items: []
   - m_Id: 98855731200
@@ -109,19 +109,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: "Ett starkt rep, avg\xF6rande f\xF6r olika uppgifter i minerna,
-      fr\xE5n att s\xE4kra last till att hj\xE4lpa vid nedstigning. Dess p\xE5litlighet
-      \xE4r endast \xF6vertr\xE4ffad av dess m\xE5ngsidighet."
+    m_Localized: "Ett robust rep, n\xF6dv\xE4ndigt f\xF6r olika uppgifter i gruvorna,
+      fr\xE5n att s\xE4kra laster till att hj\xE4lpa vid nedstigningar. Dess tillf\xF6rlitlighet
+      matchas endast av dess m\xE5ngsidighet."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: Bundlad dynamit
+    m_Localized: Buntad dynamit
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
-    m_Localized: "Ett paket dynamitst\xE4nger, t\xE4tt bundna f\xF6r en kraftigare
-      explosion. Anv\xE4nds ofta i st\xF6rre gruvdriftsoperationer f\xF6r att rensa
-      stora omr\xE5den av sten."
+    m_Localized: "Ett knippe dynamitstavar, t\xE4tt bundna tillsammans f\xF6r en
+      kraftfullare explosion. Ofta anv\xE4nds i st\xF6rre gruvoperationer f\xF6r
+      att rensa stora stenomr\xE5den."
     m_Metadata:
       m_Items: []
   - m_Id: 9048642019311616
@@ -133,7 +133,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328
-    m_Localized: Disk
+    m_Localized: Skiva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Knapp
     m_Metadata:
       m_Items: []
   references:

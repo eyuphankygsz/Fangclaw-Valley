@@ -19,29 +19,29 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 19140650193793024
-    m_Localized: "L'olio per lampade \xE8 essenziale per accendere la mia lampada.
-      Ho un disperato bisogno di luce per attraversare l'oscurit\xE0 di questa caverna,
-      e quest'olio \xE8 fondamentale per mantenere la lampada accesa. Ahim\xE8, ne
-      \xE8 rimasto poco e devo usarlo con la massima cautela."
+    m_Localized: "L'olio di gas \xE8 fondamentale per accendere la mia lampada. Ho
+      un disperato bisogno di luce per attraversare l'oscurit\xE0 di questa caverna,
+      e quest'olio \xE8 essenziale per mantenere accesa la lampada. Purtroppo, ne
+      ho rimasto poco, e devo usarlo con la massima cautela."
     m_Metadata:
       m_Items: []
   - m_Id: 49572708568186880
-    m_Localized: Arbusto dolce orientale
+    m_Localized: Fiore di Calycanthus Floridus
     m_Metadata:
       m_Items: []
   - m_Id: 49573477128257536
-    m_Localized: "Arbusto dolce orientale... Il colore mi ricorda il vecchio vestito
-      rosso di Evelynn. Quello che un tempo conquistava tutti con la sua eleganza...
-      Ma questo fiore \xE8 pi\xF9 di un semplice ricordo. Quando mescolato con l'acqua,
-      ha il potere di riportare in vita. Proprio come la presenza di Evelynn una
-      volta ha ridato vita alla mia anima."
+    m_Localized: "Il colore mi ricorda il vecchio vestito rosso di Evelynn. Quello
+      che un tempo ha catturato tutti con la sua eleganza... Ma questo fiore \xE8
+      pi\xF9 di un semplice ricordo. Quando miscelato con l'acqua, ha il potere di
+      riportare in vita. Proprio come la presenza di Evelynn che una volta ha rivitalizzato
+      la mia anima."
     m_Metadata:
       m_Items: []
   - m_Id: 49906938020020224
-    m_Localized: Echinacea... Un fiore di sottile resilienza. Da solo, conferisce
-      una modesta scarica di energia, come una breve pausa nel mezzo dell'esaurimento.
-      Ma quando mescolata con acqua tonica, il suo potenziale fiorisce, dando un'esplosione
-      di forza che persiste, una testimonianza del suo potere nascosto.
+    m_Localized: Un fiore di sottile resilienza. Da solo, offre un modesto aumento
+      di energia, come una breve pausa nel mezzo dell'esaurimento. Ma quando miscelato
+      con acqua tonica, il suo potenziale fiorisce, producendo un'esplosione di forza
+      che persiste, testimonianza del suo potere nascosto.
     m_Metadata:
       m_Items: []
   - m_Id: 49906897968611328
@@ -49,34 +49,34 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 49971526598049792
-    m_Localized: Acqua Tonica
+    m_Localized: Acqua tonica
     m_Metadata:
       m_Items: []
   - m_Id: 49973552979558400
-    m_Localized: "Una bevanda sia di rinfresco che di rimedio. Infuso con l'essenza
-      amara della chinina, l'acqua tonica \xE8 stata un alleato necessario nella
-      lotta contro la febbre. La sua effervescenza, sia rinvigorente che acuta, \xE8
-      diventata da allora un simbolo di vitalit\xE0. Mischiata con gli ingredienti
+    m_Localized: "Una bevanda sia rinfrescante che curativa. Infusa con l'essenza
+      amara della chinina, l'acqua tonica \xE8 stata una volta un alleato necessario
+      nella lotta contro la febbre. La sua effervescenza, sia rinvigorente che pungente,
+      \xE8 da allora diventata un simbolo di vitalit\xE0. Miscelata con gli elementi
       giusti, ha il potere di sbloccare forze nascoste, rivitalizzando non solo il
       corpo, ma anche lo spirito."
     m_Metadata:
       m_Items: []
   - m_Id: 2005556969472
-    m_Localized: "Chiave Della Cassa N\xB01"
+    m_Localized: Chiave della Cassetta di Sicurezza n.1
     m_Metadata:
       m_Items: []
   - m_Id: 6199181492224
-    m_Localized: Penso che questa sia una chiave del deposito.
+    m_Localized: Penso che questa sia una chiave della cassetta di sicurezza.
     m_Metadata:
       m_Items: []
   - m_Id: 11154890080256
-    m_Localized: Puzza molto. Sono sicuro che sia buono per la salute...
+    m_Localized: "Puzza molto. Sono sicuro che \xE8 buono per la salute..."
     m_Metadata:
       m_Items: []
   - m_Id: 1505269372862464
-    m_Localized: "Mia nonna una volta prepar\xF2 una bevanda con questo stesso odore.
-      In quei giorni, preparava questo delizioso elisir per me, presentandolo con
-      la massima cura, come se fosse un rituale."
+    m_Localized: Mia nonna preparava una bevanda con questa stessa fragranza. In
+      quei giorni, preparava questo delizioso elisir per me, presentandolo con la
+      massima cura, come se fosse un rituale.
     m_Metadata:
       m_Items: []
   - m_Id: 2278382406647808
@@ -84,12 +84,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3257357132021760
-    m_Localized: Piccola Chiave di Archiviazione
+    m_Localized: Piccola chiave di archiviazione
     m_Metadata:
       m_Items: []
   - m_Id: 3260616429191168
-    m_Localized: "Questa chiave logora e arrugginita, che porta segni di trascuratezza,
-      \xE8 sicuramente destinata a uno spazio di stoccaggio modesto."
+    m_Localized: "Questa chiave consumata e arrugginita, che porta segni di trascuratezza,
+      \xE8 sicuramente destinata a uno spazio di archiviazione modesto."
     m_Metadata:
       m_Items: []
   - m_Id: 14077189502976000
@@ -100,12 +100,12 @@ MonoBehaviour:
     m_Localized: "Questi fiammiferi hanno una piccola ma vitale importanza. Semplici
       bastoncini di legno, perfetti per accendere la mia lampada a gas. Mi guideranno
       attraverso l'oscurit\xE0 di questa caverna. Basta una sola scintilla e illumineranno
-      i misteri nascosti nell'ombra. Sebbene possano sembrare ordinari, questi fiammiferi
-      sono cruciali per la mia sopravvivenza qui."
+      i misteri nascosti nelle ombre. Anche se possono sembrare ordinari, questi
+      fiammiferi sono fondamentali per la mia sopravvivenza qui."
     m_Metadata:
       m_Items: []
   - m_Id: 19140619768311808
-    m_Localized: Olio per gas
+    m_Localized: Olio di gas
     m_Metadata:
       m_Items: []
   references:

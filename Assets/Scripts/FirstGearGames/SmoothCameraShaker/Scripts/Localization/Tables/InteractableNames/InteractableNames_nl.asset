@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 390523852603392
-    m_Localized: Antelope
+    m_Localized: Antilope
     m_Metadata:
       m_Items: []
   - m_Id: 1038599109918720
@@ -31,11 +31,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
-    m_Localized: Deze schedels kunnen geen overblijfselen zijn van gewone wezens.
-      Elk draagt sporen van iets bovenmenselijks. Hun kaakstructuren, diepe oogkassen
-      en vormen wijzen op een oud mysterie. Naarmate hun aantal groeit, groeit ook
-      de angst in mij - welk donker geheim zou diep in deze landen begraven kunnen
-      liggen?
+    m_Localized: "Deze schedels kunnen geen overblijfselen zijn van gewone wezens.
+      Elk draagt sporen van iets dat verder gaat dan het menselijke. Hun kaakstructuren,
+      diepe oogkassen en vormen wijzen op een oud mysterie. Naarmate hun aantal groeit,
+      groeit ook de angst in mij\u2014welk duister geheim zou diep in deze landen
+      begraven kunnen liggen?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832
@@ -43,12 +43,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: Voor die momenten wanneer ik moet stijgen om te grijpen wat net
-      buiten bereik ligt.
+    m_Localized: Voor die momenten waarop ik omhoog moet klimmen om te grijpen wat
+      net buiten mijn bereik ligt.
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
-    m_Localized: Pedestaal
+    m_Localized: Sokkel
     m_Metadata:
       m_Items: []
   - m_Id: 5519764290191360
@@ -60,8 +60,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: Dit explosief wordt vaak gebruikt in de mijnen. Het is een kostbaar
-      en krachtig middel voor detonatie.
+    m_Localized: Dit explosief wordt vaak in de mijnen gebruikt. Het is een kostbare
+      en krachtige manier van ontploffing.
     m_Metadata:
       m_Items: []
   - m_Id: 23509254144
@@ -89,15 +89,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 313811672416256
-    m_Localized: NotitieNotitie
+    m_Localized: Notitie
     m_Metadata:
       m_Items: []
   - m_Id: 386463179128832
-    m_Localized: Gezondheidstoverdrank
+    m_Localized: Gezondheidspotion
     m_Metadata:
       m_Items: []
   - m_Id: 386709376385024
-    m_Localized: Uithoudingsdrank
+    m_Localized: Uithoudingspotion
     m_Metadata:
       m_Items: []
   - m_Id: 390466071871488
@@ -109,18 +109,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: Een stevig stuk touw, essentieel voor verschillende taken in de
-      mijnen, van het beveiligen van ladingen tot het helpen bij afdaling. De betrouwbaarheid
-      is alleen evenaart door de veelzijdigheid.
+    m_Localized: "Een stevige lengte touw, essentieel voor verschillende taken in
+      de mijnen, van het vastzetten van ladingen tot het assisteren bij afdalingen.
+      De betrouwbaarheid wordt alleen ge\xEBvenaard door de veelzijdigheid."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: Gebundelde dynamiet
+    m_Localized: Gebundeld Dynamiet
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
-    m_Localized: Een bundel dynamietstokken, stevig samengebonden voor een krachtigere
-      explosie. Vaak gebruikt in grotere mijnoperaties om grote gebieden van steen
+    m_Localized: Een bundel dynamietstaven, stevig samengebonden voor een krachtigere
+      explosie. Vaak gebruikt bij grootschalige mijnbouwoperaties om grote rotsgebieden
       vrij te maken.
     m_Metadata:
       m_Items: []
@@ -129,11 +129,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
-    m_Localized: Combinatieslot
+    m_Localized: Cijferslot
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328
     m_Localized: Schijf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Knop
     m_Metadata:
       m_Items: []
   references:

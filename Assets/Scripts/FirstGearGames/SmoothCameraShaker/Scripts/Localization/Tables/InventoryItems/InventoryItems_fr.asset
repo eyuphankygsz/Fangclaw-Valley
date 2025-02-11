@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 2005556969472
-    m_Localized: "Cl\xE9 Du Coffre N\xB01"
+    m_Localized: "Cl\xE9 du coffre-fort n\xB01"
     m_Metadata:
       m_Items: []
   - m_Id: 6199181492224
-    m_Localized: "Je pense que c'est une cl\xE9 de coffre."
+    m_Localized: "Je pense que c'est une cl\xE9 de coffre-fort."
     m_Metadata:
       m_Items: []
   - m_Id: 11154890080256
@@ -42,12 +42,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3257357132021760
-    m_Localized: "Petite Cl\xE9 de Rangement"
+    m_Localized: "Petite cl\xE9 de stockage"
     m_Metadata:
       m_Items: []
   - m_Id: 3260616429191168
     m_Localized: "Cette cl\xE9 us\xE9e et rouill\xE9e, portant des signes de n\xE9gligence,
-      est s\xFBrement destin\xE9e \xE0 un modeste espace de rangement."
+      est s\xFBrement destin\xE9e \xE0 un modeste espace de stockage."
     m_Metadata:
       m_Items: []
   - m_Id: 14077189502976000
@@ -55,18 +55,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14077305479675904
-    m_Localized: "Ces allumettes ont une petite mais importance vitale. De simples
-      b\xE2tonnets de bois, parfaits pour allumer ma lampe \xE0 gaz. Elles me guideront
-      \xE0 travers l'obscurit\xE9 de cette grotte. Une seule \xE9tincelle, et elles
-      \xE9claireront les myst\xE8res cach\xE9s dans l'ombre. Bien qu'elles paraissent
-      ordinaires, ces allumettes sont cruciales pour ma survie ici."
+    m_Localized: "Ces allumettes ont une petite mais grande importance. Des b\xE2tons
+      en bois simples, parfaits pour allumer ma lampe \xE0 gaz. Elles me guideront
+      \xE0 travers l\u2019obscurit\xE9 de cette grotte. Une seule \xE9tincelle, et
+      elles illumineront les myst\xE8res cach\xE9s dans les ombres. Bien qu'elles
+      paraissent ordinaires, ces allumettes sont cruciales pour ma survie ici."
     m_Metadata:
       m_Items: []
   - m_Id: 19140650193793024
-    m_Localized: "L'huile de lampe est indispensable pour allumer ma lanterne. J'ai
-      un besoin pressant de lumi\xE8re pour avancer dans l'obscurit\xE9 de cette
-      grotte, et cette huile est essentielle pour la maintenir allum\xE9e. Mais h\xE9las,
-      il m'en reste peu, alors je dois l'utiliser avec la plus grande pr\xE9caution."
+    m_Localized: "L'huile de gaz est essentielle pour allumer ma lampe. J'ai un besoin
+      d\xE9sesp\xE9r\xE9 de lumi\xE8re pour traverser l'obscurit\xE9 de cette grotte,
+      et cette huile est cruciale pour maintenir la lampe allum\xE9e. H\xE9las, il
+      m'en reste peu, et je dois l'utiliser avec la plus grande prudence."
     m_Metadata:
       m_Items: []
   - m_Id: 19140619768311808
@@ -74,23 +74,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 49572708568186880
-    m_Localized: Calycanthe Floride
+    m_Localized: Fleur de calycanthus floridus
     m_Metadata:
       m_Items: []
   - m_Id: 49573477128257536
-    m_Localized: "Calycanthe Floride... Sa couleur me rappelle la vieille robe rouge
-      d\u2019Evelynn. Celle qui fascinait tout le monde par son \xE9l\xE9gance...
-      Mais cette fleur n'est pas simplement un souvenir. Lorsqu'elle est m\xE9lang\xE9e
-      \xE0 l'eau, elle a le pouvoir de redonner la vie. Tout comme la pr\xE9sence
-      d\u2019Evelynn a un jour raviv\xE9 mon \xE2me."
+    m_Localized: "La couleur me rappelle la vieille robe rouge d'Evelynn. Celle qui
+      captivait tout le monde par son \xE9l\xE9gance... Mais cette fleur est plus
+      qu'un simple souvenir. M\xE9lang\xE9e avec de l'eau, elle a le pouvoir de restaurer
+      la vie. Un peu comme la pr\xE9sence d'Evelynn qui a un jour raviv\xE9 mon \xE2me."
     m_Metadata:
       m_Items: []
   - m_Id: 49906938020020224
-    m_Localized: "\xC9chinac\xE9e... Une fleur de r\xE9silience subtile. Seule, elle
-      offre un modeste regain d'\xE9nergie, comme une br\xE8ve pause au milieu de
-      l'\xE9puisement. Mais lorsqu'elle est m\xE9lang\xE9e avec de l'eau tonique,
-      son potentiel se d\xE9veloppe, produisant une explosion de force qui perdure,
-      un t\xE9moignage de sa puissance cach\xE9e."
+    m_Localized: "Une fleur de r\xE9silience subtile. Seule, elle offre un modeste
+      regain d'\xE9nergie, comme une br\xE8ve pause au milieu de l'\xE9puisement.
+      Mais lorsqu'elle est m\xE9lang\xE9e avec de l'eau tonique, son potentiel fleurit,
+      offrant une explosion de force qui persiste, un t\xE9moignage de sa puissance
+      cach\xE9e."
     m_Metadata:
       m_Items: []
   - m_Id: 49906897968611328
@@ -98,16 +97,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 49971526598049792
-    m_Localized: Eau Tonique
+    m_Localized: Eau tonique
     m_Metadata:
       m_Items: []
   - m_Id: 49973552979558400
-    m_Localized: "Une boisson \xE0 la fois rafra\xEEchissante et th\xE9rapeutique.
-      Infus\xE9e avec l'essence am\xE8re de la quinine, l'eau tonique \xE9tait autrefois
-      un alli\xE9 n\xE9cessaire dans la lutte contre la fi\xE8vre. Son effervescence,
-      \xE0 la fois vivifiante et piquante, est depuis devenue un symbole de vitalit\xE9.
-      M\xE9lang\xE9e avec les bons \xE9l\xE9ments, elle a le pouvoir de lib\xE9rer
-      des forces cach\xE9es, revitalisant non seulement le corps, mais aussi l'esprit."
+    m_Localized: "Une boisson \xE0 la fois rafra\xEEchissante et m\xE9dicinale. Infus\xE9e
+      de l'essence am\xE8re de la quinine, l'eau tonique fut autrefois un alli\xE9
+      n\xE9cessaire dans la lutte contre la fi\xE8vre. Son effervescence, \xE0 la
+      fois revigorante et piquante, est depuis devenue un symbole de vitalit\xE9.
+      M\xE9lang\xE9e aux bons \xE9l\xE9ments, elle a le pouvoir de r\xE9v\xE9ler
+      des forces cach\xE9es, ravivant non seulement le corps, mais aussi l'esprit."
     m_Metadata:
       m_Items: []
   references:

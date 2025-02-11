@@ -19,14 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: Puoi <color=#93FF7A>USARE</color> le tue <color=#FFB45B>MANI</color>
-      con <color=#75a8ff>"$primary_key"</color> per rompere le <color=#FF4545>SCATOLE</color>.
+    m_Localized: Puoi <color=#C4A000>USARE</color> le tue <color=#D47F36>MANI</color>
+      con <color=#6FB7D6>"$primary_key"</color> per rompere le <color=#9B111E>SCATOLE</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: Tu dovrai <color=#93FF7A>AVERE BISOGNO</color> di <color=#E688FF>olio
-      di gas</color> e <color=#E688FF>fiammiferi</color> per accendere la <color=#FFB45B>LAMPADA
-      A GAS</color>.
+    m_Localized: Puoi <color=#C4A000>USARE</color> le tue <color=#D47F36>MANI</color>
+      con <color=#6FB7D6>"$primary_key"</color> per rompere le <color=#9B111E>SCATOLE</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248

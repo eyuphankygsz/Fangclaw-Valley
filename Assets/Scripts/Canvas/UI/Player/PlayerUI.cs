@@ -44,13 +44,21 @@ public class PlayerUI : MonoBehaviour
 	}
 	public void StartShake(float time)
 	{
+		Debug.Log("StartShake");
 		if (_shakeRoutine != null)
 		{
+			Debug.Log("SHAKEROUTINE STOP");
+
 			_shakeInstance.FadeOut(0);
 			StopCoroutine(_shakeRoutine);
 		}
 
 		_shakeRoutine = StartCoroutine(Shake(time));
+	}
+	public void StopShake()
+	{
+		Debug.Log("SHAKEROUTINE STOP2");
+		_shakeInstance.FadeOut(1);
 	}
 	public void SetShakeStrength(float strength)
 		=> CameraShakerHandler.SetScaleAll(strength, true);
@@ -61,6 +69,7 @@ public class PlayerUI : MonoBehaviour
 		_shakeInstance.Data.SetShakeCanvases(true);
 
 		yield return new WaitForSeconds(time);
-		_shakeInstance.FadeOut(1);
+		if (time != 0)
+			_shakeInstance.FadeOut(1);
 	}
 }

@@ -23,15 +23,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21118500864
-    m_Localized: "Unders\xF8g"
+    m_Localized: Inspektion
     m_Metadata:
       m_Items: []
   - m_Id: 58397474816
-    m_Localized: Kombiner
+    m_Localized: Kombinere
     m_Metadata:
       m_Items: []
   - m_Id: 69260722176
-    m_Localized: Drop
+    m_Localized: Slip
     m_Metadata:
       m_Items: []
   references:

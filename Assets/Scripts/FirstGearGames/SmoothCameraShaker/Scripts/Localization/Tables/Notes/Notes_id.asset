@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_id
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: id
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 60377186304
+    m_Localized: Masuk ke gua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105105244160
+    m_Localized: 'Para Pemimpin Pekerja Tambang yang Terhormat,
+
+      Seperti yang
+      Anda ketahui, saya suka teka-teki. Jadi ini adalah teka-teki untuk menguji
+      kecerdasan Anda!
+
+
+      Untuk membuka rahasia di balik pintu, Anda harus mengambil
+      inspirasi dari kebijaksanaan alam.
+
+
+      Serigala mengejar domba, sementara
+      beruang tetap diam.
+
+
+      Pecahkan arti dari teka-teki ini untuk mengetahui
+      tuas mana yang akan mengungkap jalan ke depan.
+
+
+      Semoga berhasil,
+
+
+      -
+      Dr. Grimshaw'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409683017728
+    m_Localized: Apa yang Tersisa dari Alberto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: 'Alberto telah kehilangan kewarasannya secara bertahap selama dua
+      hari terakhir. Namun, tidak ada yang bisa membayangkan dia akan terjerumus
+      ke dalam kegilaan seperti itu. Dengan pedang yang diambil dari Ruang Peta,
+      dia mengakhiri hidup malang Bush lebih cepat dari yang diharapkan. Setelah
+      kejadian tragis ini, saya secara pribadi mengamankan pintu Ruang Peta. Kami
+      tidak pernah melihat Alberto lagi.
+
+      Untuk memastikan kata sandi panjang
+      itu tidak terlupakan, Grimshaw dan saya merancang sebuah teka-teki kecil:
+
+
+      Lima
+      burung membuat taruhan,
+
+      Mereka berdiskusi tentang berapa banyak kaki
+      yang dimiliki seekor semut.
+
+      Yang pertama menyatakan "tiga",
+
+      Yang
+      ketiga menjawab "sebanyak kita",
+
+      Yang keempat berkata "satu lebih banyak
+      dari yang kedua",
+
+      Dan yang kelima berkata "dua lebih sedikit dari yang
+      keempat".
+
+      Akhirnya, mereka menghitung, dan ternyata burung kedua benar.
+
+
+      Dengan
+      demikian, kami berhasil menyembunyikan kata sandi itu.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136160244580352
+    m_Localized: 'Menu Hari Ini:
+
+
+      Sarapan: Bubur dan sepotong roti keras dengan
+      teh.
+
+      Makan Siang: Tidak ada makan siang, kamu babi gemuk!
+
+      Makan
+      Malam: Kacang panggang dengan sosis dan sepotong keju.
+
+
+      Juga, siapa
+      yang sialan menjatuhkan kunci penyimpanan kecil ke dalam X!? Sekarang kita
+      harus mencari cara untuk membuka X. Saya rasa ada hubungan dengan patung-patung
+      tua yang tidak berguna di sekitar sini.
+
+      Jika kamu menemukan sesuatu
+      yang berguna, tandai itu di peta dekat dapur.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: Misteri dari Not
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: 'Saya mulai percaya bahwa nada dari alat musik mungkin menghasilkan
+      hasil misterius jika dimainkan dalam urutan tertentu. Saya sudah sangat dekat
+      untuk menemukan urutan ini; sayangnya, kertas tempat saya menulis urutan tersebut
+      menghilang secara misterius keesokan harinya.
+
+
+      Kita harus bekerja sama
+      untuk menjelaskan situasi ini dan menemukan kembali urutannya. Setiap kontribusi
+      Anda sangat penting untuk kami memecahkan misteri ini.
+
+
+      Hormat saya,
+
+
+      -
+      Dr. Elara Voss'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: Sebagian dari notasi musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: '(Kedua sisi sobek.)
+
+      I III V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: '(Sisi kanan sobek.)
+
+      IV II I'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(Sisi kiri sobek.)
+
+      II  III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: Saksi Terakhir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: 'Saya sangat sadar bahwa jiwa malang yang menemukan catatan ini
+      juga akan menemukan tubuh saya yang tak bernyawa. Waktu saya semakin pendek!
+      Sepertinya seseorang telah mengubah kunci... Apa yang saya saksikan di sini
+      (bagian ini akan tertulis dengan tulisan yang benar-benar tidak terbaca).
+
+
+      (Di
+      akhir catatan, ada sebuah kata yang jelas ditambahkan kemudian.)
+
+      ''Tangan....'''
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Kuno? Tidak benar-benar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: 'Rekan yang Terhormat,
+
+
+      Struktur-struktur yang saya temui
+      di dalam gua ini terlalu rumit untuk menjadi hasil karya orang-orang kuno biasa.
+      Apakah itu peradaban yang terlupakan atau sesuatu yang jauh lebih maju, tujuannya
+      tetap belum jelas. Jelas bahwa para penambang telah memanfaatkan kembali ruangan-ruangan
+      ini, namun fungsi asli mereka masih belum saya pahami.
+
+
+      Kita harus melanjutkan
+      penyelidikan kita dengan penuh ketelitian.
+
+
+      - Dr. Grimshow'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

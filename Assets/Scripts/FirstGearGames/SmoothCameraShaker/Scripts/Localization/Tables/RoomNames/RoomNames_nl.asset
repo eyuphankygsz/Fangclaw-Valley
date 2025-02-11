@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 15334555648
-    m_Localized: Grot-ingang
+    m_Localized: Grotteningang
     m_Metadata:
       m_Items: []
   - m_Id: 385192476672
@@ -35,11 +35,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 339933025976320
-    m_Localized: Opslagkamerdeur
+    m_Localized: Opslagruimte deur
     m_Metadata:
       m_Items: []
   - m_Id: 694618762375168
-    m_Localized: Klein opslagkamer
+    m_Localized: Kleine opslagruimte
     m_Metadata:
       m_Items: []
   - m_Id: 42839186742624256
@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 42839616772030464
-    m_Localized: Kaartkamer
+    m_Localized: Kaartenkamer
     m_Metadata:
       m_Items: []
   references:

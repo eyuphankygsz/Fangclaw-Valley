@@ -44,7 +44,6 @@ public class EnemyFollow : MonoBehaviour, IEnemyState
 	}
 	public void EnterState()
 	{
-		Debug.Log(gameObject.name);
 		_timeForExitFollow.ResetTime();
 		_timeForExitStunFollow.ResetTime();
 		_timeForExitStuck.ResetTime();

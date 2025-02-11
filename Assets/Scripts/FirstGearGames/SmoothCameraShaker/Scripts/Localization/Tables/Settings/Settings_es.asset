@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Vinculaciones
+    m_Localized: Asignaciones de teclas
     m_Metadata:
       m_Items: []
   - m_Id: 18857117213704192
@@ -91,11 +91,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18857953633419264
-    m_Localized: Cambiar de arma (Siguiente)
+    m_Localized: Cambiar arma (Siguiente)
     m_Metadata:
       m_Items: []
   - m_Id: 18858880167755776
-    m_Localized: Cambiar de arma (Anterior)
+    m_Localized: Cambiar arma (Anterior)
     m_Metadata:
       m_Items: []
   - m_Id: 18859044668358656
@@ -123,7 +123,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859824959897600
-    m_Localized: "Men\xFA de Pausa"
+    m_Localized: "Men\xFA de pausa"
     m_Metadata:
       m_Items: []
   - m_Id: 18863369293578240
@@ -163,8 +163,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912
-    m_Localized: "Tu partida actual ser\xE1 sobrescrita. \xBFQuieres embarcarte en
-      una nueva aventura?"
+    m_Localized: "Tu guardado actual ser\xE1 sobrescrito. \xBFQuieres embarcarte
+      en un nuevo viaje?"
     m_Metadata:
       m_Items: []
   - m_Id: 59149453965312000

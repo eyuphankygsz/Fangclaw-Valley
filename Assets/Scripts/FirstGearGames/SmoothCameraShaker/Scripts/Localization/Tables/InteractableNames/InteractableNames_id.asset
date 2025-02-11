@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_id
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: id
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8691674247249920
+    m_Localized: Tali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: Tali yang kokoh, sangat penting untuk berbagai tugas di tambang,
+      mulai dari mengamankan beban hingga membantu dalam penurunan. Keandalannya
+      hanya tertandingi oleh keserbagunaannya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Dinamit yang terikat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: Sekumpulan batang dinamit yang diikat erat untuk ledakan yang lebih
+      kuat. Sering digunakan dalam operasi pertambangan besar untuk membersihkan
+      area batuan yang luas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lentera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: Kunci kombinasi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Cakram
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Tombol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23509254144
+    m_Localized: Koper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Mesin tik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: Kunci Emas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Brankas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Sakelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: Pintu Kayu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Catatan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Ramuan Kesehatan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: Ramuan Stamina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: Singa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390507608064000
+    m_Localized: Monyet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antelop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: Tengkorak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: "Tengkorak ini tidak mungkin sisa-sisa makhluk biasa. Masing-masing
+      membawa jejak sesuatu yang melampaui manusia. Struktur rahang mereka, rongga
+      mata yang dalam, dan bentuknya menunjuk pada sebuah misteri kuno. Semakin banyak
+      jumlahnya, semakin besar rasa takut dalam diriku\u2014rahasia gelap apa yang
+      mungkin terkubur jauh di tanah ini?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Tangga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: Untuk saat-saat ketika saya harus naik untuk meraih sesuatu yang
+      berada di luar jangkauan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Tumpuan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: Pintu Besi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dinamit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: Bahan peledak ini sering digunakan di tambang. Ini adalah cara peledakan
+      yang mahal dan kuat.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

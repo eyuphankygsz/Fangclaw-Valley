@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Liaisons
+    m_Localized: Raccourcis
     m_Metadata:
       m_Items: []
   - m_Id: 18857117213704192
@@ -87,7 +87,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18857952635174912
-    m_Localized: Scanner
+    m_Localized: "Num\xE9riser"
     m_Metadata:
       m_Items: []
   - m_Id: 18857953633419264
@@ -135,7 +135,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18870332450586624
-    m_Localized: "Activ\xE9"
+    m_Localized: Sur
     m_Metadata:
       m_Items: []
   - m_Id: 18870477401538560
@@ -159,12 +159,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19166236932976640
-    m_Localized: Manette de jeu
+    m_Localized: Manette
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912
-    m_Localized: "Votre sauvegarde actuelle sera \xE9cras\xE9e. Voulez-vous vous
-      lancer dans un nouveau voyage ?"
+    m_Localized: "Votre sauvegarde actuelle sera \xE9cras\xE9e. Voulez-vous commencer
+      un nouveau voyage ?"
     m_Metadata:
       m_Items: []
   - m_Id: 59149453965312000
@@ -172,7 +172,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 59149851304312832
-    m_Localized: Nouvelle Partie
+    m_Localized: Nouveau jeu
     m_Metadata:
       m_Items: []
   - m_Id: 59150189902086144

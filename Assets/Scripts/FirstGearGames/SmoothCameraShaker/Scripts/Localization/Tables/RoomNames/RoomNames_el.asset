@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 15334555648
-    m_Localized: "\u0395\u03AF\u03C3\u03BF\u03B4\u03BF\u03C2 \u03A3\u03C0\u03B7\u03BB\u03B9\u03AC\u03C2"
+    m_Localized: "\u0395\u03AF\u03C3\u03BF\u03B4\u03BF\u03C2 \u03C3\u03C4\u03B7 \u03C3\u03C0\u03B7\u03BB\u03B9\u03AC"
     m_Metadata:
       m_Items: []
   - m_Id: 385192476672
-    m_Localized: "\u039A\u03CD\u03C1\u03B9\u03B1 \u0394\u03C9\u03BC\u03AC\u03C4\u03B9\u03B1"
+    m_Localized: "\u039A\u03CD\u03C1\u03B9\u03B1 \u03B4\u03C9\u03BC\u03AC\u03C4\u03B9\u03B1"
     m_Metadata:
       m_Items: []
   - m_Id: 497885036544
@@ -35,11 +35,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 339933025976320
-    m_Localized: "\u03A0\u03CC\u03C1\u03C4\u03B1 \u0391\u03C0\u03BF\u03B8\u03AE\u03BA\u03B7\u03C2"
+    m_Localized: "\u03A0\u03CC\u03C1\u03C4\u03B1 \u03B1\u03C0\u03BF\u03B8\u03AE\u03BA\u03B7\u03C2"
     m_Metadata:
       m_Items: []
   - m_Id: 694618762375168
-    m_Localized: "\u039C\u03B9\u03BA\u03C1\u03AE \u03B1\u03C0\u03BF\u03B8\u03AE\u03BA\u03B7"
+    m_Localized: "\u039C\u03B9\u03BA\u03C1\u03CC\u03C2 \u03C7\u03CE\u03C1\u03BF\u03C2
+      \u03B1\u03C0\u03BF\u03B8\u03AE\u03BA\u03B7\u03C2"
     m_Metadata:
       m_Items: []
   - m_Id: 42839186742624256

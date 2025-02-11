@@ -19,97 +19,100 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 60377186304
-    m_Localized: "Entr\xE9e de la grotte\r"
+    m_Localized: "Entr\xE9e de la grotte"
     m_Metadata:
       m_Items: []
   - m_Id: 105105244160
-    m_Localized: "Chers dirigeants des mineurs,\n\nComme vous le savez, j'ai un faible
-      pour les \xE9nigmes. Alors en voici une qui mettra votre esprit \xE0 l'\xE9preuve
-      !\n\nPour d\xE9verrouiller les secrets derri\xE8re la porte, vous devez vous
-      inspirer de la sagesse de la nature.\n\nLe loup poursuit le mouton, tandis
-      que l'ours reste immobile.\n\nD\xE9m\xEAlez la signification de cette \xE9nigme
+    m_Localized: "Chers leaders des mineurs,\n\nComme vous le savez, j'ai un faible
+      pour les \xE9nigmes. Voici donc une pour mettre votre esprit \xE0 l'\xE9preuve
+      !\n\nPour d\xE9couvrir les secrets derri\xE8re la porte, vous devez puiser
+      votre inspiration dans la sagesse de la nature.\n\nLe loup chasse le mouton,
+      tandis que l'ours reste immobile.\n\nD\xE9chiffrez le sens de cette \xE9nigme
       pour d\xE9couvrir quels leviers r\xE9v\xE9leront le chemin \xE0 suivre.\n\nBonne
       chance,\n\n- Dr. Grimshaw"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "Menu du jour:\n\n\nPetit D\xE9jeuner: Bouillie d'avoine et une
-      tranche de pain dur avec du th\xE9.\n\nD\xE9jeuner: Rago\xFBt de pommes de
-      terre et de viande, avec des cornichons et du pain.\n\nD\xEEner: Haricots cuits
-      au four avec saucisse et un morceau de fromage."
+    m_Localized: "Menu du jour :\n\nPetit-d\xE9jeuner : Bouillie et une tranche de
+      pain dur avec du th\xE9.\nD\xE9jeuner : Pas de d\xE9jeuner, vous gros cochons
+      !\nD\xEEner : Haricots cuits au four avec saucisse et un morceau de fromage.\n\nAussi,
+      qui a foutu la cl\xE9 du petit stockage dans le putain de X!? Maintenant, on
+      doit trouver comment ouvrir X. Je pense qu'il y a une connexion avec ces vieilles
+      statues inutiles autour.\nSi tu trouves quelque chose d'utile, marque-le sur
+      la carte pr\xE8s de la cuisine."
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
-    m_Localized: Ce Qui Reste d'Alberto
+    m_Localized: Ce qui reste d'Alberto
     m_Metadata:
       m_Items: []
   - m_Id: 437633859584
-    m_Localized: "Alberto perdait progressivement sa raison au cours des deux derniers
-      jours. Pourtant, personne n'aurait pu imaginer qu'il sombrerait dans une telle
-      folie. Avec une \xE9p\xE9e prise dans la Salle des Cartes, il mit pr\xE9matur\xE9ment
-      fin \xE0 la vie du pauvre Bush. Apr\xE8s cet incident tragique, j'ai personnellement
-      s\xE9curis\xE9 les portes de la Salle des Cartes. Nous n'avons plus jamais
-      vu Alberto.\n\nPour garantir que le long mot de passe ne soit pas oubli\xE9,
-      Grimshaw et moi avons con\xE7u une petite \xE9nigme :\n\nCinq oiseaux avaient
-      fait un pari,\nIls d\xE9battaient du nombre de pattes d'une fourmi.\nLe premier
-      d\xE9clara \"trois\",\nLe troisi\xE8me r\xE9pondit \"autant que les n\xF4tres\",\nLe
-      quatri\xE8me dit \"un de plus que le deuxi\xE8me\",\nEt le cinqui\xE8me dit
-      \"deux de moins que le quatri\xE8me\".\nFinalement, ils ont compt\xE9, et il
-      s'est av\xE9r\xE9 que le deuxi\xE8me oiseau avait raison.\n\nAinsi, nous avons
-      r\xE9ussi \xE0 dissimuler le mot de passe."
+    m_Localized: "Alberto avait progressivement perdu sa raison au cours des deux
+      derniers jours. Pourtant, personne n\u2019aurait pu imaginer qu\u2019il plongerait
+      dans une telle folie. Avec une \xE9p\xE9e prise dans la Salle des Cartes, il
+      mit pr\xE9matur\xE9ment fin \xE0 la vie du pauvre Bush. Apr\xE8s cet incident
+      tragique, j\u2019ai personnellement s\xE9curis\xE9 les portes de la Salle des
+      Cartes. Nous n\u2019avons jamais revu Alberto.\n\nAfin de nous assurer que
+      le long mot de passe ne soit pas oubli\xE9, Grimshaw et moi avons invent\xE9
+      une petite devinette :\n\nCinq oiseaux avaient fait un pari,\nIls d\xE9battaient
+      sur le nombre de pattes d\u2019une fourmi.\nLe premier d\xE9clara \"trois\",\nLe
+      troisi\xE8me r\xE9pondit \"autant que nous\",\nLe quatri\xE8me dit \"un de
+      plus que le deuxi\xE8me\",\nEt le cinqui\xE8me dit \"deux de moins que le quatri\xE8me\".\nFinalement,
+      ils compt\xE8rent et il s\u2019av\xE9ra que le deuxi\xE8me oiseau avait raison.\n\nAinsi,
+      nous r\xE9uss\xEEmes \xE0 dissimuler le mot de passe."
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
     m_Localized: "Je suis venue \xE0 croire que les notes de l'instrument de musique
-      peuvent produire un r\xE9sultat myst\xE9rieux lorsqu'elles sont jou\xE9es dans
-      un ordre sp\xE9cifique. J'\xE9tais assez proche de d\xE9couvrir cette s\xE9quence;
-      malheureusement, le papier sur lequel j'avais \xE9crit l'ordre a myst\xE9rieusement
+      peuvent donner un r\xE9sultat myst\xE9rieux lorsqu'elles sont jou\xE9es dans
+      un ordre sp\xE9cifique. J'\xE9tais sur le point de d\xE9couvrir cette s\xE9quence
+      ; malheureusement, le papier sur lequel j'avais \xE9crit l'ordre a myst\xE9rieusement
       disparu le lendemain.\n\nNous devons travailler ensemble pour clarifier cette
-      situation et red\xE9couvrir la s\xE9quence. Chacune de vos contributions est
-      cruciale pour r\xE9soudre ce myst\xE8re.\n\nCordialement,\n\n- Dr. Elara Voss"
+      situation et red\xE9couvrir la s\xE9quence. Chacun de vos apports est essentiel
+      pour r\xE9soudre ce myst\xE8re.\n\nCordialement,\n\n- Dr. Elara Voss"
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680
-    m_Localized: "Le Myst\xE8re des Notes"
+    m_Localized: "Le myst\xE8re des notes"
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: Une Partie Des Notes Musicales
+    m_Localized: Une partie des notes musicales
     m_Metadata:
       m_Items: []
   - m_Id: 11580552528445440
-    m_Localized: "(D\xE9chir\xE9e des deux c\xF4t\xE9s.)\nI  III  V"
+    m_Localized: "(Les deux c\xF4t\xE9s d\xE9chir\xE9s.)\nI III V"
     m_Metadata:
       m_Items: []
   - m_Id: 11591077547130880
-    m_Localized: "(D\xE9chir\xE9e du c\xF4t\xE9 droit.)\nIV  II  I "
+    m_Localized: "(C\xF4t\xE9 droit d\xE9chir\xE9.)\nIV  II  I "
     m_Metadata:
       m_Items: []
   - m_Id: 11592266523262976
-    m_Localized: "(D\xE9chir\xE9e du c\xF4t\xE9 gauche.)\nII  III IV"
+    m_Localized: "(C\xF4t\xE9 gauche d\xE9chir\xE9.)\nII  III IV"
     m_Metadata:
       m_Items: []
   - m_Id: 11616544182419456
-    m_Localized: "Le Dernier T\xE9moin"
+    m_Localized: "Le dernier t\xE9moin"
     m_Metadata:
       m_Items: []
   - m_Id: 11619318483828736
-    m_Localized: "Je suis terriblement conscient que l'\xE2me malheureuse qui tombera
-      sur cette note d\xE9couvrira \xE9galement mon corps sans vie. Mon temps s'\xE9coule
-      dangereusement vite ! Il semble que quelqu'un ait modifi\xE9 les serrures...
-      Ce que j'ai vu ici (cette partie sera inscrite dans un gribouillage compl\xE8tement
-      illisible).\n\n(A la fin de la note, il y a un mot qui a manifestement \xE9t\xE9
+    m_Localized: "Je suis terriblement conscient que l'\xE2me malheureuse qui tombe
+      sur cette note d\xE9couvrira \xE9galement mon corps sans vie. Mon temps devient
+      dangereusement court ! Il semble que quelqu'un ait modifi\xE9 les serrures...
+      Ce que j'ai vu ici (cette partie sera inscrite dans une \xE9criture totalement
+      illisible).\n\n(\xC0 la fin de la note, il y a un mot qui a apparemment \xE9t\xE9
       ajout\xE9 plus tard.)\n'Mains....'"
     m_Metadata:
       m_Items: []
   - m_Id: 11659034495205376
-    m_Localized: "Cher et estim\xE9 coll\xE8gue,\n\nLes structures que j'ai rencontr\xE9es
-      dans cette grotte sont bien trop complexes pour \xEAtre l'\u0153uvre d'un simple
-      peuple ancien. Qu'il s'agisse d'une civilisation oubli\xE9e ou de quelque chose
-      de bien plus avanc\xE9, leur objectif reste insaisissable. Il est \xE9vident
-      que les mineurs ont r\xE9utilis\xE9 ces chambres, mais leur fonction premi\xE8re
-      me reste incompr\xE9hensible.\n\nNous devons poursuivre nos recherches avec
-      la plus grande diligence.\n\n- Dr. Grimshow"
+    m_Localized: "Cher Coll\xE8gue,\n\nLes structures que j'ai rencontr\xE9es dans
+      cette caverne sont beaucoup trop complexes pour \xEAtre l'\u0153uvre de simples
+      anciens. Qu'il s'agisse d'une civilisation oubli\xE9e ou de quelque chose de
+      bien plus avanc\xE9, leur but demeure insaisissable. Il est \xE9vident que
+      les mineurs ont r\xE9utilis\xE9 ces chambres, mais leur fonction initiale m'\xE9chappe.\n\nNous
+      devons poursuivre notre enqu\xEAte avec la plus grande diligence.\n\n- Dr.
+      Grimshow"
     m_Metadata:
       m_Items: []
   - m_Id: 11659020779831296

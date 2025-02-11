@@ -32,10 +32,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1820513609629696
     m_Localized: "Diese Sch\xE4del k\xF6nnen keine \xDCberreste gew\xF6hnlicher Wesen
-      sein. Jeder tr\xE4gt Spuren von etwas \xDCbermenschlichem. Ihre Kieferstrukturen,
-      tiefen Augenh\xF6hlen und Formen deuten auf ein altes Geheimnis hin. Mit der
-      Zunahme ihrer Zahl w\xE4chst auch die Angst in mir \u2013 welches dunkle Geheimnis
-      k\xF6nnte tief in diesem Land vergraben sein?"
+      sein. Jeder von ihnen tr\xE4gt Spuren von etwas, das \xFCber das Menschliche
+      hinausgeht. Ihre Kieferstrukturen, tiefen Augenh\xF6hlen und Formen weisen
+      auf ein uraltes Geheimnis hin. Mit ihrer zunehmenden Zahl w\xE4chst auch die
+      Angst in mir \u2013 welches dunkle Geheimnis k\xF6nnte tief in diesen L\xE4ndern
+      verborgen liegen?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832
@@ -43,12 +44,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: "F\xFCr die Zeiten, in denen ich hinaufsteigen muss, um das zu ergreifen,
+    m_Localized: "F\xFCr jene Momente, in denen ich aufsteigen muss, um zu greifen,
       was gerade au\xDFerhalb meiner Reichweite liegt."
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
-    m_Localized: Podest
+    m_Localized: Sockel
     m_Metadata:
       m_Items: []
   - m_Id: 5519764290191360
@@ -60,8 +61,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: "Dieses Explosivmittel wird h\xE4ufig in den Minen eingesetzt. Es
-      ist ein teures und wirkungsvolles Mittel zur Detonation."
+    m_Localized: "Dieser Sprengstoff wird oft in den Minen eingesetzt. Es ist ein
+      teures und m\xE4chtiges Mittel zur Detonation."
     m_Metadata:
       m_Items: []
   - m_Id: 23509254144
@@ -93,7 +94,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 386463179128832
-    m_Localized: Gesundheitstrank
+    m_Localized: Heiltrank
     m_Metadata:
       m_Items: []
   - m_Id: 386709376385024
@@ -109,9 +110,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: "Ein robustes Seil, das f\xFCr verschiedene Aufgaben in den Minen
-      unerl\xE4sslich ist, von der Befestigung von Lasten bis hin zur Unterst\xFCtzung
-      beim Abstieg. Seine Zuverl\xE4ssigkeit ist nur mit seiner Vielseitigkeit vergleichbar."
+    m_Localized: "Ein stabiles Seil, unerl\xE4sslich f\xFCr verschiedene Aufgaben
+      in den Minen \u2013 vom Sichern von Lasten bis zur Unterst\xFCtzung beim Abstieg.
+      Seine Zuverl\xE4ssigkeit wird nur durch seine Vielseitigkeit \xFCbertroffen."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
@@ -120,8 +121,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 8695997194747904
     m_Localized: "Ein B\xFCndel Dynamitstangen, fest zusammengebunden f\xFCr eine
-      kraftvollere Explosion. H\xE4ufig in gr\xF6\xDFeren Bergbauoperationen verwendet,
-      um gro\xDFe Fl\xE4chen Gestein zu r\xE4umen."
+      st\xE4rkere Explosion. Wird oft in gro\xDFen Bergbauoperationen verwendet,
+      um gro\xDFe Felsbereiche zu r\xE4umen."
     m_Metadata:
       m_Items: []
   - m_Id: 9048642019311616
@@ -129,11 +130,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
-    m_Localized: Kombinationsschloss
+    m_Localized: Zahlenschloss
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328
     m_Localized: Scheibe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Knopf
     m_Metadata:
       m_Items: []
   references:

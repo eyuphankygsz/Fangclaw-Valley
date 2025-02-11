@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 15334555648
-    m_Localized: Entrada de la Cueva
+    m_Localized: Entrada de la cueva
     m_Metadata:
       m_Items: []
   - m_Id: 385192476672
-    m_Localized: Sala Principal
+    m_Localized: Sala principal
     m_Metadata:
       m_Items: []
   - m_Id: 497885036544
@@ -35,11 +35,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 339933025976320
-    m_Localized: Puerta Del Trastero
+    m_Localized: Puerta de la sala de almacenamiento
     m_Metadata:
       m_Items: []
   - m_Id: 694618762375168
-    m_Localized: "Peque\xF1o trastero\r"
+    m_Localized: "Peque\xF1a sala de almacenamiento"
     m_Metadata:
       m_Items: []
   - m_Id: 42839186742624256

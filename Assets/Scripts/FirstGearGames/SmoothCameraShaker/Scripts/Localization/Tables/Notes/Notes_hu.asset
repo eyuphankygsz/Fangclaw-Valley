@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_hu
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: hu
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 60377186304
+    m_Localized: "Barlang bej\xE1rata"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105105244160
+    m_Localized: "Kedves B\xE1ny\xE1szvezet\u0151k!\n\nMint tudj\xE1tok, szeretem
+      a rejtv\xE9nyeket. \xCDme egy, hogy pr\xF3b\xE1ra tegyem a lelem\xE9nyess\xE9geteket!\n\nA
+      titkok felt\xE1r\xE1s\xE1hoz a ajt\xF3 m\xF6g\xF6tt, a term\xE9szet b\xF6lcsess\xE9g\xE9b\u0151l
+      kell inspir\xE1ci\xF3t mer\xEDtenetek.\n\nA farkas \xFCld\xF6zi a juhot, m\xEDg
+      a medve mozdulatlan marad.\n\nFejts\xE9tek meg a rejtv\xE9ny jelent\xE9s\xE9t,
+      hogy felfedezhess\xE9tek, mely karok nyitj\xE1k meg az utat el\u0151re.\n\nSok
+      szerencs\xE9t!\n\n- Dr. Grimshaw"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409683017728
+    m_Localized: "Mi maradt Albert\xF3b\xF3l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: "Alberto az elm\xFAlt k\xE9t napban fokozatosan elvesztette a j\xF3zan
+      esz\xE9t. M\xE9gis, senki sem gondolta volna, hogy ilyen \u0151r\xFCletbe s\xFCllyed.
+      Egy karddal, amit a T\xE9rk\xE9pszob\xE1b\xF3l hozott, id\u0151 el\u0151tt
+      v\xE9get vetett a szeg\xE9ny Bush \xE9let\xE9nek. Ezt a tragikus esem\xE9nyt
+      k\xF6vet\u0151en szem\xE9lyesen z\xE1rtam le a T\xE9rk\xE9pszoba ajt\xF3it.
+      Soha t\xF6bb\xE9 nem l\xE1ttuk Alberto-t.\n\nAnnak \xE9rdek\xE9ben, hogy a
+      hossz\xFA jelsz\xF3 ne mer\xFClj\xF6n feled\xE9sbe, Grimshaw \xE9s \xE9n egy
+      kis rejtv\xE9nyt tal\xE1ltunk ki:\n\n\xD6t mad\xE1r tett egy fogad\xE1st,\nArr\xF3l
+      vitatkoztak, h\xE1ny l\xE1ba van egy hangy\xE1nak.\nAz els\u0151 kijelentette:
+      \u201Eh\xE1rom\u201D,\nA harmadik v\xE1laszolt: \u201Eannyit, mint nek\xFCnk\u201D,\nA
+      negyedik mondta: \u201Eegy t\xF6bb, mint a m\xE1sodiknak\u201D,\nAz \xF6t\xF6dik
+      mondta: \u201Ekett\u0151 kevesebb, mint a negyediknek\u201D.\nV\xE9g\xFCl megsz\xE1molt\xE1k,
+      \xE9s kider\xFClt, hogy a m\xE1sodik mad\xE1rnak volt igaza.\n\n\xCDgy siker\xFClt
+      elrejteni a jelsz\xF3t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136160244580352
+    m_Localized: "A napi men\xFC:\n\nReggeli: K\xE1sa \xE9s egy szelet kem\xE9ny
+      keny\xE9r te\xE1val.\nEb\xE9d: Nincs eb\xE9d, ti k\xF6v\xE9r diszn\xF3k!\nVacsora:
+      S\xFClt bab kolb\xE1sszal \xE9s egy darab sajttal.\n\n\xC9s ki a fene ejtette
+      el a kis t\xE1rol\xF3 kulcs\xE1t a fszba!? Most ki kell der\xEDten\xFCnk, hogyan
+      nyissuk ki a fsz X-t. Szerintem valami kapcsolat van azokkal a r\xE9gi haszontalan
+      szobrokkal k\xF6r\xFCl\xF6tte.\nHa tal\xE1lsz valami hasznosat, jel\xF6ld meg
+      a t\xE9rk\xE9pen a konyha k\xF6zel\xE9ben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: A jegyek titka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: "\xDAgy hiszem, hogy a hangszer hangjai titokzatos eredm\xE9nyt
+      hozhatnak, ha egy adott sorrendben j\xE1tssz\xE1k \u0151ket. Nagyon k\xF6zel
+      voltam a sorrend felfedez\xE9s\xE9hez; sajnos a pap\xEDr, amelyre fel\xEDrtam
+      a sorrendet, titokzatos m\xF3don elt\u0171nt a k\xF6vetkez\u0151 napon.\n\nEgy\xFCtt
+      kell dolgoznunk, hogy tiszt\xE1zzuk a helyzetet, \xE9s \xFAjra felfedezz\xFCk
+      a sorrendet. Minden hozz\xE1j\xE1rul\xE1sotok kulcsfontoss\xE1g\xFA a rejt\xE9ly
+      megold\xE1s\xE1ban.\n\nTisztelettel,\n\n- Dr. Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: "A zenei jegyek egy r\xE9sze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: '(Az egyik oldal is szakadt.)
+
+      I III V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: '(A jobb oldal szakadt.)
+
+      IV II I'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(A bal oldal szakadt.)
+
+      II  III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: "Az utols\xF3 tan\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Sz\xF6rnyen tiszt\xE1ban vagyok azzal, hogy a szerencs\xE9tlen
+      l\xE9lek, aki r\xE1tal\xE1l erre a jegyzetre, a holt testemet is megtal\xE1lja.
+      Az id\u0151m vesz\xE9lyesen r\xF6vid! \xDAgy t\u0171nik, valaki megv\xE1ltoztatta
+      a z\xE1rakat... Amit itt tan\xFAskodtam (ezt a r\xE9szt teljesen olvashatatlan
+      \xEDr\xE1ssal fogj\xE1k r\xF6gz\xEDteni).\n\n(Az utols\xF3 r\xE9sz\xE9n egy
+      sz\xF3 tal\xE1lhat\xF3, amely nyilv\xE1nval\xF3an k\xE9s\u0151bb lett hozz\xE1adva.)\n'Kezeik....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: "\u0150si? Nem igaz\xE1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "Tisztelt Koll\xE9ga,\n\nAzok a strukt\xFAr\xE1k, amelyeket ebben
+      a barlangban tal\xE1ltam, t\xFAl bonyolultak ahhoz, hogy egyszer\u0171 \u0151si
+      emberek munk\xE1j\xE1nak eredm\xE9nyei legyenek. Ak\xE1r egy elfeledett civiliz\xE1ci\xF3r\xF3l,
+      ak\xE1r valami sokkal fejlettebb dologr\xF3l van sz\xF3, azok c\xE9lja m\xE9g
+      mindig rejt\xE9lyes. Nyilv\xE1nval\xF3, hogy a b\xE1ny\xE1szok \xFAjrahasznos\xEDtott\xE1k
+      ezeket a helyis\xE9geket, de azok eredeti funkci\xF3ja elker\xFCli a meg\xE9rt\xE9sem.\n\nA
+      vizsg\xE1latunkat a legnagyobb gondoss\xE1ggal kell folytatnunk.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

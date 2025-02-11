@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18858880167755776
-    m_Localized: Waffe wechseln (Vorherige)
+    m_Localized: Waffe wechseln (Vorherig)
     m_Metadata:
       m_Items: []
   - m_Id: 18859044668358656
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859824959897600
-    m_Localized: "Pausemen\xFC"
+    m_Localized: "Pausenmen\xFC"
     m_Metadata:
       m_Items: []
   - m_Id: 9919709184
@@ -139,7 +139,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18870332450586624
-    m_Localized: Ein
+    m_Localized: An
     m_Metadata:
       m_Items: []
   - m_Id: 18854436076175360
@@ -159,7 +159,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Bindungen
+    m_Localized: Tastenbelegungen
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912

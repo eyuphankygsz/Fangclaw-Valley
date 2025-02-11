@@ -19,15 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: Je kunt <color=#93FF7A>GEBRUIKEN</color> je <color=#FFB45B>HANDEN</color>
-      met <color=#75a8ff>"$primary_key"</color> om de <color=#FF4545>KRATTEN</color>
-      kapot te maken.
+    m_Localized: Je kunt je <color=#D47F36>HANDEN</color> <color=#C4A000>GEBRUIKEN</color>
+      met <color=#6FB7D6>"$primary_key"</color> om de <color=#9B111E>DOZEN</color>
+      te breken.
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: Gij zult <color=#93FF7A>VEREISEN</color> <color=#E688FF>gasolie</color>
-      en <color=#E688FF>lucifers</color> om de <color=#FFB45B>GASLAMP</color> aan
-      te steken.
+    m_Localized: Je kunt je <color=#D47F36>HANDEN</color> <color=#C4A000>GEBRUIKEN</color>
+      met <color=#6FB7D6>"$primary_key"</color> om de <color=#9B111E>DOZEN</color>
+      te breken.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248

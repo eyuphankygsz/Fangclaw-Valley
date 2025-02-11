@@ -19,13 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "<color=#93FF7A>\"$primary_key\"</color> ile <color=#FFB45B>ELLER\u0130N\u0130</color>
-      kullanarak <color=#FF4545>KUTULARI</color> k\u0131rabilirsin."
+    m_Localized: "<color=#9B111E>KUTULARI</color> k\u0131rmak i\xE7in <color=#6FB7D6>\"$primary_key\"</color>
+      ile <color=#D47F36>ELLER\u0130N\u0130</color> <color=#C4A000>KULLANAB\u0130L\u0130RS\u0130N</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "<color=#93FF7A>GAZ LAMBASINI</color> yakmak i\xE7in <color=#E688FF>gaz
-      ya\u011F\u0131</color> ve <color=#E688FF>kibrit</color> gerekir."
+    m_Localized: "<color=#9B111E>KUTULARI</color> k\u0131rmak i\xE7in <color=#6FB7D6>\"$primary_key\"</color>
+      ile <color=#D47F36>ELLER\u0130N\u0130</color> <color=#C4A000>KULLANAB\u0130L\u0130RS\u0130N</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248

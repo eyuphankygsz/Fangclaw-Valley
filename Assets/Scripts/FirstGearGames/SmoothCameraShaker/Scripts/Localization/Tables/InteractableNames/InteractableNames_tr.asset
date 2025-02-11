@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 23509254144
-    m_Localized: Valiz
+    m_Localized: Bavul
     m_Metadata:
       m_Items: []
   - m_Id: 91834466304
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 131315449856
-    m_Localized: Anahtar
+    m_Localized: "\u015Ealter"
     m_Metadata:
       m_Items: []
   - m_Id: 134763167744
@@ -51,7 +51,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 386709376385024
-    m_Localized: "Dayan\u0131kl\u0131l\u0131k \u0130ksiri"
+    m_Localized: "Stamina \u0130ksiri"
     m_Metadata:
       m_Items: []
   - m_Id: 390466071871488
@@ -71,13 +71,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
-    m_Localized: "Bu kafataslar\u0131, s\u0131radan varl\u0131klar\u0131n kal\u0131nt\u0131lar\u0131
-      olamaz. Her biri, insan \xF6tesi bir g\xFCc\xFCn izlerini ta\u015F\u0131yor.
-      \xC7ene yap\u0131lar\u0131, derin g\xF6z \xE7ukurlar\u0131 ve bi\xE7imlerinin
-      bir t\xFCr kadim bilinmezli\u011Fe i\u015Faret etti\u011Fi a\xE7\u0131k. Bu
-      nesnelerin say\u0131s\u0131 artt\u0131k\xE7a, i\xE7imdeki korku da b\xFCy\xFCyor;
-      ne t\xFCr bir karanl\u0131k s\u0131r bu topraklar\u0131n derinliklerine g\xF6m\xFClm\xFC\u015F
-      olabilir?"
+    m_Localized: "Bu kafataslar\u0131 s\u0131radan varl\u0131klar\u0131n kal\u0131nt\u0131lar\u0131
+      olamaz. Her biri insan \xF6tesi bir \u015Feyin izlerini ta\u015F\u0131yor.
+      \xC7ene yap\u0131lar\u0131, derin g\xF6z \xE7ukurlar\u0131 ve \u015Fekilleri
+      kadim bir gizemi i\u015Faret ediyor. Say\u0131lar\u0131 artt\u0131k\xE7a i\xE7imdeki
+      korku da b\xFCy\xFCyor\u2014bu topraklar\u0131n derinliklerine g\xF6m\xFCl\xFC
+      hangi karanl\u0131k s\u0131r yat\u0131yor olabilir?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832
@@ -85,8 +84,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: "Eri\u015Femedi\u011Fimde objelere ula\u015Fmak i\xE7in t\u0131rmanmam
-      gereken zamanlar i\xE7in."
+    m_Localized: "Eri\u015Femedi\u011Fim \u015Feyleri kavramak i\xE7in t\u0131rmanmam
+      gereken anlar i\xE7in."
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
@@ -102,8 +101,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: "Bu patlay\u0131c\u0131, madenlerde s\u0131k\xE7a kullan\u0131l\u0131r.
-      Pahal\u0131 ve g\xFC\xE7l\xFC bir patlay\u0131c\u0131d\u0131r."
+    m_Localized: "Bu patlay\u0131c\u0131 madde, madenlerde s\u0131kl\u0131kla kullan\u0131l\u0131r.
+      Pahal\u0131 ve g\xFC\xE7l\xFC bir patlatma arac\u0131d\u0131r."
     m_Metadata:
       m_Items: []
   - m_Id: 8691674247249920
@@ -111,20 +110,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: "Madende y\xFCkleri sabitlemekten ini\u015Flere yard\u0131mc\u0131
-      olmaya kadar bir\xE7ok i\u015F i\xE7in vazge\xE7ilmez sa\u011Flam bir halat.
-      Dayan\u0131kl\u0131l\u0131\u011F\u0131, \xE7ok y\xF6nl\xFCl\xFC\u011F\xFC ile
+    m_Localized: "Sa\u011Flam bir halat, madende y\xFCkleri sabitlemekten ini\u015Flere
+      yard\u0131mc\u0131 olmaya kadar \xE7e\u015Fitli g\xF6revler i\xE7in vazge\xE7ilmezdir.
+      G\xFCvenilirli\u011Fi, yaln\u0131zca \xE7ok y\xF6nl\xFCl\xFC\u011F\xFC ile
       e\u015Fde\u011Ferdir."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: "Paketlenmi\u015F Dinamit"
+    m_Localized: "Ba\u011Flanm\u0131\u015F Dinamit"
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
     m_Localized: "Daha g\xFC\xE7l\xFC bir patlama i\xE7in s\u0131k\u0131ca ba\u011Flanm\u0131\u015F
-      dinamit \xE7ubuklar\u0131. Genellikle geni\u015F kaya alanlar\u0131n\u0131
-      temizlemek i\xE7in b\xFCy\xFCk madencilik operasyonlar\u0131nda kullan\u0131l\u0131r."
+      bir dinamit demeti. Genellikle geni\u015F kaya alanlar\u0131n\u0131 temizlemek
+      i\xE7in b\xFCy\xFCk madencilik operasyonlar\u0131nda kullan\u0131l\u0131r."
     m_Metadata:
       m_Items: []
   - m_Id: 9048642019311616
@@ -132,11 +131,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
-    m_Localized: Kombinasyonlu Kilit
+    m_Localized: Kombinasyon Kilidi
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328
     m_Localized: Disk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Buton
     m_Metadata:
       m_Items: []
   references:

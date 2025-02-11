@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8691674247249920
+    m_Localized: "K\xF6ysi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "Vankka k\xF6ysi, joka on v\xE4ltt\xE4m\xE4t\xF6n moniin teht\xE4viin
+      kaivoksessa, kuten kuormien kiinnitt\xE4miseen ja laskeutumisen avustamiseen.
+      Sen luotettavuus on verrattavissa vain sen monik\xE4ytt\xF6isyyteen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Niputettu Dynamiitti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "Nippu dynamiittip\xF6tk\xF6j\xE4, tiukasti sidottuna voimakkaampaa
+      r\xE4j\xE4hdyst\xE4 varten. K\xE4ytet\xE4\xE4n usein suuremmissa kaivosoperaatioissa
+      laajojen kalliomassojen raivaamiseen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lyhty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: "Yhdistelm\xE4lukko"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Levy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Nappi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23509254144
+    m_Localized: Matkalaukku
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Kirjoituskone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: Kultainen avain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Holvi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Kytkin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: Puinen ovi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Muistiinpano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Terveysjuoma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: "Kest\xE4vyysjuoma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: Leijona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390507608064000
+    m_Localized: Apina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antilooppi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: Kallo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: "N\xE4m\xE4 kallot eiv\xE4t voi olla tavallisten olentojen j\xE4\xE4nteit\xE4.
+      Jokainen kantaa merkkej\xE4 jostakin, mik\xE4 ylitt\xE4\xE4 inhimillisen. Niiden
+      leukarakenteet, syv\xE4t silm\xE4kuopat ja muodot viittaavat muinaiseen mysteeriin.
+      Mit\xE4 enemm\xE4n niit\xE4 l\xF6ytyy, sit\xE4 suuremmaksi kasvaa pelkoni \u2013
+      millainen synkk\xE4 salaisuus voi olla k\xE4tkettyn\xE4 n\xE4iden maiden syvyyksiin?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Tikkaat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "Niille hetkille, kun minun on kiivett\xE4v\xE4 tavoittaakseni sen,
+      mik\xE4 on juuri ulottumattomissa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Jalusta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: Rautainen ovi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamiitti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: "T\xE4t\xE4 r\xE4j\xE4hdett\xE4 k\xE4ytet\xE4\xE4n usein kaivoksissa.
+      Se on kallis ja voimakas r\xE4j\xE4ytysmenetelm\xE4."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

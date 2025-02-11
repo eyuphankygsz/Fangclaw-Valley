@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -12,10 +13,24 @@ public class SubtitlesSetting : Setting
 	[SerializeField]
 	private LocalizedString _on, _off;
 
+	private void OnEnable()
+	{
+		_text.text = _tempIsOn ? _on.GetLocalizedString() : _off.GetLocalizedString();
+	}
 	public void Change()
 	{
 		_tempIsOn = !_tempIsOn;
-		_text.text = _isOn ? _on.GetLocalizedString() : _off.GetLocalizedString();
+		_text.text = _tempIsOn ? _on.GetLocalizedString() : _off.GetLocalizedString();
+	}
+	public override void UpdateString()
+	{
+		_text.text = _tempIsOn ? _on.GetLocalizedString() : _off.GetLocalizedString();
+	}
+
+	private IEnumerator ChangeString()
+	{
+		StartCoroutine(ChangeString());
+		yield return new WaitForSeconds(0.2f);
 	}
 
 	public override void Load()

@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 60377186304
+    m_Localized: "Luolan sis\xE4\xE4nk\xE4ynti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105105244160
+    m_Localized: "Hyv\xE4t kaivosty\xF6ntekij\xF6iden johtajat,\n\nKuten tied\xE4tte,
+      pid\xE4n arvoituksista. T\xE4ss\xE4 on yksi haastamaan \xE4lynne!\n\nAvataksenne
+      oven takana olevat salaisuudet, teid\xE4n on otettava inspiraatiota luonnon
+      viisaudesta.\n\nSusi jahtaa lammasta, kun taas karhu pysyy liikkumattomana.\n\nRatkaiskaa
+      t\xE4m\xE4n arvoituksen merkitys l\xF6yt\xE4\xE4ksenne viput, jotka paljastavat
+      tien eteenp\xE4in.\n\nOnnea,\n\n- Dr. Grimshaw"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409683017728
+    m_Localized: "Mik\xE4 j\xE4i Albertosta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: "Alberto oli menett\xE4nyt j\xE4rkens\xE4 viimeisten kahden p\xE4iv\xE4n
+      aikana. Kuitenkin kukaan ei olisi voinut kuvitella, ett\xE4 h\xE4n vajosi n\xE4in
+      syv\xE4lle mielett\xF6myyteen. Miekan, joka oli otettu Karttaruokalasta, avulla
+      h\xE4n p\xE4\xE4tti k\xF6yh\xE4n Bushin el\xE4m\xE4n ennen aikojaan. T\xE4m\xE4n
+      j\xE4rkytt\xE4v\xE4n tapauksen j\xE4lkeen suljin henkil\xF6kohtaisesti Karttaruokalassa
+      olevat ovet. Emme n\xE4hneet Albertoa en\xE4\xE4 koskaan.\n\nVarmistaaksemme,
+      ettei pitk\xE4 salasana unohtuisi, Grimshaw ja min\xE4 keksimme pienen arvoituksen:\n\nViisi
+      lintua oli tehnyt vedon, Ne keskustelivat siit\xE4, kuinka monta jalkaa muurahaisella
+      on. Ensimm\xE4inen julisti \u201Ckolme\u201D, Kolmas vastasi \u201Cniin monta
+      kuin meill\xE4\u201D, Nelj\xE4s sanoi \u201Cyksi enemm\xE4n kuin toisella\u201D,
+      Ja viides sanoi \u201Ckaksi v\xE4hemm\xE4n kuin nelj\xE4nnell\xE4.\u201D Lopulta
+      ne laskivat, ja k\xE4vi ilmi, ett\xE4 toinen lintu oli oikeassa.\n\nN\xE4in
+      onnistumme piilottamaan salasanan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136160244580352
+    m_Localized: "T\xE4m\xE4n p\xE4iv\xE4n ruokalista:\n\nAamiainen: Puuroa ja pala
+      kovaa leip\xE4\xE4 teen kera.\nLounas: Ei lounasta, te lihavat possut!\nIllallinen:
+      Uunibaked beans makkaralla ja pala juustoa.\n\nJa kuka helvetti pudotti pienen
+      s\xE4ilytyskaapin avaimen helvetin X:\xE4\xE4n!? Nyt meid\xE4n t\xE4ytyy keksi\xE4,
+      miten avata X. Luulen, ett\xE4 sill\xE4 on jotain tekemist\xE4 noiden vanhojen
+      turhien patsaiden kanssa ymp\xE4riins\xE4.\nJos l\xF6yd\xE4t jotain hy\xF6dyllist\xE4,
+      merkitse se kartalle keitti\xF6n l\xE4helle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: Nuottien salaisuus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: "Olen tullut siihen tulokseen, ett\xE4 musiikkisoittimen nuotit
+      voivat tuottaa mysteerisen tuloksen, kun niit\xE4 soitetaan tietyss\xE4 j\xE4rjestyksess\xE4.
+      Olin melkein l\xF6yt\xE4nyt t\xE4m\xE4n j\xE4rjestyksen; valitettavasti paperi,
+      johon olin kirjoittanut j\xE4rjestyksen, katosi mystisesti seuraavana p\xE4iv\xE4n\xE4.\n\nMeid\xE4n
+      t\xE4ytyy ty\xF6skennell\xE4 yhdess\xE4 selvitt\xE4\xE4ksemme t\xE4m\xE4n tilanteen
+      ja l\xF6yt\xE4\xE4ksemme j\xE4rjestyksen uudelleen. Jokainen teid\xE4n panoksenne
+      on ratkaisevan t\xE4rke\xE4\xE4, jotta voimme ratkaista t\xE4m\xE4n mysteerin.\n\nYst\xE4v\xE4llisin
+      terveisin,\n\n- Dr. Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: Osa musiikin nuoteista
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: "(Kumpikin puoli repeytynyt.) \nI III V"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: '(Oikea puoli repeytynyt.)
+
+      IV II I'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(Vasen puoli repeytynyt.)
+
+      II  III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: Viimeinen todistaja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Olen kauhullani tietoinen siit\xE4, ett\xE4 valitun sielun, joka
+      l\xF6yt\xE4\xE4 t\xE4m\xE4n lapun, t\xE4ytyy my\xF6s l\xF6yt\xE4\xE4 minun
+      eloton ruumiini. Aikani on vaarallisen lyhyt! N\xE4ytt\xE4\xE4 silt\xE4, ett\xE4
+      joku on muuttanut lukot... Mit\xE4 min\xE4 olin todistamassa t\xE4\xE4ll\xE4
+      (t\xE4m\xE4 osa kirjoitetaan t\xE4ysin lukukelvottomalla k\xE4sialalla).\n\n(Lapussa
+      on sana, joka on selv\xE4sti lis\xE4tty my\xF6hemmin.)\n'K\xE4det....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Muinaista? Ei oikeastaan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "Arvostettu kollega,\n\nT\xE4ss\xE4 luolassa kohtaamani rakenteet
+      ovat liian monimutkaisia ollakseen yksinkertaisten muinaisten kansojen ty\xF6t\xE4.
+      Olipa kyseess\xE4 unohtunut sivilisaatio tai jokin paljon kehittyneempi, niiden
+      tarkoitus on edelleen h\xE4m\xE4r\xE4n peitossa. On ilmeist\xE4, ett\xE4 kaivosty\xF6l\xE4iset
+      ovat ottaneet n\xE4m\xE4 huoneet uuteen k\xE4ytt\xF6\xF6n, mutta niiden alkuper\xE4inen
+      tarkoitus on minulta ymm\xE4rt\xE4m\xE4t\xF6n.\n\nMeid\xE4n on jatkettava tutkimustamme
+      suurimmalla huolellisuudella.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

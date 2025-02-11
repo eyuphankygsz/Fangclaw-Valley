@@ -19,19 +19,19 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 11580552528445440
-    m_Localized: '(Beide Seiten sind zerrissen.)
+    m_Localized: '(Beide Seiten zerrissen.)
 
       I III V'
     m_Metadata:
       m_Items: []
   - m_Id: 11591077547130880
-    m_Localized: '(Rechte Seite ist zerrissen.)
+    m_Localized: '(Rechte Seite zerrissen.)
 
       IV II I'
     m_Metadata:
       m_Items: []
   - m_Id: 11592266523262976
-    m_Localized: '(Linke Seite ist zerrissen.)
+    m_Localized: '(Linksseite zerrissen.)
 
       II III IV'
     m_Metadata:
@@ -42,25 +42,25 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11619318483828736
     m_Localized: "Ich bin schrecklich bewusst, dass die ungl\xFCckliche Seele, die
-      auf diese Notiz st\xF6\xDFt, auch meine leblosen K\xF6rper entdecken wird.
-      Meine Zeit wird gef\xE4hrlich knapp! Es scheint, als h\xE4tte jemand die Schl\xF6sser
-      ver\xE4ndert... Was ich hier gesehen habe (dieser Abschnitt wird in einer v\xF6llig
-      unleserlichen Kritzelei niedergeschrieben).\n(Am Ende der Notiz gibt es ein
-      Wort, das offensichtlich sp\xE4ter hinzugef\xFCgt wurde.) 'H\xE4nde....'"
+      diese Notiz findet, auch meinen leblosen K\xF6rper entdecken wird. Meine Zeit
+      wird gef\xE4hrlich kurz! Es scheint, dass jemand die Schl\xF6sser ver\xE4ndert
+      hat... Was ich hier gesehen habe (dieser Teil wird in einer v\xF6llig unleserlichen
+      Handschrift niedergeschrieben).\n\n(Am Ende der Notiz gibt es ein Wort, das
+      offensichtlich sp\xE4ter hinzugef\xFCgt wurde.)\n'H\xE4nde....'"
     m_Metadata:
       m_Items: []
   - m_Id: 11659020779831296
-    m_Localized: Alt? Nicht wirklich
+    m_Localized: Antik? Eigentlich nicht
     m_Metadata:
       m_Items: []
   - m_Id: 11659034495205376
     m_Localized: "Verehrter Kollege,\n\nDie Strukturen, die ich in dieser H\xF6hle
-      entdeckt habe, sind viel zu kompliziert, um das Werk einer einfachen alten
-      Zivilisation zu sein. Ob es sich um eine vergessene Zivilisation handelt oder
-      um etwas weit Fortgeschritteneres, bleibt ihr Zweck unklar. Es ist offensichtlich,
-      dass die Bergleute diese Kammern umfunktioniert haben, aber ihre urspr\xFCngliche
+      entdeckt habe, sind viel zu komplex, um das Werk einfacher, alter V\xF6lker
+      zu sein. Ob es sich um eine vergessene Zivilisation handelt oder etwas viel
+      Fortgeschritteneres, ihr Zweck bleibt r\xE4tselhaft. Es ist offensichtlich,
+      dass die Bergleute diese Kammern wiederverwendet haben, aber ihre urspr\xFCngliche
       Funktion entzieht sich meinem Verst\xE4ndnis.\n\nWir m\xFCssen unsere Untersuchung
-      mit \xE4u\xDFerster Sorgfalt fortsetzen.\n\n- Dr. Grimshow"
+      mit gr\xF6\xDFter Sorgfalt fortsetzen.\n\n- Dr. Grimshow"
     m_Metadata:
       m_Items: []
   - m_Id: 60377186304
@@ -68,13 +68,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 105105244160
-    m_Localized: "Liebe F\xFChrer der Bergarbeiter,\n\nWie ihr wisst, habe ich eine
-      Vorliebe f\xFCr R\xE4tsel. Also hier ist eines, das euren Verstand herausfordern
-      wird!\n\nUm die Geheimnisse hinter der T\xFCr zu entschl\xFCsseln, m\xFCsst
-      ihr Inspiration aus der Weisheit der Natur ziehen.\n\nDer Wolf jagt das Schaf,
-      w\xE4hrend der B\xE4r still bleibt.\n\nL\xF6st die Bedeutung dieses R\xE4tsels,
-      um herauszufinden, welche Hebel den Weg nach vorne freigeben.\n\nViel Gl\xFCck,\n\n-
-      Dr. Grimshaw"
+    m_Localized: "Liebe F\xFChrer der Bergleute,\n\nWie ihr wisst, habe ich eine
+      Vorliebe f\xFCr R\xE4tsel. Also hier ist eines, das eure Weisheit herausfordert!\n\nUm
+      die Geheimnisse hinter der T\xFCr zu entriegeln, m\xFCsst ihr Inspiration aus
+      der Weisheit der Natur ziehen.\n\nDer Wolf jagt das Schaf, w\xE4hrend der B\xE4r
+      still bleibt.\n\nEntschl\xFCsselt die Bedeutung dieses R\xE4tsels, um die Hebel
+      zu entdecken, die den Weg nach vorne offenbaren.\n\nViel Gl\xFCck,\n\n- Dr.
+      Grimshaw"
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
@@ -83,24 +83,27 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 437633859584
     m_Localized: "Alberto hatte in den letzten zwei Tagen zunehmend seinen Verstand
-      verloren. Doch niemand h\xE4tte sich vorstellen k\xF6nnen, dass er in solch
-      einen Wahnsinn verfallen w\xFCrde. Mit einem Schwert aus dem Kartenraum brachte
-      er das Leben des armen Bush zu einem vorzeitigen Ende. Nach diesem traurigen
-      Vorfall sicherte ich pers\xF6nlich die T\xFCren des Kartenraums. Wir haben
-      Alberto nie wieder gesehen.\n\nUm sicherzustellen, dass das lange Passwort
-      nicht vergessen wurde, entwarfen Grimshaw und ich ein kleines R\xE4tsel:\n\nF\xFCnf
-      V\xF6gel hatten eine Wette abgeschlossen,\nSie diskutierten dar\xFCber, wie
-      viele Beine eine Ameise hat.\nDer erste erkl\xE4rte \"drei\",\nDer dritte antwortete
-      \"so viele wie wir\",\nDer vierte sagte \"einen mehr als der zweite\",\nUnd
-      der f\xFCnfte sagte \"zwei weniger als der vierte\".\nAm Ende z\xE4hlten sie,
-      und es stellte sich heraus, dass der zweite Vogel richtig war.\n\nSo gelang
-      es uns, das Passwort zu verbergen."
+      verloren. Doch niemand h\xE4tte je gedacht, dass er in solchen Wahnsinn abgleiten
+      w\xFCrde. Mit einem Schwert, das er aus dem Kartenraum genommen hatte, brachte
+      er dem armen Bush ein vorzeitiges Ende. Nach diesem tragischen Vorfall sicherte
+      ich pers\xF6nlich die T\xFCren des Kartenraums. Wir sahen Alberto nie wieder.\n\nUm
+      sicherzustellen, dass das lange Passwort nicht vergessen wird, erfanden Grimshaw
+      und ich ein kleines R\xE4tsel:\n\nF\xFCnf V\xF6gel hatten eine Wette abgeschlossen,\nSie
+      diskutierten, wie viele Beine eine Ameise hat.\nDer erste erkl\xE4rte \u201Edrei\u201C,\nDer
+      dritte antwortete \u201Eso viele wie wir\u201C,\nDer vierte sagte \u201Eein
+      mehr als der zweite\u201C,\nUnd der f\xFCnfte sagte \u201Ezwei weniger als
+      der vierte\u201C.\nSchlie\xDFlich z\xE4hlten sie, und es stellte sich heraus,
+      dass der zweite Vogel richtig war.\n\nSo gelang es uns, das Passwort zu verbergen."
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "Tagesmen\xFC:\n\nFr\xFChst\xFCck: Haferbrei und ein St\xFCck hartes
-      Brot mit Tee.\nMittagessen: Kartoffel- und Eintopf mit Fleisch, mit eingelegten
-      Gurken und Brot.\nAbendessen: Gebackene Bohnen mit Wurst und ein St\xFCck K\xE4se."
+    m_Localized: "Heutiges Men\xFC:\n\nFr\xFChst\xFCck: Grie\xDFbrei und ein St\xFCck
+      hartes Brot mit Tee.\nMittagessen: Kein Mittagessen, ihr fetten Schweine!\nAbendessen:
+      Gebackene Bohnen mit Wurst und ein St\xFCck K\xE4se.\n\nUnd wer zum Teufel
+      hat den Schl\xFCssel zum kleinen Lagerraum in den verdammten X* fallen lassen!?
+      Jetzt m\xFCssen wir herausfinden, wie wir X* \xF6ffnen. Ich denke, es gibt
+      eine Verbindung zu den alten nutzlosen Statuen in der Umgebung.\nWenn du etwas
+      N\xFCtzliches findest, markiere es auf der Karte in der N\xE4he der K\xFCche."
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680
@@ -108,10 +111,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
-    m_Localized: "Ich bin zu dem Schluss gekommen, dass die Noten des Musikinstruments
-      ein mysteri\xF6ses Ergebnis liefern k\xF6nnten, wenn sie in einer bestimmten
-      Reihenfolge gespielt werden. Ich war kurz davor, diese Reihenfolge zu entdecken;
-      leider verschwand das Papier, auf dem ich die Reihenfolge aufgeschrieben hatte,
+    m_Localized: "Ich bin zu der \xDCberzeugung gekommen, dass die Noten des Musikinstruments
+      ein mysteri\xF6ses Ergebnis liefern k\xF6nnen, wenn sie in einer bestimmten
+      Reihenfolge gespielt werden. Ich war der Entdeckung dieser Reihenfolge ziemlich
+      nahe; leider verschwand das Papier, auf dem ich die Reihenfolge notiert hatte,
       am n\xE4chsten Tag auf mysteri\xF6se Weise.\n\nWir m\xFCssen zusammenarbeiten,
       um diese Situation zu kl\xE4ren und die Reihenfolge wiederzuentdecken. Jeder
       eurer Beitr\xE4ge ist entscheidend, um dieses R\xE4tsel zu l\xF6sen.\n\nMit
@@ -119,7 +122,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: Ein Teil Der Musikalischen Noten
+    m_Localized: Ein Teil der Musiknoten
     m_Metadata:
       m_Items: []
   references:

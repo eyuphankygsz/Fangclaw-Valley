@@ -35,11 +35,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 339933025976320
-    m_Localized: "T\xFCr zum Lagerraum"
+    m_Localized: "T\xFCr zum Vorratsraum"
     m_Metadata:
       m_Items: []
   - m_Id: 694618762375168
-    m_Localized: Kleiner Lagerraum
+    m_Localized: Kleines Lagerraum
     m_Metadata:
       m_Items: []
   - m_Id: 42839186742624256

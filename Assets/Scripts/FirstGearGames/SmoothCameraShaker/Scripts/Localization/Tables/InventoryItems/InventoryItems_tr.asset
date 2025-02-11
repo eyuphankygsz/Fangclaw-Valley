@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 2005556969472
-    m_Localized: "Kasa Anahtar\u0131 No. 1"
+    m_Localized: "Kasa Anahtar\u0131 No.1"
     m_Metadata:
       m_Items: []
   - m_Id: 6199181492224
-    m_Localized: "Bunun bir kasa anahtar\u0131 oldu\u011Funu d\xFC\u015F\xFCn\xFCyorum."
+    m_Localized: "San\u0131r\u0131m bu bir kasa anahtar\u0131."
     m_Metadata:
       m_Items: []
   - m_Id: 11154890080256
@@ -32,9 +32,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1505269372862464
-    m_Localized: "B\xFCy\xFCkannem bir zamanlar bu ayn\u0131 kokuyla bir i\xE7ki
-      haz\u0131rlam\u0131\u015Ft\u0131. O zamanlar, bana bu nefis iksiri yapar, bir
-      rit\xFCel gibi b\xFCy\xFCk bir \xF6zenle sunard\u0131."
+    m_Localized: "B\xFCy\xFCkannem bir zamanlar bu kokuyla bir i\xE7ki haz\u0131rlam\u0131\u015Ft\u0131.
+      O g\xFCnlerde, bana bu harika iksiri \xF6zenle haz\u0131rlay\u0131p, adeta
+      bir rit\xFCel gibi sunard\u0131."
     m_Metadata:
       m_Items: []
   - m_Id: 2278382406647808
@@ -46,9 +46,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3260616429191168
-    m_Localized: "Bu a\u015F\u0131nm\u0131\u015F ve paslanm\u0131\u015F anahtar,
-      ihmal izleri ta\u015F\u0131yor ve muhtemelen m\xFCtevaz\u0131 bir depolama
-      alan\u0131 i\xE7in tasarlanm\u0131\u015Ft\u0131r."
+    m_Localized: "Bu y\u0131pranm\u0131\u015F ve paslanm\u0131\u015F anahtar, ihmalkarl\u0131k
+      izleri ta\u015F\u0131yor ve muhtemelen m\xFCtevaz\u0131 bir depolama alan\u0131
+      i\xE7indir."
     m_Metadata:
       m_Items: []
   - m_Id: 14077189502976000
@@ -56,48 +56,49 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14077305479675904
-    m_Localized: "Bu kibritlerin k\xFC\xE7\xFCk ama hayati bir \xF6nemi var. Gaz
-      lambam\u0131 yakmak i\xE7in m\xFCkemmel olan basit odun \xE7ubuklar\u0131.
-      Bu \xE7ubuklar, bu ma\u011Faran\u0131n karanl\u0131klar\u0131nda bana yol g\xF6sterecek.
-      Sadece bir k\u0131v\u0131lc\u0131m, g\xF6lgelerde gizli s\u0131rlar\u0131 ayd\u0131nlatacak.
-      S\u0131radan gibi g\xF6r\xFCnebilirler, ancak bu kibritler burada hayatta kalmam
-      i\xE7in \xE7ok \xF6nemli."
+    m_Localized: "Bu kibritlerin k\xFC\xE7\xFCk ama hayati bir \xF6nemi var. Basit
+      odun \xE7ubuklar\u0131, gaz lambam\u0131 yakmak i\xE7in m\xFCkemmel. Bu kibritler,
+      bu ma\u011Faran\u0131n karanl\u0131\u011F\u0131nda bana yol g\xF6sterecek.
+      Sadece bir k\u0131v\u0131lc\u0131m, g\xF6lgelerde gizli olan gizemleri ayd\u0131nlatacak.
+      Her ne kadar s\u0131radan g\xF6r\xFCnse de, bu kibritler burada hayatta kalmam
+      i\xE7in kritik \xF6neme sahip."
     m_Metadata:
       m_Items: []
   - m_Id: 19140650193793024
-    m_Localized: "Gaz ya\u011F\u0131, lambam\u0131 yakmak i\xE7in elzemdir. Bu karanl\u0131k
-      ma\u011Farada ilerleyebilmek i\xE7in \u0131\u015F\u0131\u011Fa muhtac\u0131m,
-      ve bu ya\u011F lambam\u0131 ayakta tutmak i\xE7in vazge\xE7ilmezdir. Ancak
-      elimde pek az var, bu y\xFCzden son derece ihtiyatl\u0131 kullanmal\u0131y\u0131m."
+    m_Localized: "Gaz ya\u011F\u0131, lambam\u0131 yakmak i\xE7in \xE7ok \xF6nemli.
+      Bu ma\u011Faran\u0131n karanl\u0131\u011F\u0131nda ilerleyebilmek i\xE7in \u0131\u015F\u0131\u011Fa
+      ihtiyac\u0131m var ve bu ya\u011F, lamban\u0131n yanmaya devam etmesini sa\u011Flamak
+      i\xE7in gereklidir. Ne yaz\u0131k ki, \xE7ok az kald\u0131 ve bunu en dikkatli
+      \u015Fekilde kullanmam gerekiyor."
     m_Metadata:
       m_Items: []
   - m_Id: 19140619768311808
-    m_Localized: "Gaz Ya\u011F\u0131"
+    m_Localized: "Gaz ya\u011F\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 49572708568186880
-    m_Localized: "K\u0131z\u0131l\xE7anak"
+    m_Localized: "Do\u011Fu Tatl\u0131 \xC7al\u0131 \xC7i\xE7e\u011Fi"
     m_Metadata:
       m_Items: []
   - m_Id: 49573477128257536
-    m_Localized: "K\u0131z\u0131l\xE7anak... Rengi bana Evelynn\u2019in o eski k\u0131rm\u0131z\u0131
-      elbisesini hat\u0131rlat\u0131yor. Bir zamanlar zarafetiyle herkesi b\xFCy\xFCleyen
-      o elbise... Ama bu \xE7i\xE7ek, sadece bir hat\u0131ra olmaktan fazlas\u0131.
-      Su ile kar\u0131\u015Ft\u0131\u011F\u0131nda, insan\u0131n can\u0131n\u0131
-      geri getirebiliyor. T\u0131pk\u0131 Evelynn\u2019in varl\u0131\u011F\u0131yla
-      ruhumu hayata d\xF6nd\xFCrd\xFC\u011F\xFC zamanlar gibi."
+    m_Localized: "Bu renk, Evelynn\u2019in eski k\u0131rm\u0131z\u0131 elbisesini
+      hat\u0131rlat\u0131yor. Bir zamanlar herkesin zarafetiyle b\xFCy\xFClendi\u011Fi
+      o elbiseyi... Ama bu \xE7i\xE7ek, sadece bir an\u0131dan daha fazlas\u0131.
+      Su ile kar\u0131\u015Ft\u0131r\u0131ld\u0131\u011F\u0131nda, hayat\u0131 geri
+      getirme g\xFCc\xFCne sahip. T\u0131pk\u0131 Evelynn\u2019in varl\u0131\u011F\u0131n\u0131n
+      bir zamanlar ruhumu canland\u0131rd\u0131\u011F\u0131 gibi."
     m_Metadata:
       m_Items: []
   - m_Id: 49906938020020224
-    m_Localized: "Ekinezya... \u0130nce bir direncin \xE7i\xE7e\u011Fi. Kendi ba\u015F\u0131na,
-      t\xFCkenmi\u015Fli\u011Fin ortas\u0131nda k\u0131sa bir nefes gibi, m\xFCtevaz\u0131
-      bir enerji patlamas\u0131 sa\u011Flar. Ancak tonik su ile kar\u0131\u015Ft\u0131r\u0131ld\u0131\u011F\u0131nda,
-      potansiyeli geli\u015Fir ve kal\u0131c\u0131 bir g\xFC\xE7 patlamas\u0131 \xFCretir,
-      bu da gizli g\xFCc\xFCn\xFCn bir kan\u0131t\u0131d\u0131r."
+    m_Localized: "\u0130nce bir direncin \xE7i\xE7e\u011Fi. Tek ba\u015F\u0131na,
+      yorgunluk aras\u0131nda k\u0131sa bir nefes gibi, m\xFCtevaz\u0131 bir enerji
+      art\u0131\u015F\u0131 sa\u011Flar. Ancak tonik suyla kar\u0131\u015Ft\u0131r\u0131ld\u0131\u011F\u0131nda,
+      potansiyeli a\xE7\u0131\u011Fa \xE7\u0131kar ve s\xFCregelen bir g\xFC\xE7
+      patlamas\u0131 \xFCretir, gizli g\xFCc\xFCn\xFCn bir kan\u0131t\u0131 olarak."
     m_Metadata:
       m_Items: []
   - m_Id: 49906897968611328
-    m_Localized: Ekinazea
+    m_Localized: Ekinezya
     m_Metadata:
       m_Items: []
   - m_Id: 49971526598049792
@@ -105,14 +106,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 49973552979558400
-    m_Localized: "Hem de ferahlat\u0131c\u0131 hem de tedavi edici bir i\xE7ecek.
-      Kina maddesinin ac\u0131 \xF6z\xFC ile inf\xFCze edilmi\u015F tonik su, bir
+    m_Localized: "Hem ferahlat\u0131c\u0131 hem de iyile\u015Ftirici bir i\xE7ecek.
+      Kinini\u2019nin ac\u0131 \xF6z\xFCyle inf\xFCze edilmi\u015F tonik su, bir
       zamanlar ate\u015Fe kar\u015F\u0131 sava\u015Fta gerekli bir m\xFCttefikti.
-      O anl\u0131k kabarc\u0131klar, hem canland\u0131r\u0131c\u0131 hem de keskin
-      olan bu \xF6zellik, o zamandan beri canl\u0131l\u0131\u011F\u0131n sembol\xFC
-      haline geldi. Do\u011Fru elementlerle kar\u0131\u015Ft\u0131r\u0131ld\u0131\u011F\u0131nda,
-      gizli g\xFC\xE7leri a\xE7\u0131\u011Fa \xE7\u0131karma g\xFCc\xFCne sahiptir;
-      sadece bedeni de\u011Fil, ruhu da canland\u0131rarak."
+      K\xF6p\xFCrmesi, hem canland\u0131r\u0131c\u0131 hem de keskin, o zamandan
+      beri canl\u0131l\u0131\u011F\u0131n simgesi haline geldi. Do\u011Fru bile\u015Fenlerle
+      kar\u0131\u015Ft\u0131r\u0131ld\u0131\u011F\u0131nda, gizli g\xFC\xE7leri ortaya
+      \xE7\u0131karma g\xFCc\xFCne sahiptir; sadece bedeni de\u011Fil, ruhu da canland\u0131r\u0131r."
     m_Metadata:
       m_Items: []
   references:

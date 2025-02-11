@@ -19,13 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "Du kan <color=#93FF7A>ANV\xC4NDA</color> dina <color=#FFB45B>H\xC4NDER</color>
-      med <color=#75a8ff>\"$primary_key\"</color> f\xF6r att krossa <color=#FF4545>L\xC5DORNA</color>."
+    m_Localized: "Du kan <color=#C4A000>ANV\xC4NDA</color> dina <color=#D47F36>H\xC4NDER</color>
+      med <color=#6FB7D6>\"$primary_key\"</color> f\xF6r att krossa <color=#9B111E>L\xC5DORNA</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du skall <color=#93FF7A>KR\xC4VA</color> <color=#E688FF>gasolja</color>
-      och <color=#E688FF>t\xE4ndstickor</color> f\xF6r att t\xE4nda <color=#FFB45B>GASLAMPAN</color>."
+    m_Localized: "Du kan <color=#C4A000>ANV\xC4NDA</color> dina <color=#D47F36>H\xC4NDER</color>
+      med <color=#6FB7D6>\"$primary_key\"</color> f\xF6r att krossa <color=#9B111E>L\xC5DORNA</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248

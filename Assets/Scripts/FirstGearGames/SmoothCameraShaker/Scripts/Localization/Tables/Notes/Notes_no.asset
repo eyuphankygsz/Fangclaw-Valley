@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Notes_no
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: no
+  m_SharedData: {fileID: 11400000, guid: 8323a23633c75be4bb1bd67fe2766960, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 60377186304
+    m_Localized: Inngang til hulen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105105244160
+    m_Localized: "Kj\xE6re ledere av minearbeidere,\nSom dere vet, har jeg en forkj\xE6rlighet
+      for g\xE5ter. S\xE5 her er en for \xE5 utfordre deres visdom!\n\nFor \xE5 l\xE5se
+      opp hemmelighetene bak d\xF8ren, m\xE5 dere hente inspirasjon fra naturens
+      visdom.\n\nUlven jakter p\xE5 sauen, mens bj\xF8rnen st\xE5r stille.\n\nL\xF8s
+      betydningen bak denne g\xE5ten for \xE5 finne ut hvilke spaker som vil avsl\xF8re
+      veien videre.\n\nLykke til,\n\n- Dr. Grimshaw"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409683017728
+    m_Localized: Hva som er igjen av Alberto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437633859584
+    m_Localized: "Alberto hadde gradvis mistet forstanden de siste to dagene. Likevel
+      kunne ingen ha forestilt seg at han ville synke s\xE5 dypt i galskap. Med et
+      sverd hentet fra Kartrommet satte han en tidlig slutt p\xE5 den stakkars Bush
+      sitt liv. Etter denne tragiske hendelsen l\xE5ste jeg personlig d\xF8rene til
+      Kartrommet. Vi s\xE5 aldri Alberto igjen.\nFor \xE5 sikre at det lange passordet
+      ikke ble glemt, fant Grimshaw og jeg p\xE5 en liten g\xE5te:\n\nFem fugler
+      hadde gjort et veddem\xE5l,\nDe diskuterte hvor mange bein en maur har.\nDen
+      f\xF8rste sa \"tre\",\nDen tredje svarte \"like mange som oss\",\nDen fjerde
+      sa \"en mer enn den andre\",\nOg den femte sa \"to f\xE6rre enn den fjerde\".\nTil
+      slutt telle de, og det viste seg at den andre fuglen hadde rett.\n\nSlik lyktes
+      vi i \xE5 skjule passordet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136160244580352
+    m_Localized: "Dagens meny:\n\nFrokost: Gr\xF8t og et stykke hardt br\xF8d med
+      te.\nLunsj: Ingen lunsj, fete svin!\nMiddag: Bakte b\xF8nner med p\xF8lse og
+      et stykke ost.\n\nOg hvem faen mistet n\xF8kkelen til det lille lageret til
+      helvete X!? N\xE5 m\xE5 vi finne ut hvordan vi \xE5pner X. Jeg tror det er
+      en forbindelse med de gamle ubrukelige statuene rundt.\nHvis du finner noe
+      nyttig, merk det p\xE5 kartet n\xE6r kj\xF8kkenet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11415248968007680
+    m_Localized: Notenes mysterium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11417441565589504
+    m_Localized: "Jeg har kommet til \xE5 tro at notene fra musikkinstrumentet kan
+      gi et mystisk resultat n\xE5r de spilles i en bestemt rekkef\xF8lge. Jeg var
+      ganske n\xE6r \xE5 oppdage denne sekvensen; dessverre forsvant papiret der
+      jeg hadde skrevet rekkef\xF8lgen mystisk den p\xE5f\xF8lgende dagen.\n\nVi
+      m\xE5 samarbeide for \xE5 avklare denne situasjonen og gjenoppdage sekvensen.
+      Hvert av deres bidrag er avgj\xF8rende for \xE5 l\xF8se dette mysteriet.\n\nMed
+      vennlig hilsen,\n\n- Dr. Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580516499374080
+    m_Localized: En del av musikalske noter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11580552528445440
+    m_Localized: '(Begge sider revet.)
+
+      I III V'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11591077547130880
+    m_Localized: "(H\xF8yre side revet.)\nIV II I"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11592266523262976
+    m_Localized: '(Venstre side revet.)
+
+      II  III IV'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11616544182419456
+    m_Localized: Den siste vitnet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11619318483828736
+    m_Localized: "Jeg er fryktelig klar over at den uheldige sjelen som snubler over
+      denne noten, ogs\xE5 vil oppdage min livl\xF8se kropp. Tiden min er faretruende
+      kort! Det ser ut til at noen har endret l\xE5sene... Hva jeg var vitne til
+      her (denne delen vil bli skrevet med en helt ulestelig h\xE5ndskrift).\n\n(P\xE5
+      slutten av noten er det et ord som \xE5penbart er lagt til senere.)\n'Hender....'"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659020779831296
+    m_Localized: Antikk? Ikke egentlig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11659034495205376
+    m_Localized: "\xC6rede kollega,\n\nStrukturene jeg har kommet over i denne hulen
+      er altfor intrikate til \xE5 v\xE6re arbeidet til noen enkle gamle mennesker.
+      Enten det er en glemt sivilisasjon eller noe mye mer avansert, forblir form\xE5let
+      deres uklart. Det er tydelig at gruvene har ombygget disse rommene, men deres
+      opprinnelige funksjon unng\xE5r min forst\xE5else.\n\nVi m\xE5 fortsette etterforskningen
+      med st\xF8rste forsiktighet.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -23,11 +23,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 385192476672
-    m_Localized: Stanza principale
+    m_Localized: Sala principale
     m_Metadata:
       m_Items: []
   - m_Id: 497885036544
-    m_Localized: Stanza del riposo
+    m_Localized: Sala di riposo
     m_Metadata:
       m_Items: []
   - m_Id: 613643632640
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 694618762375168
-    m_Localized: Piccola stanza di stoccaggio
+    m_Localized: "Piccola stanza di stoccaggio\u5C0F\u3055\u306A\u53CE\u7D0D\u5BA4"
     m_Metadata:
       m_Items: []
   - m_Id: 42839186742624256

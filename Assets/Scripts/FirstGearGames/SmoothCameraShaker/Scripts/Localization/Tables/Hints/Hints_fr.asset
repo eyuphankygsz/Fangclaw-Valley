@@ -19,14 +19,13 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: Vous pouvez <color=#93FF7A>UTILISER</color> vos <color=#FFB45B>MAINS</color>
-      avec <color=#75a8ff>"$primary_key"</color> pour briser les <color=#FF4545>CAISSES</color>.
+    m_Localized: "Tu peux <color=#C4A000>UTILISER</color> tes <color=#D47F36>MAINS</color>
+      avec <color=#6FB7D6>\"$primary_key\"</color> pour casser les <color=#9B111E>BO\xCETES</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Tu devras <color=#93FF7A>DISPOSER</color> de <color=#E688FF>huile
-      de gaz</color> et de <color=#E688FF>allumettes</color> pour allumer la <color=#FFB45B>LAMPE
-      \xC0 GAZ</color>."
+    m_Localized: "Tu peux <color=#C4A000>UTILISER</color> tes <color=#D47F36>MAINS</color>
+      avec <color=#6FB7D6>\"$primary_key\"</color> pour casser les <color=#9B111E>BO\xCETES</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248

@@ -47,11 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 386463179128832
-    m_Localized: "Poci\xF3n de salud\r"
+    m_Localized: "Poci\xF3n de Salud"
     m_Metadata:
       m_Items: []
   - m_Id: 386709376385024
-    m_Localized: "Poci\xF3n de resistencia\r"
+    m_Localized: "Poci\xF3n de Aguante"
     m_Metadata:
       m_Items: []
   - m_Id: 390466071871488
@@ -72,10 +72,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1820513609629696
     m_Localized: "Estos cr\xE1neos no pueden ser restos de seres ordinarios. Cada
-      uno lleva rastros de algo m\xE1s all\xE1 de lo humano. Sus mand\xEDbulas, profundas
-      cuencas y formas apuntan a un misterio antiguo. A medida que su n\xFAmero aumenta,
-      tambi\xE9n crece el miedo dentro de m\xED\u2014\xBFqu\xE9 oscuro secreto podr\xEDa
-      estar enterrado en estas tierras?"
+      uno lleva rastros de algo m\xE1s all\xE1 de lo humano. Sus estructuras mandibulares,
+      sus profundas cuencas oculares y sus formas apuntan a un misterio antiguo.
+      A medida que su n\xFAmero crece, tambi\xE9n lo hace el miedo dentro de m\xED\u2014\xBFqu\xE9
+      oscuro secreto podr\xEDa estar enterrado en lo profundo de estas tierras?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832
@@ -83,8 +83,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: Para esos momentos en los que debo ascender para alcanzar lo que
-      queda fuera de mi alcance.
+    m_Localized: "Para aquellos momentos en los que debo ascender para alcanzar lo
+      que est\xE1 justo fuera de mi alcance."
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
@@ -92,7 +92,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5519764290191360
-    m_Localized: Puerta de Hierro
+    m_Localized: Puerta de hierro
     m_Metadata:
       m_Items: []
   - m_Id: 8654831409610752
@@ -100,8 +100,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: "Este explosivo se utiliza a menudo en las minas. Es un medio de
-      detonaci\xF3n costoso y potente."
+    m_Localized: "Este explosivo se emplea a menudo en las minas. Es un medio costoso
+      y potente de detonaci\xF3n."
     m_Metadata:
       m_Items: []
   - m_Id: 8691674247249920
@@ -109,23 +109,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: Una cuerda resistente, esencial para diversas tareas en las minas,
-      desde asegurar cargas hasta ayudar en los descensos. Su fiabilidad solo es
-      igualada por su versatilidad.
+    m_Localized: Una resistente cuerda, esencial para diversas tareas en las minas,
+      desde asegurar cargas hasta ayudar en descensos. Su fiabilidad solo es igualada
+      por su versatilidad.
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: Dinamita empaquetada
+    m_Localized: Dinamita atada
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
-    m_Localized: "Un paquete de cartuchos de dinamita, firmemente atados para una
-      explosi\xF3n m\xE1s potente. Utilizado a menudo en grandes operaciones mineras
-      para despejar \xE1reas extensas de roca."
+    m_Localized: "Un paquete de cartuchos de dinamita, firmemente asegurados juntos
+      para una explosi\xF3n m\xE1s poderosa. A menudo utilizado en operaciones mineras
+      a gran escala para despejar vastas \xE1reas de roca."
     m_Metadata:
       m_Items: []
   - m_Id: 9048642019311616
-    m_Localized: LinternaLinterna
+    m_Localized: Linterna
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
@@ -134,6 +134,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 14476268854755328
     m_Localized: Disco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: "Bot\xF3n"
     m_Metadata:
       m_Items: []
   references:

@@ -159,11 +159,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Bindningar
+    m_Localized: Tangentbordsbindningar
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912
-    m_Localized: "Din nuvarande sparning kommer att skrivas \xF6ver. Vill du p\xE5b\xF6rja
+    m_Localized: "Din nuvarande sparfil kommer att skrivas \xF6ver. Vill du p\xE5b\xF6rja
       en ny resa?"
     m_Metadata:
       m_Items: []

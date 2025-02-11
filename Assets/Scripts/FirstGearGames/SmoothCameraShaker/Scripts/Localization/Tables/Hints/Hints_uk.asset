@@ -19,18 +19,17 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 52114407424
-    m_Localized: "\u0412\u0438 \u043C\u043E\u0436\u0435\u0442\u0435 <color=#93FF7A>\u0412\u0418\u041A\u041E\u0420\u0418\u0421\u0422\u041E\u0412\u0423\u0412\u0410\u0422\u0418</color>
-      \u0441\u0432\u043E\u0457 <color=#FFB45B>\u0420\u0423\u041A\u0418</color> \u0437
-      <color=#75a8ff>\"$primary_key\"</color>, \u0449\u043E\u0431 \u0440\u043E\u0437\u0431\u0438\u0442\u0438
-      <color=#FF4545>\u042F\u0429\u0418\u041A\u0418</color>."
+    m_Localized: "\u0422\u0438 \u043C\u043E\u0436\u0435\u0448 <color=#C4A000>\u0412\u0418\u041A\u041E\u0420\u0418\u0421\u0422\u0410\u0422\u0418</color>
+      \u0441\u0432\u043E\u0457 <color=#D47F36>\u0420\u0423\u041A\u0418</color> \u0437
+      <color=#6FB7D6>\"$primary_key\"</color>, \u0449\u043E\u0431 \u0440\u043E\u0437\u0431\u0438\u0442\u0438
+      <color=#9B111E>\u042F\u0429\u0418\u041A\u0418</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "\u0422\u0438 \u043F\u043E\u0432\u0438\u043D\u0435\u043D <color=#93FF7A>\u041C\u0410\u0422\u0418</color>
-      <color=#E688FF>\u0433\u0430\u0437\u043E\u0432\u0435 \u043C\u0430\u0441\u043B\u043E</color>
-      \u0456 <color=#E688FF>\u0441\u0456\u0440\u043D\u0438\u043A\u0438</color>, \u0449\u043E\u0431
-      \u0437\u0430\u043F\u0430\u043B\u0438\u0442\u0438 <color=#FFB45B>\u0413\u0410\u0417\u041E\u0412\u0423
-      \u041B\u0410\u041C\u041F\u0423</color>."
+    m_Localized: "\u0422\u0438 \u043C\u043E\u0436\u0435\u0448 <color=#C4A000>\u0412\u0418\u041A\u041E\u0420\u0418\u0421\u0422\u0410\u0422\u0418</color>
+      \u0441\u0432\u043E\u0457 <color=#D47F36>\u0420\u0423\u041A\u0418</color> \u0437
+      <color=#6FB7D6>\"$primary_key\"</color>, \u0449\u043E\u0431 \u0440\u043E\u0437\u0431\u0438\u0442\u0438
+      <color=#9B111E>\u042F\u0429\u0418\u041A\u0418</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248

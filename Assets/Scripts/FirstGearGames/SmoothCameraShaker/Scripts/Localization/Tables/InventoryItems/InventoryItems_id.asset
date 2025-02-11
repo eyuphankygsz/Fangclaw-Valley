@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_id
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: id
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19140650193793024
+    m_Localized: Minyak gas sangat penting untuk menyalakan lampu saya. Saya sangat
+      membutuhkan cahaya untuk menavigasi kegelapan gua ini, dan minyak ini sangat
+      diperlukan untuk menjaga lampu tetap menyala. Sayangnya, saya hanya memiliki
+      sedikit sisa dan harus menggunakannya dengan sangat hati-hati.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: Bunga Semak Manis Timur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: Warnanya mengingatkanku pada gaun merah lama Evelynn. Yang dulu
+      memikat semua orang dengan keanggunannya... Tetapi bunga ini lebih dari sekadar
+      kenangan. Ketika dicampur dengan air, ia memiliki kekuatan untuk mengembalikan
+      kehidupan. Seperti halnya kehadiran Evelynn yang pernah menghidupkan kembali
+      jiwaku.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: Sebuah bunga dengan ketahanan yang halus. Sendirian, bunga ini memberikan
+      lonjakan energi yang moderat, seperti jeda singkat di tengah kelelahan. Namun,
+      ketika dicampur dengan air tonik, potensinya berkembang, menghasilkan ledakan
+      kekuatan yang bertahan lama, sebagai bukti kekuatan tersembunyinya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: Air tonic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: Minuman yang memberikan kesegaran dan pengobatan. Diberi rasa pahit
+      dari kina, air tonik dulunya merupakan sekutu penting dalam melawan demam.
+      Efervescenya, yang membangkitkan dan tajam, sejak itu menjadi simbol vitalitas.
+      Dicampur dengan elemen yang tepat, memiliki kekuatan untuk membuka kekuatan
+      tersembunyi, menghidupkan kembali tidak hanya tubuh, tetapi juga jiwa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: Kunci Brankas No.1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: Saya pikir ini adalah kunci brankas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: Bau sangat buruk. Saya yakin itu baik untuk kesehatan...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: Nenek suatu kali membuat minuman dengan bau ini. Pada waktu itu,
+      dia membuatkan saya ramuan yang luar biasa ini, menyajikannya dengan penuh
+      perhatian, seolah itu adalah sebuah ritual.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: Kunci Penyimpanan Kecil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: Kunci yang usang dan berkarat ini, yang menunjukkan tanda-tanda
+      pengabaian, pasti diperuntukkan untuk ruang penyimpanan yang sederhana.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: Korek api
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: Korek ini memiliki arti kecil namun sangat penting. Batang kayu
+      sederhana, sempurna untuk menyalakan lampu gas saya. Mereka akan memandu saya
+      melalui kegelapan gua ini. Cukup satu percikan, dan mereka akan menerangi misteri
+      yang tersembunyi di balik bayangan. Meskipun terlihat biasa, korek ini sangat
+      penting untuk bertahan hidup saya di sini.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Minyak gas
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

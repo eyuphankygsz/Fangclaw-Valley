@@ -27,15 +27,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1038599109918720
-    m_Localized: Cranio
+    m_Localized: Teschio
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
-    m_Localized: 'Questi crani non possono essere resti di esseri ordinari. Ognuno
-      porta tracce di qualcosa che va oltre l''umano. Le loro strutture mandibolari,
-      le orbite oculari profonde e le forme indicano un antico mistero. Con l''aumentare
-      del loro numero, cresce anche la paura dentro di me: quale oscuro segreto potrebbe
-      essere sepolto nel profondo di queste terre?'
+    m_Localized: "Questi teschi non possono essere i resti di esseri ordinari. Ognuno
+      porta tracce di qualcosa che va oltre l'umano. Le loro strutture mandibolari,
+      le profonde cavit\xE0 oculari e le forme indicano un antico mistero. Man mano
+      che il loro numero cresce, cresce anche la paura dentro di me\u2014quale oscuro
+      segreto potrebbe essere sepolto nelle profondit\xE0 di queste terre?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832
@@ -43,8 +43,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: "Per quei momenti in cui devo salire per afferrare ci\xF2 che si
-      trova appena fuori dalla mia portata."
+    m_Localized: "Per quei momenti in cui devo salire per afferrare ci\xF2 che \xE8
+      appena fuori dalla mia portata."
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
@@ -60,8 +60,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: "Questo esplosivo viene spesso utilizzato nelle miniere. \xC8 un
-      mezzo costoso e potente per la detonazione."
+    m_Localized: "Questo esplosivo \xE8 spesso utilizzato nelle miniere. \xC8 un
+      mezzo costoso e potente di detonazione."
     m_Metadata:
       m_Items: []
   - m_Id: 23509254144
@@ -93,11 +93,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 386463179128832
-    m_Localized: Pozione di salute
+    m_Localized: Pozione della Salute
     m_Metadata:
       m_Items: []
   - m_Id: 386709376385024
-    m_Localized: Pozione di resistenza
+    m_Localized: Pozione della Resistenza
     m_Metadata:
       m_Items: []
   - m_Id: 390466071871488
@@ -109,9 +109,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8692014921203712
-    m_Localized: "Una robusta corda, essenziale per vari compiti nelle miniere, dalla
-      sicurezza dei carichi all'aiuto nelle discese. La sua affidabilit\xE0 \xE8
-      eguagliata solo dalla sua versatilit\xE0."
+    m_Localized: "Una corda resistente, essenziale per vari compiti nelle miniere,
+      dal fissaggio dei carichi all'assistenza nelle discese. La sua affidabilit\xE0
+      \xE8 pari solo alla sua versatilit\xE0."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
@@ -119,9 +119,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
-    m_Localized: "Un fascio di bastoncini di dinamite, strettamente legati per un'esplosione
-      pi\xF9 potente. Spesso usato in operazioni minerarie pi\xF9 grandi per liberare
-      vaste aree di roccia."
+    m_Localized: "Un fascio di bastoncini di dinamite, saldamente legati insieme
+      per un'esplosione pi\xF9 potente. Spesso utilizzato nelle operazioni minerarie
+      su larga scala per sgombrare vaste aree rocciose."
     m_Metadata:
       m_Items: []
   - m_Id: 9048642019311616
@@ -129,11 +129,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9732202711662592
-    m_Localized: Chiusura a combinazione
+    m_Localized: Lucchetto a combinazione
     m_Metadata:
       m_Items: []
   - m_Id: 14476268854755328
     m_Localized: Disco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Pulsante
     m_Metadata:
       m_Items: []
   references:

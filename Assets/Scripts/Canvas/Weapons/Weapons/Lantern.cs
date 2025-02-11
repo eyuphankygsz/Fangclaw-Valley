@@ -10,6 +10,10 @@ public class Lantern : Weapons
 	[SerializeField] private GameObject _normalLightSource;
 	[SerializeField] private GameObject _directLightSource;
 	[SerializeField] private GameObject _behindLightSource;
+	[SerializeField] private Light _onHandLight;
+
+
+
 	[SerializeField] private GameObject _playerLight;
 	[SerializeField] private InventoryItem _match;
 	[SerializeField] private AudioClip _matchSound, _gasSound;
@@ -30,6 +34,13 @@ public class Lantern : Weapons
 	[Inject]
 	private InventoryManager _inventoryManager;
 	private bool _enlighting;
+
+
+
+	private float _initialIntensityNormal = 4, _initialIntensityDirect = 6, _initialIntensityBehind = 2;
+	private Light[] _lanternLights;
+
+
 
 	private Vector3 _latestPos;
 	public override void Move()
@@ -61,19 +72,40 @@ public class Lantern : Weapons
 	public bool IsNormalLightOn() => _normalLightSource.activeSelf;
 	public bool IsOnFire() => _onFire;
 	public bool IsOnHand() => _isOnHand;
+	public float GetCurrentNormalIntensity()
+	{
+		if(_lanternLights == null)
+			_lanternLights = new Light[]
+			{
+				_normalLightSource.GetComponent<Light>(),
+			    _directLightSource.GetComponent<Light>(),
+			    _behindLightSource.GetComponent<Light>(),
+				_onHandLight
+			};
+
+		return	_lanternLights[0].intensity;
+	}
+	public float GetCurrentDirectIntensity() => _lanternLights[1].intensity;
+	public float GetCurrentBehindIntensity() => _lanternLights[2].intensity;
+	public float GetCurrentWeaponIntensity() => _lanternLights[3].intensity;
+	public float GetInitialNormalIntensity() => _initialIntensityNormal;
+	public float GetInitialDirectIntensity() => _initialIntensityDirect;
+	public float GetInitialBehindIntensity() => _initialIntensityBehind;
+	public float GetInitialWeaponIntensity() => 1f;
+
 	private void MoveNormal()
 	{
 		Y_Movement();
 
 		float y = Mathf.InverseLerp(_yLimit.x, _yLimit.y, _pivot.transform.localPosition.y);
-		_normalLightSource.transform.localPosition = (Vector3.up * y) + new Vector3(_normalLightSource.transform.localPosition.x, 3f, 0);
-		_directLightSource.transform.localPosition = (Vector3.up * y) + new Vector3(_directLightSource.transform.localPosition.x, 3f, 0);
+		_normalLightSource.transform.localPosition = (Vector3.up * y) + new Vector3(_normalLightSource.transform.localPosition.x, 3f, _normalLightSource.transform.localPosition.z);
+		_directLightSource.transform.localPosition = (Vector3.up * y) + new Vector3(_directLightSource.transform.localPosition.x, 3f, _directLightSource.transform.localPosition.z);
 	}
 	private void MoveByCamera()
 	{
 		X_Movement();
-		_normalLightSource.transform.localPosition = new Vector3((-_pivot.transform.localPosition.x - 1) * 1.5f, _normalLightSource.transform.localPosition.y, 0);
-		_directLightSource.transform.localPosition = new Vector3((-_pivot.transform.localPosition.x - 1) * 1.5f, _directLightSource.transform.localPosition.y, 0);
+		_normalLightSource.transform.localPosition = new Vector3((-_pivot.transform.localPosition.x - 1) * 1.5f, _normalLightSource.transform.localPosition.y, _normalLightSource.transform.localPosition.z);
+		_directLightSource.transform.localPosition = new Vector3((-_pivot.transform.localPosition.x - 1) * 1.5f, _directLightSource.transform.localPosition.y, _directLightSource.transform.localPosition.z);
 	}
 	private void ClampMove()
 	{
@@ -202,6 +234,13 @@ public class Lantern : Weapons
 			_behindLightSource.SetActive(false);
 			_playerLight.SetActive(true);
 		}
+	}
+	public void Intensity(int id, float intensity)
+	{
+		if (_lanternLights == null)
+			_lanternLights = new Light[] { _normalLightSource.GetComponent<Light>(), _directLightSource.GetComponent<Light>(), _behindLightSource.GetComponent<Light>() };
+
+		_lanternLights[id].intensity = intensity;
 	}
 	public void SetBehindLightning(bool enable)
 	{

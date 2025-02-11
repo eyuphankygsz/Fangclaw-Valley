@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 15334555648
-    m_Localized: "Grotting\xE5ng"
+    m_Localized: "H\xF6jd ing\xE5ng"
     m_Metadata:
       m_Items: []
   - m_Id: 385192476672
@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 497885036544
-    m_Localized: Vilorum
+    m_Localized: Vilo rum
     m_Metadata:
       m_Items: []
   - m_Id: 613643632640
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 694618762375168
-    m_Localized: "Litet f\xF6rvaringsrum"
+    m_Localized: "Litet f\xF6rr\xE5dsrum"
     m_Metadata:
       m_Items: []
   - m_Id: 42839186742624256
@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 42839616772030464
-    m_Localized: Kartrum
+    m_Localized: Kartsal
     m_Metadata:
       m_Items: []
   references:

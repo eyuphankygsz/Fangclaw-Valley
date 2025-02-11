@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18857586011062272
-    m_Localized: Hurken
+    m_Localized: Bukken
     m_Metadata:
       m_Items: []
   - m_Id: 18857740076236800
@@ -59,7 +59,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859044668358656
-    m_Localized: Wissel wapen #1
+    m_Localized: Wapen wisselen #1
     m_Metadata:
       m_Items: []
   - m_Id: 18859122887933952
@@ -79,7 +79,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18859708706373632
-    m_Localized: Ander
+    m_Localized: Andere
     m_Metadata:
       m_Items: []
   - m_Id: 18859824959897600
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18863369293578240
-    m_Localized: Reset
+    m_Localized: Resetten
     m_Metadata:
       m_Items: []
   - m_Id: 18863706494648320
@@ -159,12 +159,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18856177375035392
-    m_Localized: Bindings
+    m_Localized: Toetsenbindingen
     m_Metadata:
       m_Items: []
   - m_Id: 59145662851366912
-    m_Localized: Je huidige opslag wordt overschreven. Wil je aan een nieuw avontuur
-      beginnen?
+    m_Localized: Je huidige save wordt overschreven. Wil je een nieuw avontuur beginnen?
     m_Metadata:
       m_Items: []
   - m_Id: 59149453965312000

@@ -23,11 +23,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11591077547130880
-    m_Localized: "(H\xF6ger sida \xE4r trasig.)\nIV II I"
+    m_Localized: "(H\xF6ger sida trasig.)\nIV II I"
     m_Metadata:
       m_Items: []
   - m_Id: 11592266523262976
-    m_Localized: "(V\xE4nster sida \xE4r trasig.)\nII III IV"
+    m_Localized: "(V\xE4nster sida trasig.)\nII III IV"
     m_Metadata:
       m_Items: []
   - m_Id: 11616544182419456
@@ -35,39 +35,39 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11619318483828736
-    m_Localized: "Jag \xE4r fruktansv\xE4rt medveten om att den olyckliga sj\xE4len
-      som snubblar \xF6ver denna lapp ocks\xE5 kommer att uppt\xE4cka min livl\xF6sa
-      kropp. Min tid \xE4r farligt kort! Det verkar som att n\xE5gon har \xE4ndrat
+    m_Localized: "Jag \xE4r fruktansv\xE4rt medveten om att den olyckliga sj\xE4l
+      som snubblar \xF6ver den h\xE4r lappen ocks\xE5 kommer att hitta min livl\xF6sa
+      kropp. Min tid \xE4r farligt kort! Det verkar som om n\xE5gon har \xE4ndrat
       l\xE5sen... Vad jag bevittnade h\xE4r (denna del kommer att skrivas med en
-      helt ol\xE4slig handstil).\n(I slutet av lappen finns ett ord som uppenbarligen
-      lades till senare.) 'H\xE4nder....'"
+      helt ol\xE4slig handstil).\n\n(P\xE5 slutet av lappen finns ett ord som uppenbarligen
+      lades till senare.)\n'H\xE4nder....'\n\n"
     m_Metadata:
       m_Items: []
   - m_Id: 11659020779831296
-    m_Localized: Antikt? Inte riktigt
+    m_Localized: Antik? Inte riktigt
     m_Metadata:
       m_Items: []
   - m_Id: 11659034495205376
     m_Localized: "B\xE4sta kollega,\n\nDe strukturer jag har st\xF6tt p\xE5 inom
-      denna grotta \xE4r f\xF6r komplicerade f\xF6r att vara skapelsen av n\xE5gon
-      enkel gammal civilisation. Oavsett om det \xE4r en gl\xF6md civilisation eller
-      n\xE5got mycket mer avancerat, f\xF6rblir deras syfte g\xE5tfullt. Det \xE4r
-      uppenbart att gruvarbetarna har \xE5teranv\xE4nt dessa rum, men deras ursprungliga
-      funktion undg\xE5r min f\xF6rst\xE5else.\n\nVi m\xE5ste forts\xE4tta v\xE5r
-      unders\xF6kning med st\xF6rsta noggrannhet.\n\n- Dr. Grimshow"
+      denna grotta \xE4r alldeles f\xF6r intrikata f\xF6r att vara verk av n\xE5gra
+      enkla gamla folk. Oavsett om det \xE4r en bortgl\xF6md civilisation eller n\xE5got
+      mycket mer avancerat, f\xF6rblir deras syfte g\xE5tfullt. Det \xE4r uppenbart
+      att gruvarbetarna \xE5teranv\xE4nde dessa kammare, men deras ursprungliga funktion
+      undg\xE5r min f\xF6rst\xE5else.\n\nVi m\xE5ste forts\xE4tta v\xE5r unders\xF6kning
+      med st\xF6rsta noggrannhet.\n\n- Dr. Grimshow"
     m_Metadata:
       m_Items: []
   - m_Id: 60377186304
-    m_Localized: "Ing\xE5ng till Grottan"
+    m_Localized: "Ing\xE5ng till grottan"
     m_Metadata:
       m_Items: []
   - m_Id: 105105244160
-    m_Localized: "K\xE4ra ledare f\xF6r gruvarbetarna,\n\nSom ni vet har jag en f\xF6rk\xE4rlek
-      f\xF6r g\xE5tor. S\xE5 h\xE4r kommer en f\xF6r att utmana ert intellekt!\n\nF\xF6r
+    m_Localized: "K\xE4ra ledare f\xF6r gruvarbetarna,\nSom ni vet, har jag en f\xF6rk\xE4rlek
+      f\xF6r g\xE5tor. H\xE4r kommer en f\xF6r att utmana er intelligens!\n\nF\xF6r
       att l\xE5sa upp hemligheterna bakom d\xF6rren m\xE5ste ni h\xE4mta inspiration
-      fr\xE5n naturens visdom.\n\nVargen jagar f\xE5ret, medan bj\xF6rnen st\xE5r
-      stilla.\n\nL\xF6s g\xE5tans betydelse f\xF6r att uppt\xE4cka vilka spakar som
-      kommer att visa v\xE4gen fram\xE5t.\n\nLycka till,\n\n- Dr. Grimshaw"
+      fr\xE5n naturens visdom.\n\nVargen jagar f\xE5ret, medan bj\xF6rnen f\xF6rblir
+      stilla.\n\nL\xF6s betydelsen av denna g\xE5ta f\xF6r att uppt\xE4cka vilka
+      spakar som avsl\xF6jar v\xE4gen fram\xE5t.\n\nLycka till,\n\n- Dr. Grimshaw"
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
@@ -76,41 +76,44 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 437633859584
     m_Localized: "Alberto hade gradvis f\xF6rlorat sitt f\xF6rst\xE5nd under de senaste
-      tv\xE5 dagarna. \xC4nd\xE5 kunde ingen f\xF6rest\xE4lla sig att han skulle
-      sjunka s\xE5 djupt i galenskap. Med ett sv\xE4rd fr\xE5n Karta-rummet satte
+      tv\xE5 dagarna. Men ingen kunde ha f\xF6rest\xE4llt sig att han skulle falla
+      s\xE5 djupt i galenskap. Med ett sv\xE4rd h\xE4mtat fr\xE5n Kartrummet satte
       han ett f\xF6r tidigt slut p\xE5 den stackars Bushs liv. Efter denna tragiska
-      h\xE4ndelse l\xE5ste jag personligen d\xF6rrarna till Karta-rummet. Vi s\xE5g
-      aldrig Alberto igen.\n\nF\xF6r att s\xE4kerst\xE4lla att det l\xE5nga l\xF6senordet
-      inte skulle gl\xF6mmas, designade Grimshaw och jag en liten g\xE5ta:\n\nFem
-      f\xE5glar gjorde ett vad,\nDe diskuterade hur m\xE5nga ben en myra har.\nDen
-      f\xF6rsta sa \"tre\",\nDen tredje svarade \"lika m\xE5nga som vi\",\nDen fj\xE4rde
-      sa \"en mer \xE4n den andra\",\nOch den femte sa \"tv\xE5 f\xE4rre \xE4n den
-      fj\xE4rde\".\nTill slut r\xE4knade de och det visade sig att den andra f\xE5geln
-      hade r\xE4tt.\n\nS\xE5 vi lyckades d\xF6lja l\xF6senordet."
+      h\xE4ndelse l\xE5ste jag personligen d\xF6rrarna till Kartrummet. Vi s\xE5g
+      aldrig Alberto igen.\nF\xF6r att s\xE4kerst\xE4lla att det l\xE5nga l\xF6senordet
+      inte gl\xF6mdes bort, skapade Grimshaw och jag en liten g\xE5ta:\n\nFem f\xE5glar
+      hade gjort ett vad,\nDe diskuterade hur m\xE5nga ben en myra har.\nDen f\xF6rsta
+      sa \"tre\",\nDen tredje svarade \"lika m\xE5nga som vi\",\nDen fj\xE4rde sa
+      \"en mer \xE4n den andra\",\nOch den femte sa \"tv\xE5 f\xE4rre \xE4n den fj\xE4rde\".\nSlutligen
+      r\xE4knade de och det visade sig att den andra f\xE5geln hade r\xE4tt.\n\nP\xE5
+      s\xE5 s\xE4tt lyckades vi g\xF6mma l\xF6senordet."
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
     m_Localized: "Dagens meny:\n\nFrukost: Gr\xF6t och en skiva h\xE5rt br\xF6d med
-      te.\nLunch: Potatis- och k\xF6ttgryta, med pickles och br\xF6d.\nMiddag: Bakade
-      b\xF6nor med korv och en bit ost."
+      te.\nLunch: Ingen lunch, feta grisar!\nMiddag: Bakt b\xF6nor med korv och ett
+      stycke ost.\n\nOch vem fan tappade nyckeln till det lilla lagret i j\xE4vla
+      X!? Nu m\xE5ste vi lista ut hur vi \xF6ppnar X. Jag tror det finns en koppling
+      till de d\xE4r gamla, v\xE4rdel\xF6sa statyerna runt omkring.\nOm du hittar
+      n\xE5got nyttigt, markera det p\xE5 kartan n\xE4ra k\xF6ket."
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680
-    m_Localized: Noternas Mysterium
+    m_Localized: Noternas mysterium
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
-    m_Localized: "Jag har kommit att tro att noterna p\xE5 musikinstrumentet kan
-      ge ett mystiskt resultat n\xE4r de spelas i en specifik ordning. Jag var ganska
-      n\xE4ra att uppt\xE4cka denna sekvens; tyv\xE4rr f\xF6rsvann papperet d\xE4r
+    m_Localized: "Jag har kommit att tro att noterna fr\xE5n musikinstrumentet kan
+      ge ett mystiskt resultat n\xE4r de spelas i en viss ordning. Jag var mycket
+      n\xE4ra att uppt\xE4cka denna sekvens; tyv\xE4rr f\xF6rsvann pappret d\xE4r
       jag hade skrivit ordningen mystiskt n\xE4sta dag.\n\nVi m\xE5ste arbeta tillsammans
       f\xF6r att klarg\xF6ra denna situation och \xE5teruppt\xE4cka sekvensen. Varje
-      bidrag fr\xE5n er \xE4r avg\xF6rande f\xF6r att l\xF6sa detta mysterium.\n\nMed
+      bidrag fr\xE5n er \xE4r avg\xF6rande f\xF6r att vi ska l\xF6sa detta mysterium.\n\nMed
       v\xE4nliga h\xE4lsningar,\n\n- Dr. Elara Voss"
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: En Del Av De Musikaliska Noterna
+    m_Localized: En del av de musikaliska tonerna
     m_Metadata:
       m_Items: []
   references:

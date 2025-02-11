@@ -73,21 +73,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 49572708568186880
-    m_Localized: Eastern Sweetshrub
+    m_Localized: Eastern Sweetshrub Flower
     m_Metadata:
       m_Items: []
   - m_Id: 49573477128257536
-    m_Localized: "Eastern Sweetshrub... The color reminds me of Evelynn\u2019s old
-      red dress. The one that once captivated everyone with its elegance... But this
-      flower is more than just a memory. When mixed with water, it has the power
-      to restore life. Much like Evelynn\u2019s presence once revived my soul."
+    m_Localized: "The color reminds me of Evelynn\u2019s old red dress. The one that
+      once captivated everyone with its elegance... But this flower is more than
+      just a memory. When mixed with water, it has the power to restore life. Much
+      like Evelynn\u2019s presence once revived my soul."
     m_Metadata:
       m_Items: []
   - m_Id: 49906938020020224
-    m_Localized: Echinacea... A flower of subtle resilience. On its own, it grants
-      a modest surge of energy, like a brief reprieve in the midst of exhaustion.
-      But when blended with tonic water, its potential flourishes, yielding a burst
-      of strength that lingers, a testament to its hidden power.
+    m_Localized: A flower of subtle resilience. On its own, it grants a modest surge
+      of energy, like a brief reprieve in the midst of exhaustion. But when blended
+      with tonic water, its potential flourishes, yielding a burst of strength that
+      lingers, a testament to its hidden power.
     m_Metadata:
       m_Items: []
   - m_Id: 49906897968611328

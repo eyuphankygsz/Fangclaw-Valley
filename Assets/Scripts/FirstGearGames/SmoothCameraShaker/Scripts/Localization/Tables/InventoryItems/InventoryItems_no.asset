@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InventoryItems_no
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: no
+  m_SharedData: {fileID: 11400000, guid: bc19f994f6990e64cbbdefb18d45a648, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19140650193793024
+    m_Localized: "Gassolje er avgj\xF8rende for \xE5 tenne lampen min. Jeg er desperat
+      i behov av lys for \xE5 krysse m\xF8rket i denne hulen, og denne oljen er n\xF8dvendig
+      for \xE5 holde lampen brennende. Dessverre har jeg bare litt igjen og m\xE5
+      bruke det med st\xF8rste forsiktighet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49572708568186880
+    m_Localized: "\xD8stlig s\xF8tbuskblomst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49573477128257536
+    m_Localized: "Fargen minner meg om Evelynns gamle r\xF8de kjole. Den som en gang
+      fanget alles oppmerksomhet med sin eleganse... Men denne blomsten er mer enn
+      bare et minne. N\xE5r den blandes med vann, har den kraften til \xE5 gjenopprette
+      livet. Akkurat som Evelynns tilstedev\xE6relse en gang gjenopplivet min sjel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906897968611328
+    m_Localized: Echinacea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49906938020020224
+    m_Localized: "En blomst med subtil motstandskraft. P\xE5 egen h\xE5nd gir den
+      et beskjedent energil\xF8ft, som en kort pause midt i utmattelse. Men n\xE5r
+      den blandes med tonicvann, blomstrer potensialet, og gir et utbrudd av styrke
+      som varer, et vitnesbyrd om dens skjulte kraft."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49971526598049792
+    m_Localized: Tonicvann
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49973552979558400
+    m_Localized: "En drikk som b\xE5de gir forfriskning og medisinsk hjelp. Infundert
+      med den bitre essensen av kinina, var tonicvann en gang en n\xF8dvendig alliert
+      i kampen mot feber. Dens brus, b\xE5de oppl\xF8ftende og skarp, har siden blitt
+      et symbol p\xE5 vitalitet. N\xE5r det blandes med de riktige elementene, har
+      det makten til \xE5 l\xE5se opp skjulte krefter, og gjenopplive ikke bare kroppen,
+      men ogs\xE5 \xE5nden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2005556969472
+    m_Localized: "Hvel\xF8gn\xF8kkel nr. 1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199181492224
+    m_Localized: "Jeg tror dette er en hvel\xF8gn\xF8kkel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11154890080256
+    m_Localized: "Det lukter veldig d\xE5rlig. Jeg er sikker p\xE5 at det er bra
+      for helsen..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505269372862464
+    m_Localized: "Bestemor lagde en gang en drikk med denne duften. P\xE5 den tiden
+      laget hun denne deilige eliksiren for meg, og presenterte den med stor omsorg,
+      som om det var et ritual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2278382406647808
+    m_Localized: no_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3257357132021760
+    m_Localized: "Liten lagringsn\xF8kkel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3260616429191168
+    m_Localized: "Denne v\xE6rbitte og rustne n\xF8kkelen, som b\xE6rer tegn p\xE5
+      fors\xF8mmelse, er sikkert ment for et beskjedent lagringsrom."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077189502976000
+    m_Localized: Kamper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14077305479675904
+    m_Localized: "Disse fyrstikkene har liten, men viktig betydning. Enkle trepinner,
+      perfekte for \xE5 tenne gasslampen min. De vil guide meg gjennom m\xF8rket
+      i denne hulen. Bare en gnist, og de vil belyse mysteriene som skjuler seg i
+      skyggene. Selv om de kan virke vanlige, er disse fyrstikkene avgj\xF8rende
+      for min overlevelse her."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19140619768311808
+    m_Localized: Gassolje
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

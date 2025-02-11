@@ -19,17 +19,21 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 11580552528445440
-    m_Localized: '(Entrambi i lati sono strappati.)
+    m_Localized: '(Entrambi i lati strappati.)
 
       I III V'
     m_Metadata:
       m_Items: []
   - m_Id: 11591077547130880
-    m_Localized: "(Il lato destro \xE8 strappato.)\nIV II I"
+    m_Localized: '(Lato destro strappato.)
+
+      IV II I'
     m_Metadata:
       m_Items: []
   - m_Id: 11592266523262976
-    m_Localized: "(Il lato sinistro \xE8 strappato.)\nII III IV"
+    m_Localized: '(Lato sinistro strappato.)
+
+      II III IV'
     m_Metadata:
       m_Items: []
   - m_Id: 11616544182419456
@@ -38,11 +42,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11619318483828736
     m_Localized: "Sono terribilmente consapevole che l'anima sfortunata che inciampa
-      su questa nota scoprir\xE0 anche il mio corpo senza vita. Il mio tempo sta
-      per scadere! Sembra che qualcuno abbia alterato le serrature... Quello che
-      ho visto qui (questa parte sar\xE0 scritta con una scrittura illeggibile).\n(Alla
-      fine della nota c'\xE8 una parola che \xE8 evidentemente stata aggiunta successivamente.)
-      'Mani....'"
+      su questa nota scoprir\xE0 anche la mia forma senza vita. Il mio tempo \xE8
+      pericolosamente breve! Sembra che qualcuno abbia cambiato le serrature... Ci\xF2
+      che ho visto qui (questa parte sar\xE0 scritta con una calligrafia del tutto
+      illeggibile).\n\n(Alla fine della nota, c'\xE8 una parola che evidentemente
+      \xE8 stata aggiunta successivamente.)\n'Mani....'"
     m_Metadata:
       m_Items: []
   - m_Id: 11659020779831296
@@ -50,24 +54,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11659034495205376
-    m_Localized: "Egregio Collega,\n\nLe strutture che ho incontrato all'interno
-      di questa caverna sono troppo complesse per essere il lavoro di una semplice
-      civilt\xE0 antica. Che si tratti di una civilt\xE0 dimenticata o qualcosa di
-      molto pi\xF9 avanzato, il loro scopo rimane elusivo. \xC8 evidente che i minatori
-      hanno riutilizzato queste camere, ma la loro funzione originale mi sfugge.\n\nDobbiamo
-      continuare la nostra indagine con la massima diligenza.\n\n- Dr. Grimshow"
+    m_Localized: "Stimato Collega,\n\nLe strutture che ho incontrato in questa caverna
+      sono troppo intricate per essere l'opera di semplici popoli antichi. Che si
+      tratti di una civilt\xE0 dimenticata o di qualcosa di molto pi\xF9 avanzato,
+      il loro scopo rimane sfuggente. \xC8 evidente che i minatori hanno riutilizzato
+      queste camere, ma la loro funzione originale mi sfugge.\n\nDobbiamo continuare
+      la nostra indagine con la massima diligenza.\n\n- Dr. Grimshow"
     m_Metadata:
       m_Items: []
   - m_Id: 60377186304
-    m_Localized: Entrata della Caverna
+    m_Localized: Ingresso alla caverna
     m_Metadata:
       m_Items: []
   - m_Id: 105105244160
     m_Localized: 'Cari leader dei minatori,
 
-
-      Come sapete, ho una passione
-      per gli enigmi. Ecco quindi uno per mettere alla prova la vostra intelligenza!
+      Come sapete, ho una passione per
+      gli indovinelli. Ecco quindi uno per mettere alla prova la vostra intelligenza!
 
 
       Per
@@ -75,12 +78,12 @@ MonoBehaviour:
       della natura.
 
 
-      Il lupo insegue la pecora, mentre l''orso resta immobile.
+      Il lupo insegue la pecora, mentre l''orso rimane fermo.
 
 
-      Svelate
-      il significato di questo enigma per scoprire quali leve riveleranno il cammino
-      da percorrere.
+      Decifrate
+      il significato di questo indovinello per scoprire quali leve riveleranno il
+      cammino da percorrere.
 
 
       Buona fortuna,
@@ -90,46 +93,49 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
-    m_Localized: "Ci\xF2 che resta di Alberto"
+    m_Localized: Cosa rimane di Alberto
     m_Metadata:
       m_Items: []
   - m_Id: 437633859584
-    m_Localized: "Alberto stava perdendo progressivamente la sua sanit\xE0 mentale
-      negli ultimi due giorni. Tuttavia, nessuno avrebbe mai potuto immaginare che
-      sarebbe scivolato in una tale follia. Con una spada presa dalla Stanza delle
-      Mappe, pose fine prematuramente alla vita del povero Bush. Dopo questo tragico
-      incidente, ho personalmente chiuso a chiave le porte della Stanza delle Mappe.
-      Non vedemmo mai pi\xF9 Alberto.\n\nPer assicurarci che la lunga password non
-      venisse dimenticata, Grimshaw ed io abbiamo ideato un piccolo enigma:\n\nCinque
-      uccelli avevano fatto una scommessa,\nDiscutendo su quanti piedi avesse una
-      formica.\nIl primo dichiar\xF2 \"tre\",\nIl terzo rispose \"tanti quanti i
-      nostri\",\nIl quarto disse \"uno in pi\xF9 del secondo\",\nE il quinto disse
-      \"due in meno del quarto\".\nAlla fine contarono, e si scopr\xEC che il secondo
-      uccello aveva ragione.\n\nCos\xEC riuscimmo a nascondere la password."
+    m_Localized: "Alberto aveva progressivamente perso la sua sanit\xE0 mentale negli
+      ultimi due giorni. Tuttavia, nessuno avrebbe mai immaginato che sarebbe scivolato
+      in una follia simile. Con una spada presa dalla Stanza delle Mappe, pose fine
+      prematuramente alla vita del povero Bush. Dopo questo tragico incidente, ho
+      personalmente messo in sicurezza le porte della Stanza delle Mappe. Non abbiamo
+      mai visto pi\xF9 Alberto.\nPer assicurarci che la lunga password non venisse
+      dimenticata, Grimshaw ed io abbiamo ideato un piccolo enigma:\n\nCinque uccelli
+      avevano fatto una scommessa,\nDiscutevano su quante gambe avesse una formica.\nIl
+      primo dichiar\xF2 \"tre\",\nIl terzo rispose \"tante quante noi\",\nIl quarto
+      disse \"una in pi\xF9 del secondo\",\nE il quinto disse \"due in meno del quarto\".\nAlla
+      fine, contarono, e si scopr\xEC che il secondo uccello aveva ragione.\n\nCos\xEC,
+      riuscimmo a nascondere la password."
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
     m_Localized: "Menu del giorno:\n\nColazione: Porridge e una fetta di pane duro
-      con t\xE8.\nPranzo: Stufato di patate e carne, con sottaceti e pane.\nCena:
-      Fagioli al forno con salsiccia e un pezzo di formaggio."
+      con t\xE8.\nPranzo: Niente pranzo, maiali grassi!\nCena: Fagioli al forno con
+      salsiccia e un pezzo di formaggio.\n\nInoltre, chi ha cazzo fatto cadere la
+      chiave della piccola dispensa nel fottuto X!? Ora dobbiamo capire come aprire
+      X. Penso che ci sia una connessione con quelle vecchie statue inutili in giro.\nSe
+      trovi qualcosa di utile, segnalo sulla mappa vicino alla cucina."
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680
-    m_Localized: Il Mistero delle Note
+    m_Localized: Il mistero delle note
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
-    m_Localized: "Sono arrivata a credere che le note dello strumento musicale possano
-      dare un risultato misterioso se suonate in un ordine specifico. Ero abbastanza
-      vicina a scoprire questa sequenza; sfortunatamente, il foglio su cui avevo
-      scritto l'ordine \xE8 misteriosamente scomparso il giorno dopo.\n\nDobbiamo
+    m_Localized: "Sono giunta alla conclusione che le note dello strumento musicale
+      potrebbero produrre un risultato misterioso se suonate in un ordine specifico.
+      Ero molto vicina a scoprire questa sequenza; sfortunatamente, il foglio su
+      cui avevo scritto l'ordine \xE8 misteriosamente scomparso il giorno successivo.\n\nDobbiamo
       lavorare insieme per chiarire questa situazione e riscoprire la sequenza. Ogni
-      vostro contributo \xE8 cruciale per risolvere questo mistero.\n\nCordiali saluti,\n\n-
-      Dr. Elara Voss"
+      vostro contributo \xE8 fondamentale per risolvere questo mistero.\n\nCordiali
+      saluti,\n\n- Dr. Elara Voss"
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: Una Parte Delle Note Musicali
+    m_Localized: Una parte delle note musicali
     m_Metadata:
       m_Items: []
   references:

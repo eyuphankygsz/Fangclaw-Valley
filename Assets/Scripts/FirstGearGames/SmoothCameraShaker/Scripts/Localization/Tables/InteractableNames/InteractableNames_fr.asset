@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 94690787328
-    m_Localized: "Cl\xE9 d'Or"
+    m_Localized: "Cl\xE9 dor\xE9e"
     m_Metadata:
       m_Items: []
   - m_Id: 98855731200
@@ -47,11 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 386463179128832
-    m_Localized: "Potion de sant\xE9"
+    m_Localized: "Potion de Sant\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 386709376385024
-    m_Localized: "Potion d'endurance\r"
+    m_Localized: "Potion d\u2019Endurance"
     m_Metadata:
       m_Items: []
   - m_Id: 390466071871488
@@ -71,11 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1820513609629696
-    m_Localized: "Ces cr\xE2nes ne peuvent \xEAtre les restes d'\xEAtres ordinaires.
-      Chacun porte les traces d'une puissance au-del\xE0 de l'humain. Leurs m\xE2choires,
-      leurs orbites profondes et leurs formes indiquent un myst\xE8re ancien. Plus
-      leur nombre augmente, plus la peur grandit en moi\u2014quel sombre secret pourrait
-      \xEAtre enfoui dans ces terres?"
+    m_Localized: "Ces cr\xE2nes ne peuvent pas \xEAtre les vestiges d'\xEAtres ordinaires.
+      Chacun porte des traces de quelque chose qui d\xE9passe l'humain. Leurs structures
+      de m\xE2choire, leurs orbites profondes et leurs formes pointent vers un myst\xE8re
+      ancien. Plus leur nombre grandit, plus la peur en moi s'intensifie\u2014quel
+      sombre secret pourrait \xEAtre enfoui au plus profond de ces terres ?"
     m_Metadata:
       m_Items: []
   - m_Id: 3620433568120832
@@ -83,8 +83,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3620887492476928
-    m_Localized: "Pour ces moments o\xF9 je dois monter pour saisir ce qui est juste
-      hors de port\xE9e."
+    m_Localized: "Pour ces moments o\xF9 je dois monter afin d\u2019atteindre ce
+      qui semble hors de port\xE9e."
     m_Metadata:
       m_Items: []
   - m_Id: 3627906857353216
@@ -92,7 +92,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5519764290191360
-    m_Localized: Porte de Fer
+    m_Localized: Porte en fer
     m_Metadata:
       m_Items: []
   - m_Id: 8654831409610752
@@ -100,8 +100,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8655027312967680
-    m_Localized: "Cet explosif est souvent utilis\xE9 dans les mines. C\u2019est
-      un moyen de d\xE9tonation co\xFBteux et puissant."
+    m_Localized: "Cet explosif est souvent utilis\xE9 dans les mines. C'est un moyen
+      co\xFBteux et puissant de d\xE9tonation."
     m_Metadata:
       m_Items: []
   - m_Id: 8691674247249920
@@ -110,17 +110,17 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 8692014921203712
     m_Localized: "Une corde robuste, essentielle pour diverses t\xE2ches dans les
-      mines, de la s\xE9curisation des charges \xE0 l'aide pour les descentes. Sa
-      fiabilit\xE9 n'a d'\xE9gale que sa polyvalence."
+      mines, qu'il s'agisse de s\xE9curiser des charges ou d'aider aux descentes.
+      Sa fiabilit\xE9 n'a d'\xE9gal que sa polyvalence."
     m_Metadata:
       m_Items: []
   - m_Id: 8695812083335168
-    m_Localized: Dynamite en paquet
+    m_Localized: Dynamite en fagot
     m_Metadata:
       m_Items: []
   - m_Id: 8695997194747904
-    m_Localized: "Un paquet de b\xE2tons de dynamite, solidement attach\xE9s ensemble
-      pour une explosion plus puissante. Souvent utilis\xE9 dans les grandes op\xE9rations
+    m_Localized: "Un paquet de b\xE2tons de dynamite, solidement attach\xE9s pour
+      une explosion plus puissante. Souvent utilis\xE9 dans les grandes op\xE9rations
       mini\xE8res pour d\xE9gager de vastes zones rocheuses."
     m_Metadata:
       m_Items: []
@@ -134,6 +134,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 14476268854755328
     m_Localized: Disque
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Bouton
     m_Metadata:
       m_Items: []
   references:

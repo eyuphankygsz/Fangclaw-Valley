@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: RoomNames_hu
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: hu
+  m_SharedData: {fileID: 11400000, guid: 5baf1b8a06090f947a8768b6db496ab8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 15334555648
+    m_Localized: "Barlangbej\xE1rat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385192476672
+    m_Localized: "F\u0151szoba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 497885036544
+    m_Localized: "Pihen\u0151szoba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 613643632640
+    m_Localized: Konyha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 339933025976320
+    m_Localized: "T\xE1rol\xF3helyis\xE9g ajt\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 694618762375168
+    m_Localized: "Kis t\xE1rol\xF3helyis\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42839186742624256
+    m_Localized: "Fegyverrakt\xE1r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42839616772030464
+    m_Localized: "T\xE9rk\xE9pszoba"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

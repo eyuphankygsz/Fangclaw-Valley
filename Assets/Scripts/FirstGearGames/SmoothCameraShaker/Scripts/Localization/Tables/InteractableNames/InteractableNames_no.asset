@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InteractableNames_no
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: no
+  m_SharedData: {fileID: 11400000, guid: c18a252601e00b34681f9f9e268cb11c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8691674247249920
+    m_Localized: Tau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8692014921203712
+    m_Localized: "En solid lengde tau, essensielt for ulike oppgaver i gruvene, fra
+      sikring av last til hjelp ved nedstigninger. Dets p\xE5litelighet matches kun
+      av dets allsidighet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695812083335168
+    m_Localized: Bundet dynamitt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8695997194747904
+    m_Localized: "En bunt med dynamittstenger, tett bundet sammen for en kraftigere
+      eksplosjon. Ofte brukt i st\xF8rre gruveoperasjoner for \xE5 rydde store omr\xE5der
+      med stein."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048642019311616
+    m_Localized: Lykt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732202711662592
+    m_Localized: "Kodel\xE5s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14476268854755328
+    m_Localized: Plate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61940686952325120
+    m_Localized: Knapp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23509254144
+    m_Localized: Koffert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91834466304
+    m_Localized: Skrivemaskin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94690787328
+    m_Localized: "Gylden n\xF8kkel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98855731200
+    m_Localized: Hvelv
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131315449856
+    m_Localized: Bryter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134763167744
+    m_Localized: "Tred\xF8r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 313811672416256
+    m_Localized: Notat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386463179128832
+    m_Localized: Helsedrikk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386709376385024
+    m_Localized: Utholdenhetsdrikk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390466071871488
+    m_Localized: "L\xF8ve"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390507608064000
+    m_Localized: Apekatt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390523852603392
+    m_Localized: Antilope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038599109918720
+    m_Localized: Hodeskalle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820513609629696
+    m_Localized: "Disse hodeskallene kan ikke v\xE6re levninger etter vanlige vesener.
+      Hver eneste b\xE6rer spor av noe som overg\xE5r det menneskelige. Deres kjevebein,
+      dype \xF8yehuler og former peker mot en eldgammel g\xE5te. Jo flere jeg finner,
+      desto mer vokser frykten i meg\u2014hvilken m\xF8rk hemmelighet kan v\xE6re
+      begravet dypt i dette landet?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620433568120832
+    m_Localized: Stige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3620887492476928
+    m_Localized: "For de gangene jeg m\xE5 klatre opp for \xE5 n\xE5 det som er like
+      utenfor rekkevidde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3627906857353216
+    m_Localized: Sokkel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5519764290191360
+    m_Localized: "Jernd\xF8r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8654831409610752
+    m_Localized: Dynamitt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8655027312967680
+    m_Localized: Dette eksplosivet brukes ofte i gruvene. Det er et kostbart og potent
+      middel for detonasjon.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

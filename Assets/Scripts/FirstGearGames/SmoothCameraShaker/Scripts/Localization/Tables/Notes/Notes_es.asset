@@ -19,100 +19,103 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 60377186304
-    m_Localized: Entrada a la Cueva
+    m_Localized: Entrada a la cueva
     m_Metadata:
       m_Items: []
   - m_Id: 105105244160
-    m_Localized: "Estimados l\xEDderes de los mineros,\n\nComo sab\xE9is, tengo debilidad
-      por los acertijos. \xA1As\xED que aqu\xED ten\xE9is uno para poner a prueba
-      vuestra inteligencia!\n\nPara desbloquear los secretos detr\xE1s de la puerta,
-      deb\xE9is inspiraros en la sabidur\xEDa de la naturaleza.\n\nEl lobo persigue
-      a la oveja, mientras que el oso permanece inm\xF3vil.\n\nDesentra\xF1ad el
-      significado de este acertijo para descubrir qu\xE9 palancas revelar\xE1n el
-      camino hacia adelante.\n\n\xA1Buena suerte!\n\n- Dr. Grimshaw"
+    m_Localized: "Queridos l\xEDderes de los trabajadores de la mina,\nComo sab\xE9is,
+      me gustan los acertijos. \xA1Aqu\xED ten\xE9is uno para desafiar vuestra inteligencia!\n\nPara
+      desbloquear los secretos detr\xE1s de la puerta, deb\xE9is inspiraros en la
+      sabidur\xEDa de la naturaleza.\n\nEl lobo persigue a la oveja, mientras que
+      el oso permanece quieto.\n\nDesentra\xF1ad el significado de este acertijo
+      para descubrir qu\xE9 palancas revelar\xE1n el camino hacia adelante.\n\nBuena
+      suerte,\n\n- Dr. Grimshaw"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
     m_Localized: "Men\xFA de hoy:\n\nDesayuno: Gachas y una rebanada de pan duro
-      con t\xE9.\nAlmuerzo: Estofado de patatas y carne, con encurtidos y pan.\nCena:
-      Frijoles horneados con salchicha y un trozo de queso."
+      con t\xE9.\nAlmuerzo: \xA1No hay almuerzo, cerditos gordos!\nCena: Frijoles
+      horneados con salchichas y un trozo de queso.\n\nAdem\xE1s, \xBFqui\xE9n demonios
+      dej\xF3 la llave del peque\xF1o almacenamiento en el maldito X!? Ahora tenemos
+      que averiguar c\xF3mo abrir X. Creo que hay alguna conexi\xF3n con esas viejas
+      estatuas in\xFAtiles alrededor.\nSi encuentras algo \xFAtil, m\xE1rcalo en
+      la mapa cerca de la cocina."
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728
-    m_Localized: Lo Que Queda de Alberto
+    m_Localized: Lo que queda de Alberto
     m_Metadata:
       m_Items: []
   - m_Id: 437633859584
     m_Localized: "Alberto hab\xEDa estado perdiendo progresivamente su cordura durante
       los \xFAltimos dos d\xEDas. Sin embargo, nadie podr\xEDa haber imaginado que
       caer\xEDa en tal locura. Con una espada tomada de la Sala de Mapas, puso fin
-      prematuramente a la vida del pobre Bush. Despu\xE9s de este tr\xE1gico incidente,
-      cerr\xE9 personalmente las puertas de la Sala de Mapas. Nunca volvimos a ver
-      a Alberto.\n\nPara asegurarnos de que la larga contrase\xF1a no se olvidara,
-      Grimshaw y yo ideamos una peque\xF1a adivinanza:\n\nCinco aves hicieron una
-      apuesta,\nDiscut\xEDan cu\xE1ntas patas tiene una hormiga.\nEl primero dijo
-      \u201Ctres\u201D,\nEl tercero respondi\xF3 \u201Ctantas como las nuestras\u201D,\nEl
-      cuarto dijo \u201Cuna m\xE1s que el segundo\u201D,\nY el quinto dijo \u201Cdos
-      menos que el cuarto\u201D.\nAl final, contaron y result\xF3 que el segundo
-      p\xE1jaro ten\xEDa raz\xF3n.\n\nAs\xED que logramos ocultar la contrase\xF1a."
+      prematuramente a la vida del pobre Bush. Tras este tr\xE1gico incidente, asegur\xE9
+      personalmente las puertas de la Sala de Mapas. Nunca volvimos a ver a Alberto.\nPara
+      asegurarnos de que la larga contrase\xF1a no se olvidara, Grimshaw y yo ideamos
+      una peque\xF1a adivinanza:\n\nCinco p\xE1jaros hicieron una apuesta,\nDiscutieron
+      sobre cu\xE1ntas patas tiene una hormiga.\nEl primero dijo \"tres\",\nEl tercero
+      respondi\xF3 \"tantas como nosotros\",\nEl cuarto dijo \"una m\xE1s que el
+      segundo\",\nY el quinto dijo \"dos menos que el cuarto\".\nAl final, contaron
+      y result\xF3 que el segundo p\xE1jaro ten\xEDa raz\xF3n.\n\nAs\xED, logramos
+      ocultar la contrase\xF1a."
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
-    m_Localized: "He llegado a la conclusi\xF3n de que las notas del instrumento
-      musical pueden dar un resultado misterioso cuando se tocan en un orden espec\xEDfico.
-      Estaba bastante cerca de descubrir esta secuencia; sin embargo, el papel en
+    m_Localized: "He llegado a creer que las notas del instrumento musical pueden
+      dar lugar a un resultado misterioso cuando se tocan en un orden espec\xEDfico.
+      Estuve muy cerca de descubrir esta secuencia; lamentablemente, el papel en
       el que hab\xEDa escrito el orden desapareci\xF3 misteriosamente al d\xEDa siguiente.\n\nDebemos
       trabajar juntos para aclarar esta situaci\xF3n y redescubrir la secuencia.
       Cada una de sus contribuciones es crucial para resolver este misterio.\n\nAtentamente,\n\n-
-      Dra. Elara Voss"
+      Dr. Elara Voss"
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680
-    m_Localized: El Misterio de las Notas
+    m_Localized: El misterio de las notas
     m_Metadata:
       m_Items: []
   - m_Id: 11580516499374080
-    m_Localized: Una Parte De Las Notas Musicales
+    m_Localized: Una parte de las notas musicales
     m_Metadata:
       m_Items: []
   - m_Id: 11580552528445440
-    m_Localized: '(Rasgada por ambos lados.)
+    m_Localized: '(Ambos lados rasgados.)
 
-      I  III  V'
+      I III V'
     m_Metadata:
       m_Items: []
   - m_Id: 11591077547130880
-    m_Localized: '(Rasgada por el lado derecho.)
+    m_Localized: '(Lado derecho rasgado.)
 
       IV  II  I '
     m_Metadata:
       m_Items: []
   - m_Id: 11592266523262976
-    m_Localized: '(Rasgada por el lado izquierdo.)
+    m_Localized: '(Lado izquierdo rasgado.)
 
       II  III IV'
     m_Metadata:
       m_Items: []
   - m_Id: 11616544182419456
-    m_Localized: "El \xDAltimo Testigo"
+    m_Localized: "El \xFAltimo testigo"
     m_Metadata:
       m_Items: []
   - m_Id: 11619318483828736
-    m_Localized: "Soy terriblemente consciente de que el desafortunado que tropiece
-      con esta nota tambi\xE9n encontrar\xE1 mi cuerpo sin vida. \xA1Mi tiempo se
-      agota peligrosamente! Parece que alguien ha alterado las cerraduras... Lo que
-      presenci\xE9 aqu\xED (esta parte estar\xE1 inscrita en una escritura completamente
-      ilegible).\n\n(Al final de la nota, hay una palabra que evidentemente fue a\xF1adida
-      m\xE1s tarde.)\n'Manos....'"
+    m_Localized: "Soy terriblemente consciente de que el alma desafortunada que tropiece
+      con esta nota tambi\xE9n descubrir\xE1 mi cuerpo sin vida. Mi tiempo es peligrosamente
+      corto. Parece que alguien ha alterado las cerraduras... Lo que fui testigo
+      aqu\xED (esta parte ser\xE1 inscrita con una caligraf\xEDa completamente ilegible).\n\n(Al
+      final de la nota hay una palabra que evidentemente se a\xF1adi\xF3 m\xE1s tarde.)\n'Manos....'"
     m_Metadata:
       m_Items: []
   - m_Id: 11659034495205376
     m_Localized: "Estimado colega,\n\nLas estructuras que he encontrado en esta cueva
-      son demasiado intrincadas para ser obra de un pueblo antiguo simple. Ya sea
+      son demasiado intrincadas para ser obra de simples pueblos antiguos. Ya sea
       una civilizaci\xF3n olvidada o algo mucho m\xE1s avanzado, su prop\xF3sito
-      sigue siendo esquivo. Es evidente que los mineros reutilizaron estas c\xE1maras,
+      sigue siendo elusivo. Es evidente que los mineros reutilizaron estas c\xE1maras,
       pero su funci\xF3n original escapa a mi comprensi\xF3n.\n\nDebemos continuar
-      nuestra investigaci\xF3n con la mayor diligencia.\n\n- Dr. Grimshow"
+      nuestra investigaci\xF3n con la m\xE1xima diligencia.\n\n- Dr. Grimshow"
     m_Metadata:
       m_Items: []
   - m_Id: 11659020779831296

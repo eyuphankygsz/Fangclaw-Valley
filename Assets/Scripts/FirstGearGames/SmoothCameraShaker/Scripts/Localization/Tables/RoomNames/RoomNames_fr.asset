@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 15334555648
-    m_Localized: "Entr\xE9e de la Caverne"
+    m_Localized: "Entr\xE9e de la caverne"
     m_Metadata:
       m_Items: []
   - m_Id: 385192476672
-    m_Localized: Salle Principale
+    m_Localized: Salle principale
     m_Metadata:
       m_Items: []
   - m_Id: 497885036544
@@ -35,19 +35,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 339933025976320
-    m_Localized: "Porte Du D\xE9barras\r\n"
+    m_Localized: Porte de la salle de stockage
     m_Metadata:
       m_Items: []
   - m_Id: 694618762375168
-    m_Localized: "Petit d\xE9barras"
+    m_Localized: Petite salle de stockage
     m_Metadata:
       m_Items: []
   - m_Id: 42839186742624256
-    m_Localized: Armurerie
+    m_Localized: Arsenal
     m_Metadata:
       m_Items: []
   - m_Id: 42839616772030464
-    m_Localized: Salle des Cartes
+    m_Localized: Salle des cartes
     m_Metadata:
       m_Items: []
   references:
