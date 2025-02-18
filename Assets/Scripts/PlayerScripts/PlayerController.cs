@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 	private PlayerHealth _pHealth;
 	[SerializeField]
 	private PlayerStamina _pStamina;
-
+	[SerializeField]
+	private MapCamera _mapCam;
 	private PlayerData _data = new PlayerData();
 
 
@@ -87,6 +88,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 
 		if (_freeze) return;
 
+		_mapCam.SetMap(transform.position, transform.rotation.eulerAngles);
 
 		_playerStateMachine.ExecuteState();
 		_playerCamera.ManageRotate();

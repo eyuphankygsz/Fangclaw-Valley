@@ -65,13 +65,14 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 		_controls.Player.Interaction.performed -= TryInteract;
 	}
 
-
+	private Interactable _currentInteractable;
 	public void TryInteract(InputAction.CallbackContext ctx)
 	{
 		if (ctx.performed && _interactableObject != null)
 		{
 			var _hitObject = _interactableObject.GetComponent<Interactable>();
-			_hitObject.OnInteract(Enum_Weapons.Hands);
+			if (_hitObject.GetInteractableType() == InteractableType.Press)
+				_hitObject.OnInteract(Enum_Weapons.Hands);
 		}
 	}
 

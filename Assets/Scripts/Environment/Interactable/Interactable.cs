@@ -31,7 +31,9 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 
 
 	[SerializeField]
-	protected GameObject _scanObject;
+	protected GameObject _scanObject; 
+	[SerializeField]
+	protected InteractableType _interactableType;
 
 	[Inject]
 	protected SaveManager _saveManager;
@@ -57,6 +59,21 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 			return;
 
 		x.Name = InteractableName;
+
+		if(_scanObject != null)
+		{
+			Transform mapTransform = _scanObject.transform.GetChild(0);
+			mapTransform.parent = null;
+
+			Transform scanParent = _scanObject.transform.parent;
+			_scanObject.transform.parent = null;
+			_scanObject.transform.localScale = Vector3.one * 0.05f;
+			_scanObject.transform.parent = scanParent;
+
+			mapTransform.position = new Vector3(mapTransform.position.x, 52, mapTransform.position.z);
+			mapTransform.localScale = Vector3.one * 1;
+			mapTransform.parent = _scanObject.transform;
+		}
 	}
 	protected void Start()
 	{
@@ -119,4 +136,12 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	{
 		return;
 	}
+
+	public InteractableType GetInteractableType() => _interactableType;
+}
+
+public enum InteractableType
+{
+	Press,
+	Hold
 }

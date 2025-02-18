@@ -3004,6 +3004,7 @@ MonoBehaviour:
   - {fileID: 726043630}
   - {fileID: 2129106907}
   - {fileID: 360770534}
+  _tmp: {fileID: 0}
 --- !u!4 &169603344
 Transform:
   m_ObjectHideFlags: 0
@@ -16456,7 +16457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4006510038024346, guid: a0aa2525ba693f54db86d05aa66bde7d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.20233428
+      value: -0.355
       objectReference: {fileID: 0}
     - target: {fileID: 4006510038024346, guid: a0aa2525ba693f54db86d05aa66bde7d, type: 3}
       propertyPath: m_LocalPosition.z
