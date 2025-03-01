@@ -56,7 +56,7 @@ public class Interactable_PlaceHolder : Interactable
 	{
 		_statusID = enable ? 2 : 1;
 		gameObject.SetActive(enable);
-	} 
+	}
 	private void OnEnable()
 	{
 		if (_initialized && _statusID == 1)
@@ -91,9 +91,16 @@ public class Interactable_PlaceHolder : Interactable
 
 		if (placed)
 		{
+			Debug.Log("PLACED");
+			_trueEvents?.Invoke();
 			_holderObject = _objectPool.GetObject(_holderTransform.position, _poolItem);
 			_holderObject.transform.rotation = transform.rotation;
 			_holderObject.transform.SetParent(_holderTransform.parent);
+		}
+		else
+		{
+			Debug.Log("REMOVED");
+			_falseEvents?.Invoke();
 		}
 	}
 	public override GameData GetGameData()

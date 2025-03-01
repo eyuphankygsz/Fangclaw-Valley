@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class WhispererController : MonoBehaviour
+public class WhispererController : MonoBehaviour, IEnemyController
 {
 	[SerializeField]
 	private Transform _player;
@@ -20,15 +20,14 @@ public class WhispererController : MonoBehaviour
 	private MonoBehaviour _startState, _stunState, _escapeState, _followState, _attackState, _attackHState;
 	[SerializeField]
 	private TimeForExitStun _stunTime;
-	[SerializeField]
-	private IsTimeArrived _isTimeArrived;
 
 
 	private EnemyAttackController _enemyAttackController;
 
 	public bool Stop;
-	public bool Stunned;
-	public bool DiscardTime;
+
+	public bool DiscardTime { get; set; }
+	public bool Stunned { get; set; }
 
 	private void Awake()
 	{
@@ -44,31 +43,12 @@ public class WhispererController : MonoBehaviour
 	{
 		_canSee.SendRays();
 		_enemyAttackController.TryAttack();
-		CheckTime();
 	}
 
 	public void SetPosition(Transform tf)
 	{
 		transform.position = tf.position;
 		transform.rotation = tf.rotation;
-	}
-	public void CheckTime()
-	{
-		if (!_isTimeArrived.CheckCondition() && !DiscardTime)
-			if(CanEscapeStates())
-			_machine.SetCurrentState("Escape");
-	}
-	private bool CanEscapeStates()
-	{
-		IEnemyState state = _machine.GetCurrentState();
-		if(state != _followState as IEnemyState 
-			&& state != _stunState as IEnemyState
-			&& state != _attackState as IEnemyState
-			&& state != _escapeState as IEnemyState
-			&& state != _attackHState as IEnemyState)
-			return true;
-
-		return false;
 	}
 	public void FollowPlayer()
 	{

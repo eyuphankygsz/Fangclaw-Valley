@@ -1,6 +1,4 @@
 using Newtonsoft.Json;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine;
@@ -52,8 +50,15 @@ public class MainMenu : MonoBehaviour
 
 			length--;
 		}
-		_savePath = _savePath.Substring(0, length) + "\\SavesDir\\save.json";
+		_savePath = _savePath.Substring(0, length - 1) + "\\SavesDir";
 
+		if (!Directory.Exists(_savePath))
+		{
+			Debug.Log("DIRECTORY NOT EXIST");
+			Directory.CreateDirectory(_savePath);
+		}
+
+		_savePath += "\\save.json";
 		//GameObject.FindWithTag("dataPath").GetComponent<TextMeshProUGUI>().text = _savePath;
 
 		_jsonSettings = new JsonSerializerSettings

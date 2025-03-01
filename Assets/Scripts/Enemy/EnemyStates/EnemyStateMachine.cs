@@ -23,9 +23,16 @@ public class EnemyStateMachine : MonoBehaviour
 	private List<AbstractCondition> _allConditions;
 
 	[SerializeField]
-	private WhispererController _controller;
+	private GameObject _controllerObj;
+
+	private IEnemyController _controller;
 
 	private bool _init;
+
+	private void Awake()
+	{
+		_controller = GetComponent<IEnemyController>();
+	}
 
 	private void Start()
 	{

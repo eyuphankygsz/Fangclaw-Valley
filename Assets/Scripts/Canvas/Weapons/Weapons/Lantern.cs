@@ -91,7 +91,7 @@ public class Lantern : Weapons
 	public float GetInitialNormalIntensity() => _initialIntensityNormal;
 	public float GetInitialDirectIntensity() => _initialIntensityDirect;
 	public float GetInitialBehindIntensity() => _initialIntensityBehind;
-	public float GetInitialWeaponIntensity() => 1f;
+	public float GetInitialWeaponIntensity() => .5f;
 
 	private void MoveNormal()
 	{
@@ -200,6 +200,7 @@ public class Lantern : Weapons
 	public void Enlight()
 	{
 		_onFire = true;
+		_onHandLight.intensity = 0.5f;
 		_gasLeakLoop.clip = _gasSound;
 		_gasLeakLoop.Play();
 		_animator.SetBool("OnFire", _onFire);
@@ -210,6 +211,7 @@ public class Lantern : Weapons
 	}
 	public void Delight()
 	{
+		_onHandLight.intensity = 0f;
 		_onFire = false;
 		_isShining = false;
 		_gasLeakLoop.Stop();
@@ -241,6 +243,7 @@ public class Lantern : Weapons
 			_lanternLights = new Light[] { _normalLightSource.GetComponent<Light>(), _directLightSource.GetComponent<Light>(), _behindLightSource.GetComponent<Light>() };
 
 		_lanternLights[id].intensity = intensity;
+		Debug.Log(_lanternLights[id]);
 	}
 	public void SetBehindLightning(bool enable)
 	{

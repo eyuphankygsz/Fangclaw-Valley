@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
+  m_Name: PlacedGear2
+  m_EditorClassIdentifier: 
+  Name: pgear2
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 2278382406647808
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 2278382406647808
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemSprite: {fileID: 0}
+  StackQuantity: 1
+  OneTime: 1
+  ItemFunctions: 0100000003000000
+  InspectSFX: {fileID: 8300000, guid: c8b2d95708f2ce441a180c5a35fe4efc, type: 3}
+  UseSFX: {fileID: 8300000, guid: c8b2d95708f2ce441a180c5a35fe4efc, type: 3}
+  DropSFX: {fileID: 0}
+  InspectName: 
+  UseName: 
+  CombineName: 
+  DropName: 
+  Item: {fileID: 7793469650394995618, guid: 024aa718b57e146468a483b5762929ce, type: 3}
+  INITIAL_COUNT: 3
+  INITIAL_QUANTITY: 1
+  references:
+    version: 2
+    RefIds: []

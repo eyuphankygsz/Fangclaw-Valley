@@ -111,6 +111,10 @@ MonoBehaviour:
     m_Localized: Kaasupetroli
     m_Metadata:
       m_Items: []
+  - m_Id: 65493075240148992
+    m_Localized: "Hammaspy\xF6r\xE4"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

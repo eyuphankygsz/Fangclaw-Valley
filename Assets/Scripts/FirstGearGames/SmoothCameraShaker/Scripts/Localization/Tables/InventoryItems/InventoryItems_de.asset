@@ -111,6 +111,10 @@ MonoBehaviour:
     m_Localized: "Gas\xF6l"
     m_Metadata:
       m_Items: []
+  - m_Id: 65493075240148992
+    m_Localized: Zahnrad
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

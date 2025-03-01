@@ -23,8 +23,6 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 	private bool _scanning;
 	private ControlSchema _controls;
 
-	private float _transitionDuration = 1f;
-
 	private float _targetLensDistortion = -0.5f;
 	private float _targetFocusDistance = 0f;
 	private float _targetChromaticAberration = 1.1f;

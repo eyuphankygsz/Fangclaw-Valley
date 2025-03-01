@@ -31,9 +31,7 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 
 
 	[SerializeField]
-	protected GameObject _scanObject; 
-	[SerializeField]
-	protected InteractableType _interactableType;
+	protected GameObject _scanObject;
 
 	[Inject]
 	protected SaveManager _saveManager;
@@ -136,12 +134,4 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	{
 		return;
 	}
-
-	public InteractableType GetInteractableType() => _interactableType;
-}
-
-public enum InteractableType
-{
-	Press,
-	Hold
 }

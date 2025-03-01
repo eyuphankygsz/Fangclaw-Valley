@@ -33,6 +33,8 @@ public class EnemyAttackController : MonoBehaviour
 	[SerializeField]
 	private AudioSource _source;
 
+	private bool _showGizmos;
+
 	public void SetAttackTrue() =>
 		_attacking = true;
 	public void SetAttackFalse()
@@ -62,7 +64,7 @@ public class EnemyAttackController : MonoBehaviour
 
 	private void OnDrawGizmos()
 	{
-		if (!_attacking) return;
+		if (!_attacking || _showGizmos) return;
 
 		Gizmos.color = Color.red;
 		Gizmos.DrawWireSphere(_attackPos.position, _attackRadius);

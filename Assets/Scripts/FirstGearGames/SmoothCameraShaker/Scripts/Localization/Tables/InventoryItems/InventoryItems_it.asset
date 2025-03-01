@@ -108,6 +108,10 @@ MonoBehaviour:
     m_Localized: Olio di gas
     m_Metadata:
       m_Items: []
+  - m_Id: 65493075240148992
+    m_Localized: Ingranaggio
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

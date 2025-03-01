@@ -70,9 +70,8 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	{
 		if (ctx.performed && _interactableObject != null)
 		{
-			var _hitObject = _interactableObject.GetComponent<Interactable>();
-			if (_hitObject.GetInteractableType() == InteractableType.Press)
-				_hitObject.OnInteract(Enum_Weapons.Hands);
+			_currentInteractable = _interactableObject.GetComponent<Interactable>();
+			_currentInteractable.OnInteract(Enum_Weapons.Hands);
 		}
 	}
 

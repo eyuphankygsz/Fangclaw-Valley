@@ -31,7 +31,7 @@ public class ShineMode : MonoBehaviour
 				int layer = hitOthers.collider.gameObject.layer;
 				if ((_seeThrough.value & (1 << layer)) != 0)
 				{
-					if (hit.transform.TryGetComponent<WhispererController>(out WhispererController controller))
+					if (hit.transform.TryGetComponent<IEnemyController>(out IEnemyController controller))
 					{
 						_hit = hit;
 						if (!_hitBool)

@@ -115,6 +115,10 @@ MonoBehaviour:
       \xE7\u0131karma g\xFCc\xFCne sahiptir; sadece bedeni de\u011Fil, ruhu da canland\u0131r\u0131r."
     m_Metadata:
       m_Items: []
+  - m_Id: 65493075240148992
+    m_Localized: "Di\u015Fli \xC7ark"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

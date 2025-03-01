@@ -106,6 +106,10 @@ MonoBehaviour:
       strengths, reviving not just the body, but the spirit as well.
     m_Metadata:
       m_Items: []
+  - m_Id: 65493075240148992
+    m_Localized: Gear
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

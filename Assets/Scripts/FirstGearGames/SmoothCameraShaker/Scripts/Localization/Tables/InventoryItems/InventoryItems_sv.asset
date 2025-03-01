@@ -110,6 +110,10 @@ MonoBehaviour:
     m_Localized: Gasolja
     m_Metadata:
       m_Items: []
+  - m_Id: 65493075240148992
+    m_Localized: Kugghjul
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

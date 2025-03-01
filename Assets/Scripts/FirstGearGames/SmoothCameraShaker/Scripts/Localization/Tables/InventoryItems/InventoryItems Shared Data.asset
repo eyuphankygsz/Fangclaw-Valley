@@ -83,6 +83,10 @@ MonoBehaviour:
     m_Key: tonic_wat_desc
     m_Metadata:
       m_Items: []
+  - m_Id: 65493075240148992
+    m_Key: gear
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
