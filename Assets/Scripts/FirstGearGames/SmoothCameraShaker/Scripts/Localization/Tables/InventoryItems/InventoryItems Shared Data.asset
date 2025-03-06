@@ -87,6 +87,14 @@ MonoBehaviour:
     m_Key: gear
     m_Metadata:
       m_Items: []
+  - m_Id: 70561685209866240
+    m_Key: battery_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70561717111742464
+    m_Key: battery_0_desc
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

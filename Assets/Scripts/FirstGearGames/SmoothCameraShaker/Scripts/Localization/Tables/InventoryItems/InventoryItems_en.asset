@@ -110,6 +110,10 @@ MonoBehaviour:
     m_Localized: Gear
     m_Metadata:
       m_Items: []
+  - m_Id: 70561685209866240
+    m_Localized: Shining Core
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

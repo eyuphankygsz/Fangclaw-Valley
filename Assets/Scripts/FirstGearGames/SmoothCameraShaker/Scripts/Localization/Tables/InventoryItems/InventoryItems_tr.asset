@@ -119,6 +119,10 @@ MonoBehaviour:
     m_Localized: "Di\u015Fli \xC7ark"
     m_Metadata:
       m_Items: []
+  - m_Id: 70561685209866240
+    m_Localized: "Parlayan \xC7ekirdek"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

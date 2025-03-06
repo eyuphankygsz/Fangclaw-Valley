@@ -93,7 +93,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
     }
     private void CheckCode()
     {
-
         foreach (var item in _combinations)
             if (item.IsTurning)
                 return;

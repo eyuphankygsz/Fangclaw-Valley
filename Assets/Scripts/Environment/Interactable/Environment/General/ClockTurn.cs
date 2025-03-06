@@ -26,11 +26,15 @@ public class ClockTurn : MonoBehaviour
 	[SerializeField]
 	private ClockHand _clockHand;
 	[SerializeField]
-	private UnityEvent[] _events;
-	[SerializeField]
 	private TheTimes[] _times;
 
+	private TheTimes _currentTime;
+
 	private int _tempHour;
+
+
+	[SerializeField]
+	private AudioSource _clockSource;
 	private void Start()
 	{
 		ResetClock();
@@ -38,18 +42,29 @@ public class ClockTurn : MonoBehaviour
 
 	public void StartTurn(bool right)
 	{
+		Debug.Log("START TURN");
 		_clockWise = right;
 		if (_routine != null)
 			StopCoroutine(_routine);
 
 		_stopTurn = false;
-		StartCoroutine(RotateClock(right));
+		_routine = StartCoroutine(RotateClock(right));
 	}
 
 	private IEnumerator RotateClock(bool right)
 	{
+		Debug.Log("ROTATING TO" + (right ? "RIGHT" : "LEFT"));
+
+		_clockSource.Play();
+		if (_currentTime != null)
+		{
+			_currentTime.OnFalseEvents?.Invoke();
+			_currentTime = null;
+		}
 		while (!_stopTurn)
 		{
+			Debug.Log("STOPTURN: " + _stopTurn);
+			
 			_currentMinuteRotation += _minuteRotationPerStep * Time.deltaTime * _speed * (right ? 1 : -1);
 			_minuteHand.localRotation = Quaternion.Euler(0, _currentMinuteRotation, transform.rotation.z);
 
@@ -88,10 +103,17 @@ public class ClockTurn : MonoBehaviour
 	}
 
 
-	public void StopTurn()
+	public void StopTurn(bool changeTurn)
 	{
+		Debug.Log("STOP TURN");
+		_clockSource.Stop();
 		_stopTurn = true;
-		CheckTime();
+
+		if (_routine != null)
+			StopCoroutine(_routine);
+		
+		if (!changeTurn)
+			CheckTime();
 	}
 
 	private void CheckTime()
@@ -104,29 +126,29 @@ public class ClockTurn : MonoBehaviour
 		// Eðer dakika 60 olduysa, saati arttýr ve dakika sýfýrla
 		if (_minute == 60 && _clockWise)
 		{
-				_minute = 0;
-				_hour++;
-				if (_hour == 12)
-					_hour = 0;
+			_minute = 0;
+			_hour++;
+			if (_hour == 12)
+				_hour = 0;
 
-				_currentHourRotation = _hour * 30f;
-				_hourHand.localRotation = Quaternion.Euler(0, _currentHourRotation, transform.rotation.z);
+			_currentHourRotation = _hour * 30f;
+			_hourHand.localRotation = Quaternion.Euler(0, _currentHourRotation, transform.rotation.z);
 
-				_currentMinuteRotation = 0f;
-				_minuteHand.localRotation = Quaternion.Euler(0, 0, 0);
+			_currentMinuteRotation = 0f;
+			_minuteHand.localRotation = Quaternion.Euler(0, 0, 0);
 		}
-		else if(_minute == 0 && !_clockWise)
+		else if (_minute == 0 && !_clockWise)
 		{
-            _minute = 0;
-            _hour--;
-            if (_hour == -1)
-                _hour = 11;
+			_minute = 0;
+			_hour--;
+			if (_hour == -1)
+				_hour = 11;
 
-            _currentHourRotation = _hour * 30f;
-            _hourHand.localRotation = Quaternion.Euler(0, _currentHourRotation, transform.rotation.z);
+			_currentHourRotation = _hour * 30f;
+			_hourHand.localRotation = Quaternion.Euler(0, _currentHourRotation, transform.rotation.z);
 
-            _currentMinuteRotation = 360f;
-            _minuteHand.localRotation = Quaternion.Euler(0, 0, 360f);
+			_currentMinuteRotation = 360f;
+			_minuteHand.localRotation = Quaternion.Euler(0, 0, 360f);
 
 		}
 
@@ -137,7 +159,10 @@ public class ClockTurn : MonoBehaviour
 			TheTimes time = _times[i];
 
 			if (time.Hour == _hour && time.Minute == _minute)
-				_events[i]?.Invoke();
+			{
+				_currentTime = time;
+				time.OnTrueEvents?.Invoke();
+			}
 		}
 	}
 
@@ -157,4 +182,6 @@ public class TheTimes
 {
 	public int Hour;
 	public int Minute;
+	public UnityEvent OnTrueEvents;
+	public UnityEvent OnFalseEvents;
 }

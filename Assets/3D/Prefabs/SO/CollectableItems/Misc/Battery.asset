@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6aeec0913ec4664e9b113cdd2b43eb0, type: 3}
+  m_Name: Battery
+  m_EditorClassIdentifier: 
+  Name: battery_0
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 70561685209866240
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
+    m_TableEntryReference:
+      m_KeyId: 70561717111742464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  ItemSprite: {fileID: 21300000, guid: fa00fb5bcc09aaa46a04639ee4d3323f, type: 3}
+  StackQuantity: 1
+  OneTime: 1
+  ItemFunctions: 0100000003000000
+  InspectSFX: {fileID: 8300000, guid: df04aa9f560811f42a158cc97519fa2b, type: 3}
+  UseSFX: {fileID: 8300000, guid: df04aa9f560811f42a158cc97519fa2b, type: 3}
+  DropSFX: {fileID: 0}
+  InspectName: 
+  UseName: 
+  CombineName: 
+  DropName: 
+  Item: {fileID: 4768199908730904045, guid: 49d07d7d084ee884388ab445755e5403, type: 3}
+  INITIAL_COUNT: 6
+  INITIAL_QUANTITY: 1
+  references:
+    version: 2
+    RefIds: []

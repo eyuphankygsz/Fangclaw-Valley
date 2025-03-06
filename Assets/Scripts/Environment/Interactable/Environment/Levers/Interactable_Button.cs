@@ -10,7 +10,8 @@ public class Interactable_Button : Interactable
 	private bool _isPressed, _samePress;
 	private ControlSchema _controls;
 
-	private UnityEvent _workEvents, _stopEvents;
+	[SerializeField]
+	private UnityEvent _manuallyOn, _manuallyOff;
 
 	[SerializeField]
 	private Collider _collider;
@@ -30,7 +31,7 @@ public class Interactable_Button : Interactable
 	public override void OnInteract(Enum_Weapons weapon)
 	{
 		base.OnInteract(weapon);
-		_src.Play();
+		//_src.Play();
 		if ((_oneTimePress && _isPressed) || _lock)
 			return;
 
@@ -85,17 +86,22 @@ public class Interactable_Button : Interactable
 
 	public override void SetStatusManually(bool on)
 	{
+		Debug.Log("Manually STATUS " + on);
 		base.SetStatusManually(on);
 
 		if (!on)
 		{
+			Debug.Log("Manually OFF");
 			_isPressed = false;
 			transform.DOMove(_releaseTransform.position, .2f).SetEase(Ease.Flash).OnComplete(AnimComplete);
+			_manuallyOff?.Invoke();
 		}
 		else
 		{
+			Debug.Log("Manually ON");
 			_isPressed = true;
 			transform.DOMove(_pressedTransform.position, .2f).SetEase(Ease.Flash).OnComplete(AnimComplete);
+			_manuallyOn?.Invoke();
 		}
 		_collider.enabled = true;
 	}
