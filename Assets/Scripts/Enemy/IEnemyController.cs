@@ -6,6 +6,10 @@ public interface IEnemyController
 {
 	bool DiscardTime { get; set; }
 	bool Stunned { get; set; }
+	bool IsOnChase { get; set; }
 
 	void Shined();
+	void StopShined();
+	bool IsShined();
+	void SetChase(int chase);
 }

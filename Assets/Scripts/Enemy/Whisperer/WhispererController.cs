@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject;
 
 public class WhispererController : MonoBehaviour, IEnemyController
 {
@@ -28,6 +29,10 @@ public class WhispererController : MonoBehaviour, IEnemyController
 
 	public bool DiscardTime { get; set; }
 	public bool Stunned { get; set; }
+	public bool IsOnChase { get; set; }
+
+	[Inject]
+	private GameManager _gameManager;
 
 	private void Awake()
 	{
@@ -72,7 +77,10 @@ public class WhispererController : MonoBehaviour, IEnemyController
 		_machine.SetCurrentState(_stunState as IEnemyState);
 		Stunned = true;
 	}
-
+	public void StopShined()
+	{
+		throw new System.NotImplementedException();
+	}
 	public void Wander()
 	{
 
@@ -82,5 +90,14 @@ public class WhispererController : MonoBehaviour, IEnemyController
 		if (Vector3.Distance(transform.position, _player.position) > 20)
 			return true;
 		return false;
+	}
+	public bool IsShined()
+	{
+		return false;
+	}
+
+	public void SetChase(int chase)
+	{
+		_gameManager.IsOnChase += chase;
 	}
 }

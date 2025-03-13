@@ -44,10 +44,10 @@ public class PlayerUI : MonoBehaviour
 	}
 	public void StartShake(float time)
 	{
-		Debug.Log("StartShake");
+		//Debug.Log("StartShake");
 		if (_shakeRoutine != null)
 		{
-			Debug.Log("SHAKEROUTINE STOP");
+			//Debug.Log("SHAKEROUTINE STOP");
 
 			_shakeInstance.FadeOut(0);
 			StopCoroutine(_shakeRoutine);
@@ -57,7 +57,7 @@ public class PlayerUI : MonoBehaviour
 	}
 	public void StopShake()
 	{
-		Debug.Log("SHAKEROUTINE STOP2");
+		//Debug.Log("SHAKEROUTINE STOP2");
 		_shakeInstance.FadeOut(1);
 	}
 	public void SetShakeStrength(float strength)

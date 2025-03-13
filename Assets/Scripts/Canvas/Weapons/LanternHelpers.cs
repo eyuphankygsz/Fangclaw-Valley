@@ -90,6 +90,10 @@ public class LanternHelpers : MonoBehaviour
 	#region LightWave
 	public void StartLightWave()
 	{
+		if (_waveOn)
+			return;
+		_waveOn = true;
+
 		if (_waveRoutine != null)
 			StopCoroutine(_waveRoutine);
 
@@ -106,12 +110,14 @@ public class LanternHelpers : MonoBehaviour
 		_lantern.Intensity(1, _lantern.GetInitialDirectIntensity());
 		_lantern.Intensity(2, _lantern.GetInitialBehindIntensity());
 		_lantern.Intensity(3, _lantern.GetInitialWeaponIntensity());
+		_waveOn = false;
+
 	}
 
 	bool _waveing;
 	public IEnumerator LightWave()
 	{
-		while (true)
+		while (_waveOn)
 		{
 			bool onFire = _lantern.IsOnFire();
 			if (!onFire)
@@ -151,7 +157,7 @@ public class LanternHelpers : MonoBehaviour
 		float newIntensity = 0;
 
 
-		while (currentTime != normalTime)
+		while (currentTime != normalTime && _waveOn)
 		{
 			float progress = 1 - (currentTime / normalTime);
 			if (progress > 1)
@@ -199,6 +205,7 @@ public class LanternHelpers : MonoBehaviour
 			_lantern.Intensity(3, targetWeapon);
 			_waveing = false;
 		}
+
 	}
 	#endregion
 

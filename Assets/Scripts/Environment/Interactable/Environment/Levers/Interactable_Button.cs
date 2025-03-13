@@ -86,19 +86,16 @@ public class Interactable_Button : Interactable
 
 	public override void SetStatusManually(bool on)
 	{
-		Debug.Log("Manually STATUS " + on);
 		base.SetStatusManually(on);
 
 		if (!on)
 		{
-			Debug.Log("Manually OFF");
 			_isPressed = false;
 			transform.DOMove(_releaseTransform.position, .2f).SetEase(Ease.Flash).OnComplete(AnimComplete);
 			_manuallyOff?.Invoke();
 		}
 		else
 		{
-			Debug.Log("Manually ON");
 			_isPressed = true;
 			transform.DOMove(_pressedTransform.position, .2f).SetEase(Ease.Flash).OnComplete(AnimComplete);
 			_manuallyOn?.Invoke();

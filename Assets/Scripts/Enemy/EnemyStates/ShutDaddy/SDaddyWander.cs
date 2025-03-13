@@ -32,8 +32,20 @@ public class SDaddyWander : MonoBehaviour, IEnemyState
 	[SerializeField]
 	CanPlayAudio _canPlayAudio;
 
+	[SerializeField]
+	private IEnemyController _controller;
+
+	private void Awake()
+	{
+		_controller = GetComponentInParent<IEnemyController>();
+	}
 	public void EnterState()
 	{
+		if (_controller.IsOnChase)
+		{
+			_controller.SetChase(-1);
+			_controller.IsOnChase = !_controller.IsOnChase;
+		}
 		_canPlayAudio.EnablePlay(_sawYou);
 
 		_timeBeforeWander.ResetTime();

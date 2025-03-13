@@ -21,6 +21,14 @@ public class SDaddyAttack : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IsTurnedToTarget _turned;
 
+	[SerializeField]
+	private IEnemyController _controller;
+
+	private void Awake()
+	{
+		_controller = GetComponentInParent<IEnemyController>();
+	}
+
 	public void EnterState()
 	{
 		_timeForAttack.ResetTime();

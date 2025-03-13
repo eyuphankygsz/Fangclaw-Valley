@@ -1,10 +1,11 @@
 using System;
+using System.Collections;
 using System.Diagnostics;
 using UnityEngine;
 
 public class GameManager
 {
-	public event Action<bool,bool> OnPauseGame;
+	public event Action<bool, bool> OnPauseGame;
 
 	private bool _pauseGame;
 	public bool PauseGame
@@ -27,7 +28,7 @@ public class GameManager
 	public bool Inspecting
 	{
 		get => _inspecting;
-		set 
+		set
 		{
 			_inspecting = value;
 			OnInspecting?.Invoke(_inspecting);
@@ -89,5 +90,20 @@ public class GameManager
 	public void SetSaveGame(bool saveGame)
 	{
 		SaveGame = saveGame;
+	}
+
+	public event Action<bool> OnChase;
+	private int _onChase;
+	public int IsOnChase
+	{
+		get => _onChase;
+		set
+		{
+			if (value != _onChase)
+			{
+				_onChase = value;
+				OnChase?.Invoke(_onChase > 0);
+			}
+		}
 	}
 }

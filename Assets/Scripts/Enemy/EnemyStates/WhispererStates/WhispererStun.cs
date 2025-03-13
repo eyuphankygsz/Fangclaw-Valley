@@ -9,8 +9,6 @@ public class WhispererStun : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private EnemyStateTransitionList _transitions;
 	[SerializeField]
-	private WhispererController _controller;
-	[SerializeField]
 	private AudioSource _src;
 	[SerializeField]
 	private AudioClip[] _clips;
@@ -18,6 +16,16 @@ public class WhispererStun : MonoBehaviour, IEnemyState
 	private int _oldIndex;
 	
 	List<int> clipIndexs = new List<int>();
+
+	[SerializeField]
+	private IEnemyController _controller;
+
+	private void Awake()
+	{
+		_controller = GetComponentInParent<IEnemyController>();
+	}
+
+
 	public void EnterState()
 	{
 		clipIndexs.Clear();

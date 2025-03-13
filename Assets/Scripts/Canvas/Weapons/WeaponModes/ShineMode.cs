@@ -20,6 +20,8 @@ public class ShineMode : MonoBehaviour
 	[SerializeField]
 	private SteamAchievements _achievements;
 
+	private IEnemyController _lastHit;
+
 	public void ExecuteModeUpdate()
 	{
 		RaycastHit hit;
@@ -36,17 +38,55 @@ public class ShineMode : MonoBehaviour
 						_hit = hit;
 						if (!_hitBool)
 							_achievements.TryEnableAchievement(_eyesWideShut);
+
+						if (_lastHit != controller)
+						{
+							StopShine();
+						}
+
+						_lastHit = controller;
 						controller.Shined();
 						_hitBool = true;
 					}
 					else
+					{
+						StopShine();
 						_hitBool = false;
+					}
+				}
+				else
+				{
+					StopShine();
 				}
 			}
+			else
+			{
+				StopShine();
+			}
+
 		}
 		else
+		{
 			_hitBool = false;
+			StopShine();
+		}
 	}
+
+	public void StopMode()
+	{
+		StopShine();
+	}
+	private void StopShine()
+	{
+		if (_lastHit != null)
+		{
+			_lastHit.StopShined();
+			_lastHit = null;
+		}
+	}
+
+
+
 	private void OnDrawGizmos()
 	{
 		if (!gameObject.activeSelf) return;

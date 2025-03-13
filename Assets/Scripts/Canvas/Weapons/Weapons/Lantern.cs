@@ -134,6 +134,7 @@ public class Lantern : Weapons
 			SetLightning(true);
 			_isShining = false;
 			_lanternHelpers.LitMultiplier = 1;
+			_shine.StopMode();
 		}
 	}
 	private void OnEnable()
@@ -149,7 +150,8 @@ public class Lantern : Weapons
 	}
 	public void Disable()
 	{
-		_enlighting = false;
+		_enlighting = false; 
+		_shine.StopMode();
 		_weaponHelpers.StopChange = false;
 		_animator.ResetTrigger("Enlight");
 		_animator.ResetTrigger("Delight");
@@ -218,6 +220,7 @@ public class Lantern : Weapons
 		_animator.SetBool("OnFire", _onFire);
 		_weaponHelpers.StopChange = false;
 		_enlighting = false;
+		_shine.StopMode();
 		SetLightning(false);
 	}
 
@@ -243,7 +246,6 @@ public class Lantern : Weapons
 			_lanternLights = new Light[] { _normalLightSource.GetComponent<Light>(), _directLightSource.GetComponent<Light>(), _behindLightSource.GetComponent<Light>() };
 
 		_lanternLights[id].intensity = intensity;
-		Debug.Log(_lanternLights[id]);
 	}
 	public void SetBehindLightning(bool enable)
 	{

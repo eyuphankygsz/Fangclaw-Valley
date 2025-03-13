@@ -36,12 +36,21 @@ public class SDaddyFollow : MonoBehaviour, IEnemyState
 	CanPlayAudio _canPlayAudio;
 
 
+	[SerializeField]
+	private IEnemyController _controller;
+
 	private void Awake()
 	{
+		_controller = GetComponentInParent<IEnemyController>();
 		_canPlayAudio.AddAudio(_sawYou);
 	}
 	public void EnterState()
 	{
+		if (!_controller.IsOnChase)
+		{
+			_controller.SetChase(1);
+			_controller.IsOnChase = !_controller.IsOnChase;
+		}
 		_timeForExitFollow.ResetTime();
 		_timeForExitStunFollow.ResetTime();
 		_timeForExitStuck.ResetTime();

@@ -35,8 +35,20 @@ public class SDaddySearch : MonoBehaviour, IEnemyState
 
 	private bool _started;
 
+	[SerializeField]
+	private IEnemyController _controller;
+
+	private void Awake()
+	{
+		_controller = GetComponentInParent<IEnemyController>();
+	}
 	public void EnterState()
 	{
+		if (_controller.IsOnChase)
+		{
+			_controller.SetChase(-1);
+			_controller.IsOnChase = !_controller.IsOnChase;
+		}
 		_canPlayAudio.EnablePlay(_sawYou);
 
 		_animator.SetBool("Walk", false);

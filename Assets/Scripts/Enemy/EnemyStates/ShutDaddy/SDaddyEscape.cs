@@ -11,8 +11,6 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	private EnemyStateTransitionList _transitions;
 
 
-	private IEnemyController _controller;
-
 	[SerializeField]
 	private NavMeshAgent _agent;
 	[SerializeField]
@@ -44,6 +42,9 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	private IsSpawned _isSpawned;
 
 	private bool _entered, _animationPlayed, _spawnCheck;
+	
+	[SerializeField]
+	private IEnemyController _controller;
 
 	private void Awake()
 	{
@@ -51,6 +52,12 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	}
 	public void EnterState()
 	{
+		if (_controller.IsOnChase)
+		{
+			_controller.SetChase(-1);
+			_controller.IsOnChase = !_controller.IsOnChase;
+		}
+
 		_arrived = _entered = _animationPlayed = _spawnCheck = false;
 		_isSpawned.SetSpawned(false);
 		_stoppingDistance = _agent.stoppingDistance;
@@ -115,11 +122,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 				}
 			}
 			if (_agent.remainingDistance <= _agent.stoppingDistance && !_arrived)
-			{
-				Debug.Log("REMAINING DISTANCE: " + _agent.remainingDistance);
-				Debug.Log("STOPPING DISTANCE: " + _agent.stoppingDistance);
 				OnArrived();
-			}
 		}
 		else if (_entered)
 		{

@@ -10,8 +10,7 @@ public class WhispererEscape : MonoBehaviour, IEnemyState
 	private Animator _animator;
 	[SerializeField]
 	private EnemyStateTransitionList _transitions;
-	[SerializeField]
-	private WhispererController _controller;
+	private IEnemyController _controller;
 	[SerializeField]
 	private NavMeshAgent _agent;
 	[SerializeField]
@@ -29,9 +28,19 @@ public class WhispererEscape : MonoBehaviour, IEnemyState
 
 	[SerializeField]
 	private AudioSource _audioSource;
-	
+
+	private void Awake()
+	{
+		_controller = GetComponentInParent<IEnemyController>();
+	}
+
 	public void EnterState()
 	{
+		if (_controller.IsOnChase)
+		{
+			_controller.SetChase(-1);
+			_controller.IsOnChase = !_controller.IsOnChase;
+		}
 		_arrived = false;
 		_stoppingDistance = _agent.stoppingDistance;
 		_agent.stoppingDistance = 0;

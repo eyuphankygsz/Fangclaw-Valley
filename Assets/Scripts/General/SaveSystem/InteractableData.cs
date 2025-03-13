@@ -63,9 +63,17 @@ public class ButtonData : GameData
 	public bool IsLocked;
 }
 [System.Serializable]
-public class ButtonOrderMechanismData: GameData
+public class ButtonOrderMechanismData : GameData
 {
 	public string MachineName;
 	public bool IsDone;
 	public int[] PressedArray;
+}
+[System.Serializable]
+public class ClockTurnData : GameData
+{
+	public bool IsTouched;
+	public int Hour;
+	public int Minute;
+	public bool[] RunningTimesIsDone;
 }
