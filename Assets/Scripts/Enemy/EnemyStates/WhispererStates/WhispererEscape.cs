@@ -102,7 +102,10 @@ public class WhispererEscape : MonoBehaviour, IEnemyState
 	{
 		_arrived = true;
 		_collider.enabled = false;
-		_agent.transform.rotation = _selectedEscape.rotation;
+
+		if (_selectedEscape != null)
+			_agent.transform.rotation = _selectedEscape.rotation;
+		
 		_animator.SetBool("Escape", true);
 		_animator.SetBool("Follow", false);
 		_audioSource.Stop();

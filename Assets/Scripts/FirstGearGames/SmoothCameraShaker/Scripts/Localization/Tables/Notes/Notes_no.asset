@@ -46,7 +46,7 @@ MonoBehaviour:
       f\xF8rste sa \"tre\",\nDen tredje svarte \"like mange som oss\",\nDen fjerde
       sa \"en mer enn den andre\",\nOg den femte sa \"to f\xE6rre enn den fjerde\".\nTil
       slutt telle de, og det viste seg at den andre fuglen hadde rett.\n\nSlik lyktes
-      vi i \xE5 skjule passordet."
+      vi i \xE5 skjule passordet.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
@@ -115,6 +115,38 @@ MonoBehaviour:
       deres uklart. Det er tydelig at gruvene har ombygget disse rommene, men deres
       opprinnelige funksjon unng\xE5r min forst\xE5else.\n\nVi m\xE5 fortsette etterforskningen
       med st\xF8rste forsiktighet.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Min kj\xE6re,\nAlt har blitt verre siden de forbannede legene kom.
+      Vi hadde det mye bedre uten dem. De utsetter oss for tester hele tiden. N\xE5
+      m\xE5 vi til og med fylle ut et forbanna skjema bare for \xE5 f\xE5 mat. P\xE5
+      grunn av den j\xE6vla Alberto ser de p\xE5 oss som gale. Ingen vet hvor han
+      forsvant etter \xE5 ha drept stakkars Bush. Men noen netter kan jeg fortsatt
+      h\xF8re stemmen hans... spesielt i biblioteket! Jeg er ikke sikker, men jeg
+      tror det finnes noen hemmelige passasjer der. Det har allerede blitt funnet
+      mange skjulte ganger p\xE5 dette ekle stedet. Snart sier jeg opp og drar herfra.
+      Jeg h\xE5per denne meldingen finner deg i god behold. Jeg elsker deg.\n\n-Reginald
+      Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: Reginalds Notat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: Om Begrensning av Brev
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "Kj\xE6re Postbud,\nJeg er sv\xE6rt takknemlig for at du returnerte
+      disse brevene til meg, da de ikke m\xE5 lekke ut. Jeg skal skrive et falskt
+      brev til Reginald og gi det til deg. Om tre dager kan du gi det til ham.\n\nDessuten
+      sender Dr. Grimshaw sine hilsener til deg. Jeg tror han leter etter den hemmelige
+      passasjen i biblioteket som Reginald nevnte igjen. Sist jeg s\xE5 ham, satt
+      han ved skrivebordet sitt med den eldre Dr. Elara Voss og skriblet noe.\n\nForresten,
+      som en takk for alt du har gjort for oss, har jeg lagt en kasse ved inngangen
+      til gruven. Du kan ta innholdet.\n\n- Dr. Theodore\n"
     m_Metadata:
       m_Items: []
   references:

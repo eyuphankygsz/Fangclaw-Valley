@@ -33,12 +33,15 @@ public class GhostlyPiggyController : MonoBehaviour, IEnemyController
 	private float _decreaseSpeed = -1f, _increaseSpeed = 0.6f;
 	private bool _shining;
 
+	public EnemyStateMachine StateMachine { get; set; }
+
 	[Inject]
 	private GameManager _gameManager;
 
 	private void Awake()
 	{
 		_enemyAttackController = GetComponent<EnemyAttackController>();
+		StateMachine = GetComponent<EnemyStateMachine>();
 	}
 	void Start()
 	{

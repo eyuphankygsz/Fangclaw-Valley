@@ -30,6 +30,7 @@ public class WhispererController : MonoBehaviour, IEnemyController
 	public bool DiscardTime { get; set; }
 	public bool Stunned { get; set; }
 	public bool IsOnChase { get; set; }
+	public EnemyStateMachine StateMachine { get; set; }
 
 	[Inject]
 	private GameManager _gameManager;
@@ -37,6 +38,7 @@ public class WhispererController : MonoBehaviour, IEnemyController
 	private void Awake()
 	{
 		_enemyAttackController = GetComponent<EnemyAttackController>();
+		StateMachine = GetComponent<EnemyStateMachine>();
 	}
 	void Start()
 	{
@@ -52,8 +54,10 @@ public class WhispererController : MonoBehaviour, IEnemyController
 
 	public void SetPosition(Transform tf)
 	{
+		_agent.enabled = false;
 		transform.position = tf.position;
 		transform.rotation = tf.rotation;
+		_agent.enabled = true;
 	}
 	public void FollowPlayer()
 	{

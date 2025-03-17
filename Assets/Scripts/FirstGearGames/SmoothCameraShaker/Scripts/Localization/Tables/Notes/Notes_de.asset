@@ -93,7 +93,8 @@ MonoBehaviour:
       dritte antwortete \u201Eso viele wie wir\u201C,\nDer vierte sagte \u201Eein
       mehr als der zweite\u201C,\nUnd der f\xFCnfte sagte \u201Ezwei weniger als
       der vierte\u201C.\nSchlie\xDFlich z\xE4hlten sie, und es stellte sich heraus,
-      dass der zweite Vogel richtig war.\n\nSo gelang es uns, das Passwort zu verbergen."
+      dass der zweite Vogel richtig war.\n\nSo gelang es uns, das Passwort zu verbergen.\n\n-Dr.
+      Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
@@ -123,6 +124,41 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11580516499374080
     m_Localized: Ein Teil der Musiknoten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Meine Liebe,\nSeit diese verdammten \xC4rzte hier sind, ist alles
+      schlimmer geworden. Ohne sie ging es uns viel besser. Sie unterziehen uns st\xE4ndig
+      irgendwelchen Tests. Jetzt m\xFCssen wir sogar ein verdammtes Formular ausf\xFCllen,
+      nur um Essen zu bekommen. Wegen diesem Bastard Alberto sehen sie uns an, als
+      w\xE4ren wir verr\xFCckt. Niemand wei\xDF, wohin er verschwunden ist, nachdem
+      er den armen Bush get\xF6tet hat. Aber manche N\xE4chte h\xF6re ich seine Stimme
+      immer noch\u2026 besonders in der Bibliothek! Ich bin mir nicht sicher, aber
+      ich denke, dort gibt es einige geheime G\xE4nge. In diesem widerlichen Ort
+      wurden bereits so viele versteckte Durchg\xE4nge entdeckt. Bald werde ich k\xFCndigen
+      und von hier verschwinden. Ich hoffe, dass dich diese Nachricht sicher erreicht.
+      Ich liebe dich.\n\n-Reginald Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: Reginalds Notiz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: "\xDCber die Einschr\xE4nkung von Briefen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "Sehr geehrter Postbote,\nIch bin Ihnen sehr dankbar, dass Sie mir
+      diese Briefe zur\xFCckgegeben haben, da sie nicht nach drau\xDFen gelangen
+      d\xFCrfen. Ich werde einen gef\xE4lschten Brief f\xFCr Reginald schreiben und
+      Ihnen geben. In drei Tagen k\xF6nnen Sie ihn ihm \xFCberreichen.\n\nAu\xDFerdem
+      sendet Ihnen Dr. Grimshaw seine Gr\xFC\xDFe. Ich glaube, er sucht erneut nach
+      dem geheimen Durchgang in der Bibliothek, den Reginald erw\xE4hnt hat. Zuletzt
+      habe ich ihn mit der \xE4lteren Dr. Elara Voss gesehen, als sie an seinem Schreibtisch
+      etwas gekritzelt haben.\n\n\xDCbrigens habe ich als Dank f\xFCr alles, was
+      Sie f\xFCr uns getan haben, eine Kiste am Eingang der Mine hinterlassen. Sie
+      k\xF6nnen den Inhalt mitnehmen.\n\n- Dr. Theodore"
     m_Metadata:
       m_Items: []
   references:

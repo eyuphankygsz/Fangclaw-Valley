@@ -75,6 +75,22 @@ MonoBehaviour:
     m_Key: note_06_desc
     m_Metadata:
       m_Items: []
+  - m_Id: 73301027321798656
+    m_Key: note_07_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Key: note_07_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Key: note_08_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Key: note_08_desc
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -27,6 +27,7 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 	public bool Stunned { get; set; }
 	public bool DiscardTime { get; set; }
 	public bool IsOnChase { get; set; }
+	public EnemyStateMachine StateMachine { get; set; }
 
 	[Inject]
 	private GameManager _gameManager;
@@ -34,6 +35,7 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 	private void Awake()
 	{
 		_enemyAttackController = GetComponent<EnemyAttackController>();
+		StateMachine = GetComponent<EnemyStateMachine>();
 	}
 	void Start()
 	{

@@ -7,6 +7,8 @@ public interface IEnemyController
 	bool DiscardTime { get; set; }
 	bool Stunned { get; set; }
 	bool IsOnChase { get; set; }
+	EnemyStateMachine StateMachine { get; set; }
+
 
 	void Shined();
 	void StopShined();

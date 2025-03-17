@@ -63,7 +63,7 @@ MonoBehaviour:
       demi\u015F,\nD\xF6rd\xFCnc\xFC ku\u015F \"ikinci ku\u015Ftan bir fazla\" demi\u015F,\nVe
       be\u015Finci ku\u015F \"d\xF6rd\xFCnc\xFC ku\u015Ftan iki eksik\" demi\u015F.\nSonunda
       saym\u0131\u015Flar ve ikinci ku\u015Fun do\u011Fru oldu\u011Fu anla\u015F\u0131lm\u0131\u015F.\n\nB\xF6ylece,
-      parolay\u0131 gizlemeyi ba\u015Fard\u0131k."
+      parolay\u0131 gizlemeyi ba\u015Fard\u0131k.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
@@ -123,6 +123,43 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11659020779831296
     m_Localized: "Antik Mi? Ger\xE7ekten De\u011Fil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: "Reginald\u2019\u0131n Notu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Sevgilim,\r\nLanet olas\u0131 doktorlar geldi\u011Finden beri her
+      \u015Fey daha k\xF6t\xFC oldu. Onlar olmadan \xE7ok daha rahatt\u0131k. \xDCst\xFCm\xFCzde
+      s\xFCrekli baz\u0131 testler uyguluyorlar. Art\u0131k yemek almak i\xE7in bile
+      lanet bir form doldurmak zorunday\u0131z. Sikti\u011Fimin Alberto\u2019su y\xFCz\xFCnden
+      bize deli gibi bak\u0131yorlar. Kimse zavall\u0131 Bush\u2019u \xF6ld\xFCrd\xFCkten
+      sonra nereye gitti\u011Fini bilmiyor. Ama sesini baz\u0131 geceler halen duyabiliyorum,
+      \xF6zellikle de k\xFCt\xFCphanede! Emin de\u011Filim ancak k\xFCt\xFCphanede
+      birka\xE7 gizli ge\xE7idin oldu\u011Funu d\xFC\u015F\xFCn\xFCyorum. Zaten bu
+      i\u011Fren\xE7 yerde \u015Fimdiye kadar \xE7ok ama \xE7ok fazla gizli ge\xE7it
+      bulundu. Yak\u0131nda istifam\u0131 verip buradan \xE7\u0131kaca\u011F\u0131m.
+      Umar\u0131m bu mesaj\u0131m seni sa\u011F salim bulur, seni seviyorum.\r\n\r\n-Reginald
+      Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: "Mektuplar\u0131n S\u0131n\u0131rland\u0131r\u0131lmas\u0131 Hakk\u0131nda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "Sayg\u0131de\u011Fer Posta G\xF6revlisi,\nBu tarz d\u0131\u015Far\u0131ya
+      s\u0131zmamas\u0131 gereken mektuplar\u0131 bana geri g\xF6nderdi\u011Fin i\xE7in
+      \xE7ok m\xFCte\u015Fekkirim. Reginald i\xE7in sahte bir mektup yaz\u0131p size
+      verece\u011Fim. \xDC\xE7 g\xFCn sonra ona bu mektubu verebilirsiniz.\n\nAyr\u0131ca
+      Dr. Grimshaw size sayg\u0131lar\u0131n\u0131 iletiyor. San\u0131r\u0131m yine
+      k\xFCt\xFCphanede Reginald\u2019\u0131n da bahsetti\u011Fi gizli ge\xE7idi
+      ar\u0131yor. En son ihtiyar\u0131, Dr. Elara Voss ile birlikte masas\u0131n\u0131n
+      \xFCst\xFCnde birka\xE7 karalama yaparken g\xF6rm\xFC\u015Ft\xFCm.\n\nUnutmadan,
+      bizim i\xE7in yapt\u0131klar\u0131n\u0131zdan dolay\u0131 sizin i\xE7in maden
+      giri\u015Fine bir kutu koydum. \u0130\xE7indekileri alabilirsiniz.\n\n- Dr.
+      Theodore"
     m_Metadata:
       m_Items: []
   references:

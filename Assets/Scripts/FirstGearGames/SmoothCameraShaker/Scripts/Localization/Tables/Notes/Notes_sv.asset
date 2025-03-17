@@ -86,7 +86,7 @@ MonoBehaviour:
       sa \"tre\",\nDen tredje svarade \"lika m\xE5nga som vi\",\nDen fj\xE4rde sa
       \"en mer \xE4n den andra\",\nOch den femte sa \"tv\xE5 f\xE4rre \xE4n den fj\xE4rde\".\nSlutligen
       r\xE4knade de och det visade sig att den andra f\xE5geln hade r\xE4tt.\n\nP\xE5
-      s\xE5 s\xE4tt lyckades vi g\xF6mma l\xF6senordet."
+      s\xE5 s\xE4tt lyckades vi g\xF6mma l\xF6senordet.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
@@ -114,6 +114,40 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11580516499374080
     m_Localized: En del av de musikaliska tonerna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Min \xE4lskling,\nAllt har blivit v\xE4rre sedan de f\xF6rbannade
+      l\xE4karna kom. Vi hade det mycket b\xE4ttre utan dem. De uts\xE4tter oss f\xF6r
+      tester hela tiden. Nu m\xE5ste vi till och med fylla i ett f\xF6rbannat formul\xE4r
+      bara f\xF6r att f\xE5 mat. P\xE5 grund av den f\xF6rbannade Alberto tittar
+      de p\xE5 oss som om vi vore galna. Ingen vet vart han tog v\xE4gen efter att
+      ha d\xF6dat stackars Bush. Men vissa n\xE4tter kan jag fortfarande h\xF6ra
+      hans r\xF6st... s\xE4rskilt i biblioteket! Jag \xE4r inte s\xE4ker, men jag
+      tror att det finns n\xE5gra hemliga passager d\xE4r. Det har redan hittats
+      alldeles f\xF6r m\xE5nga g\xF6mda g\xE5ngar p\xE5 det h\xE4r vidriga st\xE4llet.
+      Snart s\xE4ger jag upp mig och drar h\xE4rifr\xE5n. Jag hoppas att det h\xE4r
+      meddelandet n\xE5r dig oskadd. Jag \xE4lskar dig.\n\n-Reginald Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: Reginalds Anteckning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: "Om Begr\xE4nsningen av Brev"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "K\xE4ra Brevb\xE4rare,\nJag \xE4r mycket tacksam f\xF6r att du
+      returnerade dessa brev till mig, eftersom de inte f\xE5r l\xE4cka ut. Jag kommer
+      att skriva ett falskt brev till Reginald och ge det till dig. Om tre dagar
+      kan du ge det till honom.\n\nDessutom skickar Dr. Grimshaw sina h\xE4lsningar.
+      Jag tror att han letar efter den hemliga passagen i biblioteket som Reginald
+      n\xE4mnde igen. Senast jag s\xE5g honom, satt han vid sitt skrivbord med den
+      \xE4ldre Dr. Elara Voss och klottrade n\xE5got.\n\nF\xF6r \xF6vrigt, som ett
+      tecken p\xE5 tacksamhet f\xF6r allt du har gjort f\xF6r oss, har jag l\xE4mnat
+      en l\xE5da vid gruvans ing\xE5ng. Du kan ta inneh\xE5llet.\n\n- Dr. Theodore"
     m_Metadata:
       m_Items: []
   references:

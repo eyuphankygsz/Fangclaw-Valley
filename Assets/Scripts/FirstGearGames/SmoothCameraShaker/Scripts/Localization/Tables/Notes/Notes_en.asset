@@ -85,7 +85,8 @@ MonoBehaviour:
       \u201Cthree,\u201D The third responded \u201Cas many as ours,\u201D The fourth
       stated \u201Cone more than the second,\u201D And the fifth said \u201Ctwo fewer
       than the fourth.\u201D Eventually, they counted, and it turned out the second
-      bird was correct.\n\nThus, we succeeded in concealing the password."
+      bird was correct.\n\nThus, we succeeded in concealing the password.\n\n-Dr.
+      Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
@@ -166,6 +167,48 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11659020779831296
     m_Localized: Ancient? Not Really
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "My love,\nEverything has gotten worse since those damn doctors
+      arrived. We were so much better off without them. They keep running tests on
+      us constantly. Now, we even have to fill out a damn form just to get food.
+      Because of that bastard Alberto, they look at us like we're insane. No one
+      knows where he went after killing poor Bush. But some nights, I can still hear
+      his voice... especially in the library! I'm not sure, but I think there are
+      a few hidden passages there. So many secret passages have already been found
+      in this disgusting place. Soon, I\u2019ll resign and leave this place. I hope
+      this message finds you safe. I love you.\n\n-Reginald Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: "Reginald\u2019s Note"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: About the Restriction of Letters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: 'Dear Postal Worker,
+
+      I am very grateful that you returned
+      these letters to me, as they must not leak out. I will write a fake letter
+      for Reginald and give it to you. In three days, you can give it to him.
+
+
+      Additionally,
+      Dr. Grimshaw sends his regards. I believe he is once again searching for the
+      secret passage in the library that Reginald mentioned. The last time I saw
+      him, he was at his desk with the elderly Dr. Elara Voss, scribbling something.
+
+
+      By
+      the way, as a token of appreciation for what you''ve done for us, I''ve left
+      a box at the mine entrance. You may take its contents.
+
+
+      - Dr. Theodore'
     m_Metadata:
       m_Items: []
   references:

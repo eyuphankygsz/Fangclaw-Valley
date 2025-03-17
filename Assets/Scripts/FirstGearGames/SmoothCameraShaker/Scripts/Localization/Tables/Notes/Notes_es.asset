@@ -58,7 +58,7 @@ MonoBehaviour:
       respondi\xF3 \"tantas como nosotros\",\nEl cuarto dijo \"una m\xE1s que el
       segundo\",\nY el quinto dijo \"dos menos que el cuarto\".\nAl final, contaron
       y result\xF3 que el segundo p\xE1jaro ten\xEDa raz\xF3n.\n\nAs\xED, logramos
-      ocultar la contrase\xF1a."
+      ocultar la contrase\xF1a.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
@@ -120,6 +120,38 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11659020779831296
     m_Localized: "\xBFAntiguo? No realmente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Mi amor,\nTodo ha empeorado desde que llegaron esos malditos doctores.
+      Est\xE1bamos mucho mejor sin ellos. Nos someten a pruebas constantemente. Ahora
+      incluso tenemos que llenar un maldito formulario solo para conseguir comida.
+      Por culpa del maldito Alberto, nos miran como si estuvi\xE9ramos locos. Nadie
+      sabe a d\xF3nde fue despu\xE9s de matar al pobre Bush. Pero algunas noches
+      todav\xEDa puedo escuchar su voz... especialmente en la biblioteca. No estoy
+      seguro, pero creo que hay algunos pasadizos secretos all\xED. Ya se han encontrado
+      demasiados en este asqueroso lugar. Pronto renunciar\xE9 y me ir\xE9 de aqu\xED.
+      Espero que este mensaje te encuentre sano y salvo. Te amo.\n\n-Reginald Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: La Nota de Reginald
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: "Sobre la Restricci\xF3n de CartasSobre la Restricci\xF3n de Cartas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "Estimado Cartero,\nEstoy muy agradecido de que me hayas devuelto
+      estas cartas, ya que no deben salir a la luz. Escribir\xE9 una carta falsa
+      para Reginald y te la entregar\xE9. En tres d\xEDas, podr\xE1s d\xE1rsela.\n\nAdem\xE1s,
+      el Dr. Grimshaw te env\xEDa sus saludos. Creo que est\xE1 buscando nuevamente
+      el pasaje secreto en la biblioteca que mencion\xF3 Reginald. La \xFAltima vez
+      que lo vi, estaba en su escritorio junto con la anciana Dra. Elara Voss, garabateando
+      algo.\n\nPor cierto, como muestra de gratitud por todo lo que has hecho por
+      nosotros, he dejado una caja en la entrada de la mina. Puedes tomar su contenido.\n\n-
+      Dr. Theodore\n"
     m_Metadata:
       m_Items: []
   references:

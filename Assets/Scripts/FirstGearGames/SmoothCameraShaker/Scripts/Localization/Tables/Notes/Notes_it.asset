@@ -108,7 +108,7 @@ MonoBehaviour:
       primo dichiar\xF2 \"tre\",\nIl terzo rispose \"tante quante noi\",\nIl quarto
       disse \"una in pi\xF9 del secondo\",\nE il quinto disse \"due in meno del quarto\".\nAlla
       fine, contarono, e si scopr\xEC che il secondo uccello aveva ragione.\n\nCos\xEC,
-      riuscimmo a nascondere la password."
+      riuscimmo a nascondere la password.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
@@ -136,6 +136,40 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11580516499374080
     m_Localized: Una parte delle note musicali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Amore mio,\nTutto \xE8 peggiorato da quando sono arrivati quei
+      dannati dottori. Stavamo molto meglio senza di loro. Continuano a farci test
+      su test. Ora dobbiamo persino compilare un dannato modulo solo per ottenere
+      del cibo. A causa di quel bastardo di Alberto, ci guardano come se fossimo
+      pazzi. Nessuno sa dove sia andato dopo aver ucciso il povero Bush. Ma alcune
+      notti sento ancora la sua voce\u2026 soprattutto nella biblioteca! Non ne sono
+      sicuro, ma penso che l\xEC ci siano alcuni passaggi segreti. In questo posto
+      disgustoso sono gi\xE0 stati trovati troppi passaggi nascosti. Presto mi dimetter\xF2
+      e me ne andr\xF2 da qui. Spero che questo messaggio ti trovi sano e salvo.
+      Ti amo.\n\n-Reginald Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: La Nota di Reginald
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: Sulla Limitazione delle Lettere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "Caro Postino,\nTi sono molto grato per avermi restituito queste
+      lettere, poich\xE9 non devono assolutamente trapelare. Scriver\xF2 una lettera
+      falsa per Reginald e te la dar\xF2. Tra tre giorni, potrai consegnargliela.\n\nInoltre,
+      il dottor Grimshaw ti manda i suoi saluti. Credo che stia cercando di nuovo
+      il passaggio segreto nella biblioteca di cui parlava Reginald. L\u2019ultima
+      volta l\u2019ho visto alla sua scrivania insieme alla dottoressa Elara Voss,
+      che \xE8 pi\xF9 anziana, mentre scarabocchiavano qualcosa.\n\nA proposito,
+      come segno di riconoscenza per tutto quello che hai fatto per noi, ho lasciato
+      una scatola all\u2019ingresso della miniera. Puoi prenderne il contenuto.\n\n-
+      Dr. Theodore"
     m_Metadata:
       m_Items: []
   references:

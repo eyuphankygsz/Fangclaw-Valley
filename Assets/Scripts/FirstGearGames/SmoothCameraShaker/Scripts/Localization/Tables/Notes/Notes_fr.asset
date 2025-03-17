@@ -59,7 +59,7 @@ MonoBehaviour:
       troisi\xE8me r\xE9pondit \"autant que nous\",\nLe quatri\xE8me dit \"un de
       plus que le deuxi\xE8me\",\nEt le cinqui\xE8me dit \"deux de moins que le quatri\xE8me\".\nFinalement,
       ils compt\xE8rent et il s\u2019av\xE9ra que le deuxi\xE8me oiseau avait raison.\n\nAinsi,
-      nous r\xE9uss\xEEmes \xE0 dissimuler le mot de passe."
+      nous r\xE9uss\xEEmes \xE0 dissimuler le mot de passe.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 11417441565589504
@@ -117,6 +117,42 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11659020779831296
     m_Localized: Ancien ? Pas vraiment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Mon amour,\nTout est devenu pire depuis l'arriv\xE9e de ces maudits
+      m\xE9decins. Nous \xE9tions bien mieux sans eux. Ils nous font passer des tests
+      en permanence. Maintenant, nous devons m\xEAme remplir un fichu formulaire
+      juste pour obtenir de la nourriture. \xC0 cause de ce salaud d'Alberto, ils
+      nous regardent comme si nous \xE9tions fous. Personne ne sait o\xF9 il est
+      all\xE9 apr\xE8s avoir tu\xE9 le pauvre Bush. Mais certaines nuits, j'entends
+      encore sa voix\u2026 surtout dans la biblioth\xE8que ! Je ne suis pas s\xFBr,
+      mais je pense qu'il y a quelques passages secrets l\xE0-bas. Tant de passages
+      cach\xE9s ont d\xE9j\xE0 \xE9t\xE9 d\xE9couverts dans cet endroit d\xE9go\xFBtant.
+      Bient\xF4t, je vais d\xE9missionner et partir d'ici. J'esp\xE8re que ce message
+      te trouvera sain et sauf. Je t'aime.\n\n-Reginald Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: La Note de Reginald
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: "\xC0 Propos de la Limitation des Lettres\xC0 Propos de la Limitation
+      des Lettres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "Cher Facteur,\nJe vous suis tr\xE8s reconnaissant de m'avoir renvoy\xE9
+      ces lettres, car elles ne doivent pas fuiter. Je vais r\xE9diger une fausse
+      lettre pour Reginald et vous la remettre. Dans trois jours, vous pourrez lui
+      donner cette lettre.\n\nDe plus, le Dr Grimshaw vous adresse ses salutations.
+      Je crois qu'il est encore en train de chercher le passage secret dans la biblioth\xE8que
+      dont Reginald a parl\xE9. La derni\xE8re fois que je l\u2019ai vu, il \xE9tait
+      avec la vieille Dr Elara Voss, en train de griffonner quelque chose sur son
+      bureau.\n\nD'ailleurs, en guise de remerciement pour tout ce que vous avez
+      fait pour nous, j\u2019ai laiss\xE9 une bo\xEEte \xE0 l\u2019entr\xE9e de la
+      mine. Vous pouvez en prendre le contenu.\n\n- Dr. Theodore"
     m_Metadata:
       m_Items: []
   references:

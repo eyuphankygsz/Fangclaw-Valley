@@ -87,7 +87,7 @@ MonoBehaviour:
       \"lige s\xE5 mange som os\", Den fjerde sagde \"en mere end den anden\", Og
       den femte sagde \"to f\xE6rre end den fjerde.\" Til sidst tjekkede de, og det
       viste sig, at den anden fugl havde ret.\n\nS\xE5ledes lykkedes det os at skjule
-      adgangskoden."
+      adgangskoden.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
@@ -115,6 +115,38 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11580516499374080
     m_Localized: En del af de musikalske noter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Min elskede,\nAlt er blevet v\xE6rre, siden de forbandede l\xE6ger
+      ankom. Vi havde det meget bedre uden dem. De tester os konstant. Nu skal vi
+      endda udfylde en forbandet formular bare for at f\xE5 mad. P\xE5 grund af den
+      skiderik Alberto kigger de p\xE5 os, som om vi er sindssyge. Ingen ved, hvor
+      han tog hen, efter han dr\xE6bte stakkels Bush. Men nogle n\xE6tter kan jeg
+      stadig h\xF8re hans stemme\u2026 is\xE6r i biblioteket! Jeg er ikke sikker,
+      men jeg tror, der er nogle hemmelige passager derinde. Der er allerede fundet
+      s\xE5 mange skjulte gange i dette klamme sted. Snart siger jeg op og forsvinder
+      herfra. Jeg h\xE5ber, dette brev finder dig i god behold. Jeg elsker dig.\n\n-Reginald
+      Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: Reginalds Note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: "Om Begr\xE6nsning af Breve"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "K\xE6re Postbud,\nJeg er meget taknemmelig for, at du returnerede
+      disse breve til mig, da de ikke m\xE5 l\xE6kkes ud. Jeg vil skrive et falsk
+      brev til Reginald og give det til dig. Om tre dage kan du give det til ham.\n\nDesuden
+      sender Dr. Grimshaw sine hilsner til dig. Jeg tror, han leder efter den hemmelige
+      passage i biblioteket, som Reginald n\xE6vnte. Sidst jeg s\xE5 ham, sad han
+      ved sit skrivebord sammen med den \xE6ldre Dr. Elara Voss og skriblede noget
+      ned.\n\nForresten har jeg efterladt en kasse ved minens indgang som tak for
+      det, du har gjort for os. Du kan tage indholdet.\n\n- Dr. Theodore"
     m_Metadata:
       m_Items: []
   references:

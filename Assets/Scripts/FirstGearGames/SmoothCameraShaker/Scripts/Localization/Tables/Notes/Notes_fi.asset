@@ -48,7 +48,7 @@ MonoBehaviour:
       kuin meill\xE4\u201D, Nelj\xE4s sanoi \u201Cyksi enemm\xE4n kuin toisella\u201D,
       Ja viides sanoi \u201Ckaksi v\xE4hemm\xE4n kuin nelj\xE4nnell\xE4.\u201D Lopulta
       ne laskivat, ja k\xE4vi ilmi, ett\xE4 toinen lintu oli oikeassa.\n\nN\xE4in
-      onnistumme piilottamaan salasanan."
+      onnistumme piilottamaan salasanan.\n\n-Dr. Theodore Whitmore"
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
@@ -121,6 +121,41 @@ MonoBehaviour:
       ovat ottaneet n\xE4m\xE4 huoneet uuteen k\xE4ytt\xF6\xF6n, mutta niiden alkuper\xE4inen
       tarkoitus on minulta ymm\xE4rt\xE4m\xE4t\xF6n.\n\nMeid\xE4n on jatkettava tutkimustamme
       suurimmalla huolellisuudella.\n\n- Dr. Grimshow"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301054928707584
+    m_Localized: "Rakkaani,\nKaikki on mennyt pahemmaksi sen j\xE4lkeen, kun ne kirotut
+      l\xE4\xE4k\xE4rit saapuivat. Meill\xE4 oli paljon parempi ilman heit\xE4. He
+      tekev\xE4t jatkuvasti kokeita meill\xE4. Nyt meid\xE4n t\xE4ytyy jopa t\xE4ytt\xE4\xE4
+      helvetin lomake saadaksemme ruokaa. Sen paskap\xE4\xE4 Albertin takia he katsovat
+      meit\xE4 kuin olisimme hulluja. Kukaan ei tied\xE4, minne h\xE4n meni tapettuaan
+      raukan Bushin. Mutta joina \xF6in\xE4 kuulen silti h\xE4nen \xE4\xE4nens\xE4\u2026
+      erityisesti kirjastossa! En ole varma, mutta luulen, ett\xE4 siell\xE4 on muutama
+      salainen k\xE4yt\xE4v\xE4. T\xE4ss\xE4 inhottavassa paikassa on jo l\xF6ydetty
+      niin monta salaista k\xE4yt\xE4v\xE4\xE4. Aion pian erota ja l\xE4hte\xE4 t\xE4\xE4lt\xE4.
+      Toivon, ett\xE4 t\xE4m\xE4 viesti l\xF6yt\xE4\xE4 sinut turvassa. Rakastan
+      sinua.\n\n-Reginald Everly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73301027321798656
+    m_Localized: Reginaldin Muistiinpano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975202696912896
+    m_Localized: Kirjeiden Rajoittamisesta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73975204622098432
+    m_Localized: "Arvoisa Postity\xF6ntekij\xE4,\nOlen eritt\xE4in kiitollinen, ett\xE4
+      palautit n\xE4m\xE4 kirjeet minulle, sill\xE4 niiden ei pid\xE4 vuotaa ulkopuolelle.
+      Kirjoitan Reginaldille v\xE4\xE4rennetyn kirjeen ja annan sen sinulle. Kolmen
+      p\xE4iv\xE4n kuluttua voit antaa sen h\xE4nelle.\n\nLis\xE4ksi tohtori Grimshaw
+      l\xE4hett\xE4\xE4 terveisens\xE4. Luulen, ett\xE4 h\xE4n etsii taas kirjastosta
+      sit\xE4 salaista k\xE4yt\xE4v\xE4\xE4, josta Reginald puhui. Viimeksi n\xE4in
+      h\xE4net vanhemman tohtori Elara Vossin kanssa h\xE4nen p\xF6yt\xE4ns\xE4 \xE4\xE4ress\xE4,
+      raapustamassa jotain.\n\nMuuten, kiitoksena kaikesta mit\xE4 olet tehnyt puolestamme,
+      olen j\xE4tt\xE4nyt laatikon kaivoksen sis\xE4\xE4nk\xE4ynnille. Voit ottaa
+      sen sis\xE4ll\xF6n.\n\n- Tohtori Theodore"
     m_Metadata:
       m_Items: []
   references:
