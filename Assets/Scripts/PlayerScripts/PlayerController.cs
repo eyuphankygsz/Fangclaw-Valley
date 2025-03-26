@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_gameManager.OnPauseGame += Pausing;
 		_gameManager.OnInspecting += Inspecting;
 		_gameManager.OnForce += Force;
+
+		_gameManager.Player = gameObject;
 	}
 
 	void Update()

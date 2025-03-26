@@ -31,6 +31,18 @@ public class Interactable_PlaceHolder : Interactable
 	private int _statusID;
 	private PlaceHolderData _data;
 
+	private bool _isLocked;
+	public bool IsLocked
+	{
+		get { return _isLocked; }
+
+		set
+		{
+			_isLocked = value;
+			GetComponent<Collider>().enabled = !_isLocked;
+		}
+	}
+
 #pragma warning disable CS0108
 	private void Start()
 #pragma warning restore CS0108

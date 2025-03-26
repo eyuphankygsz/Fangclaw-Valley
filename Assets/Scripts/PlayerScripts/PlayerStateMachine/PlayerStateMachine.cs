@@ -22,6 +22,10 @@ public class PlayerStateMachine : MonoBehaviour
 	{
 		EnterState(state);
 	}
+	public void SetCurrentState(GameObject state)
+	{
+		EnterState(state.GetComponent<IPlayerState>());
+	}
 
 	public void ExecuteState()
 	{

@@ -29,6 +29,9 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 
 	[SerializeField]
 	private Collider _collider;
+	[SerializeField]
+	private SkinnedMeshRenderer _renderer;
+
 	private bool _arrived, _escapeAnimationStarted;
 
 	[SerializeField]
@@ -42,7 +45,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	private IsSpawned _isSpawned;
 
 	private bool _entered, _animationPlayed, _spawnCheck;
-	
+
 	[SerializeField]
 	private IEnemyController _controller;
 
@@ -95,6 +98,8 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	public void ExitState()
 	{
 		_collider.enabled = true;
+		_renderer.enabled = true;
+
 		_agent.stoppingDistance = _stoppingDistance;
 		_controller.Stunned = false;
 		_animator.SetBool("RunAway", false);
@@ -149,8 +154,9 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	}
 	private IEnumerator WaitForRespawn()
 	{
-		yield return new WaitForSeconds(Random.Range(5, 15));
-
+		_renderer.enabled = false;
+		yield return new WaitForSeconds(Random.Range(5, 8));
+		_renderer.enabled = true;
 		Transform closestPoint = null;
 		Transform pathable = null;
 
@@ -203,7 +209,10 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	{
 		_arrived = true;
 		_collider.enabled = false;
-		_agent.transform.rotation = _selectedEscape.rotation;
+
+		if (_selectedEscape != null)
+			_agent.transform.rotation = _selectedEscape.rotation;
+		
 		_animator.SetBool("Escape", true);
 		_animator.SetBool("RunAway", false);
 		_audioSource.Stop();

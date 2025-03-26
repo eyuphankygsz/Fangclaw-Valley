@@ -17,7 +17,9 @@ public class PlayerCamera : MonoBehaviour
 
 	private bool _force;
 
-	private bool _randomMoveBool, _lockRandom;
+	private bool _randomMoveBool, _lockHelper;
+
+	public bool LockRandom;
 	private void Awake()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
@@ -43,11 +45,12 @@ public class PlayerCamera : MonoBehaviour
 	{
 		if (_force) return;
 
-		if (!_randomMoveBool && !_lockRandom)
+		if (!_randomMoveBool && !LockRandom)
 		{
 			float randomX = Random.Range(-1f, 1f); // Daha küçük ve kontrollü yatay sallantý
 			float randomY = Random.Range(-1f, 1f); // Daha küçük ve kontrollü dikey sallantý
-			// Kamerayý rastgele bir açýya döndür
+			_lockHelper = false;
+
 			_cameraHolderBase
 				.DOLocalRotateQuaternion(
 					Quaternion.Euler(randomX, randomY, 0),
@@ -58,16 +61,24 @@ public class PlayerCamera : MonoBehaviour
 				{
 					// Kamerayý baþlangýç pozisyonuna döndür
 					randomX = Random.Range(-1f, 1f);
-					randomY = Random.Range(-1f, 1f);;
-					
+					randomY = Random.Range(-1f, 1f); ;
+
 					_cameraHolderBase
-						.DOLocalRotateQuaternion(Quaternion.Euler(randomX, randomY, 0), Random.Range(1.2f,1.5f))
+						.DOLocalRotateQuaternion(Quaternion.Euler(randomX, randomY, 0), Random.Range(1.2f, 1.5f))
 						.SetEase(Ease.InOutSine)
 						.OnComplete(RandomComplete); // Döngüyü devam ettir
 				});
 
 			_randomMoveBool = true;
 		}
+		else if (LockRandom && !_lockHelper)
+		{
+			_cameraHolderBase.DOPause();
+			_lockHelper = true;
+		}
+		else if(!LockRandom)
+			_cameraHolderBase.DOPlay();
+
 		Vector2 cameraDirection = MouseDirection.Instance.GetCameraDirection();
 
 		float gamepadMultiplier = InputDeviceManager.Instance.CurrentDevice == InputDeviceManager.InputDeviceType.Gamepad ? 12 : 1;
@@ -84,7 +95,7 @@ public class PlayerCamera : MonoBehaviour
 	}
 	public void RandomLock(bool locked)
 	{
-		_lockRandom = locked;
+		LockRandom = locked;
 	}
 	private void RandomComplete()
 	{

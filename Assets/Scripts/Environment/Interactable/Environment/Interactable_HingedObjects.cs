@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -129,6 +130,11 @@ public class Interactable_HingedObjects : Interactable
 			DoneEvent();
 
 		_isOn = isOn;
+		if (_isOn)
+			_trueEvents?.Invoke();
+		else
+			_falseEvents?.Invoke();
+
 		if (!silent)
 			PlayClip(_isOn ? _openClips : _closeClips);
 		_animator.SetBool("On", _isOn);
@@ -136,6 +142,32 @@ public class Interactable_HingedObjects : Interactable
 
 		//if (_navObstacle != null)
 		//	_navObstacle.carving = !_isOn;
+	}
+	private Coroutine _animationCheckRoutine;
+	public void StartAnimationCheck(string name)
+	{
+		if(_animationCheckRoutine != null)
+			StopCoroutine(_animationCheckRoutine);
+		_animationCheckRoutine = StartCoroutine(CheckAnimation(name));
+	}
+	private IEnumerator CheckAnimation(string name)
+	{
+		if(!_animator.GetCurrentAnimatorStateInfo(0).IsName(name))
+			yield return new WaitForEndOfFrame();
+
+		while (true)
+		{
+			if(!_animator.GetCurrentAnimatorStateInfo(0).IsName(name) || (_animator.GetCurrentAnimatorStateInfo(0).IsName(name) && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
+			{
+				if (_isOn)
+					_trueDoneEvents?.Invoke();
+				else
+					_falseDoneEvents?.Invoke();
+
+				break;
+			}
+			yield return null;
+		}
 	}
 
 

@@ -123,6 +123,44 @@ MonoBehaviour:
     m_Localized: "Parlayan \xC7ekirdek"
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Kezzap Suyu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 G\xFC\xE7l\xFC bir asit. Metalleri bile eritebilir.
+      Bunu dikkatli kullanmal\u0131y\u0131m\u2014yanl\u0131\u015F bir hamlede elimden
+      olabilirim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Tuz Ruhu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "G\xFC\xE7l\xFC bir asit, genellikle kimyasal s\xFCre\xE7lerde kullan\u0131l\u0131r.
+      Dikkatli olmal\u0131y\u0131m, \xE7ok tehlikeli olabilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: "Vitriol Ya\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "\xC7e\u015Fitli kimyasal s\xFCre\xE7lerde kullan\u0131lan son derece
+      a\u015F\u0131nd\u0131r\u0131c\u0131 bir madde. Onunla \xE7al\u0131\u015F\u0131rken
+      dikkatli olmal\u0131y\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Kral Suyu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "Nitrik asit ve hidroklorik asit kar\u0131\u015F\u0131m\u0131, alt\u0131n\u0131
+      bile \xE7\xF6zebilen bir madde. Tehlikeli ama son derece g\xFC\xE7l\xFC."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

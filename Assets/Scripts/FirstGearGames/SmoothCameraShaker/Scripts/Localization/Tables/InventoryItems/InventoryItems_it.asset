@@ -112,6 +112,43 @@ MonoBehaviour:
     m_Localized: Ingranaggio
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Acqua Fortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Acqua Fortis\u2026 Un acido potente. Pu\xF2 persino sciogliere
+      i metalli. Devo usarlo con cautela\u2014un solo errore e potrei perdere la
+      mano."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Acido Muriatico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "Un acido forte, utilizzato principalmente nei processi chimici.
+      Devo fare attenzione, pu\xF2 essere molto pericoloso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Olio di Vitriolo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: Una sostanza altamente corrosiva utilizzata in vari processi chimici.
+      Devo fare attenzione quando lavoro con esso.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Acqua Regia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "Una miscela di acido nitrico e acido cloridrico, capace di sciogliere
+      l\u2019oro. Pericolosa, ma estremamente potente."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

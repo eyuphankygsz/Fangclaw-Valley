@@ -113,6 +113,43 @@ MonoBehaviour:
     m_Localized: Tandwiel
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Aqua Fortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 Een krachtige zuur. Het kan zelfs metalen oplossen.
+      Ik moet het voorzichtig gebruiken\u2014\xE9\xE9n verkeerde beweging en ik ben
+      mijn hand kwijt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Zoutzuur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: Een sterke zuur, voornamelijk gebruikt in chemische processen. Ik
+      moet voorzichtig zijn, het is erg gevaarlijk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Vitriololie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: Een sterk bijtende stof die in verschillende chemische processen
+      wordt gebruikt. Ik moet voorzichtig zijn bij het werken ermee.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Koningswater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: Een mengsel van salpeterzuur en zoutzuur, dat zelfs goud kan oplossen.
+      Gevaarlijk, maar buitengewoon krachtig.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

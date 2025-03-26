@@ -95,9 +95,9 @@ public class SDaddyWander : MonoBehaviour, IEnemyState
 	private void FindNewWanderPoint()
 	{
 		_isSearching = false;
+		_isWandering = false;
 		_isSearchingNewTarget = true;
 		_wanderCenter = transform.position;
-
 		int i = 0;
 
 		while (!_isWandering)

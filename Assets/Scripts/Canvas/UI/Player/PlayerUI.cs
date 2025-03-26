@@ -16,10 +16,10 @@ public class PlayerUI : MonoBehaviour
 	[SerializeField]
 	private ShakeData _shakeData = null;
 	private Coroutine _shakeRoutine;
-	private ShakerInstance _shakeInstance;
+	private List<ShakerInstance> _shakeInstances;
 
-
-
+	[SerializeField]
+	private PlayerCamera _playerCamera;
 
 	public void SetMaxHealth(float maxHealth)
 	{
@@ -48,8 +48,10 @@ public class PlayerUI : MonoBehaviour
 		if (_shakeRoutine != null)
 		{
 			//Debug.Log("SHAKEROUTINE STOP");
-
-			_shakeInstance.FadeOut(0);
+			foreach (ShakerInstance shaker in _shakeInstances)
+			{
+				shaker.FadeOut(0);
+			}
 			StopCoroutine(_shakeRoutine);
 		}
 
@@ -58,18 +60,39 @@ public class PlayerUI : MonoBehaviour
 	public void StopShake()
 	{
 		//Debug.Log("SHAKEROUTINE STOP2");
-		_shakeInstance.FadeOut(1);
+		foreach (ShakerInstance shaker in _shakeInstances)
+		{
+			shaker.FadeOut(1);
+		}
+		_playerCamera.LockRandom = false;
+		Debug.Log("StopShake");
 	}
 	public void SetShakeStrength(float strength)
 		=> CameraShakerHandler.SetScaleAll(strength, true);
 
 	private IEnumerator Shake(float time)
 	{
-		_shakeInstance = CameraShakerHandler.Shake(_shakeData);
-		_shakeInstance.Data.SetShakeCanvases(true);
+		_playerCamera.LockRandom = true;
 
-		yield return new WaitForSeconds(time);
+		if(_shakeInstances != null)
+			foreach (ShakerInstance shaker in _shakeInstances)
+			{
+				shaker.Stop();
+			}
+	    _shakeInstances = CameraShakerHandler.ShakeAll(_shakeData);
+		_shakeInstances[0].Data.SetShakeCanvases(true);
+
+		Debug.Log("StartShake");
+
 		if (time != 0)
-			_shakeInstance.FadeOut(1);
+		{
+			yield return new WaitForSeconds(time);
+			foreach (ShakerInstance shaker in _shakeInstances)
+			{
+				shaker.FadeOut(1);
+			}
+			_playerCamera.LockRandom = false;
+			Debug.Log("StopShake");
+		}
 	}
 }

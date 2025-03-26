@@ -28,7 +28,10 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 	protected UnityEvent _falseEvents;
 	[SerializeField]
 	protected UnityEvent _interactEvents;
-
+	[SerializeField]
+	protected UnityEvent _trueDoneEvents; 
+	[SerializeField]
+	protected UnityEvent _falseDoneEvents;
 
 	[SerializeField]
 	protected GameObject _scanObject;

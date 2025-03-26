@@ -112,6 +112,43 @@ MonoBehaviour:
     m_Localized: Tandhjul
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Aqua Fortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 En st\xE6rk syre. Den kan endda opl\xF8se metaller.
+      Jeg m\xE5 bruge den forsigtigt \u2013 \xE9t forkert tr\xE6k, og jeg kan miste
+      min h\xE5nd."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Saltsyre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "En st\xE6rk syre, der prim\xE6rt bruges i kemiske processer. Jeg
+      skal v\xE6re forsigtig, det er meget farligt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Vitriololie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "En st\xE6rk, \xE6tsende v\xE6ske, der bruges i forskellige kemiske
+      processer. Jeg skal v\xE6re forsigtig, n\xE5r jeg arbejder med det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Kongevand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "En blanding af salpetersyre og saltsyre, der kan opl\xF8se guld.
+      Farligt, men utroligt kraftfuldt."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

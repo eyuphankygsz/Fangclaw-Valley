@@ -106,4 +106,8 @@ public class GameManager
 			}
 		}
 	}
+
+
+
+	public GameObject Player;
 }

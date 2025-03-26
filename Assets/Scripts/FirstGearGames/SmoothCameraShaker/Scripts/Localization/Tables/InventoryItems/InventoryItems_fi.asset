@@ -115,6 +115,44 @@ MonoBehaviour:
     m_Localized: "Hammaspy\xF6r\xE4"
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Vahva vesi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 Vahva happo. Se voi jopa liuottaa metalleja.
+      Minun t\xE4ytyy k\xE4ytt\xE4\xE4 sit\xE4 varovasti \u2013 yksikin virhe ja
+      menet\xE4n k\xE4teni."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Suolahappo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "Vahva happo, jota k\xE4ytet\xE4\xE4n p\xE4\xE4asiassa kemiallisissa
+      prosesseissa. Minun t\xE4ytyy olla varovainen, se voi olla eritt\xE4in vaarallista."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: "Vitrioli\xF6ljy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "Eritt\xE4in sy\xF6vytt\xE4v\xE4 aine, jota k\xE4ytet\xE4\xE4n eri
+      kemiallisissa prosesseissa. Minun t\xE4ytyy olla varovainen ty\xF6skennelless\xE4ni
+      sen kanssa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Kuninkaanvesi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "Typpihapon ja suolahapon seos, joka voi liuottaa jopa kultaa. Vaarallista,
+      mutta eritt\xE4in tehokasta."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

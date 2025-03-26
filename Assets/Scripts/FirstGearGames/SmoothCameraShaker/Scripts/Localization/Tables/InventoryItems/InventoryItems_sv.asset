@@ -114,6 +114,43 @@ MonoBehaviour:
     m_Localized: Kugghjul
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Aqua Fortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 En kraftfull syra. Den kan till och med l\xF6sa
+      upp metaller. Jag m\xE5ste anv\xE4nda den f\xF6rsiktigt\u2014ett felsteg och
+      jag kan f\xF6rlora min hand."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Saltsyra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "En stark syra som fr\xE4mst anv\xE4nds i kemiska processer. Jag
+      m\xE5ste vara f\xF6rsiktig, det kan vara mycket farligt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Vitriololja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "En starkt fr\xE4tande substans som anv\xE4nds i olika kemiska processer.
+      Jag m\xE5ste vara f\xF6rsiktig n\xE4r jag arbetar med det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Kungsvatten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "En blandning av salpetersyra och saltsyra som kan l\xF6sa upp guld.
+      Farlig men mycket kraftfull."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

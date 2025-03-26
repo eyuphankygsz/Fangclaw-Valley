@@ -115,6 +115,43 @@ MonoBehaviour:
     m_Localized: Zahnrad
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Scheidewasser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 Eine starke S\xE4ure. Sie kann sogar Metalle
+      aufl\xF6sen. Ich muss sie vorsichtig verwenden\u2014ein falscher Schritt, und
+      ich k\xF6nnte meine Hand verlieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: "Salzs\xE4ure"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "Eine starke S\xE4ure, die haupts\xE4chlich in chemischen Prozessen
+      verwendet wird. Ich muss vorsichtig sein, sie kann sehr gef\xE4hrlich sein."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: "Vitriol\xF6l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "Eine stark \xE4tzende Substanz, die in verschiedenen chemischen
+      Prozessen verwendet wird. Ich muss vorsichtig sein, wenn ich damit arbeite."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: "K\xF6nigswasser"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "Eine Mischung aus Salpeters\xE4ure und Salzs\xE4ure, die sogar
+      Gold aufl\xF6sen kann. Gef\xE4hrlich, aber \xE4u\xDFerst kraftvoll."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

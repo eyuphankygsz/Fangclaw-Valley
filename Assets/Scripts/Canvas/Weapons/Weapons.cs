@@ -145,16 +145,15 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	{
 		return (-Mathf.Pow(_xPolynomial, 2) / 1.5f) - (_xPolynomial / 10) + 1.2f;
 	}
-	
-
 	public abstract void SetWeaponControls(bool setEnable);
+	private void OnDrawGizmos()
+	{
+		if (_camera == null) 
+			_camera = Camera.main.transform;
 
-	//private void OnDrawGizmos()
-	//{
-	//    if (_camera == null) _camera = Camera.main.transform;
-	//    Gizmos.color = Color.red;
-	//    Gizmos.DrawRay(_camera.position, _camera.forward * _rayLength);
-	//}
+		Gizmos.color = Color.red;
+		Gizmos.DrawRay(_camera.position, _camera.forward * _rayLength);
+	}
 	public Sprite GetCross()
 	{
 		return _weaponCross;

@@ -111,6 +111,42 @@ MonoBehaviour:
     m_Localized: Engranaje
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Agua Fuerte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Agua Fuerte\u2026 Un \xE1cido potente. Puede incluso disolver metales.
+      Debo usarlo con cuidado\u2014un solo error y podr\xEDa perder la mano."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: "\xC1cido Muri\xE1tico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "Un \xE1cido fuerte, utilizado principalmente en procesos qu\xEDmicos.
+      Debo tener cuidado, puede ser muy peligroso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Aceite de Vitriolo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "Una sustancia altamente corrosiva utilizada en varios procesos
+      qu\xEDmicos. Debo tener cuidado al trabajar con ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Agua Regia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "Una mezcla de \xE1cido n\xEDtrico y \xE1cido clorh\xEDdrico, capaz
+      de disolver el oro. Peligrosa, pero extremadamente poderosa."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

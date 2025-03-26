@@ -454,13 +454,14 @@ namespace FirstGearGames.SmoothCameraShaker
         {
             transform.localPosition = pos;
             transform.localEulerAngles = rot;
-        }
-        /// <summary>
-        /// Sets Matrix values for this transform. For internal use only.
-        /// </summary>
-        /// <param name="pos"></param>
-        /// <param name="rot"></param>
-        internal void SetMatrixOffsets(Vector3 pos, Vector3 rot)
+            Debug.Log(gameObject.name);
+		}
+		/// <summary>
+		/// Sets Matrix values for this transform. For internal use only.
+		/// </summary>
+		/// <param name="pos"></param>
+		/// <param name="rot"></param>
+		internal void SetMatrixOffsets(Vector3 pos, Vector3 rot)
         {
             Matrix4x4 m = Matrix4x4.TRS(pos, Quaternion.Euler(rot), new Vector3(1, 1, -1));
             _camera.worldToCameraMatrix = m * _camera.transform.worldToLocalMatrix;

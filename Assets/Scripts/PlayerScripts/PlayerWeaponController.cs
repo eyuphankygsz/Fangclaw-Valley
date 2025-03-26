@@ -101,7 +101,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		if (!_onForce && !OnWeaponChanging)
 			_currentWeapon.Move();
-		else if(_onForce)
+		else if (_onForce)
 			_currentWeapon.OnForce();
 	}
 	private void ChangeGunByKey(InputAction.CallbackContext ctx)
@@ -109,7 +109,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		if (_currentWeapon == null || _gamePaused || OnWeaponChanging) return;
 		int bindingIndex = ctx.action.GetBindingIndexForControl(ctx.control);
 		OnWeaponChanging = true;
-		SelectWeapon(bindingIndex); 
+		SelectWeapon(bindingIndex);
 	}
 	private void ChangeGunByScroll(InputAction.CallbackContext ctx)
 	{
@@ -201,7 +201,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	private IEnumerator CheckWeaponChange(bool sameGun)
 	{
-		while(_currentWeapon == null)
+		while (_currentWeapon == null)
 		{
 			yield return null;
 		}
@@ -235,17 +235,18 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 
 	}
+	public Enum_Weapons GetCurrentWeaponEnum() => _currentWeapon.GetWeaponEnum();
 
 	public void EquipExternalWeapon(string name)
 	{
 		_externalWeapon = true;
 
 		int i = 0;
-        for (; i < _weaponNames.Length; i++)
-        {
+		for (; i < _weaponNames.Length; i++)
+		{
 			if (_weaponNames[i] == name)
 				break;
-        }
+		}
 
 		bool sameGun = i == _oldWeaponIndex;
 

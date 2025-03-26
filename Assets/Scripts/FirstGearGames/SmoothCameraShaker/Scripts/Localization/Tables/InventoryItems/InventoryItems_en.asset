@@ -114,6 +114,42 @@ MonoBehaviour:
     m_Localized: Shining Core
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Aqua Fortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 A powerful acid. It can even dissolve metals.
+      I must use it carefully\u2014one wrong move and I might lose my hand."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Muriatic Acid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: A strong acid, primarily used in chemical processes. I must be careful,
+      it can be very dangerous.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Oil of Vitriol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: A highly corrosive substance used in various chemical processes.
+      I must be careful when working with it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Aqua Regia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: A mixture of nitric acid and hydrochloric acid, capable of dissolving
+      gold. Dangerous, yet incredibly powerful.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

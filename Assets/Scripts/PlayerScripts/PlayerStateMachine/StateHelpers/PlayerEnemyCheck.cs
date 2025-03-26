@@ -16,13 +16,41 @@ public class PlayerEnemyCheck : MonoBehaviour
 	private WaitForSeconds _wait = new WaitForSeconds(1);
 	private bool _found;
 
+	private Coroutine _checkRoutine;
+	private bool _stopEnemyCheck;
+
 	[Inject]
 	private PlayerUI _playerUI;
-
+	[Inject]
+	private GameManager _manager;
 
 	private void Start()
 	{
-		StartCoroutine(CheckEnemies());
+		_manager.OnChase += OnChase;
+	}
+
+	private void OnChase(bool onChase)
+	{
+		if (onChase)
+		{
+			TryStopRoutine();
+			_checkRoutine = StartCoroutine(CheckEnemies());
+		}
+		else if (_checkRoutine != null)
+		{
+			TryStopRoutine();
+		}
+	}
+
+	private void TryStopRoutine()
+	{
+		if (_checkRoutine == null) return;
+
+		StopCoroutine(_checkRoutine);
+		_found = false;
+		_lanternHelpers.StopLightWave();
+
+		_playerUI.StopShake();
 	}
 
 	IEnumerator CheckEnemies()
@@ -38,7 +66,6 @@ public class PlayerEnemyCheck : MonoBehaviour
 				{
 					_found = true;
 					_lanternHelpers.StartLightWave();
-					Debug.Log("CHECK FOUND START");
 
 					_playerUI.SetShakeStrength(1);
 					_playerUI.StartShake(0);
@@ -48,7 +75,6 @@ public class PlayerEnemyCheck : MonoBehaviour
 			{
 				_found = false;
 				_lanternHelpers.StopLightWave();
-				Debug.Log("CHECK FOUND STOP");
 
 				_playerUI.StopShake();
 			}

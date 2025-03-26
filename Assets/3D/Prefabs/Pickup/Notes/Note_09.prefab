@@ -350,9 +350,15 @@ MonoBehaviour:
   _interactEvents:
     m_PersistentCalls:
       m_Calls: []
+  _trueDoneEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _falseDoneEvents:
+    m_PersistentCalls:
+      m_Calls: []
   _scanObject: {fileID: 7384088713006132742}
   IsCrateItem: 0
-  <Item>k__BackingField: {fileID: 11400000, guid: 332ca3a66d9b7a54b91a351a77fae3d7,
+  <Item>k__BackingField: {fileID: 11400000, guid: 155a26c1ece90cd45bbfa0bce85110fe,
     type: 2}
   _quantity: 1
 --- !u!114 &1919132155337209262

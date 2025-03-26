@@ -115,6 +115,43 @@ MonoBehaviour:
     m_Localized: "Fogasker\xE9k"
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Aqua Fortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 Egy er\u0151s sav. M\xE9g a f\xE9meket is feloldhatja.
+      \xD3vatosan kell haszn\xE1lnom\u2014egy rossz mozdulat, \xE9s elvesz\xEDthetem
+      a kezem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: "S\xF3sav"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "Er\u0151s sav, amelyet els\u0151sorban k\xE9miai folyamatokban
+      haszn\xE1lnak. \xD3vatosnak kell lennem, nagyon vesz\xE9lyes lehet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Vitriololaj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "Er\u0151sen mar\xF3 anyag, amelyet k\xFCl\xF6nb\xF6z\u0151 k\xE9miai
+      folyamatokban haszn\xE1lnak. \xD3vatosnak kell lennem, amikor dolgozom vele."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: "Kir\xE1lyv\xEDz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "Sal\xE9tromsav \xE9s s\xF3sav elegye, amely m\xE9g az aranyat is
+      feloldja. Vesz\xE9lyes, de rendk\xEDv\xFCl er\u0151s."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

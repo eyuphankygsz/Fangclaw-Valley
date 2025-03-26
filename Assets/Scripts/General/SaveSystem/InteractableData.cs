@@ -16,6 +16,12 @@ public class HingedData : GameData
 	public bool IsLocked;
 }
 [System.Serializable]
+public class KReaderData : GameData
+{
+	public bool IsOn;
+	public bool IsOneTimeDone;
+}
+[System.Serializable]
 public class CrateData : GameData
 {
 	public bool IsShattered;

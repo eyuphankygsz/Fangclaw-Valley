@@ -135,6 +135,47 @@ MonoBehaviour:
     m_Localized: "\uD1B1\uB2C8\uBC14\uD034"
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: "\uC544\uCFE0\uC544 \uD3EC\uB974\uD2F0\uC2A4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 \uAC15\uD55C \uC0B0\uC774\uB2E4. \uAE08\uC18D\uC870\uCC28
+      \uB179\uC77C \uC218 \uC788\uB2E4. \uC870\uC2EC\uD574\uC11C \uC0AC\uC6A9\uD574\uC57C
+      \uD574\u2014\uD55C \uBC88\uC758 \uC2E4\uC218\uB85C \uC190\uC744 \uC783\uC744
+      \uC218\uB3C4 \uC788\uC5B4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: "\uC5FC\uC0B0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "\uC8FC\uB85C \uD654\uD559 \uACF5\uC815\uC5D0\uC11C \uC0AC\uC6A9\uB418\uB294
+      \uAC15\uD55C \uC0B0\uC785\uB2C8\uB2E4. \uB9E4\uC6B0 \uC704\uD5D8\uD560 \uC218
+      \uC788\uC73C\uBBC0\uB85C \uC870\uC2EC\uD574\uC57C \uD569\uB2C8\uB2E4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: "\uBE44\uD2B8\uB9AC\uC62C \uC624\uC77C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "\uB2E4\uC591\uD55C \uD654\uD559 \uACF5\uC815\uC5D0\uC11C \uC0AC\uC6A9\uB418\uB294
+      \uAC15\uD55C \uBD80\uC2DD\uC131 \uBB3C\uC9C8\uC785\uB2C8\uB2E4. \uADF8\uAC83\uC744
+      \uC0AC\uC6A9\uD560 \uB54C\uB294 \uC870\uC2EC\uD574\uC57C \uD569\uB2C8\uB2E4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: "\uC655\uC218"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "\uC9C8\uC0B0\uACFC \uC5FC\uC0B0\uC758 \uD63C\uD569\uBB3C\uB85C,
+      \uAE08\uB3C4 \uB179\uC77C \uC218 \uC788\uB2E4. \uC704\uD5D8\uD558\uC9C0\uB9CC
+      \uB9E4\uC6B0 \uAC15\uB825\uD558\uB2E4."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -77,7 +77,6 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 	}
 	public void StopShined()
 	{
-		throw new System.NotImplementedException();
 	}
 	public void Wander()
 	{

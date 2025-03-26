@@ -15,4 +15,10 @@ public class IsPlayerClose : AbstractCondition
 	}
 	
     public override void ResetFrameFreeze() { }
+
+	public void OnDrawGizmos()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(transform.position, _range);
+	}
 }

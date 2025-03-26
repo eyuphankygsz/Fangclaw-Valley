@@ -95,6 +95,38 @@ MonoBehaviour:
     m_Key: battery_0_desc
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Key: aquafortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Key: aquafortis_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Key: muriaticacid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Key: muriaticacid_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Key: oilofvitriol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Key: oilofvitriol_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Key: strongacid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Key: strongacid_desc
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

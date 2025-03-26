@@ -113,6 +113,43 @@ MonoBehaviour:
     m_Localized: Engrenage
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Eau Forte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Eau Forte\u2026 Un acide puissant. Il peut m\xEAme dissoudre les
+      m\xE9taux. Je dois l\u2019utiliser avec pr\xE9caution\u2014une erreur et je
+      pourrais perdre ma main."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Acide Muriatique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: "Un acide fort, utilis\xE9 principalement dans les processus chimiques.
+      Je dois faire attention, il peut \xEAtre tr\xE8s dangereux."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Huile de Vitriol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: "Une substance hautement corrosive utilis\xE9e dans divers processus
+      chimiques. Je dois faire attention en travaillant avec elle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: "Eau R\xE9gale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: "Un m\xE9lange d\u2019acide nitrique et d\u2019acide chlorhydrique,
+      capable de dissoudre l\u2019or. Dangereux, mais extr\xEAmement puissant."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

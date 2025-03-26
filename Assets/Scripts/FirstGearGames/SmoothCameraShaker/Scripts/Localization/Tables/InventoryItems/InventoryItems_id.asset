@@ -111,6 +111,43 @@ MonoBehaviour:
     m_Localized: Roda gigi
     m_Metadata:
       m_Items: []
+  - m_Id: 75720019374235648
+    m_Localized: Aqua Fortis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75720086713786368
+    m_Localized: "Aqua Fortis\u2026 Asam yang sangat kuat. Bahkan bisa melarutkan
+      logam. Aku harus menggunakannya dengan hati-hati\u2014satu kesalahan dan aku
+      bisa kehilangan tanganku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721715815014400
+    m_Localized: Asam Muriatik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75721747293265920
+    m_Localized: Asam yang kuat, terutama digunakan dalam proses kimia. Saya harus
+      berhati-hati, ini bisa sangat berbahaya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722791440080896
+    m_Localized: Minyak Vitriol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75722838948962304
+    m_Localized: Zat yang sangat korosif, digunakan dalam berbagai proses kimia.
+      Saya harus berhati-hati saat bekerja dengannya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76407864560705536
+    m_Localized: Air Raja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76409959057711104
+    m_Localized: Campuran asam nitrat dan asam klorida yang dapat melarutkan emas.
+      Berbahaya, tetapi sangat kuat.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
