@@ -15,7 +15,9 @@ public class PlayerController : MonoBehaviour, ISaveable
 	[SerializeField]
 	private PlayerHealth _pHealth;
 	[SerializeField]
-	private PlayerStamina _pStamina;
+	private PlayerStamina _pStamina; 
+	[SerializeField]
+	private PlayerGroundCheck _groundCheck;
 	[SerializeField]
 	private MapCamera _mapCam;
 	private PlayerData _data = new PlayerData();
@@ -96,6 +98,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_playerCamera.ManageRotate();
 		_playerWeapon.ManageGun();
 		_playerInteractions.CheckForInteractions();
+
+		_groundCheck.IsOnGround();
 	}
 
 	public static void AddWeapon(Enum_Weapons weapon)

@@ -63,7 +63,7 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void EnterState(IEnemyState state)
 	{
-		Debug.Log("OLDSTATE: " + _currentState + " NEWSTATE: " + state);
+		//Debug.Log("OLDSTATE: " + _currentState + " NEWSTATE: " + state);
 		_currentState?.ExitState();
 		_currentState = state;
 		_currentState.EnterState();

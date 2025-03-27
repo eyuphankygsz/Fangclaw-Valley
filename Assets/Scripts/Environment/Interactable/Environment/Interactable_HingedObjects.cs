@@ -26,6 +26,9 @@ public class Interactable_HingedObjects : Interactable
 	private AudioSource _source;
 
 
+	private WaitForSeconds _wfs = new WaitForSeconds(0.1f);
+	private AnimatorStateInfo _animatorStateInfo;
+
 	private NavMeshObstacle _navObstacle;
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
@@ -152,22 +155,33 @@ public class Interactable_HingedObjects : Interactable
 	}
 	private IEnumerator CheckAnimation(string name)
 	{
-		if(!_animator.GetCurrentAnimatorStateInfo(0).IsName(name))
-			yield return new WaitForEndOfFrame();
+		_animatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+		if (!_animatorStateInfo.IsName(name))
+			yield return _wfs;
 
 		while (true)
 		{
-			if(!_animator.GetCurrentAnimatorStateInfo(0).IsName(name) || (_animator.GetCurrentAnimatorStateInfo(0).IsName(name) && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1))
+			_animatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+			if (!_animatorStateInfo.IsName(name))
 			{
-				if (_isOn)
-					_trueDoneEvents?.Invoke();
-				else
-					_falseDoneEvents?.Invoke();
-
+				AfterDoneEvents();
+				break;
+			}
+			else if (_animatorStateInfo.normalizedTime >= _animatorStateInfo.length)
+			{
+				AfterDoneEvents();
 				break;
 			}
 			yield return null;
 		}
+	}
+
+	private void AfterDoneEvents()
+	{
+		if (_isOn)
+			_trueDoneEvents?.Invoke();
+		else
+			_falseDoneEvents?.Invoke();
 	}
 
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerGroundCheck : MonoBehaviour
 {
 	[SerializeField]
-	private Transform _footTransform;
+	private Transform _footTransform, _playerTransform;
 	[SerializeField]
 	private float _castDistance;
 	[SerializeField]
@@ -16,21 +16,37 @@ public class PlayerGroundCheck : MonoBehaviour
 	private float _hitDistance;
 	private bool _hitting;
 
+	private Transform _moveWithTransform;
 	public bool CantCheckGround;
+	private Collider _collider;
+	private RaycastHit _hit;
+	int _moveWithLayer = 22;
 	public bool IsOnGround()
 	{
-		if (CantCheckGround) 
+		if (CantCheckGround)
 			return false;
 
 
-		RaycastHit hit;
-		if (Physics.BoxCast(_footTransform.position, _halfExtents, -transform.up, out hit, Quaternion.identity, _castDistance, _layerMask))
+		if (Physics.BoxCast(_footTransform.position, _halfExtents, -transform.up, out _hit, Quaternion.identity, _castDistance, _layerMask))
 		{
+			_collider = _hit.collider;
+			if (_collider.gameObject.layer == _moveWithLayer)
+			{
+				if (_moveWithTransform != _collider.transform)
+				{
+					_moveWithTransform = _collider.transform;
+					_playerTransform.parent = _moveWithTransform;
+				}
+			}
+			else if (_moveWithTransform != null)
+			{
+				_playerTransform.parent = null;
+				_moveWithTransform = null;
+			}
 			_hitting = true;
-			_hitDistance = hit.distance;
+			_hitDistance = _hit.distance;
 			return true;
 		}
-
 		_hitting = false;
 		return false;
 	}
