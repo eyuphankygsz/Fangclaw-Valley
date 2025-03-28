@@ -58,6 +58,8 @@ public class WhispererWander : MonoBehaviour, IEnemyState
 
 	public void ExitState()
 	{
+		_animator.SetBool("Search", false);
+		_animator.SetBool("Follow", false);
 	}
 
 	public EnemyStateTransitionList GetTransitions()

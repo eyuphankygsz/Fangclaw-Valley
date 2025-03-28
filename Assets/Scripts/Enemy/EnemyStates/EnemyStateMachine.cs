@@ -29,6 +29,8 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private bool _init;
 
+	[SerializeField]
+	private bool _debugged;
 	private void Awake()
 	{
 		_controller = GetComponent<IEnemyController>();
@@ -63,7 +65,8 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void EnterState(IEnemyState state)
 	{
-		//Debug.Log("OLDSTATE: " + _currentState + " NEWSTATE: " + state);
+		if(_debugged)
+		Debug.Log("OLDSTATE: " + _currentState + " NEWSTATE: " + state);
 		_currentState?.ExitState();
 		_currentState = state;
 		_currentState.EnterState();
@@ -75,6 +78,9 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void CheckTransitions()
 	{
+		if (_transitionList == null)
+			return;
+
 		foreach (var transition in _transitionList.Transitions)
 		{
 			bool canChange = true;

@@ -14,4 +14,5 @@ public interface IEnemyController
 	void StopShined();
 	bool IsShined();
 	void SetChase(int chase);
+	void StartAnimationCheck(string animation);
 }

@@ -97,4 +97,44 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 	{
 		_gameManager.IsOnChase += chase;
 	}
+
+
+	private Coroutine _animationCheckRoutine;
+	private AnimatorStateInfo _animatorStateInfo;
+	private Animator _animator;
+	private WaitForSeconds _wfs = new WaitForSeconds(0.1f);
+
+	public void StartAnimationCheck(string name)
+	{
+		_animOver.SetOver(false);
+		if (_animationCheckRoutine != null)
+			StopCoroutine(_animationCheckRoutine);
+		_animationCheckRoutine = StartCoroutine(CheckAnimation(name));
+	}
+	private IEnumerator CheckAnimation(string name)
+	{
+		_animatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+		if (!_animatorStateInfo.IsName(name))
+			yield return _wfs;
+
+
+		Debug.Log(_animator.GetCurrentAnimatorStateInfo(0).IsName(name));
+
+		while (true)
+		{
+			_animatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+			if (!_animatorStateInfo.IsName(name))
+			{
+				_animOver.SetOver(true);
+				break;
+			}
+			else if (_animatorStateInfo.normalizedTime >= _animatorStateInfo.length)
+			{
+				_animOver.SetOver(true);
+				break;
+			}
+			yield return null;
+		}
+	}
+
 }

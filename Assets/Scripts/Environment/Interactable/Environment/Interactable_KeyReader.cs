@@ -21,7 +21,7 @@ public class Interactable_KeyReader : Interactable
 #pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 	{
 		base.Awake();
-		_source = transform.parent.GetComponent<AudioSource>();
+		_source = GetComponentInParent<AudioSource>();
 	}
 
 	private KReaderData _data = new KReaderData();

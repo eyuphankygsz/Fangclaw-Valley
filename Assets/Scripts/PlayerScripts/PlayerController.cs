@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 	[SerializeField]
 	private PlayerStamina _pStamina; 
 	[SerializeField]
-	private PlayerGroundCheck _groundCheck;
+	private MoveWithMe _movePlatformCheck;
 	[SerializeField]
 	private MapCamera _mapCam;
 	private PlayerData _data = new PlayerData();
@@ -99,7 +99,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 		_playerWeapon.ManageGun();
 		_playerInteractions.CheckForInteractions();
 
-		_groundCheck.IsOnGround();
+		_movePlatformCheck.IsOnMovingPlatform();
 	}
 
 	public static void AddWeapon(Enum_Weapons weapon)

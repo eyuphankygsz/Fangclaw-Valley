@@ -18,10 +18,12 @@ public class WhispererController : MonoBehaviour, IEnemyController
 	[SerializeField]
 	private EnemyStateMachine _machine;
 	[SerializeField]
-	private MonoBehaviour _startState, _stunState, _escapeState, _followState, _attackState, _attackHState;
+	private MonoBehaviour _startState, _stunState, _escapeState, _followState, _attackState, _attackHState, _hitState, _dieState;
 	[SerializeField]
 	private TimeForExitStun _stunTime;
 
+
+	private IEnemyState _currentState, _hitStateR, _dieStateR;
 
 	private EnemyAttackController _enemyAttackController;
 
@@ -74,6 +76,10 @@ public class WhispererController : MonoBehaviour, IEnemyController
 	}
 	public void Shined()
 	{
+		_currentState = _machine.GetCurrentState();
+		if (_currentState == _hitStateR || _currentState == _dieStateR)
+			return;
+
 		_stunTime.ResetTime();
 		if (Stunned) return;
 		_agent.ResetPath();
@@ -83,7 +89,7 @@ public class WhispererController : MonoBehaviour, IEnemyController
 	}
 	public void StopShined()
 	{
-		throw new System.NotImplementedException();
+		return;
 	}
 	public void Wander()
 	{
@@ -104,4 +110,42 @@ public class WhispererController : MonoBehaviour, IEnemyController
 	{
 		_gameManager.IsOnChase += chase;
 	}
+
+
+	private Coroutine _animationCheckRoutine;
+	private AnimatorStateInfo _animatorStateInfo;
+	[SerializeField]
+	private Animator _animator;
+	private WaitForSeconds _wfs = new WaitForSeconds(0.1f);
+
+	public void StartAnimationCheck(string name)
+	{
+		_animOver.SetOver(false);
+		if (_animationCheckRoutine != null)
+			StopCoroutine(_animationCheckRoutine);
+		_animationCheckRoutine = StartCoroutine(CheckAnimation(name));
+	}
+	private IEnumerator CheckAnimation(string name)
+	{
+		_animatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+		if (!_animatorStateInfo.IsName(name))
+			yield return _wfs;
+
+		while (true)
+		{
+			_animatorStateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+			if (!_animatorStateInfo.IsName(name))
+			{
+				_animOver.SetOver(true);
+				break;
+			}
+			else if (_animatorStateInfo.normalizedTime >= _animatorStateInfo.length)
+			{
+				_animOver.SetOver(true);
+				break;
+			}
+			yield return null;
+		}
+	}
+
 }

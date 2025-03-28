@@ -43,7 +43,16 @@ public class StatusMechanism : MonoBehaviour, ISaveable
 		_objectStatus[id] = isOn;
 		CheckLevers(atStart);
 	}
-
+	public void SetOrderTrue(int id)
+	{
+		_objectStatus[id] = true;
+		CheckLevers(false);
+	}
+	public void SetOrderFalse(int id)
+	{
+		_objectStatus[id] = false;
+		CheckLevers(false);
+	}
 	private void CheckLevers(bool atStart)
 	{
 		for (int i = 0; i < _order.Length; i++)

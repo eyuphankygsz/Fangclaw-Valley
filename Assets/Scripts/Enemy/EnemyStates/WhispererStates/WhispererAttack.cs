@@ -31,8 +31,8 @@ public class WhispererAttack : MonoBehaviour, IEnemyState
 	public void EnterState()
 	{
 		_timeForAttack.ResetTime();
-		_isAnimOver.SetOver(false);
 		_animator.SetTrigger("AttackNormal");
+		_controller.StartAnimationCheck("AttackNormal");
 	}
 
 	public void ExitState()
@@ -49,7 +49,7 @@ public class WhispererAttack : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-		if (_startChecking && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+		if (_startChecking && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime > _animator.GetCurrentAnimatorStateInfo(0).length)
 			_turned.CanTurn = true;
 
 		if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("AttackNormal"))
