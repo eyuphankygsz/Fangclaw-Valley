@@ -48,11 +48,14 @@ public class EnemyStateMachine : MonoBehaviour
 	public IEnemyState GetCurrentState() => _currentState;
 	public void SetCurrentState(string stateName)
 	{
+		Debug.Log("1");
 		if (!_init)
 		{
+		Debug.Log("2");
 			_init = true;
 			Start();
 		}
+		Debug.Log("3");
 		_controller.DiscardTime = true;
 		EnterState(GetState(stateName));
 	}
