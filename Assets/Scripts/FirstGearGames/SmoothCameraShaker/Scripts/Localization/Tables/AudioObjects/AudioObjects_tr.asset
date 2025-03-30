@@ -22,6 +22,10 @@ MonoBehaviour:
     m_Localized: "\u015Eu an i\xE7in bunu kullanmam m\xFCmk\xFCn de\u011Fil."
     m_Metadata:
       m_Items: []
+  - m_Id: 38253964668825600
+    m_Localized: Kutulara baksam iyi olacak.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

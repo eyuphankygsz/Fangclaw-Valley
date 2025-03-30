@@ -11,9 +11,8 @@ public class TalkEvents : MonoBehaviour
 	[SerializeField]
 	private List<TalkList> _talksList;
 
-
-
-	private AudioSource _src;
+	[SerializeField]
+	private List<AudioSource> _sources;
 	private JsonSerializerSettings _jsonSettings;
 	private int _id;
 	private TalkList _currentTalkList;
@@ -31,7 +30,6 @@ public class TalkEvents : MonoBehaviour
 	}
 	private void Load()
 	{
-		_src =	GetComponent<AudioSource>();
 		string json = Resources.Load<TextAsset>("texts/" + _talkName).ToString();
 		JsonConvert.DeserializeObject<TalkWrapper>(json);
 
@@ -68,7 +66,7 @@ public class TalkEvents : MonoBehaviour
 			return;
 
 		TalkObject tObj = _currentTalkList.TalkObject[_id];
-		DialogueManager.Instance.PlayOne(tObj, _talkName, _src);
+		DialogueManager.Instance.PlayOne(tObj, _talkName, _sources[tObj.SourceIndex]);
 
 		_id++;
 	}
@@ -83,8 +81,8 @@ public class TalkEvents : MonoBehaviour
 public class TalkObject
 {
 	public string TalkText;
-	public string TalkAudio;
 	public float TalkDelay;
+	public int SourceIndex;
 }
 
 public class TalkList
@@ -113,8 +111,8 @@ public class TalkWrapper
 				TalkObject = entry.TalkObject?.Select(obj => new TalkObject
 				{
 					TalkText = obj.TalkText,
-					TalkAudio = obj.TalkAudio,
-					TalkDelay = obj.TalkDelay
+					TalkDelay = obj.TalkDelay,
+					SourceIndex = obj.SourceIndex
 				}).ToList()
 			}).ToList();
 	}

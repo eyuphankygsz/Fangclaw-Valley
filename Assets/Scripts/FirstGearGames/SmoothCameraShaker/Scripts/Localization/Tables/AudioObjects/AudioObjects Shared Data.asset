@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: cant_use
     m_Metadata:
       m_Items: []
+  - m_Id: 38253964668825600
+    m_Key: break_crates
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -6,17 +6,20 @@
         {
           "TalkText": "c1",
           "TalkAudio": "audios/albion/c1",
-          "TalkDelay": 2.5
+          "TalkDelay": 2.5,
+          "SourceIndex": 0
         },
         {
           "TalkText": "c2",
           "TalkAudio": "audios/albion/c2",
-          "TalkDelay": 3.0
+          "TalkDelay": 3.0,
+          "SourceIndex": 0
         },
         {
           "TalkText": "c3",
           "TalkAudio": "audios/albion/c3",
-          "TalkDelay": 3.0
+          "TalkDelay": 3.0,
+          "SourceIndex": 0
         },
         {
           "TalkText": "c4",
@@ -26,22 +29,26 @@
         {
           "TalkText": "c5",
           "TalkAudio": "audios/albion/c5",
-          "TalkDelay": 3.0
+          "TalkDelay": 3.0,
+          "SourceIndex": 0
         },
         {
           "TalkText": "c6",
           "TalkAudio": "audios/albion/c6",
-          "TalkDelay": 3.0
+          "TalkDelay": 3.0,
+          "SourceIndex": 0
         },
         {
           "TalkText": "c7",
           "TalkAudio": "audios/albion/c7",
-          "TalkDelay": 3.0
+          "TalkDelay": 3.0,
+          "SourceIndex": 0
         },
         {
           "TalkText": "c8",
           "TalkAudio": "audios/albion/c8",
-          "TalkDelay": 3.0
+          "TalkDelay": 3.0,
+          "SourceIndex": 0
         }
       ]
     },
@@ -51,7 +58,8 @@
         {
           "TalkText": "c3",
           "TalkAudio": "audios/albion/c3",
-          "TalkDelay": 1.0
+          "TalkDelay": 1.0,
+          "SourceIndex": 0
         }
       ]
     }

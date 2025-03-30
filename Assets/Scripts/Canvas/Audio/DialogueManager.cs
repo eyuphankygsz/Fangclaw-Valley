@@ -50,6 +50,16 @@ public class DialogueManager : MonoBehaviour
 		_audioObjects = aObjects;
 		PlayAudio();
 	}
+	public void PlayList(AudioObjectList list)
+	{
+		if (_gamePause && _onForce)
+			return;
+
+		_index = 0;
+		_audioObjects = list.AudioObjects;
+		PlayAudio();
+	}
+
 	public void PlayOne(AudioObject aObjects)
 	{
 		if (_gamePause && _onForce)

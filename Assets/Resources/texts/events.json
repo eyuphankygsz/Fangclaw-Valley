@@ -1,0 +1,15 @@
+{
+  "Talks": [
+    {
+      "TalkName": "BreakCrate",
+      "TalkObject": [
+        {
+          "TalkText": "bc_1",
+          "TalkAudio": "audios/albion/c1",
+          "TalkDelay": 2.5,
+          "SourceIndex": 0
+        }
+      ]
+    }
+  ]
+}

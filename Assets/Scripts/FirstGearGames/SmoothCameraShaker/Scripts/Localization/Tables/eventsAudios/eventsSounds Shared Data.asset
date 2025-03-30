@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: eventsSounds Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: eventsSounds
+  m_TableCollectionNameGuidString: f8f43347b7c8ba94f9bfa231f0cb3c0c
+  m_Entries:
+  - m_Id: 1341771870208
+    m_Key: bc_1
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 9141034689056735240
+  m_KeyGenerator:
+    rid: 9141034689056735235
+  references:
+    version: 2
+    RefIds:
+    - rid: 9141034689056735235
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1743295926834
+    - rid: 9141034689056735240
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 1341771870208
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        m_TypeString: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
