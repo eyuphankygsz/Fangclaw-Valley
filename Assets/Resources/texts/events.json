@@ -5,11 +5,422 @@
       "TalkObject": [
         {
           "TalkText": "bc_1",
-          "TalkAudio": "audios/albion/c1",
-          "TalkDelay": 2.5,
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "TakeLamp",
+      "TalkObject": [
+        {
+          "TalkText": "lamp_found",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "TakeGas",
+      "TalkObject": [
+        {
+          "TalkText": "gas_found",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "FirstNote",
+      "TalkObject": [
+        {
+          "TalkText": "first_note",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "FirstPuzzle",
+      "TalkObject": [
+        {
+          "TalkText": "first_puzzle",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "FuckSlow",
+      "TalkObject": [
+        {
+          "TalkText": "fuck_slow",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "FocusBaxter",
+      "TalkObject": [
+        {
+          "TalkText": "focus_bax",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "GetOffMe-1",
+      "TalkObject": [
+        {
+          "TalkText": "get_off_me_1",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "LooksSafeKey",
+      "TalkObject": [
+        {
+          "TalkText": "looks_safe_key",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "WolfPuzzle",
+      "TalkObject": [
+        {
+          "TalkText": "wolf_chase",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "ItWorked",
+      "TalkObject": [
+        {
+          "TalkText": "it_worked",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "FirstEnemy",
+      "TalkObject": [
+        {
+          "TalkText": "a_albion",
+          "TalkDelay": 0,
+          "SourceIndex": 0
+        },
+        {
+          "TalkText": "a_albion2",
+          "TalkDelay": 0.2,
+          "SourceIndex": 0
+        },
+        {
+          "TalkText": "a_albion3",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "HmmHands",
+      "TalkObject": [
+        {
+          "TalkText": "hmm_hands",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "SawDepo",
+      "TalkObject": [
+        {
+          "TalkText": "saw_depo",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "NicePuzzleAgain",
+      "TalkObject": [
+        {
+          "TalkText": "puzzle_again",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "EnemyEncounter",
+      "TalkObject": [
+        {
+          "TalkText": "enemy_encounter_1",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "DynamitesNice",
+      "TalkObject": [
+        {
+          "TalkText": "dynamites_nice",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Explosion1",
+      "TalkObject": [
+        {
+          "TalkText": "lets_explode",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Explosion2",
+      "TalkObject": [
+        {
+          "TalkText": "explode_done",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "EnemyEncounter2",
+      "TalkObject": [
+        {
+          "TalkText": "is_there_someone",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "EnemyEncounter2",
+      "TalkObject": [
+        {
+          "TalkText": "is_there_someone",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "EnemyEncounter2-2",
+      "TalkObject": [
+        {
+          "TalkText": "you_again",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "HowCouldYou",
+      "TalkObject": [
+        {
+          "TalkText": "how_could_you",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "GodWhyMe",
+      "TalkObject": [
+        {
+          "TalkText": "god_why_me",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "GasNotNow",
+      "TalkObject": [
+        {
+          "TalkText": "gas_not_now",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "GasNoNoNo",
+      "TalkObject": [
+        {
+          "TalkText": "gas_no_no_no",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "GasTheTimeEnds",
+      "TalkObject": [
+        {
+          "TalkText": "gas_the_time_ends",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "AhNoLetMeGo",
+      "TalkObject": [
+        {
+          "TalkText": "ah_no_leme_go",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "DamnLetMeGo",
+      "TalkObject": [
+        {
+          "TalkText": "damn_leme_go",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "PlsLetMeGo",
+      "TalkObject": [
+        {
+          "TalkText": "pls_leme_go",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked1",
+      "TalkObject": [
+        {
+          "TalkText": "locked1",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked2",
+      "TalkObject": [
+        {
+          "TalkText": "locked2",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked3",
+      "TalkObject": [
+        {
+          "TalkText": "locked3",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked4",
+      "TalkObject": [
+        {
+          "TalkText": "locked4",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked5",
+      "TalkObject": [
+        {
+          "TalkText": "locked5",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked6",
+      "TalkObject": [
+        {
+          "TalkText": "locked6",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked7",
+      "TalkObject": [
+        {
+          "TalkText": "locked7",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked8",
+      "TalkObject": [
+        {
+          "TalkText": "locked8",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked9",
+      "TalkObject": [
+        {
+          "TalkText": "locked9",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked10",
+      "TalkObject": [
+        {
+          "TalkText": "locked10",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Locked11",
+      "TalkObject": [
+        {
+          "TalkText": "locked11",
+          "TalkDelay": 0.5,
           "SourceIndex": 0
         }
       ]
     }
+    
+    
   ]
 }

@@ -51,7 +51,8 @@ public class GPiggyFollow : MonoBehaviour, IEnemyState
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
-		_canPlayAudio.AddAudio(_sawYou);
+		if (_sawYou != null)
+			_canPlayAudio.AddAudio(_sawYou);
 	}
 	public void EnterState()
 	{
@@ -71,7 +72,7 @@ public class GPiggyFollow : MonoBehaviour, IEnemyState
 
 		_squekRoutine = StartCoroutine(TrySquek());
 
-		if (_canPlayAudio.CanPlay(_sawYou))
+		if (_sawYou != null && _canPlayAudio.CanPlay(_sawYou))
 		{
 			_generalAudioSource.clip = _sawYou;
 			_generalAudioSource.Play();
@@ -134,7 +135,7 @@ public class GPiggyFollow : MonoBehaviour, IEnemyState
 			yield return new WaitWhile(() => _generalAudioSource.isPlaying);
 
 			_squekTimeLeft = Random.Range(0.6f, 1.5f);
-			while(_squekTimeLeft > 0)
+			while (_squekTimeLeft > 0)
 			{
 				_squekTimeLeft -= Time.deltaTime;
 				yield return null;

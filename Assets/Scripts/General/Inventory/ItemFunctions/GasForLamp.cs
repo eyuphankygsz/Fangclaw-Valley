@@ -10,7 +10,7 @@ public class GasForLamp : UseFunction
 	{
 		if (_lanternHelpers.LeftFuel == _lanternHelpers.MaxFuel || !_lantern.IsPicked)
 		{
-			DialogueManager.Instance.PlayOne(_cantUse);
+			DialogueManager.Instance.PlayNewOne(_cantUse);
 			return false;
 		}
 

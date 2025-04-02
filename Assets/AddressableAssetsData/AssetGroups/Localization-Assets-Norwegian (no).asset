@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Norwegian (no)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Norwegian (no)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: dc023d11f9a75b740a8ff1be894ecfdd
+  m_SerializeEntries: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0219a0c6a611acb4c980169bf8913437, type: 2}
+    - {fileID: 11400000, guid: 517222fcc3cf6014c8212fe2760e3dfb, type: 2}

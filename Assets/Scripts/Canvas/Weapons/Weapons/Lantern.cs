@@ -243,7 +243,13 @@ public class Lantern : Weapons
 	public void Intensity(int id, float intensity)
 	{
 		if (_lanternLights == null)
-			_lanternLights = new Light[] { _normalLightSource.GetComponent<Light>(), _directLightSource.GetComponent<Light>(), _behindLightSource.GetComponent<Light>() };
+			_lanternLights = new Light[] 
+			    { 
+					_normalLightSource.GetComponent<Light>(), 
+					_directLightSource.GetComponent<Light>(), 
+					_behindLightSource.GetComponent<Light>(), 
+					_onHandLight 
+				};
 
 		_lanternLights[id].intensity = intensity;
 	}

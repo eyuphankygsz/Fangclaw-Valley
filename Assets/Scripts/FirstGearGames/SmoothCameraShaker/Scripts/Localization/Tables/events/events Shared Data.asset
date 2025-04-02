@@ -19,6 +19,166 @@ MonoBehaviour:
     m_Key: bc_1
     m_Metadata:
       m_Items: []
+  - m_Id: 132905719291904
+    m_Key: lamp_found
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135464773214208
+    m_Key: gas_found
+    m_Metadata:
+      m_Items: []
+  - m_Id: 146746037493760
+    m_Key: first_note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 150516641292288
+    m_Key: first_puzzle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168644490289152
+    m_Key: fuck_slow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173931012022272
+    m_Key: focus_bax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174177167335424
+    m_Key: get_off_me_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178832110772224
+    m_Key: looks_safe_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179152618512384
+    m_Key: wolf_chase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183416204025856
+    m_Key: it_worked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186206527676416
+    m_Key: a_albion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186222197596160
+    m_Key: a_albion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186225179746304
+    m_Key: a_albion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191133291372544
+    m_Key: hmm_hands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191463194353664
+    m_Key: saw_depo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191740857278464
+    m_Key: puzzle_again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191930842472448
+    m_Key: enemy_encounter_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192623141707776
+    m_Key: dynamites_nice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193103569870848
+    m_Key: lets_explode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193629535592448
+    m_Key: explode_done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 194125130358784
+    m_Key: is_there_someone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 195580050530304
+    m_Key: you_again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 310426746216448
+    m_Key: how_could_you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 546633891700736
+    m_Key: god_why_me
+    m_Metadata:
+      m_Items: []
+  - m_Id: 550112282533888
+    m_Key: gas_not_now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 550114128027648
+    m_Key: gas_no_no_no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 550115675725824
+    m_Key: gas_the_time_ends
+    m_Metadata:
+      m_Items: []
+  - m_Id: 552048641695744
+    m_Key: ah_no_leme_go
+    m_Metadata:
+      m_Items: []
+  - m_Id: 552050722070528
+    m_Key: damn_leme_go
+    m_Metadata:
+      m_Items: []
+  - m_Id: 552061488848896
+    m_Key: pls_leme_go
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824442266574848
+    m_Key: locked2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824445622018048
+    m_Key: locked3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824448608362496
+    m_Key: locked4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824455482826752
+    m_Key: locked5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824459920400384
+    m_Key: locked6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824464139870208
+    m_Key: locked7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824466060861440
+    m_Key: locked8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825513026248704
+    m_Key: locked9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825534664663040
+    m_Key: locked10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825539358089216
+    m_Key: locked11
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

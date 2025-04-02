@@ -28,6 +28,11 @@ public class ButtonOrderMechanism : MonoBehaviour, ISaveable
 
 	private ButtonOrderMechanismData _data;
 
+
+	[SerializeField]
+	private TalkEvents[] _talkEvents;
+
+
 	[Inject]
 	private readonly SaveManager _saveManager;
 
@@ -82,6 +87,7 @@ public class ButtonOrderMechanism : MonoBehaviour, ISaveable
 		else
 		{
 			ChangeStatus(false, false);
+			PlayWrongSound();
 			ResetMechanism();
 		}
 	}
@@ -138,9 +144,15 @@ public class ButtonOrderMechanism : MonoBehaviour, ISaveable
 		else
 			for (int i = 0; i < _objectStatus.Length; i++)
 			{
-				if(_objectStatus[i] != 0)
+				if (_objectStatus[i] != 0)
 					_buttons[_objectStatus[i]].SetStatusManually(true);
 			}
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
+	}
+
+	private void PlayWrongSound()
+	{
+		if (_talkEvents.Length > 0)
+			_talkEvents[Random.Range(0, _talkEvents.Length)].SelectTalkList();
 	}
 }

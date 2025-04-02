@@ -15,8 +15,16 @@ public class TakeHideTable : MonoBehaviour
 	[SerializeField]
 	private PlayableDirector _playable;
 
+	[SerializeField]
+	private TalkEvents[] _talkEvents;
 
 	public Transform GetPlayerTransform() => _playerTf;
 	public Transform GetEnemyTransform() => _enemyTf;
 	public PlayableDirector GetPlayable() => _playable;
+
+	public void TalkEventPlay()
+	{
+		if (_talkEvents.Length > 0)
+			_talkEvents[Random.Range(0, _talkEvents.Length)].SelectTalkList();
+	}
 }

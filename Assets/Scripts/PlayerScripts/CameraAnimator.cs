@@ -30,6 +30,5 @@ public class CameraAnimator : MonoBehaviour
 		{
 			yield return null;
 		}
-		_animator.enabled = false;
 	}
 }

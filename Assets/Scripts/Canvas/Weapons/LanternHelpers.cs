@@ -28,6 +28,9 @@ public class LanternHelpers : MonoBehaviour
 	private float _leftFuel, _maxFuel = 480f;
 	private bool _isOn;
 
+	[SerializeField]
+	private TalkEvents[] _talkEvents;
+
 	private void OnEnable()
 	{
 		if (_isOn)
@@ -43,6 +46,8 @@ public class LanternHelpers : MonoBehaviour
 	{
 		if (_leftFuel <= 0)
 		{
+			if(_isOn && _talkEvents.Length > 0)
+				_talkEvents[Random.Range(0, _talkEvents.Length)].SelectTalkList();
 			StopUsingGas();
 			_leftFuel = 0;
 			ApplyUI();

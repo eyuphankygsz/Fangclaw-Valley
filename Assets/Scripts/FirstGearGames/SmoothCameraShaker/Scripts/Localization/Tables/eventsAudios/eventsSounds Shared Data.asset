@@ -19,6 +19,166 @@ MonoBehaviour:
     m_Key: bc_1
     m_Metadata:
       m_Items: []
+  - m_Id: 133781590630400
+    m_Key: lamp_found
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135038237663232
+    m_Key: gas_found
+    m_Metadata:
+      m_Items: []
+  - m_Id: 146718963261440
+    m_Key: first_note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 149513414107136
+    m_Key: first_puzzle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168470615416832
+    m_Key: fuck_slow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173190084026368
+    m_Key: focus_bax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174963196682240
+    m_Key: get_off_me_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178141740916736
+    m_Key: looks_safe_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179031600259072
+    m_Key: wolf_chase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182667885666304
+    m_Key: it_worked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186277201698816
+    m_Key: a_albion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186278908780544
+    m_Key: a_albion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186280825577472
+    m_Key: a_albion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187002547855360
+    m_Key: hmm_hands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187251119087616
+    m_Key: saw_depo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187253904105472
+    m_Key: puzzle_again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191677246464000
+    m_Key: enemy_encounter_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191966020100096
+    m_Key: dynamites_nice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193831914954752
+    m_Key: lets_explode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 194068163321856
+    m_Key: explode_done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 194386896871424
+    m_Key: is_there_someone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 194894680285184
+    m_Key: you_again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 546344233066496
+    m_Key: god_why_me
+    m_Metadata:
+      m_Items: []
+  - m_Id: 548866586828800
+    m_Key: gas_not_now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 548868969193472
+    m_Key: gas_no_no_no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 548871284449280
+    m_Key: gas_the_time_ends
+    m_Metadata:
+      m_Items: []
+  - m_Id: 552210382446592
+    m_Key: ah_no_leme_go
+    m_Metadata:
+      m_Items: []
+  - m_Id: 552213201018880
+    m_Key: damn_leme_go
+    m_Metadata:
+      m_Items: []
+  - m_Id: 552215918927872
+    m_Key: pls_leme_go
+    m_Metadata:
+      m_Items: []
+  - m_Id: 580957273841664
+    m_Key: how_could_you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 822028028465152
+    m_Key: locked2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 822030645710848
+    m_Key: locked3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 822032688336896
+    m_Key: locked4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 822034974232576
+    m_Key: locked5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 822037293682688
+    m_Key: locked6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 822039407611904
+    m_Key: locked7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825528129015808
+    m_Key: locked8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825530616238080
+    m_Key: locked9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825534437249024
+    m_Key: locked10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825536450514944
+    m_Key: locked11
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 9141034689056735240
@@ -37,6 +197,886 @@ MonoBehaviour:
       data:
         m_Entries:
         - m_KeyId: 1341771870208
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 133781590630400
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 135038237663232
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 146718963261440
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 149513414107136
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - no
+          - ko
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 168470615416832
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 173190084026368
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 174963196682240
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 178141740916736
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 179031600259072
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 182667885666304
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - nl
+          - da
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 186277201698816
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 186278908780544
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 186280825577472
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - nl
+          - da
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 187002547855360
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 187251119087616
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 187253904105472
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 191677246464000
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 191966020100096
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 193831914954752
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 194068163321856
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 194386896871424
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 194894680285184
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 546344233066496
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 548866586828800
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 548868969193472
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 548871284449280
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 552210382446592
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 552213201018880
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 552215918927872
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 580957273841664
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 822028028465152
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 822030645710848
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 822032688336896
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 822034974232576
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 822037293682688
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 822039407611904
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 825536450514944
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 825534437249024
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 825530616238080
+          m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+        - m_KeyId: 825528129015808
           m_TableCodes:
           - bg
           - zh-Hans

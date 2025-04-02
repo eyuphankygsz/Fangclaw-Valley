@@ -42,7 +42,8 @@ public class SDaddyFollow : MonoBehaviour, IEnemyState
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
-		_canPlayAudio.AddAudio(_sawYou);
+		if (_sawYou != null)
+			_canPlayAudio.AddAudio(_sawYou);
 	}
 	public void EnterState()
 	{
@@ -58,7 +59,7 @@ public class SDaddyFollow : MonoBehaviour, IEnemyState
 		_agent.speed = _speed;
 		_animator.SetBool("Follow", true);
 		_isStuck.SetLastPoint(transform.position);
-		if (_canPlayAudio.CanPlay(_sawYou))
+		if (_sawYou != null && _canPlayAudio.CanPlay(_sawYou))
 		{
 			_audioSource.clip = _sawYou;
 			_audioSource.Play();

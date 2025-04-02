@@ -10,11 +10,16 @@ public class CustomEvents : MonoBehaviour, ISaveable
 	private bool _always;
 
 	[SerializeField]
+	private bool _notOnChase;
+
+	[SerializeField]
 	private UnityEvent _onTriggerEvents, _doneEvents;
 	private bool _done;
 
 	[Inject]
 	private SaveManager _saveManager;
+	[Inject]
+	private GameManager _manager;
 
 	private CEventData _data;
 
@@ -51,6 +56,10 @@ public class CustomEvents : MonoBehaviour, ISaveable
 	}
 	private void OnTriggerEnter(Collider other)
 	{
+		if(_notOnChase)
+			if(_manager != null && _manager.IsOnChase > 0)
+			return;
+
 		if (other.tag != "Player")
 			return;
 

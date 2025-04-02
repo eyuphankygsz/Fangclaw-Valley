@@ -17,63 +17,29 @@ public class TalkEvents : MonoBehaviour
 	private int _id;
 	private TalkList _currentTalkList;
 
+	[SerializeField]
+	private TalkEventsHolder _holder;
 
-	private void Awake()
+	public void SelectTalkList()
 	{
-		_jsonSettings = new JsonSerializerSettings
-		{
-			ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
-			TypeNameHandling = TypeNameHandling.All,
-			Formatting = Formatting.Indented
-		};
-		Load();
-	}
-	private void Load()
-	{
-		string json = Resources.Load<TextAsset>("texts/" + _talkName).ToString();
-		JsonConvert.DeserializeObject<TalkWrapper>(json);
-
-		TalkWrapper dataWrapper = JsonConvert.DeserializeObject<TalkWrapper>(json, _jsonSettings);
-		if (dataWrapper?.Talks == null)
-			return;
-
-		_talksList = new List<TalkList>();
-
-		//int i = 0;
-		foreach (var entry in dataWrapper.Talks)
-		{
-			_talksList.Add(new TalkList() { TalkName = entry.TalkName, TalkObject = entry.TalkObject });
-			//for (int j = 0; j < _talksList[i].TalkObject.Count; j++)
-			//{
-			//	LocalizedString _skipLocal = new LocalizedString() { TableReference = _talkName, TableEntryReference = _talksList[i].TalkObject[j].TalkText };
-			//	Debug.Log(_skipLocal.GetLocalizedString());
-			//}
-			//i++;
-			//Debug.Log("========");
-
-		}
-	}
-
-	public void SelectTalkList(string talkList)
-	{
-		_currentTalkList = _talksList.First(t => t.TalkName == talkList);
+		_currentTalkList = _holder.GetList(_talkName);
 		PlayNext();
 	}
 
 	public void PlayNext()
 	{
 		if (_id >= _currentTalkList.TalkObject.Count)
+		{
+			DialogueManager.Instance.DestroyDialogue(_currentTalkList.TalkName);
+			_id = 0;
 			return;
+		}
 
 		TalkObject tObj = _currentTalkList.TalkObject[_id];
-		DialogueManager.Instance.PlayOne(tObj, _talkName, _sources[tObj.SourceIndex]);
+		DialogueManager.Instance.PlayNewList(tObj, _holder.GetTableRef(), _sources[tObj.SourceIndex], this, _currentTalkList.TalkName);
 
 		_id++;
 	}
-
-
-
-
 
 }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -9,8 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
 	public static DialogueManager Instance;
 
-	[SerializeField]
-	private TextMeshProUGUI _subtitles;
+	public TextMeshProUGUI Subtitles;
 	[SerializeField]
 	private AudioSource _source;
 
@@ -25,8 +25,14 @@ public class DialogueManager : MonoBehaviour
 	[Inject]
 	private GameManager _gameManager;
 
-	bool _gamePause;
-	bool _onForce;
+	public bool GamePause;
+	public bool OnForce;
+
+	[SerializeField]
+	private GameObject _asList, _asOne;
+
+	Dictionary<string, DialogueAsList> _asListDict = new Dictionary<string, DialogueAsList>();
+
 	private void Awake()
 	{
 		Instance = this;
@@ -37,160 +43,34 @@ public class DialogueManager : MonoBehaviour
 	}
 	private void OnPause(bool pause, bool force)
 	{
-		_onForce = force;
+		OnForce = force;
 		if (!force)
-			_gamePause = pause;
+			GamePause = pause;
 	}
-	public void PlayList(List<AudioObject> aObjects)
+	public void PlayNewList(TalkObject talkObject, string tableRef, AudioSource src, TalkEvents talkEvents, string talkName)
 	{
-		if (_gamePause && _onForce)
-			return;
 
-		_index = 0;
-		_audioObjects = aObjects;
-		PlayAudio();
-	}
-	public void PlayList(AudioObjectList list)
-	{
-		if (_gamePause && _onForce)
-			return;
-
-		_index = 0;
-		_audioObjects = list.AudioObjects;
-		PlayAudio();
-	}
-
-	public void PlayOne(AudioObject aObjects)
-	{
-		if (_gamePause && _onForce)
-			return;
-		_index = 0;
-		_audioObjects.Clear();
-		_audioObjects.Add(aObjects);
-		PlayAudio();
-	}
-	public void PlayOne(TalkObject talkObject, string tableRef, AudioSource src)
-	{
-		_index = 0;
-		_audioObjects.Clear();
-
-		if (_tempSource != null)
-		{
-			_tempSource.Stop();
-			_tempSource = null;
-		}
-
-		_tempSource = src;
-		PlayAudioInstant(talkObject, tableRef);
-
-	}
-
-	private void PlayAudioInstant(TalkObject talkObject, string tableRef)
-	{
-		if (_routine != null)
-		{
-			_source.Stop();
-			StopCoroutine(_routine);
-		}
-		if (_tempRoutine != null)
-			StopCoroutine(_tempRoutine);
-
-		_tempRoutine = StartCoroutine(PlayAudioAsync(talkObject, tableRef));
-	}
-
-	private IEnumerator PlayAudioAsync(TalkObject talkObject, string tableRef)
-	{
-		LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() { TableReference = tableRef + "Sounds", TableEntryReference = talkObject.TalkText };
-		var loadOperation = _audio.LoadAssetAsync();
-
-		yield return loadOperation;
-		if (loadOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
-		{
-			_tempSource.clip = loadOperation.Result;
-
-			while (_gamePause)
-				yield return null;
-
-
-			_tempSource.Play();
-		}
-		else
-			Debug.LogError("Audio clip could not be loaded.");
-
-		if (PlayerPrefs.GetInt("Subtitles") == 1)
-		{
-			LocalizedString _skipLocal = new LocalizedString() { TableReference = tableRef, TableEntryReference = talkObject.TalkText };
-			_subtitles.text = _skipLocal.GetLocalizedString();
-		}
+		if (_asListDict.ContainsKey(talkName))
+			_asListDict[talkName].Setup(talkObject, tableRef, src, talkEvents, this);
 		else
 		{
-			_subtitles.text = "";
+			GameObject obj = Instantiate(_asList);
+			_asListDict.Add(talkName, obj.GetComponent<DialogueAsList>().Setup(talkObject, tableRef, src, talkEvents, this));
 		}
-
-		_tempRoutine = StartCoroutine(CheckEndTemp(talkObject));
 	}
-	private void PlayAudio()
+	public void PlayNewOne(AudioObject audioObj)
 	{
-		if (_routine != null)
-			StopCoroutine(_routine);
-
-		if (_tempSource == null)
-		{
-			_source.clip = _audioObjects[_index].Clip;
-			if (_source.clip != null)
-				_source.Play();
-
-		}
-		else
-		{
-			_tempSource.clip = _audioObjects[_index].Clip;
-			_tempSource.Play();
-		}
-
-		_subtitles.text = _audioObjects[_index].Text.GetLocalizedString();
-		_routine = StartCoroutine(CheckEnd());
-
+		GameObject obj = Instantiate(_asOne);
+		obj.GetComponent<DialogueAsOne>().Setup(audioObj, this, _source);
 	}
-
-	IEnumerator CheckEnd()
+	public void DestroyDialogue(string name)
 	{
-		yield return new WaitForSeconds(_audioObjects[_index].Delay);
-		while (true)
-		{
-
-			if (!_source.isPlaying)
-			{
-				_subtitles.text = "";
-				NextAudio();
-				break;
-			}
-			yield return null;
-		}
-
-	}
-	IEnumerator CheckEndTemp(TalkObject obj)
-	{
-		yield return new WaitForSeconds(obj.TalkDelay);
-		while (true)
-		{
-			if (!_tempSource.isPlaying)
-			{
-				_subtitles.text = "";
-				break;
-			}
-			yield return null;
-		}
-
-	}
-	private void NextAudio()
-	{
-		_index++;
-		if (_index >= _audioObjects.Count)
-		{
-			_index = 0;
+		bool temp = _asListDict.ContainsKey(name);
+		if (temp == false)
 			return;
-		}
-		PlayAudio();
-	}
 
+		GameObject obj = _asListDict[name].gameObject;
+		_asListDict.Remove(name);
+		Destroy(obj);
+	}
 }

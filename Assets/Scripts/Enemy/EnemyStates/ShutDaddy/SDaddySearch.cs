@@ -49,6 +49,7 @@ public class SDaddySearch : MonoBehaviour, IEnemyState
 			_controller.SetChase(-1);
 			_controller.IsOnChase = !_controller.IsOnChase;
 		}
+		if(_sawYou != null)
 		_canPlayAudio.EnablePlay(_sawYou);
 
 		_animator.SetBool("Walk", false);

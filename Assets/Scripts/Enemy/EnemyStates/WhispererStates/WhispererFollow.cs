@@ -83,13 +83,41 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 			TurnEnemy();
 
 
-		Vector3 diff = _target.position - transform.position;
-		if (diff.sqrMagnitude > _agent.stoppingDistance * _agent.stoppingDistance)
+		if (IsPathBlocked(_target.position))
+		{
+			// Eðer yol kapalýysa, engelin yanýna git
+			Vector3 closestPoint = GetClosestPointToObstacle();
+			_agent.SetDestination(closestPoint);
+			Debug.Log("Engel tespit edildi! Engelin yanýna gidiliyor...");
+		}
+		else
 		{
 			_agent.SetDestination(_target.position);
 		}
 	}
+	private bool IsPathBlocked(Vector3 pos)
+	{
+		NavMeshPath path = new NavMeshPath();
+		_agent.CalculatePath(pos, path);
 
+		if (path.status != NavMeshPathStatus.PathComplete)
+		{
+			return true;
+		}
+
+		return false;
+	}
+	private Vector3 GetClosestPointToObstacle()
+	{
+		NavMeshHit hit;
+		if (NavMesh.Raycast(transform.position, _target.position, out hit, NavMesh.AllAreas))
+		{
+			Debug.Log("Engelin en yakýn noktasýna gidiliyor: " + hit.position);
+			return hit.position; // Engelin hemen önüne git
+		}
+
+		return transform.position; // Eðer bir engel bulamazsa yerinde kal
+	}
 	private void TurnEnemy()
 	{
 		Vector3 relativePos = _target.position - transform.position;

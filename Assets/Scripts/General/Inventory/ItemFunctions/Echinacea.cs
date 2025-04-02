@@ -17,7 +17,7 @@ public class Echinacea : UseFunction
 	{
 		if (_playerStamina.Stamina == 100)
 		{
-			DialogueManager.Instance.PlayOne(_cantUse);
+			DialogueManager.Instance.PlayNewOne(_cantUse);
 			return false;
 		}
 

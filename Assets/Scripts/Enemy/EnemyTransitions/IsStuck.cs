@@ -15,9 +15,9 @@ public class IsStuck : AbstractCondition
 
 	private bool _stuck;
 	private bool _freeze;
-	private bool _isTimerChecked;
 
 	private bool _firstTimeChecks;
+	private int _attempts;
 
 	public void SetLastPoint(Vector3 pos) { _lastPos = pos; }
 	public override bool CheckCondition()
@@ -26,28 +26,32 @@ public class IsStuck : AbstractCondition
 		{
 			_stuckTimer.ResetTime();
 			_firstTimeChecks = true;
-		} 
+		}
 
 		if (!_freeze)
 		{
-			if (Vector3.Distance(_lastPos, transform.position) <= .002f)
+			if (Vector3.Distance(_lastPos, transform.position) == 0)
 			{
-				_stuckTimer.CheckCondition();
+				if (_stuckTimer.CheckCondition())
+				{
+					if(_attempts == 2)
+					{
+						_attempts = 0;
+						return true;
+					}
+					_stuckTimer.ResetTime();
+					_agent.ResetPath();
+					Debug.Log("StuckTimer");
+					//Debug.Log("Stucked!");
+					//return true;
+				}
+			
 				_stuck = true;
-				_isTimerChecked = true;
 			}
 			else
 			{
 				_stuck = false;
 				_stuckTimer.ResetTime();
-			}
-			
-			if (_isTimerChecked) 
-			{
-				if (_stuckTimer.CheckCondition())
-					return true;
-
-				_isTimerChecked = false;
 			}
 
 			_lastPos = transform.position;

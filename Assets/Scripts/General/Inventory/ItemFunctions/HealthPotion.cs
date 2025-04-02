@@ -16,7 +16,7 @@ public class HealthPotion : UseFunction
 	{
 		if (_health.Health == 100)
 		{
-			DialogueManager.Instance.PlayOne(_cantUse);
+			DialogueManager.Instance.PlayNewOne(_cantUse);
 			return false;
 		}
 

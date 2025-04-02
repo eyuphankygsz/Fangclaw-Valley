@@ -1,5 +1,101 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1598708168354776516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3458940209933694335}
+  - component: {fileID: 1741354777435540821}
+  m_Layer: 11
+  m_Name: TALK- AhNoLetMeGo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3458940209933694335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598708168354776516}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000018650455, y: 0.72225904, z: 0.000000023245198, w: 0.69162273}
+  m_LocalPosition: {x: 3.9352567, y: 0.37336415, z: 1.1811551}
+  m_LocalScale: {x: 0.6666666, y: 0.6666667, z: 0.6666666}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 774498359757073614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741354777435540821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598708168354776516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69126a8b397a787409bc8d16779ec496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkName: AhNoLetMeGo
+  _sources:
+  - {fileID: 0}
+  _holder: {fileID: 0}
+--- !u!1 &2068173976471612898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7885033538655551463}
+  - component: {fileID: 622295010271943112}
+  m_Layer: 11
+  m_Name: TALK- DamnLetMeGo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7885033538655551463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068173976471612898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000018650455, y: 0.72225904, z: 0.000000023245198, w: 0.69162273}
+  m_LocalPosition: {x: 3.9352567, y: 0.37336415, z: 1.1811551}
+  m_LocalScale: {x: 0.6666666, y: 0.6666667, z: 0.6666666}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 774498359757073614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &622295010271943112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068173976471612898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69126a8b397a787409bc8d16779ec496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkName: DamnLetMeGo
+  _sources:
+  - {fileID: 0}
+  _holder: {fileID: 0}
 --- !u!1 &2112005289569506937
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +128,9 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3458940209933694335}
+  - {fileID: 7885033538655551463}
+  - {fileID: 1134200413410884322}
   - {fileID: 1147346318727448570}
   - {fileID: 7230942951156207185}
   - {fileID: 9071236113833432887}
@@ -633,6 +732,54 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.4, y: 1, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &5731420405515789231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1134200413410884322}
+  - component: {fileID: 6242642581232205818}
+  m_Layer: 11
+  m_Name: TALK- PlsLetMeGo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1134200413410884322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5731420405515789231}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000018650455, y: 0.72225904, z: 0.000000023245198, w: 0.69162273}
+  m_LocalPosition: {x: 3.9352567, y: 0.37336415, z: 1.1811551}
+  m_LocalScale: {x: 0.6666666, y: 0.6666667, z: 0.6666666}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 774498359757073614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6242642581232205818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5731420405515789231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69126a8b397a787409bc8d16779ec496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkName: PlsLetMeGo
+  _sources:
+  - {fileID: 0}
+  _holder: {fileID: 0}
 --- !u!1 &6278936704467232068
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +890,10 @@ MonoBehaviour:
   _playerTf: {fileID: 5945891417069069656}
   _enemyTf: {fileID: 1231297874172535833}
   _playable: {fileID: 479820230868204345}
+  _talkEvents:
+  - {fileID: 1741354777435540821}
+  - {fileID: 622295010271943112}
+  - {fileID: 6242642581232205818}
 --- !u!65 &3930566523187087761
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -30,6 +30,15 @@ public class Interactable_HingedObjects : Interactable
 	private AnimatorStateInfo _animatorStateInfo;
 
 	private NavMeshObstacle _navObstacle;
+
+	[SerializeField]
+	private TalkEvents[] _talkEvents;
+
+
+	private bool _lockSaid;
+
+
+
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
 #pragma warning restore CS0108 // Member hides inherited member; missing new keyword
@@ -81,6 +90,7 @@ public class Interactable_HingedObjects : Interactable
 				return false;
 			}
 			PlayClip(_lockedClips);
+			TryPlayLocked();
 			return true;
 		}
 
@@ -94,6 +104,20 @@ public class Interactable_HingedObjects : Interactable
 			_source.clip = clips[Random.Range(0, clips.Length)];
 			_source.Play();
 		}
+	}
+	private void TryPlayLocked()
+	{
+		if (!_lockSaid)
+		{
+			_talkEvents[Random.Range(0, _talkEvents.Length)].SelectTalkList();
+			_lockSaid = true;
+			StartCoroutine(ResetLockSaid());
+		}
+	}
+	private IEnumerator ResetLockSaid()
+	{
+		yield return new WaitForSeconds(Random.Range(3,4));
+		_lockSaid = false;
 	}
 	public override GameData GetGameData()
 	{
@@ -149,7 +173,7 @@ public class Interactable_HingedObjects : Interactable
 	private Coroutine _animationCheckRoutine;
 	public void StartAnimationCheck(string name)
 	{
-		if(_animationCheckRoutine != null)
+		if (_animationCheckRoutine != null)
 			StopCoroutine(_animationCheckRoutine);
 		_animationCheckRoutine = StartCoroutine(CheckAnimation(name));
 	}
