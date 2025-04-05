@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: Indizi Di Alcuni Animali
+    m_Localized: Ingresso Spaventoso
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: Le Mani
+    m_Localized: "L\u2019Ultimo Morto Vivente"
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,66 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: "C'\xE8 Una MAPPA Vicino Alla Cucina."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: Indizi Di Alcuni Animali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: Gli animali nel Biglietto potrebbero avere a che fare con gli interruttori.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: Le Mani Del Mortale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: Le mani del morto potrebbero aprire la strada verso la Cucina.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: Lavoratore del Piccolo Magazzino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: Apri la chiave per la Piccola Stanza di Stoccaggio.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Topo Da Magazzino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: Esamina il magazzino.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: Risolvi la serratura della Stanza della Mappa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: La nota potrebbe aiutare con il rompicapo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: La Fine di Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: Accendi La Miccia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: Lega la dinamite e la corda, poi fai esplodere il crollo in cucina.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: Il Maestro Della Mappa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: Cerca La Stanza Della Mappa.
     m_Metadata:
       m_Items: []
   references:

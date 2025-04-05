@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: Aanwijzingen Van Enkele Dieren
+    m_Localized: Angstaanjagende Ingang
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: De Handen
+    m_Localized: De Laatste Levende Dode
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,68 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: Er Is Een KAART In De Buurt Van De Keuken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: Aanwijzingen Van Enkele Dieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: De dieren in het Briefje kunnen iets met de schakelaars te maken
+      hebben.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: De Handen Van De Sterfelijke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: De handen van de dode kunnen de weg naar de Keuken openen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: Kleine Opslagwerker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: Open het slot van de Kleine Opslagkamer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Magazijnmuis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: Onderzoek het magazijn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: Los de sleutel van de Kaartkamer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: Het briefje kan helpen met de puzzel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: Het Einde van Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: Steek De Lont Aan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: Bind de dynamiet en het touw vast en laat de instorting in de keuken
+      ontploffen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: Kaartmeester
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: Doorzoek De Kaartkamer.
     m_Metadata:
       m_Items: []
   references:

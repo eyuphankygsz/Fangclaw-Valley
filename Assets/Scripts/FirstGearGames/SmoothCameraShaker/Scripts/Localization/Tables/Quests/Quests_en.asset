@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: Clues Of Some Animals
+    m_Localized: Scary Entrance
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: The Hands
+    m_Localized: The Last Living Dead
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,67 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: There Is A MAP Near The Kitchen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: Clues Of Some Animals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: The animals in the Note might have something to do with the switches.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: The Hands Of The Mortal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: The hands of the dead might open the way to the Kitchen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: Little Storage Worker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: Open the key for the Little Storage Room.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Warehouse Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: Investigate the Warehouse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: Solve the Map Room's Lock.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: The note might help with the puzzle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: The End of Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: Light The Fuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: Tie the dynamite and the rope, then blow up the collapse in the
+      kitchen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: The Map Master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: Search the Map Room.
     m_Metadata:
       m_Items: []
   references:

@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: "Ledtr\xE5dar Om Vissa Djur"
+    m_Localized: "Skr\xE4mmande Ing\xE5ng"
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: "H\xE4nderna"
+    m_Localized: "Den Sista Levande D\xF6da"
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,66 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: "Det Finns En KARTA N\xE4ra K\xF6ket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: "Ledtr\xE5dar Om Vissa Djur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: "Djuren i Anteckningen kan ha n\xE5got att g\xF6ra med str\xF6mbrytarna."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: "Den D\xF6dliges H\xE4nder"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: "Den d\xF6des h\xE4nder kan \xF6ppna v\xE4gen till K\xF6ket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: Liten Lagerarbetare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: "\xD6ppna nyckeln till det Lilla Lagringsrummet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Lager Mus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: "Unders\xF6k lagret."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: "L\xF6s l\xE5set till Kartrummet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: "Anteckningen kan hj\xE4lpa med pusslet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: Bush'ens Slut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: "T\xE4nd Luntan"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: "Knyt dynamiten och repet och spr\xE4ng kollapsen i k\xF6ket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: "Kartm\xE4stare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: "Unders\xF6k Kartrummet."
     m_Metadata:
       m_Items: []
   references:

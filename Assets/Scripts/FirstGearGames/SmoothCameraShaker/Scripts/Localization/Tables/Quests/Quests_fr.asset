@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: Indices De Certains Animaux
+    m_Localized: "Entr\xE9e Effrayante"
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: Les Mains
+    m_Localized: Le Dernier Mort Vivant
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,67 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: "Il Y A Une CARTE Pr\xE8s De La Cuisine."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: Indices De Certains Animaux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: Les animaux dans la Note pourraient avoir un lien avec les interrupteurs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: Les Mains Du Mortel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: Les mains du mort pourraient ouvrir le chemin vers la Cuisine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: "Travailleur du Petit Entrep\xF4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: "Ouvrir la cl\xE9 de la Petite Salle de Stockage."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: "Souris D'entrep\xF4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: "Examinez l'entrep\xF4t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: "D\xE9verrouillez la serrure de la Salle de la Carte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: "La note pourrait aider avec l'\xE9nigme."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: Das Ende von Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: "Allumer La M\xE8che"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: Attachez la dynamite et la corde, puis faites exploser l'effondrement
+      dans la cuisine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: "Le Ma\xEEtre De La Carte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: Explore La Salle Des Cartes.
     m_Metadata:
       m_Items: []
   references:

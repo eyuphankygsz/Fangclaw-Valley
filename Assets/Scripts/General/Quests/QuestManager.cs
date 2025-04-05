@@ -169,7 +169,7 @@ public class QuestManager : MonoBehaviour
 	}
 	public void AddQuest(Quest quest)
 	{
-		if (quest.QuestStatus == 2)
+		if (quest.QuestStatus != 0)
 			return;
 
 		quest.QuestStatus = 1;
@@ -202,6 +202,8 @@ public class QuestManager : MonoBehaviour
 	public void RemoveQuest(int id)
 	{
 		ShowQuests();
+		_allQuestList.First(x => x.QuestID == id).QuestStatus = 2;
+	
 		for (int i = 0; i < _currentQuests.Count; i++)
 		{
 			if (_currentQuests[i].QuestID == id)

@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: "Baz\u0131 Hayvanlar\u0131n \u0130pucu"
+    m_Localized: "\xDCrk\xFCt\xFCc\xFC Giri\u015F"
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: Eller
+    m_Localized: "Ya\u015Fayan Son \xD6l\xFC"
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,67 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: "Mutfak Yak\u0131nlar\u0131nda Bir HAR\u0130TA Var."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: "Baz\u0131 Hayvanlar\u0131n \u0130pu\xE7lar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: "Nottaki hayvanlar\u0131n \u015Falterlerle bir alakas\u0131 olabilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: "\xD6l\xFCml\xFCn\xFCn Elleri"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: "\xD6l\xFCn\xFCn elleri Mutfa\u011Fa giden yolu a\xE7abilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: "K\xFC\xE7\xFCk Depo \u0130\u015F\xE7isi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: "K\xFC\xE7\xFCk Depo Odas\u0131n\u0131n kilidini a\xE7."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Depo Faresi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: "Depoyu ara\u015Ft\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: Bush'un Sonu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: "Harita Odas\u0131'n\u0131n kilidini \xE7\xF6z."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: "Nottaki bulmaca yard\u0131mc\u0131 olabilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: "Fitili Ate\u015Fle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: "Dinamit ve halat\u0131 ba\u011Flay\u0131p mutfaktaki \xE7\xF6k\xFCnt\xFCy\xFC
+      patlat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: "Harita Ustas\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: "Harita Odas\u0131n\u0131 Ara\u015Ft\u0131r."
     m_Metadata:
       m_Items: []
   references:

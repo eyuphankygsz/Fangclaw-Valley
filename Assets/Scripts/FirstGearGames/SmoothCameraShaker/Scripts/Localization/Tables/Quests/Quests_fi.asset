@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: "Joidenkin El\xE4inten Vihjeet"
+    m_Localized: "Pelottava Sis\xE4\xE4nk\xE4ynti"
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: "K\xE4det"
+    m_Localized: "Viimeinen El\xE4v\xE4 Kuollut"
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,68 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: "Keitti\xF6n L\xE4hell\xE4 On KARTTA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: "Joidenkin El\xE4inten Vihjeet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: "Muistiossa mainituilla el\xE4imill\xE4 saattaa olla jotain tekemist\xE4
+      kytkimien kanssa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: "Kuolevaisen K\xE4det"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: "Kuolleen k\xE4det saattavat avata tien Keitti\xF6\xF6n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: "Pieni Varastoty\xF6ntekij\xE4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: Avaa avain Pienelle Varastohuoneelle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Varastohiiri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: Tutki varasto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: Ratkaise Kartta Huoneen Lukko.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: Muistio voi auttaa arvoituksessa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: La Fin de Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: "Sytyt\xE4 Sytytin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: "Solmi dynamiitti ja k\xF6ysi, sitten r\xE4j\xE4yt\xE4 keitti\xF6n
+      romahtaminen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: Karttimestari
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: Etsi Karttahuonetta.
     m_Metadata:
       m_Items: []
   references:

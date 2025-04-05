@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: "Ledetr\xE5der Om Noen Dyr"
+    m_Localized: Skummel Inngang
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: Hendene
+    m_Localized: "Den Siste Levende D\xF8de"
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,66 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: "Det Finnes Et KART I N\xE6rheten Av Kj\xF8kkenet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: "Ledetr\xE5der Om Noen Dyr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: "Dyrene i Notatet kan ha noe med bryterne \xE5 gj\xF8re."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: "Den D\xF8deliges Hender"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: "Den d\xF8des hender kan \xE5pne veien til Kj\xF8kkenet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: Lille Lagerarbeider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: "\xC5pne n\xF8kkelen for det Lille Lagerrommet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Lager Mus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: "Unders\xF8k lageret."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: "L\xF8s l\xE5sen p\xE5 Kartrommet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: Notatet kan hjelpe med puslespillet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: Bush'ens Ende
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: Tenn Lunta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: "Knytt dynamitten og tauet, og spreng kollapsen i kj\xF8kkenet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: Kartmester
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: "S\xF8k I Kartrommet."
     m_Metadata:
       m_Items: []
   references:

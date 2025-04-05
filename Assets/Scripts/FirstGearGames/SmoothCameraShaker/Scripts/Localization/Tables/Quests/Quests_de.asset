@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225488920576
-    m_Localized: Hinweise Zu Einigen Tieren
+    m_Localized: Gruseliger Eingang
     m_Metadata:
       m_Items: []
   - m_Id: 232405327872
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 315106742231040
-    m_Localized: "Die H\xE4nde"
+    m_Localized: Der Letzte Lebende Tote
     m_Metadata:
       m_Items: []
   - m_Id: 315355544150016
@@ -72,6 +72,68 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 317821320945664
     m_Localized: "Es Gibt Eine KARTE In Der N\xE4he Der K\xFCche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621236104589312
+    m_Localized: Hinweise Zu Einigen Tieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621263807967232
+    m_Localized: "Die Tiere in der Notiz k\xF6nnten etwas mit den Schaltern zu tun
+      haben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627913138761728
+    m_Localized: "Die H\xE4nde Des Sterblichen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 633799320137728
+    m_Localized: "Die H\xE4nde des Toten k\xF6nnten den Weg zur K\xFCche \xF6ffnen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635979720683520
+    m_Localized: Kleiner Lagerarbeiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 635997705859072
+    m_Localized: "\xD6ffne den Schl\xFCssel f\xFCr den Kleinen Lagerraum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650184884613120
+    m_Localized: Lagermaus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650564775309312
+    m_Localized: Untersuche das Lager.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653814996004864
+    m_Localized: "L\xF6se das Schloss des Kartenraums."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654229804281856
+    m_Localized: "Die Notiz k\xF6nnte bei dem R\xE4tsel helfen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 653798793408512
+    m_Localized: Das Ende von Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659358838288384
+    m_Localized: "Z\xFCnde Die Z\xFCndschnur An"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659380443148288
+    m_Localized: "Binde den Dynamit und das Seil und sprenge dann den Einsturz in
+      der K\xFCche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667653636485120
+    m_Localized: Der Kartenmeister
+    m_Metadata:
+      m_Items: []
+  - m_Id: 667663635705856
+    m_Localized: Durchsuche Den Kartenraum.
     m_Metadata:
       m_Items: []
   references:
