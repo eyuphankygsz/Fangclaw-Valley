@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_hu
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: hu
+  m_SharedData: {fileID: 11400000, guid: 3f1e162d2754f5d45a521d3d1ff60dde, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 184942583808
+    m_Localized: "\xDCdv\xF6z\xF6lj\xFCk a FangClaw barlangj\xE1ban"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193813536768
+    m_Localized: "Tal\xE1lj m\xF3dot a barlangba val\xF3 bel\xE9p\xE9shez."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212910202880
+    m_Localized: "Egy jegyzet seg\xEDthet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225488920576
+    m_Localized: "N\xE9h\xE1ny \xC1llat Nyomai"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 232405327872
+    m_Localized: "Keresd meg az els\u0151 szob\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240185761792
+    m_Localized: "Tal\xE1lj utat a Pihen\u0151szob\xE1ba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315106742231040
+    m_Localized: A Kezek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315355544150016
+    m_Localized: "Keresd meg az asztalt a Pihen\u0151szob\xE1ban."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315641562128384
+    m_Localized: "Tal\xE1lj utat a Konyh\xE1hoz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316122363584512
+    m_Localized: "Konyhai rohan\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316577118412800
+    m_Localized: "Keresd \xE1t a Konyh\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316951120306176
+    m_Localized: Furcsa Szobrok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317089297457152
+    m_Localized: "Tal\xE1ld meg a Kulcsot a Kis T\xE1rol\xF3helyis\xE9ghez."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317821320945664
+    m_Localized: "Van Egy T\xC9RK\xC9P A Konyha K\xF6zel\xE9ben."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

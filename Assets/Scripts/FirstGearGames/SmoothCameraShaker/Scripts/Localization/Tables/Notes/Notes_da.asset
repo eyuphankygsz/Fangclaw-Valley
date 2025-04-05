@@ -91,12 +91,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "Dagens menu:\n\nMorgenmad: Gr\xF8d og en skive h\xE5rdt br\xF8d
-      med te.\nFrokost: Ingen frokost, fede svin!\nAftensmad: Bagt b\xF8nner med
-      p\xF8lse og et stykke ost.\n\nOg hvem pokker tabte den lille opbevaringsn\xF8gle
-      til fanden X!? Nu skal vi finde ud af, hvordan vi \xE5bner X. Jeg tror, der
-      er en forbindelse med de gamle, ubrugelige statuer omkring.\nHvis du finder
-      noget nyttigt, skal du markere det p\xE5 kortet n\xE6r k\xF8kkenet."
+    m_Localized: "Hvilket beskidte svin smed den forbandede LILLE OPBEVARINGSN\xD8GLE
+      ned i den forbandede DRENAJEGITTER!? Nu skal vi finde ud af, hvordan vi \xE5bner
+      den. Det ser ud til at v\xE6re forbundet med de gamle, ubrugelige statuer rundt
+      omkring.\nHvis du finder noget nyttigt, S\xC6T DET P\xC5 KORTET N\xC6R K\xD8KKENET."
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680

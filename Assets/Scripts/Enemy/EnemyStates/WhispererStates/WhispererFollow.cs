@@ -38,10 +38,17 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IEnemyController _controller;
 
+	private NavMeshPath _path;
+	private Vector3 _pos;
+
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
 		_canPlayAudio.AddAudio(_sawYou);
+	}
+	private void Start()
+	{
+		_path = new NavMeshPath();
 	}
 	public void EnterState()
 	{
@@ -76,9 +83,7 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-		if (_isStuck.GetStuck())
-			_openDoor.CheckDoors();
-
+		_openDoor.CheckDoors();
 		if (_agent.remainingDistance <= _agent.stoppingDistance)
 			TurnEnemy();
 
@@ -87,7 +92,9 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 		{
 			Vector3 safePosition = FindClosestValidNavMeshPoint();
 			_agent.SetDestination(safePosition);
+			_pos = safePosition;
 			Debug.Log("Engel tespit edildi! Alternatif rota belirleniyor...");
+			Debug.Log("Pos: " + safePosition);
 		}
 		else
 		{
@@ -96,15 +103,14 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 	}
 	private bool CanReachTarget(Vector3 targetPosition)
 	{
-		NavMeshPath path = new NavMeshPath();
-		_agent.CalculatePath(targetPosition, path);
+		_agent.CalculatePath(targetPosition, _path);
 
-		return path.status == NavMeshPathStatus.PathComplete;
+		return _path.status == NavMeshPathStatus.PathComplete;
 	}
 	private Vector3 FindClosestValidNavMeshPoint()
 	{
 		NavMeshHit hit;
-		if (NavMesh.SamplePosition(_target.position, out hit, Mathf.Infinity, NavMesh.AllAreas))
+		if (NavMesh.SamplePosition(_target.position, out hit, 2, NavMesh.AllAreas))
 		{
 			return hit.position; // En yakýn geçerli NavMesh noktasýný döndür
 		}
@@ -121,5 +127,19 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 		//lookAt.y = _enemy.position.y;
 
 		//_enemy.LookAt(lookAt);
+	}
+	private void OnDrawGizmos()
+	{
+		if (_path != null && _path.corners.Length > 1)
+		{
+			Gizmos.color = Color.green; // Yolu çizmek için renk
+			for (int i = 0; i < _path.corners.Length - 1; i++)
+			{
+				// Yoldaki her iki köþe arasýna çizgi çizin
+				Gizmos.DrawLine(_path.corners[i], _path.corners[i + 1]);
+			}
+		}
+		Gizmos.DrawWireSphere(_pos, 0.5f);
+
 	}
 }

@@ -11,7 +11,10 @@ using TMPro;
 public class SaveManager : IInitializable
 {
 	[Inject]
-	private GameManager _gameManager;
+	private GameManager _gameManager; 
+	[Inject]
+	private QuestManager _questManager;
+
 	private Dictionary<Type, List<GameData>> _savedData = new Dictionary<Type, List<GameData>>();
 	private Dictionary<Type, List<GameObject>> _saveableObjects = new Dictionary<Type, List<GameObject>>();
 
@@ -83,6 +86,8 @@ public class SaveManager : IInitializable
 	{
 		PauseGame(true);
 		SaveData();
+		_questManager.SaveData();
+
 		yield return new WaitForSecondsRealtime(1);
 		PauseGame(false);
 		onComplete?.Invoke();

@@ -30,7 +30,7 @@ public class IsStuck : AbstractCondition
 
 		if (!_freeze)
 		{
-			if (Vector3.Distance(_lastPos, transform.position) == 0)
+			if (Vector3.Distance(_lastPos, transform.position) == 0.05f)
 			{
 				if (_stuckTimer.CheckCondition())
 				{

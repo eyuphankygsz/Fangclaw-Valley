@@ -4,12 +4,14 @@ using Zenject;
 public class GameInstaller : MonoInstaller
 {
 	[SerializeField] private InventoryManager _inventoryManager;
+	[SerializeField] private QuestManager _questManager;
 	[SerializeField] private ObjectPool _objectPool;
 	[SerializeField] private PlayerUI _playerUI;
 	[SerializeField] private GameTime _gameTime;
 	public override void InstallBindings()
 	{
 		Container.Bind<GameManager>().AsSingle();
+		Container.Bind<QuestManager>().FromInstance(_questManager).AsSingle();
 		Container.Bind<WeaponHelpers>().FromNewComponentOnNewGameObject().AsSingle();
 		Container.BindInterfacesAndSelfTo<InputManager>().AsSingle();
 		Container.BindInterfacesAndSelfTo<SaveManager>().AsSingle();

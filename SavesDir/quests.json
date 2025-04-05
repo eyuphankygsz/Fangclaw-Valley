@@ -1,0 +1,46 @@
+{
+  "$type": "DataWrapper, Assembly-CSharp",
+  "Entries": {
+    "$type": "System.Collections.Generic.List`1[[DataWrapper+DataEntry, Assembly-CSharp]], mscorlib",
+    "$values": [
+      {
+        "$type": "DataWrapper+DataEntry, Assembly-CSharp",
+        "TypeName": "Quest, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Data": {
+          "$type": "System.Collections.Generic.List`1[[GameData, Assembly-CSharp]], mscorlib",
+          "$values": [
+            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 0,
+              "QuestName": "q1",
+              "Description": 
+              [
+                "q1_1",
+                "q1_2"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 1,
+              "QuestName": "q2",
+              "Description": 
+              [
+                "q2_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 2,
+              "QuestName": "q3",
+              "Description": 
+              [
+                "q3_1"
+              ],
+              "QuestStatus": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_sv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sv
+  m_SharedData: {fileID: 11400000, guid: 3f1e162d2754f5d45a521d3d1ff60dde, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 184942583808
+    m_Localized: "V\xE4lkommen till FangClaws grotta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193813536768
+    m_Localized: "Hitta ett s\xE4tt att komma in i grottan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212910202880
+    m_Localized: "Ett meddelande kan hj\xE4lpa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225488920576
+    m_Localized: "Ledtr\xE5dar Om Vissa Djur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 232405327872
+    m_Localized: "S\xF6k det f\xF6rsta rummet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240185761792
+    m_Localized: "Hitta ett s\xE4tt till Vilrummet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315106742231040
+    m_Localized: "H\xE4nderna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315355544150016
+    m_Localized: "S\xF6k bordet i Vilarummet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315641562128384
+    m_Localized: "Hitta en v\xE4g till K\xF6ket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316122363584512
+    m_Localized: "K\xF6ksrush"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316577118412800
+    m_Localized: "S\xF6k i K\xF6ket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316951120306176
+    m_Localized: Strangda Statyer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317089297457152
+    m_Localized: "Hitta nyckeln till Det Lilla F\xF6rvaringsrummet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317821320945664
+    m_Localized: "Det Finns En KARTA N\xE4ra K\xF6ket."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

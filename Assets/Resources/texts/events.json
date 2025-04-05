@@ -211,16 +211,6 @@
       ]
     },
     {
-      "TalkName": "EnemyEncounter2",
-      "TalkObject": [
-        {
-          "TalkText": "is_there_someone",
-          "TalkDelay": 0.5,
-          "SourceIndex": 0
-        }
-      ]
-    },
-    {
       "TalkName": "EnemyEncounter2-2",
       "TalkObject": [
         {
@@ -305,16 +295,6 @@
       "TalkObject": [
         {
           "TalkText": "pls_leme_go",
-          "TalkDelay": 0.5,
-          "SourceIndex": 0
-        }
-      ]
-    },
-    {
-      "TalkName": "Locked1",
-      "TalkObject": [
-        {
-          "TalkText": "locked1",
           "TalkDelay": 0.5,
           "SourceIndex": 0
         }
@@ -415,6 +395,16 @@
       "TalkObject": [
         {
           "TalkText": "locked11",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "YouAgainNO",
+      "TalkObject": [
+        {
+          "TalkText": "you_again_no",
           "TalkDelay": 0.5,
           "SourceIndex": 0
         }

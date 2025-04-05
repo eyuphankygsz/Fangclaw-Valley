@@ -33,13 +33,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "Men\xFA de hoy:\n\nDesayuno: Gachas y una rebanada de pan duro
-      con t\xE9.\nAlmuerzo: \xA1No hay almuerzo, cerditos gordos!\nCena: Frijoles
-      horneados con salchichas y un trozo de queso.\n\nAdem\xE1s, \xBFqui\xE9n demonios
-      dej\xF3 la llave del peque\xF1o almacenamiento en el maldito X!? Ahora tenemos
-      que averiguar c\xF3mo abrir X. Creo que hay alguna conexi\xF3n con esas viejas
-      estatuas in\xFAtiles alrededor.\nSi encuentras algo \xFAtil, m\xE1rcalo en
-      la mapa cerca de la cocina."
+    m_Localized: "\xBFQU\xC9 CERDO ASQUEROSO dej\xF3 caer la MALDITA LLAVE PEQUE\xD1A
+      DEL ALMAC\xC9N en la maldita REJILLA DE DRENAJE? Ahora tenemos que averiguar
+      c\xF3mo abrirla. Parece estar conectada con esas estatuas viejas e in\xFAtiles.\nSi
+      encuentras algo \xFAtil, M\xC1RCALO EN EL MAPA CERCA DE LA COCINA."
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728

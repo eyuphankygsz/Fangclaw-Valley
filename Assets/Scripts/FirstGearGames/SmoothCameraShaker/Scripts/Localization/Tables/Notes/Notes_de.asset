@@ -98,13 +98,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "Heutiges Men\xFC:\n\nFr\xFChst\xFCck: Grie\xDFbrei und ein St\xFCck
-      hartes Brot mit Tee.\nMittagessen: Kein Mittagessen, ihr fetten Schweine!\nAbendessen:
-      Gebackene Bohnen mit Wurst und ein St\xFCck K\xE4se.\n\nUnd wer zum Teufel
-      hat den Schl\xFCssel zum kleinen Lagerraum in den verdammten X* fallen lassen!?
-      Jetzt m\xFCssen wir herausfinden, wie wir X* \xF6ffnen. Ich denke, es gibt
-      eine Verbindung zu den alten nutzlosen Statuen in der Umgebung.\nWenn du etwas
-      N\xFCtzliches findest, markiere es auf der Karte in der N\xE4he der K\xFCche."
+    m_Localized: "Welches SCHWEIN hat den verdammten KLEINEN LAGERKEY in das verdammte
+      ABFLUSSGITTER geworfen!? Jetzt m\xFCssen wir herausfinden, wie wir es \xF6ffnen
+      k\xF6nnen. Es scheint mit diesen alten, nutzlosen Statuen hier verbunden zu
+      sein.\nWenn du etwas N\xFCtzliches findest, MARKIERE ES AUF DER KARTE NAHE
+      DER K\xDCCHE."
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680

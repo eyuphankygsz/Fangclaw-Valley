@@ -112,12 +112,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "Menu del giorno:\n\nColazione: Porridge e una fetta di pane duro
-      con t\xE8.\nPranzo: Niente pranzo, maiali grassi!\nCena: Fagioli al forno con
-      salsiccia e un pezzo di formaggio.\n\nInoltre, chi ha cazzo fatto cadere la
-      chiave della piccola dispensa nel fottuto X!? Ora dobbiamo capire come aprire
-      X. Penso che ci sia una connessione con quelle vecchie statue inutili in giro.\nSe
-      trovi qualcosa di utile, segnalo sulla mappa vicino alla cucina."
+    m_Localized: "QUAL \xC8 MALEDETTO MAIALE ha lasciato cadere la MALDITA CHIAVE
+      DEL PICCOLO MAGAZZINO nella maledetta GRATA DI DRENAGGIO!? Ora dobbiamo capire
+      come aprirla. Sembra essere collegata a quelle vecchie statue inutili che ci
+      sono in giro.\nSe trovi qualcosa di utile, MARCALO SULLA MAPPA VICINO ALLA
+      CUCINA."
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680

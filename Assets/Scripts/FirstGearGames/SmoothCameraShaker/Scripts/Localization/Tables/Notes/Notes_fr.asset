@@ -33,13 +33,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "Menu du jour :\n\nPetit-d\xE9jeuner : Bouillie et une tranche de
-      pain dur avec du th\xE9.\nD\xE9jeuner : Pas de d\xE9jeuner, vous gros cochons
-      !\nD\xEEner : Haricots cuits au four avec saucisse et un morceau de fromage.\n\nAussi,
-      qui a foutu la cl\xE9 du petit stockage dans le putain de X!? Maintenant, on
-      doit trouver comment ouvrir X. Je pense qu'il y a une connexion avec ces vieilles
-      statues inutiles autour.\nSi tu trouves quelque chose d'utile, marque-le sur
-      la carte pr\xE8s de la cuisine."
+    m_Localized: "QUEL PORC IMMONDE a fait tomber la PUTAIN DE PETITE CL\xC9 DU D\xC9P\xD4T
+      dans cette foutue GRILLE DE DRAINAGE !? Maintenant, on doit comprendre comment
+      l\u2019ouvrir. Il semble y avoir un lien avec ces vieilles statues inutiles.\nSi
+      vous trouvez quelque chose d\u2019utile, MARQUEZ-LE SUR LA CARTE PR\xC8S DE
+      LA CUISINE."
     m_Metadata:
       m_Items: []
   - m_Id: 409683017728

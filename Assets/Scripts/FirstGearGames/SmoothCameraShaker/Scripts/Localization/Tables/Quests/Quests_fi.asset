@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: 3f1e162d2754f5d45a521d3d1ff60dde, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 184942583808
+    m_Localized: Tervetuloa FangClawin luolaan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193813536768
+    m_Localized: "L\xF6yd\xE4 tapa p\xE4\xE4st\xE4 luolaan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212910202880
+    m_Localized: Muistio voi auttaa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225488920576
+    m_Localized: "Joidenkin El\xE4inten Vihjeet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 232405327872
+    m_Localized: "Etsi ensimm\xE4inen huone."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240185761792
+    m_Localized: Etsi tie Lepohuoneeseen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315106742231040
+    m_Localized: "K\xE4det"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315355544150016
+    m_Localized: "Etsi p\xF6yt\xE4 Lepohuoneesta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315641562128384
+    m_Localized: "L\xF6yd\xE4 tie Keitti\xF6\xF6n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316122363584512
+    m_Localized: "Keitti\xF6ruuhka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316577118412800
+    m_Localized: "Etsi Keitti\xF6."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316951120306176
+    m_Localized: Kummalliset Patsaat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317089297457152
+    m_Localized: Etsi avain Pieneen Varastohuoneeseen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317821320945664
+    m_Localized: "Keitti\xF6n L\xE4hell\xE4 On KARTTA."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

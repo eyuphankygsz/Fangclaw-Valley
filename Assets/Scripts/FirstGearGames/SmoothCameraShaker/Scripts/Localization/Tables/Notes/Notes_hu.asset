@@ -54,13 +54,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136160244580352
-    m_Localized: "A napi men\xFC:\n\nReggeli: K\xE1sa \xE9s egy szelet kem\xE9ny
-      keny\xE9r te\xE1val.\nEb\xE9d: Nincs eb\xE9d, ti k\xF6v\xE9r diszn\xF3k!\nVacsora:
-      S\xFClt bab kolb\xE1sszal \xE9s egy darab sajttal.\n\n\xC9s ki a fene ejtette
-      el a kis t\xE1rol\xF3 kulcs\xE1t a fszba!? Most ki kell der\xEDten\xFCnk, hogyan
-      nyissuk ki a fsz X-t. Szerintem valami kapcsolat van azokkal a r\xE9gi haszontalan
-      szobrokkal k\xF6r\xFCl\xF6tte.\nHa tal\xE1lsz valami hasznosat, jel\xF6ld meg
-      a t\xE9rk\xE9pen a konyha k\xF6zel\xE9ben."
+    m_Localized: "MELYIK SZENNYES DISZN\xD3 ejtette a B\xDCD\xD6S KIS RAKT\xC1RKULCSOT
+      a fr\xE1nya LECSAP\xD3L\xD3 R\xC1CSBA!? Most ki kell der\xEDten\xFCnk, hogyan
+      nyissuk ki. \xDAgy t\u0171nik, kapcsolatban \xE1ll ezekkel az \xF6reg, haszontalan
+      szobrokkal itt k\xF6r\xFCl\xF6tt\xFCnk.\nHa tal\xE1lsz valami hasznosat, JEL\xD6LD
+      MEG A T\xC9RK\xC9PEN A KONYHA K\xD6RNY\xC9K\xC9N."
     m_Metadata:
       m_Items: []
   - m_Id: 11415248968007680

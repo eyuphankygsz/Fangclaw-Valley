@@ -35,6 +35,10 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 	[SerializeField]
 	private PostProcessingChanger _ppc;
 
+	[SerializeField]
+	[Inject]
+	private QuestManager _qManager;
+
 	void Awake()
 	{
 		_midAction += CheckObjects;
@@ -53,6 +57,7 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 				_source.PlayOneShot(_clips[i]);
 
 			_playerStamina.AddStamina(-60);
+			_qManager.ShowQuests();
 			_scanning = true;
 			_ppc.StartProcessChange(_targetLensDistortion, _targetFocusDistance, _targetChromaticAberration, _targetColor, _midAction, _endAction);
 		}

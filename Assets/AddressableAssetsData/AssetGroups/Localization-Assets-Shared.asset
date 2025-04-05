@@ -1260,6 +1260,12 @@ MonoBehaviour:
     - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f1e162d2754f5d45a521d3d1ff60dde
+    m_Address: Assets/Scripts/FirstGearGames/SmoothCameraShaker/Scripts/Localization/Tables/Quests/Quests
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
   m_SchemaSet:

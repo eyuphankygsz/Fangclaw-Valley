@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 3f1e162d2754f5d45a521d3d1ff60dde, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 184942583808
+    m_Localized: "FangClaw Ma\u011Faras\u0131na Ho\u015F Geldiniz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193813536768
+    m_Localized: "Ma\u011Faraya girmeyi bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212910202880
+    m_Localized: "Bir not yard\u0131mc\u0131 olabilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225488920576
+    m_Localized: "Baz\u0131 Hayvanlar\u0131n \u0130pucu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 232405327872
+    m_Localized: "\u0130lk oday\u0131 ara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240185761792
+    m_Localized: "Dinlenme Odas\u0131na gitme yolunu bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315106742231040
+    m_Localized: Eller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315355544150016
+    m_Localized: "Dinlenme Odas\u0131nda masay\u0131 ara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315641562128384
+    m_Localized: "Mutfa\u011Fa giden yolu bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316122363584512
+    m_Localized: "Mutfak Ko\u015Fu\u015Fturmas\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316577118412800
+    m_Localized: "Mutfa\u011F\u0131 Ara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316951120306176
+    m_Localized: Garip Heykeller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317089297457152
+    m_Localized: "K\xFC\xE7\xFCk Depo Odas\u0131'n\u0131n Anahtar\u0131n\u0131 Bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317821320945664
+    m_Localized: "Mutfak Yak\u0131nlar\u0131nda Bir HAR\u0130TA Var."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

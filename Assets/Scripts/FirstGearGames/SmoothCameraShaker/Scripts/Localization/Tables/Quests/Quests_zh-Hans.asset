@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_zh-Hans
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: zh-Hans
+  m_SharedData: {fileID: 11400000, guid: 3f1e162d2754f5d45a521d3d1ff60dde, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 184942583808
+    m_Localized: "\u6B22\u8FCE\u6765\u5230 FangClaw \u7684\u6D1E\u7A74"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193813536768
+    m_Localized: "\u627E\u5230\u8FDB\u5165\u6D1E\u7A74\u7684\u65B9\u6CD5\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212910202880
+    m_Localized: "\u4E00\u5F20\u4FBF\u6761\u53EF\u80FD\u4F1A\u6709\u6240\u5E2E\u52A9\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225488920576
+    m_Localized: "\u4E00\u4E9B \u52A8\u7269 \u7684 \u7EBF\u7D22"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 232405327872
+    m_Localized: "\u641C\u7D22\u7B2C\u4E00\u4E2A\u623F\u95F4\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240185761792
+    m_Localized: "\u627E\u5230\u901A\u5F80\u4F11\u606F\u5BA4\u7684\u8DEF\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315106742231040
+    m_Localized: "\u624B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315355544150016
+    m_Localized: "\u641C\u7D22\u4F11\u606F\u5BA4\u91CC\u7684\u684C\u5B50\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315641562128384
+    m_Localized: "\u627E\u5230\u901A\u5F80\u53A8\u623F\u7684\u8DEF\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316122363584512
+    m_Localized: "\u53A8\u623F\u72C2\u70ED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316577118412800
+    m_Localized: "\u641C\u7D22 \u53A8\u623F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316951120306176
+    m_Localized: "\u5947\u602A\u7684\u96D5\u50CF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317089297457152
+    m_Localized: "\u627E\u5230\u901A\u5F80\u5C0F\u50A8\u85CF\u5BA4\u7684\u94A5\u5319\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317821320945664
+    m_Localized: "\u53A8\u623F\u9644\u8FD1\u6709\u4E00\u5F20\u5730\u56FE\u3002"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
