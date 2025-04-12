@@ -11,9 +11,13 @@ public class LoadingScreen : MonoBehaviour
 
 	[SerializeField]
 	private GameObject _loadingObj, _textObj;
+	[SerializeField]
+	private ChangeLanguage _changeLanguage;
+
 
 	void Start()
 	{
+		_changeLanguage.Load();
 		StartCoroutine(LoadScene());
 		StartPicChange();
 	}
@@ -40,11 +44,6 @@ public class LoadingScreen : MonoBehaviour
 			}
 			yield return null;
 		}
-	}
-
-	private void LoadSceneNow(AsyncOperation op)
-	{
-		SceneManager.LoadScene(PlayerPrefs.GetString("SceneToLoad"));
 	}
 
 	[SerializeField]

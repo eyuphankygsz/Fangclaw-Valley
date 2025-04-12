@@ -19,7 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "Olen pahoillani, Baxter, mutta minun piti tehd\xE4 t\xE4m\xE4..."
+    m_Localized: "Anteeksi, Baxter, mutta minun oli pakko tehd\xE4 t\xE4m\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "Albion, sen paskiainen! Mit\xE4 t\xE4m\xE4n on tarkoitus tarkoittaa!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "Baxter... Toivon, ett\xE4 olisi ollut toinen tapa, mutta... T\xE4m\xE4
+      on ainoa mahdollisuutemme."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "Kun p\xE4\xE4sen t\xE4\xE4lt\xE4 ulos, toivot ettet olisi koskaan
+      syntynyt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "T\xE4m\xE4 uhraus, jonka teemme, pelastaa koko maailman. Lis\xE4ksi
+      rakkaan vaimosi Evelynnin henki saattaa riippua siit\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "\xC4l\xE4 uskalla sanoa h\xE4nen nime\xE4\xE4n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Se on totuus! Katso, kaikki mit\xE4 me tarvitsemme sinulta, on
+      ker\xE4t\xE4 N\xC4YTEIT\xC4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224463261589504
+    m_Localized: "Kun olet ker\xE4nnyt n\xE4ytteet, tulen hakemaan sinut pois t\xE4\xE4lt\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: "Pid\xE4 huolta itsest\xE4si, koska olet ainoa mahdollisuutemme!"
     m_Metadata:
       m_Items: []
   references:

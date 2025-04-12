@@ -147,6 +147,10 @@ MonoBehaviour:
       \uB4E4\uACE0 \uAC15\uB825\uD55C \uD3ED\uBC1C \uC218\uB2E8\uC785\uB2C8\uB2E4."
     m_Metadata:
       m_Items: []
+  - m_Id: 84758454713966592
+    m_Localized: Valve
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

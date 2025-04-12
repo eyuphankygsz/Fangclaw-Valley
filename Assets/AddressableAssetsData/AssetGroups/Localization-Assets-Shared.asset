@@ -78,36 +78,40 @@ MonoBehaviour:
     - Locale-en
     - Locale-fr
     - Locale-es
-    - Locale-tr
     - Locale-bg
     - Locale-da
     - Locale-nl
     - Locale-de
     - Locale-el
     - Locale-it
-    - Locale-ja
     - Locale-ru
     - Locale-sv
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1d8be8453092b00408516cffb50c9b1f
-    m_Address: c2
+  - m_GUID: 3596566a122285542b2c61e702c4f756
+    m_Address: alb2
     m_ReadOnly: 1
     m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
     - Locale-en
+    - Locale-fi
     - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
     - Locale-es
+    - Locale-sv
     - Locale-tr
     - Locale-uk
-    - Locale-sv
-    - Locale-ru
-    - Locale-ja
-    - Locale-it
-    - Locale-el
-    - Locale-de
-    - Locale-nl
-    - Locale-da
-    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 247dfb193162b174bb59f459229ab434
     m_Address: c3
@@ -116,36 +120,40 @@ MonoBehaviour:
     - Locale-en
     - Locale-fr
     - Locale-es
-    - Locale-tr
     - Locale-bg
     - Locale-da
     - Locale-nl
     - Locale-de
     - Locale-el
     - Locale-it
-    - Locale-ja
     - Locale-ru
     - Locale-sv
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 73a5b2df58df0c344b09238c73590c7c
-    m_Address: c4
+  - m_GUID: ae85772ab6eabe149a5cb8bdb8e56c72
+    m_Address: alb3
     m_ReadOnly: 1
     m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
     - Locale-en
+    - Locale-fi
     - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
     - Locale-es
+    - Locale-sv
     - Locale-tr
     - Locale-uk
-    - Locale-sv
-    - Locale-ru
-    - Locale-ja
-    - Locale-it
-    - Locale-el
-    - Locale-de
-    - Locale-nl
-    - Locale-da
-    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aca5f2ec55680fc49bb3f6b2983ed1aa
     m_Address: c5
@@ -154,30 +162,9 @@ MonoBehaviour:
     - Locale-en
     - Locale-fr
     - Locale-es
-    - Locale-tr
     - Locale-uk
     - Locale-sv
     - Locale-ru
-    - Locale-ja
-    - Locale-it
-    - Locale-el
-    - Locale-de
-    - Locale-nl
-    - Locale-da
-    - Locale-bg
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8f85dd94d58fdf149a5d02aaa67b1940
-    m_Address: c6
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-fr
-    - Locale-es
-    - Locale-tr
-    - Locale-uk
-    - Locale-sv
-    - Locale-ru
-    - Locale-ja
     - Locale-it
     - Locale-el
     - Locale-de
@@ -192,36 +179,16 @@ MonoBehaviour:
     - Locale-en
     - Locale-fr
     - Locale-es
-    - Locale-tr
     - Locale-uk
     - Locale-sv
     - Locale-ru
-    - Locale-ja
     - Locale-it
     - Locale-el
     - Locale-de
     - Locale-nl
     - Locale-da
     - Locale-bg
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 437df655ff7d65f42920b62ec06d3dd8
-    m_Address: c8
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-fr
-    - Locale-es
-    - Locale-tr
-    - Locale-uk
-    - Locale-sv
-    - Locale-ru
-    - Locale-ja
-    - Locale-it
-    - Locale-el
-    - Locale-de
-    - Locale-nl
-    - Locale-da
-    - Locale-bg
+    - Locale-no
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d23fcdb81f4509a4ebbc6ebe16de1fa7
     m_Address: Assets/Scripts/FirstGearGames/SmoothCameraShaker/Scripts/Localization/Tables/events/events
@@ -1265,6 +1232,169 @@ MonoBehaviour:
       Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c8bc2912674f6e49bb1061f536044a8
+    m_Address: alb1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b2ab0866f30a804d8c73a6510376817
+    m_Address: albionCE_tr5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    - Locale-bg
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a31c2e0b58f1c5647a19407a691ba67a
+    m_Address: albionCE_tr6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e6f4545988e10f4096c32daf7a848ae
+    m_Address: shriek2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90c7258ca9b0d354a85279b393cde9d6
+    m_Address: shriek3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d8275d93c38c3d4caa62a6d09ceb230
+    m_Address: Assets/Scripts/FirstGearGames/SmoothCameraShaker/Scripts/Localization/Tables/FontAssets/FontAssets
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3e38fb838d4d424aa6474c654c1af06
+    m_Address: albionCE_en1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Locale-ja
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1090f2b7f450d784e84ad91b6cb9d751
+    m_Address: albionCE_en2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Locale-ja
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a181be2ad17edf44b09ca0728492192
+    m_Address: albionCE_en3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Locale-ja
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3c141936b095a3459bdf325207e8032
+    m_Address: albionCE_en4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Locale-ja
+    - Locale-ko
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}

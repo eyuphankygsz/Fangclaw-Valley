@@ -5,42 +5,48 @@
       "TalkObject": [
         {
           "TalkText": "c1",
-          "TalkDelay": 0.5,
-          "SourceIndex": 0
+          "TalkDelay": 0,
+          "SourceIndex": 1
         },
         {
           "TalkText": "c2",
-          "TalkDelay": 0.5,
+          "TalkDelay": 0,
           "SourceIndex": 0
         },
         {
           "TalkText": "c3",
-          "TalkDelay": 0.5,
-          "SourceIndex": 0
+          "TalkDelay": 0,
+          "SourceIndex": 1
         },
         {
           "TalkText": "c4",
-          "TalkDelay": 0.5
-        },
-        {
-          "TalkText": "c5",
-          "TalkDelay": 0.5,
+          "TalkDelay": 0,
           "SourceIndex": 0
         },
         {
+          "TalkText": "c5",
+          "TalkDelay": 0,
+          "SourceIndex": 1
+        },
+        {
           "TalkText": "c6",
-          "TalkDelay": 0.5,
+          "TalkDelay": 0,
           "SourceIndex": 0
         },
         {
           "TalkText": "c7",
-          "TalkDelay": 0.5,
-          "SourceIndex": 0
+          "TalkDelay": 0,
+          "SourceIndex": 1
         },
         {
           "TalkText": "c8",
-          "TalkDelay": 0.5,
-          "SourceIndex": 0
+          "TalkDelay": 0,
+          "SourceIndex": 1
+        },
+        {
+          "TalkText": "c9",
+          "TalkDelay": 0,
+          "SourceIndex": 1
         }
       ]
     },

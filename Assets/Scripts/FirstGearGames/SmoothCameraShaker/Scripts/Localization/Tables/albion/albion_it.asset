@@ -19,36 +19,42 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: Mi dispiace, Baxter, ma dovevo farlo...
+    m_Localized: Mi dispiace, Baxter, ma dovevo farlo.
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: Le barricate che abbiamo costruito possono trattenere i mostri solo
-      per pochissimo tempo!
+    m_Localized: Albion, figlio di puttana! Cosa dovrebbe significare tutto questo!?
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: "Ecco perch\xE9 abbiamo bisogno di te! Per tutta l'umanit\xE0!"
+    m_Localized: "Baxter... Vorrei che ci fosse un\u2019altra via, ma... Questa \xE8
+      la nostra unica possibilit\xE0."
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: "Questo sacrificio che hai fatto salver\xE0 il mondo intero!"
+    m_Localized: "Quando uscir\xF2 da qui, desidererai non essere mai nato!"
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: Inoltre, la vita della tua amata moglie Evelynn dipende da questo.
+    m_Localized: "Questo sacrificio che stiamo facendo salver\xE0 l\u2019intero mondo.
+      Inoltre, la vita della tua cara moglie Evelynn potrebbe dipendere da esso."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: "Tutto ci\xF2 che ti chiediamo \xE8 di raccogliere CAMPIONI."
+    m_Localized: Non osare dire il suo nome!
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: "Sar\xF2 qui ogni mattina tra le 6 e le 8."
+    m_Localized: "Questa \xE8 la verit\xE0! Guarda, tutto ci\xF2 che ti chiediamo
+      \xE8 di raccogliere CAMPIONI."
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: A domani!
+  - m_Id: 38224463261589504
+    m_Localized: "Una volta raccolti i campioni, verr\xF2 a tirarti fuori di qui."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: "Per favore, prenditi cura di te perch\xE9 sei la nostra unica possibilit\xE0!"
     m_Metadata:
       m_Items: []
   references:

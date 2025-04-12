@@ -36,6 +36,7 @@ public class EnemyAttackController : MonoBehaviour
 	[SerializeField]
 	private bool _showGizmos;
 
+	private Coroutine _collisionRoutine;
 	public void SetAttackTrue() =>
 		_attacking = true;
 	public void SetAttackFalse()
@@ -53,7 +54,12 @@ public class EnemyAttackController : MonoBehaviour
 		_ppc.StartProcessChange(_targetLensDistortion, _targetFocusDistance, _targetChromaticAberration, _targetColor, null, null, 0.6f);
 		_attackWait = true;
 		_pHealth.AddHealth(-10);
-
+		
+		if(_collisionRoutine != null) 
+			StopCoroutine(_collisionRoutine);
+		Physics.IgnoreLayerCollision(gameObject.layer, _layer, true);
+		_collisionRoutine = StartCoroutine(CollisionTimer());
+		
 		if (_punchClips.Length != 0)
 		{
 			int rand = Random.Range(0, _punchClips.Length);
@@ -62,7 +68,11 @@ public class EnemyAttackController : MonoBehaviour
 
 	}
 
-
+	private IEnumerator CollisionTimer()
+	{
+		yield return new WaitForSeconds(1);
+		Physics.IgnoreLayerCollision(gameObject.layer, _layer.value, false);
+	}
 	private void OnDrawGizmos()
 	{
 		if (!_attacking && !_showGizmos) return;

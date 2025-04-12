@@ -177,6 +177,10 @@ MonoBehaviour:
     m_Localized: "\u039A\u03BF\u03C5\u03BC\u03C0\u03AF"
     m_Metadata:
       m_Items: []
+  - m_Id: 84758454713966592
+    m_Localized: Valve
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

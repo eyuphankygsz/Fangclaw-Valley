@@ -179,6 +179,14 @@ MonoBehaviour:
     m_Key: locked11
     m_Metadata:
       m_Items: []
+  - m_Id: 3121108730503168
+    m_Key: shriek1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3456796227264512
+    m_Key: shriek2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

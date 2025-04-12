@@ -19,36 +19,42 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: Het spijt me, Baxter, maar ik moest dit doen...
+    m_Localized: Het spijt me, Baxter, maar ik moest dit doen.
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: De barricades die we bouwden, kunnen de monsters maar heel kort
-      tegenhouden!
+    m_Localized: Albion, klootzak! Wat moet dit voorstellen!?
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: Dit is waarom we jou nodig hebben! Voor de hele mensheid!
+    m_Localized: Baxter... Ik wou dat er een andere manier was, maar... Dit is onze
+      enige kans.
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: Dit offer dat je hebt gebracht, zal de hele wereld redden!
+    m_Localized: Als ik hier uitkom, zul je wensen dat je nooit geboren was!
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: Ook het leven van je geliefde vrouw Evelynn hangt ervan af.
+    m_Localized: Dit offer dat we brengen, zal de hele wereld redden. Bovendien kan
+      het leven van je dierbare vrouw Evelynn ervan afhangen.
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: Alles wat we van je vragen, is om MONSTERS te verzamelen.
+    m_Localized: Durf haar naam niet uit te spreken!
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: Ik zal hier elke ochtend tussen 6 en 8 zijn.
+    m_Localized: Dat is de waarheid! Kijk, het enige wat we van je nodig hebben,
+      is om MONSTERS te verzamelen.
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: Tot morgen!
+  - m_Id: 38224463261589504
+    m_Localized: Zodra je de monsters hebt verzameld, kom ik je hier weghalen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: Zorg goed voor jezelf, want jij bent onze enige kans!
     m_Metadata:
       m_Items: []
   references:

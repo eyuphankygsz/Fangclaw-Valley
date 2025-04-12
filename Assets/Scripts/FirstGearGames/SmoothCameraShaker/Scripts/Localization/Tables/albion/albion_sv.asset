@@ -19,36 +19,44 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "F\xF6rl\xE5t, Baxter, men jag var tvungen att g\xF6ra det h\xE4r..."
+    m_Localized: "F\xF6rl\xE5t, Baxter, men jag var tvungen att g\xF6ra det h\xE4r."
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: "Barrikaderna vi byggde kan bara h\xE5lla monstren tillbaka under
-      en mycket kort tid!"
+    m_Localized: "Albion \u2013 din j\xE4vel! Vad fan ska det h\xE4r betyda!?"
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: "Det \xE4r d\xE4rf\xF6r vi beh\xF6ver dig! F\xF6r hela m\xE4nskligheten!"
+    m_Localized: "Baxter... Jag \xF6nskar att det fanns ett annat s\xE4tt, men...
+      Det h\xE4r \xE4r v\xE5r enda chans."
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: "Detta offer som du har gjort kommer att r\xE4dda hela v\xE4rlden!"
+    m_Localized: "N\xE4r jag kommer ut h\xE4rifr\xE5n kommer du att \xF6nska att
+      du aldrig blivit f\xF6dd!"
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: "\xC4ven din \xE4lskade hustru Evelynns liv h\xE4nger p\xE5 detta."
+    m_Localized: "Den h\xE4r uppoffringen vi g\xF6r kommer att r\xE4dda hela v\xE4rlden.
+      Dessutom kan din k\xE4ra fru Evelynns liv bero p\xE5 det."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: "Allt vi ber dig om \xE4r att samla in PROVER."
+    m_Localized: "T\xF6rs du inte s\xE4ga hennes namn!"
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: "Jag kommer att vara h\xE4r varje morgon mellan 6 och 8."
+    m_Localized: "Det \xE4r sanningen! Titta, det enda vi beh\xF6ver fr\xE5n dig
+      \xE4r att samla PROVER."
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: Vi ses imorgon!
+  - m_Id: 38224463261589504
+    m_Localized: "N\xE4r du har samlat proverna kommer jag och h\xE4mtar dig h\xE4rifr\xE5n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: "Sn\xE4lla, ta hand om dig sj\xE4lv, f\xF6r du \xE4r v\xE5r enda
+      chans!"
     m_Metadata:
       m_Items: []
   references:

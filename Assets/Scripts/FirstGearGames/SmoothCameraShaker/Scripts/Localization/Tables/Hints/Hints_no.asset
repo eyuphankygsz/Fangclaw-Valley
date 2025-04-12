@@ -24,8 +24,43 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du kan <color=#C4A000>BRUKE</color> dine <color=#D47F36>HENDER</color>
-      med <color=#6FB7D6>\"$primary_key\"</color> for \xE5 knuse <color=#9B111E>BOKSENE</color>."
+    m_Localized: "For \xE5 tenne <color=#FFB45B>Lykten</color>, m\xE5 du finne <color=#E688FF>FYRSTIKKER</color>
+      og <color=#E688FF>GASSOLJE</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: "Trykk p\xE5 en tast for \xE5 fortsette..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Du kan <color=#C4A000>\xC5PNE</color> <color=#735D94>Inventaret</color>
+      ditt ved \xE5 trykke p\xE5 <color=#6FB7D6>\"$inv_key\"</color>. I <color=#735D94>Inventaret</color>
+      ditt kan du <color=#C4A000>Bruke</color>, <color=#C4A000>Unders\xF8ke</color>,
+      <color=#C4A000>Kaste</color> eller <color=#C4A000>Kombinere</color> gjenstander!
+      Husk \xE5 fylle p\xE5 <color=#D47F36>Gasslampen</color> med <color=#3A6B35>Gassolje</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: eller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "Ved \xE5 trykke p\xE5 <color=#6FB7D6>\"$inter_key\"</color>-tasten
+      kan du <color=#C4A000>SKAFFE</color> <color=#735D94>Gjenstander</color> eller
+      <color=#C4A000>INTERAGERE</color> med <color=#9B111E>Milj\xF8et</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "Ved \xE5 <color=#AA4074>Fokusere Oppmerksomheten Din</color>, kan
+      du <color=#735D94>Skille Ut Objekter</color> rundt deg som er \xE5pne for <color=#C4A000>Interaksjon</color>.
+      For \xE5 gj\xF8re det, <color=#C4A000>BRUK</color> <color=#6FB7D6>\"$scan_env\"</color>-tasten.
+      Husk imidlertid at denne evnen vil kraftig <color=#C4A000>TAPPE</color> din
+      <color=#7A85FF>Utholdenhet</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: Du kan <color=#C4A000>SLIPPE</color> <color=#735D94>Gjenstandene</color>
+      dine fra <color=#735D94>Beholdningen</color> din.
     m_Metadata:
       m_Items: []
   references:

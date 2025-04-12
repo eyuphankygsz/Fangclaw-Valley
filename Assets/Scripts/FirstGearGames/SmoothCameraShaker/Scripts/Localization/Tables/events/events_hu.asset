@@ -19,19 +19,19 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 484351275008
-    m_Localized: Kutulara baksam iyi olacak.
+    m_Localized: "Meg k\xE9ne n\xE9znem a l\xE1d\xE1kat."
     m_Metadata:
       m_Items: []
   - m_Id: 132905719291904
-    m_Localized: "Bu i\u015Fime yarayabilir."
+    m_Localized: Ez hasznos lehet.
     m_Metadata:
       m_Items: []
   - m_Id: 135464773214208
-    m_Localized: "Hmm, ya\u011F. Lambaya doldurabilirim."
+    m_Localized: "Hmm, olaj. Ezzel megt\xF6lthetem a l\xE1mp\xE1t."
     m_Metadata:
       m_Items: []
   - m_Id: 146746037493760
-    m_Localized: Bu semboller...
+    m_Localized: "Ezek a szimb\xF3lumok..."
     m_Metadata:
       m_Items: []
   - m_Id: 150516641292288
@@ -39,27 +39,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 168644490289152
-    m_Localized: Siktir!
+    m_Localized: Szar!
     m_Metadata:
       m_Items: []
   - m_Id: 173931012022272
-    m_Localized: Odaklan, Baxter...
+    m_Localized: "Koncentr\xE1lj, Baxter..."
     m_Metadata:
       m_Items: []
   - m_Id: 174177167335424
-    m_Localized: "AAAH! LANET OLSUN! \xC7EK\u0130L \xDCST\xDCMDEN!"
+    m_Localized: "AAAAAH! A FRANCBA! T\xC1VOLODJ EL T\u0150LEM!"
     m_Metadata:
       m_Items: []
   - m_Id: 178832110772224
-    m_Localized: "Kasa anahtar\u0131 gibi duruyor."
+    m_Localized: "\xDAgy n\xE9z ki, mint egy sz\xE9f kulcs."
     m_Metadata:
       m_Items: []
   - m_Id: 179152618512384
-    m_Localized: "Kurt kuzuyu kovalar... Ay\u0131 sabit kal\u0131r."
+    m_Localized: "A farkas \xFCld\xF6zi a b\xE1r\xE1nyt... A medve mozdulatlan marad."
     m_Metadata:
       m_Items: []
   - m_Id: 183416204025856
-    m_Localized: "Hah! \u0130\u015Fe yarad\u0131."
+    m_Localized: "Heh! M\u0171k\xF6d\xF6tt!"
     m_Metadata:
       m_Items: []
   - m_Id: 186206527676416
@@ -67,119 +67,127 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 186222197596160
-    m_Localized: "Siktir... Olamaz. Olamaz. Bu bir \u015Faka olmal\u0131... "
+    m_Localized: A francba... Ez nem lehet igaz. Ez csak egy vicc lehet...
     m_Metadata:
       m_Items: []
   - m_Id: 186225179746304
-    m_Localized: "Albion beni d\xFC\u015F\xFCrd\xFC\u011F\xFCn durumun..."
+    m_Localized: "Albion, a helyzet, amibe hozt\xE1l..."
     m_Metadata:
       m_Items: []
   - m_Id: 191133291372544
-    m_Localized: Hmm, demek eller?
+    m_Localized: "Hmm, sz\xF3val, a kezek..."
     m_Metadata:
       m_Items: []
   - m_Id: 191463194353664
-    m_Localized: "San\u0131r\u0131m Depo Odas\u0131n\u0131 daha \xF6nce g\xF6rm\xFC\u015Ft\xFCm."
+    m_Localized: "Azt hiszem, m\xE1r l\xE1ttam a T\xE1rol\xF3helyis\xE9get kor\xE1bban."
     m_Metadata:
       m_Items: []
   - m_Id: 191740857278464
-    m_Localized: "Ne g\xFCzel. Yine bilmece..."
+    m_Localized: "Remek. M\xE9g egy rejtv\xE9ny..."
     m_Metadata:
       m_Items: []
   - m_Id: 191930842472448
-    m_Localized: AAAAAAA!
+    m_Localized: "\xC1\xC1\xC1\xC1\xC1\xC1\xC1!"
     m_Metadata:
       m_Items: []
   - m_Id: 192623141707776
-    m_Localized: "Dinamitler. G\xFCzel."
+    m_Localized: Dinamitok. Szuper.
     m_Metadata:
       m_Items: []
   - m_Id: 193103569870848
-    m_Localized: "Hadi bakal\u0131m..."
+    m_Localized: "Gyer\xFCnk akkor..."
     m_Metadata:
       m_Items: []
   - m_Id: 193629535592448
-    m_Localized: "EVVVVET! Umar\u0131m bu ses \xE7ok dikkat \xE7ekmez."
+    m_Localized: "IGEN! Rem\xE9lem, ez a hang nem kelt t\xFAl nagy figyelmet."
     m_Metadata:
       m_Items: []
   - m_Id: 194125130358784
-    m_Localized: O-orada biri mi var?
+    m_Localized: V-van ott valaki?
     m_Metadata:
       m_Items: []
   - m_Id: 195580050530304
-    m_Localized: "AHHHH! HAYIR-HA-HAYIR Y\u0130NE M\u0130 SEN!? BIRAK BE-"
+    m_Localized: "\xC1\xC1H! NEM\u2013NEM\u2013MEGINT TE!? ENGEDJ E\u2013"
     m_Metadata:
       m_Items: []
   - m_Id: 310426746216448
-    m_Localized: "Albion... Bunu nas\u0131l yapars\u0131n..."
+    m_Localized: Albion... Hogyan tehetted ezt...
     m_Metadata:
       m_Items: []
   - m_Id: 546633891700736
-    m_Localized: "Tanr\u0131m. Neden ben?"
+    m_Localized: "Istenem. Mi\xE9rt \xE9n?"
     m_Metadata:
       m_Items: []
   - m_Id: 550112282533888
-    m_Localized: "Ah! Hay\u0131r... \u015Eimdi olmaz!"
+    m_Localized: Ah! Nem... Most nem!
     m_Metadata:
       m_Items: []
   - m_Id: 550114128027648
-    m_Localized: "Hay\u0131r hay\u0131r hay\u0131r \u015Fimdi bitemez!"
+    m_Localized: Nem, nem, nem, most nem fogyhat el!
     m_Metadata:
       m_Items: []
   - m_Id: 550115675725824
-    m_Localized: "Bitecek zaman\u0131 buldu!"
+    m_Localized: "Term\xE9szetesen, most elfogy!"
     m_Metadata:
       m_Items: []
   - m_Id: 552061488848896
-    m_Localized: "L\xFCtfen b\u0131rak beni! AH!"
+    m_Localized: "K\xE9rlek, engedj el! AH!"
     m_Metadata:
       m_Items: []
   - m_Id: 552050722070528
-    m_Localized: "Kahretsin b\u0131rak beni!"
+    m_Localized: A francba, engedj el!
     m_Metadata:
       m_Items: []
   - m_Id: 552048641695744
-    m_Localized: "Ah! Hay\u0131r! B\u0131rak beni!"
+    m_Localized: Ah! Nem! Engedj el!
     m_Metadata:
       m_Items: []
   - m_Id: 824442266574848
-    m_Localized: Elbette kilitli.
+    m_Localized: "Persze, hogy z\xE1rva van."
     m_Metadata:
       m_Items: []
   - m_Id: 824445622018048
-    m_Localized: "A\xE7\u0131lm\u0131yor."
+    m_Localized: "Nem ny\xEDlik ki."
     m_Metadata:
       m_Items: []
   - m_Id: 824448608362496
-    m_Localized: "Kapal\u0131, belki bir \u015Fekilde a\xE7abilirim."
+    m_Localized: "Z\xE1rva van."
     m_Metadata:
       m_Items: []
   - m_Id: 824455482826752
-    m_Localized: "\u015Eu an bunu a\xE7mak i\xE7in bir \u015Feyim yok."
+    m_Localized: "Jelenleg nincs semmim, amivel ezt kinyithatn\xE1m."
     m_Metadata:
       m_Items: []
   - m_Id: 824459920400384
-    m_Localized: Kilitli.
+    m_Localized: "Z\xE1rva."
     m_Metadata:
       m_Items: []
   - m_Id: 824464139870208
-    m_Localized: "Biri kilitlemi\u015F."
+    m_Localized: "Valaki bez\xE1rta."
     m_Metadata:
       m_Items: []
   - m_Id: 824466060861440
-    m_Localized: "Tabii ki kilitli. \u015Ea\u015F\u0131rmad\u0131m."
+    m_Localized: "Persze, z\xE1rva van. Nem lep meg."
     m_Metadata:
       m_Items: []
   - m_Id: 825539358089216
-    m_Localized: Ah. Yine kilitli.
+    m_Localized: "Ah. Megint bez\xE1rva."
     m_Metadata:
       m_Items: []
   - m_Id: 825534664663040
-    m_Localized: "Bir nedenden dolay\u0131 kilitlenmi\u015F."
+    m_Localized: "Valami\xE9rt le van z\xE1rva."
     m_Metadata:
       m_Items: []
   - m_Id: 825513026248704
-    m_Localized: "Bunu a\xE7mam gerekecek."
+    m_Localized: Meg kell nyitnom ezt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3121108730503168
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3456796227264512
+    m_Localized: ' '
     m_Metadata:
       m_Items: []
   references:

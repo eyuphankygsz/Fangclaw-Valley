@@ -90,26 +90,26 @@ public class SteamAchievements : MonoBehaviour
 
 	[SerializeField]
 	private List<AchievementCheck> _achievementChecks;
-	private void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.L))
-			foreach (var item in _achievementChecks)
-			{
-				if (item.IsInt)
-				{
-					if (!string.IsNullOrEmpty(item.CurrentInt))
-						PlayerPrefs.DeleteKey(item.CurrentInt);
-				}
-				else if (item.IsFloat)
-				{
-					if (!string.IsNullOrEmpty(item.CurrentFloat))
-						PlayerPrefs.DeleteKey(item.CurrentFloat);
-				}
-				else if (item.IsString)
-				{
-					if (!string.IsNullOrEmpty(item.CurrentString))
-						PlayerPrefs.DeleteKey(item.CurrentString);
-				}
-			}
-	}
+	//private void Update()
+	//{
+	//	if(Input.GetKeyDown(KeyCode.L))
+	//		foreach (var item in _achievementChecks)
+	//		{
+	//			if (item.IsInt)
+	//			{
+	//				if (!string.IsNullOrEmpty(item.CurrentInt))
+	//					PlayerPrefs.DeleteKey(item.CurrentInt);
+	//			}
+	//			else if (item.IsFloat)
+	//			{
+	//				if (!string.IsNullOrEmpty(item.CurrentFloat))
+	//					PlayerPrefs.DeleteKey(item.CurrentFloat);
+	//			}
+	//			else if (item.IsString)
+	//			{
+	//				if (!string.IsNullOrEmpty(item.CurrentString))
+	//					PlayerPrefs.DeleteKey(item.CurrentString);
+	//			}
+	//		}
+	//}
 }

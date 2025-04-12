@@ -24,12 +24,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: Puedes <color=#C4A000>USAR</color> tus <color=#D47F36>MANOS</color>
-      con <color=#6FB7D6>"$primary_key"</color> para romper las <color=#9B111E>CAJAS</color>.
+    m_Localized: "Para encender la <color=#FFB45B>Linterna</color>, necesitas encontrar
+      <color=#E688FF>F\xD3SFOROS</color> y <color=#E688FF>ACEITE DE GAS</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: Pulsad cualquier tecla para proceder de inmediato...
+    m_Localized: Presione una tecla para continuar...
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
@@ -45,22 +45,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: Al presionar la tecla <color=#75A8FF>"$inter_key"</color>, puedes
-      <color=#93FF7A>ADQUIRIR</color> <color=#E688FF>Objetos</color> o <color=#93FF7A>INTERACTUAR</color>
-      con el <color=#FF4545>Entorno</color>.
+    m_Localized: Al presionar la tecla <color=#6FB7D6>"$inter_key"</color>, puedes
+      <color=#C4A000>ADQUIRIR</color> <color=#735D94>Objetos</color> o <color=#C4A000>INTERACTUAR</color>
+      con el <color=#9B111E>Entorno</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Al <color=#99FFF1>Concentrar Tu Atenci\xF3n</color>, puedes <color=#F7FFA3>Discernir
-      Objetos</color> abiertos a la <color=#93FF7A>Interacci\xF3n</color> a tu alrededor.
-      Para hacerlo, <color=#93FF7A>USA</color> la tecla <color=#75A8FF>\u201C$scan_env\u201D</color>.
-      Sin embargo, recuerda que esta habilidad <color=#93FF7A>AGOTAR\xC1</color>
-      en gran medida tu <color=#7A85FF>Resistencia</color>."
+    m_Localized: "Al <color=#AA4074>Enfocar Tu Atenci\xF3n</color>, puedes <color=#735D94>Distinguir
+      Objetos</color> abiertos a la <color=#C4A000>Interacci\xF3n</color> a tu alrededor.
+      Para hacerlo, <color=#C4A000>USA</color> la tecla <color=#6FB7D6>\"$scan_env\"</color>.
+      Sin embargo, recuerda que esta habilidad agotar\xE1 en gran medida tu <color=#7A85FF>Resistencia</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: Puedes <color=#93FF7A>DEJAR CAER</color> tus <color=#E688FF>Objetos</color>
-      desde tu <color=#FFB45B>Inventario</color>.
+    m_Localized: Puedes <color=#C4A000>SOLTAR</color> tus <color=#735D94>Objetos</color>
+      desde tu <color=#735D94>Inventario</color>.
     m_Metadata:
       m_Items: []
   references:

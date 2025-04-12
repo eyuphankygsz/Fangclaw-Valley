@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650184884613120
-    m_Localized: Warehouse Mouse
+    m_Localized: Storage Mouse
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: Investigate the Warehouse.
+    m_Localized: Search The Storage.
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -133,6 +133,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: Search the Map Room.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Little Pig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: Get the KEY to the Little Storage Room from the DRAIN GRATE in the
+      Kitchen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: Bookworm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: Search the Library.
     m_Metadata:
       m_Items: []
   references:

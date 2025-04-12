@@ -43,8 +43,12 @@ MonoBehaviour:
     m_Key: c7
     m_Metadata:
       m_Items: []
-  - m_Id: 787011950788608
+  - m_Id: 38004297596657664
     m_Key: c8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38004314201907200
+    m_Key: c9
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -80,6 +84,8 @@ MonoBehaviour:
           - ru
           - sv
           - uk
+          - zh-Hans
+          - ko
         - m_KeyId: 196780146688
           m_TableCodes:
           - en
@@ -96,6 +102,12 @@ MonoBehaviour:
           - nl
           - da
           - bg
+          - zh-Hans
+          - fi
+          - hu
+          - id
+          - ko
+          - no
         - m_KeyId: 204329893888
           m_TableCodes:
           - en
@@ -112,6 +124,8 @@ MonoBehaviour:
           - ru
           - sv
           - uk
+          - zh-Hans
+          - ko
         - m_KeyId: 208255762432
           m_TableCodes:
           - en
@@ -128,6 +142,12 @@ MonoBehaviour:
           - nl
           - da
           - bg
+          - zh-Hans
+          - fi
+          - hu
+          - id
+          - ko
+          - no
         - m_KeyId: 217923633152
           m_TableCodes:
           - en
@@ -144,6 +164,8 @@ MonoBehaviour:
           - nl
           - da
           - bg
+          - zh-Hans
+          - ko
         - m_KeyId: 787001989316608
           m_TableCodes:
           - en
@@ -160,6 +182,12 @@ MonoBehaviour:
           - nl
           - da
           - bg
+          - zh-Hans
+          - fi
+          - hu
+          - id
+          - ko
+          - no
         - m_KeyId: 787010000437248
           m_TableCodes:
           - en
@@ -176,21 +204,52 @@ MonoBehaviour:
           - nl
           - da
           - bg
-        - m_KeyId: 787011950788608
+          - ko
+          - no
+          - zh-Hans
+        - m_KeyId: 38004297596657664
           m_TableCodes:
+          - bg
+          - zh-Hans
+          - da
+          - nl
           - en
+          - fi
           - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
           - es
+          - sv
           - tr
           - uk
-          - sv
-          - ru
-          - ja
-          - it
-          - el
-          - de
-          - nl
-          - da
+        - m_KeyId: 38004314201907200
+          m_TableCodes:
           - bg
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
         m_TypeString: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

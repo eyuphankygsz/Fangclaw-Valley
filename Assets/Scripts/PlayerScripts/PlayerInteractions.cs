@@ -58,11 +58,13 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 	{
 		_controls = schema;
 		_controls.Player.Interaction.performed += TryInteract;
+		_controls.Player.Interaction.canceled += TryStopInteract;
 	}
 
 	public void OnInputDisable()
 	{
 		_controls.Player.Interaction.performed -= TryInteract;
+		_controls.Player.Interaction.canceled -= TryStopInteract;
 	}
 
 	private Interactable _currentInteractable;
@@ -74,7 +76,14 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 			_currentInteractable.OnInteract(Enum_Weapons.Hands);
 		}
 	}
-
+	public void TryStopInteract(InputAction.CallbackContext ctx)
+	{
+		if (ctx.canceled && _interactableObject != null)
+		{
+			_currentInteractable = _interactableObject.GetComponent<Interactable>();
+			_currentInteractable.OnStopInteract(Enum_Weapons.Hands);
+		}
+	}
 
 	public void CheckForInteractions()
 	{
@@ -103,6 +112,9 @@ public class PlayerInteractions : MonoBehaviour, IInputHandler
 		}
 
 		_interactableObject = (!obstacleOnTheWay && isFound) ? hit.collider.gameObject.GetComponent<Interactable>() : null;
+
+		if(_oldInteractable != null && _interactableObject == null)
+			_oldInteractable.OnStopInteract(Enum_Weapons.Hands);
 
 		Stop = !obstacleOnTheWay && isFound;
 		_oldInteractable = _interactableObject;

@@ -103,7 +103,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: "Depoyu ara\u015Ft\u0131r."
+    m_Localized: "Depoyu Ara\u015Ft\u0131r."
     m_Metadata:
       m_Items: []
   - m_Id: 653798793408512
@@ -133,6 +133,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: "Harita Odas\u0131n\u0131 Ara\u015Ft\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: "K\xFC\xE7\xFCk Depo Odas\u0131'n\u0131n ANAHTARINI Mutfaktaki DRENAJ
+      IZGARASINDAN al."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: "K\xFC\xE7\xFCk Domuz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: Kitap Kurdu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: "K\xFCt\xFCphane'yi ara\u015Ft\u0131r."
     m_Metadata:
       m_Items: []
   references:

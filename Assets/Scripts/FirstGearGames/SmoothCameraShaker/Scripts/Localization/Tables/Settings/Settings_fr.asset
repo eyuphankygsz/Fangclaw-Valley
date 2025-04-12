@@ -179,6 +179,34 @@ MonoBehaviour:
     m_Localized: Quitter
     m_Metadata:
       m_Items: []
+  - m_Id: 82360984151252992
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82360985854140416
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82574822300831744
+    m_Localized: Gamma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82575601501851648
+    m_Localized: Effets Sonores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82576484591587328
+    m_Localized: "Sensibilit\xE9 De La Souris"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578051889745920
+    m_Localized: Charger La Partie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578056486703104
+    m_Localized: "Cr\xE9dits"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

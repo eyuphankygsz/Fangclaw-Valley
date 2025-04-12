@@ -139,7 +139,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 61940686952325120
-    m_Localized: Buton2
+    m_Localized: Buton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84758454713966592
+    m_Localized: Vana
     m_Metadata:
       m_Items: []
   references:

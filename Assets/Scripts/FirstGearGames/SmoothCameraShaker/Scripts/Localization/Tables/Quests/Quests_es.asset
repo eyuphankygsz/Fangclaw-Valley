@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650184884613120
-    m_Localized: "Rata De Almac\xE9n"
+    m_Localized: "Rat\xF3n De Almac\xE9n"
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: "Investiga el almac\xE9n."
+    m_Localized: "Revisa El Almac\xE9n."
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -133,6 +133,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: Investiga La Sala Del Mapa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: "Consigue la LLAVE del Peque\xF1o Cuarto de Almacenamiento de la
+      REJILLA DE DRENAJE en la Cocina."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Cerdito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: "Rat\xF3n De Biblioteca"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: Busca en la Biblioteca.
     m_Metadata:
       m_Items: []
   references:

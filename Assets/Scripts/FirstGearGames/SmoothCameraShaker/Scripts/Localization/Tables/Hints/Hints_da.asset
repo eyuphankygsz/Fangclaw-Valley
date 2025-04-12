@@ -24,20 +24,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du kan <color=#C4A000>BRUGE</color> dine <color=#D47F36>H\xC6NDER</color>
-      med <color=#6FB7D6>\"$primary_key\"</color> for at \xF8del\xE6gge <color=#9B111E>KASSERNE</color>."
+    m_Localized: "For at t\xE6nde <color=#FFB45B>Lygten</color>, skal du finde <color=#E688FF>Fyrfadslys</color>
+      og <color=#E688FF>Gasolie</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: "Tryk p\xE5 en vilk\xE5rlig tast for straks at forts\xE6tte..."
+    m_Localized: "Tryk p\xE5 en tast for at forts\xE6tte..."
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Du kan <color=#93FF7A>\xC5BNE</color> din <color=#FFB45B>Inventar</color>
-      ved at trykke p\xE5 <color=#75A8FF>\"$inv_key\"</color>. N\xE5r du er i <color=#FFB45B>Inventaren</color>,
-      kan du <color=#93FF7A>Bruge</color>, <color=#93FF7A>Unders\xF8ge</color>, <color=#93FF7A>Kassere</color>
-      eller <color=#93FF7A>Kombinere</color> genstande! Husk at genopfylde din <color=#FFB45B>Gaslampe</color>
-      med <color=#E688FF>Gasolie</color>."
+    m_Localized: "Du kan <color=#C4A000>\xC5BNE</color> dit <color=#735D94>Inventory</color>
+      ved at trykke p\xE5 <color=#6FB7D6>\"$inv_key\"</color>. I dit <color=#735D94>Inventory</color>
+      kan du <color=#C4A000>Bruger</color>, <color=#C4A000>Unders\xF8ge</color>,
+      <color=#C4A000>Smide v\xE6k</color> eller <color=#C4A000>Kombinere</color>
+      genstande! Husk at genopfylde din <color=#D47F36>Gaslampe</color> med <color=#3A6B35>Gasolie</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -45,21 +45,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "Ved at trykke p\xE5 <color=#75A8FF>\"$inter_key\"</color> kan du
-      <color=#93FF7A>OPN\xC5</color> <color=#E688FF>Genstande</color> eller <color=#93FF7A>INTERAGERE</color>
-      med <color=#FF4545>Omgivelserne</color>."
+    m_Localized: "Ved at trykke p\xE5 <color=#6FB7D6>\"$inter_key\"</color> kan du
+      <color=#C4A000>OPN\xC5</color> <color=#735D94>Genstande</color> eller <color=#C4A000>INTERAGERE</color>
+      med <color=#9B111E>Omgivelserne</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Ved at <color=#99FFF1>Fokusere Din Opm\xE6rksomhed</color> kan
-      du <color=#F7FFA3>Skelne Objekter</color>, der er \xE5bne for <color=#93FF7A>Interaktion</color>
-      omkring dig. For at g\xF8re det, <color=#93FF7A>BRUG</color> tasten <color=#75A8FF>\u201C$scan_env\u201D</color>.
-      Husk dog, at denne evne vil kraftigt <color=#93FF7A>DR\xC6NE</color> din <color=#7A85FF>Udholdenhed</color>."
+    m_Localized: "Ved at <color=#AA4074>Fokusere Din Opm\xE6rksomhed</color> kan
+      du <color=#735D94>Registrere Objekter</color>, der er \xE5bne for <color=#C4A000>Interaktion</color>
+      omkring dig. For at g\xF8re det, <color=#C4A000>BRUG</color> <color=#6FB7D6>\"$scan_env\"</color>-tasten.
+      Husk dog, at denne evne i h\xF8j grad vil <color=#C4A000>T\xC6RRE</color> p\xE5
+      din <color=#7A85FF>Udholdenhed</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: Du kan <color=#93FF7A>SMIDE</color> dine <color=#E688FF>Genstande</color>
-      fra din <color=#FFB45B>Beholdning</color>.
+    m_Localized: Du kan <color=#C4A000>SMIDE</color> dine <color=#735D94>Genstande</color>
+      fra din <color=#735D94>Opbevaring</color>.
     m_Metadata:
       m_Items: []
   references:

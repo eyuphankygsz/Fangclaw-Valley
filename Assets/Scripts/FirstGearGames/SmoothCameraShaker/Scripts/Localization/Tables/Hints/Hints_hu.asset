@@ -24,8 +24,44 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Haszn\xE1lhatod a <color=#D47F36>KEZEDET</color> <color=#C4A000>\"$primary_key\"</color>-vel,
-      hogy sz\xE9tt\xF6rd a <color=#9B111E>DOBOZOKAT</color>."
+    m_Localized: "A <color=#FFB45B>L\xE1mp\xE1s</color> meggy\xFAjt\xE1s\xE1hoz meg
+      kell tal\xE1lnod a <color=#E688FF>GY\xDAJT\xD3K\xC1D</color> \xE9s a <color=#E688FF>G\xC1ZOLAJ</color>-t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: "Nyomjon meg egy billenty\u0171t a folytat\xE1shoz..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Megnyomva a <color=#6FB7D6>\"$inv_key\"</color> gombot <color=#C4A000>MEGNYITHATOD</color>
+      a <color=#735D94>Felszerel\xE9sedet</color>. A <color=#735D94>Felszerel\xE9sedben</color>
+      haszn\xE1lhatsz, <color=#C4A000>Megvizsg\xE1lhatsz</color>, <color=#C4A000>Eldobhatsz</color>
+      vagy <color=#C4A000>Kombin\xE1lhatsz</color> t\xE1rgyakat! Ne felejtsd el \xFAjrat\xF6lteni
+      a <color=#D47F36>G\xE1zl\xE1mp\xE1dat</color> <color=#3A6B35>G\xE1zolajjal</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: vagy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "A <color=#6FB7D6>\"$inter_key\"</color> megnyom\xE1s\xE1val <color=#C4A000>MEGSZEREZHETED</color>
+      az <color=#735D94>T\xE1rgyakat</color>, vagy <color=#C4A000>INTERAKCI\xD3BA
+      L\xC9PHETSZ</color> a <color=#9B111E>K\xF6rnyezettel</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "A <color=#AA4074>Figyelmed \xD6sszpontos\xEDt\xE1s\xE1val</color>
+      k\xE9pes vagy <color=#735D94>Megk\xFCl\xF6nb\xF6ztetni Azokat a T\xE1rgyakat</color>,
+      amelyek <color=#C4A000>Interakci\xF3ra</color> nyitottak k\xF6r\xFCl\xF6tted.
+      Ehhez <color=#C4A000>HASZN\xC1LD</color> a <color=#6FB7D6>\"$scan_env\"</color>
+      gombot. Azonban ne feledd, hogy ez a k\xE9pess\xE9g jelent\u0151sen <color=#C4A000>LEMER\xCDTI</color>
+      az <color=#7A85FF>\xC1ll\xF3k\xE9pess\xE9gedet</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: "Le tudod <color=#C4A000>EJTENI</color> a <color=#735D94>T\xE1rgyaidat</color>
+      az <color=#735D94>Invent\xE1riumodb\xF3l</color>."
     m_Metadata:
       m_Items: []
   references:

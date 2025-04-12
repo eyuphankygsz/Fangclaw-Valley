@@ -175,6 +175,35 @@ MonoBehaviour:
     m_Key: _exit
     m_Metadata:
       m_Items: []
+  - m_Id: 82360984151252992
+    m_Key: "\u0427\u0443\u0432\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C
+      \u041C\u044B\u0448\u0438"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82360985854140416
+    m_Key: yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82574822300831744
+    m_Key: _gamma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82575601501851648
+    m_Key: _sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82576484591587328
+    m_Key: _mSensitivity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578051889745920
+    m_Key: _loadgame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578056486703104
+    m_Key: _credits
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

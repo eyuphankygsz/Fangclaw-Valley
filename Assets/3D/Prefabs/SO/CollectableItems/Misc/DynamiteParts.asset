@@ -31,7 +31,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ItemSprite: {fileID: 21300000, guid: 0c5b268abdf5b5a43bc85a55f9b7e3b1, type: 3}
+  ItemSprite: {fileID: 21300000, guid: c1f60a36cc84857438d867f1abd223e7, type: 3}
   StackQuantity: 3
   OneTime: 1
   ItemFunctions: 010000000200000003000000

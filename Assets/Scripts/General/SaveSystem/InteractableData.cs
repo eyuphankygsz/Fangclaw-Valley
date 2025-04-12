@@ -69,6 +69,12 @@ public class ButtonData : GameData
 	public bool IsLocked;
 }
 [System.Serializable]
+public class ValveData : GameData
+{
+	public bool IsDone;
+	public bool IsLocked;
+}
+[System.Serializable]
 public class ButtonOrderMechanismData : GameData
 {
 	public string MachineName;

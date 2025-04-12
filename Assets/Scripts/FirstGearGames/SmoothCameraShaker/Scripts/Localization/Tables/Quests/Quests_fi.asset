@@ -104,7 +104,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: Tutki varasto.
+    m_Localized: Tutki Varastoa.
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -134,6 +134,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: Etsi Karttahuonetta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: "Hae Pienen Varastohuoneen AVAIN Keitti\xF6n VIEM\xC4RIRISTIKOSTA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Pieni Porsas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: Kirjatoukka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: Tutki Kirjastoa.
     m_Metadata:
       m_Items: []
   references:

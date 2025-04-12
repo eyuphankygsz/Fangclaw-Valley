@@ -19,36 +19,42 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: I'm sorry, Baxter, but I had to do this...
+    m_Localized: I'm sorry Baxter, but I had to do this.
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: The barricades we built can only hold the monsters for a very short
-      time!
+    m_Localized: "Albion\u2014you son of a bitch! What the hell does this mean!? "
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: This is why we need you! For all of humanity!
+    m_Localized: 'Baxter... I wish there was another way, but... This is our only
+      chance. '
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: "This sacrifice you\u2019ve made will save the entire world!"
+    m_Localized: 'When I get out of here, you''ll wish you''d never been born! '
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: "Also, your beloved wife Evelynn\u2019s life depends on it."
+    m_Localized: "This sacrifice we\u2019re making will save the entire world. Besides,
+      your dear wife Evelynn\u2019s life may depend on it."
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: I will be here every morning between 6 and 8.
+    m_Localized: "That\u2019s the truth! Look, all we need from you is to collect
+      SAMPLES."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: All we ask of you is to collect SAMPLES.
+    m_Localized: Don't you dare say her name!
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: See you tomorrow!
+  - m_Id: 38224463261589504
+    m_Localized: Once you collect the samples, I'll come get you out of here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: Please take care of yourself because you are our only chance!
     m_Metadata:
       m_Items: []
   references:

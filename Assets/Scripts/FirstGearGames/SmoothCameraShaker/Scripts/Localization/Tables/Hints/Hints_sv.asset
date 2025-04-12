@@ -24,12 +24,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du kan <color=#C4A000>ANV\xC4NDA</color> dina <color=#D47F36>H\xC4NDER</color>
-      med <color=#6FB7D6>\"$primary_key\"</color> f\xF6r att krossa <color=#9B111E>L\xC5DORNA</color>."
+    m_Localized: "F\xF6r att t\xE4nda <color=#FFB45B>Lanternan</color>, m\xE5ste
+      du hitta <color=#E688FF>T\xC4NDARE</color> och <color=#E688FF>GASOLJA</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: "Tryck p\xE5 en knapp f\xF6r att forts\xE4tta omedelbart..."
+    m_Localized: "Tryck p\xE5 en tangent f\xF6r att forts\xE4tta..."
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
@@ -46,23 +46,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "Genom att trycka p\xE5 <color=#75A8FF>\"$inter_key\"</color> kan
-      du <color=#93FF7A>F\xC5</color> <color=#E688FF>F\xF6rem\xE5l</color> eller
-      <color=#93FF7A>INTERAGERA</color> med <color=#FF4545>Omgivningen</color>."
+    m_Localized: "Genom att trycka p\xE5 <color=#6FB7D6>\"$inter_key\"</color> kan
+      du <color=#C4A000>F\xD6RV\xC4RVA</color> <color=#735D94>F\xF6rem\xE5l</color>
+      eller <color=#C4A000>INTERAGERA</color> med <color=#9B111E>Milj\xF6n</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Genom att <color=#99FFF1>Fokusera Din Uppm\xE4rksamhet</color>
-      kan du <color=#F7FFA3>Uppfatta F\xF6rem\xE5l</color> som \xE4r \xF6ppna f\xF6r
-      <color=#93FF7A>Interaktion</color> runt omkring dig. F\xF6r att g\xF6ra detta,
-      <color=#93FF7A>ANV\xC4ND</color> tangenten <color=#75A8FF>\u201C$scan_env\u201D</color>.
-      Kom dock ih\xE5g att denna f\xF6rm\xE5ga kraftigt kommer att <color=#93FF7A>T\xD6MMA</color>
-      din <color=#7A85FF>Uth\xE5llighet</color>."
+    m_Localized: "Genom att <color=#AA4074>Fokusera Din Uppm\xE4rksamhet</color>
+      kan du <color=#735D94>Identifiera Objekt</color> runt dig som \xE4r \xF6ppna
+      f\xF6r <color=#C4A000>Interaktion</color>. F\xF6r att g\xF6ra detta, <color=#C4A000>ANV\xC4ND</color>
+      tangenten <color=#6FB7D6>\"$scan_env\"</color>. Kom dock ih\xE5g att denna
+      f\xF6rm\xE5ga kraftigt kommer att <color=#C4A000>T\xD6MMA</color> din <color=#7A85FF>Uth\xE5llighet</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: "Du kan <color=#93FF7A>SL\xC4PPA</color> dina <color=#E688FF>F\xF6rem\xE5l</color>
-      fr\xE5n din <color=#FFB45B>Inventering</color>."
+    m_Localized: "Du kan <color=#C4A000>SL\xC4PPA</color> dina <color=#735D94>F\xF6rem\xE5l</color>
+      fr\xE5n din <color=#735D94>Inventarie</color>."
     m_Metadata:
       m_Items: []
   references:

@@ -25,21 +25,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: Je kunt je <color=#D47F36>HANDEN</color> <color=#C4A000>GEBRUIKEN</color>
-      met <color=#6FB7D6>"$primary_key"</color> om de <color=#9B111E>DOZEN</color>
-      te breken.
+    m_Localized: Om de <color=#FFB45B>Lantaarn</color> aan te steken, moet je <color=#E688FF>Lucifers</color>
+      en <color=#E688FF>Gasolie</color> vinden.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: Druk op een toets om onmiddellijk verder te gaan...
+    m_Localized: Druk op een toets om door te gaan...
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: Je kunt je <color=#FFB45B>Inventaris</color> <color=#93FF7A>OPENEN</color>
-      door op <color=#75A8FF>"$inv_key"</color> te drukken. Terwijl je in je <color=#FFB45B>Inventaris</color>
-      bent, kun je voorwerpen <color=#93FF7A>Gebruiken</color>, <color=#93FF7A>Onderzoeken</color>,
-      <color=#93FF7A>Weggooien</color> of <color=#93FF7A>Combineren</color>! Vergeet
-      niet je <color=#FFB45B>Gaslamp</color> bij te vullen met <color=#E688FF>Gasolie</color>.
+    m_Localized: Je kunt je <color=#735D94>Inventaris</color> <color=#C4A000>OPENEN</color>
+      door op <color=#6FB7D6>"$inv_key"</color> te drukken. In je <color=#735D94>Inventaris</color>
+      kun je voorwerpen <color=#C4A000>Gebruiken</color>, <color=#C4A000>Onderzoeken</color>,
+      <color=#C4A000>Weggooien</color> of <color=#C4A000>Combineren</color>! Vergeet
+      niet je <color=#D47F36>Gaslamp</color> bij te vullen met <color=#3A6B35>Gasolie</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -47,21 +46,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: Door op <color=#75A8FF>"$inter_key"</color> te drukken, kun je <color=#93FF7A>VERKRIJGEN</color>
-      <color=#E688FF>Items</color> of <color=#93FF7A>INTERAGEREN</color> met de <color=#FF4545>Omgeving</color>.
+    m_Localized: Door op <color=#6FB7D6>"$inter_key"</color> te drukken, kun je <color=#C4A000>VERKRIJGEN</color>
+      <color=#735D94>Voorwerpen</color> of <color=#C4A000>INTERAGEREN</color> met
+      de <color=#9B111E>Omgeving</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Door <color=#99FFF1>Je Aandacht te Focussen</color> kun je <color=#F7FFA3>Objecten
-      Onderscheiden</color> die openstaan voor <color=#93FF7A>Interactie</color>
-      om je heen. Gebruik hiervoor de toets <color=#75A8FF>\u201C$scan_env\u201D</color>.
-      Onthoud echter dat deze vaardigheid je <color=#7A85FF>Uithoudingsvermogen</color>
-      sterk zal <color=#93FF7A>UITPUTTEN</color>."
+    m_Localized: Door je <color=#AA4074>Aandacht te Focussen</color>, kun je <color=#735D94>Objecten
+      Onderscheiden</color> die openstaan voor <color=#C4A000>Interacties</color>
+      om je heen. Om dit te doen, <color=#C4A000>GEBRUIK</color> de <color=#6FB7D6>"$scan_env"</color>-toets.
+      Onthoud echter dat deze vaardigheid aanzienlijk je <color=#7A85FF>Uithoudingsvermogen</color>
+      zal <color=#C4A000>UITPUTTEN</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: Je kunt je <color=#E688FF>Voorwerpen</color> <color=#93FF7A>WEGGOOIEN</color>
-      uit je <color=#FFB45B>Inventaris</color>.
+    m_Localized: Je kunt <color=#C4A000>LATEN VALLEN</color> van je <color=#735D94>Voorwerpen</color>
+      uit je <color=#735D94>Inventaris</color>.
     m_Metadata:
       m_Items: []
   references:

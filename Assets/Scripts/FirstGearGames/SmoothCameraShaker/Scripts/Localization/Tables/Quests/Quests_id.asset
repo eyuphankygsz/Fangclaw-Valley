@@ -103,7 +103,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: Periksa gudang.
+    m_Localized: Cari Di Gudang.
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -132,6 +132,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: Cari Ruang Peta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: Ambil KUNCI Ruang Penyimpanan Kecil dari TERALI SALURAN di Dapur.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Babi Kecil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: Kutu Buku
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: Cari di Perpustakaan.
     m_Metadata:
       m_Items: []
   references:

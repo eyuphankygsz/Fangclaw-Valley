@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
 
-public class WhispererController : MonoBehaviour, IEnemyController
+public class WhispererController : MonoBehaviour, IEnemyController, ISaveable
 {
 	[SerializeField]
 	private Transform _player;
@@ -36,6 +36,11 @@ public class WhispererController : MonoBehaviour, IEnemyController
 
 	[Inject]
 	private GameManager _gameManager;
+	[Inject]
+	private SaveManager _saveManager;
+
+	[SerializeField]
+	private string _enemyName;
 
 	private void Awake()
 	{
@@ -44,9 +49,38 @@ public class WhispererController : MonoBehaviour, IEnemyController
 	}
 	void Start()
 	{
-		_machine.SetCurrentState(_startState as IEnemyState);
+		_saveManager.AddSaveableObject(gameObject, new EnemyData());
+		SetLoadFile();
 	}
+	public void SetLoadFile()
+	{
+		EnemyData data = _saveManager.GetData<EnemyData>(_enemyName);
+		if (data == null)
+		{
+			_machine.SetCurrentState(_startState as IEnemyState);
+			return;
+		}
+		gameObject.SetActive(data.IsActive);
 
+		_agent.enabled = false;
+		transform.position = data.Position;
+		transform.rotation = data.Rotation;
+		_agent.enabled = true;
+
+		_machine.SetCurrentState(data.CurrentState);
+	}
+	public GameData GetSaveFile()
+	{
+		EnemyData data = new EnemyData()
+		{
+			Name = _enemyName,
+			CurrentState = _machine.GetCurrentStateName(),
+			IsActive = gameObject.activeSelf,
+			Position = transform.position,
+			Rotation = transform.rotation,
+		};
+		return data;
+	}
 	// Update is called once per frame
 	void Update()
 	{
@@ -147,5 +181,4 @@ public class WhispererController : MonoBehaviour, IEnemyController
 			yield return null;
 		}
 	}
-
 }

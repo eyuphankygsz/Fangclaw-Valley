@@ -179,6 +179,34 @@ MonoBehaviour:
     m_Localized: "Billenty\u0171parancsok"
     m_Metadata:
       m_Items: []
+  - m_Id: 82360984151252992
+    m_Localized: Nem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82360985854140416
+    m_Localized: Igen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82574822300831744
+    m_Localized: Gamma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82575601501851648
+    m_Localized: "Hanghat\xE1sok"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82576484591587328
+    m_Localized: "Eg\xE9r \xC9rz\xE9kenys\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578051889745920
+    m_Localized: "J\xE1t\xE9k Bet\xF6lt\xE9se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578056486703104
+    m_Localized: "K\xE9sz\xEDt\u0151k"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

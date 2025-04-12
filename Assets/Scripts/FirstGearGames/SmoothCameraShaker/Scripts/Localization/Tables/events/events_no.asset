@@ -19,47 +19,47 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 484351275008
-    m_Localized: Kutulara baksam iyi olacak.
+    m_Localized: "Jeg burde ta en titt p\xE5 kassene."
     m_Metadata:
       m_Items: []
   - m_Id: 132905719291904
-    m_Localized: "Bu i\u015Fime yarayabilir."
+    m_Localized: Dette kan komme til nytte.
     m_Metadata:
       m_Items: []
   - m_Id: 135464773214208
-    m_Localized: "Hmm, ya\u011F. Lambaya doldurabilirim."
+    m_Localized: Hmm, olje. Jeg kan fylle lampen med dette.
     m_Metadata:
       m_Items: []
   - m_Id: 146746037493760
-    m_Localized: Bu semboller...
+    m_Localized: Disse symbolene...
     m_Metadata:
       m_Items: []
   - m_Id: 150516641292288
-    m_Localized: Huh...
+    m_Localized: Hm...
     m_Metadata:
       m_Items: []
   - m_Id: 168644490289152
-    m_Localized: Siktir!
+    m_Localized: Drit!
     m_Metadata:
       m_Items: []
   - m_Id: 173931012022272
-    m_Localized: Odaklan, Baxter...
+    m_Localized: Fokuser, Baxter...
     m_Metadata:
       m_Items: []
   - m_Id: 174177167335424
-    m_Localized: "AAAH! LANET OLSUN! \xC7EK\u0130L \xDCST\xDCMDEN!"
+    m_Localized: AAAAAH! FORBAN! KOM DEG BORT FRA MEG!
     m_Metadata:
       m_Items: []
   - m_Id: 178832110772224
-    m_Localized: "Kasa anahtar\u0131 gibi duruyor."
+    m_Localized: "Dette ser ut som en safe-n\xF8kkel."
     m_Metadata:
       m_Items: []
   - m_Id: 179152618512384
-    m_Localized: "Kurt kuzuyu kovalar... Ay\u0131 sabit kal\u0131r."
+    m_Localized: "Ulven jager lammet... Bj\xF8rnen st\xE5r stille."
     m_Metadata:
       m_Items: []
   - m_Id: 183416204025856
-    m_Localized: "Hah! \u0130\u015Fe yarad\u0131."
+    m_Localized: Ha! Det fungerte!
     m_Metadata:
       m_Items: []
   - m_Id: 186206527676416
@@ -67,23 +67,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 186222197596160
-    m_Localized: "Siktir... Olamaz. Olamaz. Bu bir \u015Faka olmal\u0131... "
+    m_Localized: "Faen... Det er ikke mulig. Dette m\xE5 v\xE6re en sp\xF8k..."
     m_Metadata:
       m_Items: []
   - m_Id: 186225179746304
-    m_Localized: "Albion beni d\xFC\u015F\xFCrd\xFC\u011F\xFCn durumun..."
+    m_Localized: Albion, situasjonen du har satt meg i...
     m_Metadata:
       m_Items: []
   - m_Id: 191133291372544
-    m_Localized: Hmm, demek eller?
+    m_Localized: "Hmm, s\xE5, hendene..."
     m_Metadata:
       m_Items: []
   - m_Id: 191463194353664
-    m_Localized: "San\u0131r\u0131m Depo Odas\u0131n\u0131 daha \xF6nce g\xF6rm\xFC\u015Ft\xFCm."
+    m_Localized: "Jeg tror jeg har sett Lagerrommet f\xF8r."
     m_Metadata:
       m_Items: []
   - m_Id: 191740857278464
-    m_Localized: "Ne g\xFCzel. Yine bilmece..."
+    m_Localized: "Flott. Enda en g\xE5te..."
     m_Metadata:
       m_Items: []
   - m_Id: 191930842472448
@@ -91,95 +91,103 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 192623141707776
-    m_Localized: "Dinamitler. G\xFCzel."
+    m_Localized: Dynamitt. Fint.
     m_Metadata:
       m_Items: []
   - m_Id: 193103569870848
-    m_Localized: "Hadi bakal\u0131m..."
+    m_Localized: "N\xE5 setter vi i gang..."
     m_Metadata:
       m_Items: []
   - m_Id: 193629535592448
-    m_Localized: "EVVVVET! Umar\u0131m bu ses \xE7ok dikkat \xE7ekmez."
+    m_Localized: "JA! Jeg h\xE5per denne lyden ikke tiltrekker for mye oppmerksomhet."
     m_Metadata:
       m_Items: []
   - m_Id: 194125130358784
-    m_Localized: O-orada biri mi var?
+    m_Localized: E-er det noen der?
     m_Metadata:
       m_Items: []
   - m_Id: 195580050530304
-    m_Localized: "AHHHH! HAYIR-HA-HAYIR Y\u0130NE M\u0130 SEN!? BIRAK BE-"
+    m_Localized: "AAH! NEI\u2013NEI\u2013IKKE DEG IGJEN!? SLIPP M\u2013"
     m_Metadata:
       m_Items: []
   - m_Id: 310426746216448
-    m_Localized: "Albion... Bunu nas\u0131l yapars\u0131n..."
+    m_Localized: "Albion... Hvordan kunne du gj\xF8re dette..."
     m_Metadata:
       m_Items: []
   - m_Id: 546633891700736
-    m_Localized: "Tanr\u0131m. Neden ben?"
+    m_Localized: Herregud. Hvorfor meg?
     m_Metadata:
       m_Items: []
   - m_Id: 550112282533888
-    m_Localized: "Ah! Hay\u0131r... \u015Eimdi olmaz!"
+    m_Localized: "\xC5h! Nei... Ikke n\xE5!"
     m_Metadata:
       m_Items: []
   - m_Id: 550114128027648
-    m_Localized: "Hay\u0131r hay\u0131r hay\u0131r \u015Fimdi bitemez!"
+    m_Localized: "Nei, nei, nei, det kan ikke g\xE5 tomt n\xE5!"
     m_Metadata:
       m_Items: []
   - m_Id: 550115675725824
-    m_Localized: "Bitecek zaman\u0131 buldu!"
+    m_Localized: "Selvf\xF8lgelig, det g\xE5r tomt n\xE5!"
     m_Metadata:
       m_Items: []
   - m_Id: 552061488848896
-    m_Localized: "L\xFCtfen b\u0131rak beni! AH!"
+    m_Localized: "V\xE6r s\xE5 snill, slipp meg! AH!"
     m_Metadata:
       m_Items: []
   - m_Id: 552050722070528
-    m_Localized: "Kahretsin b\u0131rak beni!"
+    m_Localized: Faen, slipp meg!
     m_Metadata:
       m_Items: []
   - m_Id: 552048641695744
-    m_Localized: "Ah! Hay\u0131r! B\u0131rak beni!"
+    m_Localized: Ah! Nei! Slipp meg!
     m_Metadata:
       m_Items: []
   - m_Id: 824442266574848
-    m_Localized: Elbette kilitli.
+    m_Localized: "Selvf\xF8lgelig er det l\xE5st."
     m_Metadata:
       m_Items: []
   - m_Id: 824445622018048
-    m_Localized: "A\xE7\u0131lm\u0131yor."
+    m_Localized: "Den \xE5pner ikke."
     m_Metadata:
       m_Items: []
   - m_Id: 824448608362496
-    m_Localized: "Kapal\u0131, belki bir \u015Fekilde a\xE7abilirim."
+    m_Localized: Den er stengt.
     m_Metadata:
       m_Items: []
   - m_Id: 824455482826752
-    m_Localized: "\u015Eu an bunu a\xE7mak i\xE7in bir \u015Feyim yok."
+    m_Localized: "Jeg har ingenting \xE5 \xE5pne dette med akkurat n\xE5."
     m_Metadata:
       m_Items: []
   - m_Id: 824459920400384
-    m_Localized: Kilitli.
+    m_Localized: "L\xE5st."
     m_Metadata:
       m_Items: []
   - m_Id: 824464139870208
-    m_Localized: "Biri kilitlemi\u015F."
+    m_Localized: "Noen l\xE5ste den."
     m_Metadata:
       m_Items: []
   - m_Id: 824466060861440
-    m_Localized: "Tabii ki kilitli. \u015Ea\u015F\u0131rmad\u0131m."
+    m_Localized: "Selvf\xF8lgelig er den l\xE5st. Ikke overrasket."
     m_Metadata:
       m_Items: []
   - m_Id: 825539358089216
-    m_Localized: Ah. Yine kilitli.
+    m_Localized: "Ah. L\xE5st igjen."
     m_Metadata:
       m_Items: []
   - m_Id: 825534664663040
-    m_Localized: "Bir nedenden dolay\u0131 kilitlenmi\u015F."
+    m_Localized: "Det er l\xE5st av en grunn."
     m_Metadata:
       m_Items: []
   - m_Id: 825513026248704
-    m_Localized: "Bunu a\xE7mam gerekecek."
+    m_Localized: "Jeg m\xE5 \xE5pne dette."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3121108730503168
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3456796227264512
+    m_Localized: ' '
     m_Metadata:
       m_Items: []
   references:

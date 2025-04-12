@@ -7,23 +7,46 @@ public class DialogueAsList : MonoBehaviour
 {
 	private Coroutine _tempRoutine;
 	private AudioSource _source, _tempSource;
-	private int _index = 0;
 
-	private TalkEvents _talkEvents;
 	private DialogueManager _manager;
-	public DialogueAsList Setup(TalkObject talkObject, string tableRef, AudioSource src, TalkEvents talkEvents, DialogueManager mng)
+
+	private int _id;
+	private TalkObject[] _talkObjects;
+	private AudioSource[] _audioSources;
+	private string _tableRef;
+	private string _talkName;
+	public DialogueAsList Setup(List<TalkObject> talkObject, string tableRef, List<AudioSource> src, DialogueManager mng, string talkName)
 	{
-		_manager = mng;
-		PlayOneFromList(talkObject, tableRef, src, talkEvents);
+        _manager = mng;
+		_talkName = talkName;
+		_tableRef = tableRef;
+
+		_talkObjects = talkObject.ToArray();
+		_audioSources = src.ToArray();
+
+        for (int i = 0; i < talkObject.Count; i++)
+        {
+			LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() { TableReference = tableRef + "Sounds", TableEntryReference = talkObject[i].TalkText };
+			var loadOperation = _audio.LoadAssetAsync();
+		}
+
+		PlayNext();
 		return this;
 	}
-	public void PlayOneFromList(TalkObject talkObject, string tableRef, AudioSource src, TalkEvents talkEvents)
+
+	private void PlayNext()
 	{
-		if (_talkEvents == null)
-			_talkEvents = talkEvents;
-
-		_index = 0;
-
+		if (_id >= _talkObjects.Length)
+		{
+			DialogueManager.Instance.DestroyDialogue(_talkName);
+			_id = 0;
+			return;
+		}
+		PlayOneFromList(_talkObjects[_id], _tableRef, _audioSources[_talkObjects[_id].SourceIndex]);
+		_id++;
+	}
+	public void PlayOneFromList(TalkObject talkObject, string tableRef, AudioSource src)
+	{
 		if (_tempSource != null)
 		{
 			_tempSource.Stop();
@@ -53,14 +76,9 @@ public class DialogueAsList : MonoBehaviour
 		{
 			_tempSource.clip = loadOperation.Result;
 
-			while (_manager.GamePause)
-				yield return null;
-
-
+			yield return new WaitUntil(() => !_manager.GamePause);
 			_tempSource.Play();
 		}
-		else
-			Debug.LogError("Audio clip could not be loaded.");
 
 		if (PlayerPrefs.GetInt("Subtitles") == 1)
 		{
@@ -68,9 +86,7 @@ public class DialogueAsList : MonoBehaviour
 			_manager.Subtitles.text = _skipLocal.GetLocalizedString();
 		}
 		else
-		{
 			_manager.Subtitles.text = "";
-		}
 
 		_tempRoutine = StartCoroutine(CheckEndTemp(talkObject));
 	}
@@ -82,7 +98,7 @@ public class DialogueAsList : MonoBehaviour
 			{
 				yield return new WaitForSeconds(obj.TalkDelay);
 				_manager.Subtitles.text = "";
-				_talkEvents.PlayNext();
+				PlayNext();
 				break;
 			}
 			yield return null;

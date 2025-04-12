@@ -179,6 +179,34 @@ MonoBehaviour:
     m_Localized: Salir
     m_Metadata:
       m_Items: []
+  - m_Id: 82360984151252992
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82360985854140416
+    m_Localized: "S\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82574822300831744
+    m_Localized: Gamma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82575601501851648
+    m_Localized: Efectos De Sonido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82576484591587328
+    m_Localized: "Sensibilidad Del Rat\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578051889745920
+    m_Localized: Cargar Partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578056486703104
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -57,8 +57,8 @@ public class PlayerForce : MonoBehaviour
 
 			yield return null;
 		}
-
 		_onLookEvent?.ForceEvents.Invoke();
+		_onLookEvent = null;
 	}
 
 	public void StopForce()

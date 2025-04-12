@@ -179,6 +179,34 @@ MonoBehaviour:
     m_Localized: "\xC7\u0131k\u0131\u015F"
     m_Metadata:
       m_Items: []
+  - m_Id: 82360984151252992
+    m_Localized: "Hay\u0131r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82360985854140416
+    m_Localized: Evet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82574822300831744
+    m_Localized: Gama
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82575601501851648
+    m_Localized: Ses Efektleri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82576484591587328
+    m_Localized: Fare Hassasiyeti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578051889745920
+    m_Localized: "Oyunu Y\xFCkle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578056486703104
+    m_Localized: "Yap\u0131mc\u0131lar"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

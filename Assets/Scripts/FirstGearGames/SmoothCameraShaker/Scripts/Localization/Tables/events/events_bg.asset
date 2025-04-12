@@ -19,71 +19,86 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 484351275008
-    m_Localized: Kutulara baksam iyi olacak.
+    m_Localized: "\u0422\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u043F\u043E\u0433\u043B\u0435\u0434\u043D\u0430
+      \u043A\u0443\u0442\u0438\u0438\u0442\u0435."
     m_Metadata:
       m_Items: []
   - m_Id: 132905719291904
-    m_Localized: "Bu i\u015Fime yarayabilir."
+    m_Localized: "\u0422\u043E\u0432\u0430 \u043C\u043E\u0436\u0435 \u0434\u0430
+      \u043C\u0438 \u0431\u044A\u0434\u0435 \u043F\u043E\u043B\u0435\u0437\u043D\u043E."
     m_Metadata:
       m_Items: []
   - m_Id: 135464773214208
-    m_Localized: "Hmm, ya\u011F. Lambaya doldurabilirim."
+    m_Localized: "\u0425\u043C\u043C, \u043C\u0430\u0441\u043B\u043E. \u041C\u043E\u0433\u0430
+      \u0434\u0430 \u043D\u0430\u043F\u044A\u043B\u043D\u044F \u043B\u0430\u043C\u043F\u0430\u0442\u0430
+      \u0441 \u0442\u043E\u0432\u0430."
     m_Metadata:
       m_Items: []
   - m_Id: 146746037493760
-    m_Localized: Bu semboller...
+    m_Localized: "\u0422\u0435\u0437\u0438 \u0441\u0438\u043C\u0432\u043E\u043B\u0438..."
     m_Metadata:
       m_Items: []
   - m_Id: 150516641292288
-    m_Localized: Huh...
+    m_Localized: "\u0425\u0430..."
     m_Metadata:
       m_Items: []
   - m_Id: 168644490289152
-    m_Localized: Siktir!
+    m_Localized: "\u041F\u043E \u0434\u044F\u0432\u043E\u043B\u0438\u0442\u0435!"
     m_Metadata:
       m_Items: []
   - m_Id: 173931012022272
-    m_Localized: Odaklan, Baxter...
+    m_Localized: "\u0424\u043E\u043A\u0443\u0441\u0438\u0440\u0430\u0439 \u0441\u0435,
+      \u0411\u0430\u043A\u0441\u0442\u044A\u0440..."
     m_Metadata:
       m_Items: []
   - m_Id: 174177167335424
-    m_Localized: "AAAH! LANET OLSUN! \xC7EK\u0130L \xDCST\xDCMDEN!"
+    m_Localized: "\u0410\u0410\u0410\u0410\u0425! \u041F\u041E\u041A\u041B\u0410\u0427\u0412\u0410\u041C
+      \u0421\u0415! \u0421\u041A\u0418\u041D\u0410 \u0421\u0415 \u041E\u0422 \u041C\u0415\u041D!"
     m_Metadata:
       m_Items: []
   - m_Id: 178832110772224
-    m_Localized: "Kasa anahtar\u0131 gibi duruyor."
+    m_Localized: "\u0418\u0437\u0433\u043B\u0435\u0436\u0434\u0430 \u043A\u0430\u0442\u043E
+      \u043A\u043B\u044E\u0447 \u0437\u0430 \u0441\u0435\u0439\u0444."
     m_Metadata:
       m_Items: []
   - m_Id: 179152618512384
-    m_Localized: "Kurt kuzuyu kovalar... Ay\u0131 sabit kal\u0131r."
+    m_Localized: "\u0412\u044A\u043B\u043A\u044A\u0442 \u0433\u043E\u043D\u0438 \u0430\u0433\u043D\u0435\u0442\u043E...
+      \u041C\u0435\u0447\u043A\u0430\u0442\u0430 \u043E\u0441\u0442\u0430\u0432\u0430
+      \u043D\u0435\u043F\u043E\u0434\u0432\u0438\u0436\u043D\u0430."
     m_Metadata:
       m_Items: []
   - m_Id: 183416204025856
-    m_Localized: "Hah! \u0130\u015Fe yarad\u0131."
+    m_Localized: "\u0425\u0430! \u041F\u0440\u043E\u0440\u0430\u0431\u043E\u0442\u0438!"
     m_Metadata:
       m_Items: []
   - m_Id: 186206527676416
-    m_Localized: A-Albion?
+    m_Localized: "\u0410-\u0410\u043B\u0431\u0438\u043E\u043D?"
     m_Metadata:
       m_Items: []
   - m_Id: 186222197596160
-    m_Localized: "Siktir... Olamaz. Olamaz. Bu bir \u015Faka olmal\u0131... "
+    m_Localized: "\u041C\u0430\u043C\u043A\u0430 \u043C\u0443... \u041D\u0435 \u043C\u043E\u0436\u0435
+      \u0434\u0430 \u0431\u044A\u0434\u0435. \u0422\u043E\u0432\u0430 \u0442\u0440\u044F\u0431\u0432\u0430
+      \u0434\u0430 \u0435 \u0448\u0435\u0433\u0430..."
     m_Metadata:
       m_Items: []
   - m_Id: 186225179746304
-    m_Localized: "Albion beni d\xFC\u015F\xFCrd\xFC\u011F\xFCn durumun..."
+    m_Localized: "Albion, \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F\u0442\u0430,
+      \u0432 \u043A\u043E\u044F\u0442\u043E \u043C\u0435 \u043F\u043E\u0441\u0442\u0430\u0432\u0438..."
     m_Metadata:
       m_Items: []
   - m_Id: 191133291372544
-    m_Localized: Hmm, demek eller?
+    m_Localized: "\u0425\u043C\u043C, \u0442\u0430\u043A\u0430 \u0447\u0435, \u0440\u044A\u0446\u0435\u0442\u0435..."
     m_Metadata:
       m_Items: []
   - m_Id: 191463194353664
-    m_Localized: "San\u0131r\u0131m Depo Odas\u0131n\u0131 daha \xF6nce g\xF6rm\xFC\u015Ft\xFCm."
+    m_Localized: "\u041C\u0438\u0441\u043B\u044F, \u0447\u0435 \u0441\u044A\u043C
+      \u0432\u0438\u0436\u0434\u0430\u043B \u0421\u0442\u0430\u044F\u0442\u0430 \u0417\u0430
+      \u0421\u044A\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0435 \u043F\u0440\u0435\u0434\u0438."
     m_Metadata:
       m_Items: []
   - m_Id: 191740857278464
-    m_Localized: "Ne g\xFCzel. Yine bilmece..."
+    m_Localized: "\u0427\u0443\u0434\u0435\u0441\u043D\u043E. \u041E\u0449\u0435
+      \u0435\u0434\u043D\u0430 \u0437\u0430\u0433\u0430\u0434\u043A\u0430..."
     m_Metadata:
       m_Items: []
   - m_Id: 191930842472448
@@ -91,95 +106,120 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 192623141707776
-    m_Localized: "Dinamitler. G\xFCzel."
+    m_Localized: "\u0414\u0438\u043D\u0430\u043C\u0438\u0442\u0438. \u0425\u0443\u0431\u0430\u0432\u043E."
     m_Metadata:
       m_Items: []
   - m_Id: 193103569870848
-    m_Localized: "Hadi bakal\u0131m..."
+    m_Localized: "\u0425\u0430\u0439\u0434\u0435 \u0434\u0435..."
     m_Metadata:
       m_Items: []
   - m_Id: 193629535592448
-    m_Localized: "EVVVVET! Umar\u0131m bu ses \xE7ok dikkat \xE7ekmez."
+    m_Localized: "\u0414\u0410! \u041D\u0430\u0434\u044F\u0432\u0430\u043C \u0441\u0435
+      \u0442\u043E\u0437\u0438 \u0437\u0432\u0443\u043A \u0434\u0430 \u043D\u0435
+      \u043F\u0440\u0438\u0432\u043B\u0435\u0447\u0435 \u0442\u0432\u044A\u0440\u0434\u0435
+      \u043C\u043D\u043E\u0433\u043E \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435."
     m_Metadata:
       m_Items: []
   - m_Id: 194125130358784
-    m_Localized: O-orada biri mi var?
+    m_Localized: "\u0418-\u0438\u043C\u0430 \u043B\u0438 \u043D\u044F\u043A\u043E\u0439
+      \u0442\u0430\u043C?"
     m_Metadata:
       m_Items: []
   - m_Id: 195580050530304
-    m_Localized: "AHHHH! HAYIR-HA-HAYIR Y\u0130NE M\u0130 SEN!? BIRAK BE-"
+    m_Localized: "\u0410\u0425! \u041D\u0415-\u041D\u0415-\u041D\u0415 \u0422\u0418
+      \u041E\u0422\u041D\u041E\u0412\u041E!? \u041F\u0423\u0421\u041D\u0418 \u041C\u0415\u2013"
     m_Metadata:
       m_Items: []
   - m_Id: 310426746216448
-    m_Localized: "Albion... Bunu nas\u0131l yapars\u0131n..."
+    m_Localized: "\u0410\u043B\u0431\u0438\u043E\u043D... \u041A\u0430\u043A \u043C\u043E\u0436\u0430
+      \u0434\u0430 \u043D\u0430\u043F\u0440\u0430\u0432\u0438\u0448 \u0442\u043E\u0432\u0430..."
     m_Metadata:
       m_Items: []
   - m_Id: 546633891700736
-    m_Localized: "Tanr\u0131m. Neden ben?"
+    m_Localized: "\u0411\u043E\u0436\u0435 \u043C\u043E\u0439. \u0417\u0430\u0449\u043E
+      \u0430\u0437?"
     m_Metadata:
       m_Items: []
   - m_Id: 550112282533888
-    m_Localized: "Ah! Hay\u0131r... \u015Eimdi olmaz!"
+    m_Localized: "\u0410\u0445! \u041D\u0435... \u041D\u0435 \u0441\u0435\u0433\u0430!"
     m_Metadata:
       m_Items: []
   - m_Id: 550114128027648
-    m_Localized: "Hay\u0131r hay\u0131r hay\u0131r \u015Fimdi bitemez!"
+    m_Localized: "\u041D\u0435, \u043D\u0435, \u043D\u0435, \u043D\u0435 \u043C\u043E\u0436\u0435
+      \u0434\u0430 \u0441\u0432\u044A\u0440\u0448\u0438 \u0441\u0435\u0433\u0430!"
     m_Metadata:
       m_Items: []
   - m_Id: 550115675725824
-    m_Localized: "Bitecek zaman\u0131 buldu!"
+    m_Localized: "\u0420\u0430\u0437\u0431\u0438\u0440\u0430 \u0441\u0435, \u0441\u0435\u0433\u0430
+      \u0441\u0432\u044A\u0440\u0448\u0432\u0430!"
     m_Metadata:
       m_Items: []
   - m_Id: 552048641695744
-    m_Localized: "Ah! Hay\u0131r! B\u0131rak beni!"
+    m_Localized: "\u0410\u0445! \u041D\u0435! \u041F\u0443\u0441\u043D\u0438 \u043C\u0435!"
     m_Metadata:
       m_Items: []
   - m_Id: 552050722070528
-    m_Localized: "Kahretsin b\u0131rak beni!"
+    m_Localized: "\u041C\u0430\u043C\u043A\u0430 \u043C\u0443, \u043F\u0443\u0441\u043D\u0438
+      \u043C\u0435!"
     m_Metadata:
       m_Items: []
   - m_Id: 552061488848896
-    m_Localized: "L\xFCtfen b\u0131rak beni! AH!"
+    m_Localized: "\u041C\u043E\u043B\u044F \u0442\u0435, \u043F\u0443\u0441\u043D\u0438
+      \u043C\u0435! \u0410\u0425!"
     m_Metadata:
       m_Items: []
   - m_Id: 824442266574848
-    m_Localized: Elbette kilitli.
+    m_Localized: "\u0420\u0430\u0437\u0431\u0438\u0440\u0430 \u0441\u0435, \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u043E
+      \u0435."
     m_Metadata:
       m_Items: []
   - m_Id: 824445622018048
-    m_Localized: "A\xE7\u0131lm\u0131yor."
+    m_Localized: "\u041D\u0435 \u0441\u0435 \u043E\u0442\u0432\u0430\u0440\u044F."
     m_Metadata:
       m_Items: []
   - m_Id: 824448608362496
-    m_Localized: "Kapal\u0131, belki bir \u015Fekilde a\xE7abilirim."
+    m_Localized: "\u0417\u0430\u0442\u0432\u043E\u0440\u0435\u043D\u043E \u0435."
     m_Metadata:
       m_Items: []
   - m_Id: 824455482826752
-    m_Localized: "\u015Eu an bunu a\xE7mak i\xE7in bir \u015Feyim yok."
+    m_Localized: "\u0412 \u043C\u043E\u043C\u0435\u043D\u0442\u0430 \u043D\u044F\u043C\u0430\u043C
+      \u043D\u0438\u0449\u043E, \u0441 \u043A\u043E\u0435\u0442\u043E \u0434\u0430
+      \u0433\u043E \u043E\u0442\u0432\u043E\u0440\u044F."
     m_Metadata:
       m_Items: []
   - m_Id: 824459920400384
-    m_Localized: Kilitli.
+    m_Localized: "\u0417\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u043E."
     m_Metadata:
       m_Items: []
   - m_Id: 824464139870208
-    m_Localized: "Biri kilitlemi\u015F."
+    m_Localized: "\u041D\u044F\u043A\u043E\u0439 \u0433\u043E \u0435 \u0437\u0430\u043A\u043B\u044E\u0447\u0438\u043B."
     m_Metadata:
       m_Items: []
   - m_Id: 824466060861440
-    m_Localized: "Tabii ki kilitli. \u015Ea\u015F\u0131rmad\u0131m."
+    m_Localized: "\u0420\u0430\u0437\u0431\u0438\u0440\u0430 \u0441\u0435, \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u043E
+      \u0435. \u041D\u0435 \u0441\u044A\u043C \u0438\u0437\u043D\u0435\u043D\u0430\u0434\u0430\u043D."
     m_Metadata:
       m_Items: []
   - m_Id: 825539358089216
-    m_Localized: Ah. Yine kilitli.
+    m_Localized: "\u0410\u0445. \u041E\u0442\u043D\u043E\u0432\u043E \u0435 \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u043E."
     m_Metadata:
       m_Items: []
   - m_Id: 825534664663040
-    m_Localized: "Bir nedenden dolay\u0131 kilitlenmi\u015F."
+    m_Localized: "\u041A\u043B\u044E\u0447\u044A\u0442 \u0435 \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D
+      \u043F\u043E \u043F\u0440\u0438\u0447\u0438\u043D\u0430."
     m_Metadata:
       m_Items: []
   - m_Id: 825513026248704
-    m_Localized: "Bunu a\xE7mam gerekecek."
+    m_Localized: "\u0422\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u043E\u0442\u0432\u043E\u0440\u044F
+      \u0442\u043E\u0432\u0430."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3121108730503168
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3456796227264512
+    m_Localized: ' '
     m_Metadata:
       m_Items: []
   references:

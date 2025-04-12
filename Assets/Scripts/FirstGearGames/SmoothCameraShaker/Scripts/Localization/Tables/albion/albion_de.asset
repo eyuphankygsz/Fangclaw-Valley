@@ -19,36 +19,44 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: Es tut mir leid, Baxter, aber ich musste das tun...
+    m_Localized: Es tut mir leid, Baxter, aber ich musste das tun.
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: "Die Barrikaden, die wir gebaut haben, k\xF6nnen die Monster nur
-      f\xFCr sehr kurze Zeit aufhalten!"
+    m_Localized: "Albion \u2013 du Mistkerl! Was soll das bedeuten!?"
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: "Deshalb brauchen wir dich! F\xFCr die ganze Menschheit!"
+    m_Localized: "Baxter... Ich w\xFCnschte, es g\xE4be einen anderen Weg, aber...
+      Das ist unsere einzige Chance."
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: Dieses Opfer, das du gebracht hast, wird die ganze Welt retten!
+    m_Localized: "Wenn ich hier rauskomme, wirst du dir w\xFCnschen, nie geboren
+      worden zu sein!"
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: "Auch das Leben deiner geliebten Frau Evelynn h\xE4ngt davon ab."
+    m_Localized: "Dieses Opfer, das wir bringen, wird die ganze Welt retten. Au\xDFerdem
+      k\xF6nnte das Leben deiner geliebten Frau Evelynn davon abh\xE4ngen."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: Alles, was wir von dir verlangen, ist, PROBEN zu sammeln.
+    m_Localized: Wag es nicht, ihren Namen zu sagen!
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: Ich werde jeden Morgen zwischen 6 und 8 hier sein.
+    m_Localized: Das ist die Wahrheit! Sieh, alles, was wir von dir brauchen, ist
+      PROBEN zu sammeln.
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: Bis morgen!
+  - m_Id: 38224463261589504
+    m_Localized: Sobald du die Proben gesammelt hast, werde ich kommen und dich hier
+      rausholen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: Pass auf dich auf, denn du bist unsere einzige Chance!
     m_Metadata:
       m_Items: []
   references:

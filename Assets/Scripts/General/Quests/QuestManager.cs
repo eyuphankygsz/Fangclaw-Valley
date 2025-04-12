@@ -8,6 +8,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 using Zenject;
 
 public class QuestManager : MonoBehaviour
@@ -41,6 +42,9 @@ public class QuestManager : MonoBehaviour
 	private string _savePath = Path.Combine(Application.dataPath, "quests.json");
 	private readonly string _initJson = "quests/questsinit";
 	private JsonSerializerSettings _jsonSettings;
+
+	[SerializeField]
+	private ChangeLanguage _changeLanguage;
 
 	[Inject]
 	private GameManager _manager;
@@ -170,7 +174,11 @@ public class QuestManager : MonoBehaviour
 	public void AddQuest(Quest quest)
 	{
 		if (quest.QuestStatus != 0)
+		{
+			Debug.Log("ERROR: QUEST STATUS NOT 0");
 			return;
+		}
+		Debug.Log("QUEST ADDED!");
 
 		quest.QuestStatus = 1;
 
@@ -182,8 +190,8 @@ public class QuestManager : MonoBehaviour
 		//Headline
 		LocalizedString headline = new LocalizedString() { TableReference = "Quests", TableEntryReference = quest.QuestName };
 		questObj.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = headline.GetLocalizedString();
-
-
+		questObj.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().font = _changeLanguage.GetFont().font;
+		questObj.GetChild(0).GetChild(0).GetComponent<LocalizeStringEvent>().StringReference = headline;
 		//Descriptions
 		int i = 0;
 		foreach (var item in quest.Description)
@@ -192,7 +200,8 @@ public class QuestManager : MonoBehaviour
 			Transform addition = Instantiate(_additionPrefab, questObj).transform;
 
 			addition.GetChild(0).GetComponent<TextMeshProUGUI>().text = desc.GetLocalizedString();
-
+			addition.GetChild(0).GetComponent<TextMeshProUGUI>().font = _changeLanguage.GetFont().font;
+			addition.GetChild(0).GetComponent<LocalizeStringEvent>().StringReference = desc;
 			i++;
 		}
 

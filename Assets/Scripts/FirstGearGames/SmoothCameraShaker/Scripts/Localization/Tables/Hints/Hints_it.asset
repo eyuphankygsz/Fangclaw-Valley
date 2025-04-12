@@ -24,12 +24,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: Puoi <color=#C4A000>USARE</color> le tue <color=#D47F36>MANI</color>
-      con <color=#6FB7D6>"$primary_key"</color> per rompere le <color=#9B111E>SCATOLE</color>.
+    m_Localized: Per accendere la <color=#FFB45B>Lanterna</color>, devi trovare <color=#E688FF>FIAMMIFERI</color>
+      e <color=#E688FF>OLIO DI GAS</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: Premi un tasto qualsiasi per procedere immediatamente...
+    m_Localized: Premi un tasto per continuare...
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
@@ -45,21 +45,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: Premendo il tasto <color=#75A8FF>"$inter_key"</color>, puoi <color=#93FF7A>OTTENERE</color>
-      <color=#E688FF>Oggetti</color> o <color=#93FF7A>INTERAGIRE</color> con l'<color=#FF4545>Ambiente</color>.
+    m_Localized: Premendo il tasto <color=#6FB7D6>"$inter_key"</color>, puoi <color=#C4A000>OTTENERE</color>
+      <color=#735D94>Oggetti</color> oppure <color=#C4A000>INTERAGIRE</color> con
+      l'<color=#9B111E>Ambiente</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Concentrando la tua <color=#99FFF1>Attenzione</color>, puoi <color=#F7FFA3>Distinguere
-      Oggetti</color> aperti all'<color=#93FF7A>Interazione</color> intorno a te.
-      Per farlo, <color=#93FF7A>USA</color> il tasto <color=#75A8FF>\u201C$scan_env\u201D</color>.
-      Tuttavia, ricorda che questa abilit\xE0 prosciugher\xE0 notevolmente la tua
-      <color=#7A85FF>Resistenza</color>."
+    m_Localized: "Concentrando la tua <color=#AA4074>Attenzione</color>, puoi <color=#735D94>Distinguere
+      Oggetti</color> aperti all\u2019<color=#C4A000>Interazione</color> intorno
+      a te. Per farlo, <color=#C4A000>USA</color> il tasto <color=#6FB7D6>\"$scan_env\"</color>.
+      Tuttavia, ricorda che questa abilit\xE0 <color=#C4A000>CONSUMER\xC0</color>
+      notevolmente la tua <color=#7A85FF>Resistenza</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: Puoi <color=#93FF7A>LASCIARE</color> i tuoi <color=#E688FF>Oggetti</color>
-      dal tuo <color=#FFB45B>Inventario</color>.
+    m_Localized: Puoi <color=#C4A000>LASCIARE</color> i tuoi <color=#735D94>Oggetti</color>
+      dal tuo <color=#735D94>Inventario</color>.
     m_Metadata:
       m_Items: []
   references:

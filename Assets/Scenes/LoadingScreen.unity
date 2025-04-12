@@ -643,6 +643,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720950753}
   m_CullTransparentMesh: 1
+--- !u!1 &731085857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731085858}
+  - component: {fileID: 731085859}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &731085858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731085857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 367.64072, y: 176.04164, z: 0.0061035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731085859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731085857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecfb618e81f193b4bb345d999df54410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _language: {fileID: 0}
+  _standartFontAsset: {fileID: 11400000, guid: ed1bfb4d9b8f34d4da254a3e7c8d0725, type: 2}
+  _changeSettingStrings: []
+  _localeFonts:
+  - LocaleName: bg
+    font: {fileID: 11400000, guid: e2f60fb6afbf87a40b2a1dca6ed772f9, type: 2}
+  - LocaleName: ru
+    font: {fileID: 11400000, guid: e2f60fb6afbf87a40b2a1dca6ed772f9, type: 2}
+  - LocaleName: uk
+    font: {fileID: 11400000, guid: e2f60fb6afbf87a40b2a1dca6ed772f9, type: 2}
+  - LocaleName: zh-Hans
+    font: {fileID: 11400000, guid: 0a7e0b264ebc11848a9665e105700963, type: 2}
+  - LocaleName: ja
+    font: {fileID: 11400000, guid: 59c22c50506fa3f4c9764e5cb0757cdc, type: 2}
+  - LocaleName: ko
+    font: {fileID: 11400000, guid: ac4c4141e7369e04d8d4b8469057c0b2, type: 2}
+  - LocaleName: el
+    font: {fileID: 11400000, guid: 63f8fa64b66593645b034f7a2604b73c, type: 2}
 --- !u!1 &736500300
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loadingObj: {fileID: 720950753}
   _textObj: {fileID: 143631863}
+  _changeLanguage: {fileID: 731085859}
   _image: {fileID: 150305682}
   _sprites:
   - {fileID: 21300000, guid: d015fe2b219c05c459da0f00184c107c, type: 3}
@@ -1131,3 +1194,4 @@ SceneRoots:
   - {fileID: 736500304}
   - {fileID: 1715446527}
   - {fileID: 1686689648}
+  - {fileID: 731085858}

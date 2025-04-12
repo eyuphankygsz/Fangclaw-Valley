@@ -24,20 +24,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Tu peux <color=#C4A000>UTILISER</color> tes <color=#D47F36>MAINS</color>
-      avec <color=#6FB7D6>\"$primary_key\"</color> pour casser les <color=#9B111E>BO\xCETES</color>."
+    m_Localized: Pour allumer la <color=#FFB45B>Lanterne</color>, vous devez trouver
+      des <color=#E688FF>ALLUMETTES</color> et de l'<color=#E688FF>HUILE DE GAZ</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: "Appuyez sur n'importe quelle touche pour avancer sans d\xE9lai..."
+    m_Localized: Appuyez sur une touche pour continuer...
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Tu peux <color=#93FF7A>OUVRIR</color> ton <color=#FFB45B>Inventaire</color>
-      en appuyant sur <color=#75A8FF>\"$inv_key\"</color>. Dans ton <color=#FFB45B>Inventaire</color>,
-      tu peux <color=#93FF7A>Utiliser</color>, <color=#93FF7A>Examiner</color>, <color=#93FF7A>Jeter</color>
-      ou <color=#93FF7A>Combiner</color> des objets ! N'oublie pas de recharger ta
-      <color=#FFB45B>Lampe \xE0 gaz</color> avec de l'<color=#E688FF>Huile de gaz</color>."
+    m_Localized: "Tu peux <color=#C4A000>OUVRIR</color> ton <color=#735D94>Inventaire</color>
+      en appuyant sur <color=#6FB7D6>\"$inv_key\"</color>. Dans ton <color=#735D94>Inventaire</color>,
+      tu peux <color=#C4A000>Utiliser</color>, <color=#C4A000>Examiner</color>, <color=#C4A000>Jeter</color>
+      ou <color=#C4A000>Combiner</color> des objets ! N'oublie pas de remplir ta
+      <color=#D47F36>Lampe \xE0 Gaz</color> avec de <color=#3A6B35>l\u2019Huile \xE0
+      Gaz</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 1828277039841280
@@ -45,22 +46,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: En appuyant sur la touche <color=#75A8FF>"$inter_key"</color>, tu
-      peux <color=#93FF7A>OBTENIR</color> des <color=#E688FF>Objets</color> ou <color=#93FF7A>INTERAGIR</color>
-      avec l'<color=#FF4545>Environnement</color>.
+    m_Localized: "En appuyant sur la touche <color=#6FB7D6>\"$inter_key\"</color>,
+      tu peux <color=#C4A000>ACQU\xC9RIR</color> des <color=#735D94>Objets</color>
+      ou <color=#C4A000>INTERAGIR</color> avec <color=#9B111E>l\u2019Environnement</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "En <color=#99FFF1>Concentrant Ton Attention</color>, tu peux <color=#F7FFA3>Discerner
-      des Objets</color> ouverts \xE0 <color=#93FF7A>l'Interaction</color> autour
-      de toi. Pour ce faire, <color=#93FF7A>UTILISE</color> la touche <color=#75A8FF>\u201C$scan_env\u201D</color>.
-      Cependant, souviens-toi que cette capacit\xE9 va fortement <color=#93FF7A>\xC9PUISER</color>
+    m_Localized: "En <color=#AA4074>Concentrant Ton Attention</color>, tu peux <color=#735D94>Discerner
+      les Objets</color> ouverts \xE0 une <color=#C4A000>Interaction</color> autour
+      de toi. Pour ce faire, <color=#C4A000>UTILISE</color> la touche <color=#6FB7D6>\"$scan_env\"</color>.
+      Cependant, souviens-toi que cette capacit\xE9 va consid\xE9rablement <color=#C4A000>DRAINER</color>
       ton <color=#7A85FF>Endurance</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: Tu peux <color=#93FF7A>JETER</color> tes <color=#E688FF>Objets</color>
-      depuis ton <color=#FFB45B>Inventaire</color>.
+    m_Localized: Tu peux <color=#C4A000>LAISSER TOMBER</color> tes <color=#735D94>Objets</color>
+      depuis ton <color=#735D94>Inventaire</color>.
     m_Metadata:
       m_Items: []
   references:

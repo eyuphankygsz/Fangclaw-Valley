@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Zenject;
 
@@ -46,6 +47,7 @@ public class EnemyStateMachine : MonoBehaviour
 		EnterState(state);
 	}
 	public IEnemyState GetCurrentState() => _currentState;
+	public string GetCurrentStateName() => _states.First(x => x.Value == _currentState).Key;
 	public void SetCurrentState(string stateName)
 	{
 		Debug.Log("1");

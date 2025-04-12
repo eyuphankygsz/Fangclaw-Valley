@@ -67,11 +67,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 186222197596160
-    m_Localized: "Siktir... Olamaz. Olamaz. Bu bir \u015Faka olmal\u0131... "
+    m_Localized: "Siktir... Olamaz. Bu bir \u015Faka olmal\u0131..."
     m_Metadata:
       m_Items: []
   - m_Id: 186225179746304
-    m_Localized: "Albion beni d\xFC\u015F\xFCrd\xFC\u011F\xFCn durumun..."
+    m_Localized: "Albion, beni d\xFC\u015F\xFCrd\xFC\u011F\xFCn durumun..."
     m_Metadata:
       m_Items: []
   - m_Id: 191133291372544
@@ -99,7 +99,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 193629535592448
-    m_Localized: "EVVVVET! Umar\u0131m bu ses \xE7ok dikkat \xE7ekmez."
+    m_Localized: "EVET! Umar\u0131m bu ses \xE7ok dikkat \xE7ekmez."
     m_Metadata:
       m_Items: []
   - m_Id: 194125130358784
@@ -107,7 +107,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 195580050530304
-    m_Localized: "AHHHH! HAYIR-HA-HAYIR Y\u0130NE M\u0130 SEN!? BIRAK BE-"
+    m_Localized: "AH! HAYIR-HA-HAYIR Y\u0130NE M\u0130 SEN!? BIRAK BE\u2013"
     m_Metadata:
       m_Items: []
   - m_Id: 310426746216448
@@ -151,7 +151,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 824448608362496
-    m_Localized: "Kapal\u0131, belki bir \u015Fekilde a\xE7abilirim."
+    m_Localized: "Kapal\u0131."
     m_Metadata:
       m_Items: []
   - m_Id: 824455482826752
@@ -180,6 +180,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 825513026248704
     m_Localized: "Bunu a\xE7mam gerekecek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3121108730503168
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3456796227264512
+    m_Localized: ' '
     m_Metadata:
       m_Items: []
   references:

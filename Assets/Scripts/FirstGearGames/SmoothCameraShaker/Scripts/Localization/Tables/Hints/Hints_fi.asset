@@ -24,8 +24,44 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Voit <color=#C4A000>K\xC4YTT\xC4\xC4</color> <color=#D47F36>K\xC4SI\xC4SI</color>
-      yhdess\xE4 <color=#6FB7D6>\"$primary_key\"</color> kanssa rikkoaksesi <color=#9B111E>LAATIKOT</color>."
+    m_Localized: "Sytytt\xE4\xE4ksesi <color=#FFB45B>Lyhdyn</color>, sinun t\xE4ytyy
+      l\xF6yt\xE4\xE4 <color=#E688FF>V\xC4H\xC4N</color> ja <color=#E688FF>KAASU\xD6LJY</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: "Paina n\xE4pp\xE4int\xE4 jatkaaksesi..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "Voit <color=#C4A000>AVATA</color> <color=#735D94>Inventaarion</color>
+      painamalla <color=#6FB7D6>\"$inv_key\"</color>. <color=#735D94>Inventaarioissa</color>
+      voit <color=#C4A000>K\xE4ytt\xE4\xE4</color>, <color=#C4A000>Tutkia</color>,
+      <color=#C4A000>Heitt\xE4\xE4 pois</color> tai <color=#C4A000>Yhdist\xE4\xE4</color>
+      esineit\xE4! Muista t\xE4ytt\xE4\xE4 <color=#D47F36>Kaasulamppusi</color> <color=#3A6B35>Kaasu\xF6ljyll\xE4</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: tai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "Paina <color=#6FB7D6>\"$inter_key\"</color>-n\xE4pp\xE4int\xE4,
+      niin voit <color=#C4A000>HANKKIA</color> <color=#735D94>Esineit\xE4</color>
+      tai <color=#C4A000>VUOROVAIKUTTAA</color> <color=#9B111E>Ymp\xE4rist\xF6n</color>
+      kanssa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "<color=#AA4074>Keskitt\xE4m\xE4ll\xE4 Huomiosi</color> voit <color=#735D94>Havaita
+      Esineit\xE4</color>, jotka ovat avoimia <color=#C4A000>Vuorovaikutukselle</color>
+      ymp\xE4rill\xE4si. Tehd\xE4ksesi t\xE4m\xE4n, <color=#C4A000>K\xC4YT\xC4</color>
+      <color=#6FB7D6>\"$scan_env\"</color>-n\xE4pp\xE4int\xE4. Muista kuitenkin,
+      ett\xE4 t\xE4m\xE4 kyky <color=#C4A000>KULUTTAA</color> suuresti <color=#7A85FF>Kest\xE4vyyskyky\xE4si</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: Voit <color=#C4A000>PUDOTTAA</color> <color=#735D94>Esineesi</color>
+      <color=#735D94>Varastostasi</color>.
     m_Metadata:
       m_Items: []
   references:

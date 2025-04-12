@@ -50,7 +50,6 @@ public class TalkEventsHolder : MonoBehaviour
 	}
 	public TalkList GetList(string listName)
 	{
-		Debug.Log(listName);
 		return _talksList.First(t => t.TalkName == listName);
 	}
 	public string GetTableRef()

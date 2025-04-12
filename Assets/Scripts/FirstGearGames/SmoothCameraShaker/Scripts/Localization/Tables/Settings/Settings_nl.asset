@@ -178,6 +178,34 @@ MonoBehaviour:
     m_Localized: Afsluiten
     m_Metadata:
       m_Items: []
+  - m_Id: 82360984151252992
+    m_Localized: Nee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82360985854140416
+    m_Localized: Ja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82574822300831744
+    m_Localized: Gamma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82575601501851648
+    m_Localized: Geluidseffecten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82576484591587328
+    m_Localized: Muisgevoeligheid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578051889745920
+    m_Localized: Spel Laden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578056486703104
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

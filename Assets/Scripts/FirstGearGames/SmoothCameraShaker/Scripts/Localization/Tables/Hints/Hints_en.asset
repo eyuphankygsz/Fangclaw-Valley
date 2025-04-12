@@ -24,12 +24,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: You may <color=#C4A000>USE</color> your <color=#D47F36>HANDS</color>
-      with <color=#6FB7D6>"$primary_key"</color> to break the <color=#9B111E>BOXES</color>.
+    m_Localized: To light the <color=#FFB45B>Lantern</color>, you need to find <color=#E688FF>MATCHES</color>
+      and <color=#E688FF>GAS OIL</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: Press any key to proceed forthwith...
+    m_Localized: Press a key to continue...
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616

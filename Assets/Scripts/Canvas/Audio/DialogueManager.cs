@@ -44,18 +44,17 @@ public class DialogueManager : MonoBehaviour
 	private void OnPause(bool pause, bool force)
 	{
 		OnForce = force;
-		if (!force)
-			GamePause = pause;
+		GamePause = pause;
 	}
-	public void PlayNewList(TalkObject talkObject, string tableRef, AudioSource src, TalkEvents talkEvents, string talkName)
+	public void PlayNewList(List<TalkObject> talkObject, string tableRef, List<AudioSource> src, string talkName)
 	{
 
 		if (_asListDict.ContainsKey(talkName))
-			_asListDict[talkName].Setup(talkObject, tableRef, src, talkEvents, this);
+			_asListDict[talkName].Setup(talkObject, tableRef, src, this, talkName);
 		else
 		{
 			GameObject obj = Instantiate(_asList);
-			_asListDict.Add(talkName, obj.GetComponent<DialogueAsList>().Setup(talkObject, tableRef, src, talkEvents, this));
+			_asListDict.Add(talkName, obj.GetComponent<DialogueAsList>().Setup(talkObject, tableRef, src, this, talkName));
 		}
 	}
 	public void PlayNewOne(AudioObject audioObj)

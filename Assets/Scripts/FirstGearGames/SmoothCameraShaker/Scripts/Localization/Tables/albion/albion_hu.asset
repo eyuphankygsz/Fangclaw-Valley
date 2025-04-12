@@ -19,7 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "Bocs\xE1nat, Baxter, de ezt meg kellett tennem..."
+    m_Localized: "Sajn\xE1lom, Baxter, de ezt meg kellett tennem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "Albion \u2013 te rohad\xE9k! Ez meg m\xE9gis mit jelentsen!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "Baxter... B\xE1rcsak lenne m\xE1s \xFAt, de... Ez az egyetlen es\xE9ly\xFCnk."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "Ha kijutok innen, k\xEDv\xE1nni fogod, b\xE1rcsak meg sem sz\xFClett\xE9l
+      volna!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "Ez az \xE1ldozat, amit hozunk, megmenti az eg\xE9sz vil\xE1got.
+      R\xE1ad\xE1sul szeretett feles\xE9ged, Evelynn \xE9lete is m\xFAlhat rajta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Ne merd meg kimondani a nev\xE9t!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Ez az igazs\xE1g! N\xE9zd, amit t\u0151led k\xE9r\xFCnk, az csak
+      mint\xE1k gy\u0171jt\xE9se."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224463261589504
+    m_Localized: "Miut\xE1n \xF6sszegy\u0171jt\xF6tted a mint\xE1kat, elj\xF6v\xF6k,
+      hogy kiszabad\xEDtsalak innen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: "K\xE9rlek, vigy\xE1zz magadra, mert te vagy az egyetlen es\xE9ly\xFCnk!"
     m_Metadata:
       m_Items: []
   references:

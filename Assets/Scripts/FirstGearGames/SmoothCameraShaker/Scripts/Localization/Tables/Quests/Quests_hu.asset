@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650184884613120
-    m_Localized: "Rakt\xE1ri Eg\xE9r"
+    m_Localized: "Rakt\xE1reg\xE9r"
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: "Vizsg\xE1ld meg a rakt\xE1rt."
+    m_Localized: "Kutass \xC1t A Rakt\xE1rat."
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -133,6 +133,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: "Keresd Meg A T\xE9rk\xE9p Szob\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: "Szerezd meg a Kis T\xE1rol\xF3helyis\xE9g KULCS\xC1T a Konyhai
+      LEFOLY\xD3R\xC1CSB\xD3L."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Kicsi Malac
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: "K\xF6nyvmoly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: "Keresd meg a K\xF6nyvt\xE1rat."
     m_Metadata:
       m_Items: []
   references:

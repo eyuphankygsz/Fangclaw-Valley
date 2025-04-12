@@ -19,36 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "Jeg er ked af det, Baxter, men jeg var n\xF8dt til at g\xF8re dette..."
+    m_Localized: "Undskyld, Baxter, men jeg var n\xF8dt til at g\xF8re det."
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: Barrikaderne, vi byggede, kan kun holde monstrene tilbage i meget
-      kort tid!
+    m_Localized: "Albion \u2013 din skiderik! Hvad fanden skal det betyde!?"
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: Det er derfor, vi har brug for dig! For hele menneskeheden!
+    m_Localized: "Baxter... Jeg ville \xF8nske, der var en anden m\xE5de, men...
+      Dette er vores eneste chance."
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: Dette offer, du har givet, vil redde hele verden!
+    m_Localized: "N\xE5r jeg kommer ud herfra, vil du \xF8nske, du aldrig var blevet
+      f\xF8dt!"
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: "Ogs\xE5 din elskede hustru Evelynns liv afh\xE6nger af det."
+    m_Localized: "Dette offer, vi bringer, vil redde hele verden. Desuden kan din
+      k\xE6re kone Evelynns liv afh\xE6nge af det."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: "Alt, hvad vi beder dig om, er at indsamle PR\xD8VER."
+    m_Localized: "Du t\xF8r ikke sige hendes navn!"
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: "Jeg vil v\xE6re her hver morgen mellem 6 og 8."
+    m_Localized: "Det er sandheden! Se, alt vi beh\xF8ver fra dig er at indsamle
+      PR\xD8VER."
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: Vi ses i morgen!
+  - m_Id: 38224463261589504
+    m_Localized: "N\xE5r du har samlet pr\xF8verne, kommer jeg og henter dig ud herfra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: "Pas godt p\xE5 dig selv, for du er vores eneste chance!"
     m_Metadata:
       m_Items: []
   references:

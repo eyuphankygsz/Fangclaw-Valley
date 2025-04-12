@@ -17,7 +17,43 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 98980b2069f9aa541bdf90b7b382f5d6, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 196780146688
+    m_Localized: 1c8bc2912674f6e49bb1061f536044a8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208255762432
+    m_Localized: 3596566a122285542b2c61e702c4f756
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787001989316608
+    m_Localized: ae85772ab6eabe149a5cb8bdb8e56c72
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38004297596657664
+    m_Localized: 0b2ab0866f30a804d8c73a6510376817
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38004314201907200
+    m_Localized: a31c2e0b58f1c5647a19407a691ba67a
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30169808896
+    m_Localized: a3e38fb838d4d424aa6474c654c1af06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 204329893888
+    m_Localized: 1090f2b7f450d784e84ad91b6cb9d751
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217923633152
+    m_Localized: 5a181be2ad17edf44b09ca0728492192
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787010000437248
+    m_Localized: f3c141936b095a3459bdf325207e8032
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

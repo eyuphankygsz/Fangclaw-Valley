@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650184884613120
-    m_Localized: Topo Da Magazzino
+    m_Localized: Topo Del Magazzino
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: Esamina il magazzino.
+    m_Localized: Perquisisci Il Magazzino.
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -132,6 +132,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: Cerca La Stanza Della Mappa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: Prendi la CHIAVE del Piccolo Ripostiglio dalla GRIGLIA DI SCARICO
+      in Cucina.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Maialino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: Topo Di Biblioteca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: Esplora la Biblioteca.
     m_Metadata:
       m_Items: []
   references:

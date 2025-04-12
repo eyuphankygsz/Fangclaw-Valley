@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class MainMenu : MonoBehaviour
 
 
 	private string _savePath = Path.Combine(Application.dataPath, "save.json");
+	private string _questsPath = Path.Combine(Application.dataPath, "quests.json");
 	private JsonSerializerSettings _jsonSettings;
 
 
@@ -26,6 +28,8 @@ public class MainMenu : MonoBehaviour
 	private TextMeshProUGUI _checkText;
 	[SerializeField]
 	private LocalizedString _deleteSaveGame;
+	[SerializeField]
+	private LocalizedString _no, _yes;
 
 	[SerializeField]
 	private EventSystem _eventSystem;
@@ -34,32 +38,22 @@ public class MainMenu : MonoBehaviour
 	[SerializeField]
 	private Button _continueButton;
 
-
+	[SerializeField]
+	private List<AchievementCheck> _achievementChecks;
 
 
 
 	private void Awake()
 	{
-		string drName = Path.GetDirectoryName(_savePath);
-
-		int length = drName.Length;
-		while (length != 0)
-		{
-			if (drName[length - 1] == '\\')
-				break;
-
-			length--;
-		}
-		_savePath = _savePath.Substring(0, length - 1) + "\\SavesDir";
+		_savePath  = SetDirectoryName(_savePath);
+		_questsPath = SetDirectoryName(_questsPath);
 
 		if (!Directory.Exists(_savePath))
-		{
-			Debug.Log("DIRECTORY NOT EXIST");
 			Directory.CreateDirectory(_savePath);
-		}
 
 		_savePath += "\\save.json";
-		//GameObject.FindWithTag("dataPath").GetComponent<TextMeshProUGUI>().text = _savePath;
+		_questsPath += "\\quests.json";
+
 
 		_jsonSettings = new JsonSerializerSettings
 		{
@@ -77,6 +71,21 @@ public class MainMenu : MonoBehaviour
 		}
 
 	}
+	private string SetDirectoryName(string original)
+	{
+		string drName = Path.GetDirectoryName(original);
+
+		int length = drName.Length;
+		while (length != 0)
+		{
+			if (drName[length - 1] == '\\')
+				break;
+
+			length--;
+		}
+		original = original.Substring(0, length - 1) + "\\SavesDir";
+		return original;
+	}
 	public void ContinueGame()
 	{
 		PlayerPrefs.SetString("SceneToLoad", "GameScene");
@@ -93,9 +102,11 @@ public class MainMenu : MonoBehaviour
 		{
 			_checkText.text = _deleteSaveGame.GetLocalizedString();
 
+			_yesButton.GetComponentInChildren<TextMeshProUGUI>().text = _yes.GetLocalizedString();
 			_yesButton.onClick.RemoveAllListeners();
 			_yesButton.onClick.AddListener(() => PrepareNewGame());
 
+			_noButton.GetComponentInChildren<TextMeshProUGUI>().text = _no.GetLocalizedString();
 			_noButton.onClick.RemoveAllListeners();
 			_noButton.onClick.AddListener(() => _checkMenu.SetActive(false));
 
@@ -117,6 +128,28 @@ public class MainMenu : MonoBehaviour
 			foreach (var item in _resetPrefNames)
 				PlayerPrefs.DeleteKey(item);
 		}
+		if (File.Exists(_questsPath))
+			File.Delete(_questsPath);
+
+		foreach (var item in _achievementChecks)
+		{
+			if (item.IsInt)
+			{
+				if (!string.IsNullOrEmpty(item.CurrentInt))
+					PlayerPrefs.DeleteKey(item.CurrentInt);
+			}
+			else if (item.IsFloat)
+			{
+				if (!string.IsNullOrEmpty(item.CurrentFloat))
+					PlayerPrefs.DeleteKey(item.CurrentFloat);
+			}
+			else if (item.IsString)
+			{
+				if (!string.IsNullOrEmpty(item.CurrentString))
+					PlayerPrefs.DeleteKey(item.CurrentString);
+			}
+		}
+
 		PlayerPrefs.SetString("SceneToLoad", "GameScene");
 		SceneManager.LoadScene("LoadingScreen");
 	}

@@ -25,9 +25,49 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "<color=#C4A000>\uC0AC\uC6A9</color>\uD558\uC5EC <color=#D47F36>\uC190</color>\uC73C\uB85C
-      <color=#6FB7D6>\"$primary_key\"</color>\uB97C \uB20C\uB7EC <color=#9B111E>\uC0C1\uC790</color>\uB97C
-      \uBD80\uC220 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    m_Localized: "<color=#FFB45B>\uB79C\uD134</color>\uC744 \uBC1D\uD788\uB824\uBA74
+      <color=#E688FF>\uC131\uB0E5</color>\uACFC <color=#E688FF>\uAC00\uC2A4 \uC624\uC77C</color>\uC744
+      \uCC3E\uC544\uC57C \uD569\uB2C8\uB2E4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: "\uACC4\uC18D\uD558\uB824\uBA74 \uD0A4\uB97C \uB204\uB974\uC138\uC694..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: "<color=#6FB7D6>\"$inv_key\"</color> \uD0A4\uB97C \uB20C\uB7EC <color=#735D94>\uC778\uBCA4\uD1A0\uB9AC</color>\uB97C
+      <color=#C4A000>\uC5F4 \uC218 \uC788\uC2B5\uB2C8\uB2E4</color>. <color=#735D94>\uC778\uBCA4\uD1A0\uB9AC</color>
+      \uC548\uC5D0\uC11C\uB294 \uC544\uC774\uD15C\uC744 <color=#C4A000>\uC0AC\uC6A9</color>,
+      <color=#C4A000>\uC870\uC0AC</color>, <color=#C4A000>\uBC84\uB9AC\uAE30</color>,
+      \uB610\uB294 <color=#C4A000>\uACB0\uD569</color>\uD560 \uC218 \uC788\uC5B4\uC694!
+      <color=#D47F36>\uAC00\uC2A4\uB7A8\uD504</color>\uC5D0 <color=#3A6B35>\uAC00\uC2A4\uC624\uC77C</color>\uC744
+      \uCC44\uC6B0\uB294 \uAC83\uC744 \uC78A\uC9C0 \uB9C8\uC138\uC694."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: "\uB610\uB294"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: "<color=#6FB7D6>\"$inter_key\"</color> \uD0A4\uB97C \uB204\uB974\uBA74
+      <color=#735D94>\uC544\uC774\uD15C</color>\uC744 <color=#C4A000>\uD68D\uB4DD</color>\uD558\uAC70\uB098
+      <color=#9B111E>\uD658\uACBD</color>\uACFC <color=#C4A000>\uC0C1\uD638\uC791\uC6A9</color>\uD560
+      \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: "<color=#AA4074>\uC9D1\uC911\uC744 \uD1B5\uD574</color>, \uC8FC\uBCC0\uC5D0\uC11C
+      <color=#C4A000>\uC0C1\uD638\uC791\uC6A9</color>\uC774 \uAC00\uB2A5\uD55C <color=#735D94>\uC624\uBE0C\uC81D\uD2B8\uB97C
+      \uC2DD\uBCC4</color>\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uADF8\uB807\uAC8C
+      \uD558\uB824\uBA74 <color=#6FB7D6>\"$scan_env\"</color> \uD0A4\uB97C <color=#C4A000>\uC0AC\uC6A9</color>\uD558\uC138\uC694.
+      \uD558\uC9C0\uB9CC \uC774 \uB2A5\uB825\uC740 <color=#7A85FF>\uC9C0\uAD6C\uB825</color>\uC744
+      \uD06C\uAC8C <color=#C4A000>\uC18C\uBAA8</color>\uD55C\uB2E4\uB294 \uC810\uC744
+      \uAE30\uC5B5\uD558\uC138\uC694."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: "<color=#735D94>\uC778\uBCA4\uD1A0\uB9AC</color>\uC5D0\uC11C <color=#735D94>\uC544\uC774\uD15C</color>\uC744
+      <color=#C4A000>\uBC84\uB9B4 \uC218</color> \uC788\uC2B5\uB2C8\uB2E4."
     m_Metadata:
       m_Items: []
   references:

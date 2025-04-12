@@ -127,6 +127,10 @@ MonoBehaviour:
     m_Key: button
     m_Metadata:
       m_Items: []
+  - m_Id: 84758454713966592
+    m_Key: valve_0
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

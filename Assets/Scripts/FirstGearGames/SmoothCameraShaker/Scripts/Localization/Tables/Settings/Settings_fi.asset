@@ -178,6 +178,34 @@ MonoBehaviour:
     m_Localized: "N\xE4pp\xE4inkomennot"
     m_Metadata:
       m_Items: []
+  - m_Id: 82360984151252992
+    m_Localized: Ei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82360985854140416
+    m_Localized: "Kyll\xE4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82574822300831744
+    m_Localized: Gamma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82575601501851648
+    m_Localized: "\xC4\xE4nitehosteet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82576484591587328
+    m_Localized: Hiiren Herkkyys
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578051889745920
+    m_Localized: Lataa Peli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82578056486703104
+    m_Localized: "Tekij\xE4t"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

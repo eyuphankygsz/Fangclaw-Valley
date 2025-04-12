@@ -43,6 +43,10 @@ public abstract class Interactable : MonoBehaviour, ISaveable
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 
 	}
+	public virtual void OnStopInteract(Enum_Weapons weapon)
+	{
+
+	}
 	public virtual void SetStatusManually(bool on)
 	{
 

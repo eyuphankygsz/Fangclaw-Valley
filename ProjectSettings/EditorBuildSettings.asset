@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadingScreen.unity
     guid: a9203b7ace0b7534784c7ce6ed475dea
+  - enabled: 1
+    path: Assets/Scenes/DemoOver.unity
+    guid: 190365c95d6c8354cada3afcd6f88f72
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 7f3388d0f3e66194193caa092bcdad37,
       type: 2}

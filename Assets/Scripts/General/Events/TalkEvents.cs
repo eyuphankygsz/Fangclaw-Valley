@@ -28,17 +28,7 @@ public class TalkEvents : MonoBehaviour
 
 	public void PlayNext()
 	{
-		if (_id >= _currentTalkList.TalkObject.Count)
-		{
-			DialogueManager.Instance.DestroyDialogue(_currentTalkList.TalkName);
-			_id = 0;
-			return;
-		}
-
-		TalkObject tObj = _currentTalkList.TalkObject[_id];
-		DialogueManager.Instance.PlayNewList(tObj, _holder.GetTableRef(), _sources[tObj.SourceIndex], this, _currentTalkList.TalkName);
-
-		_id++;
+		DialogueManager.Instance.PlayNewList(_currentTalkList.TalkObject, _holder.GetTableRef(), _sources, _currentTalkList.TalkName);
 	}
 
 }

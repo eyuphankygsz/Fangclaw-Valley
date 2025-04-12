@@ -120,12 +120,12 @@
         },
         {
           "TalkText": "a_albion2",
-          "TalkDelay": 0.2,
+          "TalkDelay": 0.1,
           "SourceIndex": 0
         },
         {
           "TalkText": "a_albion3",
-          "TalkDelay": 0.5,
+          "TalkDelay": 0.2,
           "SourceIndex": 0
         }
       ]
@@ -405,6 +405,26 @@
       "TalkObject": [
         {
           "TalkText": "you_again_no",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Shriek1",
+      "TalkObject": [
+        {
+          "TalkText": "shriek1",
+          "TalkDelay": 0.5,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Shriek2",
+      "TalkObject": [
+        {
+          "TalkText": "shriek2",
           "TalkDelay": 0.5,
           "SourceIndex": 0
         }

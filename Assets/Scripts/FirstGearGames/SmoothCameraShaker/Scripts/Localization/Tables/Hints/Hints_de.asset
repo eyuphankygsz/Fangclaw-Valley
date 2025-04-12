@@ -25,21 +25,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "Du kannst deine <color=#D47F36>H\xC4NDE</color> <color=#C4A000>VERWENDEN</color>
-      mit <color=#6FB7D6>\"$primary_key\"</color>, um die <color=#9B111E>KISTEN</color>
-      zu zerbrechen."
+    m_Localized: "Um die <color=#FFB45B>Laterne</color> zu entz\xFCnden, musst du
+      <color=#E688FF>Streichh\xF6lzer</color> und <color=#E688FF>Gas\xF6l</color>
+      finden."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: "Dr\xFCcke eine beliebige Taste, um sofort fortzufahren..."
+    m_Localized: "Dr\xFCcken Sie eine Taste, um fortzufahren..."
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
-    m_Localized: "Du kannst dein <color=#FFB45B>Inventar</color> <color=#93FF7A>\xD6FFNEN</color>,
-      indem du <color=#75A8FF>\"$inv_key\"</color> dr\xFCckst. W\xE4hrend du dich
-      im <color=#FFB45B>Inventar</color> befindest, kannst du Gegenst\xE4nde <color=#93FF7A>Benutzen</color>,
-      <color=#93FF7A>Untersuchen</color>, <color=#93FF7A>Verwerfen</color> oder <color=#93FF7A>Kombinieren</color>!
-      Vergiss nicht, deine <color=#FFB45B>Gaslampe</color> mit <color=#E688FF>Gas\xF6l</color>
+    m_Localized: "Du kannst dein <color=#735D94>Inventar</color> <color=#C4A000>\xD6FFNEN</color>,
+      indem du <color=#6FB7D6>\"$inv_key\"</color> dr\xFCckst. In deinem <color=#735D94>Inventar</color>
+      kannst du Gegenst\xE4nde <color=#C4A000>Verwenden</color>, <color=#C4A000>Untersuchen</color>,
+      <color=#C4A000>Wegwerfen</color> oder <color=#C4A000>Kombinieren</color>! Vergiss
+      nicht, deine <color=#D47F36>Gaslampe</color> mit <color=#3A6B35>Gas\xF6l</color>
       aufzuf\xFCllen."
     m_Metadata:
       m_Items: []
@@ -48,22 +48,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "Durch Dr\xFCcken der Taste <color=#75A8FF>\"$inter_key\"</color>
-      kannst du <color=#93FF7A>ERHALTEN</color> <color=#E688FF>Gegenst\xE4nde</color>
-      oder mit der <color=#93FF7A>INTERAGIEREN</color> <color=#FF4545>Umgebung</color>."
+    m_Localized: "Durch Dr\xFCcken der Taste <color=#6FB7D6>\"$inter_key\"</color>
+      kannst du <color=#C4A000>ERWERBEN</color> <color=#735D94>Gegenst\xE4nde</color>
+      oder mit der <color=#9B111E>Umgebung</color> <color=#C4A000>INTERAGIEREN</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "Durch das <color=#99FFF1>Fokussieren Deiner Aufmerksamkeit</color>
-      kannst du <color=#F7FFA3>Objekte Erkennen</color>, die f\xFCr <color=#93FF7A>Interaktion</color>
-      offen sind. Dr\xFCcke dazu die Taste <color=#75A8FF>\u201C$scan_env\u201D</color>.
-      Denke jedoch daran, dass diese F\xE4higkeit deine <color=#7A85FF>Ausdauer</color>
-      stark <color=#93FF7A>AUFZEHREN</color> wird."
+    m_Localized: "Indem du deine <color=#AA4074>Aufmerksamkeit Fokussierst</color>,
+      kannst du <color=#735D94>Objekte Erkennen</color>, die f\xFCr eine <color=#C4A000>Interaktion</color>
+      offen sind. Um dies zu tun, <color=#C4A000>VERWENDE</color> die <color=#6FB7D6>\"$scan_env\"</color>-Taste.
+      Bedenke jedoch, dass diese F\xE4higkeit deine <color=#7A85FF>Ausdauer</color>
+      stark <color=#C4A000>VERBRAUCHEN</color> wird."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288
-    m_Localized: "Du kannst deine <color=#E688FF>Gegenst\xE4nde</color> aus deinem
-      <color=#FFB45B>Inventar</color> <color=#93FF7A>FALLEN LASSEN</color>."
+    m_Localized: "Du kannst deine <color=#735D94>Gegenst\xE4nde</color> aus deinem
+      <color=#735D94>Inventar</color> <color=#C4A000>ABLEGEN</color>."
     m_Metadata:
       m_Items: []
   references:

@@ -16,7 +16,31 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 5e604d63907127f4eb698fb869e69caf
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: b8299444b52b7e44c8a39b92744c8829
+    m_Address: albionCE_tr1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5f7a76fc9a9ba841abf39b956993f2e
+    m_Address: albionCE_tr2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c353c98192b56bf47acda9e3fd40db15
+    m_Address: albionCE_tr3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3d3e9e7435e0bb449c18e40d74fe396
+    m_Address: albionCE_tr4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
   m_SchemaSet:

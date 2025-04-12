@@ -19,38 +19,45 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "\xDCzg\xFCn\xFCm, Baxter, ama bunu yapmak zorundayd\u0131m..."
+    m_Localized: "\xDCzg\xFCn\xFCm Baxter, ama bunu yapmak zorundayd\u0131m."
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: "Yapt\u0131\u011F\u0131m\u0131z barikatlar canavarlar\u0131 \xE7ok
-      k\u0131sa bir s\xFCre tutabilir!"
+    m_Localized: "Albion \u2013 seni orospu \xE7ocu\u011Fu! Bu da ne demek!?"
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: "\u0130\u015Fte bu y\xFCzden sana ihtiyac\u0131m\u0131z var! T\xFCm
-      insanl\u0131k olarak..."
+    m_Localized: "Baxter... Ke\u015Fke ba\u015Fka bir yol olsayd\u0131 ama... yok.
+      Bu tek \u015Fans\u0131m\u0131z."
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: "Bu yapt\u0131\u011F\u0131n fedakarl\u0131k t\xFCm D\xFCnya'y\u0131
-      kurtaracak!"
+    m_Localized: "Buradan \xE7\u0131kt\u0131\u011F\u0131mda hi\xE7 do\u011Fmam\u0131\u015F
+      olmay\u0131 dileyeceksin!"
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: "Ayr\u0131ca sevgili e\u015Fin Evelynn'in hayat\u0131 da buna ba\u011Fl\u0131."
+    m_Localized: "Bu yapt\u0131\u011F\u0131m\u0131z fedakarl\u0131k t\xFCm d\xFCnyay\u0131
+      kurtaracak. Ayr\u0131ca sevgili e\u015Fin Evelynn\u2019in hayat\u0131 da buna
+      ba\u011Fl\u0131 olabilir."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: "Senden istedi\u011Fimiz tek \u015Fey \xD6RNEK toplaman."
+    m_Localized: "Onun ad\u0131n\u0131 sak\u0131n a\u011Fz\u0131na alma!"
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: "Herg\xFCn sabah 6 ile 8 aras\u0131nda burada olaca\u011F\u0131m."
+    m_Localized: "Do\u011Fru olan bu! Bak \u015Fimdi, senden istedi\u011Fimiz tek
+      \u015Fey \xD6RNEK toplaman."
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: "Yar\u0131n g\xF6r\xFC\u015Fmek \xFCzere!"
+  - m_Id: 38224471444676608
+    m_Localized: "L\xFCtfen kendine iyi bak \xE7\xFCnk\xFC sen tek \u015Fans\u0131m\u0131zs\u0131n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224463261589504
+    m_Localized: "\xD6rnekleri toplad\u0131\u011F\u0131nda seni buradan \xE7\u0131karmaya
+      gelece\u011Fim."
     m_Metadata:
       m_Items: []
   references:

@@ -19,7 +19,44 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: Maaf, Baxter, tapi saya harus melakukan ini...
+    m_Localized: Maaf, Baxter, tapi aku harus melakukan ini.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: Albion, brengsek kau! Apa maksudnya ini!?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: Baxter... Aku berharap ada cara lain, tapi... Ini satu-satunya kesempatan
+      kita.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: Saat aku keluar dari sini, kamu akan berharap tidak pernah dilahirkan!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: Pengorbanan ini yang kita lakukan akan menyelamatkan seluruh dunia.
+      Selain itu, nyawa istrimu tercinta Evelynn mungkin bergantung padanya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: Jangan berani sebut namanya!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: Itu adalah kebenarannya! Lihat, yang kami butuhkan darimu hanyalah
+      mengumpulkan CONTOH.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224463261589504
+    m_Localized: Setelah kamu mengumpulkan sampel, aku akan datang menjemputmu dari
+      sini.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: Tolong jaga dirimu baik-baik karena kamu adalah satu-satunya harapan
+      kami!
     m_Metadata:
       m_Items: []
   references:

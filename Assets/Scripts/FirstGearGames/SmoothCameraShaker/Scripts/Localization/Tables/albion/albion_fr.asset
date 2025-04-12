@@ -19,37 +19,45 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "D\xE9sol\xE9, Baxter, mais je devais faire cela..."
+    m_Localized: "Je suis d\xE9sol\xE9, Baxter, mais je devais faire \xE7a."
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: "Les barricades que nous avons construites ne peuvent retenir les
-      monstres que pendant un tr\xE8s court moment !"
+    m_Localized: "Albion, esp\xE8ce de salaud ! Qu\u2019est-ce que c\u2019est cens\xE9
+      vouloir dire !?"
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: "C'est pourquoi nous avons besoin de toi ! Pour toute l'humanit\xE9
-      !"
+    m_Localized: "Baxter... J\u2019aurais aim\xE9 qu\u2019il y ait un autre moyen,
+      mais... C\u2019est notre seule chance."
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: Ce sacrifice que tu as fait sauvera le monde entier !
+    m_Localized: "Quand je sortirai d\u2019ici, tu regretteras d\u2019\xEAtre n\xE9
+      !"
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: "De plus, la vie de ta ch\xE8re \xE9pouse Evelynn en d\xE9pend."
+    m_Localized: "Ce sacrifice que nous faisons sauvera le monde entier. De plus,
+      la vie de ta ch\xE8re \xE9pouse Evelynn pourrait en d\xE9pendre."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: "Tout ce que nous te demandons, c'est de collecter des \xC9CHANTILLONS."
+    m_Localized: N'ose pas prononcer son nom !
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: Je serai ici chaque matin entre 6h et 8h.
+    m_Localized: "C'est la v\xE9rit\xE9 ! Regarde, tout ce que nous avons besoin
+      de toi, c'est de collecter des \xC9CHANTILLONS."
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: "\xC0 demain !"
+  - m_Id: 38224463261589504
+    m_Localized: "Une fois que tu auras collect\xE9 les \xE9chantillons, je viendrai
+      te sortir d\u2019ici."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: Prends soin de toi, car tu es notre seule chance !
     m_Metadata:
       m_Items: []
   references:

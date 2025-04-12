@@ -24,8 +24,44 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: Kamu bisa <color=#C4A000>MENGGUNAKAN</color> <color=#D47F36>TANGAN</color>
-      kamu dengan <color=#6FB7D6>"$primary_key"</color> untuk menghancurkan <color=#9B111E>KOTAK</color>.
+    m_Localized: Untuk menyalakan <color=#FFB45B>Lampu</color>, Anda perlu menemukan
+      <color=#E688FF>MAHKOTA</color> dan <color=#E688FF>MINYAK GAS</color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68442363445248
+    m_Localized: Tekan tombol untuk melanjutkan...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148327882735616
+    m_Localized: Kamu dapat <color=#C4A000>MEMBUKA</color> <color=#735D94>Inventar</color>
+      kamu dengan menekan <color=#6FB7D6>"$inv_key"</color>. Di dalam <color=#735D94>Inventar</color>,
+      kamu bisa <color=#C4A000>Menggunakan</color>, <color=#C4A000>Memeriksa</color>,
+      <color=#C4A000>Membuang</color>, atau <color=#C4A000>Menggabungkan</color>
+      item! Jangan lupa untuk mengisi kembali <color=#D47F36>Lampu Gas</color> kamu
+      dengan <color=#3A6B35>Minyak Gas</color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1828277039841280
+    m_Localized: atau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841791259295744
+    m_Localized: Dengan menekan tombol <color=#6FB7D6>"$inter_key"</color>, kamu
+      bisa <color=#C4A000>MEMPEROLEH</color> <color=#735D94>Item</color> atau <color=#C4A000>BERINTERAKSI</color>
+      dengan <color=#9B111E>Lingkungan</color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151958932799488
+    m_Localized: Dengan <color=#AA4074>Memusatkan Perhatian</color>, kamu dapat <color=#735D94>Mengenali
+      Objek</color> yang dapat <color=#C4A000>Berinteraksi</color> di sekitarmu.
+      Untuk melakukannya, <color=#C4A000>GUNAKAN</color> tombol <color=#6FB7D6>"$scan_env"</color>.
+      Namun, ingat bahwa kemampuan ini akan sangat <color=#C4A000>MENGURAS</color>
+      <color=#7A85FF>Staminamu</color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21320435609100288
+    m_Localized: Kamu dapat <color=#C4A000>MENJATUHKAN</color> <color=#735D94>Item</color>
+      dari <color=#735D94>Inventaris</color> kamu.
     m_Metadata:
       m_Items: []
   references:

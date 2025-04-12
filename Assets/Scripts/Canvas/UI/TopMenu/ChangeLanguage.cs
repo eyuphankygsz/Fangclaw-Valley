@@ -1,8 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using TMPro;
+using UnityEditor.Localization;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.Tables;
+using UnityEngine.TextCore.Text;
 
 public class ChangeLanguage : Setting
 {
@@ -68,6 +73,23 @@ public class ChangeLanguage : Setting
 	[SerializeField]
 	private LocaleFont[] _localeFonts;
 
+
+
+	private string[] TableNames = new string[]
+	{
+		"albion",
+		"AudioObjects",
+		"events",
+		"Hints",
+		"InventoryItems",
+		"InteractableNames",
+		"ItemFunctions",
+		"Notes",
+		"Quests",
+		"RoomNames",
+		"Settings",
+	};
+
 	public override void Load()
 	{
 		if (!PlayerPrefs.HasKey(_localeString))
@@ -100,9 +122,49 @@ public class ChangeLanguage : Setting
 		}
 
 		_tempLocaleID = _localeID;
-		_language.text = _languageDict[_shorts[_tempLocaleID]];
+		if (_language != null)
+			_language.text = _languageDict[_shorts[_tempLocaleID]];
 
 		ReattachFonts();
+
+		//string[] langs = new string[]
+		//{
+		//	"ja",
+		//	"zh-Hans",
+		//	"ko",
+		//};
+		//for (int i = 0; i < 3; i++)
+		//{
+
+		//	string str = "";
+		//	foreach (var tableName in TableNames)
+		//	{
+
+		//		var tableCollection = LocalizationEditorSettings.GetStringTableCollection(tableName); // Table adını yaz
+		//		if (tableCollection == null)
+		//		{
+		//			Debug.LogError("Table bulunamadı!");
+		//			return;
+		//		}
+
+		//		foreach (var table in tableCollection.StringTables)
+		//		{
+		//			if (table.LocaleIdentifier.Code == langs[i]) // Sadece Basitleştirilmiş Çince
+		//			{
+		//				var stringTable = table as StringTable;
+		//				Debug.Log($"=== {langs[i]} Table: {table.LocaleIdentifier} ===");
+
+		//				foreach (var entry in stringTable.Values)
+		//				{
+		//					str += entry.LocalizedValue;
+		//					Debug.Log($"Key: {entry.KeyId}, Value: {entry.LocalizedValue}");
+		//				}
+		//			}
+		//		}
+		//	}
+
+		//	File.WriteAllText(Path.Combine(Application.persistentDataPath, langs[i] + "-Table.txt"), str);
+		//}
 	}
 
 	private void ReattachFonts()
@@ -116,6 +178,14 @@ public class ChangeLanguage : Setting
 		foreach (var tmp in tmps)
 			tmp.font = newFont.font;
 
+	}
+	public LocaleFont GetFont()
+	{
+		LocaleFont newFont = _localeFonts.FirstOrDefault(x => x.LocaleName == _shorts[_tempLocaleID]);
+		if (newFont == null)
+			newFont = new LocaleFont() { font = _standartFontAsset, LocaleName = "" };
+
+		return newFont;
 	}
 
 	public void NextLanguage()

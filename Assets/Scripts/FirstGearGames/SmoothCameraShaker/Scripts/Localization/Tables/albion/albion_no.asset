@@ -19,7 +19,44 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: "Beklager, Baxter, men jeg m\xE5tte gj\xF8re dette..."
+    m_Localized: "Beklager, Baxter, men jeg m\xE5tte gj\xF8re dette."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34166980608
+    m_Localized: "Albion \u2013 din j\xE6vel! Hva skal dette bety!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43365089280
+    m_Localized: "Baxter... Jeg skulle \xF8nske det fantes en annen vei, men... Dette
+      er v\xE5r eneste sjanse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50887674478592
+    m_Localized: "N\xE5r jeg kommer meg ut herfra, kommer du til \xE5 \xF8nske at
+      du aldri ble f\xF8dt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50897430429696
+    m_Localized: "Dette offeret vi gj\xF8r, vil redde hele verden. Dessuten kan livet
+      til din kj\xE6re kone Evelynn avhenge av det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005066983227392
+    m_Localized: "Ikke v\xE5g \xE5 si navnet hennes!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1005258302210048
+    m_Localized: "Det er sannheten! Se, alt vi trenger fra deg er \xE5 samle PR\xD8VER."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224463261589504
+    m_Localized: "N\xE5r du har samlet pr\xF8vene, kommer jeg for \xE5 hente deg
+      ut herfra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: "V\xE6r s\xE5 snill og ta vare p\xE5 deg selv, for du er v\xE5rt
+      eneste h\xE5p!"
     m_Metadata:
       m_Items: []
   references:

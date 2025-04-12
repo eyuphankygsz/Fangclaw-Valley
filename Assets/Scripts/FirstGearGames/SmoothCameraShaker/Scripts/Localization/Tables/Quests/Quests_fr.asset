@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650184884613120
-    m_Localized: "Souris D'entrep\xF4t"
+    m_Localized: Souris De Stockage
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: "Examinez l'entrep\xF4t."
+    m_Localized: Fouille Le Stockage.
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -133,6 +133,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: Explore La Salle Des Cartes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: "R\xE9cup\xE8re la CL\xC9 de la Petite Salle De Stockage dans la
+      GRILLE D'\xC9GOUT de la Cuisine."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Petit Cochon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: "Rat De Biblioth\xE8que"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: "Fouille la Biblioth\xE8que."
     m_Metadata:
       m_Items: []
   references:

@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 650184884613120
-    m_Localized: Lager Mus
+    m_Localized: Lagermus
     m_Metadata:
       m_Items: []
   - m_Id: 650564775309312
-    m_Localized: "Unders\xF8g lageret."
+    m_Localized: "Gennems\xF8g Lageret."
     m_Metadata:
       m_Items: []
   - m_Id: 653814996004864
@@ -132,6 +132,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 667663635705856
     m_Localized: "S\xF8g I Kortv\xE6relset."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671025294864384
+    m_Localized: "Hent N\xD8GLEN til Det Lille Opbevaringsrum fra AFL\xD8BSRISTEN
+      i K\xF8kkenet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 671020731461632
+    m_Localized: Lille Gris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029309178306560
+    m_Localized: Bogorm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029312428892160
+    m_Localized: "Unders\xF8g Biblioteket."
     m_Metadata:
       m_Items: []
   references:

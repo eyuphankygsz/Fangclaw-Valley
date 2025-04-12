@@ -24,12 +24,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 57227675353088
-    m_Localized: "<color=#9B111E>KUTULARI</color> k\u0131rmak i\xE7in <color=#6FB7D6>\"$primary_key\"</color>
-      ile <color=#D47F36>ELLER\u0130N\u0130</color> <color=#C4A000>KULLANAB\u0130L\u0130RS\u0130N</color>."
+    m_Localized: "<color=#FFB45B>Gaz Lambas\u0131n\u0131</color> yakabilmek i\xE7in
+      <color=#E688FF>K\u0130BR\u0130T</color> ve <color=#E688FF>GAZ YA\u011EI</color>
+      bulmaya ihtiyac\u0131n var."
     m_Metadata:
       m_Items: []
   - m_Id: 68442363445248
-    m_Localized: "Derhal devam etmek i\xE7in herhangi bir tu\u015Fa bas\u0131n\u0131z..."
+    m_Localized: "Devam etmek i\xE7in bir tu\u015Fa bas\u0131n\u0131z..."
     m_Metadata:
       m_Items: []
   - m_Id: 148327882735616
@@ -46,17 +47,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1841791259295744
-    m_Localized: "<color=#75A8FF>\"$inter_key\"</color> tu\u015Funa basarak <color=#93FF7A>ED\u0130NEB\u0130L\u0130RS\u0130N</color>
-      <color=#E688FF>E\u015Fyalar\u0131</color> veya <color=#93FF7A>ETK\u0130LE\u015E\u0130ME
-      G\u0130REB\u0130L\u0130RS\u0130N</color> <color=#FF4545>\xC7evreyle</color>."
+    m_Localized: "<color=#6FB7D6>\"$inter_key\"</color> tu\u015Funa basarak <color=#C4A000>ED\u0130NEB\u0130L\u0130RS\u0130N</color>
+      <color=#735D94>E\u015Fyalar</color> veya <color=#C4A000>ETK\u0130LE\u015E\u0130ME
+      GE\xC7EB\u0130L\u0130RS\u0130N</color> <color=#9B111E>\xC7evreyle</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 2151958932799488
-    m_Localized: "<color=#99FFF1>Dikkatini Odaklayarak</color>, \xE7evrendeki <color=#F7FFA3>Etkile\u015Fime
-      A\xE7\u0131k Objeleri</color> <color=#93FF7A>Ay\u0131rt Edebilirsin</color>.
-      Bunu yapmak i\xE7in, <color=#93FF7A>KULLAN</color> <color=#75A8FF>\"$scan_env\"</color>
+    m_Localized: "<color=#AA4074>Dikkatini Odaklayarak</color>, \xE7evrendeki <color=#735D94>Etkile\u015Fime
+      A\xE7\u0131k Objeleri</color> <color=#C4A000>Ay\u0131rt Edebilirsin</color>.
+      Bunu yapmak i\xE7in, <color=#C4A000>KULLAN</color> <color=#6FB7D6>\"$scan_env\"</color>
       tu\u015Funu. Ancak unutma, bu yetenek <color=#7A85FF>Dayan\u0131kl\u0131l\u0131\u011F\u0131n\u0131</color>
-      b\xFCy\xFCk \xF6l\xE7\xFCde <color=#93FF7A>T\xDCKETECEKT\u0130R</color>."
+      b\xFCy\xFCk \xF6l\xE7\xFCde <color=#C4A000>T\xDCKETECEKT\u0130R</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 21320435609100288

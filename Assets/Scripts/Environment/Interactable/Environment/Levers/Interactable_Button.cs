@@ -1,5 +1,4 @@
 using DG.Tweening;
-using FirstGearGames.SmoothCameraShaker.Demo;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -53,10 +52,11 @@ public class Interactable_Button : Interactable
 	}
 	private IEnumerator WorkRoutine()
 	{
+		PlayAudio(_turnOnSfx);
+
 		while (!_collider.enabled)
 			yield return null;
 
-		_src.PlayOneShot(_turnOnSfx);
 		_trueEvents?.Invoke();
 	}
 
@@ -69,10 +69,10 @@ public class Interactable_Button : Interactable
 	}
 	private IEnumerator StopRoutine()
 	{
+		PlayAudio(_turnOffSfx);
 		while (!_collider.enabled)
 			yield return null;
 
-		_src.PlayOneShot(_turnOffSfx);
 		_falseEvents?.Invoke();
 	}
 
@@ -80,9 +80,14 @@ public class Interactable_Button : Interactable
 	private void AnimComplete()
 	{
 		_src.Stop();
+		Debug.Log("STOPPPP AUDIO OMGG UR SO GAYYY");
 		_collider.enabled = true;
 	}
-
+	private void PlayAudio(AudioClip clip)
+	{
+		_src.clip = clip;
+		_src.Play();
+	}
 
 	public override void SetStatusManually(bool on)
 	{

@@ -19,36 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10150395904
-    m_Localized: Lo siento, Baxter, pero tuve que hacer esto...
+    m_Localized: "Lo siento, Baxter, pero ten\xEDa que hacer esto."
     m_Metadata:
       m_Items: []
   - m_Id: 34166980608
-    m_Localized: "\xA1Las barricadas que construimos solo pueden contener a los monstruos
-      por muy poco tiempo!"
+    m_Localized: "\xA1Albion, hijo de puta! \xBF\xA1Qu\xE9 se supone que significa
+      esto!?"
     m_Metadata:
       m_Items: []
   - m_Id: 43365089280
-    m_Localized: "\xA1Por eso te necesitamos! \xA1Por toda la humanidad!"
+    m_Localized: "Baxter... Ojal\xE1 hubiera otra forma, pero... Esta es nuestra
+      \xFAnica oportunidad."
     m_Metadata:
       m_Items: []
   - m_Id: 50887674478592
-    m_Localized: "\xA1Este sacrificio que has hecho salvar\xE1 al mundo entero!"
+    m_Localized: "\xA1Cuando salga de aqu\xED, desear\xE1s no haber nacido nunca!"
     m_Metadata:
       m_Items: []
   - m_Id: 50897430429696
-    m_Localized: "Adem\xE1s, la vida de tu querida esposa Evelynn depende de ello."
+    m_Localized: "Este sacrificio que estamos haciendo salvar\xE1 al mundo entero.
+      Adem\xE1s, la vida de tu querida esposa Evelynn podr\xEDa depender de ello."
     m_Metadata:
       m_Items: []
   - m_Id: 1005066983227392
-    m_Localized: "Lo \xFAnico que te pedimos es que recojas MUESTRAS."
+    m_Localized: "\xA1No te atrevas a decir su nombre!"
     m_Metadata:
       m_Items: []
   - m_Id: 1005258302210048
-    m_Localized: "Estar\xE9 aqu\xED todas las ma\xF1anas entre las 6 y las 8."
+    m_Localized: "\xA1Esa es la verdad! Mira, lo \xFAnico que necesitamos de ti es
+      recoger MUESTRAS."
     m_Metadata:
       m_Items: []
-  - m_Id: 1005327965405184
-    m_Localized: "\xA1Nos vemos ma\xF1ana!"
+  - m_Id: 38224463261589504
+    m_Localized: "Una vez que recojas las muestras, vendr\xE9 a sacarte de aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38224471444676608
+    m_Localized: "Por favor, cu\xEDdate porque eres nuestra \xFAnica oportunidad."
     m_Metadata:
       m_Items: []
   references:
