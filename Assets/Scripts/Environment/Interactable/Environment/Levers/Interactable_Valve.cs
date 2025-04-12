@@ -59,12 +59,13 @@ public class Interactable_Valve : Interactable
 			yield return null;
 		}
 		_currentRot = _rotateAngle;
+		_trueEvents?.Invoke();
 		SetRotation();
 
 	}
 	private void SetRotation()
 	{
-		transform.rotation = Quaternion.Euler(0, 0, _currentRot);
+		transform.localRotation = Quaternion.Euler(0, 0, _currentRot);
 	}
 
 	private void Stop()
@@ -74,6 +75,7 @@ public class Interactable_Valve : Interactable
 	}
 	private IEnumerator BackToNormal()
 	{
+		_falseEvents?.Invoke();
 		while (_currentRot > 0)
 		{
 			_currentRot -= _rotateSpeed * Time.deltaTime;

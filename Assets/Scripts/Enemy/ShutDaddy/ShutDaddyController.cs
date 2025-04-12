@@ -18,9 +18,10 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 	[SerializeField]
 	private EnemyStateMachine _machine;
 	[SerializeField]
-	private MonoBehaviour _startState, _escapeState, _followState, _attackState;
+	private MonoBehaviour _startState, _escapeState, _followState, _attackState, _deadState;
 
-
+	public Transform CurrentEscapePoint;
+	public bool CanHit;
 	private EnemyAttackController _enemyAttackController;
 
 	public bool Stop;
@@ -28,6 +29,10 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 	public bool DiscardTime { get; set; }
 	public bool IsOnChase { get; set; }
 	public EnemyStateMachine StateMachine { get; set; }
+
+	[SerializeField]
+	private AudioSource _src;
+	private AudioClip _hurtSFX;
 
 	[Inject]
 	private GameManager _gameManager;
@@ -74,6 +79,21 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 		_agent.destination = transform.position;
 		_machine.SetCurrentState(_escapeState as IEnemyState);
 		Stunned = true;
+	}
+	private int _health = 3;
+	public void TryGetHit(Transform tf)
+	{
+		if (_health != 0 && tf == CurrentEscapePoint)
+		{
+			_src.clip = _hurtSFX;
+			_src.Play();
+
+			_health--;
+			if (_health == 0)
+			{
+				_machine.SetCurrentState(_deadState as IEnemyState);
+			}
+		}
 	}
 	public void StopShined()
 	{

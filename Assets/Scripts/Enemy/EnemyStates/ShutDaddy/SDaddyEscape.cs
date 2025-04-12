@@ -46,6 +46,8 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 
 	private bool _entered, _animationPlayed, _spawnCheck;
 
+	private Coroutine _routine;
+
 	[SerializeField]
 	private IEnemyController _controller;
 
@@ -89,6 +91,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 			{
 				_agent.SetDestination(escapePoint.Key.position);
 				_selectedEscape = escapePoint.Key;
+				(_controller as ShutDaddyController).CurrentEscapePoint = _selectedEscape;
 				return;
 			}
 		}
@@ -97,6 +100,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 
 	public void ExitState()
 	{
+		StopCoroutine(_routine);
 		_collider.enabled = true;
 		_renderer.enabled = true;
 
@@ -122,6 +126,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 			{
 				if (CheckExitAnimation("Escape"))
 				{
+					(_controller as ShutDaddyController).CanHit = true;
 					_entered = true;
 					_animationPlayed = false;
 				}
@@ -137,13 +142,18 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 			{
 				_spawnCheck = true;
 				_agent.enabled = false;
-				StartCoroutine(WaitForRespawn());
+
+				if (_routine != null)
+					StopCoroutine(_routine);
+				
+				_routine = StartCoroutine(WaitForRespawn());
 			}
 
 			if (_spawnCheck)
 			{
 				if (CheckExitAnimation("Spawn") && !_isSpawned.CheckCondition())
 				{
+					(_controller as ShutDaddyController).CanHit = false;
 					_isSpawned.SetSpawned(true);
 				}
 			}
@@ -155,7 +165,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	private IEnumerator WaitForRespawn()
 	{
 		_renderer.enabled = false;
-		yield return new WaitForSeconds(Random.Range(5, 8));
+		yield return new WaitForSeconds(Random.Range(5, 6.5f));
 		_renderer.enabled = true;
 		Transform closestPoint = null;
 		Transform pathable = null;
@@ -212,7 +222,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 
 		if (_selectedEscape != null)
 			_agent.transform.rotation = _selectedEscape.rotation;
-		
+
 		_animator.SetBool("Escape", true);
 		_animator.SetBool("RunAway", false);
 		_audioSource.Stop();
