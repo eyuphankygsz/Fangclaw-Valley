@@ -64,6 +64,7 @@ public class SDaddyFollow : MonoBehaviour, IEnemyState
 			_audioSource.clip = _sawYou;
 			_audioSource.Play();
 		}
+		_agent.SetDestination(_target.position);
 	}
 
 	public void ExitState()

@@ -43,6 +43,8 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	private EnemyStateMachine _stateMachine;
 	[SerializeField]
 	private IsSpawned _isSpawned;
+	[SerializeField]
+	private RandomizeEscape _randomizeEscape;
 
 	private bool _entered, _animationPlayed, _spawnCheck;
 
@@ -71,28 +73,40 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 
 		_animator.SetBool("RunAway", true);
 
-		List<KeyValuePair<Transform, float>> escapePointsWithDistances = new List<KeyValuePair<Transform, float>>();
-
-		for (int i = 0; i < _escapes.Length; i++)
+		if (_randomizeEscape.CheckCondition())
 		{
-			float distance = Vector3.Distance(_escapes[i].position, transform.position);
-			escapePointsWithDistances.Add(new KeyValuePair<Transform, float>(_escapes[i], distance));
+			int index = Random.Range(4, 9);
+			_agent.SetDestination(_escapes[index].position);
+			_selectedEscape = _escapes[index];
+			(_controller as ShutDaddyController).CurrentEscapePoint = _selectedEscape;
+			return;
 		}
-		escapePointsWithDistances.Sort((x, y) => x.Value.CompareTo(y.Value));
-
-
-		foreach (var escapePoint in escapePointsWithDistances)
+		else
 		{
-			NavMeshPath path = new NavMeshPath();
-			bool pathFound = _agent.CalculatePath(escapePoint.Key.position, path);
 
-			// Check if the path is valid and complete
-			if (pathFound && path.status == NavMeshPathStatus.PathComplete)
+			List<KeyValuePair<Transform, float>> escapePointsWithDistances = new List<KeyValuePair<Transform, float>>();
+
+			for (int i = 0; i < _escapes.Length; i++)
 			{
-				_agent.SetDestination(escapePoint.Key.position);
-				_selectedEscape = escapePoint.Key;
-				(_controller as ShutDaddyController).CurrentEscapePoint = _selectedEscape;
-				return;
+				float distance = Vector3.Distance(_escapes[i].position, transform.position);
+				escapePointsWithDistances.Add(new KeyValuePair<Transform, float>(_escapes[i], distance));
+			}
+			escapePointsWithDistances.Sort((x, y) => x.Value.CompareTo(y.Value));
+
+
+			foreach (var escapePoint in escapePointsWithDistances)
+			{
+				NavMeshPath path = new NavMeshPath();
+				bool pathFound = _agent.CalculatePath(escapePoint.Key.position, path);
+
+				// Check if the path is valid and complete
+				if (pathFound && path.status == NavMeshPathStatus.PathComplete)
+				{
+					_agent.SetDestination(escapePoint.Key.position);
+					_selectedEscape = escapePoint.Key;
+					(_controller as ShutDaddyController).CurrentEscapePoint = _selectedEscape;
+					return;
+				}
 			}
 		}
 		Debug.LogWarning("No valid path found to any escape point.");
@@ -100,7 +114,9 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 
 	public void ExitState()
 	{
-		StopCoroutine(_routine);
+		if (_routine != null)
+			StopCoroutine(_routine);
+
 		_collider.enabled = true;
 		_renderer.enabled = true;
 
@@ -145,7 +161,7 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 
 				if (_routine != null)
 					StopCoroutine(_routine);
-				
+
 				_routine = StartCoroutine(WaitForRespawn());
 			}
 
@@ -155,6 +171,9 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 				{
 					(_controller as ShutDaddyController).CanHit = false;
 					_isSpawned.SetSpawned(true);
+
+					if (_randomizeEscape.CheckCondition())
+						_stateMachine.SetCurrentState("Follow");
 				}
 			}
 
@@ -167,49 +186,60 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 		_renderer.enabled = false;
 		yield return new WaitForSeconds(Random.Range(5, 6.5f));
 		_renderer.enabled = true;
-		Transform closestPoint = null;
-		Transform pathable = null;
 
-		float minDistance = 0;
 
-		foreach (var escapePoint in _escapes)
+		if (_randomizeEscape.CheckCondition())
 		{
 			_agent.enabled = false;
-			_enemy.transform.position = escapePoint.position;
+			_enemy.transform.position = _escapes[Random.Range(4, 9)].position;
 			_agent.enabled = true;
+		}
+		else
+		{
+			Transform closestPoint = null;
+			Transform pathable = null;
+			float minDistance = 0;
 
-			NavMeshPath path = new NavMeshPath();
-			bool pathFound = _agent.CalculatePath(_player.position, path);
-
-			if (closestPoint == null)
+			foreach (var escapePoint in _escapes)
 			{
-				if (pathFound && path.status == NavMeshPathStatus.PathComplete)
-					pathable = escapePoint;
+				_agent.enabled = false;
+				_enemy.transform.position = escapePoint.position;
+				_agent.enabled = true;
 
+				NavMeshPath path = new NavMeshPath();
+				bool pathFound = _agent.CalculatePath(_player.position, path);
 
-				closestPoint = escapePoint;
-				minDistance = Vector3.Distance(escapePoint.position, _player.position);
-				continue;
-			}
-			else
-			{
-				float newDistance = Vector3.Distance(escapePoint.position, _player.position);
-				if (newDistance < minDistance)
+				if (closestPoint == null)
 				{
 					if (pathFound && path.status == NavMeshPathStatus.PathComplete)
 						pathable = escapePoint;
 
-					closestPoint = escapePoint;
-					minDistance = newDistance;
 
+					closestPoint = escapePoint;
+					minDistance = Vector3.Distance(escapePoint.position, _player.position);
+					continue;
+				}
+				else
+				{
+					float newDistance = Vector3.Distance(escapePoint.position, _player.position);
+					if (newDistance < minDistance)
+					{
+						if (pathFound && path.status == NavMeshPathStatus.PathComplete)
+							pathable = escapePoint;
+
+						closestPoint = escapePoint;
+						minDistance = newDistance;
+
+					}
 				}
 			}
 
-
+			_agent.enabled = false;
+			_enemy.transform.position = pathable == null ? closestPoint.position : pathable.position;
+			_agent.enabled = true;
 		}
-		_agent.enabled = false;
-		_enemy.transform.position = pathable == null ? closestPoint.position : pathable.position;
-		_agent.enabled = true;
+
+
 
 		_animator.SetBool("Spawn", true);
 		_animator.SetBool("Escape", false);

@@ -22,6 +22,7 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 
 	public Transform CurrentEscapePoint;
 	public bool CanHit;
+
 	private EnemyAttackController _enemyAttackController;
 
 	public bool Stop;
@@ -32,6 +33,7 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 
 	[SerializeField]
 	private AudioSource _src;
+	[SerializeField]
 	private AudioClip _hurtSFX;
 
 	[Inject]
@@ -56,8 +58,10 @@ public class ShutDaddyController : MonoBehaviour, IEnemyController
 
 	public void SetPosition(Transform tf)
 	{
+		_agent.enabled = false;
 		transform.position = tf.position;
 		transform.rotation = tf.rotation;
+		_agent.enabled = true;
 	}
 	public void FollowPlayer()
 	{

@@ -57,7 +57,7 @@ public class EnemyAttackController : MonoBehaviour
 		
 		if(_collisionRoutine != null) 
 			StopCoroutine(_collisionRoutine);
-		Physics.IgnoreLayerCollision(gameObject.layer, _layer, true);
+		Physics.IgnoreLayerCollision(gameObject.layer, 6, true);
 		_collisionRoutine = StartCoroutine(CollisionTimer());
 		
 		if (_punchClips.Length != 0)
