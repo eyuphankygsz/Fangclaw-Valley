@@ -21,6 +21,7 @@ public class ShineMode : MonoBehaviour
 	private SteamAchievements _achievements;
 
 	private IEnemyController _lastHit;
+	private Interactable_LightMe _lastLightMe;
 
 	public void ExecuteModeUpdate()
 	{
@@ -52,28 +53,53 @@ public class ShineMode : MonoBehaviour
 					{
 						StopShine();
 						_hitBool = false;
+
+						if (hit.transform.TryGetComponent<Interactable_LightMe>(out Interactable_LightMe lightme))
+						{
+							_hit = hit;
+
+							if (_lastLightMe != lightme && _lastLightMe != null)
+								_lastLightMe.OnStopInteract(Enum_Weapons.Lantern);
+
+							_lastLightMe = lightme;
+							lightme.OnInteract(Enum_Weapons.Lantern);
+						}
+						else if (_lastLightMe != null)
+						{
+							_lastLightMe.OnStopInteract(Enum_Weapons.Lantern);
+							_lastLightMe = null;
+						}
 					}
+
+					
 				}
 				else
 				{
 					StopShine();
 				}
 			}
-			else
-			{
-				StopShine();
-			}
-
 		}
 		else
 		{
+			if (_lastLightMe != null)
+			{
+				_lastLightMe.OnStopInteract(Enum_Weapons.Lantern);
+				_lastLightMe = null;
+			}
 			_hitBool = false;
 			StopShine();
 		}
+
 	}
 
 	public void StopMode()
 	{
+		if (_lastLightMe != null)
+		{
+			_lastLightMe.OnStopInteract(Enum_Weapons.Lantern);
+			_lastLightMe = null;
+		}
+
 		StopShine();
 	}
 	private void StopShine()

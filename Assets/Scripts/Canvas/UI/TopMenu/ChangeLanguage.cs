@@ -1,13 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using TMPro;
-using UnityEditor.Localization;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
-using UnityEngine.Localization.Tables;
-using UnityEngine.TextCore.Text;
 
 public class ChangeLanguage : Setting
 {

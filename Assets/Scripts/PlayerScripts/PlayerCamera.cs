@@ -1,4 +1,6 @@
 using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using UnityEngine;
 using Zenject;
 
@@ -15,11 +17,13 @@ public class PlayerCamera : MonoBehaviour
 	[Inject]
 	private GameManager _gameManager;
 
-	private bool _force;
+	private bool _force, _inspecting;
 
 	private bool _randomMoveBool, _lockHelper;
 
 	public bool LockRandom;
+
+	private TweenerCore<Quaternion, Quaternion, NoOptions> _tw1, _tw2;
 	private void Awake()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
@@ -33,6 +37,7 @@ public class PlayerCamera : MonoBehaviour
 	private void Start()
 	{
 		_gameManager.OnForce += Force;
+		_gameManager.OnInspecting += Inspecting;
 	}
 	private void Force(bool force)
 	{
@@ -41,9 +46,24 @@ public class PlayerCamera : MonoBehaviour
 
 		_force = force;
 	}
+	private void Inspecting(bool inspect)
+	{
+		_inspecting = inspect;
+		
+		if (inspect)
+		{
+			if (_tw1 != null)
+			{
+				_tw1.Kill();
+				_tw2.Kill();
+			}
+
+			_randomMoveBool = false;
+		}
+	}
 	public void ManageRotate()
 	{
-		if (_force) return;
+		if (_force || _inspecting) return;
 
 		if (!_randomMoveBool && !LockRandom)
 		{
@@ -51,7 +71,7 @@ public class PlayerCamera : MonoBehaviour
 			float randomY = Random.Range(-1f, 1f); // Daha küçük ve kontrollü dikey sallantý
 			_lockHelper = false;
 
-			_cameraHolderBase
+			_tw1 = _cameraHolderBase
 				.DOLocalRotateQuaternion(
 					Quaternion.Euler(randomX, randomY, 0),
 					Random.Range(1.2f, 1.5f) // Hýzlý ama doðal bir süre
@@ -63,7 +83,7 @@ public class PlayerCamera : MonoBehaviour
 					randomX = Random.Range(-1f, 1f);
 					randomY = Random.Range(-1f, 1f); ;
 
-					_cameraHolderBase
+					_tw2 = _cameraHolderBase
 						.DOLocalRotateQuaternion(Quaternion.Euler(randomX, randomY, 0), Random.Range(1.2f, 1.5f))
 						.SetEase(Ease.InOutSine)
 						.OnComplete(RandomComplete); // Döngüyü devam ettir
@@ -76,7 +96,7 @@ public class PlayerCamera : MonoBehaviour
 			_cameraHolderBase.DOPause();
 			_lockHelper = true;
 		}
-		else if(!LockRandom)
+		else if (!LockRandom)
 			_cameraHolderBase.DOPlay();
 
 		Vector2 cameraDirection = MouseDirection.Instance.GetCameraDirection();

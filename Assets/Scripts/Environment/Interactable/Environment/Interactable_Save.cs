@@ -11,6 +11,7 @@ public class Interactable_Save : Interactable
 	private GameManager _manager;
 	[SerializeField]
 	private Collider _collider;
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
 	{
 		base.Awake();
@@ -20,6 +21,7 @@ public class Interactable_Save : Interactable
 	{
 		_manager.OnChase += OnChase;
 	}
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 
 	private void OnChase(bool onChase)
 	{

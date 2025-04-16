@@ -8,7 +8,6 @@ public class FlowMachine : MonoBehaviour
 	[SerializeField]
 	private List<Flow> _flows;
 
-	private float _deltaTime = 0.0f;
 	[SerializeField]
 	private TextMeshProUGUI _tmp;
 

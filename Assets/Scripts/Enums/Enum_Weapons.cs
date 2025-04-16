@@ -4,5 +4,6 @@ public enum Enum_Weapons
     Lantern,
     DBShotgun,
     Notes,
-    Keycard1
+    Keycard1,
+    Keycard2
 }

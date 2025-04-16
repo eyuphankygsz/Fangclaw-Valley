@@ -99,7 +99,6 @@ public class QuestManager : MonoBehaviour
 			}
 
 			_savedData.Clear();
-			int i = 0;
 			foreach (var entry in dataWrapper.Entries)
 			{
 				type = Type.GetType(entry.TypeName);

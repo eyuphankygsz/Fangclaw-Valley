@@ -1,3 +1,6 @@
+using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,7 +9,6 @@ using Zenject;
 
 public class Interactable_CombinationManager : Interactable, IInputHandler
 {
-	private bool _isInspecting;
 	private bool _canTurn;
 	private bool _interacted;
 	private bool _unlocked;
@@ -26,6 +28,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	private Collider _collider;
 	[SerializeField]
 	private GameObject _lockCam;
+	private GameObject _playerCamObj;
 	private Camera _playerCam, _uiCam;
 	private ControlSchema _controls;
 
@@ -45,15 +48,31 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	[SerializeField]
 	private SteamAchievements _achievements;
 
+	private Vector3 _playerOriginalPos;
+
+
+	TweenerCore<Vector3, Vector3, VectorOptions> _moveTweener;
+	TweenerCore<Quaternion, Vector3, QuaternionOptions> _rotateTweener;
+
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword
 	private void Awake()
-#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
 	{
 		base.Awake();
 		_digits = new int[_code.Length];
 
 	}
+	private void Start()
+	{
+		base.Start();
 
+		_gameManager.OnChase += OnChase;
+	}
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
+	private void OnChase(bool onChase)
+	{
+		if (onChase)
+			_collider.enabled = false;
+	}
 	public override void OnInteract(Enum_Weapons weapon)
 	{
 		if (_unlocked) return;
@@ -61,32 +80,60 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		if (_playerCam == null)
 		{
 			_playerCam = Camera.main;
+			_playerCamObj = _playerCam.transform.parent.parent.gameObject;
+			_playerOriginalPos = _playerCamObj.transform.localPosition;
+
 			_uiCam = _playerCam.transform.GetChild(0).GetComponent<Camera>();
 		}
 
-		_interactEvents?.Invoke();
+		StopTweeners();
+		_moveTweener = _playerCamObj.transform.DOMove(_lockCam.transform.position, .6f);
+		_rotateTweener = _playerCamObj.transform.DORotate(_lockCam.transform.rotation.eulerAngles, .6f);
 
-		_interacted = true;
 		OnInputEnable(_inputManager.Controls);
+
+		_interactEvents?.Invoke();
+		_interacted = true;
 		Inspect(true);
 	}
 
+	private void StopInspect(InputAction.CallbackContext ctx)
+	{
+		if (ctx.performed)
+		{
+			if (!_canTurn)
+			{
+				_canTurn = true;
+				return;
+			}
+			StopTweeners();
+			_moveTweener = _playerCamObj.transform.DOLocalMove(_playerOriginalPos, .4f);
+			_rotateTweener = _playerCamObj.transform.DOLocalRotate(Vector3.zero, .4f);
+
+			OnInputDisable();
+			Inspect(false);
+			_interacted = false;
+		}
+	}
+	private void StopTweeners()
+	{
+		if (_moveTweener != null)
+		{
+			_moveTweener.Kill();
+			_rotateTweener.Kill();
+		}
+	}
 	private void Inspect(bool inspect)
 	{
-		if (!inspect)
-			OnInputDisable();
 		_canTurn = false;
 		if (!_interacted)
 			return;
 
-		_playerCam.enabled = _uiCam.enabled = !inspect;
+		_uiCam.enabled = !inspect;
 
-		_lightSource.SetActive(inspect);
-		_lockCam.SetActive(inspect);
-
-		_isInspecting = inspect;
+		//_lightSource.SetActive(inspect);
+		//_lockCam.SetActive(inspect);
 		_collider.enabled = !inspect;
-
 		_gameManager.Inspecting = inspect;
 
 	}
@@ -109,14 +156,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	{
 		_digits[id] = number;
 		CheckCode();
-	}
-	private void StartInspect()
-	{
-		Inspect(true);
-	}
-	private void StopInspect()
-	{
-		Inspect(false);
 	}
 
 	private void ChangeCombination(bool next)
@@ -158,18 +197,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		_lockedObject.Unlock(silent);
 	}
 
-	private void StopInspect(InputAction.CallbackContext ctx)
-	{
-		if (ctx.performed)
-		{
-			if (!_canTurn)
-			{
-				_canTurn = true;
-				return;
-			}
-			Inspect(false);
-		}
-	}
 	private void ChangeCombinationRight(InputAction.CallbackContext ctx)
 	{
 		if (ctx.performed)

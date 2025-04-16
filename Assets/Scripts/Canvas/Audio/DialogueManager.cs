@@ -14,7 +14,6 @@ public class DialogueManager : MonoBehaviour
 	[SerializeField]
 	private AudioSource _source;
 
-	private int _index = 0;
 	private List<AudioObject> _audioObjects = new List<AudioObject>();
 	private AudioObject _audioObject;
 

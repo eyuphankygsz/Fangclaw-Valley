@@ -34,7 +34,7 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 	private ControlSchema _controls;
 
 	private Coroutine _crouchRoutine;
-	private bool _crouching;
+	private bool _crouching, _pressed;
 
 	public bool Crouching { get { return _crouching; } }
 	public bool Crouched { get; private set; }
@@ -46,7 +46,7 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 
 	#region StateHandle
 	public void EnterState()
-	{ 
+	{
 
 	}
 	public void UpdateState()
@@ -65,6 +65,12 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 		_controller.Move(movement * Time.deltaTime);
 
 		_hideHelper.CheckHide();
+
+		if (!_pressed)
+		{
+			StartRunRoutine(_crouching);
+			_pressed = true;
+		}
 	}
 
 
@@ -141,7 +147,9 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 	{
 		_controls = schema;
 		_movementInput = schema.Player.Movement.ReadValue<Vector2>();
-		OnCrouchPerformed(new InputAction.CallbackContext());
+		_crouching = true; 
+		_pressed = false;
+
 		_controls.Player.Movement.performed += OnMovePerformed;
 		_controls.Player.Movement.canceled += OnMoveCanceled;
 
@@ -151,6 +159,7 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 
 	public void OnInputDisable()
 	{
+		
 		_controls.Player.Movement.performed -= OnMovePerformed;
 		_controls.Player.Movement.canceled -= OnMoveCanceled;
 
@@ -166,14 +175,18 @@ public class PlayerCrouchState : MonoBehaviour, IPlayerState, IInputHandler
 		=> _movementInput = Vector2.zero;
 	private void OnCrouchPerformed(InputAction.CallbackContext context)
 	{
+		Debug.Log("PERFORMED");
 		if (_crouching) return;
-		StartRunRoutine(true);
+		_pressed = false;
+		_crouching = true;
 	}
 
 	private void OnCrouchCanceled(InputAction.CallbackContext context)
 	{
+		Debug.Log("CANCELED");
 		if (!_crouching) return;
-		StartRunRoutine(false);
+		_pressed = false;
+		_crouching = false;
 	}
 	#endregion
 }

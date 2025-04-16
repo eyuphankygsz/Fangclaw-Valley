@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class CameraAnimator : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class CameraAnimator : MonoBehaviour
 	private string _animationName;
 	[SerializeField]
 	private PlayerForce _playerForce;
+
 	void Start()
 	{
 		_animator = GetComponent<Animator>();
