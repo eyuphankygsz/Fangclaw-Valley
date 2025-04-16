@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 public class Interactable_LightMe : Interactable
@@ -11,10 +12,11 @@ public class Interactable_LightMe : Interactable
 
 	[SerializeField]
 	private float _increaseSpeed, _decreaseSpeed, _maxTime, _currentTime;
-	private bool _full, _change;
+	private bool _full;
 
 	private Coroutine _routine;
-
+	[SerializeField]
+	private Image _fill;
 	public override void OnInteract(Enum_Weapons weapon)
 	{
 		base.OnInteract(weapon);
@@ -31,6 +33,13 @@ public class Interactable_LightMe : Interactable
 			StopCoroutine(_routine);
 
 		_routine = StartCoroutine(DecreaseRoutine());
+	}
+	private void ChangeFillAmount()
+	{
+		if (_fill == null)
+			return;
+
+		_fill.fillAmount = Mathf.InverseLerp(0, _maxTime, _currentTime);
 	}
 	private IEnumerator DecreaseRoutine()
 	{
@@ -64,6 +73,7 @@ public class Interactable_LightMe : Interactable
 				_full = false;
 			}
 		}
+		ChangeFillAmount();
 	}
 
 	public override GameData GetGameData()
