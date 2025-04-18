@@ -21,7 +21,6 @@ public class GhostlyPiggyController : MonoBehaviour, IEnemyController
 	private MonoBehaviour _startState, _escapeState, _followState;
 
 
-
 	public bool Stop;
 	public bool Stunned { get; set; }
 	public bool DiscardTime { get; set; }

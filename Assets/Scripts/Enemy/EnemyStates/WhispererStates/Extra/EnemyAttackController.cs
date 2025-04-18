@@ -71,7 +71,7 @@ public class EnemyAttackController : MonoBehaviour
 	private IEnumerator CollisionTimer()
 	{
 		yield return new WaitForSeconds(1);
-		Physics.IgnoreLayerCollision(gameObject.layer, _layer.value, false);
+		Physics.IgnoreLayerCollision(gameObject.layer, 6, false);
 	}
 	private void OnDrawGizmos()
 	{

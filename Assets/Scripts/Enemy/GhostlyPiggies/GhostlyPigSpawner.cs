@@ -27,6 +27,15 @@ public class GhostlyPigSpawner : MonoBehaviour
 	{
 		_spawnPointsOccupied = new bool[_spawnPoints.Length];
 	}
+	public void SetSpawnPoints(Transform tf)
+	{
+		_spawnPoints = new Transform[tf.childCount];
+		for (int i = 0; i < tf.childCount; i++)
+			_spawnPoints[i] = tf.GetChild(0);
+
+
+		_spawnPointsOccupied = new bool[_spawnPoints.Length];
+	}
 
 	private Transform GetNewPosition()
 	{
