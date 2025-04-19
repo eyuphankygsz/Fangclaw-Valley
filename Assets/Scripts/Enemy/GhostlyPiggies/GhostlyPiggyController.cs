@@ -39,6 +39,7 @@ public class GhostlyPiggyController : MonoBehaviour, IEnemyController
 
 	private void Awake()
 	{
+		_animator = GetComponent<Animator>();
 		_enemyAttackController = GetComponent<EnemyAttackController>();
 		StateMachine = GetComponent<EnemyStateMachine>();
 	}

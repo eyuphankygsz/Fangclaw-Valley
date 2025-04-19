@@ -61,7 +61,7 @@ public class WhispererHit : MonoBehaviour, IEnemyState
 		}
 
 		_animator.SetBool("Hit", true);
-		_controller.StartAnimationCheck("AttackNormal");
+		_controller.StartAnimationCheck("Hit");
 		_health.UpdateHealth(-1);
 	}
 
