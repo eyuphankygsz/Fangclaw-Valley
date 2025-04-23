@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class ShineMode : MonoBehaviour
 {
@@ -71,7 +72,7 @@ public class ShineMode : MonoBehaviour
 						}
 					}
 
-					
+
 				}
 				else
 				{
@@ -116,6 +117,41 @@ public class ShineMode : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		if (!gameObject.activeSelf) return;
+
+
+
+		//RaycastHit hit;
+		//if (Physics.SphereCast(_center.position, _halfExtents.x, _center.forward, out hit, _range, _enemyLayer))
+		//{
+		//	RaycastHit hitOthers;
+		//	_hit = hit;
+		//			Debug.Log("mal1");
+		//	_hitBool = true;
+		//	if (Physics.SphereCast(_center.position, _halfExtents.x, _center.forward, out hitOthers))
+		//	{
+		//		int layer = hitOthers.collider.gameObject.layer;
+		//		if ((_seeThrough.value & (1 << layer)) == 0)
+		//		{
+		//			_hit = hitOthers;
+		//			Debug.Log("mal2");
+		//		}
+		//	}
+		//}
+		//else if (Physics.SphereCast(_center.position, _halfExtents.x, _center.forward, out hit, _range))
+		//{
+		//	int layer = hit.collider.gameObject.layer;
+		//	if ((_seeThrough.value & (1 << layer)) == 0)
+		//	{
+		//		_hitBool = true;
+		//		Debug.Log("mal:::" + layer);
+		//		_hit = hit;
+		//	}
+		//	else
+		//	{
+		//		_hitBool = false;
+		//	}
+		//}
+
 
 		Gizmos.color = _hitBool ? Color.yellow : Color.red;
 

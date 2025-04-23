@@ -50,14 +50,11 @@ public class EnemyStateMachine : MonoBehaviour
 	public string GetCurrentStateName() => _states.First(x => x.Value == _currentState).Key;
 	public void SetCurrentState(string stateName)
 	{
-		Debug.Log("1");
 		if (!_init)
 		{
-		Debug.Log("2");
 			_init = true;
 			Start();
 		}
-		Debug.Log("3");
 		_controller.DiscardTime = true;
 		EnterState(GetState(stateName));
 	}
@@ -70,26 +67,31 @@ public class EnemyStateMachine : MonoBehaviour
 
 	private void EnterState(IEnemyState state)
 	{
-		if(_debugged)
-		Debug.Log("OLDSTATE: " + _currentState + " NEWSTATE: " + state);
+		if (_debugged)
+			Debug.Log("OLDSTATE: " + _currentState + " NEWSTATE: " + state);
+
+		_transitionList = state.GetTransitions();
+
 		_currentState?.ExitState();
 		_currentState = state;
 		_currentState.EnterState();
 
-		_transitionList = _currentState.GetTransitions();
 	}
 
 
 
 	private void CheckTransitions()
 	{
+
 		if (_transitionList == null)
 			return;
 
-		foreach (var transition in _transitionList.Transitions)
-		{
-			bool canChange = true;
 
+		for (int i = 0; i < _transitionList.Transitions.Count; i++)
+		{
+			var transition = _transitionList.Transitions[i];
+
+			bool canChange = true;
 			foreach (var item in transition.Conditions)
 			{
 				if (item.Condition.CheckCondition() != item.IsTrue)
