@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using Zenject;
 
@@ -14,13 +15,17 @@ public class Interactable_LightMe : Interactable
 	private float _increaseSpeed, _decreaseSpeed, _maxTime, _currentTime;
 	private bool _full, _onWait;
 
-	private Coroutine _routine;
+	private Coroutine _routine, _ticksRoutine;
+
+	[SerializeField]
+	private UnityEvent _ticksEvents, _ticksDoneEvents, _ticksResetEvents;
+
 	[SerializeField]
 	private Image _fill;
 
 	[SerializeField]
 	private float _decreaseWaitTime = 3f, _restoreWaitTime = 10;
-	private WaitForSeconds _decreaseWFS, _restoreWFS;
+	private WaitForSeconds _decreaseWFS, _restoreWFS, _oneWFS = new WaitForSeconds(1);
 	private void Awake()
 	{
 		base.Awake();
@@ -56,8 +61,13 @@ public class Interactable_LightMe : Interactable
 	private IEnumerator DecreaseRoutine()
 	{
 		bool wasFul = _full;
+		if (_ticksRoutine != null)
+			StopCoroutine(_ticksRoutine);
+
+
 		if (_full)
 		{
+			_ticksRoutine = StartCoroutine(TicksRoutine());
 			yield return _decreaseWFS;
 			wasFul = true;
 		}
@@ -73,7 +83,16 @@ public class Interactable_LightMe : Interactable
 			_onWait = false;
 		}
 	}
-
+	private IEnumerator TicksRoutine()
+	{
+		while (_currentTime >= 1)
+		{
+			yield return _oneWFS;
+			Debug.Log(_currentTime);
+			_ticksEvents?.Invoke();
+		}
+		_ticksDoneEvents?.Invoke();
+	}
 	public void ChangeBattery(float speed)
 	{
 		_currentTime += speed * Time.deltaTime;
