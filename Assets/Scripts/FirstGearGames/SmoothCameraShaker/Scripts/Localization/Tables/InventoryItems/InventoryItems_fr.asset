@@ -150,6 +150,15 @@ MonoBehaviour:
       capable de dissoudre l\u2019or. Dangereux, mais extr\xEAmement puissant."
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: "Carte Cl\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: "Une cl\xE9 \xE9trange ressemblant \xE0 une carte. Je suppose que
+      je dois la mettre dans un appareil."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

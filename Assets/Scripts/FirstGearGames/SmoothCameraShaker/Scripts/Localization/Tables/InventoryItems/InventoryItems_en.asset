@@ -150,6 +150,14 @@ MonoBehaviour:
       gold. Dangerous, yet incredibly powerful.
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: Keycard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: A strange, card-looking key. I suppose I have to put it in a device.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

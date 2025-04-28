@@ -149,6 +149,15 @@ MonoBehaviour:
       Farligt, men utroligt kraftfuldt."
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: Adgangskort
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: "En m\xE6rkelig n\xF8gle, der ligner et kort. Jeg formoder, at jeg
+      skal s\xE6tte den i en enhed."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -152,6 +152,15 @@ MonoBehaviour:
       feloldja. Vesz\xE9lyes, de rendk\xEDv\xFCl er\u0151s."
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: "Bel\xE9p\u0151k\xE1rtya"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: "Egy furcsa, k\xE1rtyaszer\u0171 kulcs. Azt hiszem, be kell helyeznem
+      egy eszk\xF6zbe."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -151,6 +151,15 @@ MonoBehaviour:
       Farlig men mycket kraftfull."
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: Nyckelkort
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: "En konstig nyckel som ser ut som ett kort. Jag antar att jag m\xE5ste
+      s\xE4tta in den i en enhet."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

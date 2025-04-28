@@ -23,7 +23,7 @@ public class PlayerIdleState : MonoBehaviour, IPlayerState
 	public void UpdateState()
 	{
 		Vector3 move = Vector3.zero;
-		move.y = _gravity.CalculateGravity();
+		move.y = _gravity.CalculateGravity() * Time.deltaTime;
 		_controller.Move(move);
 	}
 

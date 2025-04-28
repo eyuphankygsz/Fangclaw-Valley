@@ -149,6 +149,15 @@ MonoBehaviour:
       Farlig, men utrolig kraftig."
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: "N\xF8kkelkort"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: "En merkelig n\xF8kkel som ser ut som et kort. Jeg antar at jeg
+      m\xE5 sette den inn i en enhet."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

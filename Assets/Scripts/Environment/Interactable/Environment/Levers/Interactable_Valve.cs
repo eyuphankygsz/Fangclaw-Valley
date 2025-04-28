@@ -5,7 +5,8 @@ using UnityEngine.Events;
 
 public class Interactable_Valve : Interactable
 {
-	public bool _oneTimeDone;
+	[SerializeField]
+	private bool _oneTimeDone;
 	private bool _isDone;
 	private ControlSchema _controls;
 
@@ -24,6 +25,7 @@ public class Interactable_Valve : Interactable
 	[SerializeField]
 	private bool _rotating;
 
+	[SerializeField]
 	private bool _lock;
 	private Coroutine _routine;
 
@@ -48,6 +50,9 @@ public class Interactable_Valve : Interactable
 
 	private void Work()
 	{
+		if (_oneTimeDone && _isDone)
+			return;
+
 		_routine = StartCoroutine(WorkRoutine());
 	}
 	private IEnumerator WorkRoutine()

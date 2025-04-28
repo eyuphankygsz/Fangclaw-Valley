@@ -687,7 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecfb618e81f193b4bb345d999df54410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _language: {fileID: 0}
+  _language: {fileID: 143631865}
   _standartFontAsset: {fileID: 11400000, guid: ed1bfb4d9b8f34d4da254a3e7c8d0725, type: 2}
   _changeSettingStrings: []
   _localeFonts:

@@ -150,6 +150,15 @@ MonoBehaviour:
       Gevaarlijk, maar buitengewoon krachtig.
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: Toegangspas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: Een vreemde, kaartachtig uitziende sleutel. Ik veronderstel dat
+      ik hem in een apparaat moet steken.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

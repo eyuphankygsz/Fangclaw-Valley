@@ -149,6 +149,15 @@ MonoBehaviour:
       l\u2019oro. Pericolosa, ma estremamente potente."
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: Tessera Chiave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: Una strana chiave che assomiglia a una carta. Suppongo di doverla
+      inserire in un dispositivo.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

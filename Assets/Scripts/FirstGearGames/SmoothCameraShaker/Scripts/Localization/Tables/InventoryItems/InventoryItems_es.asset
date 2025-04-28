@@ -147,6 +147,15 @@ MonoBehaviour:
       de disolver el oro. Peligrosa, pero extremadamente poderosa."
     m_Metadata:
       m_Items: []
+  - m_Id: 89818710965141504
+    m_Localized: Tarjeta Llave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89820695504273408
+    m_Localized: "Una extra\xF1a llave con apariencia de tarjeta. Supongo que debo
+      insertarla en un dispositivo."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

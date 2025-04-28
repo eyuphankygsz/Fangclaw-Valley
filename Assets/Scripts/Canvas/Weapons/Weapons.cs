@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 using Zenject;
@@ -10,7 +11,7 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	[SerializeField] protected Enum_Weapons _weaponEnum; // Daha sonra weapon class ekle (Attackable)
 	[SerializeField] protected float _rayLength;
 	[SerializeField] protected float _rayRotation;
-	[SerializeField] protected float _ySpeed;
+	[SerializeField] protected float _yMoveDuration;
 	[SerializeField] protected LayerMask _interactableLayers;
 	[SerializeField] protected Sprite _weaponCross;
 	[SerializeField] protected AudioSource _source;
@@ -18,8 +19,8 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	public bool IsPicked;
 	public bool CanChange = true;
 
-	protected Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
-	protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
+	[SerializeField] protected Vector2 _xLimit = new Vector2(-1.2f, 1.8f);
+	[SerializeField] protected Vector2 _yLimit = new Vector2(-0.2f, 1.2f);
 	protected Transform _pivot, _camera;
 	protected GameObject _hitObject;
 	protected Animator _animator;
@@ -29,9 +30,8 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	protected ControlSchema _controls;
 	protected Vector2 _startPos;
 
-	private float _xPolynomial = -1.376f;
-	private float _xPolyStart;
 	private float _xPos;
+	private bool _moveUp, _waitMove;
 
 	[Inject]
 	protected WeaponHelpers _weaponHelpers;
@@ -57,7 +57,6 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	{
 		_pivot = transform.parent;
 		_startPos = _pivot.transform.localPosition;
-		_xPolyStart = _xPolynomial;
 		_xPos = _startPos.x;
 		_camera = Camera.main.transform;
 		_animator = GetComponent<Animator>();
@@ -91,15 +90,17 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 				_forceSaved = false;
 			return;
 		}
-		float y = GetYPos();
 
-		_pivot.transform.localPosition = new Vector3(_xPos, _startPos.y, 0) + (Vector3.up * y);
-		_xPolynomial += _ySpeed * Time.deltaTime;
+		if (!_waitMove)
+			TryMoveTo();
+	}
+	private void TryMoveTo()
+	{
+		Debug.Log("TryMoveTo");
+		_waitMove = true;
+		_moveUp = !_moveUp;
 
-		if (y < _yLimit.x)
-		{
-			_xPolynomial = _xPolyStart;
-		}
+		_pivot.transform.DOLocalMoveY(_moveUp ? _yLimit.y : _yLimit.x, _yMoveDuration).OnComplete(() => _waitMove = false).SetEase(Ease.InOutSine);
 	}
 	protected void X_Movement()
 	{
@@ -141,14 +142,11 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 		return _weaponEnum;
 	}
 	protected IEnumerator EndAction() { yield return _actionSleep; _onAction = false; }
-	private float GetYPos()
-	{
-		return (-Mathf.Pow(_xPolynomial, 2) / 1.5f) - (_xPolynomial / 10) + 1.2f;
-	}
+
 	public abstract void SetWeaponControls(bool setEnable);
 	private void OnDrawGizmos()
 	{
-		if (_camera == null) 
+		if (_camera == null)
 			_camera = Camera.main.transform;
 
 		Gizmos.color = Color.red;
