@@ -152,6 +152,18 @@ MonoBehaviour:
     m_Localized: "Keresd meg a K\xF6nyvt\xE1rat."
     m_Metadata:
       m_Items: []
+  - m_Id: 9052230318944256
+    m_Localized: "Az Elrabl\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052365300035584
+    m_Localized: "Kutasd \xE1t a ter\xFCletet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052369418842112
+    m_Localized: "Menek\xFCl\xE9s A Pr\xF3bat\xE9telb\u0151l"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

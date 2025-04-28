@@ -151,6 +151,18 @@ MonoBehaviour:
     m_Localized: "Unders\xF8k Biblioteket."
     m_Metadata:
       m_Items: []
+  - m_Id: 9052230318944256
+    m_Localized: Kidnappingen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052365300035584
+    m_Localized: "Let gjennom omr\xE5det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052369418842112
+    m_Localized: "Flukt Fra Pr\xF8velse"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -152,6 +152,18 @@ MonoBehaviour:
     m_Localized: "K\xFCt\xFCphane'yi ara\u015Ft\u0131r."
     m_Metadata:
       m_Items: []
+  - m_Id: 9052365300035584
+    m_Localized: "B\xF6lgeyi Ara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052230318944256
+    m_Localized: "Ka\xE7\u0131r\u0131lma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052369418842112
+    m_Localized: "Denemeden Ka\xE7\u0131\u015F"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

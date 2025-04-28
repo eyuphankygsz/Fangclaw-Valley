@@ -152,6 +152,18 @@ MonoBehaviour:
     m_Localized: "Fouille la Biblioth\xE8que."
     m_Metadata:
       m_Items: []
+  - m_Id: 9052230318944256
+    m_Localized: "L'Enl\xE8vement"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052365300035584
+    m_Localized: Fouillez la zone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052369418842112
+    m_Localized: "\xC9vasion De L'\xC9preuve"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
