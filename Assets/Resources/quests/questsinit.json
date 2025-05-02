@@ -353,7 +353,7 @@
               "QuestName": "q38",
               "Description": 
               [
-                "q38_1"
+                "q30_1"
               ],
               "QuestStatus": 0
             },            {
@@ -363,6 +363,33 @@
               "Description": 
               [
                 "q39_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 39,
+              "QuestName": "q40",
+              "Description": 
+              [
+                "q27_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 40,
+              "QuestName": "q41",
+              "Description": 
+              [
+                "q41_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 41,
+              "QuestName": "q14",
+              "Description": 
+              [
+                "q14_1"
               ],
               "QuestStatus": 0
             }

@@ -165,6 +165,202 @@ MonoBehaviour:
     m_Localized: Ontsnapping Uit Beproeving
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: Vind een manier om aan de beproeving te ontsnappen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: De Tekeningen van Elara Voss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: Vind de tekeningen van Elara Voss in de bibliotheek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: Geheime Deur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: Vind de verborgen deur in de bibliotheek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Mechanische Man
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: Doorzoek de kamer naar het tandwiel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Tandwielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: Zet het tandwiel op zijn plaats in de keuken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Geheime Tunnel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: Loop door de tunnel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: Sommige Bekende Voorwerpen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: Maak een sterke zuurmix om de kettingen te smelten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: Zuurmengsel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: Smelt de kettingen in de bibliotheek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: Het Ritueel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: Vind een manier om het ritueel te voltooien.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Onderdelen van het ritueel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: Doorzoek de Kaartkamer op de plaatsen van de schedels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: Wees niet hebzuchtig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: Kijk naar de kist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Waar ben je?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: Zoek naar een uitgang.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Ja, een Catacombe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: Ga door met zoeken naar een uitgang.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: Meer tandwielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: Verzamel de tandwielen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: Nou, dat is vreemd!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: Doorzoek het gebied.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: Dit is de toekomst
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: Zoek een manier om de keycard te gebruiken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: Laatste tandwiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: Zet de tandwielen op hun plaats.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: Een lange wachttijd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: Doorzoek het nieuwe gebied.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: Geen mens kan vliegen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: Beweeg mee met het platform tot het einde.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: Is dat alles?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: Ga verder met de reis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: DE FLUISTERAAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: De dood van de stilte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: Dood de Fluisteraar!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: Het ruikt slecht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: Controleer de andere kamer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: Lichtenergie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: Vul de energiebalk door je lantaarn te laten schijnen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: Geen gasolie meer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: De Grote Gast, Weer!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: Dood De Gesloten Papa!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

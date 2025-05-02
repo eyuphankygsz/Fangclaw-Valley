@@ -163,6 +163,202 @@ MonoBehaviour:
     m_Localized: "Flykt Fr\xE5n Pr\xF6vningen"
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: "Hitta ett s\xE4tt att fly fr\xE5n pr\xF6vningen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: Elara Voss Teckningar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: Hitta Elara Voss teckningar i biblioteket.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: "Hemlig D\xF6rr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: "Hitta den dolda d\xF6rren i biblioteket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Mekanisk Man
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: Leta efter kugghjulet i rummet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Kugghjul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: "Placera kugghjulet p\xE5 sin plats i k\xF6ket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Hemlig Tunnel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: "G\xE5 genom tunneln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: "N\xE5gra Bekanta F\xF6rem\xE5l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: "G\xF6r en stark syrablandning f\xF6r att sm\xE4lta kedjorna."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: Sur blandning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: "Sm\xE4lt kedjorna i biblioteket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: Ritualen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: "Hitta ett s\xE4tt att slutf\xF6ra ritualen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Delar av ritualen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: "S\xF6k i kart-rummet efter placeringen av skallar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: Var inte girig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: "Ta en titt p\xE5 kistan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: "Var \xE4r du?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: "S\xF6k efter en utg\xE5ng."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Ja, en katakomb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: "Forts\xE4tt att leta efter en utg\xE5ng."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: "Fler v\xE4xlar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: "Samla in v\xE4xlarna."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: "N\xE5v\xE4l, det \xE4r konstigt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: "S\xF6k omr\xE5det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: "Detta \xE4r framtiden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: "Hitta ett s\xE4tt att anv\xE4nda nyckelkortet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: "Sista v\xE4xeln"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: "S\xE4tt kugghjulen p\xE5 sin plats."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: "En l\xE5ng v\xE4ntan"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: "S\xF6k igenom det nya omr\xE5det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: "Ingen m\xE4nniska kan flyga"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: "R\xF6r dig med plattformen till slutet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: "\xC4r det allt?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: "Forts\xE4tt resan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: VISKAREN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: "Tystnadens d\xF6d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: "D\xF6da Viskaren!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: Luktar illa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: Kolla det andra rummet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: Ljusenergi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: Fyll energibaren genom att lysa med din lykta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: "Slut p\xE5 gasolja"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: Stora Killen, Igen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: "D\xF6da Den Tysta Pappan!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

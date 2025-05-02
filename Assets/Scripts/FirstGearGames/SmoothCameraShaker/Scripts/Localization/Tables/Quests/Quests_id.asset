@@ -162,6 +162,202 @@ MonoBehaviour:
     m_Localized: Melarikan Diri Dari Ujian
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: Temukan cara untuk melarikan diri dari ujian ini.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: Gambar-Gambar Elara Voss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: Temukan gambar-gambar Elara Voss di perpustakaan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: Pintu Rahasia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: Temukan pintu tersembunyi di perpustakaan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Manusia Mekanis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: Cari roda gigi di dalam ruangan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Roda Gigi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: Tempatkan roda gigi di tempatnya di dapur.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Terowongan Rahasia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: Berjalan melalui terowongan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: Beberapa Barang yang Familiar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: Buat campuran asam kuat untuk melelehkan rantai.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: Campuran Asam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: Lelehkan rantai di perpustakaan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: Ritual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: Temukan cara untuk menyelesaikan ritual.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Bagian dari ritual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: Cari di Ruang Peta untuk penempatan tengkorak.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: Jangan serakah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: Lihat peti itu.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Di mana kamu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: Cari jalan keluar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Ya, sebuah katakombe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: Lanjutkan mencari jalan keluar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: Lebih banyak roda gigi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: Kumpulkan roda gigi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: Yah, itu aneh!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: Cari area tersebut.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: Ini adalah masa depan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: Temukan cara untuk menggunakan kartu kunci.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: Gear Terakhir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: Letakkan roda gigi pada tempatnya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: Penantian panjang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: Cari area baru.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: Tak ada manusia yang bisa terbang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: Bergeraklah bersama platform sampai ke ujung.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: Apakah itu saja?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: Lanjutkan perjalanannya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: SI PEMBISIK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: Kematian dari Keheningan Itu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: Bunuh Pembisik Itu!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: Bauk!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: Periksa ruangan lain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: Energi Cahaya
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: Isi Bar Energi dengan menyinari Lentera Anda.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: Kehabisan solar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: Si Besar, Lagi!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: Bunuh Si Papa Diam!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

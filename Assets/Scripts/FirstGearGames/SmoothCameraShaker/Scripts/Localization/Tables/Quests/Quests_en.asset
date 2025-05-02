@@ -164,6 +164,202 @@ MonoBehaviour:
     m_Localized: Escape From Trial
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: Find a way to escape from the Trial.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: "Elara Voss\u2019 Drawings"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: "Find the Elara Voss\u2019 drawings in the Library."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: Secret Door
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: Find the hidden door in the Library.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Mechanical Man
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: Search the room for the gear.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Gears
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: Place the gear to its place in the Kitchen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Secret Tunnel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: Walk through the tunnel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: Some Familiar Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: Make a strong acid mix for melting the chains.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: Acidic Mix
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: Melt the chains in the Library.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: The Ritual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: Find a way to complete the ritual.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Parts Of The Ritual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: Search the Map Room for the placements of the skulls.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: "Don\u2019t Be Greedy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: Take a look at the chest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Where Are You?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: Search for an exit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Yes, A Catacomb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: Continue to search for an exit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: More Gears
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: Collect the gears.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: "Well, That\u2019s Weird!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: Search the area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: This Is Future
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: Find a way to use the keycard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: Last Gear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: Put the gears to their place.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: A Long Wait
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: Search the new area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: No Man Can Fly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: "Move with the platform till it\u2019s end."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: Is It All?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: Continue to the journey.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: THE WHISPERER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: Death Of The Silence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: Kill The Whisperer!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: Smells Bad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: Check the other room.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: Light Energy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: Fill the Energy Bar by shining your Lantern.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: Out Of Gas Oil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: The Big Guy, Again!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: Kill The Shut Daddy!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

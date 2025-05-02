@@ -164,6 +164,203 @@ MonoBehaviour:
     m_Localized: "Denemeden Ka\xE7\u0131\u015F"
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: "Denemeden ka\xE7man\u0131n bir yolunu bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: "Elara Voss\u2019un \xC7izimleri"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: "Elara Voss\u2019un \xE7izimlerini k\xFCt\xFCphanede bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: "Gizli Kap\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: "K\xFCt\xFCphanedeki gizli kap\u0131y\u0131 bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Mekanik Adam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: "Oday\u0131 di\u015Fli \xE7ark i\xE7in ara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: "Di\u015Fli \xC7arklar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: "Di\u015Fli \xE7ark\u0131 mutfaktaki yerine yerle\u015Ftir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: "Gizli T\xFCnel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: "T\xFCnelden ge\xE7."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: "Baz\u0131 Tan\u0131d\u0131k E\u015Fyalar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: "Zincirleri eritmek i\xE7in g\xFC\xE7l\xFC bir asidik kar\u0131\u015F\u0131m
+      yap."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: "Asidik Kar\u0131\u015F\u0131m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: "Zincirleri k\xFCt\xFCphanede eritin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: "Rit\xFCel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: "Rit\xFCeli tamamlamak i\xE7in bir yol bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: "Rit\xFCelin B\xF6l\xFCmleri"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: "Harita Odas\u0131nda, kafataslar\u0131n\u0131n yerlerini aray\u0131n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: "A\xE7g\xF6zl\xFC Olma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: "Sand\u0131\u011F\u0131 bir g\xF6zden ge\xE7ir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Neredesin?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: "Bir \xE7\u0131k\u0131\u015F ara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Evet, Bir Katakomb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: "Bir \xE7\u0131k\u0131\u015F aramaya devam et."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: "Daha Fazla Di\u015Fli"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: "Di\u015Flileri topla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: Eh, bu garip!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: "Alan\u0131 ara\u015Ft\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: Bu Gelecek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: "Anahtar kart\u0131 kullanman\u0131n bir yolunu bul."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: "Son Di\u015Fli"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: "Di\u015Flileri yerine yerle\u015Ftir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: "Uzun Bir Bekleyi\u015F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: "Yeni B\xF6lgeyi Ara\u015Ft\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: "Hi\xE7bir \u0130nsan U\xE7amaz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: Platformla birlikte sonuna kadar ilerle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: Hepsi Bu Mu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: "Yolculu\u011Fa Devam Et."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: FISILDAYAN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: "Sessizli\u011Fin \xD6l\xFCm\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: "F\u0131s\u0131ldayan\u0131 \xD6ld\xFCr!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: "K\xF6t\xFC Kokuyor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: "Di\u011Fer oday\u0131 kontrol et."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: "I\u015F\u0131k Enerjisi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: "Enerji \xC7ubu\u011Funu, Fenerini \u0131\u015F\u0131ldatarak doldur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: "Gaz Ya\u011F\u0131 Bitti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: "Yine O B\xFCy\xFCk Adam!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: "Kapat\u0131k Baba\u2019y\u0131 \xD6ld\xFCr!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

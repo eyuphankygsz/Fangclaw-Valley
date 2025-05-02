@@ -165,6 +165,202 @@ MonoBehaviour:
     m_Localized: "Flucht Vor Der Pr\xFCfung"
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: "Finde einen Weg, der Pr\xFCfung zu entkommen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: "Elara Voss\u2019 Zeichnungen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: "Finde Elara Voss\u2019 Zeichnungen in der Bibliothek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: "Geheime T\xFCr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: "Finde die verborgene T\xFCr in der Bibliothek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Mechanischer Mann
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: Durchsuche den Raum nach dem Zahnrad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: "Zahnr\xE4der"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: "Setze das Zahnrad an seinen Platz in der K\xFCche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Geheimer Tunnel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: Gehe durch den Tunnel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: "Einige Vertraute Gegenst\xE4nde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: "Stelle eine starke S\xE4uremischung her, um die Ketten zu schmelzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: "S\xE4urehaltige Mischung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: Schmelze die Ketten in der Bibliothek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: Das Ritual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: "Finde einen Weg, das Ritual abzuschlie\xDFen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Teile des Rituals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: "Durchsuche den Kartenraum nach den Platzierungen der Sch\xE4del."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: Sei nicht gierig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: Schau dir die Truhe an.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Wo bist du?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: Suche nach einem Ausgang.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Ja, eine Katakombe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: Setze die Suche nach einem Ausgang fort.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: "Mehr Zahnr\xE4der"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: "Sammle die Zahnr\xE4der."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: Nun, das ist seltsam!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: Durchsuche das Gebiet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: Dies ist die Zukunft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: "Finde einen Weg, die Schl\xFCsselkarte zu benutzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: Letztes Zahnrad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: "Setze die Zahnr\xE4der an ihren Platz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: Ein langes Warten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: Durchsuche das neue Gebiet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: Kein Mensch kann fliegen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: Bewege dich mit der Plattform bis zum Ende.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: Ist das alles?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: Setze die Reise fort.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: "DER FL\xDCSTERER"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: Der Tod der Stille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: "T\xF6te den Fl\xFCsterer!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: Es riecht schlecht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: "\xDCberpr\xFCfen Sie den anderen Raum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: Lichtenergie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: "F\xFClle die Energieleiste, indem du deine Laterne leuchten l\xE4sst."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: "Kein Gas\xF6l mehr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: "Der Gro\xDFe Kerl, Wieder!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: "T\xF6te Den Verschlossenen Papa!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

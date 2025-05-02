@@ -164,6 +164,202 @@ MonoBehaviour:
     m_Localized: "Menek\xFCl\xE9s A Pr\xF3bat\xE9telb\u0151l"
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: "Tal\xE1lj egy m\xF3dot, hogy megsz\xF6khess a pr\xF3bat\xE9telb\u0151l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: Elara Voss Rajzai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: "Keresd meg Elara Voss rajzait a k\xF6nyvt\xE1rban."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: "Titkos Ajt\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: "Keresd meg a rejtett ajt\xF3t a k\xF6nyvt\xE1rban."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Mechanikus Ember
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: "Kutasd \xE1t a szob\xE1t a fogasker\xE9k\xE9rt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Fogaskerekek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: "Helyezd a fogaskereket a hely\xE9re a konyh\xE1ban."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: "Titkos Alag\xFAt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: "S\xE9t\xE1lj \xE1t az alag\xFAton."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: "N\xE9h\xE1ny Ismert T\xE1rgy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: "K\xE9sz\xEDts er\u0151s savkever\xE9ket a l\xE1ncok olvaszt\xE1s\xE1hoz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: "Savas kever\xE9k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: "Olvaszd meg a l\xE1ncokat a k\xF6nyvt\xE1rban."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: "A Ritu\xE1l\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: "Tal\xE1lj m\xF3dot a ritu\xE1l\xE9 befejez\xE9s\xE9re."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: "A ritu\xE1l r\xE9szei"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: "Keresd meg a t\xE9rk\xE9pszob\xE1ban a kopony\xE1k elhelyezked\xE9s\xE9t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: "Ne legy\xE9l kapzsi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: "N\xE9zd meg a l\xE1d\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Hol vagy?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: "Keresd a kij\xE1ratot."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Igen, egy katakomba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: "Folytasd a kij\xE1rat keres\xE9s\xE9t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: "Tov\xE1bbi fogaskerekek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: "Gy\u0171jtsd \xF6ssze a fogaskerekeket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: "H\xE1t, ez furcsa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: "Keresd \xE1t a ter\xFCletet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: "Ez a j\xF6v\u0151"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: "Tal\xE1ld meg a m\xF3dj\xE1t, hogy haszn\xE1ld a kulcsk\xE1rty\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: "Utols\xF3 fogasker\xE9k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: "Tedd a fogaskerekeket a hely\xFCkre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: "Hossz\xFA v\xE1rakoz\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: "Kutass \xE1t az \xFAj ter\xFCletet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: "Egy ember sem tud rep\xFClni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: "Mozogj a platformmal a v\xE9g\xE9ig."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: "Ennyi az eg\xE9sz?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: "Folytasd az utaz\xE1st."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: "A SUTTOG\xD3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: "A csend hal\xE1la"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: "\xD6ldsd meg a Suttog\xF3t!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: Rossz szaga van
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: "Ellen\u0151rizze a m\xE1sik szob\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: "F\xE9nyenergia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: "T\xF6ltsd fel az energias\xE1vot a l\xE1mp\xE1sod f\xE9ny\xE9vel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: "Nincs g\xE1zolaj"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: "A Nagy Fi\xFA, \xDAjra!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: "\xD6ldd Meg A Z\xE1rt Ap\xE1t!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

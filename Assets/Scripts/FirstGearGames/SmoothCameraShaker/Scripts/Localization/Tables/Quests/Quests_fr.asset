@@ -164,6 +164,202 @@ MonoBehaviour:
     m_Localized: "\xC9vasion De L'\xC9preuve"
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: "Trouve un moyen de t'\xE9chapper de l'\xE9preuve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: "Les Dessins d\u2019Elara Voss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: "Trouve les dessins d\u2019Elara Voss dans la biblioth\xE8que."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: "Porte Secr\xE8te"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: "Trouve la porte cach\xE9e dans la biblioth\xE8que."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: "Homme M\xE9canique"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: "Fouille la pi\xE8ce pour trouver l'engrenage."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Engrenages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: "Place l'engrenage \xE0 sa place dans la cuisine."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Tunnel Secret
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: "Marche \xE0 travers le tunnel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: Quelques Objets Familier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: "Faites un m\xE9lange d'acide fort pour faire fondre les cha\xEEnes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: "M\xE9lange Acide"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: "Faites fondre les cha\xEEnes dans la biblioth\xE8que."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: Le Rituel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: "Trouve un moyen de compl\xE9ter le rituel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Parties du rituel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: "Cherchez dans la salle des cartes les emplacements des cr\xE2nes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: Ne sois pas avide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: "Jettez un \u0153il au coffre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: "O\xF9 es-tu ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: Cherche une sortie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Oui, une catacombe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: "Continue \xE0 chercher une sortie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: Plus d'engrenages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: Ramasse les engrenages.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: "Eh bien, c'est \xE9trange !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: Cherche dans la zone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: Ceci est l'avenir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: "Trouve un moyen d'utiliser la carte-cl\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: "Derni\xE8re roue dent\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: "Mettez les roues dent\xE9es \xE0 leur place."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: Une longue attente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: Fouillez la nouvelle zone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: Aucun homme ne peut voler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: "Avance avec la plateforme jusqu\u2019\xE0 la fin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: "C\u2019est tout ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: Continue le voyage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: LE MURMUREUR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: La mort du silence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: Tue le Murmureur !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: "\xC7a sent mauvais"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: "V\xE9rifiez l'autre pi\xE8ce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: "\xC9nergie lumineuse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: "Remplissez la barre d'\xE9nergie en illuminant votre lanterne."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: Plus d'huile de gaz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: Le Gros, Encore !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: Tue Le Papa Silencieux !
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

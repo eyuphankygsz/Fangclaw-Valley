@@ -163,6 +163,202 @@ MonoBehaviour:
     m_Localized: "Flugt Fra Pr\xF8velse"
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: "Find en m\xE5de at undslippe pr\xF8velsen p\xE5."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: "Elara Voss\u2019 Tegninger"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: "Find Elara Voss\u2019 tegninger i biblioteket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: "Hemmelig D\xF8r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: "Find den skjulte d\xF8r i biblioteket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Mekanisk Mand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: "Gennems\xF8g rummet efter tandhjulet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Tandhjul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: "Placer tandhjulet p\xE5 dets plads i k\xF8kkenet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Hemmelig Tunnel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: "G\xE5 gennem tunnelen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: Nogle Kendinge Genstande
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: "Lav en st\xE6rk syreblanding til at smelte k\xE6derne."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: Syreblanding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: "Smelt k\xE6derne i biblioteket."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: Ritualen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: "Find en m\xE5de at fuldf\xF8re ritualet p\xE5."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Dele af ritualet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: "S\xF8g i kortrummet efter placeringen af kranierne."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: "V\xE6r ikke gr\xE5dig"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: "Kig p\xE5 kisten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Hvor er du?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: "S\xF8g efter en udgang."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: Ja, en Katakombe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: "Forts\xE6t med at s\xF8ge efter en udgang."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: Flere gear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: Saml gearene.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: "N\xE5, det er m\xE6rkeligt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: "S\xF8g omr\xE5det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: Dette er fremtiden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: "Find en m\xE5de at bruge n\xF8glekortet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: Sidste tandhjul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: "S\xE6t tandhjulene p\xE5 deres plads."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: En lang ventetid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: "Gennems\xF8g det nye omr\xE5de."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: Intet menneske kan flyve
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: "Bev\xE6g dig med platformen til dens ende."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: Er det alt?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: "Forts\xE6t rejsen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: HVISKEREN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: "Stilhedens d\xF8d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: "Dr\xE6b Hviskeren!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: "Lugter d\xE5rligt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: Tjek det andet rum.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: Lysenergi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: Fyld energibaren ved at lyse med din lanterne.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: Uden gasolie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: Den Store Fyr, Igen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: "Dr\xE6b Den Lukkede Far!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

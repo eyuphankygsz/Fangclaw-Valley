@@ -163,6 +163,202 @@ MonoBehaviour:
     m_Localized: Fuga Dalla Prova
     m_Metadata:
       m_Items: []
+  - m_Id: 9052370610024448
+    m_Localized: Trova un modo per fuggire dalla prova.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382219857920
+    m_Localized: I Disegni di Elara Voss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052382429573120
+    m_Localized: Trova i disegni di Elara Voss nella biblioteca.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052385025847296
+    m_Localized: Porta Segreta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052387735367680
+    m_Localized: Trova la porta nascosta nella biblioteca.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052390516191232
+    m_Localized: Uomo Meccanico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052393301209088
+    m_Localized: "Cerca l\u2019ingranaggio nella stanza."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052396061061120
+    m_Localized: Ingranaggi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052398799941632
+    m_Localized: Posiziona l'ingranaggio al suo posto in cucina.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052401916309504
+    m_Localized: Tunnel Segreto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9052406366466048
+    m_Localized: Cammina attraverso il tunnel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369830141452288
+    m_Localized: Alcuni Oggetti Familiari
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369838823661568
+    m_Localized: Prepara una miscela di acido forte per fondere le catene.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369839863848960
+    m_Localized: Miscela Acida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369909854199808
+    m_Localized: Sciogli le catene nella biblioteca.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371666231582720
+    m_Localized: Il Ritual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371888596803584
+    m_Localized: Trova un modo per completare il rituale.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372251760615424
+    m_Localized: Parti del rituale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372255183167488
+    m_Localized: Cerca nella stanza della mappa i posizionamenti dei teschi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372939831992320
+    m_Localized: Non essere avido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9372941744594944
+    m_Localized: Dai un'occhiata alla cassa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373522332737536
+    m_Localized: Dove sei?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9373524178231296
+    m_Localized: Cerca un'uscita.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374140745113600
+    m_Localized: "S\xEC, una catacomba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374142020182016
+    m_Localized: Continua a cercare un'uscita.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143534325760
+    m_Localized: Altri ingranaggi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374143593046016
+    m_Localized: Raccogli gli ingranaggi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144268328960
+    m_Localized: "Beh, \xE8 strano!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9374144968777728
+    m_Localized: Esplora l'area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376270142922752
+    m_Localized: "Questo \xE8 il futuro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9376271988416512
+    m_Localized: Trova un modo per usare la carta di accesso.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377372145967104
+    m_Localized: Ultima ruota dentata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9377374553497600
+    m_Localized: Metti gli ingranaggi al loro posto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685816712544256
+    m_Localized: Una lunga attesa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685819065548800
+    m_Localized: Esplora la nuova area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685820801990656
+    m_Localized: "Nessun uomo pu\xF2 volare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685822119002112
+    m_Localized: Muoviti con la piattaforma fino alla fine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685823289212928
+    m_Localized: "\xC8 tutto qui?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685824434257920
+    m_Localized: Continua il viaggio.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685825709326336
+    m_Localized: IL SUSSURRATORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9685827106029568
+    m_Localized: La morte del silenzio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688628141932544
+    m_Localized: Uccidi il Sussurratore!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9688630188752896
+    m_Localized: Puzza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694497017610240
+    m_Localized: Controlla l'altra stanza.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9694498921824256
+    m_Localized: Energia luminosa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695313652793344
+    m_Localized: Riempi la barra dell'energia illuminando la tua lanterna.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695468879790080
+    m_Localized: Senza gasolio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695471526395904
+    m_Localized: Il Grande Ragazzo, Ancora!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9695526933151744
+    m_Localized: "Uccidi Il Pap\xE0 Silenzioso!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

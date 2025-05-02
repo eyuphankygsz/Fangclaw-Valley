@@ -158,6 +158,240 @@
                 "q16_1"
               ],
               "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 16,
+              "QuestName": "q17",
+              "Description": 
+              [
+                "q17_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 17,
+              "QuestName": "q18",
+              "Description": 
+              [
+                "q18_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 18,
+              "QuestName": "q19",
+              "Description": 
+              [
+                "q19_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 19,
+              "QuestName": "20q",
+              "Description": 
+              [
+                "q20_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 20,
+              "QuestName": "q21",
+              "Description": 
+              [
+                "q21_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 21,
+              "QuestName": "q22",
+              "Description": 
+              [
+                "q22_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 22,
+              "QuestName": "q23",
+              "Description": 
+              [
+                "q23_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 23,
+              "QuestName": "q24",
+              "Description": 
+              [
+                "q24_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 24,
+              "QuestName": "q25",
+              "Description": 
+              [
+                "q25_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 25,
+              "QuestName": "q26",
+              "Description": 
+              [
+                "q26_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 26,
+              "QuestName": "q27",
+              "Description": 
+              [
+                "q27_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 27,
+              "QuestName": "q28",
+              "Description": 
+              [
+                "q28_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 28,
+              "QuestName": "q29",
+              "Description": 
+              [
+                "q29_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 29,
+              "QuestName": "q30",
+              "Description": 
+              [
+                "q30_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 30,
+              "QuestName": "q31",
+              "Description": 
+              [
+                "q31_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 31,
+              "QuestName": "q32",
+              "Description": 
+              [
+                "q32_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 32,
+              "QuestName": "q33",
+              "Description": 
+              [
+                "q33_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 33,
+              "QuestName": "q34",
+              "Description": 
+              [
+                "q34_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 34,
+              "QuestName": "q35",
+              "Description": 
+              [
+                "q35_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 35,
+              "QuestName": "q36",
+              "Description": 
+              [
+                "q36_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 36,
+              "QuestName": "q37",
+              "Description": 
+              [
+                "q37_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 37,
+              "QuestName": "q38",
+              "Description": 
+              [
+                "q30_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 38,
+              "QuestName": "q39",
+              "Description": 
+              [
+                "q39_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 39,
+              "QuestName": "q40",
+              "Description": 
+              [
+                "q27_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 40,
+              "QuestName": "q41",
+              "Description": 
+              [
+                "q41_1"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 41,
+              "QuestName": "q14",
+              "Description": 
+              [
+                "q14_1"
+              ],
+              "QuestStatus": 0
             }
           ]
         }
