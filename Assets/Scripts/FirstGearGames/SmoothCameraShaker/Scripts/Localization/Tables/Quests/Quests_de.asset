@@ -270,7 +270,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9374143593046016
-    m_Localized: "Sammle die Zahnr\xE4der."
+    m_Localized: "Sammle und platziere die Zahnr\xE4der."
     m_Metadata:
       m_Items: []
   - m_Id: 9374144268328960
@@ -359,6 +359,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9695526933151744
     m_Localized: "T\xF6te Den Verschlossenen Papa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501119854764032
+    m_Localized: Da Kommt Das Schweinchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501131904999424
+    m_Localized: "T\xF6te Das Geisterhafte Schweinchen!"
     m_Metadata:
       m_Items: []
   references:

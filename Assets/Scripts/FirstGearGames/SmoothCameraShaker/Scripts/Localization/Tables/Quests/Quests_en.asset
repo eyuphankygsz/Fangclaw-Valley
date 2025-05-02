@@ -269,7 +269,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9374143593046016
-    m_Localized: Collect the gears.
+    m_Localized: Collect and place the gears.
     m_Metadata:
       m_Items: []
   - m_Id: 9374144268328960
@@ -358,6 +358,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9695526933151744
     m_Localized: Kill The Shut Daddy!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501119854764032
+    m_Localized: Here Comes The Piggy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501131904999424
+    m_Localized: Kill The Ghostly Piggy!
     m_Metadata:
       m_Items: []
   references:

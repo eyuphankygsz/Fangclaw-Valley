@@ -269,7 +269,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9374143593046016
-    m_Localized: Ramasse les engrenages.
+    m_Localized: "R\xE9cup\xE9rez et placez les engrenages."
     m_Metadata:
       m_Items: []
   - m_Id: 9374144268328960
@@ -358,6 +358,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9695526933151744
     m_Localized: Tue Le Papa Silencieux !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501119854764032
+    m_Localized: "Voil\xE0 Le Petit Cochon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501131904999424
+    m_Localized: Tue Le Petit Cochon Fantomatique !
     m_Metadata:
       m_Items: []
   references:

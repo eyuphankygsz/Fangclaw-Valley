@@ -269,7 +269,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9374143593046016
-    m_Localized: "Gy\u0171jtsd \xF6ssze a fogaskerekeket."
+    m_Localized: "Gy\u0171jtsd \xF6ssze \xE9s helyezd el a fogaskerekeket."
     m_Metadata:
       m_Items: []
   - m_Id: 9374144268328960
@@ -358,6 +358,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9695526933151744
     m_Localized: "\xD6ldd Meg A Z\xE1rt Ap\xE1t!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501119854764032
+    m_Localized: "Itt J\xF6n A Malacka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501131904999424
+    m_Localized: "\xD6ldd Meg A K\xEDs\xE9rteties Malack\xE1t!"
     m_Metadata:
       m_Items: []
   references:

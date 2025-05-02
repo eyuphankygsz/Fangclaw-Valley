@@ -269,7 +269,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9374143593046016
-    m_Localized: "Ker\xE4\xE4 hammaspy\xF6r\xE4t."
+    m_Localized: "Ker\xE4\xE4 ja aseta rattaat."
     m_Metadata:
       m_Items: []
   - m_Id: 9374144268328960
@@ -358,6 +358,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9695526933151744
     m_Localized: "Tapa Is\xE4, Tappaa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501119854764032
+    m_Localized: "T\xE4ss\xE4 Tulee Porsas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501131904999424
+    m_Localized: Tapa Aavemainen Porsas!
     m_Metadata:
       m_Items: []
   references:

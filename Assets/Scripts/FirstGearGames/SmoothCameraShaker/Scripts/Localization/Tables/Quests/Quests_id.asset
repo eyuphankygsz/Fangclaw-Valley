@@ -267,7 +267,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9374143593046016
-    m_Localized: Kumpulkan roda gigi.
+    m_Localized: Kumpulkan dan letakkan roda gigi.
     m_Metadata:
       m_Items: []
   - m_Id: 9374144268328960
@@ -356,6 +356,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9695526933151744
     m_Localized: Bunuh Si Papa Diam!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501119854764032
+    m_Localized: Ini Dia Si Babi Kecil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501131904999424
+    m_Localized: Bunuh Babi Kecil Berhantu Itu!
     m_Metadata:
       m_Items: []
   references:

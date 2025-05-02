@@ -270,7 +270,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9374143593046016
-    m_Localized: "Di\u015Flileri topla."
+    m_Localized: "Di\u015Flileri topla ve yerle\u015Ftir."
     m_Metadata:
       m_Items: []
   - m_Id: 9374144268328960
@@ -359,6 +359,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9695526933151744
     m_Localized: "Kapat\u0131k Baba\u2019y\u0131 \xD6ld\xFCr!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501119854764032
+    m_Localized: "\u0130\u015Fte Domuzcuk Geliyor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501131904999424
+    m_Localized: "Hayalet Domuzcu\u011Fu \xD6ld\xFCr!"
     m_Metadata:
       m_Items: []
   references:

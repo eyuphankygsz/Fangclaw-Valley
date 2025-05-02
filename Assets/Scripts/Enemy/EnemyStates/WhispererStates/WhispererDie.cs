@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 public class WhispererDie : MonoBehaviour, IEnemyState
@@ -18,12 +19,16 @@ public class WhispererDie : MonoBehaviour, IEnemyState
 	[Inject]
 	private GameManager _manager;
 
+	[SerializeField]
+	private UnityEvent _onDieEvents;
 
 	public void EnterState()
 	{
 		_collider.enabled = false;
 		_manager.IsOnChase--;
 		_animator.SetBool("Die", true);
+
+		_onDieEvents?.Invoke();
 
 	}
 

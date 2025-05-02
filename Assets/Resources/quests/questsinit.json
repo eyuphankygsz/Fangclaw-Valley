@@ -392,6 +392,15 @@
                 "q14_1"
               ],
               "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 42,
+              "QuestName": "q43",
+              "Description": 
+              [
+                "q43_1"
+              ],
+              "QuestStatus": 0
             }
           ]
         }
