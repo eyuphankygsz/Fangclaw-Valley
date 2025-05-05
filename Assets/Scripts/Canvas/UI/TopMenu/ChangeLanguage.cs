@@ -15,55 +15,54 @@ public class ChangeLanguage : Setting
 
 	private Dictionary<string, string> _languageDict = new Dictionary<string, string>
 	{
-		{ "bg", "Български" },
-		{ "zh-Hans", "中文（简体）" },
-		{ "da", "Dansk" },
-		{ "nl", "Nederlands" },
-		{ "en", "English" },
-		{ "fi", "Suomalainen" },
-		{ "fr", "Français" },
-		{ "de", "Deutsch" },
-		{ "el", "Ελληνικά" },
-		{ "hu", "Magyar" },
-		{ "id", "Indonesia" },
-		{ "it", "Italiano" },
-		{ "ja", "日本語" },
-		{ "ko", "한국인" },
-		{ "no", "Norsk" },
-		{ "ru", "Русский" },
-		{ "es", "Español" },
-		{ "sv", "Svenska" },
-		{ "tr", "Türkçe" },
-		{ "uk", "Українська" },
-	};
-
-	private string[] _shorts = new string[]
-	{
-		"bg",
-		"zh-Hans",
-		"da",
-		"nl",
-		"en",
-		"fi",
-		"fr",
-		"de",
-		"el",
-		"hu",
-		"id",
-		"it",
-		"ja",
-		"ko",
-		"no",
-		"ru",
-		"es",
-		"sv",
-		"tr",
-		"uk"
+		{ "Bulgarian", "Български" },
+		{ "ChineseSimplified", "中文（简体）" },
+		{ "Danish", "Dansk" },
+		{ "Dutch", "Nederlands" },
+		{ "English", "English" },
+		{ "Finnish", "Suomalainen" },
+		{ "French", "Français" },
+		{ "German", "Deutsch" },
+		{ "Greek", "Ελληνικά" },
+		{ "Hungarian", "Magyar" },
+		{ "Indonesian", "Indonesia" },
+		{ "Italian", "Italiano" },
+		{ "Japanese", "日本語" },
+		{ "Korean", "한국인" },
+		{ "Norwegian", "Norsk" },
+		{ "Russian", "Русский" },
+		{ "Spanish", "Español" },
+		{ "Swedish", "Svenska" },
+		{ "Turkish", "Türkçe" },
+		{ "Ukrainian", "Українська" },
 	};
 	private string _selectedLocale;
-	private int _localeID;
-	private int _tempLocaleID;
 	private string _localeString = "selected_locale";
+	private string[]  _shorts = new string[]
+	{
+		"Bulgarian",
+		"ChineseSimplified",
+		"Danish",
+		"Dutch",
+		"English",
+		"Finnish",
+		"French",
+		"German",
+		"Greek",
+		"Hungarian",
+		"Indonesian",
+		"Italian",
+		"Japanese",
+		"Korean",
+		"Norwegian",
+		"Russian",
+		"Spanish",
+		"Swedish",
+		"Turkish",
+		"Ukrainian"
+	};
+
+	private int _localeID, _tempLocaleID;
 
 	[SerializeField]
 	private LocaleFont[] _localeFonts;
@@ -89,24 +88,28 @@ public class ChangeLanguage : Setting
 	{
 		if (!PlayerPrefs.HasKey(_localeString))
 		{
-			_selectedLocale = PlayerPrefs.GetString(_localeString);
+			bool found = false;
 
 			foreach (var item in _languageDict)
 			{
 				if (Application.systemLanguage.Equals(item.Key))
+				{
+					found = true;
+					_selectedLocale = item.Key;
 					break;
-				_localeID++;
+				}
 			}
 
-			if (_localeID >= _languageDict.Count)
-				_localeID = 0;
+			if(!found)
+				_selectedLocale = "English";
 
-			_tempLocaleID = _localeID;
-			_language.text = _languageDict[_shorts[_localeID]];
+			PlayerPrefs.SetString(_localeString, _selectedLocale);
 			return;
 		}
-
-		_selectedLocale = PlayerPrefs.GetString(_localeString);
+		else
+			_selectedLocale = PlayerPrefs.GetString(_localeString);
+		
+		Debug.Log("SelectedLocale = " + _selectedLocale);
 
 		foreach (var item in _languageDict)
 		{
@@ -115,11 +118,14 @@ public class ChangeLanguage : Setting
 			_localeID++;
 
 		}
+		Debug.Log("LocaleID = " + _localeID);
 
 		_tempLocaleID = _localeID;
-		if (_language != null)
-			_language.text = _languageDict[_shorts[_tempLocaleID]];
 
+		if (_language != null)
+			_language.text = _languageDict[_selectedLocale];
+
+		LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_localeID];
 		ReattachFonts();
 
 		//string[] langs = new string[]
@@ -166,7 +172,10 @@ public class ChangeLanguage : Setting
 	{
 		LocaleFont newFont = _localeFonts.FirstOrDefault(x => x.LocaleName == _shorts[_tempLocaleID]);
 		if (newFont == null)
+		{
+			Debug.Log("NewFont is  NULL");
 			newFont = new LocaleFont() { font = _standartFontAsset, LocaleName = "" };
+		}
 
 		TextMeshProUGUI[] tmps = FindObjectsOfType<TextMeshProUGUI>(true);
 
@@ -187,7 +196,6 @@ public class ChangeLanguage : Setting
 	{
 		_tempLocaleID = (_tempLocaleID + 1) % _shorts.Length;
 		_language.text = _languageDict[_shorts[_tempLocaleID]];
-
 		LocaleFont localeFont = _localeFonts.FirstOrDefault(x => x.LocaleName == _shorts[_tempLocaleID]);
 
 		_language.font = (localeFont != null) ? localeFont.font : _standartFontAsset;

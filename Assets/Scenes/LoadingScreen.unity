@@ -691,19 +691,19 @@ MonoBehaviour:
   _standartFontAsset: {fileID: 11400000, guid: ed1bfb4d9b8f34d4da254a3e7c8d0725, type: 2}
   _changeSettingStrings: []
   _localeFonts:
-  - LocaleName: bg
+  - LocaleName: Bulgarian
     font: {fileID: 11400000, guid: e2f60fb6afbf87a40b2a1dca6ed772f9, type: 2}
-  - LocaleName: ru
+  - LocaleName: Russian
     font: {fileID: 11400000, guid: e2f60fb6afbf87a40b2a1dca6ed772f9, type: 2}
-  - LocaleName: uk
+  - LocaleName: Ukrainian
     font: {fileID: 11400000, guid: e2f60fb6afbf87a40b2a1dca6ed772f9, type: 2}
-  - LocaleName: zh-Hans
+  - LocaleName: ChineseSimplified
     font: {fileID: 11400000, guid: 0a7e0b264ebc11848a9665e105700963, type: 2}
-  - LocaleName: ja
+  - LocaleName: Japanese
     font: {fileID: 11400000, guid: 59c22c50506fa3f4c9764e5cb0757cdc, type: 2}
-  - LocaleName: ko
+  - LocaleName: Korean
     font: {fileID: 11400000, guid: ac4c4141e7369e04d8d4b8469057c0b2, type: 2}
-  - LocaleName: el
+  - LocaleName: Greek
     font: {fileID: 11400000, guid: 63f8fa64b66593645b034f7a2604b73c, type: 2}
 --- !u!1 &736500300
 GameObject:

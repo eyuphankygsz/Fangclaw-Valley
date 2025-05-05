@@ -18,6 +18,7 @@ public class InputDeviceManager : MonoBehaviour
 
 	private void Awake()
 	{
+		Application.targetFrameRate = 999;
 		if (Instance == null)
 		{
 			Instance = this;

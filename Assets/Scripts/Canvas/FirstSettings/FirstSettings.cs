@@ -16,7 +16,9 @@ public class FirstSettings : MonoBehaviour
     private void Awake()
     {
         PlayerPrefs.DeleteKey("FirstSettings");
-        if (PlayerPrefs.GetString("FirstSettings") == "Done")
+        PlayerPrefs.DeleteKey("selected_locale");
+
+		if (PlayerPrefs.GetString("FirstSettings") == "Done")
             ChangeScene();
         else
             OpenSetting(true);
@@ -36,6 +38,7 @@ public class FirstSettings : MonoBehaviour
         _firstList[_id].SetActive(open);
         _secondList[_id].SetActive(open);
 
+        PlayerPrefs.SetString("selected_locale", Application.systemLanguage.ToString());
     }
     private void ChangeScene()
     {

@@ -71,7 +71,10 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	private void OnChase(bool onChase)
 	{
 		if (onChase)
+		{
 			_collider.enabled = false;
+			StopInspect();
+		}
 	}
 	public override void OnInteract(Enum_Weapons weapon)
 	{
@@ -81,15 +84,17 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		{
 			_playerCam = Camera.main;
 			_playerCamObj = _playerCam.transform.parent.parent.gameObject;
+
 			_playerOriginalPos = _playerCamObj.transform.localPosition;
 
 			_uiCam = _playerCam.transform.GetChild(0).GetComponent<Camera>();
 		}
 
 		StopTweeners();
+
+		
 		_moveTweener = _playerCamObj.transform.DOMove(_lockCam.transform.position, .6f);
 		_rotateTweener = _playerCamObj.transform.DORotate(_lockCam.transform.rotation.eulerAngles, .6f);
-
 		OnInputEnable(_inputManager.Controls);
 
 		_interactEvents?.Invoke();
@@ -97,23 +102,28 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		Inspect(true);
 	}
 
+
 	private void StopInspect(InputAction.CallbackContext ctx)
 	{
 		if (ctx.performed)
 		{
-			if (!_canTurn)
-			{
-				_canTurn = true;
-				return;
-			}
-			StopTweeners();
-			_moveTweener = _playerCamObj.transform.DOLocalMove(_playerOriginalPos, .4f);
-			_rotateTweener = _playerCamObj.transform.DOLocalRotate(Vector3.zero, .4f);
-
-			OnInputDisable();
-			Inspect(false);
-			_interacted = false;
+			StopInspect();
 		}
+	}
+	private void StopInspect()
+	{
+		if (!_canTurn)
+		{
+			_canTurn = true;
+			return;
+		}
+		OnInputDisable();
+		StopTweeners();
+		_moveTweener = _playerCamObj.transform.DOLocalMove(_playerOriginalPos, .4f);
+		_rotateTweener = _playerCamObj.transform.DOLocalRotate(Vector3.zero, .4f);
+
+		Inspect(false);
+		_interacted = false;
 	}
 	private void StopTweeners()
 	{
@@ -191,7 +201,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 			_oneTimeEvents?.Invoke();
 
 		_unlocked = true;
-		Inspect(false);
+		StopInspect();
 		GetComponent<Rigidbody>().isKinematic = false;
 		gameObject.layer = 0;
 		_lockedObject.Unlock(silent);
