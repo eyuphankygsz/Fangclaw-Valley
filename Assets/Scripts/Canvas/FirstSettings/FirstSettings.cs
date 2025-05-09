@@ -15,8 +15,6 @@ public class FirstSettings : MonoBehaviour
 
     private void Awake()
     {
-        PlayerPrefs.DeleteKey("FirstSettings");
-        PlayerPrefs.DeleteKey("selected_locale");
 
 		if (PlayerPrefs.GetString("FirstSettings") == "Done")
             ChangeScene();

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -43,7 +42,7 @@ public class InputDeviceManager : MonoBehaviour
 		{
 			if (obj is InputAction action && action.activeControl != null)
 			{
-				// Aktif kontrol cihazýný belirle
+				// Aktif kontrol cihazï¿½nï¿½ belirle
 				var device = action.activeControl.device;
 
 				if (CurrentDevice != InputDeviceType.KeyboardMouse && (device is Keyboard || device is Mouse))

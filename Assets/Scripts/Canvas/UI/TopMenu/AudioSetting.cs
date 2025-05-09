@@ -15,18 +15,9 @@ public class AudioSetting : Setting
 	private float _currentValue;
 	private float _tempValue;
 
-	[SerializeField]
-	private List<AudioSource> _sources;
-	private List<AudioSource> _stoppedSrc = new List<AudioSource>();
-
-	[SerializeField]
-	private List<PlayableDirector> _directors;
-	private List<PlayableDirector> _stoppedDrct = new List<PlayableDirector>();
-
 	[InjectOptional]
 	private GameManager _pauseMenu;
 
-	private float _oldValue;
 
 	[SerializeField]
 	private AudioMixerGroup _sfxGroup;
@@ -36,7 +27,7 @@ public class AudioSetting : Setting
 
 	private void Start()
 	{
-		_allSfxSources = FindObjectsOfType<AudioSource>();
+		_allSfxSources = FindObjectsOfType<AudioSource>(true);
 
 		foreach (AudioSource source in _allSfxSources)
 			if (source.outputAudioMixerGroup == _sfxGroup)

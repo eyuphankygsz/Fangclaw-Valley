@@ -1,14 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GPiggyAttack : MonoBehaviour, IEnemyState
 {
 	[SerializeField]
 	private Animator _animator;
-
-	[SerializeField]
-	private const float _minDistance = 2f;
 
 	private bool _startChecking;
 
@@ -29,25 +24,28 @@ public class GPiggyAttack : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IEnemyController _controller;
 
+	private const string AttackAnimationState = "AttackNormal"; // Constant for animation state
+
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
-
 	}
+
 	public void EnterState()
 	{
+		_startChecking = false;
 		_audioSource.clip = _attackSFX;
-		_audioSource.Play();
+		_audioSource?.Play();
 		_timeForAttack.ResetTime();
 		_isAnimOver.SetOver(false);
-		_animator.SetTrigger("AttackNormal");
+		_animator?.SetTrigger(AttackAnimationState); // Use constant here
 	}
 
 	public void ExitState()
 	{
 		_startChecking = false;
 		_turned.CanTurn = false;
-		_animator.ResetTrigger("AttackNormal");
+		_animator?.ResetTrigger(AttackAnimationState); // Use constant here
 	}
 
 	public EnemyStateTransitionList GetTransitions()
@@ -57,10 +55,14 @@ public class GPiggyAttack : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-		if (_startChecking && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+		if (_startChecking && _animator?.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
 			_turned.CanTurn = true;
 
-		if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("AttackNormal"))
+		if (_animator != null && !_animator.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationState)) // Use constant here
 			_startChecking = true;
+		else if (_animator == null)
+		{
+			Debug.LogError("Animator is not assigned in " + gameObject.name); // Error handling
+		}
 	}
 }

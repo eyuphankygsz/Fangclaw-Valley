@@ -19,7 +19,12 @@ public class PlayerCamera : MonoBehaviour
 
 	private bool _force, _inspecting;
 
-	private bool _randomMoveBool, _lockHelper;
+	// Constants for random rotation ranges
+	private const float RandomRotationRange = 1f;
+	private const float RandomRotationDurationMin = 1.2f;
+	private const float RandomRotationDurationMax = 1.5f;
+
+	private bool _randomMoveBool, _lockHelper; // Combined declaration
 
 	public bool LockRandom;
 
@@ -29,7 +34,7 @@ public class PlayerCamera : MonoBehaviour
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 
-		// Mevcut kameranýn rotasyonunu al ve pitch/yaw hesapla
+		// Mevcut kameranÄ±n rotasyonunu al ve pitch/yaw hesapla
 		Vector3 cameraEulerAngles = _camera.localRotation.eulerAngles;
 		_pitch = cameraEulerAngles.x;
 		_yaw = transform.eulerAngles.y;
@@ -67,29 +72,7 @@ public class PlayerCamera : MonoBehaviour
 
 		if (!_randomMoveBool && !LockRandom)
 		{
-			float randomX = Random.Range(-1f, 1f); // Daha küçük ve kontrollü yatay sallantý
-			float randomY = Random.Range(-1f, 1f); // Daha küçük ve kontrollü dikey sallantý
-			_lockHelper = false;
-
-			_tw1 = _cameraHolderBase
-				.DOLocalRotateQuaternion(
-					Quaternion.Euler(randomX, randomY, 0),
-					Random.Range(1.2f, 1.5f) // Hýzlý ama doðal bir süre
-				)
-				.SetEase(Ease.InOutSine) // Daha yumuþak bir geçiþ
-				.OnComplete(() =>
-				{
-					// Kamerayý baþlangýç pozisyonuna döndür
-					randomX = Random.Range(-1f, 1f);
-					randomY = Random.Range(-1f, 1f); ;
-
-					_tw2 = _cameraHolderBase
-						.DOLocalRotateQuaternion(Quaternion.Euler(randomX, randomY, 0), Random.Range(1.2f, 1.5f))
-						.SetEase(Ease.InOutSine)
-						.OnComplete(RandomComplete); // Döngüyü devam ettir
-				});
-
-			_randomMoveBool = true;
+			StartRandomRotation();
 		}
 		else if (LockRandom && !_lockHelper)
 		{
@@ -97,17 +80,49 @@ public class PlayerCamera : MonoBehaviour
 			_lockHelper = true;
 		}
 		else if (!LockRandom)
+		{
 			_cameraHolderBase.DOPlay();
+		}
 
+		UpdateCameraRotation();
+	}
+	private void StartRandomRotation()
+	{
+		// Generate random rotation values with a slight noise factor
+		float randomX = Random.Range(-RandomRotationRange, RandomRotationRange) + Random.Range(-0.1f, 0.1f);
+		float randomY = Random.Range(-RandomRotationRange, RandomRotationRange) + Random.Range(-0.1f, 0.1f);
+		_lockHelper = false;
+
+		// Use a variable duration for a more natural feel
+		float duration = Random.Range(RandomRotationDurationMin, RandomRotationDurationMax) * Random.Range(0.8f, 1.2f);
+
+		_tw1 = _cameraHolderBase
+			.DOLocalRotateQuaternion(Quaternion.Euler(randomX, randomY, 0), duration)
+			.SetEase(Ease.InOutSine)
+			.OnComplete(() =>
+			{
+				randomX = Random.Range(-RandomRotationRange, RandomRotationRange) + Random.Range(-0.1f, 0.1f);
+				randomY = Random.Range(-RandomRotationRange, RandomRotationRange) + Random.Range(-0.1f, 0.1f);
+
+				float nextDuration = Random.Range(RandomRotationDurationMin, RandomRotationDurationMax) * Random.Range(0.8f, 1.2f);
+
+				_tw2 = _cameraHolderBase
+					.DOLocalRotateQuaternion(Quaternion.Euler(randomX, randomY, 0), nextDuration)
+					.SetEase(Ease.InOutSine)
+					.OnComplete(RandomComplete);
+			});
+
+		_randomMoveBool = true;
+	}
+	private void UpdateCameraRotation()
+	{
 		Vector2 cameraDirection = MouseDirection.Instance.GetCameraDirection();
-
 		float gamepadMultiplier = InputDeviceManager.Instance.CurrentDevice == InputDeviceManager.InputDeviceType.Gamepad ? 12 : 1;
 		float mouseX = cameraDirection.x * _rotationSpeed * Time.deltaTime * gamepadMultiplier;
 		float mouseY = cameraDirection.y * _rotationSpeed * Time.deltaTime * gamepadMultiplier;
 
 		_yaw += mouseX;
 		_pitch -= mouseY;
-
 		_pitch = Mathf.Clamp(_pitch, -90f, 90f);
 
 		_camera.localRotation = Quaternion.Euler(_pitch, 0f, 0f);
@@ -133,5 +148,12 @@ public class PlayerCamera : MonoBehaviour
 	{
 		_mouseSensitivity = value;
 		_rotationSpeed = _mouseSensitivity * 20f;
+	}
+
+	// Ensure to unsubscribe from events
+	private void OnDestroy()
+	{
+		_gameManager.OnForce -= Force;
+		_gameManager.OnInspecting -= Inspecting;
 	}
 }

@@ -1,4 +1,3 @@
-using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,7 +7,6 @@ public class Interactable_Valve : Interactable
 	[SerializeField]
 	private bool _oneTimeDone;
 	private bool _isDone;
-	private ControlSchema _controls;
 
 	[SerializeField]
 	private UnityEvent _manuallyOn, _manuallyOff;
@@ -52,7 +50,8 @@ public class Interactable_Valve : Interactable
 	{
 		if (_oneTimeDone && _isDone)
 			return;
-
+		_src.clip = _turnOnSfx;
+		_src.Play();
 		_routine = StartCoroutine(WorkRoutine());
 	}
 	private IEnumerator WorkRoutine()
@@ -76,6 +75,8 @@ public class Interactable_Valve : Interactable
 	private void Stop()
 	{
 		StopCoroutine(_routine);
+		_src.clip = _turnOnSfx;
+		_src.Play();
 		_routine = StartCoroutine(BackToNormal());
 	}
 	private IEnumerator BackToNormal()

@@ -7,7 +7,6 @@ using UnityEngine;
 using Newtonsoft.Json;
 using Zenject;
 using Newtonsoft.Json.Linq;
-using TMPro;
 public class SaveManager : IInitializable
 {
 	[Inject]

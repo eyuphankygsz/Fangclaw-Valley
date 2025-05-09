@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
@@ -9,8 +8,6 @@ public class MouseSensitivitySetting : Setting
 	private Slider _slider;
 	[SerializeField]
 	private PlayerCamera _camera;
-
-	private LiftGammaGain _liftGammaGain;
 
 	private float _currentValue;
 	private float _tempValue;

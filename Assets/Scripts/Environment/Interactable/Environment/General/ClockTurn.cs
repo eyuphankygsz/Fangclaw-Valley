@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.XR;
 using Zenject;
 
 public class ClockTurn : MonoBehaviour, ISaveable
@@ -15,8 +13,8 @@ public class ClockTurn : MonoBehaviour, ISaveable
 	private int _hour, _minute;
 	private bool _isTouched;
 
-	private float _minuteRotationPerStep = 6f; // Her bir dakika için 6 derece
-	private float _hourRotationPerStep = 0.5f; // Her bir dakika için saat ibresinin dönüþ açýsý
+	private float _minuteRotationPerStep = 6f; // Her bir dakika iï¿½in 6 derece
+	private float _hourRotationPerStep = 0.5f; // Her bir dakika iï¿½in saat ibresinin dï¿½nï¿½ï¿½ aï¿½ï¿½sï¿½
 
 	private float _currentMinuteRotation = 0f;
 	private float _currentHourRotation = 0f;
@@ -82,21 +80,21 @@ public class ClockTurn : MonoBehaviour, ISaveable
 			_currentHourRotation += _hourRotationPerStep * Time.deltaTime * _speed * (right ? 1 : -1);
 			_hourHand.localRotation = Quaternion.Euler(0, _currentHourRotation, transform.rotation.z);
 
-			// Eðer dakika 360 dereceyi geçerse
+			// Eï¿½er dakika 360 dereceyi geï¿½erse
 			if (_currentMinuteRotation >= 360f)
 			{
 				_currentMinuteRotation = 0f;
 				_minuteHand.localRotation = Quaternion.Euler(0, 0, 0);
 
-				// Saat ibresini 30 derece döndür
+				// Saat ibresini 30 derece dï¿½ndï¿½r
 				_hour++;
-				if (_hour == 12) // 12 saatin geçilmesi durumunda
+				if (_hour == 12) // 12 saatin geï¿½ilmesi durumunda
 					_hour = 0;
 
 				_currentHourRotation = _hour * 30f;
 				_hourHand.localRotation = Quaternion.Euler(0, _currentHourRotation, transform.rotation.z);
 			}
-			// Eðer dakika negatifse
+			// Eï¿½er dakika negatifse
 			else if (_currentMinuteRotation < 0)
 			{
 				_currentMinuteRotation = 360f;
@@ -154,11 +152,11 @@ public class ClockTurn : MonoBehaviour, ISaveable
 	private void CheckTime()
 	{
 
-		// Dakika hesaplamasý (0-59 arasýnda olacak þekilde)
+		// Dakika hesaplamasï¿½ (0-59 arasï¿½nda olacak ï¿½ekilde)
 		float exactMinutes = (_currentMinuteRotation / 6f) % 60f;
 		_minute = Mathf.RoundToInt(exactMinutes / 5f) * 5;
 		_minuteHand.localRotation = Quaternion.Euler(0, (_minute / 5) * (360f / 12), 0);
-		// Eðer dakika 60 olduysa, saati arttýr ve dakika sýfýrla
+		// Eï¿½er dakika 60 olduysa, saati arttï¿½r ve dakika sï¿½fï¿½rla
 		if (_minute == 60 && _clockWise)
 		{
 			_minute = 0;
@@ -200,7 +198,7 @@ public class ClockTurn : MonoBehaviour, ISaveable
 
 	private void ResetClock()
 	{
-		// Ýbrelerin baþlangýç pozisyonlarýný sýfýrla
+		// ï¿½brelerin baï¿½langï¿½ï¿½ pozisyonlarï¿½nï¿½ sï¿½fï¿½rla
 		_currentMinuteRotation = 0f;
 		_currentHourRotation = 0f;
 		_minuteHand.localRotation = Quaternion.Euler(0, 0, 0);

@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using Zenject;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public abstract class Interactable : MonoBehaviour, ISaveable
 {

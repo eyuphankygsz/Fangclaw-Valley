@@ -2,18 +2,14 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Localization;
 
 public class TalkEvents : MonoBehaviour
 {
 	[SerializeField]
 	private string _talkName;
-	[SerializeField]
-	private List<TalkList> _talksList;
 
 	[SerializeField]
 	private List<AudioSource> _sources;
-	private JsonSerializerSettings _jsonSettings;
 	private int _id;
 	private TalkList _currentTalkList;
 

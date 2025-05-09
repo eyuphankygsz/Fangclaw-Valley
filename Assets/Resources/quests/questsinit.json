@@ -401,6 +401,35 @@
                 "q43_1"
               ],
               "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 43,
+              "QuestName": "q44",
+              "Description": 
+              [
+                "q44_1",
+                "q44_2"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 44,
+              "QuestName": "q45",
+              "Description": 
+              [
+                "q45_1",
+                "q45_2"
+              ],
+              "QuestStatus": 0
+            },            {
+              "$type": "Quest, Assembly-CSharp",
+              "QuestID": 45,
+              "QuestName": "q46",
+              "Description": 
+              [
+                "q46_1"
+              ],
+              "QuestStatus": 0
             }
           ]
         }

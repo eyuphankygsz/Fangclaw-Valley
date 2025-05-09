@@ -1,6 +1,3 @@
-
-using UnityEngine;
-
 public class IsSpawned : AbstractCondition
 {
     private bool _spawned;

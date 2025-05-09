@@ -369,6 +369,40 @@ MonoBehaviour:
     m_Localized: "Hayalet Domuzcu\u011Fu \xD6ld\xFCr!"
     m_Metadata:
       m_Items: []
+  - m_Id: 10501148581552128
+    m_Localized: "Sava\u015Fan Adam"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501156835942400
+    m_Localized: "Cephanelik Odas\u0131na Gir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12729766665773056
+    m_Localized: "Laboratuvar Duvar\u0131ndaki Semboller \u015Eifre \u0130\xE7in
+      Yard\u0131mc\u0131 Olabilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917171884646400
+    m_Localized: "M\xFCzi\u011Fin Gizemi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917174585778176
+    m_Localized: "M\xFCzi\u011Fi \xE7al."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917177639231488
+    m_Localized: "K\xFCt\xFCphanedeki y\u0131rt\u0131lm\u0131\u015F notlar i\u015Fe
+      yarayabilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12926980256161792
+    m_Localized: Asidik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12926982026158080
+    m_Localized: "\u015Ei\u015Feyi sand\u0131ktan al."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

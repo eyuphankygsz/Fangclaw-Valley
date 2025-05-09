@@ -8,6 +8,7 @@ TagManager:
   - Sand
   - dataPath
   - Stone
+  - Metal
   layers:
   - Default
   - TransparentFX

@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Events;
 using Zenject;
 
 public class Interactable_HingedObjects : Interactable

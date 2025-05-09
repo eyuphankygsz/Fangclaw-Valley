@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -27,7 +25,6 @@ public class Interactable_PlaceHolder : Interactable
 	private int _id;
 
 	private bool _initialized;
-	private bool _on;
 	private int _statusID;
 	private PlaceHolderData _data;
 

@@ -1,7 +1,4 @@
 using UnityEngine;
-using UnityEngine.Rendering;
-using System.Collections;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.InputSystem;
 using System;
 using Zenject;

@@ -368,6 +368,41 @@ MonoBehaviour:
     m_Localized: "\xD6ldd Meg A K\xEDs\xE9rteties Malack\xE1t!"
     m_Metadata:
       m_Items: []
+  - m_Id: 10501148581552128
+    m_Localized: "H\xE1bor\xFAban \xC1ll\xF3 F\xE9rfi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501156835942400
+    m_Localized: "L\xE9pj Be A Fegyverszob\xE1ba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12729766665773056
+    m_Localized: "\u03A4\u03B1 \u03A3\u03CD\u03BC\u03B2\u03BF\u03BB\u03B1 \u03A3\u03C4\u03BF\u03BD
+      \u03A4\u03BF\u03AF\u03C7\u03BF \u03A4\u03BF\u03C5 \u0395\u03C1\u03B3\u03B1\u03C3\u03C4\u03B7\u03C1\u03AF\u03BF\u03C5
+      \u038A\u03C3\u03C9\u03C2 \u0392\u03BF\u03B7\u03B8\u03AE\u03C3\u03BF\u03C5\u03BD
+      \u039C\u03B5 \u03A4\u03BF\u03BD \u039A\u03C9\u03B4\u03B9\u03BA\u03CC."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917171884646400
+    m_Localized: "A Zene Rejt\xE9lye"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917174585778176
+    m_Localized: "J\xE1tszd le a zen\xE9t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917177639231488
+    m_Localized: "A k\xF6nyvt\xE1rban tal\xE1lhat\xF3 szakadt jegyzetek seg\xEDthetnek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12926980256161792
+    m_Localized: "Savany\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12926982026158080
+    m_Localized: "Vedd ki az \xFCveget a l\xE1d\xE1b\xF3l."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

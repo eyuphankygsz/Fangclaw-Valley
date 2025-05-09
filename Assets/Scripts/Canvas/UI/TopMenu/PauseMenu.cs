@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -19,8 +18,6 @@ public class PauseMenu : MonoBehaviour
 	[field: SerializeField]
 	public GameObject LoadingScreen { get; private set; }
 
-	[SerializeField]
-	private MenuSelector[] _menuSelectors;
 	[SerializeField]
 	private EventSystem _eventSystem;
 

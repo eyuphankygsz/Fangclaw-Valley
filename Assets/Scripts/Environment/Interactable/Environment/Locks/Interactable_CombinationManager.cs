@@ -1,7 +1,6 @@
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,8 +19,6 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	private CombinationPart[] _combinations;
 	[SerializeField]
 	private Material _normalMaterial, _selectedMaterial;
-	[SerializeField]
-	private GameObject _lightSource;
 	[SerializeField]
 	private string _code;
 	[SerializeField]

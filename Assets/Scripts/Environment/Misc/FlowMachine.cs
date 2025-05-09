@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -24,7 +23,7 @@ public class FlowMachine : MonoBehaviour
 			{
 				_fps = 1.0f / Time.deltaTime;
 				_tmp.text = "FPS: " + Mathf.RoundToInt(_fps).ToString();
-				_timer = 0; // Zamaný sýfýrla
+				_timer = 0; // Zamanï¿½ sï¿½fï¿½rla
 			}
 
 		}

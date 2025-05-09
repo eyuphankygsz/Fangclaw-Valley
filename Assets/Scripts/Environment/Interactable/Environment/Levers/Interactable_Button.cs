@@ -6,8 +6,7 @@ using UnityEngine.Events;
 public class Interactable_Button : Interactable
 {
 	public bool _oneTimePress;
-	private bool _isPressed, _samePress;
-	private ControlSchema _controls;
+	private bool _isPressed;
 
 	[SerializeField]
 	private UnityEvent _manuallyOn, _manuallyOff;

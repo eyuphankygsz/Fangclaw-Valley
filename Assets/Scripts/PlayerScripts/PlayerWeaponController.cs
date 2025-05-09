@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +12,9 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	private PlayerInteractions _playerInteractions;
 
 	private Dictionary<string, Weapons> _weapons;
-
-	private int _takenWeaponCount;
 	private string[] _weaponNames;
 	private int _weaponIndex, _oldWeaponIndex = -1;
+	private int _pickedWeaponCount; // Cached count of picked weapons
 
 	[Inject]
 	private WeaponHelpers _weaponHelpers;
@@ -31,7 +29,6 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	public bool OnWeaponChanging;
 	private void Awake()
 	{
-
 		_gameManager.OnPauseGame += OnPause;
 		_gameManager.OnWeaponChanging += OnWeaponChange;
 
@@ -39,21 +36,19 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 		_weapons = new Dictionary<string, Weapons>();
 		for (int i = 0; i < _weaponHolder.childCount; i++)
-			_weapons.Add(_weaponHolder.GetChild(i).GetChild(0).name, _weaponHolder.GetChild(i).GetChild(0).GetComponent<Weapons>());
+		{
+			var weapon = _weaponHolder.GetChild(i).GetChild(0).GetComponent<Weapons>();
+			_weapons.Add(weapon.name, weapon);
+		}
 
 		_weaponNames = new string[_weapons.Count];
-		int nameIndex = 0;
-		foreach (var weaponName in _weapons)
-			_weaponNames[nameIndex++] = weaponName.Key;
+		_weapons.Keys.CopyTo(_weaponNames, 0);
+		UpdatePickedWeaponCount(); // Initialize the count
 	}
 
 	private void Start()
 	{
 		_weaponHelpers.SetWeaponController(this);
-	}
-	public void IncreaseWeaponCount()
-	{
-		_takenWeaponCount++;
 	}
 	public void ManageGun()
 	{
@@ -67,10 +62,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	private void OnPause(bool pause, bool force)
 	{
-		if (force)
-			return;
-
-		_gamePaused = pause;
+		if (!force) _gamePaused = pause;
 	}
 	private void OnWeaponChange(bool change)
 	{
@@ -93,6 +85,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 			if (item.Value.GetWeaponEnum() == weapon)
 			{
 				item.Value.IsPicked = true;
+				UpdatePickedWeaponCount(); // Update count when a weapon is added
 				break;
 			}
 		}
@@ -120,8 +113,7 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 
 	private void SelectWeapon(bool next)
 	{
-		int count = GetCurrentWeaponCount();
-		int nextGun = (_weaponIndex + (next ? 1 : -1) + count) % count;
+		int nextGun = (_weaponIndex + (next ? 1 : -1) + _pickedWeaponCount) % _pickedWeaponCount;
 
 		if (_weaponHelpers.StopChange || _weaponIndex == nextGun)
 		{
@@ -134,25 +126,27 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	public void SelectWeapon(int index)
 	{
-		if (((_oldWeaponIndex == index && _currentWeapon != null && !_externalWeapon) || index >= _weapons.Count) || _weaponHelpers.StopChange || _weaponIndex == index)
+		if ((_oldWeaponIndex == index && _currentWeapon != null && !_externalWeapon) || 
+			index >= _weapons.Count || 
+			_weaponHelpers.StopChange || 
+			_weaponIndex == index)
 		{
 			OnWeaponChanging = false;
 			return;
 		}
 		_externalWeapon = false;
-		int tempIndex = index;
-
-		ChangeWeapon(false, tempIndex);
+		ChangeWeapon(false, index);
 	}
 	public void SelectInstantWeapon(int index)
 	{
 		_currentWeapon?.OnChanged();
-
 		_weaponIndex = index;
 		_oldWeaponIndex = _weaponIndex;
 
-		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
-		StartCoroutine(WaitForWeaponAnimation(false));
+		if (_weapons.TryGetValue(_weaponNames[_weaponIndex], out _currentWeapon))
+		{
+			StartCoroutine(WaitForWeaponAnimation(false));
+		}
 	}
 	public int GetWeaponIndex()
 	{
@@ -165,12 +159,11 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	}
 	private void ChangeWeapon(bool errorChange, int tempIndex)
 	{
-		if (!_weapons[_weaponNames[tempIndex]].IsPicked)
+		if (!_weapons.TryGetValue(_weaponNames[tempIndex], out var weapon) || !weapon.IsPicked)
 		{
 			OnWeaponChanging = false;
 			if (errorChange)
 				SelectWeapon(true);
-
 			return;
 		}
 
@@ -179,24 +172,17 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 		_weaponIndex = tempIndex;
 		_oldWeaponIndex = _weaponIndex;
 
-
 		_currentWeapon?.OnChanged();
 		StartCoroutine(WaitForWeaponAnimation(sameGun));
 	}
 	private IEnumerator WaitForWeaponAnimation(bool sameGun)
 	{
 		yield return new WaitForEndOfFrame();
-		while (true)
+		while (_currentWeapon == null || !_currentWeapon.CanChange)
 		{
-			if (_currentWeapon != null && _currentWeapon.CanChange)
-			{
-				StartCoroutine(CheckWeaponChange(sameGun));
-				yield break;
-			}
-
-
 			yield return null;
 		}
+		StartCoroutine(CheckWeaponChange(sameGun));
 	}
 
 	private IEnumerator CheckWeaponChange(bool sameGun)
@@ -206,24 +192,19 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 			yield return null;
 		}
 
-		//_currentWeapon.CanChange = true;
 		_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
 		_currentWeapon.gameObject.SetActive(true);
-		//TODO: Add Select Animation on weapon in OnSelected
 		_currentWeapon.OnSelected(_inputManager.Controls);
-
 		_playerInteractions.ChangeCross(_currentWeapon.GetCross());
-
 	}
 
-	private int GetCurrentWeaponCount()
+	private void UpdatePickedWeaponCount()
 	{
-		int count = 0;
+		_pickedWeaponCount = 0;
 		foreach (var item in _weapons)
-			if (item.Value.IsPicked)
-				count++;
-
-		return count;
+		{
+			if (item.Value.IsPicked) _pickedWeaponCount++;
+		}
 	}
 	public void OnInputEnable(ControlSchema schema)
 	{
@@ -241,41 +222,24 @@ public class PlayerWeaponController : MonoBehaviour, IInputHandler
 	{
 		_externalWeapon = true;
 
-		int i = 0;
-		for (; i < _weaponNames.Length; i++)
+		int i = System.Array.IndexOf(_weaponNames, name);
+		if (i >= 0)
 		{
-			if (_weaponNames[i] == name)
-				break;
+			bool sameGun = i == _oldWeaponIndex;
+			_weaponIndex = i;
+			_oldWeaponIndex = _weaponIndex;
+
+			_currentWeapon?.OnChanged();
+			StartCoroutine(WaitForWeaponAnimation(sameGun));
 		}
-
-		bool sameGun = i == _oldWeaponIndex;
-
-		_weaponIndex = i;
-		_oldWeaponIndex = _weaponIndex;
-
-		_currentWeapon?.OnChanged();
-		StartCoroutine(WaitForWeaponAnimation(sameGun));
-
-
-
-		//_currentWeapon?.gameObject.SetActive(false);
-
-		//_currentWeapon = _weapons[name];
-
-		//_currentWeapon.gameObject.SetActive(true);
-		//_currentWeapon.OnSelected(_inputManager.Controls);
-
-		//_playerInteractions.ChangeCross(_currentWeapon.GetCross());
 	}
 	public void TryDropExternalWeapon(string name)
 	{
-		if (_externalWeapon)
-			if (_currentWeapon == _weapons.TryGetValue(name, out Weapons wp))
-			{
-				_currentWeapon?.gameObject.SetActive(false);
-				_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
-				SelectWeapon(true);
-			}
-
+		if (_externalWeapon && _weapons.TryGetValue(name, out Weapons wp) && _currentWeapon == wp)
+		{
+			_currentWeapon?.gameObject.SetActive(false);
+			_currentWeapon = _weapons[_weaponNames[_weaponIndex]];
+			SelectWeapon(true);
+		}
 	}
 }

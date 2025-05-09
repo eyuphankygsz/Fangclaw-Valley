@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -116,16 +114,16 @@ public class SDaddyWander : MonoBehaviour, IEnemyState
 			}
 			while (Vector3.Distance(_wanderCenter, randomPoint) < minDistance);
 
-			float safeRange = _wanderRange - _agent.radius * 2; // Duvarlardan kaçýnmak için güvenli mesafe
+			float safeRange = _wanderRange - _agent.radius * 2; // Duvarlardan kaï¿½ï¿½nmak iï¿½in gï¿½venli mesafe
 
 			NavMeshHit hit;
 			if (NavMesh.SamplePosition(randomPoint, out hit, safeRange, NavMesh.AllAreas))
 			{
-				// Eðer nokta duvarla çarpýþýyorsa yeni bir nokta bulmaya devam et
+				// Eï¿½er nokta duvarla ï¿½arpï¿½ï¿½ï¿½yorsa yeni bir nokta bulmaya devam et
 				NavMeshHit edgeHit;
 				if (NavMesh.Raycast(_wanderCenter, hit.position, out edgeHit, NavMesh.AllAreas))
 				{
-					continue; // Geçerli bir nokta bulana kadar devam et
+					continue; // Geï¿½erli bir nokta bulana kadar devam et
 				}
 
 				_isSearchingNewTarget = false;

@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine.InputSystem;
-
 public interface IPlayerState
 {
 	void EnterState();

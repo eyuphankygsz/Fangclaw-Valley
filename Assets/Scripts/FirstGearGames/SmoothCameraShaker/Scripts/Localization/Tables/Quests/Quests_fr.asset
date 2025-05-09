@@ -368,6 +368,38 @@ MonoBehaviour:
     m_Localized: Tue Le Petit Cochon Fantomatique !
     m_Metadata:
       m_Items: []
+  - m_Id: 10501148581552128
+    m_Localized: Homme En Guerre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10501156835942400
+    m_Localized: "Entre Dans La Salle D\u2019Armes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12729766665773056
+    m_Localized: "Laboratorion Sein\xE4ll\xE4 Olevat Symbolit Voivat Auttaa Salasanassa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917171884646400
+    m_Localized: "Myst\xE8re De La Musique"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917174585778176
+    m_Localized: Joue la musique.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917177639231488
+    m_Localized: "Les notes d\xE9chir\xE9es dans la biblioth\xE8que pourraient aider."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12926980256161792
+    m_Localized: Acide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12926982026158080
+    m_Localized: Prends la bouteille dans le coffre.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

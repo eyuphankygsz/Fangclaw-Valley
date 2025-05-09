@@ -1,7 +1,3 @@
-using Unity.VisualScripting;
-using UnityEditor;
-using UnityEngine;
-
 public class IsAnimationOver : AbstractCondition
 {
 	private bool _over;

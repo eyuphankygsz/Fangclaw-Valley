@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: tunnelsSounds Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: tunnelsSounds
+  m_TableCollectionNameGuidString: 6dad8f81059d9f044a55c7efa3f37028
+  m_Entries:
+  - m_Id: 46857707520
+    m_Key: c1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74129072128
+    m_Key: c2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78059134976
+    m_Key: c3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82278604800
+    m_Key: c4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86854590464
+    m_Key: c5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91447353344
+    m_Key: c6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102604201984
+    m_Key: c7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116613177344
+    m_Key: c8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128365617152
+    m_Key: c9
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3145089453660045312
+  references:
+    version: 2
+    RefIds:
+    - rid: 3145089453660045312
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1746787855490

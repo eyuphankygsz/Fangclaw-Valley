@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Zenject;
 
 public class MainMenu : MonoBehaviour
 {

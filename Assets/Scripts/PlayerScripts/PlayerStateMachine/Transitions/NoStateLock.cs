@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class NoStateLock : AbstractCondition
 {
 	public bool Lock;

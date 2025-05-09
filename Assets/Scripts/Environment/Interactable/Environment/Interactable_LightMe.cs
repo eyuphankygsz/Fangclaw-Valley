@@ -2,13 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using Zenject;
 
 public class Interactable_LightMe : Interactable
 {
-	[SerializeField]
-	private Enum_Weapons _weapon;
-
 	private WeaponPickData _data;
 
 	[SerializeField]
