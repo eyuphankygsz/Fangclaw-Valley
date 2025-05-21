@@ -26,7 +26,6 @@ public class ChaseMusicManager : MonoBehaviour
         if (_playing == onChase)
             return;
 
-        Debug.Log("CHANGE TO: " + onChase);
         _playing = onChase;
 
         if (_playing)

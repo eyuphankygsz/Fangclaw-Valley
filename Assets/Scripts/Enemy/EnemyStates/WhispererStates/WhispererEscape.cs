@@ -22,7 +22,7 @@ public class WhispererEscape : MonoBehaviour, IEnemyState
 
 	[SerializeField]
 	private Collider _collider;
-	private bool _arrived, _escapeAnimationStarted;
+	private bool _arrived, _foundEscape;
 
 	[SerializeField]
 	private AudioSource _audioSource;
@@ -88,10 +88,12 @@ public class WhispererEscape : MonoBehaviour, IEnemyState
 	public void UpdateState()
 	{
 		_openDoor.CheckDoors();
-		if (_agent.remainingDistance <= _agent.stoppingDistance && !_arrived)
+		
+		if(_agent.hasPath)
+			_foundEscape = true;
+		
+		if (_foundEscape && _agent.remainingDistance <= _agent.stoppingDistance && !_arrived)
 		{
-			Debug.Log("REMAINING DISTANCE: " + _agent.remainingDistance);
-			Debug.Log("STOPPING DISTANCE: " + _agent.stoppingDistance);
 			OnArrived();
 		}
 	}

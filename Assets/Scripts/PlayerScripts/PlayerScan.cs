@@ -47,13 +47,13 @@ public class PlayerScan : MonoBehaviour, IInputHandler
 	{
 		if (ctx.performed && !_scanning && !_freeze)
 		{
-			if (_playerStamina.Stamina < 60)
+			if (_playerStamina.Stamina < 15)
 				return;
 
 			for (int i = 0; i < _clips.Length; i++)
 				_source.PlayOneShot(_clips[i]);
 
-			_playerStamina.AddStamina(-60);
+			_playerStamina.AddStamina(-15);
 			_qManager.ShowQuests();
 			_scanning = true;
 			_ppc.StartProcessChange(_targetLensDistortion, _targetFocusDistance, _targetChromaticAberration, _targetColor, _midAction, _endAction);

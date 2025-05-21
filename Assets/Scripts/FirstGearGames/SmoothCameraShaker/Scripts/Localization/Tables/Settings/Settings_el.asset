@@ -211,6 +211,10 @@ MonoBehaviour:
     m_Localized: "\u03A3\u03C5\u03BD\u03C4\u03B5\u03BB\u03B5\u03C3\u03C4\u03AD\u03C2"
     m_Metadata:
       m_Items: []
+  - m_Id: 97591148598517760
+    m_Localized: "\u0393\u03BB\u03CE\u03C3\u03C3\u03B1 \u03BD\u03C4\u03BF\u03C5\u03BC\u03C0\u03BB\u03AC\u03B6"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

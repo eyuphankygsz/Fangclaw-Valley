@@ -2556,6 +2556,54 @@ MonoBehaviour:
     - Locale-sv
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45a8e80f90def7844815a286833206ad
+    m_Address: albCEntry4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 44f2d38ee13a0664895b889007cc11a2
+    m_Address: albCEntry5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ko
+    - Locale-ja
+    - Locale-no
+    - Locale-es
+    - Locale-ru
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}
   m_SchemaSet:

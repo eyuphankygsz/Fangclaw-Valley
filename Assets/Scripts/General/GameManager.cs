@@ -15,7 +15,6 @@ public class GameManager
 			{
 				if(!IsDied)
 				{
-					Debug.Log("Not Died Sorry");
 					Cursor.lockState = value ? CursorLockMode.None : CursorLockMode.Locked;
 					Cursor.visible = value;
 

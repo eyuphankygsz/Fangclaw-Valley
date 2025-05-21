@@ -9,7 +9,15 @@ public class IsPlayerClose : AbstractCondition
 
 	public override bool CheckCondition()
 	{
-		return Vector3.Distance(transform.position, _target.position) < _range;
+		bool isClose = Mathf.Abs(Vector3.Distance(transform.position, _target.position)) < _range;
+		if(DebugCondition)
+		{
+			Debug.Log("IsPlayerClose: " + isClose);
+			if(isClose)
+				Debug.Log("Distance: " + Vector3.Distance(transform.position, _target.position));
+		}
+
+		return isClose;
 	}
 	
     public override void ResetFrameFreeze() { }

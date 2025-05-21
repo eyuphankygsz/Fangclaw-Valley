@@ -207,6 +207,10 @@ MonoBehaviour:
     m_Localized: "Yap\u0131mc\u0131lar"
     m_Metadata:
       m_Items: []
+  - m_Id: 97591148598517760
+    m_Localized: Seslendirme Dili
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

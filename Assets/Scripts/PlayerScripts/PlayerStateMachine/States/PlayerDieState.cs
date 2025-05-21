@@ -20,7 +20,6 @@ public class PlayerDieState : MonoBehaviour, IPlayerState, IInputHandler
 		_dieScreen.SetActive(true);
 		_manager.SetPauseGame(true);
 		_manager.IsDied = true;
-		Debug.Log("Died: " + _manager.IsDied);	
 	}
 
 	public void UpdateState()

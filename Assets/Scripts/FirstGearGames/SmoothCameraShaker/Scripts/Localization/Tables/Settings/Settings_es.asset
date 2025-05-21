@@ -207,6 +207,10 @@ MonoBehaviour:
     m_Localized: "Cr\xE9ditos"
     m_Metadata:
       m_Items: []
+  - m_Id: 97591148598517760
+    m_Localized: Idioma del doblaje
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

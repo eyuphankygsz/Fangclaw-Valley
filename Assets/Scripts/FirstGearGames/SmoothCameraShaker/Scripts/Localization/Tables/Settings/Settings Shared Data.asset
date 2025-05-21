@@ -204,6 +204,10 @@ MonoBehaviour:
     m_Key: _credits
     m_Metadata:
       m_Items: []
+  - m_Id: 97591148598517760
+    m_Key: _voiceover
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

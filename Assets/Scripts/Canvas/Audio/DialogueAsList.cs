@@ -27,7 +27,10 @@ public class DialogueAsList : MonoBehaviour
 
         for (int i = 0; i < talkObject.Count; i++)
         {
-            string voiceLang = PlayerPrefs.GetString("voice_lang", "en");
+            string voiceLang = PlayerPrefs.GetString("selected_voiceover", "English");
+			voiceLang = (voiceLang == "en") ? "English" : "Turkish";
+
+			Debug.Log("voiceLang: " + voiceLang);
             var locale = LocalizationSettings.AvailableLocales.GetLocale(voiceLang);
             LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() 
             { 
@@ -76,7 +79,7 @@ public class DialogueAsList : MonoBehaviour
 
 	private IEnumerator PlayAudioAsync(TalkObject talkObject, string tableRef)
 	{
-		string voiceLang = PlayerPrefs.GetString("voice_lang", "en");
+		string voiceLang = PlayerPrefs.GetString("selected_voiceover", "en");
 		var locale = LocalizationSettings.AvailableLocales.GetLocale(voiceLang);
 		LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() 
 		{ 
