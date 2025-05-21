@@ -42,7 +42,7 @@ public class PlayerStamina : MonoBehaviour
 			if (Force)
 				yield break;
 
-			_stamina -= Time.deltaTime * 10;
+			_stamina -= Time.deltaTime * 8;
 			ChangeUI();
 
 			if (_stamina < 0)
@@ -59,7 +59,7 @@ public class PlayerStamina : MonoBehaviour
 			if (Force)
 				yield break;
 
-			_stamina += Time.deltaTime * 8f;
+			_stamina += Time.deltaTime * 4f;
 			ChangeUI();
 
 			if (_stamina > _maxStamina)

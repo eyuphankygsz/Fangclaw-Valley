@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: Ich hoffe, ich mache nichts kaputt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: Also gut, wie eben. Eins, zwei, drei und vier.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: "Ich habe schon schwierigere Dinge gel\xF6st."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: Es war einfacher, als ich erwartet hatte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: "Sch\xF6n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: "Es war schon lange klar, dass sich die Dinge verschlechtern w\xFCrden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: "Sie haben Menschen offen f\xFCr Forschungszwecke get\xF6tet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: Hm... Okay. Ich denke, ich kann das schaffen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: "Ich h\xF6re etwas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: "Widerlich... Was f\xFCr ein Tier hat hier gelebt!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: Hmm. Das Zahnrad sollte hier sein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: "Gott, ich werde mich \xFCbergeben!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: "Vielleicht kann ich den Mechanismus in der K\xFCche in Gang setzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: "Es w\xE4re gut, wenn der Tunnel an einem sicheren Ort endet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: "Was f\xFCr ein langer Tunnel!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: Ich habe schon an solchen Orten gearbeitet... Aber solche Dinge
+      habe ich noch nie gesehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: "S\xE4ure. Ich sollte es nicht zu viel ber\xFChren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: "Vitriol\xF6l. Ich habe es fr\xFCher in meinen Experimenten verwendet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: "K\xF6nigswasser. Das wird mir definitiv n\xFCtzlich sein."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: Diese Symbole habe ich schon einmal am Eingang zur Waffenkammer
+      gesehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: Wie konnten sie dieses System damals errichten?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: "Ich sollte mir die ge\xF6ffnete Truhe ansehen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: "Okay, jetzt kann ich die Flaschen zur\xFCckstellen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: Ich sollte es besser vorsichtig benutzen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: "Ich wusste, dass es funktionieren w\xFCrde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: Womit habe ich es zu tun...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: Der Kartenraum...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: Ich habe so etwas schon einmal gesehen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: NEIN!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: Verdammt, Mein Bein! Ich Hasse Diesen Ort!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: Ist das ein unterirdischer Friedhof?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: "Es k\xF6nnte mir beim Ausgang helfen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: Okay, wohin soll ich das legen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: Ich hoffe, ich muss nicht noch einmal dort hineingehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: "Noch 1 \xFCbrig."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: Was, wie bitte? Gott, diese... Wie seltsam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: Ich denke, ich sollte das irgendwo reinstecken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Ich wusste es!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Wow...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: "All das ist wirklich seltsam. Ich m\xF6chte so schnell wie m\xF6glich
+      dorthin gelangen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: Was ist das?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: Muss ich das machen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: Gott... Gott... Das ist sehr... beweglich?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: "Ah, verdammt! Die T\xFCr ist zugegangen!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "Ich kann es nicht glauben, er ist tot! Endlich habe ich eine Probe
+      sammeln k\xF6nnen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: Es riecht wirklich schlecht...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: "Es ist immer noch \xFCberraschend, dass die alten Methoden funktionieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: Evelynn? Wie kann das sein!?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

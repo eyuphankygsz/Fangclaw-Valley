@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class WhispererStun : MonoBehaviour, IEnemyState
 {
@@ -17,7 +18,13 @@ public class WhispererStun : MonoBehaviour, IEnemyState
 	List<int> clipIndexs = new List<int>();
 
 	[SerializeField]
+	private AchievementCheck _whispStun, _creatureStun;
+	private int _stunCount;
+	[SerializeField]
 	private IEnemyController _controller;
+
+	[Inject]
+	private SteamAchievements  _steamAch;
 
 	private void Awake()
 	{
@@ -27,6 +34,13 @@ public class WhispererStun : MonoBehaviour, IEnemyState
 
 	public void EnterState()
 	{
+		PlayerPrefs.SetInt("stun_creatures", PlayerPrefs.GetInt("stun_creatures", 0) + 1);
+		if(_steamAch != null)
+		{
+			_steamAch.TryEnableAchievement(_whispStun);
+			_steamAch.TryEnableAchievement(_creatureStun);
+
+		}
 		clipIndexs.Clear();
         for (int i = 0; i < _clips.Length; i++)
         {

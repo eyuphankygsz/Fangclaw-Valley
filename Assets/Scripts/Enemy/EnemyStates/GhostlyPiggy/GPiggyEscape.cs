@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject;
 
 public class GPiggyEscape : MonoBehaviour, IEnemyState
 {
@@ -46,6 +47,10 @@ public class GPiggyEscape : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IEnemyController _controller;
 
+	[Inject]
+	private SteamAchievements _steamAch;
+	[SerializeField]
+	private AchievementCheck _creatureStun;
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
@@ -57,6 +62,11 @@ public class GPiggyEscape : MonoBehaviour, IEnemyState
 	}
 	public void EnterState()
 	{
+		PlayerPrefs.SetInt("stun_creatures", PlayerPrefs.GetInt("stun_creatures", 0) + 1);
+		if(_steamAch != null)
+			_steamAch.TryEnableAchievement(_creatureStun);
+
+
 		if (_controller.IsOnChase)
 		{
 			_controller.SetChase(-1);

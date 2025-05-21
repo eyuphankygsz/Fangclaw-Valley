@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: Spero di non rompere nulla.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: Va bene, proprio come prima. Uno, due, tre e quattro.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: "Ho risolto cose pi\xF9 difficili."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: "\xC8 stato pi\xF9 facile di quanto mi aspettassi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: Bello.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: Era chiaro da tempo che le cose sarebbero peggiorate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: Hanno ucciso persone apertamente per la ricerca.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: Hmm... Va bene. Penso di potercela fare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: Sento qualcosa!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: Ripugnante... Che tipo di animale ha vissuto qui!?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: "Hmm. L\u2019ingranaggio dovrebbe essere qui."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: Dio, sto per vomitare!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: Forse posso far funzionare il meccanismo in cucina.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: Sarebbe bene se il tunnel sbucasse in un posto sicuro.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: Che galleria lunga!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: Ho lavorato in posti come questo prima... Ma non ho mai visto cose
+      del genere prima d'ora.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: Acido. Non dovrei toccarlo troppo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: "Olio di vetriolo. L\u2019ho usato in passato nei miei esperimenti."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: "Acqua regia. Mi sar\xE0 sicuramente utile."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: "Ho gi\xE0 visto questi simboli all\u2019ingresso dell\u2019Armeria."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: Come hanno fatto a costruire questo sistema in passato?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: "Dovrei dare un\u2019occhiata al forziere aperto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: Va bene, ora posso rimettere le bottiglie al loro posto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: Meglio se lo uso con cautela.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: Sapevo che avrebbe funzionato.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: Con cosa ho a che fare...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: La stanza delle mappe...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: "Ho gi\xE0 visto qualcosa di simile!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: NO!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: Dannazione, La Mia Gamba! Odio Questo Posto!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: "\xC8 un cimitero sotterraneo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: "Potrebbe aiutarmi per l\u2019uscita."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: Ok, dove dovrei metterlo?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: Spero di non doverci rientrare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: Ne resta 1.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: "Cosa, cosa intendi? Dio, questi... Quanto \xE8 strano."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: Credo che dovrei metterlo da qualche parte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Lo sapevo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Wow...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: "Tutto questo \xE8 davvero strano. Voglio arrivarci il prima possibile."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: "Che cos\u2019\xE8 questo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: Devo farlo per forza?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: "Dio... Dio... Questo \xE8 molto... mobile?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: "Ah, cazzo! La porta si \xE8 chiusa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "Non ci posso credere, \xE8 morto! Finalmente sono riuscito a raccogliere
+      un campione."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: Odora davvero male...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: "\xC8 ancora sorprendente che i vecchi metodi funzionino."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: "Evelynn? Come \xE8 possibile!?"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db626ad063b13545924a9839ac5fa83, type: 3}
+  m_Name: trialsSounds
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: c18229d9b439ec644b785be42f7cb7c9, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 3737e118acac18a4f953d8c573a13c43, type: 2}
+  - {fileID: 11400000, guid: 198efd93407f0dc489e15c8bc904b4b7, type: 2}
+  - {fileID: 11400000, guid: d28c22504fe88664d8ac7d52a3304ead, type: 2}
+  - {fileID: 11400000, guid: e40510fad2831a04ba82420e0c1799eb, type: 2}
+  - {fileID: 11400000, guid: 205e28ef1ab757e45a967f5e38f1aa73, type: 2}
+  - {fileID: 11400000, guid: 2e004c069ffb35f4eaa1f1c3029ad819, type: 2}
+  - {fileID: 11400000, guid: e93f6c246c6d1274e8bab26f80fddf0d, type: 2}
+  - {fileID: 11400000, guid: 6c4decdb739d1b5468f2a0148a26dd0f, type: 2}
+  - {fileID: 11400000, guid: c3ddb36efb7d22d4cac3f5e1dbc18699, type: 2}
+  - {fileID: 11400000, guid: c1035482ba083f441a425b203da126fb, type: 2}
+  - {fileID: 11400000, guid: ee8f3fd531503d343b83c22e53bea63f, type: 2}
+  - {fileID: 11400000, guid: a03903e352aa25044bb0093a5912ea7a, type: 2}
+  - {fileID: 11400000, guid: 6aab9c9ecdfaa2a48b2cf005a40400f4, type: 2}
+  - {fileID: 11400000, guid: dde8e3f7ef71a654aa773eef60c1439d, type: 2}
+  - {fileID: 11400000, guid: 82d15064c07d51d45910c40245804ff8, type: 2}
+  - {fileID: 11400000, guid: cde6b464e5809ad4aaf8f7db39a90996, type: 2}
+  - {fileID: 11400000, guid: 39d79f008bb55b54ea28b7aa9ea14061, type: 2}
+  - {fileID: 11400000, guid: 055caf18e8da47e4c80d0594b5cc54c4, type: 2}
+  - {fileID: 11400000, guid: b1326f1b21d68b644b4bbf943e5a2406, type: 2}
+  - {fileID: 11400000, guid: 1f4c34d0dac10424bad4e3e57f36c9ce, type: 2}
+  m_Extensions: []
+  m_Group: Asset Table
+  references:
+    version: 2
+    RefIds: []

@@ -88,4 +88,11 @@ public class ClockTurnData : GameData
 	public int Hour;
 	public int Minute;
 	public bool[] RunningTimesIsDone;
+	public bool[] OneTimeEventDone;
+}
+
+[System.Serializable]
+public class LightMeData : GameData
+{
+	public bool IsOneTimeDone;
 }

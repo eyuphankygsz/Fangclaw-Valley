@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: "Toivottavasti en riko mit\xE4\xE4n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: "Selv\xE4, aivan kuten \xE4sken. Yksi, kaksi, kolme ja nelj\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: Olen ratkaissut vaikeampiakin asioita.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: Se oli helpompaa kuin odotin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: "Hyv\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: "Oli selv\xE4\xE4 jo kauan sitten, ett\xE4 asiat pahenisivat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: "He tappoivat ihmisi\xE4 julkisesti tutkimuksen vuoksi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: "Hmm... Selv\xE4. Luulen, ett\xE4 selvi\xE4n t\xE4st\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: Kuulen jotain!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: "Inhottavaa... Millainen el\xE4in on el\xE4nyt t\xE4\xE4ll\xE4!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: "Hmm. Hammasratas pit\xE4isi olla t\xE4\xE4ll\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: Jumala, olen oksentamassa!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: "Ehk\xE4 voin k\xE4ynnist\xE4\xE4 keitti\xF6n mekanismin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: "Olisi hyv\xE4, jos tunneli p\xE4\xE4ttyisi turvalliseen paikkaan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: "Onpa pitk\xE4 tunneli!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: "Olen ty\xF6skennellyt t\xE4llaisissa paikoissa aiemmin... Mutta
+      en ole koskaan n\xE4hnyt t\xE4llaista ennen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: "Happo. Minun ei pit\xE4isi koskea siihen liikaa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: "Vitrioli\xF6ljy. Olen k\xE4ytt\xE4nyt sit\xE4 aiemmin kokeissani."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: "Kuninkaanvesi. T\xE4st\xE4 on varmasti hy\xF6ty\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: "Olen n\xE4hnyt n\xE4m\xE4 symbolit aiemmin Asehuoneen sis\xE4\xE4nk\xE4ynnill\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: "Miten he pystyiv\xE4t rakentamaan t\xE4m\xE4n j\xE4rjestelm\xE4n
+      aikoinaan?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: "Minun pit\xE4isi katsoa avattua arkkua."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: "Selv\xE4, nyt voin laittaa pullot takaisin paikoilleen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: "Parempi k\xE4ytt\xE4\xE4 t\xE4t\xE4 varovasti."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: "Tiesin, ett\xE4 se toimisi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: "Mink\xE4 kanssa olen tekemisiss\xE4..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: Karttahuone...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: "Olen n\xE4hnyt jotain t\xE4llaista aiemmin!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: EI!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: "Hitto, Jalkani! Inhoan T\xE4t\xE4 Paikkaa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: "Onko t\xE4m\xE4 maan alla oleva hautausmaa?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: "Se voi olla hy\xF6dyllinen minulle ulosk\xE4ynnin l\xF6yt\xE4misess\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: "Okei, mihin minun pit\xE4isi laittaa se?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: "Toivon, etten joudu menem\xE4\xE4n sinne uudelleen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: "J\xE4ljell\xE4 1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: "Mit\xE4, mit\xE4 tarkoitat? Jumala, n\xE4m\xE4... Kuinka outoa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: "Luulen, ett\xE4 minun pit\xE4isi laittaa t\xE4m\xE4 johonkin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Tiesin sen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Vau...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: "Kaikki t\xE4m\xE4 on todella outoa. Haluan p\xE4\xE4st\xE4 siihen
+      mahdollisimman pian."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: "Mik\xE4 t\xE4m\xE4 on?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: "T\xE4ytyyk\xF6 minun tehd\xE4 t\xE4m\xE4?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: "Jumala... Jumala... T\xE4m\xE4 on hyvin... liikkuvaa?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: Ah, hitto! Ovi meni kiinni!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "En voi uskoa, h\xE4n kuoli! Vihdoin sain otettua n\xE4ytteen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: Se haisee todella pahalta...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: "On yll\xE4tt\xE4v\xE4\xE4, ett\xE4 vanhat menetelm\xE4t viel\xE4
+      toimivat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: Evelynn? Kuinka se on mahdollista!?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

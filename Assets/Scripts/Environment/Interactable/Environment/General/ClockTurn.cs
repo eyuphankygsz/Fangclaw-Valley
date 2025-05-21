@@ -44,8 +44,13 @@ public class ClockTurn : MonoBehaviour, ISaveable
 	[Inject]
 	private SaveManager _saveManager;
 
+	[SerializeField]
+	private bool[] _oneTimeEventDone;
 	private void Start()
 	{
+		if(_oneTimeEventDone == null)
+		    _oneTimeEventDone = new bool[_times.Length];
+		
 		ResetClock();
 	}
 
@@ -222,7 +227,8 @@ public class ClockTurn : MonoBehaviour, ISaveable
 			IsTouched = _isTouched,
 			Hour = _hour,
 			Minute = _minute,
-			RunningTimesIsDone = runningtimes
+			RunningTimesIsDone = runningtimes,
+			OneTimeEventDone = _oneTimeEventDone
 		};
 	}
 
@@ -241,6 +247,7 @@ public class ClockTurn : MonoBehaviour, ISaveable
 		_minute = data.Minute;
 		_minuteHand.localRotation = Quaternion.Euler(0, (_minute / 5) * (360f / 12), 0);
 
+		_oneTimeEventDone = data.OneTimeEventDone;
 		bool[] runningtimes = data.RunningTimesIsDone;
 
 		int i = 0;
@@ -259,6 +266,7 @@ public class TheTimes
 	public int Minute;
 	public UnityEvent OnTrueEvents;
 	public UnityEvent OnFalseEvents;
+	public UnityEvent OneTimeEvents;
 }
 
 [System.Serializable]

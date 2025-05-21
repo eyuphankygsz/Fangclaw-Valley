@@ -33,6 +33,8 @@ public class CombineManager : MonoBehaviour
 		second.AddQuantity(combineable.FirstItem == first ? -combineable.SecondCount : -combineable.FirstCount);
 
 		PlayerPrefs.SetInt("combined_items", PlayerPrefs.GetInt("combined_items") + 1);
+		if(combineable.ResultItem.Name == "bundle_dynamite_0")
+		     _achievements.TryEnableAchievement(_expectedResults);
 
 		_inventoryManager.AddItemToInventory(combineable.ResultItem, combineable.ResultCount, null);
 

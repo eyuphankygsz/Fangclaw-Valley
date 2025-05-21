@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using Zenject;
 
 public class PauseMenu : MonoBehaviour
@@ -54,6 +55,14 @@ public class PauseMenu : MonoBehaviour
 		LoadingScreen.SetActive(freeze);
 	}
 
+	public void BackToMainMenu(){
+		PlayerPrefs.SetString("SceneToLoad", "MainMenu");
+		SceneManager.LoadScene("LoadingScreen");
+	}
+	public void LoadLastSave(){
+		PlayerPrefs.SetString("SceneToLoad", "GameScene");
+		SceneManager.LoadScene("LoadingScreen");
+	}
 	public void ChangeMenu(string menuName)
 	{
 		SelectSection(_sections[menuName], true);
@@ -64,7 +73,7 @@ public class PauseMenu : MonoBehaviour
 
 	private void SelectSection(TopSections section, bool byButtons)
 	{
-		if (_gameManager.SaveGame || (_hintManager != null && _hintManager.HintShow))
+		if (_gameManager.SaveGame || (_hintManager != null && _hintManager.HintShow) || _gameManager.IsDied)
 			return;
 
 		foreach (var item in _sections)

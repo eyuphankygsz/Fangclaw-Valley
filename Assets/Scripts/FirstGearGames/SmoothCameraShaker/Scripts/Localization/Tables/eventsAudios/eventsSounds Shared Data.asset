@@ -309,11 +309,11 @@ MonoBehaviour:
           - ja
           - no
           - ko
-          - ru
           - es
           - sv
           - tr
           - uk
+          - ru
         - m_KeyId: 168470615416832
           m_TableCodes:
           - bg
@@ -332,10 +332,10 @@ MonoBehaviour:
           - ko
           - no
           - ru
-          - es
           - sv
           - tr
           - uk
+          - es
         - m_KeyId: 173190084026368
           m_TableCodes:
           - bg
@@ -624,7 +624,6 @@ MonoBehaviour:
           - uk
         - m_KeyId: 193831914954752
           m_TableCodes:
-          - bg
           - zh-Hans
           - da
           - nl
@@ -644,6 +643,7 @@ MonoBehaviour:
           - sv
           - tr
           - uk
+          - bg
         - m_KeyId: 194068163321856
           m_TableCodes:
           - bg

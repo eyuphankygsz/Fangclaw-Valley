@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: Espero no romper nada.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: "Est\xE1 bien, como antes. Uno, dos, tres y cuatro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: "He resuelto cosas m\xE1s dif\xEDciles."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: "Fue m\xE1s f\xE1cil de lo que esperaba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: Bien.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: "Hac\xEDa tiempo que estaba claro que las cosas empeorar\xEDan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: "Mataron a personas a plena vista por la investigaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: "Hmm... Est\xE1 bien. Creo que puedo con esto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: "\xA1Oigo algo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: "Repugnante... \xBFQu\xE9 tipo de animal vivi\xF3 aqu\xED!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: "Hmm. El engranaje deber\xEDa estar aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: "\xA1Dios, voy a vomitar!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: "Quiz\xE1s pueda activar el mecanismo en la cocina."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: "Ser\xEDa bueno si el t\xFAnel terminara en un lugar seguro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: "\xA1Qu\xE9 t\xFAnel tan largo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: He trabajado en lugares como este antes... Pero nunca he visto cosas
+      como estas antes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: "\xC1cido. No deber\xEDa tocarlo demasiado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: Aceite de vitriolo. Lo he usado antes en mis experimentos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: "Agua regia. Definitivamente me ser\xE1 \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: "He visto estos s\xEDmbolos antes en la entrada del Arsenal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: "\xBFC\xF3mo pudieron construir este sistema en el pasado?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: "Deber\xEDa echar un vistazo al cofre abierto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: "Est\xE1 bien, ahora puedo volver a colocar las botellas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: "Ser\xE1 mejor que lo use con cuidado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: "Sab\xEDa que funcionar\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: "A qu\xE9 me estoy enfrentando..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: La sala de mapas...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: "\xA1He visto algo as\xED antes!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: "\xA1NO!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: "\xA1Maldita sea, Mi Pierna! \xA1Odio Este Lugar!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: "\xBFEs un cementerio subterr\xE1neo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: "Podr\xEDa ayudarme para la salida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: "Bien, \xBFd\xF3nde debo ponerlo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: "Espero no tener que volver a entrar all\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: Queda 1.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: "\xBFQu\xE9, c\xF3mo dices? Dios, estos... Qu\xE9 extra\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: "Creo que deber\xEDa poner esto en alg\xFAn lugar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: "\xA1Lo sab\xEDa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Vaya...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: "Todo esto es realmente extra\xF1o. Quiero llegar all\xED lo antes
+      posible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: "\xBFQu\xE9 es esto?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: "\xBFTengo que hacer esto?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: Dios... Dios... Esto es muy... movible?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: "\xA1Ah, mierda! \xA1La puerta se cerr\xF3!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "No puedo creerlo, \xA1est\xE1 muerto! Finalmente pude recoger una
+      muestra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: Huele muy mal...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: "Todav\xEDa es sorprendente que los m\xE9todos antiguos funcionen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: "\xBFEvelynn? \xBFC\xF3mo puede ser esto!?"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

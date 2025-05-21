@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject;
 
 public class SDaddyEscape : MonoBehaviour, IEnemyState
 {
@@ -53,12 +54,23 @@ public class SDaddyEscape : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IEnemyController _controller;
 
+	[Inject]
+	private SteamAchievements _steamAch;
+	[SerializeField]
+	private AchievementCheck _creatureStun;
+	
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
 	}
 	public void EnterState()
 	{
+
+		PlayerPrefs.SetInt("stun_creatures", PlayerPrefs.GetInt("stun_creatures", 0) + 1);
+		if(_steamAch != null)
+			_steamAch.TryEnableAchievement(_creatureStun);
+
+
 		if (_controller.IsOnChase)
 		{
 			_controller.SetChase(-1);

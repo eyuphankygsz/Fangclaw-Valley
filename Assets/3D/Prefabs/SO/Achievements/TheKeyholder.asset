@@ -23,6 +23,6 @@ MonoBehaviour:
   CurrentFloat: 
   CurrentString: 
   LessThanEqual: 0
-  GreaterThanEqual: 0
+  GreaterThanEqual: 1
   LessThan: 0
   GreaterThan: 0

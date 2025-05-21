@@ -71,125 +71,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 088ad9f4e65a55d4690ca1b11b3168c9
-    m_Address: c1
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-fr
-    - Locale-es
-    - Locale-bg
-    - Locale-da
-    - Locale-nl
-    - Locale-de
-    - Locale-el
-    - Locale-it
-    - Locale-ru
-    - Locale-sv
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3596566a122285542b2c61e702c4f756
-    m_Address: alb2
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 247dfb193162b174bb59f459229ab434
-    m_Address: c3
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-fr
-    - Locale-es
-    - Locale-bg
-    - Locale-da
-    - Locale-nl
-    - Locale-de
-    - Locale-el
-    - Locale-it
-    - Locale-ru
-    - Locale-sv
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ae85772ab6eabe149a5cb8bdb8e56c72
-    m_Address: alb3
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: aca5f2ec55680fc49bb3f6b2983ed1aa
-    m_Address: c5
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-fr
-    - Locale-es
-    - Locale-uk
-    - Locale-sv
-    - Locale-ru
-    - Locale-it
-    - Locale-el
-    - Locale-de
-    - Locale-nl
-    - Locale-da
-    - Locale-bg
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 03ed09028753a4440973635877236612
-    m_Address: c7
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-fr
-    - Locale-es
-    - Locale-uk
-    - Locale-sv
-    - Locale-ru
-    - Locale-it
-    - Locale-el
-    - Locale-de
-    - Locale-nl
-    - Locale-da
-    - Locale-bg
-    - Locale-no
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d23fcdb81f4509a4ebbc6ebe16de1fa7
     m_Address: Assets/Scripts/FirstGearGames/SmoothCameraShaker/Scripts/Localization/Tables/events/events
       Shared Data.asset
@@ -202,8 +83,8 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6250aad0ce0740e459a885d69c41890b
-    m_Address: breakCrate
+  - m_GUID: 4379ec667ce62f94c99867a8065a2a91
+    m_Address: this might come in handy
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -224,11 +105,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2e2c631b219f5f04aafa34e58b6341ff
-    m_Address: thiscouldcomeinhandy
+  - m_GUID: e290803cf79d5f1469e0f38a41a8f916
+    m_Address: oil fill
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -249,11 +129,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 759f665c445ad7243bc3f8982997252c
-    m_Address: OilFound
+  - m_GUID: b613163bbf4886644af8f9ccb1832fb7
+    m_Address: theese symbols
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -273,87 +152,33 @@ MonoBehaviour:
     - Locale-no
     - Locale-ru
     - Locale-es
-    - Locale-sv
     - Locale-tr
-    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 766aea7b9c30fb14299c7f3713c30a10
     m_Address: noteSymbols
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: db045fcb66d9e074d977a1393513fe93
     m_Address: firstPuzzle-HUH
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
     - Locale-ru
     - Locale-es
     - Locale-sv
     - Locale-tr
-    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 66ba9f80961d37e48a91e0b732090a7f
     m_Address: FuckSlow
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
     - Locale-es
-    - Locale-sv
     - Locale-tr
-    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 186085ea2cd554d4998173403dc094cd
-    m_Address: focusBaxter
+  - m_GUID: 66d471da1df516346ab4b5225151944c
+    m_Address: looks like a safe key
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -374,11 +199,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 46901cb30c18f6047b4253ed164d9d4d
-    m_Address: getOFFofME
+  - m_GUID: 3000de9eb993af340b4abe7ead191643
+    m_Address: the wolf chases the lamb
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -399,11 +223,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 61db0de124f462d48949928e6603154f
-    m_Address: lookslikeaSafeKey
+  - m_GUID: 1270e745816db7840bc601f5aae16bde
+    m_Address: heh it worked
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -424,11 +247,57 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1a33c7f9c48e4eb43ad678a3aaa841bf
-    m_Address: wolfchaseSheepFINAL
+  - m_GUID: 2ef879f7d39e6a44e964e2c61c645a60
+    m_Address: a-albion
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-sv
+    - Locale-es
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aff2a14d5263c4846a68b3343f76f361
+    m_Address: shit no way joke
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7cc52d116b521f40b8ba4e8eb31ff65
+    m_Address: albion you f bastard
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -449,36 +318,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dbcadf75f47049240ace1ec59672370d
-    m_Address: HahItWorked
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-nl
-    - Locale-da
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 308171f73b19b694bad5a3180d149357
-    m_Address: aaAlbion
+  - m_GUID: 4917d96b2d8d4d04da80a2e43382b1b5
+    m_Address: so the hands
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -497,44 +340,18 @@ MonoBehaviour:
     - Locale-ko
     - Locale-no
     - Locale-ru
-    - Locale-es
     - Locale-sv
-    - Locale-tr
+    - Locale-es
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e2c41ccbc1c6648449c61e2f90340f79
-    m_Address: nononothiscantberealFINAL
+  - m_GUID: dc24818ffb85cea4f94101f087cc8e51
+    m_Address: saw storage room before
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
     - Locale-zh-Hans
     - Locale-da
     - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-de
-    - Locale-fr
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 03cfbcb8d23016743babee88b9108946
-    m_Address: albionthisSituation
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-nl
-    - Locale-da
     - Locale-en
     - Locale-fi
     - Locale-fr
@@ -545,15 +362,13 @@ MonoBehaviour:
     - Locale-it
     - Locale-ja
     - Locale-ko
-    - Locale-no
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2789702edfdb8084c91bdd051dcd1f4e
-    m_Address: hmmHands
+  - m_GUID: 88bd1b666d819044b8520078be2a71ba
+    m_Address: great another puzzle
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -574,11 +389,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8d0f1d1f96aa9ab4889bedb815644f94
-    m_Address: iSawTheDepoRoom
+  - m_GUID: 7a9db21bbf70dfe4681a835a766bf0d3
+    m_Address: AAA1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -599,11 +413,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a9875856910248b4b99697ec0f4d3d1a
-    m_Address: nice morePuzzleFINAL
+  - m_GUID: a329d120033ddf545a7fb0f3b4e7315b
+    m_Address: dynamites nice
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -624,57 +437,6 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4e304d05fbe793742b273828070725c1
-    m_Address: AAAAA1
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e812bd7446a6eb744a5dd5d954d01a1c
-    m_Address: DynamitesNice
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-es
-    - Locale-ru
-    - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 798cbaeb75f2dd244b2c6ba6a1a0ba60
@@ -683,27 +445,10 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-bg
     - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
     - Locale-tr
-    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1221b0f7600c8b442a4566038cce095b
-    m_Address: YESiHOPEthisWONT
+  - m_GUID: 9fc8c3c181eb83e479836dde9d0b733f
+    m_Address: is someone there
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -724,11 +469,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3c332c639025b9d4cae8f16cc64ea139
-    m_Address: isistheresomeoneFINAL
+  - m_GUID: 871bfa3c342207f4b9bf4dca80d42c02
+    m_Address: you again let go
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -749,36 +493,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: eca1769cf83f87b4e9782810771a65bd
-    m_Address: YOUAGAINLETMEGO
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-el
-    - Locale-de
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: abcb775d3b917ba4ba98bc473209e3e7
-    m_Address: god WHY ME
+  - m_GUID: 0a08aadb770aa5b4088c3e11dedca521
+    m_Address: my god why me
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -799,11 +517,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4c0be5fd51022814d858267af8e08b2c
-    m_Address: ohno NOTNOW - gas
+  - m_GUID: ba10cf1bb0bfe644e9e56dd9a1047caf
+    m_Address: ah no not now
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -824,11 +541,57 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a93da2ae437ffa54a9d89b9c6a67839c
-    m_Address: NONONOIt cant end now - gas
+  - m_GUID: 2499a577d544f68438546b9cc786734e
+    m_Address: cant run out now
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e441be2bb2902a45bfd4168aff8df90
+    m_Address: ofc it runs out now
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c7a91b25860ad048a32156c7c90aca4
+    m_Address: Ah no let me go
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -849,11 +612,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: afb3155e7d11f72489cab67fd62da6a0
-    m_Address: thetimeitends - gas
+  - m_GUID: b99665dc0e7dad544b867e9612db8625
+    m_Address: damn it let me go
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -874,11 +636,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b49d6bae85fe39f478185c9b04a65578
-    m_Address: NO LET ME GO
+  - m_GUID: 3d04198107945cc43b6f046919af534f
+    m_Address: please let me go
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -899,11 +660,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 43d7cd9784259454dbcd2f31f321b635
-    m_Address: DAMN LET ME GO
+  - m_GUID: 15e6241fb51717946a19c7644910b0c3
+    m_Address: albion how could you
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -924,11 +684,58 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e60915f79d5b650429cc5dc72408dd57
-    m_Address: PLEASE LET AHHH
+  - m_GUID: 9ff10352464067c4083b444455154b75
+    m_Address: ofc its locked
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3cc4fd59a77ac542bfcb5d340ffda2f
+    m_Address: it wont open
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ko
+    - Locale-ja
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: deb38ff3a6a19914086835495a237c70
+    m_Address: its shut
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -949,36 +756,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d59cf00d935f6214dba5205b5434c354
-    m_Address: albionhowcouldyou
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-fi
-    - Locale-fr
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 571c29d6b1f0d2b4ab95c97c4ccc9e36
-    m_Address: locked2
+  - m_GUID: 67e82f32ca43a134a907a2e4bcb155a0
+    m_Address: I dont have anything to open this
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -999,11 +780,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9a19100572cf3174eb5e871b231b8b01
-    m_Address: locked3
+  - m_GUID: 4c78034c28b26ea429d198c84cd64e0e
+    m_Address: locked
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -1024,11 +804,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 91ee86c13b372ea4ebfd19b3ccd24141
-    m_Address: locked4
+  - m_GUID: dc6ebe0e18e297946a5482c885c7ac90
+    m_Address: someone locked it
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -1049,11 +828,34 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8b57d6a5d3996b14e889e6f4821bec8d
-    m_Address: locked5
+  - m_GUID: 5c93534c27a84a44aa0c44840b5a32b9
+    m_Address: ofc its locked not surprised
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-es
+    - Locale-ru
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5395a8f5484d0ed4c874b7baf801ee0b
+    m_Address: ah locked again
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -1074,11 +876,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 95933fd0a9ad9e94a989c525d54cc5ea
-    m_Address: locked6
+  - m_GUID: b6c0f076ec7ba5343a457f870ec89554
+    m_Address: locked for a reason
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -1099,11 +900,10 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f9c05a791aab89644b61400268ae4f1e
-    m_Address: locked7
+  - m_GUID: 7f405f6ed083d1d4184128aa34b84f4f
+    m_Address: ill need to open this
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-bg
@@ -1124,107 +924,6 @@ MonoBehaviour:
     - Locale-ru
     - Locale-es
     - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3a4ff6a7003882f43bb5c0be3d913354
-    m_Address: locked11
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b35b4dba04fe14446ae188f79d335034
-    m_Address: locked10
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1ec356b76b0e2b84eacdceced70d1999
-    m_Address: locked9
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ceac013d77da50a48b3e2d3487692cab
-    m_Address: locked8
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-fi
-    - Locale-de
-    - Locale-en
-    - Locale-fr
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
     - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3f1e162d2754f5d45a521d3d1ff60dde
@@ -1232,81 +931,6 @@ MonoBehaviour:
       Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1c8bc2912674f6e49bb1061f536044a8
-    m_Address: alb1
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-tr
-    - Locale-uk
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0b2ab0866f30a804d8c73a6510376817
-    m_Address: albionCE_tr5
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-uk
-    - Locale-bg
-    - Locale-tr
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a31c2e0b58f1c5647a19407a691ba67a
-    m_Address: albionCE_tr6
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-bg
-    - Locale-zh-Hans
-    - Locale-da
-    - Locale-nl
-    - Locale-en
-    - Locale-fi
-    - Locale-fr
-    - Locale-de
-    - Locale-el
-    - Locale-hu
-    - Locale-id
-    - Locale-it
-    - Locale-ja
-    - Locale-ko
-    - Locale-no
-    - Locale-ru
-    - Locale-es
-    - Locale-sv
-    - Locale-uk
-    - Locale-tr
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6e6f4545988e10f4096c32daf7a848ae
     m_Address: shriek2
@@ -1371,6 +995,22 @@ MonoBehaviour:
     - Locale-zh-Hans
     - Locale-ja
     - Locale-ko
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-it
+    - Locale-id
+    - Locale-ru
+    - Locale-no
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    - Locale-bg
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1090f2b7f450d784e84ad91b6cb9d751
     m_Address: albionCE_en2
@@ -1379,6 +1019,22 @@ MonoBehaviour:
     - Locale-zh-Hans
     - Locale-ja
     - Locale-ko
+    - Locale-bg
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5a181be2ad17edf44b09ca0728492192
     m_Address: albionCE_en3
@@ -1387,6 +1043,22 @@ MonoBehaviour:
     - Locale-zh-Hans
     - Locale-ja
     - Locale-ko
+    - Locale-bg
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f3c141936b095a3459bdf325207e8032
     m_Address: albionCE_en4
@@ -1395,12 +1067,1494 @@ MonoBehaviour:
     - Locale-zh-Hans
     - Locale-ja
     - Locale-ko
+    - Locale-bg
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6dad8f81059d9f044a55c7efa3f37028
     m_Address: Assets/Scripts/FirstGearGames/SmoothCameraShaker/Scripts/Localization/Tables/tunnelsAudios/tunnelsSounds
       Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c18229d9b439ec644b785be42f7cb7c9
+    m_Address: Assets/Scripts/FirstGearGames/SmoothCameraShaker/Scripts/Localization/Tables/trialsAudios/trials
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f429091da552d6469ccb55add398836
+    m_Address: TRIALS_I_HOPE_NOT_BREAK
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94b18b95033f9494b846abcd661cbfe6
+    m_Address: TRIALS_ONE_TWO_THREE
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4804bbae1ca5a6c468b9a14b0719f89e
+    m_Address: TRIALS_I_SOLVED_WORSE
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee125bcada1b333479e12f66b0e89893
+    m_Address: TRIALS_IT_WAS_EASIER
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8bac843d6dcea24e9efa2f43e92bf66
+    m_Address: TRIALS_NICE_PUZZLE
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d72b5454b5f137a4f988bf4e95a34b7e
+    m_Address: things are bad
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4cf09e9cf12940c4e8d39fef1ae2186c
+    m_Address: they killed on purpose
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c15e5aa975ac724a936271907168826
+    m_Address: I think I can do this
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad2d96e5d430087488f380d592834467
+    m_Address: I hear something
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7dee57aa7be950a43a6834e8ca4bc712
+    m_Address: yuck what an animal lives here
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7b6f9782ec764c448ceb7f65da196ef
+    m_Address: gear must be here
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 677571741b85c0c42a5fe7ffce402c12
+    m_Address: god im gonna puke
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b725a838def43b458a14aabc3ae46ca
+    m_Address: put it in kitchen
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1161d766997291f4e8c8ac32cd6f935e
+    m_Address: tunnel ends
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d895405fddbbe8240acddf7458944186
+    m_Address: tunnel is long
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8bd1b0a922274b4499f3c4f71bd9d35
+    m_Address: I worked before
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-hu
+    - Locale-el
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7ba0c101b27a3b43b3df8b444ac802c
+    m_Address: muriatic tuz ruhu
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4114035e429411c45b981b48c964a7d6
+    m_Address: oilofvitriol
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df75050958258c0438f8743bb290f972
+    m_Address: aquafortis
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8aa1ac979bfdc0a4ba3b92cf17a12316
+    m_Address: I saw theese symbols
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ffd321bd575fa8448a33825b63939b5
+    m_Address: how did they do this
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40205c1a26ca6fc4b8a861297e5ac39c
+    m_Address: look to the chest
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b101acd29519d14aa7d61cec9cb1c41
+    m_Address: ok now I put the bottles
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bafc1be73868475418d146ffaa60b178
+    m_Address: I should be careful
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 972cfcb3d78fa454c87bc3852fbaf4f9
+    m_Address: I knew it was gonna work
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d494f8636fe820e499859da6c4645a2e
+    m_Address: what am i facing to
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad3e999f8c8075245b42cde414c53358
+    m_Address: map room hmm
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b28a6a2b13a2b5043a86fcdf25612d5d
+    m_Address: I saw something like that
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7aed62348ad55fe4893333806c1a3a0a
+    m_Address: NO FALL
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-nl
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1028389723b20b4498034e5ac7888fe
+    m_Address: MY LEG
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24dedf2fbc935cd49ae1e7d16c98fedc
+    m_Address: a catacomb
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ab6a9a3ec6fa684dba5b7f8d09040f0
+    m_Address: it might help for exit
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc394436294a2394aaec60754647fe69
+    m_Address: where am i gonna put it
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76ef4df68b12c3e4b835a304a03416ce
+    m_Address: I hope I wont have to go back
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 242e0d3894af4934e825b97a61c63926
+    m_Address: one left
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 388339d0438f9594591d9a1c77683fcd
+    m_Address: I should put it in
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0394b30e267932645b919d3f1e9a626f
+    m_Address: how how
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cf8df1a3f483d04bb24de1266e4d771
+    m_Address: I knew
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11c2d1a70ec4e1742a8a3f84470959ed
+    m_Address: just wow
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-da
+    - Locale-zh-Hans
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47b8acc212c06784ca665230932b6e8e
+    m_Address: this all weird
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fab19cdefc1e8f44b79675c8c6c3074
+    m_Address: what is this
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af5775084e38f094384a4fc7d497f385
+    m_Address: I have to do this right
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab3f78ccff93598479a2d28378283651
+    m_Address: god its moving
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-hu
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25db3b193c31c8d438f976724f72f9cc
+    m_Address: oh shit door closed
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f5a5340d250d6748bcff9da1449a095
+    m_Address: I cant believe it died
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c811c94a63d90c147ab59a2a9ba6b641
+    m_Address: it stinks
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40d214c9695d78144bc87f4d9c7ade96
+    m_Address: its suprising
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd1ce67bccc1db344af719625b41ee86
+    m_Address: Assets/Scripts/FirstGearGames/SmoothCameraShaker/Scripts/Localization/Tables/trials/trials
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9df68db2d3fa19c449d16d01476a77c7
+    m_Address: evelynn how
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-tr
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae85772ab6eabe149a5cb8bdb8e56c72
+    m_Address: alb3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 891f37307bee8f14c8337ca8c9b91496
+    m_Address: albCEntry1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0535d4d0352cc99479d9f44cafe8c2d4
+    m_Address: albCEntry2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a48341dda172c054d8905f05faed11de
+    m_Address: albCEntry3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-uk
+    - Locale-bg
+    - Locale-zh-Hans
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09d71e11bcff32c4f9696e1d42797c6a
+    m_Address: albionCE_tr2 1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    - Locale-sv
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c754a4293e71e3841a03e7daf0336913
+    m_Address: look to crates
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b482d078150f59c4f8d60dd37ab7c030
+    m_Address: huh1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-es
+    - Locale-ru
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1cdb7836e8ca8f140a0b947321695b57
+    m_Address: shit1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-nl
+    - Locale-en
+    - Locale-da
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2ff292836b2378449e2e9658f36ac3b
+    m_Address: ah damn it get off me
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8e919efefb29c447b1a0429b4c10c9f
+    m_Address: here we go
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c526a942620b0e34384882a06f3b9874
+    m_Address: YES I hope dont attention
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffe5d4435405c7f4aae16d870a90d146
+    m_Address: focus baxter
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-bg
+    - Locale-zh-Hans
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-fi
+    - Locale-fr
+    - Locale-de
+    - Locale-el
+    - Locale-hu
+    - Locale-id
+    - Locale-it
+    - Locale-ja
+    - Locale-ko
+    - Locale-no
+    - Locale-ru
+    - Locale-es
+    - Locale-sv
+    - Locale-uk
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 15937d27ce44b7e45acc9ccf18c6c3a0, type: 2}

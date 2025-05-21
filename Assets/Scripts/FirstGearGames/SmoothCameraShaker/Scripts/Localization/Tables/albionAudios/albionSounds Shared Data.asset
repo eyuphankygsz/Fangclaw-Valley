@@ -86,6 +86,10 @@ MonoBehaviour:
           - uk
           - zh-Hans
           - ko
+          - fi
+          - hu
+          - id
+          - no
         - m_KeyId: 196780146688
           m_TableCodes:
           - en
@@ -126,6 +130,10 @@ MonoBehaviour:
           - uk
           - zh-Hans
           - ko
+          - fi
+          - hu
+          - id
+          - no
         - m_KeyId: 208255762432
           m_TableCodes:
           - en
@@ -166,28 +174,32 @@ MonoBehaviour:
           - bg
           - zh-Hans
           - ko
-        - m_KeyId: 787001989316608
-          m_TableCodes:
-          - en
-          - fr
-          - es
-          - tr
-          - uk
-          - sv
-          - ru
-          - ja
-          - it
-          - el
-          - de
-          - nl
-          - da
-          - bg
-          - zh-Hans
           - fi
           - hu
           - id
+          - no
+        - m_KeyId: 787001989316608
+          m_TableCodes:
+          - zh-Hans
+          - da
+          - nl
+          - en
+          - fi
+          - fr
+          - de
+          - el
+          - hu
+          - id
+          - it
+          - ja
           - ko
           - no
+          - ru
+          - es
+          - sv
+          - tr
+          - uk
+          - bg
         - m_KeyId: 787010000437248
           m_TableCodes:
           - en
@@ -207,6 +219,9 @@ MonoBehaviour:
           - ko
           - no
           - zh-Hans
+          - fi
+          - hu
+          - id
         - m_KeyId: 38004297596657664
           m_TableCodes:
           - bg

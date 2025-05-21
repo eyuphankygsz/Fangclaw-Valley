@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class DialogueAsList : MonoBehaviour
 {
@@ -26,9 +27,16 @@ public class DialogueAsList : MonoBehaviour
 
         for (int i = 0; i < talkObject.Count; i++)
         {
-			LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() { TableReference = tableRef + "Sounds", TableEntryReference = talkObject[i].TalkText };
-			var loadOperation = _audio.LoadAssetAsync();
-		}
+            string voiceLang = PlayerPrefs.GetString("voice_lang", "en");
+            var locale = LocalizationSettings.AvailableLocales.GetLocale(voiceLang);
+            LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() 
+            { 
+                TableReference = tableRef + "Sounds", 
+                TableEntryReference = talkObject[i].TalkText,
+                LocaleOverride = locale
+            };
+            var loadOperation = _audio.LoadAssetAsync();
+        }
 
 		PlayNext();
 		return this;
@@ -68,7 +76,14 @@ public class DialogueAsList : MonoBehaviour
 
 	private IEnumerator PlayAudioAsync(TalkObject talkObject, string tableRef)
 	{
-		LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() { TableReference = tableRef + "Sounds", TableEntryReference = talkObject.TalkText };
+		string voiceLang = PlayerPrefs.GetString("voice_lang", "en");
+		var locale = LocalizationSettings.AvailableLocales.GetLocale(voiceLang);
+		LocalizedAsset<AudioClip> _audio = new LocalizedAsset<AudioClip>() 
+		{ 
+			TableReference = tableRef + "Sounds", 
+			TableEntryReference = talkObject.TalkText,
+			LocaleOverride = locale
+		};
 		var loadOperation = _audio.LoadAssetAsync();
 
 		yield return loadOperation;

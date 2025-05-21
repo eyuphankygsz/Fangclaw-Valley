@@ -13,8 +13,10 @@ public class SDaddyDie : MonoBehaviour, IEnemyState
 
 	public void EnterState()
 	{
+
 		_collider.enabled = false;
 		_animator.SetBool("Die", true);
+		_onDeathEvents?.Invoke();
 	}
 
 	public void ExitState()

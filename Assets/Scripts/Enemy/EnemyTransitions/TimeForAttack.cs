@@ -13,6 +13,9 @@ public class TimeForAttack : AbstractCondition
     }
     public override bool CheckCondition()
     {
+		if(DebugCondition)
+			Debug.Log("TimeForAttack: " + _currentTime);
+            
         if (_currentTime <= 0)
             return true;
 

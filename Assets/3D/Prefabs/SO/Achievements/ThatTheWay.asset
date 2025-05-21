@@ -20,7 +20,7 @@ MonoBehaviour:
   TargetFloat: 0
   TargetString: 
   CurrentInt: 
-  CurrentFloat: 0
+  CurrentFloat: 
   CurrentString: 
   LessThanEqual: 0
   GreaterThanEqual: 0

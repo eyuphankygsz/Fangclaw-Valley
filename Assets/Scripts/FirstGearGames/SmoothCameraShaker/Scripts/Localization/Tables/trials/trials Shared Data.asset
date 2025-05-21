@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: trials Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: trials
+  m_TableCollectionNameGuidString: fd1ce67bccc1db344af719625b41ee86
+  m_Entries:
+  - m_Id: 17489190912
+    m_Key: c1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Key: c2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Key: c3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Key: c4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Key: c5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55720271872
+    m_Key: c6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Key: c7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Key: c8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Key: c9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Key: c10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Key: c11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Key: c12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Key: c13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Key: c14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Key: c15
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Key: c16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Key: c17
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Key: c18
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Key: c19
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Key: c20
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Key: c21
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Key: c22
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Key: c23
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Key: c24
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Key: c25
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Key: c26
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Key: c27
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Key: c28
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Key: c29
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Key: c30
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Key: c31
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Key: c32
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Key: c33
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Key: c34
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Key: c35
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Key: c36
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Key: c37
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Key: c38
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Key: c39
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Key: c40
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Key: c41
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Key: c42
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Key: c43
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Key: c44
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Key: c45
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Key: c46
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Key: c47
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Key: c48
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Key: c49
+    m_Metadata:
+      m_Items: []
+  - m_Id: 522743439360
+    m_Key: c50
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3145089659159969792
+  references:
+    version: 2
+    RefIds:
+    - rid: 3145089659159969792
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1747571775321

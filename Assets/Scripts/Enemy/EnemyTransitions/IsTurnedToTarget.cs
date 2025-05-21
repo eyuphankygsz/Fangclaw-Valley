@@ -26,6 +26,8 @@ public class IsTurnedToTarget : AbstractCondition
 			
 			yAngleDifference = Mathf.Abs(Mathf.DeltaAngle(_enemy.rotation.eulerAngles.y, yRotation.eulerAngles.y));
 
+			if (DebugCondition)
+				Debug.Log("IsTurnedToTarget: " + yAngleDifference);
 			if (yAngleDifference <= 1.0f)
 				return true;
 		}

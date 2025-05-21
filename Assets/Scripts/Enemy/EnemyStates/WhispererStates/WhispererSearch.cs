@@ -36,6 +36,8 @@ public class WhispererSearch : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IEnemyController _controller;
 
+	[SerializeField]
+	private EnemyOpenDoor _openDoor;
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
@@ -71,6 +73,7 @@ public class WhispererSearch : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
+		_openDoor.CheckDoors();
 		if (_isSearching)
 			if (_timeForSearch.CheckCondition())
 				FindNewWanderPoint(false);

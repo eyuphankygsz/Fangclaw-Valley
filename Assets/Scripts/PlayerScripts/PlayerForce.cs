@@ -64,6 +64,7 @@ public class PlayerForce : MonoBehaviour
 	public void StopForce()
 	{
 		_pStamina.Force = false;
+		_pStamina.ChangeStamina(true);
 		_interaction.StopInteractions(false);
 		_gameManager.Force = false;
 	}

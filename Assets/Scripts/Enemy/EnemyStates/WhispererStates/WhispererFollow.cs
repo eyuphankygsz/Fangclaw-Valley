@@ -110,12 +110,29 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 	private Vector3 FindClosestValidNavMeshPoint()
 	{
 		NavMeshHit hit;
-		if (NavMesh.SamplePosition(_target.position, out hit, 2, NavMesh.AllAreas))
+		float searchRadius = 10f; // Increased search radius to find closer points
+		
+		// First try to find the closest edge point
+		if (NavMesh.FindClosestEdge(_target.position, out hit, NavMesh.AllAreas))
 		{
-			return hit.position; // En yakýn geçerli NavMesh noktasýný döndür
+			// If we found an edge, try to find a valid position near that edge
+			if (NavMesh.SamplePosition(hit.position, out hit, searchRadius, NavMesh.AllAreas))
+			{
+				Debug.DrawLine(_target.position, hit.position, Color.yellow, 1f);
+				return hit.position;
+			}
+		}
+		
+		// If edge finding fails, try to find any valid position within radius
+		if (NavMesh.SamplePosition(_target.position, out hit, searchRadius, NavMesh.AllAreas))
+		{
+			Debug.DrawLine(_target.position, hit.position, Color.yellow, 1f);
+			return hit.position;
 		}
 
-		return transform.position; // Eðer bir nokta bulunamazsa mevcut konumda kal
+		// If all else fails, return current position
+		Debug.LogWarning("Could not find valid NavMesh position near target!");
+		return transform.position;
 	}
 	private void TurnEnemy()
 	{
@@ -132,14 +149,21 @@ public class WhispererFollow : MonoBehaviour, IEnemyState
 	{
 		if (_path != null && _path.corners.Length > 1)
 		{
-			Gizmos.color = Color.green; // Yolu çizmek için renk
+			Gizmos.color = Color.green;
 			for (int i = 0; i < _path.corners.Length - 1; i++)
 			{
-				// Yoldaki her iki köþe arasýna çizgi çizin
 				Gizmos.DrawLine(_path.corners[i], _path.corners[i + 1]);
 			}
 		}
+		
+		// Draw the target position and the alternative position
+		if (_target != null)
+		{
+			Gizmos.color = Color.red;
+			Gizmos.DrawWireSphere(_target.position, 0.5f);
+		}
+		
+		Gizmos.color = Color.yellow;
 		Gizmos.DrawWireSphere(_pos, 0.5f);
-
 	}
 }

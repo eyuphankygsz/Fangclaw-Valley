@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_nl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: nl
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: Ik hoop dat ik niets kapot maak.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: "Ok\xE9, net als daarnet. Een, twee, drie en vier."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: Ik heb moeilijkere dingen opgelost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: Het was makkelijker dan ik had verwacht.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: Mooi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: Het was al lang duidelijk dat de zaken zouden verslechteren.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: Ze hebben mensen openlijk vermoord voor onderzoek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: "Hmm... Ok\xE9. Ik denk dat ik dit aankan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: Ik hoor iets!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: Walgelijk... Wat voor dier heeft hier gewoond!?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: Hmm. Het tandwiel moet hier zijn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: God, ik ga overgeven!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: Misschien kan ik het mechanisme in de keuken laten werken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: Het zou fijn zijn als de tunnel uitkomt op een veilige plek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: Wat een lange tunnel!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: Ik heb eerder op zulke plaatsen gewerkt... Maar ik heb zoiets nog
+      nooit gezien.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: Zuur. Ik mag er niet te veel aan zitten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: Vitriololie. Ik heb het eerder in mijn experimenten gebruikt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: Koningswater. Dit zal zeker van pas komen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: Ik heb deze symbolen eerder gezien bij de ingang van het Wapenarsenaal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: Hoe hebben ze dit systeem vroeger kunnen opzetten?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: Ik moet in de geopende kist kijken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: "Ok\xE9, nu kan ik de flessen terugzetten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: Ik kan het maar beter voorzichtig gebruiken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: Ik wist dat het zou werken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: Waar heb ik mee te maken...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: De kaartkamer...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: Ik heb zoiets eerder gezien!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: NEE!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: Verdomme, Mijn Been! Ik Haat Deze Plek!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: Is het een ondergrondse begraafplaats?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: Het kan me helpen bij de uitgang.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: "Ok\xE9, waar moet ik het neerzetten?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: Ik hoop dat ik daar niet nog eens naar binnen moet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: Er is er nog 1 over.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: Wat, hoe bedoel je? God, deze... Hoe vreemd.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: Ik denk dat ik het ergens in moet stoppen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Ik wist het!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Wauw...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: Dit alles is echt heel vreemd. Ik wil het zo snel mogelijk vinden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: Wat is dit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: Moet ik dit doen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: God... God... Dit is erg... beweeglijk?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: Ah, verdorie! De deur is dichtgegaan!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: Ik kan het niet geloven, hij is dood! Ik heb eindelijk een monster
+      kunnen verzamelen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: Het ruikt erg slecht...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: Het is nog steeds verrassend dat de oude methoden werken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: Evelynn? Hoe kan dat?!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_id
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: id
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: Semoga aku tidak merusak apa pun.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: Baiklah, seperti tadi. Satu, dua, tiga, dan empat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: Aku sudah memecahkan hal-hal yang lebih sulit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: Itu lebih mudah dari yang saya kira.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: Bagus.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: Sudah sejak lama jelas bahwa keadaan akan memburuk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: Mereka secara terang-terangan membunuh orang demi penelitian.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: Hmm... Baiklah. Aku rasa aku bisa menangani ini.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: Aku mendengar sesuatu!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: Menjijikkan... Hewan apa yang pernah tinggal di sini!?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: Hmm. Roda gigi harus ada di sini.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: Tuhan, aku mau muntah!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: Mungkin aku bisa mengoperasikan mekanisme di dapur.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: Akan bagus jika ujung terowongan menuju tempat yang aman.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: Betapa panjang terowongan ini!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: Saya pernah bekerja di tempat seperti ini sebelumnya... Tapi saya
+      belum pernah melihat hal-hal seperti ini sebelumnya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: Asam. Saya tidak boleh menyentuhnya terlalu banyak.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: Minyak vitriol. Saya pernah menggunakannya dalam eksperimen saya
+      sebelumnya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: Air Raja. Ini pasti akan berguna.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: Saya pernah melihat simbol-simbol ini di pintu masuk Gudang Senjata.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: Bagaimana mereka bisa membangun sistem ini di masa lalu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: Aku harus melihat peti yang terbuka itu.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: Baiklah, sekarang aku bisa mengembalikan botol-botolnya ke tempatnya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: Sebaiknya aku menggunakannya dengan hati-hati.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: Aku tahu ini akan berhasil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: Apa yang sedang kuhadapi...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: Ruang Peta...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: Saya pernah melihat sesuatu yang mirip sebelumnya!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: TIDAK!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: Sial, Kakiku! Aku Benci Tempat Ini!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: Apakah ini pemakaman bawah tanah?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: Itu mungkin membantu saya untuk keluar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: Oke, saya harus meletakkannya di mana?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: Semoga saya tidak perlu masuk ke sana lagi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: Tersisa 1.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: Apa, maksudmu apa? Tuhan, ini... Betapa anehnya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: Kurasa saya harus memasukkan ini ke suatu tempat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Aku tahu!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Wah...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: Semua ini benar-benar aneh. Saya ingin segera sampai ke sana.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: Apa ini?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: Haruskah saya melakukan ini?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: Tuhan... Tuhan... Ini sangat... bergerak?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: Ah, sial! Pintu tertutup!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: Aku tidak percaya, dia mati! Akhirnya aku berhasil mengumpulkan
+      sampel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: Baunya sangat buruk...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: Masih mengejutkan bahwa metode lama masih berhasil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: Evelynn? Bagaimana bisa!?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

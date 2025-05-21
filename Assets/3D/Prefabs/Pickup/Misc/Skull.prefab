@@ -276,7 +276,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e1235b2e417983469723d36f05de88d, type: 2}
+  - {fileID: 2100000, guid: 8ce572cc80e4a4542b06ee5dc64f4a3c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -348,6 +348,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _interactEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _trueDoneEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _falseDoneEvents:
     m_PersistentCalls:
       m_Calls: []
   _scanObject: {fileID: 2878383463739096974}

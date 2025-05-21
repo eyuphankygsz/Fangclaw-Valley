@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: "I hope I don\u2019t break anything."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: Alright, just like before. One, two, three, and four.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: I've solved harder things.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: It was easier than I expected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: Good.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: It was clear long ago that things would get worse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: They openly killed people for the sake of research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: Hmm... Alright. I think I can handle this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: I hear something!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: Disgusting... What kind of animal lived here!?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: Hmm. The gear should be here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: "God, I\u2019m going to vomit!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: Maybe I can operate the mechanism in the kitchen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: It would be good if the tunnel led to a safe place.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: What a long tunnel!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: I've worked in places like this before... But I've never seen things
+      like this before.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: "Acid. I shouldn\u2019t touch it too much."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: "Vitriol Oil. I\u2019ve used it before in my experiments."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: Aqua Regia. This will definitely come in handy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: I've seen these symbols before at the entrance to the Armory.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: How were they able to build this system in the past?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: I should take a look at the opened chest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: Alright, now I can place the bottles back.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: "I\u2019d better use it carefully."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: I knew it would work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: What am I up against...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: The Map Room...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: I've seen something like this before!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: NO!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: Damn it, My Leg! I Hate This Place!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: Is it an underground cemetery?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: It might help me for the exit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: Okay, where should I put it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: "I hope I don\u2019t have to go in there again."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: 1 left.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: What, what do you mean? God, these... How strange.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: I guess I should put this somewhere.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: I knew it!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Wow...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: All of this is really strange. I want to get to it as soon as possible.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: What is this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: Do I have to do this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: God... God... This is very... moving?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: Ah, damn! The door closed!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "I can't believe it, he\u2019s dead! I finally managed to collect
+      a sample."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: It smells really bad...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: It's still surprising that the old methods work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: Evelynn? How can this be!?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

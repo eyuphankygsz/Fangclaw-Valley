@@ -28,6 +28,9 @@ public class TransitionManager : MonoBehaviour
 	public void CheckTransitions(ControlSchema controls)
 	{
 
+		if(_transitionList == null)
+			return;
+
 		foreach (var transition in _transitionList.Transitions)
 		{
 			bool canChange = true;

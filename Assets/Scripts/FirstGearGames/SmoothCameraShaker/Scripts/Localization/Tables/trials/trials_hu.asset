@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_hu
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: hu
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: "Rem\xE9lem, nem t\xF6r\xF6k \xF6ssze semmit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: "Rendben, ahogy az el\u0151bb. Egy, kett\u0151, h\xE1rom \xE9s n\xE9gy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: "M\xE1r nehezebb dolgokat is megoldottam."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: "K\xF6nnyebb volt, mint v\xE1rtam."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: "Sz\xE9p."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: "M\xE1r r\xE9gen nyilv\xE1nval\xF3 volt, hogy a dolgok rosszabbra
+      fordulnak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: "Ny\xEDltan \xF6ltek meg embereket kutat\xE1s c\xE9lj\xE1b\xF3l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: Hmm... Rendben. Azt hiszem, meg tudom oldani.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: Valamit hallok!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: "Undor\xEDt\xF3... Milyen \xE1llat \xE9lt itt!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: "Hmm. A fogasker\xE9knek itt kell lennie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: "Istenem, h\xE1nyok!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: "Tal\xE1n m\u0171k\xF6d\xE9sbe hozhatom a konyhai mechanizmust."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: "J\xF3 lenne, ha a alag\xFAt egy biztons\xE1gos helyre vezetne."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: "Milyen hossz\xFA alag\xFAt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: "M\xE1r dolgoztam ilyen helyeken... De m\xE9g soha nem l\xE1ttam
+      ilyen dolgokat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: "Sav. Nem szabad t\xFAl sokat hozz\xE1\xE9rnem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: "Vitriololaj. Kor\xE1bban haszn\xE1ltam a k\xEDs\xE9rleteim sor\xE1n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: "Kir\xE1lyv\xEDz. Ez biztosan hasznomra v\xE1lik."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: "M\xE1r l\xE1ttam ezeket a szimb\xF3lumokat a Fegyvert\xE1r bej\xE1rat\xE1n\xE1l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: "Hogy tudt\xE1k ezt a rendszert r\xE9gen fel\xE9p\xEDteni?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: "Meg kell n\xE9znem a kinyitott l\xE1d\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: "Rendben, most visszatehetem az \xFCvegeket a hely\xFCkre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: "Jobb, ha \xF3vatosan haszn\xE1lom."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: "Tudtam, hogy m\u0171k\xF6dni fog."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: "Mivel \xE1llok szemben..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: "A t\xE9rk\xE9pszoba..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: "M\xE1r l\xE1ttam hasonl\xF3t!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: NEM!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: "Az \xF6rd\xF6gbe, A L\xE1bam! Ut\xE1lom Ezt A Helyet!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: "Ez egy f\xF6ldalatti temet\u0151?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: "Seg\xEDthet a kij\xE1rathoz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: Rendben, hova tegyem?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: "Rem\xE9lem, nem kell m\xE9g egyszer bemennem oda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: "M\xE9g 1 van h\xE1tra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: Mi, mit jelent ez? Istenem, ezek... Milyen furcsa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: Azt hiszem, be kell tennem valahova.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Tudtam!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: "H\u0171ha..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: "Mindez t\xE9nyleg nagyon furcsa. Min\xE9l el\u0151bb oda akarok
+      jutni."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: Mi ez?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: "Musz\xE1j megtennem?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: Istenem... Istenem... Ez nagyon... mozog?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: "Ah, a fen\xE9be! Az ajt\xF3 becsuk\xF3dott!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "Nem hiszem el, meghalt! V\xE9gre siker\xFClt mint\xE1t vennem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: Nagyon rossz szaga van...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: "M\xE9g mindig meglep\u0151, hogy a r\xE9gi m\xF3dszerek m\u0171k\xF6dnek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: Evelynn? Hogy lehet ez!?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -12,8 +12,12 @@ public class LoadingScreen : MonoBehaviour
 	[SerializeField]
 	private ChangeLanguage _changeLanguage;
 
-
-	void Start()
+    void Awake()
+    {
+        Cursor.visible = false;
+		Time.timeScale = 1;
+    }
+    void Start()
 	{
 		_changeLanguage.Load();
 		StartCoroutine(LoadScene());

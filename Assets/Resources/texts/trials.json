@@ -1,0 +1,449 @@
+{
+  "Talks": [
+    {
+      "TalkName": "Trial1",
+      "TalkObject": [
+        {
+          "TalkText": "c1",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Trial2",
+      "TalkObject": [
+        {
+          "TalkText": "c2",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Solved1",
+      "TalkObject": [
+        {
+          "TalkText": "c3",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Solved2",
+      "TalkObject": [
+        {
+          "TalkText": "c4",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Solved3",
+      "TalkObject": [
+        {
+          "TalkText": "c5",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "ThingsAreBad",
+      "TalkObject": [
+        {
+          "TalkText": "c7",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "TheyKilled",
+      "TalkObject": [
+        {
+          "TalkText": "c8",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "ElaraVoss1",
+      "TalkObject": [
+        {
+          "TalkText": "c9",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "IHearSome",
+      "TalkObject": [
+        {
+          "TalkText": "c10",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Yuck1",
+      "TalkObject": [
+        {
+          "TalkText": "c11",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "GearHere",
+      "TalkObject": [
+        {
+          "TalkText": "c12",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "GonnaPuke",
+      "TalkObject": [
+        {
+          "TalkText": "c13",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        },
+        {
+          "TalkText": "c14",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Tunnel2",
+      "TalkObject": [
+        {
+          "TalkText": "c15",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Tunnel3",
+      "TalkObject": [
+        {
+          "TalkText": "c16",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Lab1",
+      "TalkObject": [
+        {
+          "TalkText": "c17",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "Muriatic",
+      "TalkObject": [
+        {
+          "TalkText": "c18",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "OilOfVitriol",
+      "TalkObject": [
+        {
+          "TalkText": "c19",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "AquaFortis",
+      "TalkObject": [
+        {
+          "TalkText": "c20",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "SawSymbols1",
+      "TalkObject": [
+        {
+          "TalkText": "c21",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "OldTech",
+      "TalkObject": [
+        {
+          "TalkText": "c22",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        },
+        {
+          "TalkText": "c23",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "BetterCare",
+      "TalkObject": [
+        {
+          "TalkText": "c25",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "MetalDown",
+      "TalkObject": [
+        {
+          "TalkText": "c26",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "FacingTo",
+      "TalkObject": [
+        {
+          "TalkText": "c27",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+    {
+      "TalkName": "MapRoomGo",
+      "TalkObject": [
+        {
+          "TalkText": "c28",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        },
+        {
+          "TalkText": "c29",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "NoFall",
+      "TalkObject": [
+        {
+          "TalkText": "c30",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "MyLeg",
+      "TalkObject": [
+        {
+          "TalkText": "c31",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "ACatacomb",
+      "TalkObject": [
+        {
+          "TalkText": "c32",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "GearExit",
+      "TalkObject": [
+        {
+          "TalkText": "c33",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        },
+        {
+          "TalkText": "c34",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "NotComingBack",
+      "TalkObject": [
+        {
+          "TalkText": "c35",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "OneLeft",
+      "TalkObject": [
+        {
+          "TalkText": "c36",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "HowHow",
+      "TalkObject": [
+        {
+          "TalkText": "c37",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "PutItIn",
+      "TalkObject": [
+        {
+          "TalkText": "c38",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "IKnewReader",
+      "TalkObject": [
+        {
+          "TalkText": "c39",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "JustWow",
+      "TalkObject": [
+        {
+          "TalkText": "c40",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "TwoDoneGear1",
+      "TalkObject": [
+        {
+          "TalkText": "c41",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "WhatIsThisElevator",
+      "TalkObject": [
+        {
+          "TalkText": "c42",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        },
+        {
+          "TalkText": "c43",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "ItsMovingElevator",
+      "TalkObject": [
+        {
+          "TalkText": "c44",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "DoorShutTW",
+      "TalkObject": [
+        {
+          "TalkText": "c45",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "MyLeg",
+      "TalkObject": [
+        {
+          "TalkText": "c31",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "MyLeg",
+      "TalkObject": [
+        {
+          "TalkText": "c31",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "MyLeg",
+      "TalkObject": [
+        {
+          "TalkText": "c31",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    },
+        {
+      "TalkName": "MyLeg",
+      "TalkObject": [
+        {
+          "TalkText": "c31",
+          "TalkDelay": 0.1,
+          "SourceIndex": 0
+        }
+      ]
+    }
+  ]
+}

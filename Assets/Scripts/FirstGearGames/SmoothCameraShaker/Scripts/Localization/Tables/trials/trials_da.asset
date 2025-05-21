@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: "Jeg h\xE5ber, jeg ikke \xF8del\xE6gger noget."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: "Okay, ligesom f\xF8r. En, to, tre og fire."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: "Jeg har l\xF8st sv\xE6rere ting end det her."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: Det var nemmere end jeg havde forventet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: Godt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: "Det var tydeligt for l\xE6nge siden, at tingene ville blive v\xE6rre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: "De har \xE5bentlyst dr\xE6bt mennesker for forskningens skyld."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: Hmm... Okay. Jeg tror, jeg kan klare det her.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: "Jeg h\xF8rer noget!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: "V\xE6mmeligt... Hvilket slags dyr har boet her!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: "Hmm. Tandhjulet skal v\xE6re her."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: Gud, jeg vil kaste op!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: "M\xE5ske kan jeg f\xE5 mekanismen i k\xF8kkenet til at virke."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: "Det ville v\xE6re godt, hvis tunnelen endte et sikkert sted."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: Sikke en lang tunnel!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: "Jeg har arbejdet p\xE5 steder som dette f\xF8r... Men jeg har aldrig
+      set s\xE5dan noget f\xF8r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: "Syre. Jeg m\xE5 ikke r\xF8re for meget."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: "Vitriololie. Jeg har brugt det f\xF8r i mine eksperimenter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: "Kongevand. Det vil helt sikkert v\xE6re nyttigt for mig."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: "Jeg har set disse symboler f\xF8r ved indgangen til V\xE5benkammeret."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: Hvordan kunne de opbygge dette system dengang?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: "Jeg b\xF8r kigge i den \xE5bne kiste."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: "Okay, nu kan jeg s\xE6tte flaskerne tilbage."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: "Jeg m\xE5 hellere bruge det forsigtigt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: Jeg vidste, det ville virke.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: "Hvad er det, jeg st\xE5r over for..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: "Kortv\xE6relset..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: "Jeg har set noget lignende f\xF8r!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: NEJ!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: For pokker, Mit Ben! Jeg Hader Dette Sted!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: "Er det en underjordisk kirkeg\xE5rd?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: "Det kan v\xE6re nyttigt for mig at finde udgangen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: Okay, hvor skal jeg placere det?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: "Jeg h\xE5ber, jeg ikke bliver n\xF8dt til at g\xE5 derind igen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: Der er 1 tilbage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: "Hvad, hvad mener du? Gud, de her... Hvor m\xE6rkeligt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: Jeg tror, jeg skal putte det et sted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Jeg vidste det!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: Wow...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: "Alt det her er virkelig m\xE6rkeligt. Jeg vil gerne finde det s\xE5
+      hurtigt som muligt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: Hvad er det her?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: "Skal jeg g\xF8re det?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: "Gud... Gud... Det er meget... bev\xE6geligt?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: "\xC5h, for pokker! D\xF8ren lukkede!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "Jeg kan ikke tro det, han er d\xF8d! Jeg fik endelig samlet en
+      pr\xF8ve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: "Det lugter virkelig d\xE5rligt..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: Det er stadig overraskende, at de gamle metoder virker.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: "Evelynn? Hvordan kan det v\xE6re!?"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

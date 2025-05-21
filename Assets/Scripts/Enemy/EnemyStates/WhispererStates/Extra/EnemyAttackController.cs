@@ -35,6 +35,10 @@ public class EnemyAttackController : MonoBehaviour
 	[SerializeField]
 	private bool _showGizmos;
 
+
+	[SerializeField]
+	private int _damage;
+
 	private Coroutine _collisionRoutine;
 	public void SetAttackTrue() =>
 		_attacking = true;
@@ -52,7 +56,7 @@ public class EnemyAttackController : MonoBehaviour
 		if (cols.Length == 0) return;
 		_ppc.StartProcessChange(_targetLensDistortion, _targetFocusDistance, _targetChromaticAberration, _targetColor, null, null, 0.6f);
 		_attackWait = true;
-		_pHealth.AddHealth(-10);
+		_pHealth.AddHealth(-_damage);
 		
 		if(_collisionRoutine != null) 
 			StopCoroutine(_collisionRoutine);

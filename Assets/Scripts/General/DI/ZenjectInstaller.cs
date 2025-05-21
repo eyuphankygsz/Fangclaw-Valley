@@ -8,6 +8,8 @@ public class GameInstaller : MonoInstaller
 	[SerializeField] private ObjectPool _objectPool;
 	[SerializeField] private PlayerUI _playerUI;
 	[SerializeField] private GameTime _gameTime;
+	[SerializeField] private SteamAchievements _steamAchievements;
+
 	public override void InstallBindings()
 	{
 		Container.Bind<GameManager>().AsSingle();
@@ -20,6 +22,7 @@ public class GameInstaller : MonoInstaller
 		Container.Bind<ObjectPool>().FromInstance(_objectPool).AsSingle();
 		Container.Bind<InventoryManager>().FromInstance(_inventoryManager).AsSingle();
 		Container.BindFactory<InventoryItem, Interactable_Pickup, PickupFactory>().AsSingle();
+		Container.Bind<SteamAchievements>().FromInstance(_steamAchievements).AsSingle();
 	}
 }
 

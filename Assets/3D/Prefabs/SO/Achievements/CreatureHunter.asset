@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: CreatureHunter
   m_EditorClassIdentifier: 
   AchievementName: CREATURE_HUNTER
-  IsInt: 1
+  IsInt: 0
   IsFloat: 0
   IsString: 0
-  TargetInt: 10
+  TargetInt: 0
   TargetFloat: 0
   TargetString: 
-  CurrentInt: samples_collected
-  CurrentFloat: 0
+  CurrentInt: 
+  CurrentFloat: 
   CurrentString: 
   LessThanEqual: 0
   GreaterThanEqual: 0

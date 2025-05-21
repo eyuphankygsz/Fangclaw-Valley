@@ -15,18 +15,18 @@ MonoBehaviour:
   Name: note_03
   ItemName:
     m_TableReference:
-      m_TableCollectionName: GUID:8323a23633c75be4bb1bd67fe2766960
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 1886579815792640
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   ItemDescription:
     m_TableReference:
-      m_TableCollectionName: GUID:8323a23633c75be4bb1bd67fe2766960
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 1886584857346048
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

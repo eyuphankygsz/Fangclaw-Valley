@@ -372,7 +372,20 @@ public class InventoryManager : MonoBehaviour
 	{
 		return _itemHoldersList
 				   .Where(holder =>
-					   holder.Item?.ItemName.GetLocalizedString() == itemName)
+				   {
+					   if (holder.Item == null) return false;
+					   try 
+					   {
+						   // Try to get localized name first
+						   string localizedName = holder.Item.ItemName.GetLocalizedString();
+						   return localizedName == itemName;
+					   }
+					   catch (Exception)
+					   {
+						   // Fallback to base name if localization fails
+						   return holder.Item.Name == itemName;
+					   }
+				   })
 				   .Select(holder => holder.Item)
 				   .FirstOrDefault();
 	}

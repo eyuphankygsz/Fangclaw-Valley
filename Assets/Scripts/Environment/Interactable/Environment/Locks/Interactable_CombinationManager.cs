@@ -70,6 +70,7 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 		if (onChase)
 		{
 			_collider.enabled = false;
+			if (_interacted)
 			StopInspect();
 		}
 	}
@@ -189,10 +190,10 @@ public class Interactable_CombinationManager : Interactable, IInputHandler
 	}
 	private void Unlock(bool silent)
 	{
+		
+		PlayerPrefs.SetInt("locks_unlocked", PlayerPrefs.GetInt("locks_unlocked", 0) + 1);
 		if (!silent)
 			_achievements.TryEnableAchievement(_theKeyHolder);
-
-		PlayerPrefs.SetInt("locks_unlocked", PlayerPrefs.GetInt("locks_unlocked") + 1);
 
 		if (!_unlocked)
 			_oneTimeEvents?.Invoke();

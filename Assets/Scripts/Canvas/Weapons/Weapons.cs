@@ -96,7 +96,6 @@ public abstract class Weapons : MonoBehaviour, ISaveable
 	}
 	private void TryMoveTo()
 	{
-		Debug.Log("TryMoveTo");
 		_waitMove = true;
 		_moveUp = !_moveUp;
 

@@ -5,7 +5,7 @@ public class GPiggyAttack : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private Animator _animator;
 
-	private bool _startChecking;
+	private bool _startChecking, _startCheckCheck;
 
 	[SerializeField]
 	private IsAnimationOver _isAnimOver;
@@ -24,6 +24,7 @@ public class GPiggyAttack : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IEnemyController _controller;
 
+
 	private const string AttackAnimationState = "AttackNormal"; // Constant for animation state
 
 	private void Awake()
@@ -33,16 +34,24 @@ public class GPiggyAttack : MonoBehaviour, IEnemyState
 
 	public void EnterState()
 	{
+		_startCheckCheck = true;
 		_startChecking = false;
 		_audioSource.clip = _attackSFX;
 		_audioSource?.Play();
 		_timeForAttack.ResetTime();
 		_isAnimOver.SetOver(false);
-		_animator?.SetTrigger(AttackAnimationState); // Use constant here
+		
+		if(!_animator.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationState))
+		    _animator.SetTrigger(AttackAnimationState);
+		else{
+			_animator.Play(AttackAnimationState,0,0);
+		}
+		_controller.StartAnimationCheck(AttackAnimationState);
 	}
 
 	public void ExitState()
 	{
+		_startCheckCheck = false;
 		_startChecking = false;
 		_turned.CanTurn = false;
 		_animator?.ResetTrigger(AttackAnimationState); // Use constant here
@@ -55,14 +64,17 @@ public class GPiggyAttack : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-		if (_startChecking && _animator?.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+		if (_startChecking && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= _animator.GetCurrentAnimatorStateInfo(0).length)
+		{	
 			_turned.CanTurn = true;
-
-		if (_animator != null && !_animator.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationState)) // Use constant here
-			_startChecking = true;
-		else if (_animator == null)
-		{
-			Debug.LogError("Animator is not assigned in " + gameObject.name); // Error handling
 		}
+		else if(_startCheckCheck && _isAnimOver.CheckCondition()){
+			_turned.CanTurn = true;
+		}
+		else if (!_animator.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationState) && !_startChecking){
+			_startCheckCheck = false;
+			_startChecking = true;
+		}
+
 	}
 }

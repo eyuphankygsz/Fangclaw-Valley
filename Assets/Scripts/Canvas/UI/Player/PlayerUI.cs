@@ -19,6 +19,9 @@ public class PlayerUI : MonoBehaviour
 	[SerializeField]
 	private PlayerCamera _playerCamera;
 
+	[SerializeField]
+	private IsDied _playerIsDied;
+
 	public void SetMaxHealth(float maxHealth)
 	{
 		_maxHealth = maxHealth;
@@ -30,6 +33,8 @@ public class PlayerUI : MonoBehaviour
 	public void ChangeHealthBar(float value)
 	{
 		_healthBar.fillAmount = CalculateFillAmount(value, _maxHealth);
+		if(value <= 0)
+		_playerIsDied.UpdateHealth(-100);
 	}
 	public void ChangeStaminaBar(float value)
 	{
@@ -63,7 +68,6 @@ public class PlayerUI : MonoBehaviour
 			shaker.FadeOut(1);
 		}
 		_playerCamera.LockRandom = false;
-		Debug.Log("StopShake");
 	}
 	public void SetShakeStrength(float strength)
 		=> CameraShakerHandler.SetScaleAll(strength, true);
@@ -80,8 +84,6 @@ public class PlayerUI : MonoBehaviour
 	    _shakeInstances = CameraShakerHandler.ShakeAll(_shakeData);
 		_shakeInstances[0].Data.SetShakeCanvases(true);
 
-		Debug.Log("StartShake");
-
 		if (time != 0)
 		{
 			yield return new WaitForSeconds(time);
@@ -90,7 +92,6 @@ public class PlayerUI : MonoBehaviour
 				shaker.FadeOut(1);
 			}
 			_playerCamera.LockRandom = false;
-			Debug.Log("StopShake");
 		}
 	}
 }

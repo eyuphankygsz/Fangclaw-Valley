@@ -194,6 +194,12 @@ MonoBehaviour:
   _interactEvents:
     m_PersistentCalls:
       m_Calls: []
+  _trueDoneEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  _falseDoneEvents:
+    m_PersistentCalls:
+      m_Calls: []
   _scanObject: {fileID: 648206895724550301}
   IsCrateItem: 0
   <Item>k__BackingField: {fileID: 11400000, guid: 63b723d05cafe4f469dec8b63534e599,
@@ -236,7 +242,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:bc19f994f6990e64cbbdefb18d45a648
           m_TableEntryReference:
-            m_KeyId: 49572708568186880
+            m_KeyId: 49906897968611328
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0

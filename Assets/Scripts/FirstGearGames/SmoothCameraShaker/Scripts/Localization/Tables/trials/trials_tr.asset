@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: trials_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: fd1ce67bccc1db344af719625b41ee86, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17489190912
+    m_Localized: "Umar\u0131m bir \u015Feyleri bozmam."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015527936
+    m_Localized: "Pekala, az \xF6nceki gibi. Bir, iki, \xFC\xE7 ve d\xF6rt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38964027392
+    m_Localized: "Daha zor \u015Feyleri de \xE7\xF6zd\xFCm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41820348416
+    m_Localized: "Bekledi\u011Fimden daha kolayd\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51605659648
+    m_Localized: "G\xFCzel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56366194688
+    m_Localized: "Olaylar\u0131n k\xF6t\xFCle\u015Fece\u011Fi \xE7ok \xF6nceden belliydi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56974368768
+    m_Localized: "Ara\u015Ft\u0131rma i\xE7in insanlar\u0131 g\xF6z g\xF6re g\xF6re
+      \xF6ld\xFCrm\xFC\u015Fler."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57561571328
+    m_Localized: "Hmm... Tamamd\u0131r. Bunu halledebilece\u011Fimi d\xFC\u015F\xFCn\xFCyorum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58131996672
+    m_Localized: "Bir \u015Feyler duyuyorum!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: "\u0130\u011Fren\xE7... Burada nas\u0131l bir hayvan ya\u015Fam\u0131\u015F!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59247681536
+    m_Localized: "Hmm. Di\u015Fli \xE7ark burada olmal\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59834884096
+    m_Localized: "Tanr\u0131m, Kusaca\u011F\u0131m!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60321423360
+    m_Localized: "Mutfaktaki mekanizmay\u0131 belki \xE7al\u0131\u015Ft\u0131rabilirim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60887654400
+    m_Localized: "T\xFCnelin sonu d\xFCzg\xFCn bir yere \xE7\u0131ksa iyi olur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61437108224
+    m_Localized: "Ne kadar da uzun bir t\xFCnel!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61994950656
+    m_Localized: "Daha \xF6nce bu tarz yerlerde \xE7al\u0131\u015Ft\u0131m... Ancak
+      bu tarz \u015Feyleri daha \xF6nce hi\xE7 g\xF6rmedim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62565376000
+    m_Localized: "Tuzruhu. \xC7ok fazla dokunmamal\u0131y\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63169355776
+    m_Localized: "Vitriol Ya\u011F\u0131. Daha \xF6nce deneylerimde kullanm\u0131\u015Ft\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63706226688
+    m_Localized: "Kral Suyu. Kesinlikle i\u015Fime yarayacak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67460128768
+    m_Localized: "Bu sembolleri daha \xF6nce Cephanelik giri\u015Finde g\xF6rm\xFC\u015Ft\xFCm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67535626240
+    m_Localized: "Bu sistemi eskiden nas\u0131l kurabilmi\u015Fler?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67619512320
+    m_Localized: "A\xE7\u0131lan sand\u0131\u011Fa bakmal\u0131y\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67711787008
+    m_Localized: "Pekala, \u015Fimdi \u015Fi\u015Feleri yerine koyabilirim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69045575680
+    m_Localized: Dikkatli kullansam iyi olur.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69133656064
+    m_Localized: "\u0130\u015Fe yarayaca\u011F\u0131n\u0131 biliyordum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70521970688
+    m_Localized: "Ben neyle kar\u015F\u0131 kar\u015F\u0131yay\u0131m..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70618439680
+    m_Localized: "Harita odas\u0131..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72023531520
+    m_Localized: "Daha \xF6nce buna benzer bir \u015Feyler g\xF6rm\xFC\u015Ft\xFCm!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73378291712
+    m_Localized: HAYIR!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75659993088
+    m_Localized: "Lanet Olsun, Baca\u011F\u0131m! Bu Yerden Nefret Ediyorum!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77031530496
+    m_Localized: "Yeralt\u0131 mezarl\u0131\u011F\u0131 m\u0131?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78419845120
+    m_Localized: "\xC7\u0131k\u0131\u015F i\xE7in i\u015Fime yarayabilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79908823040
+    m_Localized: "Pekala, bunu nereye koyaca\u011F\u0131m?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81309720576
+    m_Localized: "Umar\u0131m oraya tekrar girmek zorunda kalmam."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83910189056
+    m_Localized: "Kald\u0131 1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86481297408
+    m_Localized: "Ne, nas\u0131l yani? Tanr\u0131m, bunlar... Ne kadar garip."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89136291840
+    m_Localized: "Galiba bunu bir yerlere sokmal\u0131y\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399279906816
+    m_Localized: Biliyordum!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403159638016
+    m_Localized: "Vay can\u0131na..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406972260352
+    m_Localized: "T\xFCm bunlar ger\xE7ekten \xE7ok garip. Bir an \xF6nce ona kavu\u015Fmak
+      istiyorum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 410818437120
+    m_Localized: "Bu da ne b\xF6yle?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 414706556928
+    m_Localized: "Bunu yapmak zorunday\u0131m de\u011Fil mi?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 485904867328
+    m_Localized: "Tanr\u0131m... Tanr\u0131m... Bu \xE7ok... hareketli?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 491017723904
+    m_Localized: "Ah, siktir! Kap\u0131 kapand\u0131!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 496084443136
+    m_Localized: "\u0130nanam\u0131yorum, \xF6ld\xFC! Sonunda bir \xF6rnek toplayabildim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502367510528
+    m_Localized: "\xC7ok berbat kokuyor..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508709298176
+    m_Localized: "Eski y\xF6ntemlerin hala \xE7al\u0131\u015Fmas\u0131 \xE7ok \u015Fa\u015F\u0131rt\u0131c\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516217102336
+    m_Localized: "Evelynn mi? Bu nas\u0131l olabilir!?"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -8,7 +8,7 @@ public class WhispererAttack : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private const float _minDistance = 2f;
 
-	private bool _startChecking;
+	private bool _startChecking, _startCheckCheck;
 
 	[SerializeField]
 	private IsAnimationOver _isAnimOver;
@@ -22,22 +22,30 @@ public class WhispererAttack : MonoBehaviour, IEnemyState
 	[SerializeField]
 	private IEnemyController _controller;
 
+		private const string AttackAnimationState = "AttackNormal"; 
+
 	private void Awake()
 	{
 		_controller = GetComponentInParent<IEnemyController>();
 	}
 	public void EnterState()
 	{
+		_startCheckCheck = true;
 		_timeForAttack.ResetTime();
-		_animator.SetTrigger("AttackNormal");
-		_controller.StartAnimationCheck("AttackNormal");
+
+		if(!_animator.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationState))
+		    _animator.SetTrigger(AttackAnimationState);
+		else{
+			_animator.Play(AttackAnimationState,0,0);
+		}
+		_controller.StartAnimationCheck(AttackAnimationState);
 	}
 
 	public void ExitState()
 	{
+		_startCheckCheck = false;
 		_startChecking = false;
 		_turned.CanTurn = false;
-		_animator.ResetTrigger("AttackNormal");
 	}
 
 	public EnemyStateTransitionList GetTransitions()
@@ -47,10 +55,16 @@ public class WhispererAttack : MonoBehaviour, IEnemyState
 
 	public void UpdateState()
 	{
-		if (_startChecking && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime > _animator.GetCurrentAnimatorStateInfo(0).length)
+		if (_startChecking && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= _animator.GetCurrentAnimatorStateInfo(0).length)
+		{	
 			_turned.CanTurn = true;
-
-		if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("AttackNormal"))
+		}
+		else if(_startCheckCheck && _isAnimOver.CheckCondition()){
+			_turned.CanTurn = true;
+		}
+		else if (!_animator.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationState) && !_startChecking){
+			_startCheckCheck = false;
 			_startChecking = true;
+		}
 	}
 }

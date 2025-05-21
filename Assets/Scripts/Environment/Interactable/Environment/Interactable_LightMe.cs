@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Interactable_LightMe : Interactable
 {
-	private WeaponPickData _data;
+	private LightMeData _data;
 
 	[SerializeField]
 	private float _increaseSpeed, _decreaseSpeed, _maxTime, _currentTime;
-	private bool _full, _onWait;
+	private bool _full, _onWait, _oneTimeDone;
 
 	private Coroutine _routine, _ticksRoutine;
 
@@ -105,8 +105,14 @@ public class Interactable_LightMe : Interactable
 				if (_routine != null)
 					StopCoroutine(_routine);
 				_routine = StartCoroutine(DecreaseRoutine());
-
+				
+				if(!_oneTimeDone)
+				{
+					_oneTimeEvents?.Invoke();
+					_oneTimeDone = true;
+				}
 				_trueEvents?.Invoke();
+				
 			}
 		}
 		else if (_currentTime <= 0)
@@ -124,20 +130,20 @@ public class Interactable_LightMe : Interactable
 
 	public override GameData GetGameData()
 	{
-		_data = new WeaponPickData()
+		_data = new LightMeData()
 		{
 			Name = InteractableName,
-			IsTaken = !gameObject.activeSelf
+			IsOneTimeDone = _oneTimeDone
 		};
 		return _data;
 	}
 
 	public override void LoadData()
 	{
-		WeaponPickData data = _saveManager.GetData<WeaponPickData>(InteractableName);
+		LightMeData data = _saveManager.GetData<LightMeData>(InteractableName);
 		if (data == null) return;
 
-		gameObject.SetActive(!data.IsTaken);
+		_oneTimeDone = data.IsOneTimeDone;
 		_saveManager.AddSaveableObject(gameObject, GetSaveFile());
 	}
 }

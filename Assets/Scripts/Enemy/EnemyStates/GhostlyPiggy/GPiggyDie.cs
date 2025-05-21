@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 public class GPiggyDie : MonoBehaviour, IEnemyState
@@ -16,13 +17,16 @@ public class GPiggyDie : MonoBehaviour, IEnemyState
 	[Inject]
 	private GameManager _manager;
 
-
+	[SerializeField]
+	private UnityEvent _onDieEvents;
 	public void EnterState()
 	{
+
 		_collider.enabled = false;
 		_manager.IsOnChase--;
 		_animator.SetBool("Die", true);
 
+		_onDieEvents?.Invoke();
 	}
 
 	public void ExitState()

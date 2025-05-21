@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: TheTrapper
   m_EditorClassIdentifier: 
   AchievementName: THE_TRAPPER
-  IsInt: 1
+  IsInt: 0
   IsFloat: 0
   IsString: 0
-  TargetInt: 1
+  TargetInt: 0
   TargetFloat: 0
-  TargetString: 
-  CurrentInt: traps_set
-  CurrentFloat: 0
+  TargetString: 0
+  CurrentInt: 
+  CurrentFloat: 
   CurrentString: 
   LessThanEqual: 0
   GreaterThanEqual: 0

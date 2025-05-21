@@ -13,9 +13,17 @@ public class GameManager
 		{
 			if (_pauseGame != value)
 			{
-				Time.timeScale = value ? 0 : 1;
-				_pauseGame = value;
-				OnPauseGame?.Invoke(_pauseGame, _force);
+				if(!IsDied)
+				{
+					Debug.Log("Not Died Sorry");
+					Cursor.lockState = value ? CursorLockMode.None : CursorLockMode.Locked;
+					Cursor.visible = value;
+
+					Time.timeScale = value ? 0 : 1;
+					_pauseGame = value;
+					OnPauseGame?.Invoke(_pauseGame, _force);
+				}
+
 			}
 		}
 	}
@@ -32,8 +40,7 @@ public class GameManager
 			OnInspecting?.Invoke(_inspecting);
 		}
 	}
-
-
+	public bool IsDied;
 	public event Action<bool> OnSaveGame;
 
 	private bool _saveGame;

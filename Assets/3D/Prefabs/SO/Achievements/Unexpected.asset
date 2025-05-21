@@ -16,10 +16,10 @@ MonoBehaviour:
   IsInt: 0
   IsFloat: 0
   IsString: 0
-  TargetInt: 1
+  TargetInt: 0
   TargetFloat: 0
   TargetString: 
-  CurrentInt: combined_items
+  CurrentInt: 
   CurrentFloat: 
   CurrentString: 
   LessThanEqual: 0

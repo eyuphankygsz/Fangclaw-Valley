@@ -894,6 +894,7 @@ MonoBehaviour:
   - {fileID: 1741354777435540821}
   - {fileID: 622295010271943112}
   - {fileID: 6242642581232205818}
+  _creatureStun: {fileID: 11400000, guid: e54a8cc65e3d88c4790c0b78d4c51ad9, type: 2}
 --- !u!65 &3930566523187087761
 BoxCollider:
   m_ObjectHideFlags: 0

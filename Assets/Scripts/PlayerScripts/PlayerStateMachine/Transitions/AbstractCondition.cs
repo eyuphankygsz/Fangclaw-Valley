@@ -5,6 +5,7 @@ public abstract class AbstractCondition : MonoBehaviour
 {
 	public abstract bool CheckCondition();
 	public abstract void ResetFrameFreeze();
+	public bool DebugCondition;
 }
 
 

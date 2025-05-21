@@ -22,6 +22,8 @@ public class WhispererDie : MonoBehaviour, IEnemyState
 
 	public void EnterState()
 	{
+
+
 		_collider.enabled = false;
 		_manager.IsOnChase--;
 		_animator.SetBool("Die", true);
